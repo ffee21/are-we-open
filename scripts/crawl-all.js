@@ -158,6 +158,25 @@ async function main() {
     }
   }
 
+  // 경량 JSON 생성 (웹사이트 렌더링용 — snapshot 제외)
+  const lite = {
+    meta: output.meta,
+    organizations: output.organizations.map(o => ({
+      org_id: o.org_id, name: o.name, name_en: o.name_en || '', org_type: o.org_type,
+      url: o.url, parent_org_id: o.parent_org_id, scan_date: o.scan_date,
+      scores: o.scores, issues: o.issues,
+      robots_txt: o.robots_txt ? {
+        exists: o.robots_txt.exists, syntax_valid: o.robots_txt.syntax_valid,
+        full_block: o.robots_txt.full_block, llm_crawlers_blocked: o.robots_txt.llm_crawlers_blocked,
+        crawler_rules: o.robots_txt.crawler_rules
+      } : null,
+      llms_txt: o.llms_txt ? { exists: o.llms_txt.exists, content_length: o.llms_txt.content_length } : null,
+      sitemap_xml: o.sitemap_xml, metadata: o.metadata, technical: o.technical
+    }))
+  };
+  fs.writeFileSync(path.resolve('data/results-lite.json'), JSON.stringify(lite));
+  console.error(`Lite JSON: data/results-lite.json (${(JSON.stringify(lite).length/1024).toFixed(0)}KB)`);
+
   // 요약 출력
   console.error('\n=== 분석 완료 ===');
   const successful = output.organizations.filter(o => o.scores);

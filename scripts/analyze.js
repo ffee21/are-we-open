@@ -17,8 +17,8 @@ const { parse, analyzeCrawlerAccess } = require('./lib/robots-parser.js');
 const path = require('path');
 const fs = require('fs');
 
-// === HTTP 요청 유틸 ===
-async function fetchWithTimeout(url, timeoutMs = 10000) {
+// === HTTP 요청 유틸 (재시도 포함) ===
+async function fetchOnce(url, timeoutMs = 10000) {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), timeoutMs);
   const start = Date.now();
@@ -40,6 +40,15 @@ async function fetchWithTimeout(url, timeoutMs = 10000) {
   } finally {
     clearTimeout(timer);
   }
+}
+
+async function fetchWithTimeout(url, timeoutMs = 10000, retries = 2) {
+  for (let attempt = 0; attempt <= retries; attempt++) {
+    const res = await fetchOnce(url, timeoutMs);
+    if (res.ok || res.status === 404) return res;
+    if (attempt < retries) await new Promise(r => setTimeout(r, 1000 * (attempt + 1)));
+  }
+  return await fetchOnce(url, timeoutMs);
 }
 
 // HTML 에러 페이지 감지 — 많은 정부 사이트가 없는 페이지에 200 + HTML을 반환

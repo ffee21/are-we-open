@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-03-15T12:11:28.290Z",
+    "last_updated": "2026-03-15T12:30:12.174Z",
     "total_organizations": 734,
     "scan_version": "v1",
     "law_reference": "정부조직법 [법률 제21065호, 2025. 10. 1., 일부개정]",
@@ -8313,6 +8313,167 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 147364
+      }
+    },
+    {
+      "org_id": "M13",
+      "name": "보건복지부",
+      "name_en": "Ministry of Health and Welfare",
+      "org_type": "ministry",
+      "url": "https://www.mohw.go.kr",
+      "parent_org_id": null,
+      "law_reference": "제42조",
+      "scan_date": "2026-03-15",
+      "scan_version": "v1",
+      "scores": {
+        "total": 81,
+        "grade": "A",
+        "categories": {
+          "robots_txt": {
+            "score": 25,
+            "max": 25
+          },
+          "content_accessibility": {
+            "score": 21,
+            "max": 25
+          },
+          "structured_data": {
+            "score": 20,
+            "max": 20
+          },
+          "technical_accessibility": {
+            "score": 15,
+            "max": 15
+          },
+          "llms_txt": {
+            "score": 0,
+            "max": 10
+          },
+          "sitemap_xml": {
+            "score": 0,
+            "max": 5
+          }
+        },
+        "items": {
+          "RT-01": 5,
+          "RT-02": 3,
+          "RT-03": 7,
+          "RT-04": 5,
+          "RT-05": 5,
+          "CA-01": 7,
+          "CA-02": 5,
+          "CA-03": 5,
+          "CA-04": 0,
+          "CA-05": 4,
+          "SD-01": 4,
+          "SD-02": 4,
+          "SD-03": 4,
+          "SD-04": 5,
+          "SD-05": 3,
+          "TA-01": 3,
+          "TA-02": 4,
+          "TA-03": 4,
+          "TA-04": 4,
+          "LT-01": 0,
+          "LT-02": 0,
+          "LT-03": 0,
+          "SM-01": 0,
+          "SM-02": 0
+        }
+      },
+      "issues": [
+        {
+          "code": "LT-01-info",
+          "severity": "info",
+          "description": "llms.txt 파일이 존재하지 않음",
+          "detail": ""
+        },
+        {
+          "code": "SM-01-minor",
+          "severity": "minor",
+          "description": "sitemap.xml이 존재하지 않음",
+          "detail": ""
+        }
+      ],
+      "robots_txt": {
+        "exists": true,
+        "syntax_valid": true,
+        "full_block": false,
+        "llm_crawlers_blocked": [],
+        "llm_crawlers_allowed": [
+          "GPTBot",
+          "ChatGPT-User",
+          "ClaudeBot",
+          "anthropic-ai",
+          "Google-Extended"
+        ],
+        "crawler_rules": {
+          "GPTBot": {
+            "status": "partial_allow",
+            "mentioned": false
+          },
+          "ChatGPT-User": {
+            "status": "partial_allow",
+            "mentioned": false
+          },
+          "ClaudeBot": {
+            "status": "partial_allow",
+            "mentioned": false
+          },
+          "anthropic-ai": {
+            "status": "partial_allow",
+            "mentioned": false
+          },
+          "Google-Extended": {
+            "status": "partial_allow",
+            "mentioned": false
+          },
+          "CCBot": {
+            "status": "partial_allow",
+            "mentioned": false
+          },
+          "Bytespider": {
+            "status": "partial_allow",
+            "mentioned": false
+          },
+          "Googlebot": {
+            "status": "partial_allow",
+            "mentioned": false
+          },
+          "*": {
+            "status": "partial_allow",
+            "mentioned": false
+          }
+        },
+        "sitemaps": [],
+        "snapshot": "User-agent: *\r\nDisallow: /search/\r\nDisallow: /react/\r\nDisallow: /react/search\r\nDisallow: /board.es\r\nDisallow: /board"
+      },
+      "llms_txt": {
+        "exists": false,
+        "content_length": 0,
+        "has_description": false,
+        "snapshot": null
+      },
+      "sitemap_xml": {
+        "exists": false,
+        "valid": false,
+        "url_count": 0
+      },
+      "metadata": {
+        "has_title": true,
+        "title": "힘이 되는 평생 친구, 보건복지부",
+        "has_meta_description": true,
+        "has_og_tags": true,
+        "has_schema_org": true,
+        "has_lang_attribute": true
+      },
+      "technical": {
+        "https": true,
+        "ttfb_ms": 270,
+        "main_page_status": 200,
+        "mobile_viewport": true,
+        "primary_rendering": "ssr",
+        "html_length": 127359
       }
     },
     {
@@ -39502,130 +39663,6 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 376213
-      }
-    },
-    {
-      "org_id": "M13",
-      "name": "보건복지부",
-      "name_en": "Ministry of Health and Welfare",
-      "org_type": "ministry",
-      "url": "https://www.mohw.go.kr",
-      "parent_org_id": null,
-      "law_reference": "제42조",
-      "scan_date": "2026-03-15",
-      "scan_version": "v1",
-      "scores": {
-        "total": 71,
-        "grade": "B+",
-        "categories": {
-          "robots_txt": {
-            "score": 17,
-            "max": 25
-          },
-          "content_accessibility": {
-            "score": 21,
-            "max": 25
-          },
-          "structured_data": {
-            "score": 20,
-            "max": 20
-          },
-          "technical_accessibility": {
-            "score": 13,
-            "max": 15
-          },
-          "llms_txt": {
-            "score": 0,
-            "max": 10
-          },
-          "sitemap_xml": {
-            "score": 0,
-            "max": 5
-          }
-        },
-        "items": {
-          "RT-01": 0,
-          "RT-02": 0,
-          "RT-03": 7,
-          "RT-04": 5,
-          "RT-05": 5,
-          "CA-01": 7,
-          "CA-02": 5,
-          "CA-03": 5,
-          "CA-04": 0,
-          "CA-05": 4,
-          "SD-01": 4,
-          "SD-02": 4,
-          "SD-03": 4,
-          "SD-04": 5,
-          "SD-05": 3,
-          "TA-01": 3,
-          "TA-02": 2,
-          "TA-03": 4,
-          "TA-04": 4,
-          "LT-01": 0,
-          "LT-02": 0,
-          "LT-03": 0,
-          "SM-01": 0,
-          "SM-02": 0
-        }
-      },
-      "issues": [
-        {
-          "code": "RT-01-critical",
-          "severity": "critical",
-          "description": "robots.txt가 존재하지 않음",
-          "detail": "LLM과 검색엔진이 크롤링 정책을 확인할 수 없습니다."
-        },
-        {
-          "code": "LT-01-info",
-          "severity": "info",
-          "description": "llms.txt 파일이 존재하지 않음",
-          "detail": ""
-        },
-        {
-          "code": "SM-01-minor",
-          "severity": "minor",
-          "description": "sitemap.xml이 존재하지 않음",
-          "detail": ""
-        }
-      ],
-      "robots_txt": {
-        "exists": false,
-        "syntax_valid": false,
-        "full_block": false,
-        "llm_crawlers_blocked": [],
-        "llm_crawlers_allowed": [],
-        "crawler_rules": {},
-        "sitemaps": [],
-        "snapshot": null
-      },
-      "llms_txt": {
-        "exists": false,
-        "content_length": 0,
-        "has_description": false,
-        "snapshot": null
-      },
-      "sitemap_xml": {
-        "exists": false,
-        "valid": false,
-        "url_count": 0
-      },
-      "metadata": {
-        "has_title": true,
-        "title": "힘이 되는 평생 친구, 보건복지부",
-        "has_meta_description": true,
-        "has_og_tags": true,
-        "has_schema_org": true,
-        "has_lang_attribute": true
-      },
-      "technical": {
-        "https": true,
-        "ttfb_ms": 2543,
-        "main_page_status": 200,
-        "mobile_viewport": true,
-        "primary_rendering": "ssr",
-        "html_length": 127359
       }
     },
     {

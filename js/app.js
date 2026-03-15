@@ -102,7 +102,7 @@ const App = (() => {
   async function loadData() {
     if (_data) return _data;
     try {
-      const res = await fetch('data/results.json');
+      const res = await fetch('data/results-lite.json');
       if (!res.ok) throw new Error('Failed to load data');
       _data = await res.json();
       return _data;
