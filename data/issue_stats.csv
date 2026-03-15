@@ -1,0 +1,11 @@
+issue_code,severity,count,percentage,description
+RT-03-major,major,10,100.0,주요 LLM 크롤러에 대한 명시적 규칙 없음
+LT-01-info,info,10,100.0,llms.txt 파일 미존재
+SD-04-info,info,6,60.0,schema.org 구조화된 데이터 없음
+CA-02-major,major,6,60.0,정책자료 개별 URL 없음
+CA-05-critical,critical,4,40.0,주요 콘텐츠 CSR 전용
+RT-04-critical,critical,2,20.0,전체 크롤러 전면 차단
+CA-05-major,major,2,20.0,일부 콘텐츠 CSR 전용
+SD-02-major,major,3,30.0,meta description 없거나 동일
+RT-05-major,major,2,20.0,콘텐츠 경로 크롤링 차단
+RT-02-minor,minor,2,20.0,robots.txt 문법 오류

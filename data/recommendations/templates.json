@@ -1,0 +1,84 @@
+{
+  "recommendations": [
+    {
+      "code": "REC-RT-01",
+      "target_issue": "RT-01-critical",
+      "title": "robots.txt 파일 생성",
+      "description": "웹사이트 루트 경로에 robots.txt 파일을 생성하여 크롤러에게 크롤링 정책을 명시하세요.",
+      "priority": "high",
+      "difficulty": "easy"
+    },
+    {
+      "code": "REC-RT-03",
+      "target_issue": "RT-03-major",
+      "title": "LLM 크롤러별 명시적 허용 규칙 추가",
+      "description": "GPTBot, ClaudeBot, Google-Extended 등 주요 LLM 크롤러에 대한 명시적 허용/차단 규칙을 robots.txt에 추가하세요. 공공정보 경로는 허용을 권장합니다.",
+      "priority": "high",
+      "difficulty": "easy"
+    },
+    {
+      "code": "REC-RT-04",
+      "target_issue": "RT-04-critical",
+      "title": "전면 차단 해제 및 선별적 차단 전환",
+      "description": "User-agent: * Disallow: / 설정을 해제하고, 관리자 페이지 등 실제로 차단이 필요한 경로만 선별적으로 차단하세요.",
+      "priority": "critical",
+      "difficulty": "easy"
+    },
+    {
+      "code": "REC-RT-05",
+      "target_issue": "RT-05-major",
+      "title": "공공 콘텐츠 경로 크롤링 허용",
+      "description": "보도자료, 공지사항, 정책자료 등 공공정보 경로에 대한 크롤링을 허용하세요.",
+      "priority": "high",
+      "difficulty": "easy"
+    },
+    {
+      "code": "REC-CA-01",
+      "target_issue": "CA-01-critical",
+      "title": "보도자료 개별 URL(퍼마링크) 생성",
+      "description": "각 보도자료에 고유한 URL을 부여하여 외부에서 직접 링크 및 인용이 가능하도록 하세요.",
+      "priority": "high",
+      "difficulty": "medium"
+    },
+    {
+      "code": "REC-CA-02",
+      "target_issue": "CA-02-major",
+      "title": "정책자료 개별 URL 생성",
+      "description": "정책자료 각 항목에 고유 URL을 부여하세요.",
+      "priority": "medium",
+      "difficulty": "medium"
+    },
+    {
+      "code": "REC-CA-05",
+      "target_issue": "CA-05-critical",
+      "title": "SSR 전환 또는 프리렌더링 도입",
+      "description": "주요 콘텐츠 페이지를 서버 사이드 렌더링(SSR)으로 전환하거나, 프리렌더링을 도입하여 JS를 실행하지 않는 크롤러도 콘텐츠를 읽을 수 있도록 하세요.",
+      "priority": "high",
+      "difficulty": "hard"
+    },
+    {
+      "code": "REC-SD-04",
+      "target_issue": "SD-04-info",
+      "title": "schema.org JSON-LD 구조화 데이터 추가",
+      "description": "GovernmentOrganization, Article 등의 schema.org 타입을 JSON-LD 형식으로 추가하세요.",
+      "priority": "low",
+      "difficulty": "medium"
+    },
+    {
+      "code": "REC-LT-01",
+      "target_issue": "LT-01-info",
+      "title": "llms.txt 파일 생성",
+      "description": "기관 설명, 주요 콘텐츠 링크 등을 포함하는 llms.txt 파일을 생성하세요.",
+      "priority": "low",
+      "difficulty": "easy"
+    },
+    {
+      "code": "REC-SM-01",
+      "target_issue": "SM-01-minor",
+      "title": "sitemap.xml 생성",
+      "description": "주요 콘텐츠 URL을 포함하는 sitemap.xml을 생성하고 robots.txt에서 참조하세요.",
+      "priority": "medium",
+      "difficulty": "easy"
+    }
+  ]
+}

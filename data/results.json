@@ -1,0 +1,609 @@
+{
+  "meta": {
+    "last_updated": "2025-01-15T09:00:00+09:00",
+    "total_organizations": 10,
+    "scan_version": "v1",
+    "note": "본 데이터는 프로젝트 시연을 위한 샘플 데이터입니다. 실제 분석 결과와 다를 수 있습니다."
+  },
+  "organizations": [
+    {
+      "org_id": "GOV-001",
+      "name": "과학기술정보통신부",
+      "name_en": "Ministry of Science and ICT",
+      "org_type": "central_ministry",
+      "url": "https://www.msit.go.kr",
+      "parent_org_id": null,
+      "scan_date": "2025-01-15",
+      "scan_version": "v1",
+      "scores": {
+        "total": 77,
+        "grade": "B+",
+        "categories": {
+          "robots_txt": { "score": 21, "max": 25 },
+          "content_accessibility": { "score": 21, "max": 25 },
+          "structured_data": { "score": 15, "max": 20 },
+          "technical_accessibility": { "score": 15, "max": 15 },
+          "llms_txt": { "score": 0, "max": 10 },
+          "sitemap_xml": { "score": 5, "max": 5 }
+        },
+        "items": {
+          "RT-01": 5, "RT-02": 3, "RT-03": 4, "RT-04": 5, "RT-05": 4,
+          "CA-01": 7, "CA-02": 3, "CA-03": 5, "CA-04": 2, "CA-05": 4,
+          "SD-01": 4, "SD-02": 4, "SD-03": 4, "SD-04": 0, "SD-05": 3,
+          "TA-01": 3, "TA-02": 4, "TA-03": 4, "TA-04": 4,
+          "LT-01": 0, "LT-02": 0, "LT-03": 0,
+          "SM-01": 2, "SM-02": 3
+        }
+      },
+      "issues": [
+        {
+          "code": "RT-03-major",
+          "severity": "major",
+          "description": "주요 LLM 크롤러(GPTBot, ClaudeBot 등)에 대한 명시적 규칙이 없습니다.",
+          "detail": "GPTBot, Google-Extended에 대한 규칙이 없음. ClaudeBot만 부분 허용 상태.",
+          "recommendation_code": "REC-RT-03"
+        },
+        {
+          "code": "SD-04-info",
+          "severity": "info",
+          "description": "schema.org 구조화된 데이터가 없습니다.",
+          "detail": "JSON-LD 또는 Microdata 형태의 구조화된 데이터가 발견되지 않음.",
+          "recommendation_code": "REC-SD-04"
+        },
+        {
+          "code": "LT-01-info",
+          "severity": "info",
+          "description": "llms.txt 파일이 존재하지 않습니다.",
+          "detail": "아직 보편화되지 않은 표준이므로 참고 사항입니다.",
+          "recommendation_code": "REC-LT-01"
+        },
+        {
+          "code": "CA-04-minor",
+          "severity": "minor",
+          "description": "URL 패턴이 불규칙합니다.",
+          "detail": "보도자료 URL이 쿼리스트링 기반으로 구성됨 (?bbs_seq=12345).",
+          "recommendation_code": "REC-CA-04"
+        }
+      ],
+      "robots_txt": {
+        "exists": true,
+        "snapshot_path": "snapshots/GOV-001/robots_2025-01-15.txt",
+        "snapshot_date": "2025-01-15T09:00:00+09:00",
+        "syntax_valid": true,
+        "crawler_rules": {
+          "GPTBot": "not_mentioned",
+          "ClaudeBot": "partial_allow",
+          "Google-Extended": "not_mentioned",
+          "Googlebot": "allowed",
+          "Bytespider": "not_mentioned",
+          "CCBot": "not_mentioned",
+          "*": "partial_allow"
+        }
+      },
+      "llms_txt": { "exists": false },
+      "sitemap_xml": { "exists": true, "valid": true, "contains_content_urls": true },
+      "metadata": {
+        "has_title": true, "title_unique_per_page": true,
+        "has_meta_description": true, "meta_description_unique": true,
+        "has_og_tags": true, "has_schema_org": false, "has_lang_attribute": true
+      },
+      "technical": {
+        "https": true, "ttfb_ms": 450, "main_page_status": 200,
+        "mobile_viewport": true, "primary_rendering": "ssr"
+      },
+      "content_paths": {
+        "press_releases": { "list_url": "https://www.msit.go.kr/bbs/list.do?sCode=user&mId=99", "individual_url_accessible": true, "rendering_method": "ssr" },
+        "policy_pages": { "list_url": "https://www.msit.go.kr/web/msipContents/list.do", "individual_url_accessible": true, "rendering_method": "ssr" },
+        "notices": { "list_url": "https://www.msit.go.kr/bbs/list.do?sCode=user&mId=100", "individual_url_accessible": true, "rendering_method": "ssr" }
+      },
+      "suggested_robots_txt": "# 검색엔진 크롤러 허용\nUser-agent: Googlebot\nAllow: /\n\n# LLM 크롤러 허용 (공공정보 접근)\nUser-agent: GPTBot\nAllow: /bbs/\nAllow: /web/msipContents/\nDisallow: /admin/\nDisallow: /login/\n\nUser-agent: ClaudeBot\nAllow: /bbs/\nAllow: /web/msipContents/\nDisallow: /admin/\nDisallow: /login/\n\nUser-agent: Google-Extended\nAllow: /bbs/\nAllow: /web/msipContents/\nDisallow: /admin/\nDisallow: /login/\n\n# 기본 정책\nUser-agent: *\nDisallow: /admin/\nDisallow: /login/\nDisallow: /search/\n\nSitemap: https://www.msit.go.kr/sitemap.xml",
+      "suggested_llms_txt": "# 과학기술정보통신부 (Ministry of Science and ICT)\n> 대한민국 과학기술정보통신부 공식 웹사이트입니다.\n\n## 주요 콘텐츠\n- [보도자료](https://www.msit.go.kr/bbs/list.do?sCode=user&mId=99)\n- [공지사항](https://www.msit.go.kr/bbs/list.do?sCode=user&mId=100)\n- [정책소개](https://www.msit.go.kr/web/msipContents/list.do)"
+    },
+    {
+      "org_id": "GOV-002",
+      "name": "행정안전부",
+      "name_en": "Ministry of the Interior and Safety",
+      "org_type": "central_ministry",
+      "url": "https://www.mois.go.kr",
+      "parent_org_id": null,
+      "scan_date": "2025-01-15",
+      "scan_version": "v1",
+      "scores": {
+        "total": 70,
+        "grade": "B+",
+        "categories": {
+          "robots_txt": { "score": 20, "max": 25 },
+          "content_accessibility": { "score": 18, "max": 25 },
+          "structured_data": { "score": 13, "max": 20 },
+          "technical_accessibility": { "score": 15, "max": 15 },
+          "llms_txt": { "score": 0, "max": 10 },
+          "sitemap_xml": { "score": 4, "max": 5 }
+        },
+        "items": {
+          "RT-01": 5, "RT-02": 3, "RT-03": 3, "RT-04": 5, "RT-05": 4,
+          "CA-01": 5, "CA-02": 3, "CA-03": 5, "CA-04": 2, "CA-05": 3,
+          "SD-01": 4, "SD-02": 2, "SD-03": 4, "SD-04": 0, "SD-05": 3,
+          "TA-01": 3, "TA-02": 4, "TA-03": 4, "TA-04": 4,
+          "LT-01": 0, "LT-02": 0, "LT-03": 0,
+          "SM-01": 2, "SM-02": 2
+        }
+      },
+      "issues": [
+        {
+          "code": "RT-03-major",
+          "severity": "major",
+          "description": "주요 LLM 크롤러에 대한 명시적 규칙이 없습니다.",
+          "detail": "GPTBot, Google-Extended에 대한 규칙 없음.",
+          "recommendation_code": "REC-RT-03"
+        },
+        {
+          "code": "SD-02-major",
+          "severity": "major",
+          "description": "<meta description>이 모든 페이지에서 동일합니다.",
+          "detail": "모든 페이지에서 동일한 메타 설명 사용 중.",
+          "recommendation_code": "REC-SD-02"
+        },
+        {
+          "code": "SD-04-info",
+          "severity": "info",
+          "description": "schema.org 구조화된 데이터가 없습니다.",
+          "detail": "JSON-LD 형태의 구조화된 데이터 미발견.",
+          "recommendation_code": "REC-SD-04"
+        },
+        {
+          "code": "LT-01-info",
+          "severity": "info",
+          "description": "llms.txt 파일이 존재하지 않습니다.",
+          "detail": "",
+          "recommendation_code": "REC-LT-01"
+        }
+      ],
+      "robots_txt": {
+        "exists": true, "syntax_valid": true,
+        "crawler_rules": {
+          "GPTBot": "not_mentioned", "ClaudeBot": "partial_allow",
+          "Google-Extended": "not_mentioned", "Googlebot": "allowed",
+          "Bytespider": "not_mentioned", "CCBot": "not_mentioned", "*": "partial_allow"
+        }
+      },
+      "llms_txt": { "exists": false },
+      "sitemap_xml": { "exists": true, "valid": true, "contains_content_urls": false },
+      "metadata": {
+        "has_title": true, "title_unique_per_page": true,
+        "has_meta_description": true, "meta_description_unique": false,
+        "has_og_tags": true, "has_schema_org": false, "has_lang_attribute": true
+      },
+      "technical": {
+        "https": true, "ttfb_ms": 520, "main_page_status": 200,
+        "mobile_viewport": true, "primary_rendering": "ssr"
+      },
+      "content_paths": {
+        "press_releases": { "list_url": "https://www.mois.go.kr/frt/bbs/type010/commonSelectBoardList.do", "individual_url_accessible": true, "rendering_method": "ssr" },
+        "notices": { "list_url": "https://www.mois.go.kr/frt/bbs/type010/commonSelectBoardList.do?bbsId=BBSMSTR_000000000006", "individual_url_accessible": true, "rendering_method": "ssr" }
+      },
+      "suggested_robots_txt": "User-agent: Googlebot\nAllow: /\n\nUser-agent: GPTBot\nAllow: /frt/bbs/\nAllow: /frt/sub/\nDisallow: /cop/\nDisallow: /mng/\n\nUser-agent: ClaudeBot\nAllow: /frt/bbs/\nAllow: /frt/sub/\nDisallow: /cop/\nDisallow: /mng/\n\nUser-agent: Google-Extended\nAllow: /frt/bbs/\nAllow: /frt/sub/\nDisallow: /cop/\nDisallow: /mng/\n\nUser-agent: *\nDisallow: /cop/\nDisallow: /mng/\n\nSitemap: https://www.mois.go.kr/sitemap.xml",
+      "suggested_llms_txt": "# 행정안전부 (Ministry of the Interior and Safety)\n> 대한민국 행정안전부 공식 웹사이트입니다.\n\n## 주요 콘텐츠\n- [보도자료](https://www.mois.go.kr/frt/bbs/type010/commonSelectBoardList.do)\n- [공지사항](https://www.mois.go.kr/frt/bbs/type010/commonSelectBoardList.do?bbsId=BBSMSTR_000000000006)"
+    },
+    {
+      "org_id": "GOV-003",
+      "name": "기획재정부",
+      "name_en": "Ministry of Economy and Finance",
+      "org_type": "central_ministry",
+      "url": "https://www.moef.go.kr",
+      "parent_org_id": null,
+      "scan_date": "2025-01-15",
+      "scan_version": "v1",
+      "scores": {
+        "total": 63,
+        "grade": "B",
+        "categories": {
+          "robots_txt": { "score": 18, "max": 25 },
+          "content_accessibility": { "score": 15, "max": 25 },
+          "structured_data": { "score": 11, "max": 20 },
+          "technical_accessibility": { "score": 15, "max": 15 },
+          "llms_txt": { "score": 0, "max": 10 },
+          "sitemap_xml": { "score": 4, "max": 5 }
+        },
+        "items": {
+          "RT-01": 5, "RT-02": 3, "RT-03": 2, "RT-04": 5, "RT-05": 3,
+          "CA-01": 5, "CA-02": 3, "CA-03": 3, "CA-04": 2, "CA-05": 2,
+          "SD-01": 4, "SD-02": 2, "SD-03": 2, "SD-04": 0, "SD-05": 3,
+          "TA-01": 3, "TA-02": 4, "TA-03": 4, "TA-04": 4,
+          "LT-01": 0, "LT-02": 0, "LT-03": 0,
+          "SM-01": 2, "SM-02": 2
+        }
+      },
+      "issues": [
+        { "code": "RT-03-major", "severity": "major", "description": "주요 LLM 크롤러에 대한 명시적 규칙이 없습니다.", "detail": "GPTBot, ClaudeBot, Google-Extended 모두 미언급.", "recommendation_code": "REC-RT-03" },
+        { "code": "CA-05-major", "severity": "major", "description": "일부 콘텐츠 페이지가 CSR 전용입니다.", "detail": "정책자료 페이지가 JS 렌더링으로만 표시.", "recommendation_code": "REC-CA-05" },
+        { "code": "SD-04-info", "severity": "info", "description": "schema.org 구조화된 데이터가 없습니다.", "detail": "", "recommendation_code": "REC-SD-04" },
+        { "code": "LT-01-info", "severity": "info", "description": "llms.txt 파일이 존재하지 않습니다.", "detail": "", "recommendation_code": "REC-LT-01" }
+      ],
+      "robots_txt": {
+        "exists": true, "syntax_valid": true,
+        "crawler_rules": { "GPTBot": "not_mentioned", "ClaudeBot": "not_mentioned", "Google-Extended": "not_mentioned", "Googlebot": "allowed", "Bytespider": "not_mentioned", "CCBot": "not_mentioned", "*": "partial_allow" }
+      },
+      "llms_txt": { "exists": false },
+      "sitemap_xml": { "exists": true, "valid": true, "contains_content_urls": false },
+      "metadata": { "has_title": true, "title_unique_per_page": true, "has_meta_description": true, "meta_description_unique": false, "has_og_tags": false, "has_schema_org": false, "has_lang_attribute": true },
+      "technical": { "https": true, "ttfb_ms": 680, "main_page_status": 200, "mobile_viewport": true, "primary_rendering": "ssr" },
+      "content_paths": {
+        "press_releases": { "list_url": "https://www.moef.go.kr/nw/nes/nesdta.do", "individual_url_accessible": true, "rendering_method": "ssr" },
+        "notices": { "list_url": "https://www.moef.go.kr/nw/nes/detailNesDta.do", "individual_url_accessible": true, "rendering_method": "ssr" }
+      },
+      "suggested_robots_txt": "User-agent: Googlebot\nAllow: /\n\nUser-agent: GPTBot\nAllow: /nw/\nAllow: /po/\nDisallow: /ad/\n\nUser-agent: ClaudeBot\nAllow: /nw/\nAllow: /po/\nDisallow: /ad/\n\nUser-agent: *\nDisallow: /ad/\n\nSitemap: https://www.moef.go.kr/sitemap.xml",
+      "suggested_llms_txt": "# 기획재정부 (Ministry of Economy and Finance)\n> 대한민국 기획재정부 공식 웹사이트입니다.\n\n## 주요 콘텐츠\n- [보도자료](https://www.moef.go.kr/nw/nes/nesdta.do)\n- [정책소개](https://www.moef.go.kr/po/)"
+    },
+    {
+      "org_id": "GOV-004",
+      "name": "외교부",
+      "name_en": "Ministry of Foreign Affairs",
+      "org_type": "central_ministry",
+      "url": "https://www.mofa.go.kr",
+      "parent_org_id": null,
+      "scan_date": "2025-01-15",
+      "scan_version": "v1",
+      "scores": {
+        "total": 58,
+        "grade": "C",
+        "categories": {
+          "robots_txt": { "score": 17, "max": 25 },
+          "content_accessibility": { "score": 15, "max": 25 },
+          "structured_data": { "score": 9, "max": 20 },
+          "technical_accessibility": { "score": 13, "max": 15 },
+          "llms_txt": { "score": 0, "max": 10 },
+          "sitemap_xml": { "score": 4, "max": 5 }
+        },
+        "items": {
+          "RT-01": 5, "RT-02": 2, "RT-03": 2, "RT-04": 5, "RT-05": 3,
+          "CA-01": 5, "CA-02": 3, "CA-03": 3, "CA-04": 2, "CA-05": 2,
+          "SD-01": 2, "SD-02": 2, "SD-03": 2, "SD-04": 0, "SD-05": 3,
+          "TA-01": 3, "TA-02": 4, "TA-03": 4, "TA-04": 2,
+          "LT-01": 0, "LT-02": 0, "LT-03": 0,
+          "SM-01": 2, "SM-02": 2
+        }
+      },
+      "issues": [
+        { "code": "RT-02-minor", "severity": "minor", "description": "robots.txt에 비표준 지시어가 포함되어 있습니다.", "detail": "비표준 지시어 발견.", "recommendation_code": "REC-RT-02" },
+        { "code": "RT-03-major", "severity": "major", "description": "주요 LLM 크롤러에 대한 명시적 규칙이 없습니다.", "detail": "GPTBot, ClaudeBot 등 미언급.", "recommendation_code": "REC-RT-03" },
+        { "code": "SD-01-major", "severity": "major", "description": "<title> 태그가 모든 페이지에서 동일합니다.", "detail": "모든 페이지에서 '외교부' 동일 타이틀 사용.", "recommendation_code": "REC-SD-01" },
+        { "code": "TA-04-minor", "severity": "minor", "description": "모바일 viewport 설정이 부분적입니다.", "detail": "viewport 메타는 있으나 반응형 미흡.", "recommendation_code": "REC-TA-04" },
+        { "code": "LT-01-info", "severity": "info", "description": "llms.txt 파일이 존재하지 않습니다.", "detail": "", "recommendation_code": "REC-LT-01" }
+      ],
+      "robots_txt": {
+        "exists": true, "syntax_valid": false,
+        "crawler_rules": { "GPTBot": "not_mentioned", "ClaudeBot": "not_mentioned", "Google-Extended": "not_mentioned", "Googlebot": "allowed", "Bytespider": "not_mentioned", "CCBot": "not_mentioned", "*": "partial_allow" }
+      },
+      "llms_txt": { "exists": false },
+      "sitemap_xml": { "exists": true, "valid": true, "contains_content_urls": false },
+      "metadata": { "has_title": true, "title_unique_per_page": false, "has_meta_description": true, "meta_description_unique": false, "has_og_tags": false, "has_schema_org": false, "has_lang_attribute": true },
+      "technical": { "https": true, "ttfb_ms": 720, "main_page_status": 200, "mobile_viewport": true, "primary_rendering": "ssr" },
+      "content_paths": {
+        "press_releases": { "list_url": "https://www.mofa.go.kr/www/brd/m_4080/list.do", "individual_url_accessible": true, "rendering_method": "ssr" },
+        "notices": { "list_url": "https://www.mofa.go.kr/www/brd/m_4049/list.do", "individual_url_accessible": true, "rendering_method": "ssr" }
+      },
+      "suggested_robots_txt": "User-agent: Googlebot\nAllow: /\n\nUser-agent: GPTBot\nAllow: /www/brd/\nAllow: /www/pgm/\nDisallow: /admin/\n\nUser-agent: ClaudeBot\nAllow: /www/brd/\nAllow: /www/pgm/\nDisallow: /admin/\n\nUser-agent: *\nDisallow: /admin/\n\nSitemap: https://www.mofa.go.kr/sitemap.xml",
+      "suggested_llms_txt": "# 외교부 (Ministry of Foreign Affairs)\n> 대한민국 외교부 공식 웹사이트입니다.\n\n## 주요 콘텐츠\n- [보도자료](https://www.mofa.go.kr/www/brd/m_4080/list.do)\n- [공지사항](https://www.mofa.go.kr/www/brd/m_4049/list.do)"
+    },
+    {
+      "org_id": "GOV-005",
+      "name": "보건복지부",
+      "name_en": "Ministry of Health and Welfare",
+      "org_type": "central_ministry",
+      "url": "https://www.mohw.go.kr",
+      "parent_org_id": null,
+      "scan_date": "2025-01-15",
+      "scan_version": "v1",
+      "scores": {
+        "total": 52,
+        "grade": "C",
+        "categories": {
+          "robots_txt": { "score": 15, "max": 25 },
+          "content_accessibility": { "score": 14, "max": 25 },
+          "structured_data": { "score": 9, "max": 20 },
+          "technical_accessibility": { "score": 11, "max": 15 },
+          "llms_txt": { "score": 0, "max": 10 },
+          "sitemap_xml": { "score": 3, "max": 5 }
+        },
+        "items": {
+          "RT-01": 5, "RT-02": 2, "RT-03": 0, "RT-04": 5, "RT-05": 3,
+          "CA-01": 7, "CA-02": 0, "CA-03": 3, "CA-04": 2, "CA-05": 2,
+          "SD-01": 2, "SD-02": 2, "SD-03": 2, "SD-04": 0, "SD-05": 3,
+          "TA-01": 3, "TA-02": 2, "TA-03": 4, "TA-04": 2,
+          "LT-01": 0, "LT-02": 0, "LT-03": 0,
+          "SM-01": 2, "SM-02": 1
+        }
+      },
+      "issues": [
+        { "code": "RT-03-major", "severity": "major", "description": "주요 LLM 크롤러에 대한 명시적 규칙이 없습니다.", "detail": "GPTBot, ClaudeBot, Google-Extended 모두 미언급.", "recommendation_code": "REC-RT-03" },
+        { "code": "CA-02-major", "severity": "major", "description": "정책자료 페이지에 개별 URL이 없습니다.", "detail": "정책소개가 단일 SPA 페이지로 구성됨.", "recommendation_code": "REC-CA-02" },
+        { "code": "TA-02-minor", "severity": "minor", "description": "메인 페이지 응답 속도가 느립니다.", "detail": "TTFB 2.1초로 3초 미만이나 개선 권장.", "recommendation_code": "REC-TA-02" },
+        { "code": "SD-04-info", "severity": "info", "description": "schema.org 구조화된 데이터가 없습니다.", "detail": "", "recommendation_code": "REC-SD-04" },
+        { "code": "LT-01-info", "severity": "info", "description": "llms.txt 파일이 존재하지 않습니다.", "detail": "", "recommendation_code": "REC-LT-01" }
+      ],
+      "robots_txt": {
+        "exists": true, "syntax_valid": false,
+        "crawler_rules": { "GPTBot": "not_mentioned", "ClaudeBot": "not_mentioned", "Google-Extended": "not_mentioned", "Googlebot": "allowed", "Bytespider": "not_mentioned", "CCBot": "not_mentioned", "*": "partial_allow" }
+      },
+      "llms_txt": { "exists": false },
+      "sitemap_xml": { "exists": true, "valid": true, "contains_content_urls": false },
+      "metadata": { "has_title": true, "title_unique_per_page": false, "has_meta_description": true, "meta_description_unique": false, "has_og_tags": false, "has_schema_org": false, "has_lang_attribute": true },
+      "technical": { "https": true, "ttfb_ms": 2100, "main_page_status": 200, "mobile_viewport": true, "primary_rendering": "ssr" },
+      "content_paths": {
+        "press_releases": { "list_url": "https://www.mohw.go.kr/board.es?mid=a10503000000", "individual_url_accessible": true, "rendering_method": "ssr" },
+        "policy_pages": { "list_url": "https://www.mohw.go.kr/menu.es?mid=a10101000000", "individual_url_accessible": false, "rendering_method": "csr" },
+        "notices": { "list_url": "https://www.mohw.go.kr/board.es?mid=a10501000000", "individual_url_accessible": true, "rendering_method": "ssr" }
+      },
+      "suggested_robots_txt": "User-agent: Googlebot\nAllow: /\n\nUser-agent: GPTBot\nAllow: /board.es\nAllow: /menu.es\nDisallow: /admin/\nDisallow: /login/\n\nUser-agent: ClaudeBot\nAllow: /board.es\nAllow: /menu.es\nDisallow: /admin/\nDisallow: /login/\n\nUser-agent: *\nDisallow: /admin/\nDisallow: /login/\n\nSitemap: https://www.mohw.go.kr/sitemap.xml",
+      "suggested_llms_txt": "# 보건복지부 (Ministry of Health and Welfare)\n> 대한민국 보건복지부 공식 웹사이트입니다.\n\n## 주요 콘텐츠\n- [보도자료](https://www.mohw.go.kr/board.es?mid=a10503000000)\n- [공지사항](https://www.mohw.go.kr/board.es?mid=a10501000000)\n- [정책소개](https://www.mohw.go.kr/menu.es?mid=a10101000000)"
+    },
+    {
+      "org_id": "GOV-006",
+      "name": "교육부",
+      "name_en": "Ministry of Education",
+      "org_type": "central_ministry",
+      "url": "https://www.moe.go.kr",
+      "parent_org_id": null,
+      "scan_date": "2025-01-15",
+      "scan_version": "v1",
+      "scores": {
+        "total": 47,
+        "grade": "C",
+        "categories": {
+          "robots_txt": { "score": 14, "max": 25 },
+          "content_accessibility": { "score": 10, "max": 25 },
+          "structured_data": { "score": 9, "max": 20 },
+          "technical_accessibility": { "score": 11, "max": 15 },
+          "llms_txt": { "score": 0, "max": 10 },
+          "sitemap_xml": { "score": 3, "max": 5 }
+        },
+        "items": {
+          "RT-01": 5, "RT-02": 2, "RT-03": 0, "RT-04": 5, "RT-05": 2,
+          "CA-01": 3, "CA-02": 0, "CA-03": 3, "CA-04": 2, "CA-05": 2,
+          "SD-01": 2, "SD-02": 2, "SD-03": 2, "SD-04": 0, "SD-05": 3,
+          "TA-01": 3, "TA-02": 2, "TA-03": 4, "TA-04": 2,
+          "LT-01": 0, "LT-02": 0, "LT-03": 0,
+          "SM-01": 2, "SM-02": 1
+        }
+      },
+      "issues": [
+        { "code": "RT-03-major", "severity": "major", "description": "주요 LLM 크롤러에 대한 명시적 규칙이 없습니다.", "detail": "GPTBot, ClaudeBot, Google-Extended 모두 미언급.", "recommendation_code": "REC-RT-03" },
+        { "code": "CA-01-major", "severity": "major", "description": "보도자료 URL이 세션 의존적입니다.", "detail": "보도자료 접근 시 세션 기반 URL 구조로, 외부 직접 링크가 불안정.", "recommendation_code": "REC-CA-01" },
+        { "code": "CA-02-major", "severity": "major", "description": "정책자료 페이지에 개별 URL이 없습니다.", "detail": "", "recommendation_code": "REC-CA-02" },
+        { "code": "CA-05-major", "severity": "major", "description": "일부 콘텐츠 페이지가 CSR 전용입니다.", "detail": "정책소개 영역이 JS 렌더링.", "recommendation_code": "REC-CA-05" },
+        { "code": "LT-01-info", "severity": "info", "description": "llms.txt 파일이 존재하지 않습니다.", "detail": "", "recommendation_code": "REC-LT-01" }
+      ],
+      "robots_txt": {
+        "exists": true, "syntax_valid": false,
+        "crawler_rules": { "GPTBot": "not_mentioned", "ClaudeBot": "not_mentioned", "Google-Extended": "not_mentioned", "Googlebot": "allowed", "Bytespider": "not_mentioned", "CCBot": "not_mentioned", "*": "partial_allow" }
+      },
+      "llms_txt": { "exists": false },
+      "sitemap_xml": { "exists": true, "valid": true, "contains_content_urls": false },
+      "metadata": { "has_title": true, "title_unique_per_page": false, "has_meta_description": true, "meta_description_unique": false, "has_og_tags": false, "has_schema_org": false, "has_lang_attribute": true },
+      "technical": { "https": true, "ttfb_ms": 1800, "main_page_status": 200, "mobile_viewport": true, "primary_rendering": "ssr" },
+      "content_paths": {
+        "press_releases": { "list_url": "https://www.moe.go.kr/boardCnts/listRenew.do?boardID=294", "individual_url_accessible": true, "rendering_method": "ssr" },
+        "notices": { "list_url": "https://www.moe.go.kr/boardCnts/listRenew.do?boardID=295", "individual_url_accessible": true, "rendering_method": "ssr" }
+      },
+      "suggested_robots_txt": "User-agent: Googlebot\nAllow: /\n\nUser-agent: GPTBot\nAllow: /boardCnts/\nAllow: /sub/\nDisallow: /admin/\n\nUser-agent: ClaudeBot\nAllow: /boardCnts/\nAllow: /sub/\nDisallow: /admin/\n\nUser-agent: *\nDisallow: /admin/\n\nSitemap: https://www.moe.go.kr/sitemap.xml",
+      "suggested_llms_txt": "# 교육부 (Ministry of Education)\n> 대한민국 교육부 공식 웹사이트입니다.\n\n## 주요 콘텐츠\n- [보도자료](https://www.moe.go.kr/boardCnts/listRenew.do?boardID=294)\n- [공지사항](https://www.moe.go.kr/boardCnts/listRenew.do?boardID=295)"
+    },
+    {
+      "org_id": "GOV-007",
+      "name": "환경부",
+      "name_en": "Ministry of Environment",
+      "org_type": "central_ministry",
+      "url": "https://www.me.go.kr",
+      "parent_org_id": null,
+      "scan_date": "2025-01-15",
+      "scan_version": "v1",
+      "scores": {
+        "total": 41,
+        "grade": "C",
+        "categories": {
+          "robots_txt": { "score": 13, "max": 25 },
+          "content_accessibility": { "score": 8, "max": 25 },
+          "structured_data": { "score": 7, "max": 20 },
+          "technical_accessibility": { "score": 11, "max": 15 },
+          "llms_txt": { "score": 0, "max": 10 },
+          "sitemap_xml": { "score": 2, "max": 5 }
+        },
+        "items": {
+          "RT-01": 5, "RT-02": 1, "RT-03": 0, "RT-04": 5, "RT-05": 2,
+          "CA-01": 3, "CA-02": 0, "CA-03": 3, "CA-04": 2, "CA-05": 0,
+          "SD-01": 2, "SD-02": 2, "SD-03": 0, "SD-04": 0, "SD-05": 3,
+          "TA-01": 3, "TA-02": 2, "TA-03": 4, "TA-04": 2,
+          "LT-01": 0, "LT-02": 0, "LT-03": 0,
+          "SM-01": 2, "SM-02": 0
+        }
+      },
+      "issues": [
+        { "code": "RT-02-minor", "severity": "minor", "description": "robots.txt에 문법 오류가 있습니다.", "detail": "일부 비표준 지시어 및 형식 오류.", "recommendation_code": "REC-RT-02" },
+        { "code": "RT-03-major", "severity": "major", "description": "주요 LLM 크롤러에 대한 명시적 규칙이 없습니다.", "detail": "", "recommendation_code": "REC-RT-03" },
+        { "code": "CA-02-major", "severity": "major", "description": "정책자료 페이지에 개별 URL이 없습니다.", "detail": "", "recommendation_code": "REC-CA-02" },
+        { "code": "CA-05-critical", "severity": "critical", "description": "주요 콘텐츠 페이지가 CSR 전용입니다.", "detail": "보도자료, 정책자료 모두 클라이언트 사이드 렌더링.", "recommendation_code": "REC-CA-05" },
+        { "code": "SD-03-minor", "severity": "minor", "description": "Open Graph 태그가 없습니다.", "detail": "", "recommendation_code": "REC-SD-03" },
+        { "code": "LT-01-info", "severity": "info", "description": "llms.txt 파일이 존재하지 않습니다.", "detail": "", "recommendation_code": "REC-LT-01" },
+        { "code": "SM-02-minor", "severity": "minor", "description": "sitemap.xml에 주요 콘텐츠 URL이 포함되어 있지 않습니다.", "detail": "", "recommendation_code": "REC-SM-02" }
+      ],
+      "robots_txt": {
+        "exists": true, "syntax_valid": false,
+        "crawler_rules": { "GPTBot": "not_mentioned", "ClaudeBot": "not_mentioned", "Google-Extended": "not_mentioned", "Googlebot": "allowed", "Bytespider": "not_mentioned", "CCBot": "not_mentioned", "*": "partial_allow" }
+      },
+      "llms_txt": { "exists": false },
+      "sitemap_xml": { "exists": true, "valid": true, "contains_content_urls": false },
+      "metadata": { "has_title": true, "title_unique_per_page": false, "has_meta_description": true, "meta_description_unique": false, "has_og_tags": false, "has_schema_org": false, "has_lang_attribute": true },
+      "technical": { "https": true, "ttfb_ms": 1900, "main_page_status": 200, "mobile_viewport": true, "primary_rendering": "csr" },
+      "content_paths": {
+        "press_releases": { "list_url": "https://www.me.go.kr/home/web/board/list.do?boardMasterId=1", "individual_url_accessible": true, "rendering_method": "csr" },
+        "notices": { "list_url": "https://www.me.go.kr/home/web/board/list.do?boardMasterId=2", "individual_url_accessible": true, "rendering_method": "ssr" }
+      },
+      "suggested_robots_txt": "User-agent: Googlebot\nAllow: /\n\nUser-agent: GPTBot\nAllow: /home/web/board/\nAllow: /home/web/policy/\nDisallow: /admin/\n\nUser-agent: ClaudeBot\nAllow: /home/web/board/\nAllow: /home/web/policy/\nDisallow: /admin/\n\nUser-agent: *\nDisallow: /admin/\n\nSitemap: https://www.me.go.kr/sitemap.xml",
+      "suggested_llms_txt": "# 환경부 (Ministry of Environment)\n> 대한민국 환경부 공식 웹사이트입니다.\n\n## 주요 콘텐츠\n- [보도자료](https://www.me.go.kr/home/web/board/list.do?boardMasterId=1)\n- [공지사항](https://www.me.go.kr/home/web/board/list.do?boardMasterId=2)"
+    },
+    {
+      "org_id": "GOV-008",
+      "name": "국토교통부",
+      "name_en": "Ministry of Land, Infrastructure and Transport",
+      "org_type": "central_ministry",
+      "url": "https://www.molit.go.kr",
+      "parent_org_id": null,
+      "scan_date": "2025-01-15",
+      "scan_version": "v1",
+      "scores": {
+        "total": 35,
+        "grade": "D",
+        "categories": {
+          "robots_txt": { "score": 11, "max": 25 },
+          "content_accessibility": { "score": 6, "max": 25 },
+          "structured_data": { "score": 7, "max": 20 },
+          "technical_accessibility": { "score": 9, "max": 15 },
+          "llms_txt": { "score": 0, "max": 10 },
+          "sitemap_xml": { "score": 2, "max": 5 }
+        },
+        "items": {
+          "RT-01": 5, "RT-02": 1, "RT-03": 0, "RT-04": 5, "RT-05": 0,
+          "CA-01": 3, "CA-02": 0, "CA-03": 3, "CA-04": 0, "CA-05": 0,
+          "SD-01": 2, "SD-02": 2, "SD-03": 0, "SD-04": 0, "SD-05": 3,
+          "TA-01": 3, "TA-02": 2, "TA-03": 2, "TA-04": 2,
+          "LT-01": 0, "LT-02": 0, "LT-03": 0,
+          "SM-01": 2, "SM-02": 0
+        }
+      },
+      "issues": [
+        { "code": "RT-03-major", "severity": "major", "description": "주요 LLM 크롤러에 대한 명시적 규칙이 없습니다.", "detail": "", "recommendation_code": "REC-RT-03" },
+        { "code": "RT-05-major", "severity": "major", "description": "보도자료/정책자료 경로가 robots.txt에 의해 차단되어 있습니다.", "detail": "주요 콘텐츠 경로가 Disallow로 차단.", "recommendation_code": "REC-RT-05" },
+        { "code": "CA-02-major", "severity": "major", "description": "정책자료 페이지에 개별 URL이 없습니다.", "detail": "", "recommendation_code": "REC-CA-02" },
+        { "code": "CA-04-minor", "severity": "minor", "description": "URL 패턴이 불규칙합니다.", "detail": "세션 ID가 URL에 포함되는 패턴.", "recommendation_code": "REC-CA-04" },
+        { "code": "CA-05-critical", "severity": "critical", "description": "주요 콘텐츠 페이지가 CSR 전용입니다.", "detail": "보도자료 상세 페이지가 JS 렌더링.", "recommendation_code": "REC-CA-05" },
+        { "code": "TA-03-major", "severity": "major", "description": "주요 페이지에서 HTTP 에러가 발생합니다.", "detail": "일부 보도자료 링크에서 404 에러.", "recommendation_code": "REC-TA-03" },
+        { "code": "LT-01-info", "severity": "info", "description": "llms.txt 파일이 존재하지 않습니다.", "detail": "", "recommendation_code": "REC-LT-01" }
+      ],
+      "robots_txt": {
+        "exists": true, "syntax_valid": false,
+        "crawler_rules": { "GPTBot": "not_mentioned", "ClaudeBot": "not_mentioned", "Google-Extended": "not_mentioned", "Googlebot": "partial_allow", "Bytespider": "blocked", "CCBot": "not_mentioned", "*": "partial_allow" }
+      },
+      "llms_txt": { "exists": false },
+      "sitemap_xml": { "exists": true, "valid": true, "contains_content_urls": false },
+      "metadata": { "has_title": true, "title_unique_per_page": false, "has_meta_description": true, "meta_description_unique": false, "has_og_tags": false, "has_schema_org": false, "has_lang_attribute": true },
+      "technical": { "https": true, "ttfb_ms": 2500, "main_page_status": 200, "mobile_viewport": true, "primary_rendering": "csr" },
+      "content_paths": {
+        "press_releases": { "list_url": "https://www.molit.go.kr/USR/NEWS/m_71/lst.jsp", "individual_url_accessible": true, "rendering_method": "csr" },
+        "notices": { "list_url": "https://www.molit.go.kr/USR/BORD0201/m_69/lst.jsp", "individual_url_accessible": true, "rendering_method": "ssr" }
+      },
+      "suggested_robots_txt": "User-agent: Googlebot\nAllow: /\n\nUser-agent: GPTBot\nAllow: /USR/NEWS/\nAllow: /USR/BORD0201/\nDisallow: /ADMIN/\n\nUser-agent: ClaudeBot\nAllow: /USR/NEWS/\nAllow: /USR/BORD0201/\nDisallow: /ADMIN/\n\nUser-agent: *\nDisallow: /ADMIN/\n\nSitemap: https://www.molit.go.kr/sitemap.xml",
+      "suggested_llms_txt": "# 국토교통부 (Ministry of Land, Infrastructure and Transport)\n> 대한민국 국토교통부 공식 웹사이트입니다.\n\n## 주요 콘텐츠\n- [보도자료](https://www.molit.go.kr/USR/NEWS/m_71/lst.jsp)\n- [공지사항](https://www.molit.go.kr/USR/BORD0201/m_69/lst.jsp)"
+    },
+    {
+      "org_id": "GOV-009",
+      "name": "법무부",
+      "name_en": "Ministry of Justice",
+      "org_type": "central_ministry",
+      "url": "https://www.moj.go.kr",
+      "parent_org_id": null,
+      "scan_date": "2025-01-15",
+      "scan_version": "v1",
+      "scores": {
+        "total": 28,
+        "grade": "D",
+        "categories": {
+          "robots_txt": { "score": 6, "max": 25 },
+          "content_accessibility": { "score": 6, "max": 25 },
+          "structured_data": { "score": 5, "max": 20 },
+          "technical_accessibility": { "score": 9, "max": 15 },
+          "llms_txt": { "score": 0, "max": 10 },
+          "sitemap_xml": { "score": 2, "max": 5 }
+        },
+        "items": {
+          "RT-01": 5, "RT-02": 1, "RT-03": 0, "RT-04": 0, "RT-05": 0,
+          "CA-01": 3, "CA-02": 0, "CA-03": 3, "CA-04": 0, "CA-05": 0,
+          "SD-01": 2, "SD-02": 0, "SD-03": 0, "SD-04": 0, "SD-05": 3,
+          "TA-01": 3, "TA-02": 2, "TA-03": 2, "TA-04": 2,
+          "LT-01": 0, "LT-02": 0, "LT-03": 0,
+          "SM-01": 2, "SM-02": 0
+        }
+      },
+      "issues": [
+        { "code": "RT-04-critical", "severity": "critical", "description": "User-agent: * Disallow: /로 모든 크롤러를 전면 차단하고 있습니다.", "detail": "robots.txt에서 모든 크롤러에 대해 전체 경로를 차단.", "recommendation_code": "REC-RT-04" },
+        { "code": "RT-03-major", "severity": "major", "description": "주요 LLM 크롤러에 대한 명시적 규칙이 없습니다.", "detail": "", "recommendation_code": "REC-RT-03" },
+        { "code": "RT-05-major", "severity": "major", "description": "보도자료/정책자료 경로가 차단되어 있습니다.", "detail": "전면 차단으로 인해 모든 콘텐츠 경로 접근 불가.", "recommendation_code": "REC-RT-05" },
+        { "code": "CA-02-major", "severity": "major", "description": "정책자료 페이지에 개별 URL이 없습니다.", "detail": "", "recommendation_code": "REC-CA-02" },
+        { "code": "CA-05-critical", "severity": "critical", "description": "주요 콘텐츠 페이지가 CSR 전용입니다.", "detail": "보도자료 상세가 JS 동적 렌더링.", "recommendation_code": "REC-CA-05" },
+        { "code": "SD-02-major", "severity": "major", "description": "<meta description>이 없거나 모든 페이지에서 동일합니다.", "detail": "메타 설명 태그 미사용.", "recommendation_code": "REC-SD-02" },
+        { "code": "LT-01-info", "severity": "info", "description": "llms.txt 파일이 존재하지 않습니다.", "detail": "", "recommendation_code": "REC-LT-01" }
+      ],
+      "robots_txt": {
+        "exists": true, "syntax_valid": false,
+        "crawler_rules": { "GPTBot": "not_mentioned", "ClaudeBot": "not_mentioned", "Google-Extended": "not_mentioned", "Googlebot": "not_mentioned", "Bytespider": "not_mentioned", "CCBot": "not_mentioned", "*": "blocked" }
+      },
+      "llms_txt": { "exists": false },
+      "sitemap_xml": { "exists": true, "valid": false, "contains_content_urls": false },
+      "metadata": { "has_title": true, "title_unique_per_page": false, "has_meta_description": false, "meta_description_unique": false, "has_og_tags": false, "has_schema_org": false, "has_lang_attribute": true },
+      "technical": { "https": true, "ttfb_ms": 2800, "main_page_status": 200, "mobile_viewport": true, "primary_rendering": "csr" },
+      "content_paths": {
+        "press_releases": { "list_url": "https://www.moj.go.kr/bbs/moj/62/artclList.do", "individual_url_accessible": true, "rendering_method": "csr" },
+        "notices": { "list_url": "https://www.moj.go.kr/bbs/moj/59/artclList.do", "individual_url_accessible": true, "rendering_method": "ssr" }
+      },
+      "suggested_robots_txt": "User-agent: Googlebot\nAllow: /\n\nUser-agent: GPTBot\nAllow: /bbs/\nAllow: /moj/\nDisallow: /admin/\n\nUser-agent: ClaudeBot\nAllow: /bbs/\nAllow: /moj/\nDisallow: /admin/\n\nUser-agent: *\nAllow: /bbs/\nDisallow: /admin/\n\nSitemap: https://www.moj.go.kr/sitemap.xml",
+      "suggested_llms_txt": "# 법무부 (Ministry of Justice)\n> 대한민국 법무부 공식 웹사이트입니다.\n\n## 주요 콘텐츠\n- [보도자료](https://www.moj.go.kr/bbs/moj/62/artclList.do)\n- [공지사항](https://www.moj.go.kr/bbs/moj/59/artclList.do)"
+    },
+    {
+      "org_id": "GOV-010",
+      "name": "국방부",
+      "name_en": "Ministry of National Defense",
+      "org_type": "central_ministry",
+      "url": "https://www.mnd.go.kr",
+      "parent_org_id": null,
+      "scan_date": "2025-01-15",
+      "scan_version": "v1",
+      "scores": {
+        "total": 14,
+        "grade": "F",
+        "categories": {
+          "robots_txt": { "score": 7, "max": 25 },
+          "content_accessibility": { "score": 0, "max": 25 },
+          "structured_data": { "score": 2, "max": 20 },
+          "technical_accessibility": { "score": 5, "max": 15 },
+          "llms_txt": { "score": 0, "max": 10 },
+          "sitemap_xml": { "score": 0, "max": 5 }
+        },
+        "items": {
+          "RT-01": 5, "RT-02": 2, "RT-03": 0, "RT-04": 0, "RT-05": 0,
+          "CA-01": 0, "CA-02": 0, "CA-03": 0, "CA-04": 0, "CA-05": 0,
+          "SD-01": 2, "SD-02": 0, "SD-03": 0, "SD-04": 0, "SD-05": 0,
+          "TA-01": 3, "TA-02": 0, "TA-03": 2, "TA-04": 0,
+          "LT-01": 0, "LT-02": 0, "LT-03": 0,
+          "SM-01": 0, "SM-02": 0
+        }
+      },
+      "issues": [
+        { "code": "RT-04-critical", "severity": "critical", "description": "User-agent: * Disallow: /로 모든 크롤러를 전면 차단하고 있습니다.", "detail": "보안 정책에 따라 전면 차단 설정 중.", "recommendation_code": "REC-RT-04" },
+        { "code": "CA-01-critical", "severity": "critical", "description": "보도자료에 개별 URL이 없습니다.", "detail": "보도자료가 iframe/동적 로딩으로만 접근 가능.", "recommendation_code": "REC-CA-01" },
+        { "code": "CA-02-major", "severity": "major", "description": "정책자료 페이지에 개별 URL이 없습니다.", "detail": "", "recommendation_code": "REC-CA-02" },
+        { "code": "CA-03-major", "severity": "major", "description": "공지사항에 개별 URL이 없습니다.", "detail": "", "recommendation_code": "REC-CA-03" },
+        { "code": "CA-05-critical", "severity": "critical", "description": "주요 콘텐츠 페이지가 CSR 전용입니다.", "detail": "전체 사이트가 클라이언트 사이드 렌더링으로 구현.", "recommendation_code": "REC-CA-05" },
+        { "code": "SD-01-major", "severity": "major", "description": "<title> 태그가 모든 페이지에서 동일합니다.", "detail": "", "recommendation_code": "REC-SD-01" },
+        { "code": "SD-02-major", "severity": "major", "description": "<meta description>이 없습니다.", "detail": "", "recommendation_code": "REC-SD-02" },
+        { "code": "SD-05-minor", "severity": "minor", "description": "<html> 태그에 lang 속성이 없습니다.", "detail": "", "recommendation_code": "REC-SD-05" },
+        { "code": "TA-02-minor", "severity": "minor", "description": "메인 페이지 응답 속도가 느립니다.", "detail": "TTFB 4.2초.", "recommendation_code": "REC-TA-02" },
+        { "code": "TA-04-minor", "severity": "minor", "description": "모바일 viewport 설정이 없습니다.", "detail": "", "recommendation_code": "REC-TA-04" },
+        { "code": "SM-01-minor", "severity": "minor", "description": "sitemap.xml이 존재하지 않습니다.", "detail": "", "recommendation_code": "REC-SM-01" },
+        { "code": "LT-01-info", "severity": "info", "description": "llms.txt 파일이 존재하지 않습니다.", "detail": "", "recommendation_code": "REC-LT-01" }
+      ],
+      "robots_txt": {
+        "exists": true, "syntax_valid": true,
+        "crawler_rules": { "GPTBot": "not_mentioned", "ClaudeBot": "not_mentioned", "Google-Extended": "not_mentioned", "Googlebot": "not_mentioned", "Bytespider": "not_mentioned", "CCBot": "not_mentioned", "*": "blocked" }
+      },
+      "llms_txt": { "exists": false },
+      "sitemap_xml": { "exists": false, "valid": false, "contains_content_urls": false },
+      "metadata": { "has_title": true, "title_unique_per_page": false, "has_meta_description": false, "meta_description_unique": false, "has_og_tags": false, "has_schema_org": false, "has_lang_attribute": false },
+      "technical": { "https": true, "ttfb_ms": 4200, "main_page_status": 200, "mobile_viewport": false, "primary_rendering": "csr" },
+      "content_paths": {
+        "press_releases": { "list_url": "https://www.mnd.go.kr/user/newsInUserRecord.action", "individual_url_accessible": false, "rendering_method": "csr" },
+        "notices": { "list_url": "https://www.mnd.go.kr/user/boardList.action", "individual_url_accessible": false, "rendering_method": "csr" }
+      },
+      "suggested_robots_txt": "# 검색엔진 허용 (보안이 필요한 경로만 차단)\nUser-agent: Googlebot\nAllow: /user/\nDisallow: /admin/\nDisallow: /cop/\n\nUser-agent: GPTBot\nAllow: /user/newsInUserRecord.action\nAllow: /user/boardList.action\nDisallow: /admin/\nDisallow: /cop/\n\nUser-agent: ClaudeBot\nAllow: /user/newsInUserRecord.action\nAllow: /user/boardList.action\nDisallow: /admin/\nDisallow: /cop/\n\nUser-agent: *\nDisallow: /admin/\nDisallow: /cop/\n\nSitemap: https://www.mnd.go.kr/sitemap.xml",
+      "suggested_llms_txt": "# 국방부 (Ministry of National Defense)\n> 대한민국 국방부 공식 웹사이트입니다.\n\n## 주요 콘텐츠\n- [보도자료](https://www.mnd.go.kr/user/newsInUserRecord.action)\n- [공지사항](https://www.mnd.go.kr/user/boardList.action)"
+    }
+  ]
+}
