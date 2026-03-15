@@ -3446,9 +3446,9 @@
         "press": false,
         "notice": false,
         "policy": false,
-        "press_detected": true,
-        "notice_detected": true,
-        "policy_detected": true
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -8725,9 +8725,9 @@
         "press": false,
         "notice": false,
         "policy": false,
-        "press_detected": false,
-        "notice_detected": false,
-        "policy_detected": false
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -20290,9 +20290,9 @@
         "press": false,
         "notice": false,
         "policy": false,
-        "press_detected": true,
-        "notice_detected": true,
-        "policy_detected": true
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -22143,9 +22143,9 @@
         "press": false,
         "notice": false,
         "policy": false,
-        "press_detected": true,
-        "notice_detected": true,
-        "policy_detected": true
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -24871,9 +24871,9 @@
         "press": false,
         "notice": false,
         "policy": false,
-        "press_detected": true,
+        "press_detected": false,
         "notice_detected": false,
-        "policy_detected": true
+        "policy_detected": false
       }
     },
     {
@@ -26070,9 +26070,9 @@
         "press": false,
         "notice": false,
         "policy": false,
-        "press_detected": true,
-        "notice_detected": true,
-        "policy_detected": true
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -28122,9 +28122,9 @@
         "press": false,
         "notice": false,
         "policy": false,
-        "press_detected": true,
-        "notice_detected": true,
-        "policy_detected": true
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -28460,9 +28460,9 @@
         "press": false,
         "notice": false,
         "policy": false,
-        "press_detected": true,
-        "notice_detected": true,
-        "policy_detected": true
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -28629,9 +28629,9 @@
         "press": false,
         "notice": false,
         "policy": false,
-        "press_detected": true,
-        "notice_detected": true,
-        "policy_detected": true
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -31801,8 +31801,8 @@
         "press": false,
         "notice": false,
         "policy": false,
-        "press_detected": true,
-        "notice_detected": true,
+        "press_detected": false,
+        "notice_detected": false,
         "policy_detected": false
       }
     },
@@ -34140,9 +34140,9 @@
         "press": false,
         "notice": false,
         "policy": false,
-        "press_detected": true,
-        "notice_detected": true,
-        "policy_detected": true
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -41122,7 +41122,7 @@
         "html_length": 222909
       },
       "deep_analysis": {
-        "press": true,
+        "press": false,
         "notice": true,
         "policy": true,
         "press_detected": true,
@@ -44856,11 +44856,11 @@
         "html_length": 550
       },
       "deep_analysis": {
-        "press": true,
-        "notice": true,
+        "press": false,
+        "notice": false,
         "policy": false,
-        "press_detected": true,
-        "notice_detected": true,
+        "press_detected": false,
+        "notice_detected": false,
         "policy_detected": false
       }
     },
@@ -45551,8 +45551,8 @@
         "press": false,
         "notice": false,
         "policy": false,
-        "press_detected": true,
-        "notice_detected": true,
+        "press_detected": false,
+        "notice_detected": false,
         "policy_detected": false
       }
     },
@@ -46251,9 +46251,9 @@
         "press": false,
         "notice": false,
         "policy": false,
-        "press_detected": true,
-        "notice_detected": true,
-        "policy_detected": true
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -46426,9 +46426,9 @@
         "press": false,
         "notice": false,
         "policy": false,
-        "press_detected": true,
-        "notice_detected": true,
-        "policy_detected": true
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -47474,15 +47474,15 @@
       "scan_date": "2026-03-15",
       "scan_version": "v1",
       "scores": {
-        "total": 64,
-        "grade": "B",
+        "total": 57,
+        "grade": "C",
         "categories": {
           "robots_txt": {
             "score": 25,
             "max": 25
           },
           "content_accessibility": {
-            "score": 12,
+            "score": 5,
             "max": 25
           },
           "structured_data": {
@@ -47508,7 +47508,7 @@
           "RT-03": 7,
           "RT-04": 5,
           "RT-05": 5,
-          "CA-01": 7,
+          "CA-01": 0,
           "CA-02": 5,
           "CA-03": 0,
           "CA-04": 0,
@@ -47630,7 +47630,7 @@
         "html_length": 67945
       },
       "deep_analysis": {
-        "press": false,
+        "press": true,
         "notice": true,
         "policy": false,
         "press_detected": true,
@@ -49883,8 +49883,8 @@
         "press": false,
         "notice": false,
         "policy": false,
-        "press_detected": true,
-        "notice_detected": true,
+        "press_detected": false,
+        "notice_detected": false,
         "policy_detected": false
       }
     },
@@ -50233,9 +50233,9 @@
         "press": false,
         "notice": false,
         "policy": false,
-        "press_detected": false,
-        "notice_detected": false,
-        "policy_detected": false
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -51259,7 +51259,7 @@
         "notice": false,
         "policy": false,
         "press_detected": false,
-        "notice_detected": true,
+        "notice_detected": false,
         "policy_detected": false
       }
     },
@@ -53497,9 +53497,9 @@
         "press": false,
         "notice": false,
         "policy": false,
-        "press_detected": true,
+        "press_detected": false,
         "notice_detected": false,
-        "policy_detected": true
+        "policy_detected": false
       }
     },
     {
@@ -53987,7 +53987,7 @@
       "scan_date": "2026-03-15",
       "scan_version": "v1",
       "scores": {
-        "total": 66,
+        "total": 61,
         "grade": "B",
         "categories": {
           "robots_txt": {
@@ -53995,7 +53995,7 @@
             "max": 25
           },
           "content_accessibility": {
-            "score": 17,
+            "score": 12,
             "max": 25
           },
           "structured_data": {
@@ -54022,7 +54022,7 @@
           "RT-04": 5,
           "RT-05": 5,
           "CA-01": 7,
-          "CA-02": 5,
+          "CA-02": 0,
           "CA-03": 5,
           "CA-04": 0,
           "CA-05": 0,
@@ -54151,7 +54151,7 @@
       "deep_analysis": {
         "press": false,
         "notice": false,
-        "policy": false,
+        "policy": true,
         "press_detected": true,
         "notice_detected": false,
         "policy_detected": true
@@ -54584,11 +54584,11 @@
         "html_length": 1055
       },
       "deep_analysis": {
-        "press": true,
-        "notice": true,
+        "press": false,
+        "notice": false,
         "policy": false,
-        "press_detected": true,
-        "notice_detected": true,
+        "press_detected": false,
+        "notice_detected": false,
         "policy_detected": false
       }
     },
@@ -55611,8 +55611,8 @@
         "notice": false,
         "policy": false,
         "press_detected": false,
-        "notice_detected": true,
-        "policy_detected": true
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -56491,9 +56491,9 @@
         "press": false,
         "notice": false,
         "policy": false,
-        "press_detected": true,
-        "notice_detected": true,
-        "policy_detected": true
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -57791,9 +57791,9 @@
         "press": false,
         "notice": false,
         "policy": false,
-        "press_detected": true,
-        "notice_detected": true,
-        "policy_detected": true
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -58322,7 +58322,7 @@
         "press": false,
         "notice": false,
         "policy": false,
-        "press_detected": true,
+        "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
       }
@@ -58503,9 +58503,9 @@
         "press": false,
         "notice": false,
         "policy": false,
-        "press_detected": true,
+        "press_detected": false,
         "notice_detected": false,
-        "policy_detected": true
+        "policy_detected": false
       }
     },
     {
@@ -61665,9 +61665,9 @@
         "press": false,
         "notice": false,
         "policy": false,
-        "press_detected": true,
-        "notice_detected": true,
-        "policy_detected": true
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -62580,9 +62580,9 @@
         "press": false,
         "notice": false,
         "policy": false,
-        "press_detected": true,
+        "press_detected": false,
         "notice_detected": false,
-        "policy_detected": true
+        "policy_detected": false
       }
     },
     {
@@ -64288,8 +64288,8 @@
         "press": false,
         "notice": false,
         "policy": false,
-        "press_detected": true,
-        "notice_detected": true,
+        "press_detected": false,
+        "notice_detected": false,
         "policy_detected": false
       }
     },
@@ -64469,9 +64469,9 @@
         "press": false,
         "notice": false,
         "policy": false,
-        "press_detected": true,
-        "notice_detected": true,
-        "policy_detected": true
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -66258,7 +66258,7 @@
         "press": false,
         "notice": false,
         "policy": false,
-        "press_detected": true,
+        "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
       }
@@ -66440,7 +66440,7 @@
         "notice": false,
         "policy": false,
         "press_detected": false,
-        "notice_detected": true,
+        "notice_detected": false,
         "policy_detected": false
       }
     },
@@ -67163,7 +67163,7 @@
         "press": false,
         "notice": false,
         "policy": false,
-        "press_detected": true,
+        "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
       }
@@ -70602,9 +70602,9 @@
         "press": false,
         "notice": false,
         "policy": false,
-        "press_detected": true,
-        "notice_detected": true,
-        "policy_detected": true
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -70783,9 +70783,9 @@
         "press": false,
         "notice": false,
         "policy": false,
-        "press_detected": true,
-        "notice_detected": true,
-        "policy_detected": true
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -71638,7 +71638,7 @@
         "notice": false,
         "policy": false,
         "press_detected": false,
-        "notice_detected": true,
+        "notice_detected": false,
         "policy_detected": false
       }
     },
@@ -75188,11 +75188,11 @@
         "html_length": 194
       },
       "deep_analysis": {
-        "press": true,
-        "notice": true,
+        "press": false,
+        "notice": false,
         "policy": false,
-        "press_detected": true,
-        "notice_detected": true,
+        "press_detected": false,
+        "notice_detected": false,
         "policy_detected": false
       }
     },
@@ -76846,9 +76846,9 @@
         "press": false,
         "notice": false,
         "policy": false,
-        "press_detected": true,
-        "notice_detected": true,
-        "policy_detected": true
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -78150,8 +78150,8 @@
         "notice": false,
         "policy": false,
         "press_detected": false,
-        "notice_detected": true,
-        "policy_detected": true
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -78873,9 +78873,9 @@
         "press": false,
         "notice": false,
         "policy": false,
-        "press_detected": true,
-        "notice_detected": true,
-        "policy_detected": true
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -79054,9 +79054,9 @@
         "press": false,
         "notice": false,
         "policy": false,
-        "press_detected": true,
-        "notice_detected": true,
-        "policy_detected": true
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -81164,9 +81164,9 @@
         "press": false,
         "notice": false,
         "policy": false,
-        "press_detected": true,
-        "notice_detected": true,
-        "policy_detected": true
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -81804,9 +81804,9 @@
         "press": false,
         "notice": false,
         "policy": false,
-        "press_detected": false,
-        "notice_detected": false,
-        "policy_detected": false
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -82180,7 +82180,7 @@
         "policy": false,
         "press_detected": false,
         "notice_detected": false,
-        "policy_detected": true
+        "policy_detected": false
       }
     },
     {
@@ -82818,8 +82818,8 @@
         "press": false,
         "notice": false,
         "policy": false,
-        "press_detected": true,
-        "notice_detected": true,
+        "press_detected": false,
+        "notice_detected": false,
         "policy_detected": false
       }
     },
@@ -84312,7 +84312,7 @@
       },
       "deep_analysis": {
         "press": false,
-        "notice": true,
+        "notice": false,
         "policy": true,
         "press_detected": false,
         "notice_detected": true,
@@ -86121,9 +86121,9 @@
         "press": false,
         "notice": false,
         "policy": false,
-        "press_detected": true,
-        "notice_detected": true,
-        "policy_detected": true
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -88412,8 +88412,8 @@
         "notice": false,
         "policy": false,
         "press_detected": false,
-        "notice_detected": true,
-        "policy_detected": true
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -89193,9 +89193,9 @@
         "press": false,
         "notice": false,
         "policy": false,
-        "press_detected": true,
-        "notice_detected": true,
-        "policy_detected": true
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -95637,11 +95637,11 @@
         "html_length": 474082
       },
       "deep_analysis": {
-        "press": true,
-        "notice": true,
+        "press": false,
+        "notice": false,
         "policy": false,
-        "press_detected": true,
-        "notice_detected": true,
+        "press_detected": false,
+        "notice_detected": false,
         "policy_detected": false
       }
     },
