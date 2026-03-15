@@ -1,0 +1,6 @@
+User-agent: Googlebot
+Disallow: /
+Disallow: /search/front/Search.jsp
+
+User-agent: Yeti
+Allow: /

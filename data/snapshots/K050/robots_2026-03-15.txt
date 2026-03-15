@@ -1,0 +1,19 @@
+User-agent: *
+Allow : /index.html
+Allow : /nhis/index.do
+Allow : /family/
+Allow : /english/
+Allow : /japanese/
+Allow : /vietnamese/
+Sitemap : https://www.nhis.or.kr/sitemap.txt
+Disallow : /nhis/
+Disallow : /3rdparty/
+Disallow : /_common/
+Disallow : /_share/
+Disallow : /_res/
+Disallow : /_site/
+Disallow : /daumMap/
+Disallow : /initech/
+Disallow : /veraportG3/
+Disallow : /webfilter/
+Disallow : /_custom/

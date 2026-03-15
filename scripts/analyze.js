@@ -27,7 +27,7 @@ async function fetchOnce(url, timeoutMs = 10000) {
     const res = await fetch(url, {
       signal: controller.signal,
       headers: {
-        'User-Agent': 'AreWeOpen-Analyzer/1.0 (+https://github.com/ffee21/are-we-open)',
+        'User-Agent': 'Mozilla/5.0 (compatible; AreWeOpenBot/1.0)',
         'Accept': 'text/html,text/plain,application/xml,*/*'
       },
       redirect: 'follow'
