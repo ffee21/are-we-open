@@ -1,0 +1,13 @@
+User-agent: *
+Disallow: /intra/
+Allow: /
+
+User-agent: bingbot
+Allow: /
+Crawl-delay: 30
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 30
+
+Sitemap:https://www.gm.go.kr/sitemap.xml
