@@ -10,13 +10,13 @@ const App = (() => {
 
   // Grade config
   const GRADES = {
-    'A+': { min: 90, color: 'var(--grade-aplus)', cls: 'grade-aplus', label: 'LLM 매우 친화적' },
-    'A':  { min: 80, color: 'var(--grade-a)',     cls: 'grade-a',     label: 'LLM 친화적' },
+    'A+': { min: 90, color: 'var(--grade-aplus)', cls: 'grade-aplus', label: '매우 개방적' },
+    'A':  { min: 80, color: 'var(--grade-a)',     cls: 'grade-a',     label: '개방적' },
     'B+': { min: 70, color: 'var(--grade-bplus)',  cls: 'grade-bplus', label: '양호' },
     'B':  { min: 60, color: 'var(--grade-b)',      cls: 'grade-b',     label: '보통' },
     'C':  { min: 40, color: 'var(--grade-c)',      cls: 'grade-c',     label: '미흡' },
     'D':  { min: 20, color: 'var(--grade-d)',      cls: 'grade-d',     label: '매우 미흡' },
-    'F':  { min: 0,  color: 'var(--grade-f)',       cls: 'grade-f',     label: 'LLM 접근 불가' }
+    'F':  { min: 0,  color: 'var(--grade-f)',       cls: 'grade-f',     label: '사실상 폐쇄' }
   };
 
   const CATEGORIES = {
@@ -29,11 +29,12 @@ const App = (() => {
   };
 
   const ORG_TYPES = {
-    central_ministry:   '중앙부처',
-    agency:             '청/위원회',
+    ministry:           '행정각부',
+    pm_office:          '국무총리 소속',
+    agency:             '소속청',
+    commission:         '위원회',
     public_institution: '공공기관',
-    local_government:   '지자체',
-    affiliated:         '산하기관'
+    local_government:   '지자체'
   };
 
   const SEVERITY_LABELS = {
@@ -46,12 +47,12 @@ const App = (() => {
   const ITEM_DESCRIPTIONS = {
     'RT-01': { name: 'robots.txt 존재', max: 5, desc: '200 응답 = 만점, 404/기타 = 0점' },
     'RT-02': { name: '문법 유효성', max: 3, desc: '파싱 에러 없음 = 만점' },
-    'RT-03': { name: 'LLM 크롤러 명시적 허용', max: 7, desc: 'GPTBot/ClaudeBot/Google-Extended 허용 수에 비례' },
-    'RT-04': { name: '전면 차단 아님', max: 5, desc: 'User-agent: * Disallow: / 가 아닌 경우 만점' },
-    'RT-05': { name: '콘텐츠 경로 접근 허용', max: 5, desc: '보도자료/정책/공지 경로 차단 여부' },
-    'CA-01': { name: '보도자료 개별 URL', max: 7, desc: '고유 URL로 접근 가능 여부' },
-    'CA-02': { name: '정책자료 개별 URL', max: 5, desc: '정책 페이지 직접 링크 가능 여부' },
-    'CA-03': { name: '공지사항 개별 URL', max: 5, desc: '공지사항 직접 링크 가능 여부' },
+    'RT-03': { name: '주요 크롤러 차단 없음', max: 7, desc: '주요 크롤러가 공공 콘텐츠에 접근 가능한지 여부' },
+    'RT-04': { name: '전면 차단 아님', max: 5, desc: 'Disallow: / 로 전체를 막고 있지 않은지' },
+    'RT-05': { name: '핵심 콘텐츠 경로 개방', max: 5, desc: '보도자료·정책소개·공지사항 경로 차단 여부' },
+    'CA-01': { name: '보도자료 공개', max: 7, desc: '보도자료에 고유 URL이 있어 누구나 접근 가능한지 (핵심)' },
+    'CA-02': { name: '정책소개 공개', max: 5, desc: '정책소개 페이지에 직접 접근 가능한지 (핵심)' },
+    'CA-03': { name: '공지사항 공개', max: 5, desc: '공지사항에 직접 접근 가능한지 (핵심)' },
     'CA-04': { name: 'URL 패턴 일관성', max: 4, desc: 'RESTful/예측 가능 패턴 사용 여부' },
     'CA-05': { name: 'SSR 렌더링', max: 4, desc: 'HTML 소스에 본문 포함 여부' },
     'SD-01': { name: 'title 태그 적절성', max: 4, desc: '존재 + 페이지별 고유 여부' },
@@ -289,7 +290,7 @@ const App = (() => {
   function getFooterHtml() {
     return '<footer class="footer"><div class="footer-inner"><div>'
       + '<div class="footer-brand">Are We Open?</div>'
-      + '<p class="footer-desc">대한민국 공공 웹사이트의 LLM 친화성을 평가하고, AI 시대에 맞는 공공정보 접근성 개선을 위한 프로젝트입니다.</p>'
+      + '<p class="footer-desc">대한민국 공공 웹사이트의 데이터 개방 수준을 평가합니다. 보도자료·정책소개·공지사항이 누구에게나 열려 있는지 측정합니다.</p>'
       + '</div><div><h4>페이지</h4><ul class="footer-links">'
       + '<li><a href="index.html">홈</a></li>'
       + '<li><a href="ranking.html">순위표</a></li>'

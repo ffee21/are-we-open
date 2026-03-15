@@ -18,8 +18,20 @@
 
         <div class="prose">
           <h2>프로젝트 취지</h2>
-          <p>이 프로젝트는 대한민국 정부가 AI 시대에 맞춰 공공 웹사이트의 접근성을 <strong>점진적으로 개선해 나가기 위한 노력</strong>의 일환입니다. 한 번에 모든 것을 바꾸자는 것이 아니라, 현재 상태를 투명하게 파악하고 개선의 방향을 제시하는 데 목적이 있습니다.</p>
-          <p>GPT, Claude, Gemini 등 대규모 언어 모델(LLM)이 빠르게 보급되면서, 공공정보에 대한 접근 방식도 변화하고 있습니다. 시민들이 AI를 통해 정부 정보를 더 쉽게 찾고 이해할 수 있으려면, 공공 웹사이트가 LLM 크롤러에게 적절히 열려 있어야 합니다.</p>
+          <p>이 프로젝트는 대한민국 공공 웹사이트의 <strong>데이터 개방 수준</strong>을 평가합니다. 정부 웹사이트가 보유한 공공정보가 시민, 검색엔진, AI 등 누구에게나 열려 있는지를 측정합니다.</p>
+          <p>크롤러별 접근 통제를 개별적으로 설정해야 한다는 것이 아닙니다. <strong>보도자료, 정책소개, 공지사항</strong> — 이 세 가지 핵심 공공 콘텐츠가 차단 없이 접근 가능한지가 평가의 핵심입니다.</p>
+
+          <h2>핵심 평가 대상</h2>
+          <p>모든 웹사이트가 모든 것을 공개해야 하는 것은 아닙니다. 아래 <strong>세 가지 콘텐츠</strong>의 공개 여부가 평가의 중심입니다:</p>
+          <ul>
+            <li><strong>보도자료</strong> — 기관의 공식 발표 자료. 시민과 언론이 접근할 수 있어야 합니다.</li>
+            <li><strong>정책소개</strong> — 기관이 추진하는 정책에 대한 설명. 정책의 투명성을 위해 공개되어야 합니다.</li>
+            <li><strong>공지사항</strong> — 기관의 공식 안내사항. 국민에게 전달되어야 할 정보입니다.</li>
+          </ul>
+          <p>조직도, 기타 자료, 내부 시스템 등은 공개되면 좋지만 필수 평가 항목은 아닙니다.</p>
+
+          <h2>조직 구성</h2>
+          <p>평가 대상은 <strong>정부조직법</strong>(법률 제21065호, 2025.10.1 개정)에 따른 중앙행정기관입니다. 19개 행정각부와 그 소속청, 국무총리 소속 처를 포함합니다.</p>
 
           <h2>평가 항목</h2>
           <p>총 100점 만점으로 6개 카테고리를 평가합니다.</p>
@@ -38,12 +50,12 @@
               <tr>
                 <td><strong>robots.txt</strong></td>
                 <td style="font-family: var(--font-mono); font-weight: 600;">25점</td>
-                <td>존재 여부, 문법 유효성, LLM 크롤러 허용 여부, 전면 차단 여부, 콘텐츠 경로 접근 허용</td>
+                <td>존재 여부, 문법 유효성, 크롤러 차단 여부, 전면 차단 여부, 핵심 콘텐츠 경로 개방</td>
               </tr>
               <tr>
                 <td><strong>콘텐츠 접근성</strong></td>
                 <td style="font-family: var(--font-mono); font-weight: 600;">25점</td>
-                <td>보도자료/정책/공지 개별 URL, URL 패턴 일관성, SSR 렌더링</td>
+                <td>보도자료·정책소개·공지사항의 개별 URL 공개 여부, URL 패턴, SSR 렌더링 (핵심 평가)</td>
               </tr>
               <tr>
                 <td><strong>구조화된 데이터</strong></td>
@@ -138,13 +150,13 @@
 
       var tbody = document.createElement('tbody');
       var grades = [
-        { grade: 'A+', range: '90-100', meaning: 'LLM 매우 친화적' },
-        { grade: 'A', range: '80-89', meaning: 'LLM 친화적' },
+        { grade: 'A+', range: '90-100', meaning: '매우 개방적' },
+        { grade: 'A', range: '80-89', meaning: '개방적' },
         { grade: 'B+', range: '70-79', meaning: '양호, 개선 여지 있음' },
         { grade: 'B', range: '60-69', meaning: '보통' },
         { grade: 'C', range: '40-59', meaning: '미흡, 개선 필요' },
         { grade: 'D', range: '20-39', meaning: '매우 미흡' },
-        { grade: 'F', range: '0-19', meaning: 'LLM 접근 사실상 불가' }
+        { grade: 'F', range: '0-19', meaning: '사실상 폐쇄' }
       ];
       grades.forEach(function(g) {
         var tr = document.createElement('tr');

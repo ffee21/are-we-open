@@ -1,8 +1,8 @@
 # Are We Open?
-> 대한민국 공공 웹사이트의 LLM 친화성을 평가하는 프로젝트입니다.
+> 대한민국 공공 웹사이트의 데이터 개방 수준을 평가하는 프로젝트입니다.
 
-정부 웹사이트들이 GPTBot, ClaudeBot 등 LLM 크롤러에게 얼마나 열려 있는지 분석하고,
-기관별 점수와 등급을 부여하며, 개선 방향을 제시합니다.
+보도자료, 정책소개, 공지사항 — 핵심 공공 콘텐츠가 누구에게나 열려 있는지 측정합니다.
+정부조직법에 따른 40개 중앙행정기관을 대상으로 평가합니다.
 
 ## 주요 페이지
 - [홈](https://ffee21.github.io/are-we-open/index.html)
@@ -14,12 +14,17 @@
 ## 데이터
 - [분석 결과 JSON](https://ffee21.github.io/are-we-open/data/results.json)
 - [점수 요약 CSV](https://ffee21.github.io/are-we-open/data/summary_scores.csv)
-- [문제 통계 CSV](https://ffee21.github.io/are-we-open/data/issue_stats.csv)
+
+## 핵심 평가 대상
+이 프로젝트는 세 가지 공공 콘텐츠의 개방 여부를 중심으로 평가합니다:
+1. 보도자료 — 고유 URL로 접근 가능한지
+2. 정책소개 — 고유 URL로 접근 가능한지
+3. 공지사항 — 고유 URL로 접근 가능한지
 
 ## 평가 기준
 총 100점 만점으로 6개 카테고리를 평가합니다:
-- robots.txt (25점): 존재 여부, LLM 크롤러 허용, 콘텐츠 경로 접근
-- 콘텐츠 접근성 (25점): 개별 URL, URL 패턴, SSR 렌더링
+- robots.txt (25점): 존재 여부, 크롤러 차단 여부, 핵심 콘텐츠 경로 개방
+- 콘텐츠 접근성 (25점): 보도자료·정책소개·공지사항 공개 여부 (핵심)
 - 구조화된 데이터 (20점): title, meta, OG 태그, schema.org
 - 기술적 접근성 (15점): HTTPS, 응답 속도, 모바일 대응
 - llms.txt (10점): 파일 존재 및 내용 충실도
