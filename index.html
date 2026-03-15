@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Are We Open? — 대한민국 공공 웹사이트 LLM 친화성 평가</title>
+  <meta name="description" content="대한민국 정부 웹사이트들이 얼마나 LLM 친화적인지 분석하여 순위를 매기고, 기관별 개선방향을 제시합니다.">
+  <meta property="og:title" content="Are We Open? — 대한민국 공공 웹사이트 LLM 친화성 평가">
+  <meta property="og:description" content="대한민국 정부 웹사이트들이 얼마나 LLM 친화적인지 분석하여 순위를 매기고, 기관별 개선방향을 제시합니다.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="nav"></div>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero-title animate-in">
+          대한민국 공공 웹사이트는<br><span class="accent">AI에게 열려</span> 있는가?
+        </h1>
+
+        <div class="quote-carousel animate-in delay-1" id="quoteCarousel">
+          <blockquote class="active">
+            "문제를 고치는 가장 빠른 방법은 문제를 인식하는 것이다."
+          </blockquote>
+          <blockquote>
+            "측정하지 않으면 개선할 수 없다."
+            <cite>— 피터 드러커</cite>
+          </blockquote>
+          <blockquote>
+            "공개된 데이터는 스스로 개선의 압력을 만든다."
+          </blockquote>
+        </div>
+
+        <p class="hero-subtitle animate-in delay-2">
+          정부 웹사이트들의 LLM 친화성과 검색엔진 접근성을 분석하여 순위를 매기고,
+          기관별 개선방향을 구체적으로 제시합니다.
+        </p>
+
+        <div class="hero-actions animate-in delay-3">
+          <a href="ranking.html" class="btn btn-primary">순위표 보기</a>
+          <a href="about.html" class="btn btn-secondary">프로젝트 소개</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Stats -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header animate-in">
+          <h2 class="section-title">전체 현황</h2>
+          <p class="section-desc">분석 완료된 기관들의 LLM 친화성 종합 통계</p>
+        </div>
+
+        <div class="stats-grid" id="statsGrid">
+          <div class="card stat-card animate-in delay-1">
+            <div class="stat-value" id="statAvg">—</div>
+            <div class="stat-label">전체 평균 점수</div>
+            <div class="stat-sub">100점 만점</div>
+          </div>
+          <div class="card stat-card animate-in delay-2">
+            <div class="stat-value" id="statCount">—</div>
+            <div class="stat-label">분석 완료 기관</div>
+            <div class="stat-sub">중앙부처</div>
+          </div>
+          <div class="card stat-card animate-in delay-3">
+            <div class="stat-value" id="statIssues">—</div>
+            <div class="stat-label">발견된 문제</div>
+            <div class="stat-sub">전체 기관 합계</div>
+          </div>
+          <div class="card stat-card animate-in delay-4">
+            <div class="stat-value" id="statCritical">—</div>
+            <div class="stat-label">심각한 문제</div>
+            <div class="stat-sub">Critical 등급</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Grade Distribution -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">등급 분포</h2>
+          <p class="section-desc">전체 기관의 LLM 친화성 등급 분포 현황</p>
+        </div>
+        <div class="card" style="max-width: 720px;">
+          <div class="grade-dist" id="gradeDist"></div>
+          <div style="margin-top: var(--space-lg);">
+            <div class="donut-legend" id="gradeLegend"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Top / Bottom -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">기관별 순위 요약</h2>
+          <p class="section-desc">전체 순위는 <a href="ranking.html" style="text-decoration:underline;">순위표</a>에서 확인하세요</p>
+        </div>
+        <div class="table-container" id="topTable">
+          <div class="loading">데이터 로딩 중</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Disclaimer -->
+    <section class="section">
+      <div class="container" style="max-width: 800px;">
+        <div class="info-box warning">
+          <p><strong>제약사항 안내</strong></p>
+          <p>각 기관은 상급기관의 보안 지침 또는 자체 정보보안 정책에 따라 웹사이트 설정이 제한될 수 있습니다. 예를 들어, 국가정보원의 보안 가이드라인, 상위 부처의 일괄 보안 정책, 기관 자체 정보보호 규정 등으로 인해 robots.txt나 크롤링 정책을 기관 단독으로 변경하기 어려운 경우가 있습니다. 본 평가는 이러한 제약을 비난하려는 것이 아니라, 현황을 파악하고 개선 논의의 출발점을 제공하기 위한 것입니다.</p>
+        </div>
+        <div class="disclaimer" style="margin-top: var(--space-lg);">
+          <p><strong>Disclaimer</strong></p>
+          <p>본 웹사이트는 개인 프로젝트로 운영되며, 정부 공식 입장과 무관합니다. 분석 결과는 자동화된 도구와 수작업 검토를 병행하여 생성되나, 정확성을 완전히 보장하지 않습니다. 오류를 발견하신 경우 GitHub Issues를 통해 알려주시면 확인 후 수정하겠습니다.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="js/app.js"></script>
+  <script>
+    // All data comes from our own trusted data/results.json.
+    // All dynamic text is escaped via App.escapeHtml() before DOM insertion.
+    App.initPage('index', function(data) {
+      var orgs = data.organizations;
+      var stats = App.calcStats(orgs);
+
+      // Stats — plain text insertion via textContent (safe)
+      document.getElementById('statAvg').textContent = stats.avg;
+      document.getElementById('statCount').textContent = stats.count;
+      document.getElementById('statIssues').textContent = stats.totalIssues;
+      document.getElementById('statCritical').textContent = stats.criticals;
+
+      // Grade distribution — built from hardcoded grade values
+      var gradeOrder = ['A+', 'A', 'B+', 'B', 'C', 'D', 'F'];
+      var distEl = document.getElementById('gradeDist');
+      var legendEl = document.getElementById('gradeLegend');
+
+      gradeOrder.forEach(function(g) {
+        var count = stats.grades[g] || 0;
+        if (count > 0) {
+          var info = App.getGradeInfo(g);
+          var seg = document.createElement('div');
+          seg.className = 'grade-dist-segment ' + info.cls;
+          seg.style.flex = count;
+          seg.textContent = g;
+          distEl.appendChild(seg);
+        }
+      });
+
+      gradeOrder.forEach(function(g) {
+        var info = App.getGradeInfo(g);
+        var item = document.createElement('div');
+        item.className = 'legend-item';
+        var swatch = document.createElement('span');
+        swatch.className = 'legend-color';
+        swatch.style.background = info.color;
+        var label = document.createElement('span');
+        label.textContent = g + ' (' + info.label + ')';
+        var ct = document.createElement('span');
+        ct.className = 'legend-count';
+        ct.textContent = stats.grades[g] || 0;
+        item.appendChild(swatch);
+        item.appendChild(label);
+        item.appendChild(ct);
+        legendEl.appendChild(item);
+      });
+
+      // Summary table — DOM-based construction for safety
+      var sorted = orgs.slice().sort(function(a, b) { return b.scores.total - a.scores.total; });
+      var container = document.getElementById('topTable');
+      container.textContent = ''; // clear loading
+
+      var table = document.createElement('table');
+      var thead = document.createElement('thead');
+      var headRow = document.createElement('tr');
+      ['#', '기관명', '등급', '점수', '문제사항'].forEach(function(h) {
+        var th = document.createElement('th');
+        th.textContent = h;
+        headRow.appendChild(th);
+      });
+      thead.appendChild(headRow);
+      table.appendChild(thead);
+
+      var tbody = document.createElement('tbody');
+      sorted.forEach(function(org, i) {
+        var tr = document.createElement('tr');
+        tr.style.cursor = 'pointer';
+        tr.addEventListener('click', function() {
+          window.location.href = 'org.html?id=' + encodeURIComponent(org.org_id);
+        });
+
+        // Rank
+        var tdRank = document.createElement('td');
+        tdRank.style.cssText = 'color:var(--text-tertiary);font-family:var(--font-mono);font-size:0.85rem';
+        tdRank.textContent = i + 1;
+        tr.appendChild(tdRank);
+
+        // Name
+        var tdName = document.createElement('td');
+        tdName.className = 'td-name';
+        var nameLink = document.createElement('a');
+        nameLink.href = 'org.html?id=' + encodeURIComponent(org.org_id);
+        nameLink.textContent = org.name;
+        var nameEn = document.createElement('span');
+        nameEn.className = 'name-en';
+        nameEn.textContent = org.name_en;
+        nameLink.appendChild(nameEn);
+        tdName.appendChild(nameLink);
+        tr.appendChild(tdName);
+
+        // Grade
+        var tdGrade = document.createElement('td');
+        var badge = document.createElement('span');
+        badge.className = 'grade-badge grade-badge-sm ' + App.getGradeClass(org.scores.grade);
+        badge.textContent = org.scores.grade;
+        tdGrade.appendChild(badge);
+        tr.appendChild(tdGrade);
+
+        // Score
+        var tdScore = document.createElement('td');
+        tdScore.className = 'td-score';
+        tdScore.textContent = org.scores.total;
+        tr.appendChild(tdScore);
+
+        // Issues
+        var tdIssues = document.createElement('td');
+        var counts = { critical: 0, major: 0, minor: 0, info: 0 };
+        (org.issues || []).forEach(function(issue) {
+          counts[issue.severity] = (counts[issue.severity] || 0) + 1;
+        });
+        var chips = document.createElement('div');
+        chips.className = 'issue-chips';
+        ['critical', 'major', 'minor', 'info'].forEach(function(sev) {
+          if (counts[sev] > 0) {
+            var chip = document.createElement('span');
+            chip.className = 'issue-chip severity-' + sev;
+            chip.textContent = counts[sev];
+            chips.appendChild(chip);
+          }
+        });
+        tdIssues.appendChild(chips);
+        tr.appendChild(tdIssues);
+
+        tbody.appendChild(tr);
+      });
+
+      table.appendChild(tbody);
+      container.appendChild(table);
+
+      // Quote rotation
+      var quotes = document.querySelectorAll('#quoteCarousel blockquote');
+      var qIdx = 0;
+      setInterval(function() {
+        quotes[qIdx].classList.remove('active');
+        qIdx = (qIdx + 1) % quotes.length;
+        quotes[qIdx].classList.add('active');
+      }, 4000);
+    });
+  </script>
+</body>
+</html>
