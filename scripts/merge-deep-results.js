@@ -86,7 +86,7 @@ console.error('점수 업데이트: ' + updated + '개 기관');
 
 // 3. lite 재생성
 var lite = { meta: results.meta, organizations: results.organizations.map(function(o) { return {
-  org_id:o.org_id,name:o.name,name_en:o.name_en||'',org_type:o.org_type,url:o.url,
+  org_id:o.org_id,name:o.name,name_en:o.name_en||'',org_type:o.org_type,url:o.url,ministry:o.ministry||null,
   parent_org_id:o.parent_org_id,scan_date:o.scan_date,scores:o.scores,issues:o.issues,
   robots_txt:o.robots_txt?{exists:o.robots_txt.exists,syntax_valid:o.robots_txt.syntax_valid,
     full_block:o.robots_txt.full_block,llm_crawlers_blocked:o.robots_txt.llm_crawlers_blocked,

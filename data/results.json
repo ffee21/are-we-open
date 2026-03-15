@@ -188,7 +188,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "국무조정실"
     },
     {
       "org_id": "K287",
@@ -373,7 +374,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "문화체육관광부"
     },
     {
       "org_id": "M01",
@@ -910,7 +912,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "보건복지부"
     },
     {
       "org_id": "K140",
@@ -1090,7 +1093,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "중소벤처기업부"
     },
     {
       "org_id": "L09",
@@ -1452,7 +1456,8 @@
         "press_detected": false,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "지식재산처"
     },
     {
       "org_id": "B176",
@@ -1991,7 +1996,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "해양수산부"
     },
     {
       "org_id": "K170",
@@ -2173,7 +2179,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "과학기술정보통신부"
     },
     {
       "org_id": "K332",
@@ -2356,7 +2363,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "국무조정실"
     },
     {
       "org_id": "P03",
@@ -2714,7 +2722,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "국무조정실"
     },
     {
       "org_id": "K169",
@@ -2895,7 +2904,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "과학기술정보통신부"
     },
     {
       "org_id": "K213",
@@ -3075,7 +3085,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "지식재산처"
     },
     {
       "org_id": "B169",
@@ -3785,7 +3796,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "기후에너지환경부"
     },
     {
       "org_id": "K229",
@@ -3965,7 +3977,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "보건복지부"
     },
     {
       "org_id": "K313",
@@ -4148,7 +4161,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "산업통상부"
     },
     {
       "org_id": "K215",
@@ -4327,7 +4341,8 @@
         "press_detected": false,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "과학기술정보통신부"
     },
     {
       "org_id": "K304",
@@ -4500,7 +4515,8 @@
         "press_detected": true,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "국무조정실"
     },
     {
       "org_id": "L12",
@@ -4874,7 +4890,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "농림축산식품부"
     },
     {
       "org_id": "K020",
@@ -5061,7 +5078,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "국무조정실"
     },
     {
       "org_id": "K100",
@@ -5242,7 +5260,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "문화체육관광부"
     },
     {
       "org_id": "N009",
@@ -5806,7 +5825,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "국토교통부"
     },
     {
       "org_id": "K220",
@@ -5994,7 +6014,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "국무조정실"
     },
     {
       "org_id": "P02",
@@ -6551,7 +6572,8 @@
         "press_detected": true,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "문화체육관광부"
     },
     {
       "org_id": "A10",
@@ -7085,7 +7107,8 @@
         "press_detected": true,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "산업통상부"
     },
     {
       "org_id": "B185",
@@ -7800,7 +7823,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "외교부"
     },
     {
       "org_id": "K303",
@@ -7984,7 +8008,8 @@
         "press_detected": false,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "기후에너지환경부"
     },
     {
       "org_id": "K324",
@@ -8167,7 +8192,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "해양수산부"
     },
     {
       "org_id": "P05",
@@ -8729,7 +8755,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "고용노동부"
     },
     {
       "org_id": "K063",
@@ -8916,7 +8943,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "국무조정실"
     },
     {
       "org_id": "B141",
@@ -10580,7 +10608,8 @@
         "press_detected": false,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "보건복지부"
     },
     {
       "org_id": "K106",
@@ -10753,7 +10782,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "기상청"
     },
     {
       "org_id": "K232",
@@ -10935,7 +10965,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "산업통상부"
     },
     {
       "org_id": "K094",
@@ -11121,7 +11152,8 @@
         "press_detected": false,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "교육부"
     },
     {
       "org_id": "K322",
@@ -11304,7 +11336,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "해양수산부"
     },
     {
       "org_id": "B042",
@@ -11673,7 +11706,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "통일부"
     },
     {
       "org_id": "P06",
@@ -12809,7 +12843,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "과학기술정보통신부"
     },
     {
       "org_id": "N008",
@@ -13183,7 +13218,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "중소벤처기업부"
     },
     {
       "org_id": "K211",
@@ -13371,7 +13407,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "문화체육관광부"
     },
     {
       "org_id": "K132",
@@ -13552,7 +13589,8 @@
         "press_detected": false,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "과학기술정보통신부"
     },
     {
       "org_id": "K209",
@@ -13740,7 +13778,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "문화체육관광부"
     },
     {
       "org_id": "L02",
@@ -14975,7 +15014,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "재정경제부"
     },
     {
       "org_id": "M05",
@@ -15537,7 +15577,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "기후에너지환경부"
     },
     {
       "org_id": "A09",
@@ -15910,7 +15951,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "지식재산처"
     },
     {
       "org_id": "K027",
@@ -16097,7 +16139,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "국토교통부"
     },
     {
       "org_id": "K293",
@@ -16283,7 +16326,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "기후에너지환경부"
     },
     {
       "org_id": "K290",
@@ -16472,7 +16516,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "기후에너지환경부"
     },
     {
       "org_id": "K314",
@@ -16659,7 +16704,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "국토교통부"
     },
     {
       "org_id": "K166",
@@ -16848,7 +16894,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "문화체육관광부"
     },
     {
       "org_id": "K156",
@@ -17019,7 +17066,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "고용노동부"
     },
     {
       "org_id": "K033",
@@ -17195,7 +17243,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "국토교통부"
     },
     {
       "org_id": "I008",
@@ -18311,7 +18360,8 @@
         "press_detected": false,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "기후에너지환경부"
     },
     {
       "org_id": "B221",
@@ -18680,7 +18730,8 @@
         "press_detected": false,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "국무조정실"
     },
     {
       "org_id": "K297",
@@ -18865,7 +18916,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "금융위원회"
     },
     {
       "org_id": "K113",
@@ -19051,7 +19103,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "문화체육관광부"
     },
     {
       "org_id": "K340",
@@ -19232,7 +19285,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "기후에너지환경부"
     },
     {
       "org_id": "B131",
@@ -19970,7 +20024,8 @@
         "press_detected": false,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "산림청"
     },
     {
       "org_id": "B009",
@@ -20515,7 +20570,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "국무조정실"
     },
     {
       "org_id": "B198",
@@ -20877,7 +20933,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "지식재산처"
     },
     {
       "org_id": "K217",
@@ -21063,7 +21120,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "국무조정실"
     },
     {
       "org_id": "K003",
@@ -21258,7 +21316,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "과학기술정보통신부"
     },
     {
       "org_id": "K075",
@@ -21445,7 +21504,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "산업통상부"
     },
     {
       "org_id": "B029",
@@ -23145,7 +23205,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "해양수산부"
     },
     {
       "org_id": "K221",
@@ -23333,7 +23394,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "보건복지부"
     },
     {
       "org_id": "K122",
@@ -23516,7 +23578,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "중소벤처기업부"
     },
     {
       "org_id": "M19",
@@ -24715,7 +24778,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "보건복지부"
     },
     {
       "org_id": "B138",
@@ -25612,7 +25676,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "국무조정실"
     },
     {
       "org_id": "K184",
@@ -25797,7 +25862,8 @@
         "press_detected": false,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "기상청"
     },
     {
       "org_id": "B161",
@@ -26164,7 +26230,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "방송미디어통신위원회"
     },
     {
       "org_id": "B082",
@@ -26529,7 +26596,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "산업통상부"
     },
     {
       "org_id": "B049",
@@ -27286,7 +27354,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "기후에너지환경부"
     },
     {
       "org_id": "K079",
@@ -27421,7 +27490,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "보건복지부"
     },
     {
       "org_id": "B213",
@@ -27791,7 +27861,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "산업통상부"
     },
     {
       "org_id": "K234",
@@ -27972,7 +28043,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "산업통상부"
     },
     {
       "org_id": "K190",
@@ -28161,7 +28233,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "보건복지부"
     },
     {
       "org_id": "K136",
@@ -28344,7 +28417,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "교육부"
     },
     {
       "org_id": "B012",
@@ -29076,7 +29150,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "산업통상부"
     },
     {
       "org_id": "L07",
@@ -29623,7 +29698,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "과학기술정보통신부"
     },
     {
       "org_id": "K006",
@@ -29800,7 +29876,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "행정안전부"
     },
     {
       "org_id": "K226",
@@ -29977,7 +30054,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "국토교통부"
     },
     {
       "org_id": "R004",
@@ -30331,7 +30409,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "중소벤처기업부"
     },
     {
       "org_id": "A12",
@@ -30697,7 +30776,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "국토교통부"
     },
     {
       "org_id": "B212",
@@ -31248,7 +31328,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "산업통상부"
     },
     {
       "org_id": "A05",
@@ -31615,7 +31696,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "방위사업청"
     },
     {
       "org_id": "E013",
@@ -35286,7 +35368,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "성평등가족부"
     },
     {
       "org_id": "A11",
@@ -35659,7 +35742,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "기후에너지환경부"
     },
     {
       "org_id": "B152",
@@ -36208,7 +36292,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "법무부"
     },
     {
       "org_id": "K124",
@@ -36387,7 +36472,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "기후에너지환경부"
     },
     {
       "org_id": "K016",
@@ -36566,7 +36652,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "교육부"
     },
     {
       "org_id": "K082",
@@ -36745,7 +36832,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "교육부"
     },
     {
       "org_id": "K254",
@@ -36928,7 +37016,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "농림축산식품부"
     },
     {
       "org_id": "K228",
@@ -37107,7 +37196,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "보건복지부"
     },
     {
       "org_id": "B015",
@@ -38016,7 +38106,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "문화체육관광부"
     },
     {
       "org_id": "K181",
@@ -38211,7 +38302,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "보건복지부"
     },
     {
       "org_id": "B045",
@@ -38780,7 +38872,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "농림축산식품부"
     },
     {
       "org_id": "B163",
@@ -39145,7 +39238,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "산림청"
     },
     {
       "org_id": "K285",
@@ -39322,7 +39416,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "교육부"
     },
     {
       "org_id": "L13",
@@ -39682,7 +39777,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "문화체육관광부"
     },
     {
       "org_id": "K129",
@@ -39859,7 +39955,8 @@
         "press_detected": false,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "교육부"
     },
     {
       "org_id": "K087",
@@ -39994,7 +40091,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "해양수산부"
     },
     {
       "org_id": "N014",
@@ -40671,7 +40769,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "고용노동부"
     },
     {
       "org_id": "B099",
@@ -41401,7 +41500,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "방위사업청"
     },
     {
       "org_id": "A07",
@@ -41761,7 +41861,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "보건복지부"
     },
     {
       "org_id": "K059",
@@ -41946,7 +42047,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "문화체육관광부"
     },
     {
       "org_id": "K152",
@@ -42129,7 +42231,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "국토교통부"
     },
     {
       "org_id": "K274",
@@ -42312,7 +42415,8 @@
         "press_detected": true,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "원자력안전위원회"
     },
     {
       "org_id": "K300",
@@ -42495,7 +42599,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "과학기술정보통신부"
     },
     {
       "org_id": "B219",
@@ -42875,7 +42980,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "금융위원회"
     },
     {
       "org_id": "K115",
@@ -43062,7 +43168,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "해양수산부"
     },
     {
       "org_id": "K284",
@@ -43257,7 +43364,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "고용노동부"
     },
     {
       "org_id": "K123",
@@ -43434,7 +43542,8 @@
         "press_detected": false,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "보건복지부"
     },
     {
       "org_id": "K173",
@@ -43611,7 +43720,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "산업통상부"
     },
     {
       "org_id": "B066",
@@ -43985,7 +44095,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "보건복지부"
     },
     {
       "org_id": "K038",
@@ -44172,7 +44283,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "과학기술정보통신부"
     },
     {
       "org_id": "M16",
@@ -44497,7 +44609,8 @@
         "press_detected": false,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "국토교통부"
     },
     {
       "org_id": "M12",
@@ -44963,7 +45076,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "경찰청"
     },
     {
       "org_id": "K043",
@@ -45149,7 +45263,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "보건복지부"
     },
     {
       "org_id": "K281",
@@ -45332,7 +45447,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "금융위원회"
     },
     {
       "org_id": "B007",
@@ -45700,7 +45816,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "기후에너지환경부"
     },
     {
       "org_id": "R001",
@@ -46067,7 +46184,8 @@
         "press_detected": false,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "과학기술정보통신부"
     },
     {
       "org_id": "B172",
@@ -46984,7 +47102,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "교육부"
     },
     {
       "org_id": "B001",
@@ -47346,7 +47465,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "고용노동부"
     },
     {
       "org_id": "K269",
@@ -47532,7 +47652,8 @@
         "press_detected": false,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "관세청"
     },
     {
       "org_id": "B080",
@@ -47904,7 +48025,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "국방부"
     },
     {
       "org_id": "K212",
@@ -48089,7 +48211,8 @@
         "press_detected": false,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "문화체육관광부"
     },
     {
       "org_id": "K128",
@@ -48272,7 +48395,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "교육부"
     },
     {
       "org_id": "K196",
@@ -48459,7 +48583,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "국토교통부"
     },
     {
       "org_id": "K283",
@@ -48652,7 +48777,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "보건복지부"
     },
     {
       "org_id": "K009",
@@ -48837,7 +48963,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "과학기술정보통신부"
     },
     {
       "org_id": "K227",
@@ -49022,7 +49149,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "교육부"
     },
     {
       "org_id": "K273",
@@ -49205,7 +49333,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "과학기술정보통신부"
     },
     {
       "org_id": "K280",
@@ -49388,7 +49517,8 @@
         "press_detected": false,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "산림청"
     },
     {
       "org_id": "N001",
@@ -50474,7 +50604,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "산업통상부"
     },
     {
       "org_id": "K249",
@@ -50657,7 +50788,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "해양수산부"
     },
     {
       "org_id": "B157",
@@ -51598,7 +51730,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "국무조정실"
     },
     {
       "org_id": "B127",
@@ -52159,7 +52292,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "과학기술정보통신부"
     },
     {
       "org_id": "K224",
@@ -52299,7 +52433,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "교육부"
     },
     {
       "org_id": "K057",
@@ -52431,7 +52566,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "국방부"
     },
     {
       "org_id": "K201",
@@ -52574,7 +52710,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "산림청"
     },
     {
       "org_id": "A02",
@@ -52940,7 +53077,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "중소벤처기업부"
     },
     {
       "org_id": "K307",
@@ -53125,7 +53263,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "국무조정실"
     },
     {
       "org_id": "K005",
@@ -53324,7 +53463,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "과학기술정보통신부"
     },
     {
       "org_id": "E015",
@@ -53641,7 +53781,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "국토교통부"
     },
     {
       "org_id": "K142",
@@ -53785,7 +53926,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "중소벤처기업부"
     },
     {
       "org_id": "K330",
@@ -53927,7 +54069,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "국토교통부"
     },
     {
       "org_id": "K163",
@@ -54110,7 +54253,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "고용노동부"
     },
     {
       "org_id": "K210",
@@ -54293,7 +54437,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "문화체육관광부"
     },
     {
       "org_id": "K032",
@@ -54435,7 +54580,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "국가유산청"
     },
     {
       "org_id": "K315",
@@ -54574,7 +54720,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "재정경제부"
     },
     {
       "org_id": "K131",
@@ -54757,7 +54904,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "과학기술정보통신부"
     },
     {
       "org_id": "K138",
@@ -54934,7 +55082,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "국토교통부"
     },
     {
       "org_id": "B145",
@@ -55307,7 +55456,8 @@
         "press_detected": false,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "문화체육관광부"
     },
     {
       "org_id": "K260",
@@ -55493,7 +55643,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "기후에너지환경부"
     },
     {
       "org_id": "K083",
@@ -55633,7 +55784,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "산업통상부"
     },
     {
       "org_id": "K235",
@@ -55776,7 +55928,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "산업통상부"
     },
     {
       "org_id": "K257",
@@ -55971,7 +56124,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "해양수산부"
     },
     {
       "org_id": "B115",
@@ -56440,7 +56594,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "문화체육관광부"
     },
     {
       "org_id": "K294",
@@ -56625,7 +56780,8 @@
         "press_detected": false,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "산업통상부"
     },
     {
       "org_id": "K037",
@@ -56769,7 +56925,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "기후에너지환경부"
     },
     {
       "org_id": "N010",
@@ -57338,7 +57495,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "과학기술정보통신부"
     },
     {
       "org_id": "K150",
@@ -57527,7 +57685,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "국토교통부"
     },
     {
       "org_id": "K309",
@@ -57672,7 +57831,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "문화체육관광부"
     },
     {
       "org_id": "E014",
@@ -58926,7 +59086,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "문화체육관광부"
     },
     {
       "org_id": "K259",
@@ -59109,7 +59270,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "기후에너지환경부"
     },
     {
       "org_id": "K172",
@@ -59251,7 +59413,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "문화체육관광부"
     },
     {
       "org_id": "B113",
@@ -59578,7 +59741,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "문화체육관광부"
     },
     {
       "org_id": "L11",
@@ -61080,7 +61244,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "성평등가족부"
     },
     {
       "org_id": "K246",
@@ -61263,7 +61428,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "공정거래위원회"
     },
     {
       "org_id": "K302",
@@ -61446,7 +61612,8 @@
         "press_detected": false,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "지식재산처"
     },
     {
       "org_id": "M10",
@@ -61824,7 +61991,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "국가보훈부"
     },
     {
       "org_id": "N015",
@@ -62657,7 +62825,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "교육부"
     },
     {
       "org_id": "K036",
@@ -62840,7 +63009,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "과학기술정보통신부"
     },
     {
       "org_id": "B124",
@@ -63356,7 +63526,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "보건복지부"
     },
     {
       "org_id": "K337",
@@ -63541,7 +63712,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "농림축산식품부"
     },
     {
       "org_id": "K060",
@@ -63727,7 +63899,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "농림축산식품부"
     },
     {
       "org_id": "K093",
@@ -63916,7 +64089,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "교육부"
     },
     {
       "org_id": "K086",
@@ -64111,7 +64285,8 @@
         "press_detected": false,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "교육부"
     },
     {
       "org_id": "B094",
@@ -64493,7 +64668,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "보건복지부"
     },
     {
       "org_id": "E001",
@@ -65537,7 +65713,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "성평등가족부"
     },
     {
       "org_id": "K167",
@@ -65686,7 +65863,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "공정거래위원회"
     },
     {
       "org_id": "K289",
@@ -65875,7 +66053,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "기후에너지환경부"
     },
     {
       "org_id": "B107",
@@ -66442,7 +66621,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "금융위원회"
     },
     {
       "org_id": "B118",
@@ -66782,7 +66962,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "문화체육관광부"
     },
     {
       "org_id": "K029",
@@ -66973,7 +67154,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "과학기술정보통신부"
     },
     {
       "org_id": "B089",
@@ -67507,7 +67689,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "해양수산부"
     },
     {
       "org_id": "K022",
@@ -67696,7 +67879,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "교육부"
     },
     {
       "org_id": "K098",
@@ -67885,7 +68069,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "중소벤처기업부"
     },
     {
       "org_id": "K188",
@@ -68074,7 +68259,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "기후에너지환경부"
     },
     {
       "org_id": "M07",
@@ -68787,7 +68973,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "국토교통부"
     },
     {
       "org_id": "K081",
@@ -68933,7 +69120,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "국가보훈부"
     },
     {
       "org_id": "K187",
@@ -69122,7 +69310,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "기후에너지환경부"
     },
     {
       "org_id": "K193",
@@ -69263,7 +69452,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "농촌진흥청"
     },
     {
       "org_id": "K264",
@@ -69407,7 +69597,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "국무조정실"
     },
     {
       "org_id": "K275",
@@ -69596,7 +69787,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "기후에너지환경부"
     },
     {
       "org_id": "K185",
@@ -69785,7 +69977,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "고용노동부"
     },
     {
       "org_id": "J001",
@@ -75266,7 +75459,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "해양수산부"
     },
     {
       "org_id": "K267",
@@ -75455,7 +75649,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "문화체육관광부"
     },
     {
       "org_id": "K042",
@@ -75605,7 +75800,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "문화체육관광부"
     },
     {
       "org_id": "K108",
@@ -75794,7 +75990,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "해양수산부"
     },
     {
       "org_id": "K240",
@@ -75983,7 +76180,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "보건복지부"
     },
     {
       "org_id": "K339",
@@ -76172,7 +76370,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "기후에너지환경부"
     },
     {
       "org_id": "K013",
@@ -76361,7 +76560,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "산업통상부"
     },
     {
       "org_id": "K321",
@@ -76501,7 +76701,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "해양수산부"
     },
     {
       "org_id": "B184",
@@ -76834,7 +77035,8 @@
         "press_detected": false,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "해양수산부"
     },
     {
       "org_id": "K031",
@@ -76980,7 +77182,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "보건복지부"
     },
     {
       "org_id": "K174",
@@ -77169,7 +77372,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "국무조정실"
     },
     {
       "org_id": "B158",
@@ -77499,7 +77703,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "국무조정실"
     },
     {
       "org_id": "M11",
@@ -78066,7 +78271,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "문화체육관광부"
     },
     {
       "org_id": "M15",
@@ -78642,7 +78848,8 @@
         "press_detected": false,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "국가보훈부"
     },
     {
       "org_id": "K241",
@@ -78834,7 +79041,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "기후에너지환경부"
     },
     {
       "org_id": "K194",
@@ -78982,7 +79190,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "국무조정실"
     },
     {
       "org_id": "B134",
@@ -79360,7 +79569,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "기후에너지환경부"
     },
     {
       "org_id": "K104",
@@ -79545,7 +79755,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "중소벤처기업부"
     },
     {
       "org_id": "K092",
@@ -79740,7 +79951,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "금융위원회"
     },
     {
       "org_id": "K144",
@@ -79935,7 +80147,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "기상청"
     },
     {
       "org_id": "K018",
@@ -80130,7 +80343,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "보건복지부"
     },
     {
       "org_id": "K143",
@@ -80325,7 +80539,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "중소벤처기업부"
     },
     {
       "org_id": "K186",
@@ -80520,7 +80735,8 @@
         "press_detected": false,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "과학기술정보통신부"
     },
     {
       "org_id": "J002",
@@ -82566,7 +82782,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "기후에너지환경부"
     },
     {
       "org_id": "K120",
@@ -82761,7 +82978,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "국토교통부"
     },
     {
       "org_id": "B088",
@@ -83139,7 +83357,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "국무조정실"
     },
     {
       "org_id": "K052",
@@ -83285,7 +83504,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "보건복지부"
     },
     {
       "org_id": "K320",
@@ -83474,7 +83694,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "보건복지부"
     },
     {
       "org_id": "I009",
@@ -83945,7 +84166,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "보건복지부"
     },
     {
       "org_id": "K154",
@@ -84089,7 +84311,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "문화체육관광부"
     },
     {
       "org_id": "K286",
@@ -84233,7 +84456,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "기획예산처"
     },
     {
       "org_id": "M14",
@@ -84617,7 +84841,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "국무조정실"
     },
     {
       "org_id": "B091",
@@ -85001,7 +85226,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "국토교통부"
     },
     {
       "org_id": "B123",
@@ -85334,7 +85560,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "농림축산식품부"
     },
     {
       "org_id": "K058",
@@ -85534,7 +85761,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "문화체육관광부"
     },
     {
       "org_id": "K250",
@@ -85729,7 +85957,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "기후에너지환경부"
     },
     {
       "org_id": "M02",
@@ -86509,7 +86738,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "방위사업청"
     },
     {
       "org_id": "K084",
@@ -86704,7 +86934,8 @@
         "press_detected": false,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "행정안전부"
     },
     {
       "org_id": "K088",
@@ -86899,7 +87130,8 @@
         "press_detected": true,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "통일부"
     },
     {
       "org_id": "K153",
@@ -87094,7 +87326,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "국토교통부"
     },
     {
       "org_id": "K183",
@@ -87289,7 +87522,8 @@
         "press_detected": false,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "국토교통부"
     },
     {
       "org_id": "E004",
@@ -88402,7 +88636,8 @@
         "press_detected": false,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "국토교통부"
     },
     {
       "org_id": "K318",
@@ -88597,7 +88832,8 @@
         "press_detected": false,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "지식재산처"
     },
     {
       "org_id": "I006",
@@ -88987,7 +89223,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "중소벤처기업부"
     },
     {
       "org_id": "K010",
@@ -89182,7 +89419,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "국가데이터처"
     },
     {
       "org_id": "K102",
@@ -89371,7 +89609,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "식품의약품안전처"
     },
     {
       "org_id": "E009",
@@ -89710,7 +89949,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "고용노동부"
     },
     {
       "org_id": "K305",
@@ -89911,7 +90151,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "국토교통부"
     },
     {
       "org_id": "A15",
@@ -91426,7 +91667,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "금융위원회"
     },
     {
       "org_id": "B087",
@@ -91960,7 +92202,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "국토교통부"
     },
     {
       "org_id": "B018",
@@ -92443,7 +92686,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "고용노동부"
     },
     {
       "org_id": "K044",
@@ -92587,7 +92831,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "해양수산부"
     },
     {
       "org_id": "K078",
@@ -92737,7 +92982,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "문화체육관광부"
     },
     {
       "org_id": "B209",
@@ -93117,7 +93363,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "문화체육관광부"
     },
     {
       "org_id": "K107",
@@ -93309,7 +93556,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "국무조정실"
     },
     {
       "org_id": "K299",
@@ -93459,7 +93707,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "중소벤처기업부"
     },
     {
       "org_id": "K110",
@@ -93609,7 +93858,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "문화체육관광부"
     },
     {
       "org_id": "K176",
@@ -93759,7 +94009,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "교육부"
     },
     {
       "org_id": "K121",
@@ -93909,7 +94160,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "국토교통부"
     },
     {
       "org_id": "K325",
@@ -94059,7 +94311,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "해양수산부"
     },
     {
       "org_id": "B003",
@@ -95499,7 +95752,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "농림축산식품부"
     },
     {
       "org_id": "K046",
@@ -95649,7 +95903,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "국토교통부"
     },
     {
       "org_id": "K073",
@@ -95799,7 +96054,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "보건복지부"
     },
     {
       "org_id": "K151",
@@ -95949,7 +96205,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "국토교통부"
     },
     {
       "org_id": "K197",
@@ -96099,7 +96356,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "국토교통부"
     },
     {
       "org_id": "K222",
@@ -96249,7 +96507,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "보건복지부"
     },
     {
       "org_id": "K245",
@@ -96399,7 +96658,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "소방청"
     },
     {
       "org_id": "K252",
@@ -96549,7 +96809,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "재정경제부"
     },
     {
       "org_id": "K279",
@@ -96699,7 +96960,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "과학기술정보통신부"
     },
     {
       "org_id": "K064",
@@ -96849,7 +97111,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "문화체육관광부"
     },
     {
       "org_id": "K199",
@@ -96999,7 +97262,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "문화체육관광부"
     },
     {
       "org_id": "K182",
@@ -97149,7 +97413,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "외교부"
     },
     {
       "org_id": "E007",
@@ -97749,7 +98014,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "재외동포청"
     },
     {
       "org_id": "K239",
@@ -97899,7 +98165,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "기후에너지환경부"
     },
     {
       "org_id": "K130",
@@ -98049,7 +98316,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "국방부"
     },
     {
       "org_id": "K327",
@@ -98199,7 +98467,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "해양수산부"
     },
     {
       "org_id": "K331",
@@ -98349,7 +98618,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "국무조정실"
     },
     {
       "org_id": "K205",
@@ -98499,7 +98769,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "식품의약품안전처"
     },
     {
       "org_id": "B101",
@@ -98799,7 +99070,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "기후에너지환경부"
     },
     {
       "org_id": "A08",
@@ -99557,7 +99829,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "국무조정실"
     },
     {
       "org_id": "K024",
@@ -99707,7 +99980,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "교육부"
     },
     {
       "org_id": "B025",
@@ -101207,7 +101481,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "과학기술정보통신부"
     },
     {
       "org_id": "K159",
@@ -101357,7 +101632,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "국무조정실"
     },
     {
       "org_id": "K045",
@@ -101515,7 +101791,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "보건복지부"
     },
     {
       "org_id": "K147",
@@ -101673,7 +101950,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "교육부"
     },
     {
       "org_id": "K203",
@@ -101831,7 +102109,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "산업통상부"
     },
     {
       "org_id": "K162",
@@ -101989,7 +102268,8 @@
         "press_detected": false,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "보건복지부"
     },
     {
       "org_id": "K244",
@@ -102147,7 +102427,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": false
-      }
+      },
+      "ministry": "산업통상부"
     },
     {
       "org_id": "K011",
@@ -102305,7 +102586,8 @@
         "press_detected": true,
         "notice_detected": false,
         "policy_detected": false
-      }
+      },
+      "ministry": "산업통상부"
     },
     {
       "org_id": "K270",
@@ -102455,7 +102737,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "원자력안전위원회"
     },
     {
       "org_id": "K344",
@@ -102613,7 +102896,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "해양수산부"
     },
     {
       "org_id": "K231",
@@ -102771,7 +103055,8 @@
         "press_detected": true,
         "notice_detected": true,
         "policy_detected": true
-      }
+      },
+      "ministry": "산림청"
     },
     {
       "org_id": "L14",
@@ -103071,7 +103356,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "해양수산부"
     },
     {
       "org_id": "L05",
@@ -103371,7 +103657,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "법무부"
     },
     {
       "org_id": "K177",
@@ -103521,7 +103808,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "국토교통부"
     },
     {
       "org_id": "K223",
@@ -103671,7 +103959,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "보건복지부"
     },
     {
       "org_id": "N006",
@@ -107541,7 +107830,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "산업통상부"
     },
     {
       "org_id": "K004",
@@ -107691,7 +107981,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "과학기술정보통신부"
     },
     {
       "org_id": "K041",
@@ -107841,7 +108132,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "기후에너지환경부"
     },
     {
       "org_id": "K068",
@@ -107991,7 +108283,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "과학기술정보통신부"
     },
     {
       "org_id": "K099",
@@ -108141,7 +108434,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "기후에너지환경부"
     },
     {
       "org_id": "K117",
@@ -108291,7 +108585,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "국토교통부"
     },
     {
       "org_id": "K148",
@@ -108441,7 +108736,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "교육부"
     },
     {
       "org_id": "K266",
@@ -108591,7 +108887,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "과학기술정보통신부"
     },
     {
       "org_id": "K306",
@@ -108741,7 +109038,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "성평등가족부"
     },
     {
       "org_id": "B004",
@@ -112522,7 +112820,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "기후에너지환경부"
     },
     {
       "org_id": "K262",
@@ -112691,7 +112990,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "과학기술정보통신부"
     },
     {
       "org_id": "B056",
@@ -113065,7 +113365,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "농림축산식품부"
     },
     {
       "org_id": "K021",
@@ -113242,7 +113543,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "문화체육관광부"
     },
     {
       "org_id": "B023",
@@ -113799,7 +114101,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "국토교통부"
     },
     {
       "org_id": "B020",
@@ -114167,7 +114470,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "원자력안전위원회"
     },
     {
       "org_id": "L17",
@@ -114551,7 +114855,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "국무조정실"
     },
     {
       "org_id": "K323",
@@ -114738,7 +115043,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "해양수산부"
     },
     {
       "org_id": "E017",
@@ -115665,7 +115971,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "농림축산식품부"
     },
     {
       "org_id": "K192",
@@ -115857,7 +116164,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "농림축산식품부"
     },
     {
       "org_id": "B016",
@@ -116420,7 +116728,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "방송미디어통신위원회"
     },
     {
       "org_id": "K096",
@@ -116607,7 +116916,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "문화체육관광부"
     },
     {
       "org_id": "B143",
@@ -117165,7 +117475,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "국토교통부"
     },
     {
       "org_id": "K230",
@@ -117346,7 +117657,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "고용노동부"
     },
     {
       "org_id": "B137",
@@ -117903,7 +118215,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "행정안전부"
     },
     {
       "org_id": "K125",
@@ -118091,7 +118404,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "보건복지부"
     },
     {
       "org_id": "K074",
@@ -118282,7 +118596,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "국무조정실"
     },
     {
       "org_id": "L06",
@@ -119035,7 +119350,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "보건복지부"
     },
     {
       "org_id": "K146",
@@ -119210,7 +119526,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "농림축산식품부"
     },
     {
       "org_id": "K141",
@@ -119397,7 +119714,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "금융위원회"
     },
     {
       "org_id": "K165",
@@ -119586,7 +119904,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "교육부"
     },
     {
       "org_id": "K336",
@@ -119771,7 +120090,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "국무조정실"
     },
     {
       "org_id": "K019",
@@ -119952,7 +120272,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "고용노동부"
     },
     {
       "org_id": "E012",
@@ -120897,7 +121218,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "문화체육관광부"
     },
     {
       "org_id": "B044",
@@ -121287,7 +121609,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "농림축산식품부"
     },
     {
       "org_id": "B160",
@@ -121666,7 +121989,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "산업통상부"
     },
     {
       "org_id": "B129",
@@ -122614,7 +122938,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "법무부"
     },
     {
       "org_id": "K338",
@@ -122799,7 +123124,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "기후에너지환경부"
     },
     {
       "org_id": "K023",
@@ -122986,7 +123312,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "교육부"
     },
     {
       "org_id": "K255",
@@ -123173,7 +123500,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "식품의약품안전처"
     },
     {
       "org_id": "K292",
@@ -123363,7 +123691,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "기후에너지환경부"
     },
     {
       "org_id": "R005",
@@ -124123,7 +124452,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "성평등가족부"
     },
     {
       "org_id": "B098",
@@ -124517,7 +124847,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "교육부"
     },
     {
       "org_id": "B104",
@@ -125080,7 +125411,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "고용노동부"
     },
     {
       "org_id": "B095",
@@ -125466,7 +125798,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "보건복지부"
     },
     {
       "org_id": "R012",
@@ -125861,7 +126194,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "식품의약품안전처"
     },
     {
       "org_id": "B105",
@@ -126241,7 +126575,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "교육부"
     },
     {
       "org_id": "K278",
@@ -126434,7 +126769,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "식품의약품안전처"
     },
     {
       "org_id": "K035",
@@ -126627,7 +126963,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "기후에너지환경부"
     },
     {
       "org_id": "K109",
@@ -126820,7 +127157,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "과학기술정보통신부"
     },
     {
       "org_id": "K028",
@@ -127001,7 +127339,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "인사혁신처"
     },
     {
       "org_id": "B097",
@@ -127381,7 +127720,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "국무조정실"
     },
     {
       "org_id": "K089",
@@ -127580,7 +127920,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "교육부"
     },
     {
       "org_id": "K247",
@@ -127779,7 +128120,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "기후에너지환경부"
     },
     {
       "org_id": "L08",
@@ -129411,7 +129753,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "문화체육관광부"
     },
     {
       "org_id": "B076",
@@ -130008,7 +130351,8 @@
         "press_blocked": false,
         "notice_blocked": false,
         "policy_blocked": false
-      }
+      },
+      "ministry": "교육부"
     },
     {
       "org_id": "B019",

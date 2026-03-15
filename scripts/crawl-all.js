@@ -112,6 +112,7 @@ async function main() {
         org_type: org.type,
         url: org.url,
         parent_org_id: org.parent_id || null,
+        ministry: org.ministry || null,
         law_reference: org.law || null,
         ...analysis
       };
@@ -164,7 +165,7 @@ async function main() {
     meta: output.meta,
     organizations: output.organizations.map(o => ({
       org_id: o.org_id, name: o.name, name_en: o.name_en || '', org_type: o.org_type,
-      url: o.url, parent_org_id: o.parent_org_id, scan_date: o.scan_date,
+      url: o.url, parent_org_id: o.parent_org_id, ministry: o.ministry || null, scan_date: o.scan_date,
       scores: o.scores, issues: o.issues,
       robots_txt: o.robots_txt ? {
         exists: o.robots_txt.exists, syntax_valid: o.robots_txt.syntax_valid,
