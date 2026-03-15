@@ -323,6 +323,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 100081
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -478,6 +486,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 281209
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -635,6 +651,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 14727
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -793,6 +817,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 262709
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -948,6 +980,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 60909
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -1106,6 +1146,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 59073
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -1263,6 +1311,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 182013
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -1418,6 +1474,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 335400
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -1576,6 +1640,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 109483
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -1731,6 +1803,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 965855
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -1886,6 +1966,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 82826
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -2041,6 +2129,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 250013
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -2196,6 +2292,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 256646
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -2351,6 +2455,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 94090
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -2675,6 +2787,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 73048
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -2688,15 +2808,15 @@
       "scan_date": "2026-03-15",
       "scan_version": "v1",
       "scores": {
-        "total": 85,
-        "grade": "A",
+        "total": 78,
+        "grade": "B+",
         "categories": {
           "robots_txt": {
             "score": 25,
             "max": 25
           },
           "content_accessibility": {
-            "score": 25,
+            "score": 18,
             "max": 25
           },
           "structured_data": {
@@ -2722,7 +2842,7 @@
           "RT-03": 7,
           "RT-04": 5,
           "RT-05": 5,
-          "CA-01": 7,
+          "CA-01": 0,
           "CA-02": 5,
           "CA-03": 5,
           "CA-04": 4,
@@ -2832,6 +2952,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 85715
+      },
+      "deep_analysis": {
+        "press": true,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -2987,6 +3115,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 37854
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -3305,6 +3441,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 227267
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -3460,6 +3604,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 9046
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -3617,6 +3769,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 63611
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -3772,6 +3932,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 114101
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -3929,6 +4097,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 237144
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -4084,6 +4260,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 34478
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -4241,6 +4425,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 169439
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -4398,6 +4590,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 68907
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -4553,6 +4753,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 20087
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -4708,6 +4916,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 213209
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -4989,6 +5205,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 112414
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -5152,6 +5376,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 3726
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -5313,6 +5545,14 @@
         "mobile_viewport": true,
         "primary_rendering": "csr",
         "html_length": 2253
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -5474,6 +5714,14 @@
         "mobile_viewport": false,
         "primary_rendering": "ssr",
         "html_length": 102833
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -5629,6 +5877,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 86253
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -5784,6 +6040,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 139189
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -6114,6 +6378,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 269676
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -6275,6 +6547,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 116278
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -6436,6 +6716,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 45206
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -6597,6 +6885,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 176562
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -6752,6 +7048,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 47209
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -6913,6 +7217,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 182123
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -7074,6 +7386,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 71365
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -7235,6 +7555,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 134464
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -7390,6 +7718,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 126278
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -7551,6 +7887,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 287370
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -7712,6 +8056,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 147364
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -7867,6 +8219,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 153009
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -8028,6 +8388,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 49389
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -8183,6 +8551,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 100736
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -8344,6 +8720,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 642099
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -8505,6 +8889,14 @@
         "mobile_viewport": true,
         "primary_rendering": "csr",
         "html_length": 1189
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -8666,6 +9058,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 432801
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -8821,6 +9221,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 125921
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": false,
+        "policy_detected": true
       }
     },
     {
@@ -9145,6 +9553,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 104868
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -9306,6 +9722,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 325281
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -9636,6 +10060,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 75858
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -9797,6 +10229,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 138648
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -9958,6 +10398,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 81125
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -10121,6 +10569,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 158784
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -10282,6 +10738,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 71464
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -10443,6 +10907,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 239792
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -10604,6 +11076,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 3478
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -10765,6 +11245,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 343677
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -10922,6 +11410,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 40963
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -11077,6 +11573,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 194286
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -11244,6 +11748,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 21002
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -11405,6 +11917,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 92860
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -11566,6 +12086,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 669487
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": false,
+        "policy_detected": true
       }
     },
     {
@@ -11727,6 +12255,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 669487
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": false,
+        "policy_detected": true
       }
     },
     {
@@ -11888,6 +12424,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 669487
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": false,
+        "policy_detected": true
       }
     },
     {
@@ -12049,6 +12593,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 669487
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": false,
+        "policy_detected": true
       }
     },
     {
@@ -12210,6 +12762,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 669487
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": false,
+        "policy_detected": true
       }
     },
     {
@@ -12371,6 +12931,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 244328
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -12532,6 +13100,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 669487
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": false,
+        "policy_detected": true
       }
     },
     {
@@ -12693,6 +13269,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 214486
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -12706,15 +13290,15 @@
       "scan_date": "2026-03-15",
       "scan_version": "v1",
       "scores": {
-        "total": 78,
-        "grade": "B+",
+        "total": 66,
+        "grade": "B",
         "categories": {
           "robots_txt": {
             "score": 25,
             "max": 25
           },
           "content_accessibility": {
-            "score": 21,
+            "score": 9,
             "max": 25
           },
           "structured_data": {
@@ -12740,9 +13324,9 @@
           "RT-03": 7,
           "RT-04": 5,
           "RT-05": 5,
-          "CA-01": 7,
+          "CA-01": 0,
           "CA-02": 5,
-          "CA-03": 5,
+          "CA-03": 0,
           "CA-04": 0,
           "CA-05": 4,
           "SD-01": 4,
@@ -12854,6 +13438,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 243948
+      },
+      "deep_analysis": {
+        "press": true,
+        "notice": true,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -13015,6 +13607,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 6170
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -13176,6 +13776,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 171137
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -13337,6 +13945,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 156937
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -13498,6 +14114,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 27531
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -13659,6 +14283,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 3625
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -13820,6 +14452,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 261691
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -13981,6 +14621,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 4525
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -14142,6 +14790,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 622638
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -14303,6 +14959,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 257357
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -14464,6 +15128,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 419347
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -14625,6 +15297,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 10236
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -14904,6 +15584,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 229191
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -15065,6 +15753,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 29375
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -15525,6 +16221,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 246288
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -15686,6 +16390,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 90307
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": false,
+        "policy_detected": true
       }
     },
     {
@@ -15847,6 +16559,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 379374
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -16008,6 +16728,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 8450
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -16169,6 +16897,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 139656
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -16330,6 +17066,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 166001
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -16491,6 +17235,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 692082
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -16652,6 +17404,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 105620
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -16813,6 +17573,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 125329
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -16980,6 +17748,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 52326
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -17141,6 +17917,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 109243
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -17302,6 +18086,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 182135
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -17463,6 +18255,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 142503
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -17624,6 +18424,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 50984
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -17785,6 +18593,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 111380
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -18286,6 +19102,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 167681
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -18447,6 +19271,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 88061
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -18608,6 +19440,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 60578
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -18769,6 +19609,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 69667
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -18930,6 +19778,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 6794
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -19091,6 +19947,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 43211
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -19104,7 +19968,7 @@
       "scan_date": "2026-03-15",
       "scan_version": "v1",
       "scores": {
-        "total": 76,
+        "total": 71,
         "grade": "B+",
         "categories": {
           "robots_txt": {
@@ -19112,7 +19976,7 @@
             "max": 25
           },
           "content_accessibility": {
-            "score": 21,
+            "score": 16,
             "max": 25
           },
           "structured_data": {
@@ -19140,7 +20004,7 @@
           "RT-05": 5,
           "CA-01": 7,
           "CA-02": 5,
-          "CA-03": 5,
+          "CA-03": 0,
           "CA-04": 0,
           "CA-05": 4,
           "SD-01": 4,
@@ -19252,6 +20116,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 34224
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": true,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -19413,6 +20285,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 248956
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -19574,6 +20454,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 152804
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -19735,6 +20623,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 216488
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -19896,6 +20792,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 670711
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": true
       }
     },
     {
@@ -20057,6 +20961,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 160306
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -20218,6 +21130,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 2512
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -20379,6 +21299,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 117116
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -20392,15 +21320,15 @@
       "scan_date": "2026-03-15",
       "scan_version": "v1",
       "scores": {
-        "total": 76,
-        "grade": "B+",
+        "total": 66,
+        "grade": "B",
         "categories": {
           "robots_txt": {
             "score": 25,
             "max": 25
           },
           "content_accessibility": {
-            "score": 21,
+            "score": 11,
             "max": 25
           },
           "structured_data": {
@@ -20427,8 +21355,8 @@
           "RT-04": 5,
           "RT-05": 5,
           "CA-01": 7,
-          "CA-02": 5,
-          "CA-03": 5,
+          "CA-02": 0,
+          "CA-03": 0,
           "CA-04": 0,
           "CA-05": 4,
           "SD-01": 4,
@@ -20540,6 +21468,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 780812
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": true,
+        "policy": true,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -20701,6 +21637,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 162255
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -20862,6 +21806,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 85597
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -21017,6 +21969,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 114766
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -21178,6 +22138,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 324531
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -21339,6 +22307,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 347858
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -21500,6 +22476,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 70105
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -21661,6 +22645,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 107569
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -21822,6 +22814,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 208078
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -22162,6 +23162,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 71714
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -22329,6 +23337,14 @@
         "mobile_viewport": true,
         "primary_rendering": "csr",
         "html_length": 1687
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -22342,15 +23358,15 @@
       "scan_date": "2026-03-15",
       "scan_version": "v1",
       "scores": {
-        "total": 75,
-        "grade": "B+",
+        "total": 58,
+        "grade": "C",
         "categories": {
           "robots_txt": {
             "score": 25,
             "max": 25
           },
           "content_accessibility": {
-            "score": 21,
+            "score": 4,
             "max": 25
           },
           "structured_data": {
@@ -22376,9 +23392,9 @@
           "RT-03": 7,
           "RT-04": 5,
           "RT-05": 5,
-          "CA-01": 7,
-          "CA-02": 5,
-          "CA-03": 5,
+          "CA-01": 0,
+          "CA-02": 0,
+          "CA-03": 0,
           "CA-04": 0,
           "CA-05": 4,
           "SD-01": 4,
@@ -22496,6 +23512,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 140823
+      },
+      "deep_analysis": {
+        "press": true,
+        "notice": true,
+        "policy": true,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -22663,6 +23687,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 55669
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -22824,6 +23856,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 461714
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -22985,6 +24025,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 168228
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -23146,6 +24194,14 @@
         "mobile_viewport": true,
         "primary_rendering": "csr",
         "html_length": 11030
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -23307,6 +24363,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 68954
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -23470,6 +24534,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 44760
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -23631,6 +24703,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 97992
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -23955,6 +25035,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 29672
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -24116,6 +25204,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 85256
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -24277,6 +25373,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 81295
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -24440,6 +25544,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 55208
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -24607,6 +25719,14 @@
         "mobile_viewport": false,
         "primary_rendering": "ssr",
         "html_length": 201171
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -24774,6 +25894,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 4945
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -24937,6 +26065,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 1853
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -25098,6 +26234,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 207135
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -25265,6 +26409,14 @@
         "mobile_viewport": true,
         "primary_rendering": "csr",
         "html_length": 1347
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -25426,6 +26578,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 125214
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -25587,6 +26747,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 99635
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -25748,6 +26916,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 10751
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -25915,6 +27091,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 210377
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -26082,6 +27266,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 210377
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -26243,6 +27435,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 109764
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -26404,6 +27604,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 93038
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -26565,6 +27773,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 244079
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -26732,6 +27948,14 @@
         "mobile_viewport": true,
         "primary_rendering": "csr",
         "html_length": 7102
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -26893,6 +28117,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 353377
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -27392,6 +28624,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 93580
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -27405,15 +28645,15 @@
       "scan_date": "2026-03-15",
       "scan_version": "v1",
       "scores": {
-        "total": 73,
-        "grade": "B+",
+        "total": 61,
+        "grade": "B",
         "categories": {
           "robots_txt": {
             "score": 25,
             "max": 25
           },
           "content_accessibility": {
-            "score": 21,
+            "score": 9,
             "max": 25
           },
           "structured_data": {
@@ -27439,9 +28679,9 @@
           "RT-03": 7,
           "RT-04": 5,
           "RT-05": 5,
-          "CA-01": 7,
+          "CA-01": 0,
           "CA-02": 5,
-          "CA-03": 5,
+          "CA-03": 0,
           "CA-04": 0,
           "CA-05": 4,
           "SD-01": 4,
@@ -27553,6 +28793,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 173532
+      },
+      "deep_analysis": {
+        "press": true,
+        "notice": true,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -27720,6 +28968,14 @@
         "mobile_viewport": true,
         "primary_rendering": "csr",
         "html_length": 2980
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -27883,6 +29139,14 @@
         "mobile_viewport": false,
         "primary_rendering": "ssr",
         "html_length": 31041
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -28053,6 +29317,14 @@
         "mobile_viewport": true,
         "primary_rendering": "csr",
         "html_length": 2588
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -28214,6 +29486,14 @@
         "mobile_viewport": true,
         "primary_rendering": "csr",
         "html_length": 1996
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -28381,6 +29661,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 54437
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -28680,6 +29968,14 @@
         "mobile_viewport": true,
         "primary_rendering": "csr",
         "html_length": 8355
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -28847,6 +30143,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 75127
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -29008,6 +30312,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 175963
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -29169,6 +30481,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 7951
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -29330,6 +30650,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 6576
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -29343,15 +30671,15 @@
       "scan_date": "2026-03-15",
       "scan_version": "v1",
       "scores": {
-        "total": 73,
-        "grade": "B+",
+        "total": 68,
+        "grade": "B",
         "categories": {
           "robots_txt": {
             "score": 25,
             "max": 25
           },
           "content_accessibility": {
-            "score": 21,
+            "score": 16,
             "max": 25
           },
           "structured_data": {
@@ -29379,7 +30707,7 @@
           "RT-05": 5,
           "CA-01": 7,
           "CA-02": 5,
-          "CA-03": 5,
+          "CA-03": 0,
           "CA-04": 0,
           "CA-05": 4,
           "SD-01": 4,
@@ -29491,6 +30819,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 52720
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": true,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -29784,6 +31120,14 @@
         "mobile_viewport": true,
         "primary_rendering": "csr",
         "html_length": 432
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -29945,6 +31289,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 304490
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -30106,6 +31458,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 304490
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -30267,6 +31627,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 304490
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -30428,6 +31796,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 5499
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -30589,6 +31965,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 304490
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -30750,6 +32134,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 366892
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": false,
+        "policy_detected": true
       }
     },
     {
@@ -30763,15 +32155,15 @@
       "scan_date": "2026-03-15",
       "scan_version": "v1",
       "scores": {
-        "total": 73,
-        "grade": "B+",
+        "total": 61,
+        "grade": "B",
         "categories": {
           "robots_txt": {
             "score": 25,
             "max": 25
           },
           "content_accessibility": {
-            "score": 21,
+            "score": 9,
             "max": 25
           },
           "structured_data": {
@@ -30797,9 +32189,9 @@
           "RT-03": 7,
           "RT-04": 5,
           "RT-05": 5,
-          "CA-01": 7,
+          "CA-01": 0,
           "CA-02": 5,
-          "CA-03": 5,
+          "CA-03": 0,
           "CA-04": 0,
           "CA-05": 4,
           "SD-01": 4,
@@ -30917,6 +32309,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 165332
+      },
+      "deep_analysis": {
+        "press": true,
+        "notice": true,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -31078,6 +32478,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 170451
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -31245,6 +32653,14 @@
         "mobile_viewport": true,
         "primary_rendering": "csr",
         "html_length": 5402
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -31406,6 +32822,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 312803
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -31567,6 +32991,14 @@
         "mobile_viewport": false,
         "primary_rendering": "ssr",
         "html_length": 42945
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -31852,6 +33284,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 75047
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -32013,6 +33453,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 123172
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -32180,6 +33628,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 222430
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -32341,6 +33797,14 @@
         "mobile_viewport": false,
         "primary_rendering": "ssr",
         "html_length": 194564
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -32502,6 +33966,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 95804
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -32663,6 +34135,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 187814
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -32824,6 +34304,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 107578
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -32985,6 +34473,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 126759
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -33321,6 +34817,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 43370
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -33488,6 +34992,14 @@
         "mobile_viewport": true,
         "primary_rendering": "csr",
         "html_length": 763
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -33993,6 +35505,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 7769
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -34162,6 +35682,14 @@
         "mobile_viewport": true,
         "primary_rendering": "csr",
         "html_length": 7181
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -34329,6 +35857,14 @@
         "mobile_viewport": true,
         "primary_rendering": "csr",
         "html_length": 1095
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -34496,6 +36032,14 @@
         "mobile_viewport": true,
         "primary_rendering": "csr",
         "html_length": 979
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -34663,6 +36207,14 @@
         "mobile_viewport": true,
         "primary_rendering": "csr",
         "html_length": 2881
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -34824,6 +36376,14 @@
         "mobile_viewport": false,
         "primary_rendering": "ssr",
         "html_length": 30758
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -34985,6 +36545,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 129626
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -35146,6 +36714,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 54038
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -35307,6 +36883,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 51138
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -35468,6 +37052,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 55434
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -35629,6 +37221,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 55332
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -35790,6 +37390,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 56713
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -35951,6 +37559,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 55782
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -36112,6 +37728,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 55074
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -36273,6 +37897,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 54682
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -36434,6 +38066,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 55156
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -36595,6 +38235,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 55716
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -36756,6 +38404,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 56169
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -36917,6 +38573,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 57851
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -37078,6 +38742,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 54408
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -37239,6 +38911,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 55973
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -37400,6 +39080,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 56181
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -37561,6 +39249,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 54270
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -37722,6 +39418,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 53485
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -37883,6 +39587,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 201777
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -38050,6 +39762,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 299312
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -38211,6 +39931,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 340715
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -38224,15 +39952,15 @@
       "scan_date": "2026-03-15",
       "scan_version": "v1",
       "scores": {
-        "total": 72,
-        "grade": "B+",
+        "total": 62,
+        "grade": "B",
         "categories": {
           "robots_txt": {
             "score": 25,
             "max": 25
           },
           "content_accessibility": {
-            "score": 21,
+            "score": 11,
             "max": 25
           },
           "structured_data": {
@@ -38259,8 +39987,8 @@
           "RT-04": 5,
           "RT-05": 5,
           "CA-01": 7,
-          "CA-02": 5,
-          "CA-03": 5,
+          "CA-02": 0,
+          "CA-03": 0,
           "CA-04": 0,
           "CA-05": 4,
           "SD-01": 4,
@@ -38372,6 +40100,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 184940
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": true,
+        "policy": true,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -38533,6 +40269,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 89188
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -38694,6 +40438,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 231361
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -38855,6 +40607,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 65754
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -39016,6 +40776,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 54589
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -39183,6 +40951,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 57465
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -39196,15 +40972,15 @@
       "scan_date": "2026-03-15",
       "scan_version": "v1",
       "scores": {
-        "total": 72,
-        "grade": "B+",
+        "total": 55,
+        "grade": "C",
         "categories": {
           "robots_txt": {
             "score": 25,
             "max": 25
           },
           "content_accessibility": {
-            "score": 21,
+            "score": 4,
             "max": 25
           },
           "structured_data": {
@@ -39230,9 +41006,9 @@
           "RT-03": 7,
           "RT-04": 5,
           "RT-05": 5,
-          "CA-01": 7,
-          "CA-02": 5,
-          "CA-03": 5,
+          "CA-01": 0,
+          "CA-02": 0,
+          "CA-03": 0,
           "CA-04": 0,
           "CA-05": 4,
           "SD-01": 4,
@@ -39344,6 +41120,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 222909
+      },
+      "deep_analysis": {
+        "press": true,
+        "notice": true,
+        "policy": true,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -39357,15 +41141,15 @@
       "scan_date": "2026-03-15",
       "scan_version": "v1",
       "scores": {
-        "total": 72,
-        "grade": "B+",
+        "total": 60,
+        "grade": "B",
         "categories": {
           "robots_txt": {
             "score": 25,
             "max": 25
           },
           "content_accessibility": {
-            "score": 21,
+            "score": 9,
             "max": 25
           },
           "structured_data": {
@@ -39391,9 +41175,9 @@
           "RT-03": 7,
           "RT-04": 5,
           "RT-05": 5,
-          "CA-01": 7,
+          "CA-01": 0,
           "CA-02": 5,
-          "CA-03": 5,
+          "CA-03": 0,
           "CA-04": 0,
           "CA-05": 4,
           "SD-01": 4,
@@ -39505,6 +41289,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 177633
+      },
+      "deep_analysis": {
+        "press": true,
+        "notice": true,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -39518,15 +41310,15 @@
       "scan_date": "2026-03-15",
       "scan_version": "v1",
       "scores": {
-        "total": 72,
-        "grade": "B+",
+        "total": 67,
+        "grade": "B",
         "categories": {
           "robots_txt": {
             "score": 25,
             "max": 25
           },
           "content_accessibility": {
-            "score": 21,
+            "score": 16,
             "max": 25
           },
           "structured_data": {
@@ -39554,7 +41346,7 @@
           "RT-05": 5,
           "CA-01": 7,
           "CA-02": 5,
-          "CA-03": 5,
+          "CA-03": 0,
           "CA-04": 0,
           "CA-05": 4,
           "SD-01": 4,
@@ -39666,6 +41458,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 56107
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": true,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -39827,6 +41627,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 152956
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -40126,6 +41934,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 205540
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -40287,6 +42103,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 388705
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -40572,6 +42396,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 208007
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -40733,6 +42565,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 73474
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -40894,6 +42734,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 81741
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -41185,6 +43033,14 @@
         "mobile_viewport": true,
         "primary_rendering": "csr",
         "html_length": 19483
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -41360,6 +43216,14 @@
         "mobile_viewport": true,
         "primary_rendering": "csr",
         "html_length": 7512
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -41527,6 +43391,14 @@
         "mobile_viewport": true,
         "primary_rendering": "csr",
         "html_length": 24603
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -41694,6 +43566,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 334255
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": false,
+        "policy_detected": true
       }
     },
     {
@@ -41979,6 +43859,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 9921
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -42146,6 +44034,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 225423
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -42307,6 +44203,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 726
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -42474,6 +44378,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 157998
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -42765,6 +44677,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 9769
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -42778,15 +44698,15 @@
       "scan_date": "2026-03-15",
       "scan_version": "v1",
       "scores": {
-        "total": 70,
-        "grade": "B+",
+        "total": 58,
+        "grade": "C",
         "categories": {
           "robots_txt": {
             "score": 25,
             "max": 25
           },
           "content_accessibility": {
-            "score": 17,
+            "score": 5,
             "max": 25
           },
           "structured_data": {
@@ -42812,9 +44732,9 @@
           "RT-03": 7,
           "RT-04": 5,
           "RT-05": 5,
-          "CA-01": 7,
+          "CA-01": 0,
           "CA-02": 5,
-          "CA-03": 5,
+          "CA-03": 0,
           "CA-04": 0,
           "CA-05": 0,
           "SD-01": 4,
@@ -42934,6 +44854,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 550
+      },
+      "deep_analysis": {
+        "press": true,
+        "notice": true,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -43272,6 +45200,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 13184
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -43433,6 +45369,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 309104
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -43602,6 +45546,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 195
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -43769,6 +45721,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 6224
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -43936,6 +45896,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 9210
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -44103,6 +46071,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 553
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -44270,6 +46246,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 3320
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -44437,6 +46421,14 @@
         "mobile_viewport": true,
         "primary_rendering": "csr",
         "html_length": 1133
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -44598,6 +46590,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 100639
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -44759,6 +46759,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 5852
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -44926,6 +46934,14 @@
         "mobile_viewport": true,
         "primary_rendering": "csr",
         "html_length": 2699
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -45087,6 +47103,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 5865
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -45254,6 +47278,14 @@
         "mobile_viewport": false,
         "primary_rendering": "ssr",
         "html_length": 9850
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -45421,6 +47453,14 @@
         "mobile_viewport": false,
         "primary_rendering": "ssr",
         "html_length": 44061
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -45434,7 +47474,7 @@
       "scan_date": "2026-03-15",
       "scan_version": "v1",
       "scores": {
-        "total": 69,
+        "total": 64,
         "grade": "B",
         "categories": {
           "robots_txt": {
@@ -45442,7 +47482,7 @@
             "max": 25
           },
           "content_accessibility": {
-            "score": 17,
+            "score": 12,
             "max": 25
           },
           "structured_data": {
@@ -45470,7 +47510,7 @@
           "RT-05": 5,
           "CA-01": 7,
           "CA-02": 5,
-          "CA-03": 5,
+          "CA-03": 0,
           "CA-04": 0,
           "CA-05": 0,
           "SD-01": 4,
@@ -45588,6 +47628,14 @@
         "mobile_viewport": true,
         "primary_rendering": "csr",
         "html_length": 67945
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": true,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -45751,6 +47799,14 @@
         "mobile_viewport": false,
         "primary_rendering": "ssr",
         "html_length": 72161
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -46414,6 +48470,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 2253939
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -46581,6 +48645,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 77707
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -46923,6 +48995,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 16571
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -47090,6 +49170,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 48432
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -47259,6 +49347,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 5521
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -47432,6 +49528,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 89930
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -47599,6 +49703,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 248640
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -47766,6 +49878,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 908
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -47933,6 +50053,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 108728
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -48100,6 +50228,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 127587
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -48393,6 +50529,14 @@
         "mobile_viewport": true,
         "primary_rendering": "csr",
         "html_length": 1401
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -48530,15 +50674,15 @@
       "scan_date": "2026-03-15",
       "scan_version": "v1",
       "scores": {
-        "total": 68,
-        "grade": "B",
+        "total": 56,
+        "grade": "C",
         "categories": {
           "robots_txt": {
             "score": 25,
             "max": 25
           },
           "content_accessibility": {
-            "score": 21,
+            "score": 9,
             "max": 25
           },
           "structured_data": {
@@ -48564,9 +50708,9 @@
           "RT-03": 7,
           "RT-04": 5,
           "RT-05": 5,
-          "CA-01": 7,
+          "CA-01": 0,
           "CA-02": 5,
-          "CA-03": 5,
+          "CA-03": 0,
           "CA-04": 0,
           "CA-05": 4,
           "SD-01": 4,
@@ -48684,6 +50828,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 147361
+      },
+      "deep_analysis": {
+        "press": true,
+        "notice": true,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -49101,6 +51253,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 1738132
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -49268,6 +51428,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 494774
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -49435,6 +51603,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 150201
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -49602,6 +51778,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 8576
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -49769,6 +51953,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 157198
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -49936,6 +52128,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 8333
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -50097,6 +52297,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 12974
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -50258,6 +52466,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 223386
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -50419,6 +52635,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 223386
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -50580,6 +52804,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 223386
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -50741,6 +52973,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 223386
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -50902,6 +53142,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 223386
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -51063,6 +53311,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 223386
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -51411,6 +53667,14 @@
         "mobile_viewport": true,
         "primary_rendering": "csr",
         "html_length": 3326
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -51424,15 +53688,15 @@
       "scan_date": "2026-03-15",
       "scan_version": "v1",
       "scores": {
-        "total": 66,
-        "grade": "B",
+        "total": 54,
+        "grade": "C",
         "categories": {
           "robots_txt": {
             "score": 25,
             "max": 25
           },
           "content_accessibility": {
-            "score": 21,
+            "score": 9,
             "max": 25
           },
           "structured_data": {
@@ -51458,9 +53722,9 @@
           "RT-03": 7,
           "RT-04": 5,
           "RT-05": 5,
-          "CA-01": 7,
+          "CA-01": 0,
           "CA-02": 5,
-          "CA-03": 5,
+          "CA-03": 0,
           "CA-04": 0,
           "CA-05": 4,
           "SD-01": 4,
@@ -51578,6 +53842,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 84659
+      },
+      "deep_analysis": {
+        "press": true,
+        "notice": true,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -51875,6 +54147,14 @@
         "mobile_viewport": true,
         "primary_rendering": "csr",
         "html_length": 169008
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": false,
+        "policy_detected": true
       }
     },
     {
@@ -52136,15 +54416,15 @@
       "scan_date": "2026-03-15",
       "scan_version": "v1",
       "scores": {
-        "total": 66,
-        "grade": "B",
+        "total": 54,
+        "grade": "C",
         "categories": {
           "robots_txt": {
             "score": 25,
             "max": 25
           },
           "content_accessibility": {
-            "score": 17,
+            "score": 5,
             "max": 25
           },
           "structured_data": {
@@ -52170,9 +54450,9 @@
           "RT-03": 7,
           "RT-04": 5,
           "RT-05": 5,
-          "CA-01": 7,
+          "CA-01": 0,
           "CA-02": 5,
-          "CA-03": 5,
+          "CA-03": 0,
           "CA-04": 0,
           "CA-05": 0,
           "SD-01": 4,
@@ -52302,6 +54582,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 1055
+      },
+      "deep_analysis": {
+        "press": true,
+        "notice": true,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -52469,6 +54757,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 390
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -52817,6 +55113,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 91153
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -52990,6 +55294,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 1792
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -53293,6 +55605,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 2041
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -53460,6 +55780,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 10069
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -53633,6 +55961,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 3556
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -53800,6 +56136,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 773
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -53967,6 +56311,14 @@
         "mobile_viewport": true,
         "primary_rendering": "csr",
         "html_length": 6881
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -54134,6 +56486,14 @@
         "mobile_viewport": true,
         "primary_rendering": "csr",
         "html_length": 612
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -54425,6 +56785,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 131131
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -54592,6 +56960,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 105321
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -54759,6 +57135,14 @@
         "mobile_viewport": true,
         "primary_rendering": "csr",
         "html_length": 2801
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -54928,6 +57312,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 62105
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -55219,6 +57611,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 167328
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -55386,6 +57786,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 257
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -55553,6 +57961,14 @@
         "mobile_viewport": false,
         "primary_rendering": "ssr",
         "html_length": 25798
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -55720,6 +58136,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 442
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -56074,6 +58498,14 @@
         "mobile_viewport": true,
         "primary_rendering": "csr",
         "html_length": 1679
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": false,
+        "policy_detected": true
       }
     },
     {
@@ -56247,6 +58679,14 @@
         "mobile_viewport": true,
         "primary_rendering": "csr",
         "html_length": 431
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -56910,6 +59350,14 @@
         "mobile_viewport": false,
         "primary_rendering": "ssr",
         "html_length": 39891
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -57083,6 +59531,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 197
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -57262,6 +59718,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 522
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -57435,6 +59899,14 @@
         "mobile_viewport": true,
         "primary_rendering": "csr",
         "html_length": 186545
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -57726,6 +60198,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 115873
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -57893,6 +60373,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 216148
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": false,
+        "policy_detected": true
       }
     },
     {
@@ -58192,6 +60680,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 473
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -58365,6 +60861,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 80
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -58378,15 +60882,15 @@
       "scan_date": "2026-03-15",
       "scan_version": "v1",
       "scores": {
-        "total": 62,
-        "grade": "B",
+        "total": 50,
+        "grade": "C",
         "categories": {
           "robots_txt": {
             "score": 25,
             "max": 25
           },
           "content_accessibility": {
-            "score": 21,
+            "score": 9,
             "max": 25
           },
           "structured_data": {
@@ -58412,9 +60916,9 @@
           "RT-03": 7,
           "RT-04": 5,
           "RT-05": 5,
-          "CA-01": 7,
+          "CA-01": 0,
           "CA-02": 5,
-          "CA-03": 5,
+          "CA-03": 0,
           "CA-04": 4,
           "CA-05": 0,
           "SD-01": 0,
@@ -58540,6 +61044,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 78
+      },
+      "deep_analysis": {
+        "press": true,
+        "notice": true,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -58967,6 +61479,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 965
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -59140,6 +61660,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 63
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -59685,6 +62213,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 119046
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -59858,6 +62394,14 @@
         "mobile_viewport": true,
         "primary_rendering": "csr",
         "html_length": 302
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -60031,6 +62575,14 @@
         "mobile_viewport": true,
         "primary_rendering": "csr",
         "html_length": 792
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": false,
+        "policy_detected": true
       }
     },
     {
@@ -60204,6 +62756,14 @@
         "mobile_viewport": true,
         "primary_rendering": "csr",
         "html_length": 3080
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -60377,6 +62937,14 @@
         "mobile_viewport": true,
         "primary_rendering": "csr",
         "html_length": 4054
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -60550,6 +63118,14 @@
         "mobile_viewport": true,
         "primary_rendering": "csr",
         "html_length": 922
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -60717,6 +63293,14 @@
         "mobile_viewport": false,
         "primary_rendering": "ssr",
         "html_length": 54120
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -60896,6 +63480,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 621
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -61329,6 +63921,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 6731
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -61502,6 +64102,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 612
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -61675,6 +64283,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 195
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -62354,6 +64970,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 892
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -62657,6 +65281,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 230
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -63078,6 +65710,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 299
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -63251,6 +65891,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 175
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -63424,6 +66072,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 396
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -63597,6 +66253,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 404
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -63770,6 +66434,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 404
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -63943,6 +66615,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 404
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -64116,6 +66796,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 404
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -64289,6 +66977,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 404
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -64462,6 +67158,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 404
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -64635,6 +67339,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 404
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -64808,6 +67520,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 404
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -64981,6 +67701,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 404
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -65154,6 +67882,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 404
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -65327,6 +68063,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 404
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -65500,6 +68244,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 404
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -65673,6 +68425,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 404
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -65846,6 +68606,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 404
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -66019,6 +68787,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 404
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -66192,6 +68968,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 404
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -66365,6 +69149,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 404
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -66538,6 +69330,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 404
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -66711,6 +69511,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 404
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -66884,6 +69692,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 404
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -67057,6 +69873,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 404
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -67230,6 +70054,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 404
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -67403,6 +70235,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 404
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -67576,6 +70416,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 404
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -67749,6 +70597,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 1177
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -67922,6 +70778,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 356
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -68095,6 +70959,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 738
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -68268,6 +71140,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 167
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -68281,15 +71161,15 @@
       "scan_date": "2026-03-15",
       "scan_version": "v1",
       "scores": {
-        "total": 60,
-        "grade": "B",
+        "total": 48,
+        "grade": "C",
         "categories": {
           "robots_txt": {
             "score": 25,
             "max": 25
           },
           "content_accessibility": {
-            "score": 17,
+            "score": 5,
             "max": 25
           },
           "structured_data": {
@@ -68315,9 +71195,9 @@
           "RT-03": 7,
           "RT-04": 5,
           "RT-05": 5,
-          "CA-01": 7,
+          "CA-01": 0,
           "CA-02": 5,
-          "CA-03": 5,
+          "CA-03": 0,
           "CA-04": 0,
           "CA-05": 0,
           "SD-01": 4,
@@ -68441,6 +71321,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 2260
+      },
+      "deep_analysis": {
+        "press": true,
+        "notice": true,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -68744,6 +71632,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 570
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -68917,6 +71813,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 315
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -69090,6 +71994,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 576
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -69263,6 +72175,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 2557
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -69436,6 +72356,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 175
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -69614,9 +72542,9 @@
         "press": false,
         "notice": false,
         "policy": false,
-        "press_detected": true,
-        "notice_detected": true,
-        "policy_detected": true
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -69638,7 +72566,7 @@
             "max": 25
           },
           "content_accessibility": {
-            "score": 23,
+            "score": 6,
             "max": 25
           },
           "structured_data": {
@@ -69664,9 +72592,9 @@
           "RT-03": 4,
           "RT-04": 5,
           "RT-05": 5,
-          "CA-01": 7,
-          "CA-02": 5,
-          "CA-03": 5,
+          "CA-01": 0,
+          "CA-02": 0,
+          "CA-03": 0,
           "CA-04": 2,
           "CA-05": 4,
           "SD-01": 4,
@@ -69779,6 +72707,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 292212
+      },
+      "deep_analysis": {
+        "press": true,
+        "notice": true,
+        "policy": true,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -69800,7 +72736,7 @@
             "max": 25
           },
           "content_accessibility": {
-            "score": 23,
+            "score": 11,
             "max": 25
           },
           "structured_data": {
@@ -69826,9 +72762,9 @@
           "RT-03": 4,
           "RT-04": 5,
           "RT-05": 5,
-          "CA-01": 7,
+          "CA-01": 0,
           "CA-02": 5,
-          "CA-03": 5,
+          "CA-03": 0,
           "CA-04": 2,
           "CA-05": 4,
           "SD-01": 4,
@@ -69943,6 +72879,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 126999
+      },
+      "deep_analysis": {
+        "press": true,
+        "notice": true,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -69964,7 +72908,7 @@
             "max": 25
           },
           "content_accessibility": {
-            "score": 23,
+            "score": 11,
             "max": 25
           },
           "structured_data": {
@@ -69990,9 +72934,9 @@
           "RT-03": 4,
           "RT-04": 5,
           "RT-05": 5,
-          "CA-01": 7,
+          "CA-01": 0,
           "CA-02": 5,
-          "CA-03": 5,
+          "CA-03": 0,
           "CA-04": 2,
           "CA-05": 4,
           "SD-01": 4,
@@ -70105,6 +73049,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 98711
+      },
+      "deep_analysis": {
+        "press": true,
+        "notice": true,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -70126,7 +73078,7 @@
             "max": 25
           },
           "content_accessibility": {
-            "score": 21,
+            "score": 4,
             "max": 25
           },
           "structured_data": {
@@ -70152,9 +73104,9 @@
           "RT-03": 4,
           "RT-04": 5,
           "RT-05": 5,
-          "CA-01": 7,
-          "CA-02": 5,
-          "CA-03": 5,
+          "CA-01": 0,
+          "CA-02": 0,
+          "CA-03": 0,
           "CA-04": 0,
           "CA-05": 4,
           "SD-01": 4,
@@ -70273,6 +73225,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 259957
+      },
+      "deep_analysis": {
+        "press": true,
+        "notice": true,
+        "policy": true,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -70286,7 +73246,7 @@
       "scan_date": "2026-03-15",
       "scan_version": "v1",
       "scores": {
-        "total": 59,
+        "total": 58,
         "grade": "C",
         "categories": {
           "robots_txt": {
@@ -70294,7 +73254,7 @@
             "max": 25
           },
           "content_accessibility": {
-            "score": 21,
+            "score": 4,
             "max": 25
           },
           "structured_data": {
@@ -70320,9 +73280,9 @@
           "RT-03": 4,
           "RT-04": 5,
           "RT-05": 5,
-          "CA-01": 7,
-          "CA-02": 5,
-          "CA-03": 5,
+          "CA-01": 0,
+          "CA-02": 0,
+          "CA-03": 0,
           "CA-04": 0,
           "CA-05": 4,
           "SD-01": 4,
@@ -70441,6 +73401,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 117388
+      },
+      "deep_analysis": {
+        "press": true,
+        "notice": true,
+        "policy": true,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -70609,6 +73577,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 146015
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -70630,7 +73606,7 @@
             "max": 25
           },
           "content_accessibility": {
-            "score": 21,
+            "score": 9,
             "max": 25
           },
           "structured_data": {
@@ -70656,9 +73632,9 @@
           "RT-03": 4,
           "RT-04": 5,
           "RT-05": 5,
-          "CA-01": 7,
+          "CA-01": 0,
           "CA-02": 5,
-          "CA-03": 5,
+          "CA-03": 0,
           "CA-04": 0,
           "CA-05": 4,
           "SD-01": 4,
@@ -70777,6 +73753,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 241721
+      },
+      "deep_analysis": {
+        "press": true,
+        "notice": true,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -70798,7 +73782,7 @@
             "max": 25
           },
           "content_accessibility": {
-            "score": 21,
+            "score": 9,
             "max": 25
           },
           "structured_data": {
@@ -70824,9 +73808,9 @@
           "RT-03": 4,
           "RT-04": 5,
           "RT-05": 5,
-          "CA-01": 7,
+          "CA-01": 0,
           "CA-02": 5,
-          "CA-03": 5,
+          "CA-03": 0,
           "CA-04": 0,
           "CA-05": 4,
           "SD-01": 4,
@@ -70945,6 +73929,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 284925
+      },
+      "deep_analysis": {
+        "press": true,
+        "notice": true,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -70966,7 +73958,7 @@
             "max": 25
           },
           "content_accessibility": {
-            "score": 21,
+            "score": 9,
             "max": 25
           },
           "structured_data": {
@@ -70992,9 +73984,9 @@
           "RT-03": 4,
           "RT-04": 5,
           "RT-05": 5,
-          "CA-01": 7,
+          "CA-01": 0,
           "CA-02": 5,
-          "CA-03": 5,
+          "CA-03": 0,
           "CA-04": 0,
           "CA-05": 4,
           "SD-01": 4,
@@ -71113,6 +74105,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 153944
+      },
+      "deep_analysis": {
+        "press": true,
+        "notice": true,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -71126,7 +74126,7 @@
       "scan_date": "2026-03-15",
       "scan_version": "v1",
       "scores": {
-        "total": 59,
+        "total": 54,
         "grade": "C",
         "categories": {
           "robots_txt": {
@@ -71134,7 +74134,7 @@
             "max": 25
           },
           "content_accessibility": {
-            "score": 21,
+            "score": 4,
             "max": 25
           },
           "structured_data": {
@@ -71160,9 +74160,9 @@
           "RT-03": 4,
           "RT-04": 5,
           "RT-05": 5,
-          "CA-01": 7,
-          "CA-02": 5,
-          "CA-03": 5,
+          "CA-01": 0,
+          "CA-02": 0,
+          "CA-03": 0,
           "CA-04": 0,
           "CA-05": 4,
           "SD-01": 4,
@@ -71281,6 +74281,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 458719
+      },
+      "deep_analysis": {
+        "press": true,
+        "notice": true,
+        "policy": true,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -71449,6 +74457,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 29632
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -71462,7 +74478,7 @@
       "scan_date": "2026-03-15",
       "scan_version": "v1",
       "scores": {
-        "total": 59,
+        "total": 52,
         "grade": "C",
         "categories": {
           "robots_txt": {
@@ -71470,7 +74486,7 @@
             "max": 25
           },
           "content_accessibility": {
-            "score": 21,
+            "score": 4,
             "max": 25
           },
           "structured_data": {
@@ -71496,9 +74512,9 @@
           "RT-03": 4,
           "RT-04": 5,
           "RT-05": 5,
-          "CA-01": 7,
-          "CA-02": 5,
-          "CA-03": 5,
+          "CA-01": 0,
+          "CA-02": 0,
+          "CA-03": 0,
           "CA-04": 0,
           "CA-05": 4,
           "SD-01": 4,
@@ -71617,6 +74633,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 157195
+      },
+      "deep_analysis": {
+        "press": true,
+        "notice": true,
+        "policy": true,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -71630,7 +74654,7 @@
       "scan_date": "2026-03-15",
       "scan_version": "v1",
       "scores": {
-        "total": 59,
+        "total": 50,
         "grade": "C",
         "categories": {
           "robots_txt": {
@@ -71638,7 +74662,7 @@
             "max": 25
           },
           "content_accessibility": {
-            "score": 21,
+            "score": 9,
             "max": 25
           },
           "structured_data": {
@@ -71664,9 +74688,9 @@
           "RT-03": 4,
           "RT-04": 5,
           "RT-05": 5,
-          "CA-01": 7,
+          "CA-01": 0,
           "CA-02": 5,
-          "CA-03": 5,
+          "CA-03": 0,
           "CA-04": 0,
           "CA-05": 4,
           "SD-01": 4,
@@ -71797,6 +74821,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 85534
+      },
+      "deep_analysis": {
+        "press": true,
+        "notice": true,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -71970,6 +75002,14 @@
         "mobile_viewport": false,
         "primary_rendering": "ssr",
         "html_length": 63679
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -71983,7 +75023,7 @@
       "scan_date": "2026-03-15",
       "scan_version": "v1",
       "scores": {
-        "total": 59,
+        "total": 50,
         "grade": "C",
         "categories": {
           "robots_txt": {
@@ -71991,7 +75031,7 @@
             "max": 25
           },
           "content_accessibility": {
-            "score": 19,
+            "score": 7,
             "max": 25
           },
           "structured_data": {
@@ -72017,9 +75057,9 @@
           "RT-03": 4,
           "RT-04": 5,
           "RT-05": 5,
-          "CA-01": 7,
+          "CA-01": 0,
           "CA-02": 5,
-          "CA-03": 5,
+          "CA-03": 0,
           "CA-04": 2,
           "CA-05": 0,
           "SD-01": 4,
@@ -72146,6 +75186,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 194
+      },
+      "deep_analysis": {
+        "press": true,
+        "notice": true,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -72573,6 +75621,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 132
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -72876,6 +75932,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 78
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -73045,6 +76109,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 245
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -73223,9 +76295,9 @@
         "press": false,
         "notice": false,
         "policy": false,
-        "press_detected": true,
+        "press_detected": false,
         "notice_detected": false,
-        "policy_detected": true
+        "policy_detected": false
       }
     },
     {
@@ -73404,9 +76476,9 @@
         "press": false,
         "notice": false,
         "policy": false,
-        "press_detected": true,
-        "notice_detected": true,
-        "policy_detected": true
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -73582,6 +76654,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 1607
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -73761,6 +76841,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 687
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -73940,6 +77028,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 135
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -74119,6 +77215,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 227
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -74298,6 +77402,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 330
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -74477,6 +77589,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 216
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -74656,6 +77776,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 381
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -74669,7 +77797,7 @@
       "scan_date": "2026-03-15",
       "scan_version": "v1",
       "scores": {
-        "total": 57,
+        "total": 45,
         "grade": "C",
         "categories": {
           "robots_txt": {
@@ -74677,7 +77805,7 @@
             "max": 25
           },
           "content_accessibility": {
-            "score": 17,
+            "score": 5,
             "max": 25
           },
           "structured_data": {
@@ -74703,9 +77831,9 @@
           "RT-03": 7,
           "RT-04": 5,
           "RT-05": 5,
-          "CA-01": 7,
+          "CA-01": 0,
           "CA-02": 5,
-          "CA-03": 5,
+          "CA-03": 0,
           "CA-04": 0,
           "CA-05": 0,
           "SD-01": 4,
@@ -74835,6 +77963,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 2379
+      },
+      "deep_analysis": {
+        "press": true,
+        "notice": true,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -75008,6 +78144,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 275
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -75181,6 +78325,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 220
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -75354,6 +78506,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 402
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -75527,6 +78687,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 701
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -75700,6 +78868,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 430
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -75873,6 +79049,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 405
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -76176,6 +79360,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 385
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -76349,6 +79541,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 298
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -76709,6 +79909,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 189
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -76982,7 +80190,7 @@
       "scan_date": "2026-03-15",
       "scan_version": "v1",
       "scores": {
-        "total": 56,
+        "total": 44,
         "grade": "C",
         "categories": {
           "robots_txt": {
@@ -76990,7 +80198,7 @@
             "max": 25
           },
           "content_accessibility": {
-            "score": 17,
+            "score": 5,
             "max": 25
           },
           "structured_data": {
@@ -77016,9 +80224,9 @@
           "RT-03": 7,
           "RT-04": 5,
           "RT-05": 5,
-          "CA-01": 7,
+          "CA-01": 0,
           "CA-02": 5,
-          "CA-03": 5,
+          "CA-03": 0,
           "CA-04": 0,
           "CA-05": 0,
           "SD-01": 0,
@@ -77142,6 +80350,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 199
+      },
+      "deep_analysis": {
+        "press": true,
+        "notice": true,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -77445,6 +80661,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 312
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -77618,6 +80842,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 562
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -77927,6 +81159,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 225
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -78372,6 +81612,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 462
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -78551,6 +81799,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 910
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -78730,6 +81986,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 1743
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -79362,6 +82626,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 103
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -79541,6 +82813,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 196
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -80281,6 +83561,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 73
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -80460,6 +83748,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 135
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -80639,6 +83935,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 63
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -80818,6 +84122,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 93
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -80831,7 +84143,7 @@
       "scan_date": "2026-03-15",
       "scan_version": "v1",
       "scores": {
-        "total": 53,
+        "total": 43,
         "grade": "C",
         "categories": {
           "robots_txt": {
@@ -80839,7 +84151,7 @@
             "max": 25
           },
           "content_accessibility": {
-            "score": 17,
+            "score": 7,
             "max": 25
           },
           "structured_data": {
@@ -80866,8 +84178,8 @@
           "RT-04": 5,
           "RT-05": 5,
           "CA-01": 7,
-          "CA-02": 5,
-          "CA-03": 5,
+          "CA-02": 0,
+          "CA-03": 0,
           "CA-04": 0,
           "CA-05": 0,
           "SD-01": 0,
@@ -80997,6 +84309,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 119
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": true,
+        "policy": true,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -81176,6 +84496,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 135
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -81355,6 +84683,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 83
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -81534,6 +84870,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 538
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -81843,6 +85187,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 2492
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -82022,6 +85374,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 107
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -82201,6 +85561,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 91
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -82374,6 +85742,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 395
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -83063,6 +86439,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 87
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -83242,6 +86626,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 80
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": false,
+        "policy_detected": true
       }
     },
     {
@@ -83563,6 +86955,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 96
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -83884,6 +87284,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 558
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -84063,6 +87471,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 86
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -84242,6 +87658,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 4437
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -84421,6 +87845,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 49
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -84600,6 +88032,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 80
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -84779,6 +88219,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 88
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -84958,6 +88406,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 45
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -85409,6 +88865,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 0
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -85724,6 +89188,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 140
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -86045,6 +89517,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 0
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -87774,6 +91254,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 0
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -87953,6 +91441,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 0
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -91816,7 +95312,7 @@
             "max": 25
           },
           "content_accessibility": {
-            "score": 11,
+            "score": 7,
             "max": 25
           },
           "structured_data": {
@@ -91843,8 +95339,8 @@
           "RT-04": 5,
           "RT-05": 5,
           "CA-01": 3,
-          "CA-02": 2,
-          "CA-03": 2,
+          "CA-02": 0,
+          "CA-03": 0,
           "CA-04": 0,
           "CA-05": 4,
           "SD-01": 4,
@@ -91963,6 +95459,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 250749
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": true,
+        "policy": true,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
@@ -91984,7 +95488,7 @@
             "max": 25
           },
           "content_accessibility": {
-            "score": 11,
+            "score": 6,
             "max": 25
           },
           "structured_data": {
@@ -92010,9 +95514,9 @@
           "RT-03": 2,
           "RT-04": 5,
           "RT-05": 5,
-          "CA-01": 3,
+          "CA-01": 0,
           "CA-02": 2,
-          "CA-03": 2,
+          "CA-03": 0,
           "CA-04": 0,
           "CA-05": 4,
           "SD-01": 4,
@@ -92131,6 +95635,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 474082
+      },
+      "deep_analysis": {
+        "press": true,
+        "notice": true,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -92152,7 +95664,7 @@
             "max": 25
           },
           "content_accessibility": {
-            "score": 11,
+            "score": 6,
             "max": 25
           },
           "structured_data": {
@@ -92178,9 +95690,9 @@
           "RT-03": 0,
           "RT-04": 5,
           "RT-05": 5,
-          "CA-01": 3,
+          "CA-01": 0,
           "CA-02": 2,
-          "CA-03": 2,
+          "CA-03": 0,
           "CA-04": 0,
           "CA-05": 4,
           "SD-01": 4,
@@ -92298,6 +95810,14 @@
         "mobile_viewport": true,
         "primary_rendering": "ssr",
         "html_length": 67338
+      },
+      "deep_analysis": {
+        "press": true,
+        "notice": true,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -105782,6 +109302,14 @@
         "mobile_viewport": false,
         "primary_rendering": "ssr",
         "html_length": 21647
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -108910,6 +112438,14 @@
         "mobile_viewport": false,
         "primary_rendering": "ssr",
         "html_length": 56667
+      },
+      "deep_analysis": {
+        "press": true,
+        "notice": true,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -110493,6 +114029,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 257
+      },
+      "deep_analysis": {
+        "press": true,
+        "notice": true,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -111913,6 +115457,14 @@
         "mobile_viewport": false,
         "primary_rendering": "ssr",
         "html_length": 67740
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": true,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -112092,6 +115644,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 1645
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": false,
+        "policy_detected": false
       }
     },
     {
@@ -113866,6 +117426,14 @@
         "mobile_viewport": false,
         "primary_rendering": "ssr",
         "html_length": 62073
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": true,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -116265,6 +119833,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 136
+      },
+      "deep_analysis": {
+        "press": false,
+        "notice": false,
+        "policy": false,
+        "press_detected": false,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -116456,6 +120032,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 364
+      },
+      "deep_analysis": {
+        "press": true,
+        "notice": true,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -116647,6 +120231,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 100
+      },
+      "deep_analysis": {
+        "press": true,
+        "notice": true,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -116838,6 +120430,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 495
+      },
+      "deep_analysis": {
+        "press": true,
+        "notice": true,
+        "policy": false,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": false
       }
     },
     {
@@ -117029,6 +120629,14 @@
         "mobile_viewport": false,
         "primary_rendering": "csr",
         "html_length": 698
+      },
+      "deep_analysis": {
+        "press": true,
+        "notice": true,
+        "policy": true,
+        "press_detected": true,
+        "notice_detected": true,
+        "policy_detected": true
       }
     },
     {
