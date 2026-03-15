@@ -135,14 +135,15 @@ async function main() {
 
   fs.writeFileSync(path.resolve(OUTPUT), JSON.stringify(output, null, 2));
 
-  // summary_scores.csv 생성
-  let csv = 'org_id,name,org_type,parent_org_id,total_score,grade,robots_txt,content_accessibility,structured_data,technical_accessibility,llms_txt,sitemap_xml,scan_date\n';
+  // summary_scores.csv 생성 (UTF-8 BOM 포함 — Excel 한글 호환)
+  const BOM = '\uFEFF';
+  let csv = BOM + 'org_id,name,org_type,parent_org_id,total_score,grade,robots_txt,content_accessibility,structured_data,technical_accessibility,llms_txt,sitemap_xml,scan_date\n';
   for (const o of output.organizations) {
     if (!o.scores) continue;
     const c = o.scores.categories;
-    csv += `${o.org_id},${o.name},${o.org_type},${o.parent_org_id || ''},${o.scores.total},${o.scores.grade},${c.robots_txt.score},${c.content_accessibility.score},${c.structured_data.score},${c.technical_accessibility.score},${c.llms_txt.score},${c.sitemap_xml.score},${o.scan_date}\n`;
+    csv += `${o.org_id},"${o.name}",${o.org_type},${o.parent_org_id || ''},${o.scores.total},${o.scores.grade},${c.robots_txt.score},${c.content_accessibility.score},${c.structured_data.score},${c.technical_accessibility.score},${c.llms_txt.score},${c.sitemap_xml.score},${o.scan_date}\n`;
   }
-  fs.writeFileSync(path.resolve('data/summary_scores.csv'), csv);
+  fs.writeFileSync(path.resolve('data/summary_scores.csv'), csv, 'utf-8');
 
   // 개별 스냅샷 저장
   for (const o of output.organizations) {

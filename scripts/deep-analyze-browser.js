@@ -187,8 +187,14 @@ async function main() {
 
   await browser.close();
 
-  // 저장
-  fs.writeFileSync(path.resolve('data/deep-analysis.json'), JSON.stringify(results, null, 2));
+  // 저장 (기존 결과에 누적)
+  let existing = [];
+  try { existing = JSON.parse(fs.readFileSync(path.resolve('data/deep-analysis.json'), 'utf-8')); } catch {}
+  const existingMap = {};
+  existing.forEach(r => { existingMap[r.org_id] = r; });
+  results.forEach(r => { existingMap[r.org_id] = r; }); // 새 결과로 덮어쓰기
+  const merged = Object.values(existingMap);
+  fs.writeFileSync(path.resolve('data/deep-analysis.json'), JSON.stringify(merged, null, 2));
 
   // 요약
   console.error('\n=== 요약 ===');
