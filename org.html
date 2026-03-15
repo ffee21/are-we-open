@@ -223,47 +223,136 @@
         var itemInfo = App.ITEM_DESCRIPTIONS[code];
         if (!itemInfo) return null;
 
+        // 각 항목의 전체 점수 기준 (0점~만점)
         var criteriaMap = {
-          'RT-01': { full: 'robots.txt\uAC00 \uC874\uC7AC\uD558\uACE0 HTTP 200\uC73C\uB85C \uC751\uB2F5', zero: 'robots.txt\uAC00 \uC874\uC7AC\uD558\uC9C0 \uC54A\uC74C (404 \uB4F1)' },
-          'RT-02': { full: 'robots.txt \uBB38\uBC95\uC774 \uC62C\uBC14\uB974\uACE0 \uD30C\uC2F1 \uC5D0\uB7EC \uC5C6\uC74C', zero: 'robots.txt\uC5D0 \uBB38\uBC95 \uC624\uB958\uAC00 \uC788\uAC70\uB098 \uD30C\uC2F1 \uBD88\uAC00' },
-          'RT-03': { full: 'LLM \uD06C\uB864\uB7EC(GPTBot, ClaudeBot \uB4F1)\uAC00 \uBAA8\uB450 \uD5C8\uC6A9\uB428', zero: 'LLM \uD06C\uB864\uB7EC\uAC00 \uCC28\uB2E8\uB428 (\uCC28\uB2E8 \uC218\uC5D0 \uBE44\uB840\uD558\uC5EC \uAC10\uC810)' },
-          'RT-04': { full: '\uC804\uBA74 \uCC28\uB2E8(Disallow: /)\uC774 \uC5C6\uC74C', zero: 'User-agent: * Disallow: / \uB85C \uBAA8\uB4E0 \uD06C\uB864\uB7EC \uC804\uBA74 \uCC28\uB2E8' },
-          'RT-05': { full: '\uBCF4\uB3C4\uC790\uB8CC/\uC815\uCC45/\uACF5\uC9C0 \uACBD\uB85C\uAC00 robots.txt\uC5D0\uC11C \uCC28\uB2E8\uB418\uC9C0 \uC54A\uC74C', zero: '\uD575\uC2EC \uCF58\uD150\uCE20 \uACBD\uB85C\uAC00 Disallow\uB85C \uCC28\uB2E8\uB428' },
-          'CA-01': { full: '\uBCF4\uB3C4\uC790\uB8CC \uACBD\uB85C\uC5D0 LLM\uC774 \uC811\uADFC \uAC00\uB2A5', zero: '\uBCF4\uB3C4\uC790\uB8CC \uACBD\uB85C\uAC00 \uCC28\uB2E8\uB418\uC5B4 LLM \uC811\uADFC \uBD88\uAC00' },
-          'CA-02': { full: '\uC815\uCC45\uC18C\uAC1C \uACBD\uB85C\uC5D0 LLM\uC774 \uC811\uADFC \uAC00\uB2A5', zero: '\uC815\uCC45\uC18C\uAC1C \uACBD\uB85C\uAC00 \uCC28\uB2E8\uB418\uC5B4 LLM \uC811\uADFC \uBD88\uAC00' },
-          'CA-03': { full: '\uACF5\uC9C0\uC0AC\uD56D \uACBD\uB85C\uC5D0 LLM\uC774 \uC811\uADFC \uAC00\uB2A5', zero: '\uACF5\uC9C0\uC0AC\uD56D \uACBD\uB85C\uAC00 \uCC28\uB2E8\uB418\uC5B4 LLM \uC811\uADFC \uBD88\uAC00' },
-          'CA-04': { full: '\uCF58\uD150\uCE20 \uACBD\uB85C\uAC00 \uBA85\uD655\uD558\uACE0 \uD0D0\uC0C9 \uAC00\uB2A5\uD55C \uAD6C\uC870', zero: '\uCF58\uD150\uCE20 \uACBD\uB85C\uAC00 \uBD88\uBA85\uD655\uD558\uAC70\uB098 \uD0D0\uC0C9 \uBD88\uAC00' },
-          'CA-05': { full: 'SSR \uBC29\uC2DD\uC73C\uB85C LLM\uC774 JS \uC5C6\uC774 \uCF58\uD150\uCE20 \uC77D\uAE30 \uAC00\uB2A5', zero: 'CSR \uBC29\uC2DD\uC73C\uB85C LLM\uC774 \uCF58\uD150\uCE20\uB97C \uC77D\uAE30 \uC5B4\uB824\uC6C0' },
-          'SD-01': { full: '\uACE0\uC720\uD55C title \uD0DC\uADF8\uAC00 \uC874\uC7AC\uD568', zero: 'title \uD0DC\uADF8\uAC00 \uC5C6\uAC70\uB098 \uBE44\uC5B4 \uC788\uC74C' },
-          'SD-02': { full: 'meta description\uC774 \uC874\uC7AC\uD558\uC5EC LLM\uC774 \uD398\uC774\uC9C0 \uC694\uC57D \uD30C\uC545 \uAC00\uB2A5', zero: 'meta description\uC774 \uC5C6\uC74C' },
-          'SD-03': { full: 'Open Graph \uD0DC\uADF8(og:title, og:description \uB4F1) \uC874\uC7AC', zero: 'Open Graph \uD0DC\uADF8\uAC00 \uC5C6\uC74C' },
-          'SD-04': { full: 'JSON-LD \uB4F1 schema.org \uAD6C\uC870\uD654 \uB370\uC774\uD130 \uC874\uC7AC', zero: 'schema.org \uAD6C\uC870\uD654 \uB370\uC774\uD130\uAC00 \uC5C6\uC74C' },
-          'SD-05': { full: 'html lang="\uD55C\uAD6D\uC5B4" \uC18D\uC131\uC774 \uC124\uC815\uB418\uC5B4 \uC788\uC74C', zero: 'lang \uC18D\uC131\uC774 \uC5C6\uC5B4 LLM\uC774 \uC5B8\uC5B4 \uC778\uC2DD \uBD88\uAC00' },
-          'TA-01': { full: 'HTTPS\uB85C \uBCF4\uC548 \uC811\uC18D \uAC00\uB2A5', zero: 'HTTPS \uBBF8\uC801\uC6A9 (HTTP\uB9CC \uAC00\uB2A5)' },
-          'TA-02': { full: 'TTFB \uC751\uB2F5 \uC18D\uB3C4\uAC00 3\uCD08 \uBBF8\uB9CC\uC73C\uB85C \uC591\uD638', zero: 'TTFB\uAC00 3\uCD08 \uC774\uC0C1\uC73C\uB85C \uD0C0\uC784\uC544\uC6C3 \uC704\uD5D8' },
-          'TA-03': { full: '\uBA54\uC778 \uD398\uC774\uC9C0\uAC00 HTTP 200\uC73C\uB85C \uC815\uC0C1 \uC751\uB2F5', zero: '\uBA54\uC778 \uD398\uC774\uC9C0\uAC00 \uC624\uB958 \uC0C1\uD0DC\uCF54\uB4DC \uBC18\uD658' },
-          'TA-04': { full: 'viewport \uC124\uC815\uC774 \uC788\uC5B4 \uBAA8\uBC14\uC77C \uB300\uC751', zero: 'viewport \uC124\uC815\uC774 \uC5C6\uC5B4 \uBAA8\uBC14\uC77C \uBBF8\uB300\uC751' },
-          'LT-01': { full: 'llms.txt \uD30C\uC77C\uC774 \uC874\uC7AC\uD568', zero: 'llms.txt \uD30C\uC77C\uC774 \uC5C6\uC74C' },
-          'LT-02': { full: 'llms.txt\uAC00 \uC2A4\uD399\uC744 \uC900\uC218\uD558\uB294 \uC62C\uBC14\uB978 \uBB38\uBC95', zero: 'llms.txt \uBB38\uBC95\uC774 \uC62C\uBC14\uB974\uC9C0 \uC54A\uC74C' },
-          'LT-03': { full: '\uAE30\uAD00 \uC124\uBA85 + \uD575\uC2EC \uCF58\uD150\uCE20 \uACBD\uB85C\uB97C \uC548\uB0B4\uD568', zero: 'llms.txt\uAC00 \uCDA9\uBD84\uD55C \uC815\uBCF4\uB97C \uC81C\uACF5\uD558\uC9C0 \uC54A\uC74C' },
-          'SM-01': { full: 'sitemap.xml\uC774 \uC874\uC7AC\uD558\uC5EC \uCF58\uD150\uCE20 \uBC1C\uACAC \uAC00\uB2A5', zero: 'sitemap.xml\uC774 \uC5C6\uC74C' },
-          'SM-02': { full: '\uBCF4\uB3C4\uC790\uB8CC/\uC815\uCC45/\uACF5\uC9C0 URL\uC774 sitemap\uC5D0 \uD3EC\uD568', zero: '\uD575\uC2EC \uCF58\uD150\uCE20 URL\uC774 sitemap\uC5D0 \uC5C6\uC74C' }
+          'RT-01': [
+            { score: 5, text: 'robots.txt가 존재하고 HTTP 200으로 응답' },
+            { score: 0, text: 'robots.txt가 존재하지 않음 (404 등)' }
+          ],
+          'RT-02': [
+            { score: 3, text: 'robots.txt 문법이 올바르고 파싱 에러 없음' },
+            { score: 2, text: '경미한 문법 오류 (2개 이하)' },
+            { score: 0, text: '심각한 문법 오류 또는 파싱 불가' }
+          ],
+          'RT-03': [
+            { score: 7, text: 'LLM 크롤러(GPTBot, ClaudeBot 등)가 모두 허용됨' },
+            { score: 4, text: 'LLM 크롤러 1~2개가 차단됨' },
+            { score: 2, text: 'LLM 크롤러 3~4개가 차단됨' },
+            { score: 0, text: 'LLM 크롤러 대부분 차단 또는 전면 차단' }
+          ],
+          'RT-04': [
+            { score: 5, text: '전면 차단(Disallow: /)이 없음' },
+            { score: 0, text: 'User-agent: * Disallow: / 로 모든 크롤러 전면 차단' }
+          ],
+          'RT-05': [
+            { score: 5, text: '보도자료/정책/공지 경로가 차단되지 않음' },
+            { score: 3, text: '일부 콘텐츠 경로가 차단됨' },
+            { score: 0, text: '핵심 콘텐츠 경로가 대부분 차단됨' }
+          ],
+          'CA-01': [
+            { score: 7, text: '보도자료 경로에 LLM이 차단 없이 접근 가능' },
+            { score: 3, text: '보도자료 경로가 부분 차단 (전면 차단 아님)' },
+            { score: 0, text: '보도자료 경로가 완전 차단됨' }
+          ],
+          'CA-02': [
+            { score: 5, text: '정책소개 경로에 LLM이 차단 없이 접근 가능' },
+            { score: 2, text: '정책소개 경로가 부분 차단' },
+            { score: 0, text: '정책소개 경로가 완전 차단됨' }
+          ],
+          'CA-03': [
+            { score: 5, text: '공지사항 경로에 LLM이 차단 없이 접근 가능' },
+            { score: 2, text: '공지사항 경로가 부분 차단' },
+            { score: 0, text: '공지사항 경로가 완전 차단됨' }
+          ],
+          'CA-04': [
+            { score: 4, text: 'sitemap에 10개 이상 콘텐츠 URL 포함' },
+            { score: 2, text: 'sitemap 존재하나 콘텐츠 URL 부족' },
+            { score: 0, text: 'sitemap 없음 또는 콘텐츠 미포함' }
+          ],
+          'CA-05': [
+            { score: 4, text: 'SSR 방식으로 LLM이 JS 없이 콘텐츠 읽기 가능' },
+            { score: 0, text: 'CSR 방식으로 LLM이 콘텐츠를 읽기 어려움' }
+          ],
+          'SD-01': [
+            { score: 4, text: '고유한 title 태그가 존재함' },
+            { score: 0, text: 'title 태그가 없거나 비어 있음' }
+          ],
+          'SD-02': [
+            { score: 4, text: 'meta description이 존재하여 LLM이 페이지 요약 파악 가능' },
+            { score: 0, text: 'meta description이 없음' }
+          ],
+          'SD-03': [
+            { score: 4, text: 'Open Graph 태그(og:title, og:description 등) 존재' },
+            { score: 0, text: 'Open Graph 태그가 없음' }
+          ],
+          'SD-04': [
+            { score: 5, text: 'JSON-LD 등 schema.org 구조화 데이터 존재' },
+            { score: 0, text: 'schema.org 구조화 데이터가 없음' }
+          ],
+          'SD-05': [
+            { score: 3, text: 'html lang="ko" 속성이 설정되어 있음' },
+            { score: 0, text: 'lang 속성이 없어 LLM이 언어 인식 불가' }
+          ],
+          'TA-01': [
+            { score: 3, text: 'HTTPS로 보안 접속 가능' },
+            { score: 0, text: 'HTTPS 미적용 (HTTP만 가능)' }
+          ],
+          'TA-02': [
+            { score: 4, text: 'TTFB 1초 미만으로 빠른 응답' },
+            { score: 2, text: 'TTFB 1~3초로 보통 수준' },
+            { score: 0, text: 'TTFB 3초 이상으로 타임아웃 위험' }
+          ],
+          'TA-03': [
+            { score: 4, text: '메인 페이지가 HTTP 200으로 정상 응답' },
+            { score: 0, text: '메인 페이지가 오류 상태코드 반환' }
+          ],
+          'TA-04': [
+            { score: 4, text: 'viewport 설정이 있어 모바일 대응' },
+            { score: 0, text: 'viewport 설정이 없어 모바일 미대응' }
+          ],
+          'LT-01': [
+            { score: 4, text: 'llms.txt 파일이 존재함' },
+            { score: 0, text: 'llms.txt 파일이 없음' }
+          ],
+          'LT-02': [
+            { score: 3, text: 'llms.txt 내용이 100자 이상으로 충실' },
+            { score: 1, text: 'llms.txt가 있으나 내용이 빈약' },
+            { score: 0, text: 'llms.txt 없음 또는 형식 미준수' }
+          ],
+          'LT-03': [
+            { score: 3, text: '기관 설명 + 핵심 콘텐츠 경로 + URL 안내 포함' },
+            { score: 1, text: '기관 설명은 있으나 링크 없음' },
+            { score: 0, text: '충분한 정보를 제공하지 않음' }
+          ],
+          'SM-01': [
+            { score: 2, text: 'sitemap.xml이 존재하여 콘텐츠 발견 가능' },
+            { score: 0, text: 'sitemap.xml이 없음' }
+          ],
+          'SM-02': [
+            { score: 3, text: '보도자료/정책/공지 URL이 sitemap에 포함 (5개 이상)' },
+            { score: 1, text: 'sitemap이 있으나 콘텐츠 URL 부족' },
+            { score: 0, text: '핵심 콘텐츠 URL이 sitemap에 없음' }
+          ]
         };
 
-        var criteria = criteriaMap[code];
-        if (!criteria) return null;
+        var levels = criteriaMap[code];
+        if (!levels) return null;
 
         var div = document.createElement('div');
         div.className = 'scoring-criteria';
 
-        var fullLabel = document.createElement('div');
-        fullLabel.className = 'scoring-criteria-label';
-        fullLabel.textContent = '\u2714 \uB9CC\uC810(' + itemInfo.max + '\uC810): ' + criteria.full;
-        div.appendChild(fullLabel);
-
-        var zeroLabel = document.createElement('div');
-        zeroLabel.textContent = '\u2716 0\uC810: ' + criteria.zero;
-        div.appendChild(zeroLabel);
+        levels.forEach(function(level) {
+          var row = document.createElement('div');
+          row.style.marginBottom = '2px';
+          var prefix = level.score === itemInfo.max ? '\u2714 ' : level.score === 0 ? '\u2716 ' : '\u25CB ';
+          var label = level.score + '\uC810';
+          if (level.score === itemInfo.max) {
+            row.className = 'scoring-criteria-label';
+            label += '(\uB9CC\uC810)';
+          }
+          row.textContent = prefix + label + ': ' + level.text;
+          div.appendChild(row);
+        });
 
         return div;
       }
