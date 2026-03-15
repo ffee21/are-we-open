@@ -37,6 +37,11 @@
           <h3 style="font-family: var(--font-display); font-size: 1.25rem; color: var(--navy); margin-bottom: var(--space-lg);">주요 지표 채택률</h3>
           <div class="stats-grid" id="adoptionStats"></div>
         </div>
+        <!-- 시계열 추이 -->
+        <div style="margin-top: var(--space-3xl);">
+          <h3 style="font-family: var(--font-display); font-size: 1.25rem; color: var(--navy); margin-bottom: var(--space-lg);">전체 평균 점수 추이</h3>
+          <div class="card" id="trendChart" style="max-width: 720px; padding: var(--space-xl);"></div>
+        </div>
       </div>
     </section>
   </main>
@@ -208,6 +213,126 @@
         card.appendChild(lab);
         card.appendChild(sub);
         adoptionEl.appendChild(card);
+      });
+
+      // === 시계열 추이 차트 ===
+      App.loadHistory().then(function(history) {
+        var chartEl = document.getElementById('trendChart');
+        if (!history || !history.scans || history.scans.length === 0) {
+          chartEl.textContent = '아직 추이 데이터가 없습니다.';
+          return;
+        }
+
+        if (history.scans.length < 2) {
+          // 1개 데이터 포인트 — 현재 상태만 표시
+          var scan = history.scans[0];
+          var info = document.createElement('div');
+          info.style.textAlign = 'center';
+
+          var scoreEl = document.createElement('div');
+          scoreEl.style.cssText = 'font-family:var(--font-mono);font-size:3rem;font-weight:700;color:var(--navy)';
+          scoreEl.textContent = scan.avg_score + '점';
+          info.appendChild(scoreEl);
+
+          var dateEl = document.createElement('div');
+          dateEl.style.cssText = 'color:var(--text-tertiary);margin-bottom:var(--space-lg)';
+          dateEl.textContent = scan.date + ' 기준 · ' + scan.total_orgs + '개 기관 평균';
+          info.appendChild(dateEl);
+
+          // 등급 분포 막대
+          var gradeOrder = ['A+', 'A', 'B+', 'B', 'C', 'D', 'F'];
+          var distBar = document.createElement('div');
+          distBar.className = 'grade-dist';
+          gradeOrder.forEach(function(g) {
+            var count = scan.grades[g] || 0;
+            if (count > 0) {
+              var seg = document.createElement('div');
+              seg.className = 'grade-dist-segment ' + App.getGradeClass(g);
+              seg.style.flex = count;
+              seg.textContent = g + '(' + count + ')';
+              distBar.appendChild(seg);
+            }
+          });
+          info.appendChild(distBar);
+
+          var note = document.createElement('div');
+          note.style.cssText = 'margin-top:var(--space-lg);font-size:0.85rem;color:var(--text-tertiary)';
+          note.textContent = '다음 정기 분석부터 시계열 추이 그래프가 표시됩니다.';
+          info.appendChild(note);
+
+          chartEl.appendChild(info);
+          return;
+        }
+
+        // 2개 이상 — SVG 라인 차트
+        var svgNS = 'http://www.w3.org/2000/svg';
+        var w = 640, h = 200, pad = 50;
+        var svg = document.createElementNS(svgNS, 'svg');
+        svg.setAttribute('viewBox', '0 0 ' + w + ' ' + h);
+        svg.setAttribute('width', '100%');
+        svg.style.maxWidth = w + 'px';
+
+        var points = history.scans.map(function(scan, i) {
+          var x = pad + i * ((w - pad * 2) / (history.scans.length - 1));
+          var y = h - pad - ((scan.avg_score || 0) / 100) * (h - pad * 2);
+          return { x: x, y: y, data: scan };
+        });
+
+        // 그리드
+        [0, 25, 50, 75, 100].forEach(function(v) {
+          var y = h - pad - (v / 100) * (h - pad * 2);
+          var line = document.createElementNS(svgNS, 'line');
+          line.setAttribute('x1', pad); line.setAttribute('x2', w - pad);
+          line.setAttribute('y1', y); line.setAttribute('y2', y);
+          line.setAttribute('stroke', '#E5E0D5'); line.setAttribute('stroke-width', '1');
+          svg.appendChild(line);
+          var text = document.createElementNS(svgNS, 'text');
+          text.setAttribute('x', pad - 8); text.setAttribute('y', y + 4);
+          text.setAttribute('text-anchor', 'end'); text.setAttribute('font-size', '11');
+          text.setAttribute('fill', '#8A8A8E');
+          text.textContent = v;
+          svg.appendChild(text);
+        });
+
+        // 라인
+        var pathD = points.map(function(p, i) { return (i === 0 ? 'M' : 'L') + p.x + ',' + p.y; }).join(' ');
+        var path = document.createElementNS(svgNS, 'path');
+        path.setAttribute('d', pathD);
+        path.setAttribute('fill', 'none'); path.setAttribute('stroke', '#1B2A4A');
+        path.setAttribute('stroke-width', '3'); path.setAttribute('stroke-linecap', 'round');
+        svg.appendChild(path);
+
+        // 영역
+        var areaD = pathD + ' L' + points[points.length-1].x + ',' + (h-pad) + ' L' + points[0].x + ',' + (h-pad) + ' Z';
+        var area = document.createElementNS(svgNS, 'path');
+        area.setAttribute('d', areaD);
+        area.setAttribute('fill', 'rgba(27,42,74,0.06)');
+        svg.appendChild(area);
+
+        // 점 + 라벨
+        points.forEach(function(p) {
+          var circle = document.createElementNS(svgNS, 'circle');
+          circle.setAttribute('cx', p.x); circle.setAttribute('cy', p.y);
+          circle.setAttribute('r', '5'); circle.setAttribute('fill', '#1B2A4A');
+          circle.setAttribute('stroke', '#F5F1EB'); circle.setAttribute('stroke-width', '2');
+          svg.appendChild(circle);
+
+          var scoreText = document.createElementNS(svgNS, 'text');
+          scoreText.setAttribute('x', p.x); scoreText.setAttribute('y', p.y - 14);
+          scoreText.setAttribute('text-anchor', 'middle'); scoreText.setAttribute('font-size', '13');
+          scoreText.setAttribute('font-weight', '700'); scoreText.setAttribute('fill', '#1B2A4A');
+          scoreText.textContent = (p.data.avg_score || 0).toFixed(1);
+          svg.appendChild(scoreText);
+
+          var dateText = document.createElementNS(svgNS, 'text');
+          dateText.setAttribute('x', p.x); dateText.setAttribute('y', h - pad + 20);
+          dateText.setAttribute('text-anchor', 'middle'); dateText.setAttribute('font-size', '10');
+          dateText.setAttribute('fill', '#8A8A8E');
+          dateText.textContent = p.data.date;
+          svg.appendChild(dateText);
+        });
+
+        chartEl.appendChild(svg);
       });
     });
   </script>
