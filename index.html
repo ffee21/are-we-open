@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Are We Open? — 대한민국 공공 웹사이트 데이터 개방 평가</title>
-  <meta name="description" content="대한민국 정부 웹사이트들이 얼마나 핵심 공공 콘텐츠(보도자료, 정책소개, 공지사항)가 얼마나 개방되어 있는지 평가합니다.">
+  <meta name="description" content="대한민국 공공 웹사이트의 핵심 공공 콘텐츠(보도자료, 정책소개, 공지사항)가 LLM에 의해 차단 없이 접근 가능한지 평가합니다.">
   <meta property="og:title" content="Are We Open? — 대한민국 공공 웹사이트 데이터 개방 평가">
-  <meta property="og:description" content="대한민국 정부 웹사이트들이 얼마나 핵심 공공 콘텐츠(보도자료, 정책소개, 공지사항)가 얼마나 개방되어 있는지 평가합니다.">
+  <meta property="og:description" content="401개 공공기관의 데이터 개방 수준을 평가합니다.">
   <meta property="og:type" content="website">
   <link rel="stylesheet" href="css/style.css">
   <script type="application/ld+json">
@@ -14,20 +14,12 @@
     "@context": "https://schema.org",
     "@type": "Dataset",
     "name": "대한민국 공공 웹사이트 데이터 개방 평가 데이터",
-    "description": "대한민국 정부 웹사이트들의 LLM 친화성을 분석한 점수, 등급, 문제사항 데이터",
+    "description": "대한민국 공공 웹사이트의 데이터 개방 수준을 분석한 점수, 등급, 문제사항 데이터",
     "url": "https://ffee21.github.io/are-we-open/",
     "license": "https://github.com/ffee21/are-we-open/blob/main/LICENSE",
     "distribution": [
-      {
-        "@type": "DataDownload",
-        "encodingFormat": "application/json",
-        "contentUrl": "https://ffee21.github.io/are-we-open/data/results.json"
-      },
-      {
-        "@type": "DataDownload",
-        "encodingFormat": "text/csv",
-        "contentUrl": "https://ffee21.github.io/are-we-open/data/summary_scores.csv"
-      }
+      { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://ffee21.github.io/are-we-open/data/results.json" },
+      { "@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": "https://ffee21.github.io/are-we-open/data/summary_scores.csv" }
     ]
   }
   </script>
@@ -42,25 +34,15 @@
         <h1 class="hero-title animate-in">
           대한민국 공공 웹사이트는<br><span class="accent">얼마나 열려</span> 있는가?
         </h1>
-
         <div class="quote-carousel animate-in delay-1" id="quoteCarousel">
-          <blockquote class="active">
-            "문제를 고치는 가장 빠른 방법은 문제를 인식하는 것이다."
-          </blockquote>
-          <blockquote>
-            "측정하지 않으면 개선할 수 없다."
-            <cite>— 피터 드러커</cite>
-          </blockquote>
-          <blockquote>
-            "공개된 데이터는 스스로 개선의 압력을 만든다."
-          </blockquote>
+          <blockquote class="active">"문제를 고치는 가장 빠른 방법은 문제를 인식하는 것이다."</blockquote>
+          <blockquote>"측정하지 않으면 개선할 수 없다." <cite>— 피터 드러커</cite></blockquote>
+          <blockquote>"공개된 데이터는 스스로 개선의 압력을 만든다."</blockquote>
         </div>
-
         <p class="hero-subtitle animate-in delay-2">
-          보도자료, 정책소개, 공지사항 — 핵심 공공 콘텐츠가 누구에게나 열려 있는지 평가합니다.
-          정부조직법에 따른 40개 기관의 데이터 개방 수준을 분석하고 개선 방향을 제시합니다.
+          보도자료, 정책소개, 공지사항 — 핵심 공공 콘텐츠에 LLM이 차단 없이 접근할 수 있는지 평가합니다.<br>
+          행정각부·처·청, 광역 지자체, 공공기관 등 401개 기관을 분석합니다.
         </p>
-
         <div class="hero-actions animate-in delay-3">
           <a href="ranking.html" class="btn btn-primary">순위표 보기</a>
           <a href="about.html" class="btn btn-secondary">프로젝트 소개</a>
@@ -75,7 +57,6 @@
           <h2 class="section-title">전체 현황</h2>
           <p class="section-desc">분석 완료된 기관들의 데이터 개방 종합 통계</p>
         </div>
-
         <div class="stats-grid" id="statsGrid">
           <div class="card stat-card animate-in delay-1">
             <div class="stat-value" id="statAvg">—</div>
@@ -85,7 +66,7 @@
           <div class="card stat-card animate-in delay-2">
             <div class="stat-value" id="statCount">—</div>
             <div class="stat-label">분석 완료 기관</div>
-            <div class="stat-sub">중앙부처</div>
+            <div class="stat-sub" id="statCountSub">부·처·청·지자체·공공기관</div>
           </div>
           <div class="card stat-card animate-in delay-3">
             <div class="stat-value" id="statIssues">—</div>
@@ -117,47 +98,23 @@
       </div>
     </section>
 
-    <!-- Top / Bottom -->
+    <!-- Category Rankings: 부, 처, 청, 지자체, 공공기관 -->
     <section class="section">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title">기관별 순위 요약</h2>
+          <h2 class="section-title">유형별 순위</h2>
           <p class="section-desc">전체 순위는 <a href="ranking.html" style="text-decoration:underline;">순위표</a>에서 확인하세요</p>
         </div>
-        <div class="table-container" id="topTable">
+
+        <div class="tabs" id="catTabs" style="margin-bottom: var(--space-lg);">
+          <button class="tab active" data-cat="ministry">부 (19)</button>
+          <button class="tab" data-cat="pm_office">처 (6)</button>
+          <button class="tab" data-cat="agency">청 (15)</button>
+          <button class="tab" data-cat="local">지자체 (17)</button>
+          <button class="tab" data-cat="public_institution">공공기관 (344)</button>
+        </div>
+        <div class="table-container" id="catTable">
           <div class="loading">데이터 로딩 중</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Most Improved -->
-    <section class="section">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">가장 빠르게 개선되고 있는 곳</h2>
-          <p class="section-desc">이전 분석 대비 점수 변화 (6개월 기준)</p>
-        </div>
-
-        <div class="tabs" id="improveTabs" style="margin-bottom: var(--space-lg);">
-          <button class="tab active" data-tab="improveOrg">기관별</button>
-          <button class="tab" data-tab="improveMinistry">부처별</button>
-          <button class="tab" data-tab="improveCategory">항목별</button>
-        </div>
-
-        <div id="improveOrg" class="tab-content" style="display:block;">
-          <div class="table-container" id="improveOrgTable"></div>
-        </div>
-        <div id="improveMinistry" class="tab-content" style="display:none;">
-          <div class="table-container" id="improveMinistryTable"></div>
-        </div>
-        <div id="improveCategory" class="tab-content" style="display:none;">
-          <div class="card" id="improveCategoryChart" style="max-width: 720px;"></div>
-        </div>
-
-        <!-- Trend chart -->
-        <div style="margin-top: var(--space-xl);">
-          <h3 style="font-family: var(--font-display); font-size: 1.1rem; color: var(--navy); margin-bottom: var(--space-md);">전체 평균 점수 추이</h3>
-          <div class="card" id="trendChart" style="max-width: 720px; padding: var(--space-xl);"></div>
         </div>
       </div>
     </section>
@@ -167,11 +124,11 @@
       <div class="container" style="max-width: 800px;">
         <div class="info-box warning">
           <p><strong>제약사항 안내</strong></p>
-          <p>각 기관은 상급기관의 보안 지침 또는 자체 정보보안 정책에 따라 웹사이트 설정이 제한될 수 있습니다. 예를 들어, 국가정보원의 보안 가이드라인, 상위 부처의 일괄 보안 정책, 기관 자체 정보보호 규정 등으로 인해 robots.txt나 크롤링 정책을 기관 단독으로 변경하기 어려운 경우가 있습니다. 본 평가는 이러한 제약을 비난하려는 것이 아니라, 현황을 파악하고 개선 논의의 출발점을 제공하기 위한 것입니다.</p>
+          <p>각 기관은 상급기관의 보안 지침 또는 자체 정보보안 정책에 따라 웹사이트 설정이 제한될 수 있습니다. 본 평가는 이러한 제약을 비난하려는 것이 아니라, 현황을 파악하고 개선 논의의 출발점을 제공하기 위한 것입니다.</p>
         </div>
         <div class="disclaimer" style="margin-top: var(--space-lg);">
           <p><strong>Disclaimer</strong></p>
-          <p>본 웹사이트는 개인 프로젝트로 운영되며, 정부 공식 입장과 무관합니다. 분석 결과는 자동화된 도구와 수작업 검토를 병행하여 생성되나, 정확성을 완전히 보장하지 않습니다. 오류를 발견하신 경우 GitHub Issues를 통해 알려주시면 확인 후 수정하겠습니다.</p>
+          <p>본 웹사이트는 개인 프로젝트로 운영되며, 정부 공식 입장과 무관합니다. 분석 결과는 자동화된 도구로 생성되며, 정확성을 완전히 보장하지 않습니다. 오류를 발견하신 경우 GitHub Issues를 통해 알려주시면 확인 후 수정하겠습니다.</p>
         </div>
       </div>
     </section>
@@ -181,19 +138,18 @@
 
   <script src="js/app.js"></script>
   <script>
-    // All data comes from our own trusted data/results.json.
-    // All dynamic text is escaped via App.escapeHtml() before DOM insertion.
     App.initPage('index', function(data) {
       var orgs = data.organizations;
+      if (!orgs || !orgs.length) return;
       var stats = App.calcStats(orgs);
 
-      // Stats — plain text insertion via textContent (safe)
+      // Stats
       document.getElementById('statAvg').textContent = stats.avg;
       document.getElementById('statCount').textContent = stats.count;
       document.getElementById('statIssues').textContent = stats.totalIssues;
       document.getElementById('statCritical').textContent = stats.criticals;
 
-      // Grade distribution — built from hardcoded grade values
+      // Grade distribution
       var gradeOrder = ['A+', 'A', 'B+', 'B', 'C', 'D', 'F'];
       var distEl = document.getElementById('gradeDist');
       var legendEl = document.getElementById('gradeLegend');
@@ -209,7 +165,6 @@
           distEl.appendChild(seg);
         }
       });
-
       gradeOrder.forEach(function(g) {
         var info = App.getGradeInfo(g);
         var item = document.createElement('div');
@@ -228,87 +183,154 @@
         legendEl.appendChild(item);
       });
 
-      // Summary table — DOM-based construction for safety
-      var sorted = orgs.slice().sort(function(a, b) { return b.scores.total - a.scores.total; });
-      var container = document.getElementById('topTable');
-      container.textContent = ''; // clear loading
+      // Category tabs + table
+      var catFilters = {
+        ministry: function(o) { return o.org_type === 'ministry'; },
+        pm_office: function(o) { return o.org_type === 'pm_office'; },
+        agency: function(o) { return o.org_type === 'agency'; },
+        local: function(o) { return o.org_type === 'local_metro' || o.org_type === 'local_province'; },
+        public_institution: function(o) { return o.org_type === 'public_institution'; }
+      };
+      var currentCat = 'ministry';
 
-      var table = document.createElement('table');
-      var thead = document.createElement('thead');
-      var headRow = document.createElement('tr');
-      ['#', '기관명', '등급', '점수', '문제사항'].forEach(function(h) {
-        var th = document.createElement('th');
-        th.textContent = h;
-        headRow.appendChild(th);
-      });
-      thead.appendChild(headRow);
-      table.appendChild(thead);
-
-      var tbody = document.createElement('tbody');
-      sorted.forEach(function(org, i) {
-        var tr = document.createElement('tr');
-        tr.style.cursor = 'pointer';
-        tr.addEventListener('click', function() {
-          window.location.href = 'org.html?id=' + encodeURIComponent(org.org_id);
+      function renderCatTable(cat) {
+        currentCat = cat;
+        var filtered = orgs.filter(catFilters[cat]).sort(function(a, b) {
+          return b.scores.total - a.scores.total;
         });
+        var container = document.getElementById('catTable');
+        container.textContent = '';
 
-        // Rank
-        var tdRank = document.createElement('td');
-        tdRank.style.cssText = 'color:var(--text-tertiary);font-family:var(--font-mono);font-size:0.85rem';
-        tdRank.textContent = i + 1;
-        tr.appendChild(tdRank);
+        if (!filtered.length) {
+          var empty = document.createElement('div');
+          empty.className = 'empty-state';
+          var p = document.createElement('p');
+          p.textContent = '해당 유형의 분석 결과가 없습니다.';
+          empty.appendChild(p);
+          container.appendChild(empty);
+          return;
+        }
 
-        // Name
-        var tdName = document.createElement('td');
-        tdName.className = 'td-name';
-        var nameLink = document.createElement('a');
-        nameLink.href = 'org.html?id=' + encodeURIComponent(org.org_id);
-        nameLink.textContent = org.name;
-        var nameEn = document.createElement('span');
-        nameEn.className = 'name-en';
-        nameEn.textContent = org.name_en;
-        nameLink.appendChild(nameEn);
-        tdName.appendChild(nameLink);
-        tr.appendChild(tdName);
-
-        // Grade
-        var tdGrade = document.createElement('td');
-        var badge = document.createElement('span');
-        badge.className = 'grade-badge grade-badge-sm ' + App.getGradeClass(org.scores.grade);
-        badge.textContent = org.scores.grade;
-        tdGrade.appendChild(badge);
-        tr.appendChild(tdGrade);
-
-        // Score
-        var tdScore = document.createElement('td');
-        tdScore.className = 'td-score';
-        tdScore.textContent = org.scores.total;
-        tr.appendChild(tdScore);
-
-        // Issues
-        var tdIssues = document.createElement('td');
-        var counts = { critical: 0, major: 0, minor: 0, info: 0 };
-        (org.issues || []).forEach(function(issue) {
-          counts[issue.severity] = (counts[issue.severity] || 0) + 1;
+        var table = document.createElement('table');
+        var thead = document.createElement('thead');
+        var headRow = document.createElement('tr');
+        var cols = ['#', '기관명', '유형', '등급', '점수', '문제사항'];
+        cols.forEach(function(h) {
+          var th = document.createElement('th');
+          th.textContent = h;
+          headRow.appendChild(th);
         });
-        var chips = document.createElement('div');
-        chips.className = 'issue-chips';
-        ['critical', 'major', 'minor', 'info'].forEach(function(sev) {
-          if (counts[sev] > 0) {
-            var chip = document.createElement('span');
-            chip.className = 'issue-chip severity-' + sev;
-            chip.textContent = counts[sev];
-            chips.appendChild(chip);
+        thead.appendChild(headRow);
+        table.appendChild(thead);
+
+        var tbody = document.createElement('tbody');
+        // For public institutions, show only top 20 + link
+        var showOrgs = cat === 'public_institution' ? filtered.slice(0, 20) : filtered;
+
+        showOrgs.forEach(function(org, i) {
+          var tr = document.createElement('tr');
+          tr.style.cursor = 'pointer';
+          tr.addEventListener('click', function() {
+            window.location.href = 'org.html?id=' + encodeURIComponent(org.org_id);
+          });
+
+          var tdR = document.createElement('td');
+          tdR.style.cssText = 'color:var(--text-tertiary);font-family:var(--font-mono);font-size:0.85rem';
+          tdR.textContent = i + 1;
+          tr.appendChild(tdR);
+
+          var tdN = document.createElement('td');
+          tdN.className = 'td-name';
+          var link = document.createElement('a');
+          link.href = 'org.html?id=' + encodeURIComponent(org.org_id);
+          link.textContent = org.name;
+          if (org.name_en) {
+            var en = document.createElement('span');
+            en.className = 'name-en';
+            en.textContent = org.name_en;
+            link.appendChild(en);
           }
-        });
-        tdIssues.appendChild(chips);
-        tr.appendChild(tdIssues);
+          tdN.appendChild(link);
+          tr.appendChild(tdN);
 
-        tbody.appendChild(tr);
+          var tdType = document.createElement('td');
+          tdType.style.cssText = 'font-size:0.8rem;color:var(--text-tertiary)';
+          tdType.textContent = App.orgTypeLabel(org.org_type);
+          tr.appendChild(tdType);
+
+          var tdG = document.createElement('td');
+          var badge = document.createElement('span');
+          badge.className = 'grade-badge grade-badge-sm ' + App.getGradeClass(org.scores.grade);
+          badge.textContent = org.scores.grade;
+          tdG.appendChild(badge);
+          tr.appendChild(tdG);
+
+          var tdS = document.createElement('td');
+          tdS.className = 'td-score';
+          tdS.textContent = org.scores.total;
+          tr.appendChild(tdS);
+
+          var tdI = document.createElement('td');
+          var counts = { critical: 0, major: 0, minor: 0, info: 0 };
+          (org.issues || []).forEach(function(issue) {
+            counts[issue.severity] = (counts[issue.severity] || 0) + 1;
+          });
+          var chips = document.createElement('div');
+          chips.className = 'issue-chips';
+          ['critical', 'major', 'minor', 'info'].forEach(function(sev) {
+            if (counts[sev] > 0) {
+              var chip = document.createElement('span');
+              chip.className = 'issue-chip severity-' + sev;
+              chip.textContent = counts[sev];
+              chips.appendChild(chip);
+            }
+          });
+          tdI.appendChild(chips);
+          tr.appendChild(tdI);
+
+          tbody.appendChild(tr);
+        });
+
+        table.appendChild(tbody);
+        container.appendChild(table);
+
+        // Show "더보기" for public institutions
+        if (cat === 'public_institution' && filtered.length > 20) {
+          var more = document.createElement('div');
+          more.style.cssText = 'text-align:center;padding:var(--space-lg)';
+          var moreLink = document.createElement('a');
+          moreLink.href = 'ranking.html';
+          moreLink.className = 'btn btn-secondary';
+          moreLink.textContent = '전체 ' + filtered.length + '개 기관 보기';
+          more.appendChild(moreLink);
+          container.appendChild(more);
+        }
+      }
+
+      // Tab click handlers
+      document.querySelectorAll('#catTabs .tab').forEach(function(tab) {
+        tab.addEventListener('click', function() {
+          document.querySelectorAll('#catTabs .tab').forEach(function(t) { t.classList.remove('active'); });
+          tab.classList.add('active');
+          renderCatTable(tab.getAttribute('data-cat'));
+        });
       });
 
-      table.appendChild(tbody);
-      container.appendChild(table);
+      // Update tab labels with actual counts
+      var typeCounts = {};
+      orgs.forEach(function(o) {
+        var key = o.org_type;
+        if (key === 'local_metro' || key === 'local_province') key = 'local';
+        typeCounts[key] = (typeCounts[key] || 0) + 1;
+      });
+      document.querySelectorAll('#catTabs .tab').forEach(function(tab) {
+        var cat = tab.getAttribute('data-cat');
+        var count = typeCounts[cat] || 0;
+        var labels = { ministry: '부', pm_office: '처', agency: '청', local: '지자체', public_institution: '공공기관' };
+        tab.textContent = labels[cat] + ' (' + count + ')';
+      });
+
+      renderCatTable('ministry');
 
       // Quote rotation
       var quotes = document.querySelectorAll('#quoteCarousel blockquote');
@@ -318,319 +340,6 @@
         qIdx = (qIdx + 1) % quotes.length;
         quotes[qIdx].classList.add('active');
       }, 4000);
-
-      // === Most Improved Section ===
-      App.loadHistory().then(function(history) {
-        if (!history || !history.scans || history.scans.length < 2) return;
-
-        var scans = history.scans;
-        var first = scans[0].scores;
-        var last = scans[scans.length - 1].scores;
-
-        // Improve tabs
-        document.querySelectorAll('#improveTabs .tab').forEach(function(tab) {
-          tab.addEventListener('click', function() {
-            document.querySelectorAll('#improveTabs .tab').forEach(function(t) { t.classList.remove('active'); });
-            tab.classList.add('active');
-            var panels = ['improveOrg', 'improveMinistry', 'improveCategory'];
-            panels.forEach(function(p) { document.getElementById(p).style.display = 'none'; });
-            document.getElementById(tab.getAttribute('data-tab')).style.display = 'block';
-          });
-        });
-
-        // --- Org improvement table ---
-        var orgImprovements = orgs.map(function(o) {
-          var prev = first[o.org_id] || 0;
-          var curr = last[o.org_id] || o.scores.total;
-          return { org: o, prev: prev, curr: curr, delta: curr - prev };
-        }).sort(function(a, b) { return b.delta - a.delta; });
-
-        var orgTable = document.createElement('table');
-        var oHead = document.createElement('thead');
-        var oHRow = document.createElement('tr');
-        ['#', '기관명', '이전', '현재', '변화', '추이'].forEach(function(h) {
-          var th = document.createElement('th');
-          th.textContent = h;
-          oHRow.appendChild(th);
-        });
-        oHead.appendChild(oHRow);
-        orgTable.appendChild(oHead);
-
-        var oBody = document.createElement('tbody');
-        orgImprovements.forEach(function(item, i) {
-          var tr = document.createElement('tr');
-          tr.style.cursor = 'pointer';
-          tr.addEventListener('click', function() {
-            window.location.href = 'org.html?id=' + encodeURIComponent(item.org.org_id);
-          });
-
-          var tdR = document.createElement('td');
-          tdR.style.cssText = 'color:var(--text-tertiary);font-family:var(--font-mono);font-size:0.85rem';
-          tdR.textContent = i + 1;
-
-          var tdN = document.createElement('td');
-          tdN.className = 'td-name';
-          var link = document.createElement('a');
-          link.href = 'org.html?id=' + encodeURIComponent(item.org.org_id);
-          link.textContent = item.org.name;
-          tdN.appendChild(link);
-
-          var tdPrev = document.createElement('td');
-          tdPrev.style.cssText = 'font-family:var(--font-mono);color:var(--text-tertiary)';
-          tdPrev.textContent = item.prev;
-
-          var tdCurr = document.createElement('td');
-          tdCurr.style.cssText = 'font-family:var(--font-mono);font-weight:600';
-          tdCurr.textContent = item.curr;
-
-          var tdDelta = document.createElement('td');
-          tdDelta.style.cssText = 'font-family:var(--font-mono);font-weight:700';
-          if (item.delta > 0) { tdDelta.textContent = '+' + item.delta; tdDelta.style.color = 'var(--jade)'; }
-          else if (item.delta < 0) { tdDelta.textContent = item.delta; tdDelta.style.color = 'var(--vermillion)'; }
-          else { tdDelta.textContent = '0'; tdDelta.style.color = 'var(--text-tertiary)'; }
-
-          // Mini sparkline bar
-          var tdBar = document.createElement('td');
-          tdBar.style.width = '100px';
-          var maxDelta = Math.max.apply(null, orgImprovements.map(function(x) { return Math.abs(x.delta); })) || 1;
-          var bar = document.createElement('div');
-          bar.style.cssText = 'display:flex;align-items:center;height:16px;gap:2px';
-          var fill = document.createElement('div');
-          var w = Math.round(Math.abs(item.delta) / maxDelta * 80);
-          fill.style.cssText = 'height:8px;border-radius:4px;min-width:2px;width:' + w + 'px';
-          fill.style.background = item.delta > 0 ? 'var(--jade)' : item.delta < 0 ? 'var(--vermillion)' : 'var(--border)';
-          bar.appendChild(fill);
-          tdBar.appendChild(bar);
-
-          tr.appendChild(tdR);
-          tr.appendChild(tdN);
-          tr.appendChild(tdPrev);
-          tr.appendChild(tdCurr);
-          tr.appendChild(tdDelta);
-          tr.appendChild(tdBar);
-          oBody.appendChild(tr);
-        });
-        orgTable.appendChild(oBody);
-        document.getElementById('improveOrgTable').appendChild(orgTable);
-
-        // --- Ministry improvement table ---
-        var ministries = App.groupByMinistry(orgs);
-        var ministryImprovements = ministries.map(function(m) {
-          var prevTotal = 0, currTotal = 0;
-          m.children.forEach(function(c) {
-            prevTotal += first[c.org_id] || 0;
-            currTotal += last[c.org_id] || c.scores.total;
-          });
-          var prevAvg = Math.round(prevTotal / m.children.length * 10) / 10;
-          var currAvg = Math.round(currTotal / m.children.length * 10) / 10;
-          return { ministry: m, prevAvg: prevAvg, currAvg: currAvg, delta: Math.round((currAvg - prevAvg) * 10) / 10 };
-        }).sort(function(a, b) { return b.delta - a.delta; });
-
-        var mTable = document.createElement('table');
-        var mHead = document.createElement('thead');
-        var mHRow = document.createElement('tr');
-        ['#', '부처', '이전 평균', '현재 평균', '변화', '추이'].forEach(function(h) {
-          var th = document.createElement('th');
-          th.textContent = h;
-          mHRow.appendChild(th);
-        });
-        mHead.appendChild(mHRow);
-        mTable.appendChild(mHead);
-
-        var mBody = document.createElement('tbody');
-        ministryImprovements.forEach(function(item, i) {
-          var tr = document.createElement('tr');
-
-          var tdR = document.createElement('td');
-          tdR.style.cssText = 'color:var(--text-tertiary);font-family:var(--font-mono);font-size:0.85rem';
-          tdR.textContent = i + 1;
-
-          var tdN = document.createElement('td');
-          tdN.className = 'td-name';
-          tdN.style.fontWeight = '600';
-          tdN.textContent = item.ministry.name;
-
-          var tdPrev = document.createElement('td');
-          tdPrev.style.cssText = 'font-family:var(--font-mono);color:var(--text-tertiary)';
-          tdPrev.textContent = item.prevAvg;
-
-          var tdCurr = document.createElement('td');
-          tdCurr.style.cssText = 'font-family:var(--font-mono);font-weight:600';
-          tdCurr.textContent = item.currAvg;
-
-          var tdDelta = document.createElement('td');
-          tdDelta.style.cssText = 'font-family:var(--font-mono);font-weight:700';
-          if (item.delta > 0) { tdDelta.textContent = '+' + item.delta; tdDelta.style.color = 'var(--jade)'; }
-          else if (item.delta < 0) { tdDelta.textContent = item.delta; tdDelta.style.color = 'var(--vermillion)'; }
-          else { tdDelta.textContent = '0'; tdDelta.style.color = 'var(--text-tertiary)'; }
-
-          var tdBar = document.createElement('td');
-          tdBar.style.width = '100px';
-          var maxD = Math.max.apply(null, ministryImprovements.map(function(x) { return Math.abs(x.delta); })) || 1;
-          var bar = document.createElement('div');
-          bar.style.cssText = 'display:flex;align-items:center;height:16px';
-          var fill = document.createElement('div');
-          var w = Math.round(Math.abs(item.delta) / maxD * 80);
-          fill.style.cssText = 'height:8px;border-radius:4px;min-width:2px;width:' + w + 'px';
-          fill.style.background = item.delta > 0 ? 'var(--jade)' : item.delta < 0 ? 'var(--vermillion)' : 'var(--border)';
-          bar.appendChild(fill);
-          tdBar.appendChild(bar);
-
-          tr.appendChild(tdR);
-          tr.appendChild(tdN);
-          tr.appendChild(tdPrev);
-          tr.appendChild(tdCurr);
-          tr.appendChild(tdDelta);
-          tr.appendChild(tdBar);
-          mBody.appendChild(tr);
-        });
-        mTable.appendChild(mBody);
-        document.getElementById('improveMinistryTable').appendChild(mTable);
-
-        // --- Category improvement chart ---
-        var catChart = document.getElementById('improveCategoryChart');
-        Object.keys(App.CATEGORIES).forEach(function(ck) {
-          var catInfo = App.CATEGORIES[ck];
-          // Calculate avg for first and last scan
-          var prevSum = 0, currSum = 0, count = 0;
-          orgs.forEach(function(o) {
-            if (o.scores.categories[ck]) {
-              currSum += o.scores.categories[ck].score;
-              count++;
-            }
-          });
-          // Estimate previous from total score ratio
-          var currAvg = count ? currSum / count : 0;
-          var ratio = scans[0].scores ? 1 : 1;
-          // Use simple ratio from total scores
-          var totalPrev = 0, totalCurr = 0;
-          orgs.forEach(function(o) {
-            totalPrev += first[o.org_id] || 0;
-            totalCurr += last[o.org_id] || o.scores.total;
-          });
-          var prevAvg = totalCurr > 0 ? currAvg * (totalPrev / totalCurr) : currAvg;
-          var delta = Math.round((currAvg - prevAvg) * 10) / 10;
-
-          var row = document.createElement('div');
-          row.className = 'score-bar-container';
-          row.style.marginBottom = 'var(--space-md)';
-
-          var label = document.createElement('span');
-          label.className = 'score-bar-label';
-          label.textContent = catInfo.name;
-
-          var track = document.createElement('div');
-          track.className = 'score-bar-track';
-          track.style.position = 'relative';
-          // Previous marker
-          var prevMark = document.createElement('div');
-          prevMark.style.cssText = 'position:absolute;left:' + (prevAvg / catInfo.max * 100) + '%;top:-2px;width:2px;height:12px;background:var(--text-tertiary);border-radius:1px;z-index:1';
-          prevMark.title = '이전: ' + prevAvg.toFixed(1);
-          track.appendChild(prevMark);
-          var fill = document.createElement('div');
-          fill.className = 'score-bar-fill';
-          fill.style.width = (currAvg / catInfo.max * 100) + '%';
-          fill.style.background = delta > 0 ? 'var(--jade)' : 'var(--navy)';
-          track.appendChild(fill);
-
-          var val = document.createElement('span');
-          val.className = 'score-bar-value';
-          var deltaStr = delta > 0 ? '+' + delta : '' + delta;
-          val.textContent = currAvg.toFixed(1) + ' (' + deltaStr + ')';
-          val.style.color = delta > 0 ? 'var(--jade)' : delta < 0 ? 'var(--vermillion)' : 'var(--text-secondary)';
-
-          row.appendChild(label);
-          row.appendChild(track);
-          row.appendChild(val);
-          catChart.appendChild(row);
-        });
-
-        // --- Trend chart (simple SVG line chart) ---
-        var chartEl = document.getElementById('trendChart');
-        var svgNS = 'http://www.w3.org/2000/svg';
-        var w = 640, h = 200, pad = 40;
-
-        var svg = document.createElementNS(svgNS, 'svg');
-        svg.setAttribute('viewBox', '0 0 ' + w + ' ' + h);
-        svg.setAttribute('width', '100%');
-        svg.style.maxWidth = w + 'px';
-
-        // Calculate averages per scan
-        var avgPoints = scans.map(function(scan) {
-          var sum = 0, count = 0;
-          orgs.forEach(function(o) {
-            if (scan.scores[o.org_id] !== undefined) { sum += scan.scores[o.org_id]; count++; }
-          });
-          return { date: scan.date, label: scan.label, avg: count ? sum / count : 0 };
-        });
-
-        var minY = 0, maxY = 100;
-        var xStep = (w - pad * 2) / (avgPoints.length - 1 || 1);
-
-        // Grid lines
-        [0, 25, 50, 75, 100].forEach(function(v) {
-          var y = h - pad - (v / maxY) * (h - pad * 2);
-          var line = document.createElementNS(svgNS, 'line');
-          line.setAttribute('x1', pad); line.setAttribute('x2', w - pad);
-          line.setAttribute('y1', y); line.setAttribute('y2', y);
-          line.setAttribute('stroke', '#E5E0D5'); line.setAttribute('stroke-width', '1');
-          svg.appendChild(line);
-          var text = document.createElementNS(svgNS, 'text');
-          text.setAttribute('x', pad - 8); text.setAttribute('y', y + 4);
-          text.setAttribute('text-anchor', 'end'); text.setAttribute('font-size', '11');
-          text.setAttribute('fill', '#8A8A8E'); text.setAttribute('font-family', 'var(--font-mono)');
-          text.textContent = v;
-          svg.appendChild(text);
-        });
-
-        // Line path
-        var points = avgPoints.map(function(p, i) {
-          var x = pad + i * xStep;
-          var y = h - pad - (p.avg / maxY) * (h - pad * 2);
-          return { x: x, y: y, data: p };
-        });
-
-        var pathD = points.map(function(p, i) { return (i === 0 ? 'M' : 'L') + p.x + ',' + p.y; }).join(' ');
-        var path = document.createElementNS(svgNS, 'path');
-        path.setAttribute('d', pathD);
-        path.setAttribute('fill', 'none'); path.setAttribute('stroke', '#1B2A4A');
-        path.setAttribute('stroke-width', '3'); path.setAttribute('stroke-linecap', 'round');
-        path.setAttribute('stroke-linejoin', 'round');
-        svg.appendChild(path);
-
-        // Area fill
-        var areaD = pathD + ' L' + points[points.length-1].x + ',' + (h-pad) + ' L' + points[0].x + ',' + (h-pad) + ' Z';
-        var area = document.createElementNS(svgNS, 'path');
-        area.setAttribute('d', areaD);
-        area.setAttribute('fill', 'rgba(27,42,74,0.06)');
-        svg.appendChild(area);
-
-        // Points and labels
-        points.forEach(function(p) {
-          var circle = document.createElementNS(svgNS, 'circle');
-          circle.setAttribute('cx', p.x); circle.setAttribute('cy', p.y);
-          circle.setAttribute('r', '5'); circle.setAttribute('fill', '#1B2A4A');
-          circle.setAttribute('stroke', '#F5F1EB'); circle.setAttribute('stroke-width', '2');
-          svg.appendChild(circle);
-
-          var scoreText = document.createElementNS(svgNS, 'text');
-          scoreText.setAttribute('x', p.x); scoreText.setAttribute('y', p.y - 14);
-          scoreText.setAttribute('text-anchor', 'middle'); scoreText.setAttribute('font-size', '13');
-          scoreText.setAttribute('font-weight', '700'); scoreText.setAttribute('fill', '#1B2A4A');
-          scoreText.setAttribute('font-family', 'var(--font-mono)');
-          scoreText.textContent = p.data.avg.toFixed(1);
-          svg.appendChild(scoreText);
-
-          var dateText = document.createElementNS(svgNS, 'text');
-          dateText.setAttribute('x', p.x); dateText.setAttribute('y', h - pad + 20);
-          dateText.setAttribute('text-anchor', 'middle'); dateText.setAttribute('font-size', '11');
-          dateText.setAttribute('fill', '#8A8A8E');
-          dateText.textContent = p.data.date;
-          svg.appendChild(dateText);
-        });
-
-        chartEl.appendChild(svg);
-      });
     });
   </script>
 </body>
