@@ -42,13 +42,26 @@ async function fetchWithTimeout(url, timeoutMs = 10000) {
   }
 }
 
+// HTML 에러 페이지 감지 — 많은 정부 사이트가 없는 페이지에 200 + HTML을 반환
+function looksLikeHtml(text) {
+  if (!text) return false;
+  const trimmed = text.trim();
+  return trimmed.startsWith('<') || /<!doctype/i.test(trimmed.substring(0, 100));
+}
+
+function looksLikeXml(text) {
+  if (!text) return false;
+  const trimmed = text.trim();
+  return trimmed.startsWith('<?xml') || trimmed.startsWith('<urlset') || trimmed.startsWith('<sitemapindex');
+}
+
 // === robots.txt 분석 ===
 async function analyzeRobotsTxt(baseUrl) {
   const url = new URL('/robots.txt', baseUrl).href;
   const res = await fetchWithTimeout(url);
 
   const result = {
-    exists: res.ok && res.status === 200,
+    exists: res.ok && res.status === 200 && !looksLikeHtml(res.text),
     status_code: res.status,
     fetch_error: res.error || null,
     raw: null,
@@ -113,7 +126,7 @@ async function analyzeLlmsTxt(baseUrl) {
   const res = await fetchWithTimeout(url);
 
   const result = {
-    exists: res.ok && res.status === 200,
+    exists: res.ok && res.status === 200 && !looksLikeHtml(res.text),
     status_code: res.status,
     content_length: 0,
     has_description: false,
@@ -136,8 +149,10 @@ async function analyzeSitemap(baseUrl) {
   const url = new URL('/sitemap.xml', baseUrl).href;
   const res = await fetchWithTimeout(url);
 
+  // sitemap은 XML이어야 함. HTML 에러 페이지가 반환되면 없는 것으로 판정
+  const isValidResponse = res.ok && res.status === 200 && (looksLikeXml(res.text) || !looksLikeHtml(res.text));
   const result = {
-    exists: res.ok && res.status === 200,
+    exists: isValidResponse,
     status_code: res.status,
     valid_xml: false,
     url_count: 0

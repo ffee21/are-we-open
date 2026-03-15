@@ -216,33 +216,85 @@ const App = (() => {
   }
 
   // Ministry grouping: aggregate orgs by parent ministry
+  // 중앙행정기관은 parent_org_id로, 공공기관은 ministry 필드로 그룹핑
   function groupByMinistry(orgs) {
-    const ministries = {};
-    const parentOrgs = {};
-    // Index all orgs by id
-    orgs.forEach(o => { parentOrgs[o.org_id] = o; });
-    // Group
+    const groups = {};
+    const orgById = {};
+    orgs.forEach(o => { orgById[o.org_id] = o; });
+
+    // 먼저 부/처 (최상위 기관)를 등록
     orgs.forEach(o => {
-      const parentId = o.parent_org_id || o.org_id;
-      if (!ministries[parentId]) {
-        const parent = parentOrgs[parentId] || o;
-        ministries[parentId] = {
-          ministry_id: parentId,
-          name: parent.name,
-          name_en: parent.name_en,
-          children: [],
-          totalScore: 0
-        };
+      if (o.org_type === 'ministry' || o.org_type === 'pm_office') {
+        if (!groups[o.org_id]) {
+          groups[o.org_id] = {
+            ministry_id: o.org_id,
+            name: o.name,
+            name_en: o.name_en || '',
+            children: [],
+            totalScore: 0
+          };
+        }
       }
-      ministries[parentId].children.push(o);
-      ministries[parentId].totalScore += o.scores.total;
     });
-    // Calculate averages
-    Object.values(ministries).forEach(m => {
+
+    // 각 기관을 그룹에 배치
+    orgs.forEach(o => {
+      let groupKey = null;
+
+      // 1. parent_org_id가 있으면 그것 사용 (청 등)
+      if (o.parent_org_id && groups[o.parent_org_id]) {
+        groupKey = o.parent_org_id;
+      }
+      // 2. 본인이 최상위 기관이면 자기 자신
+      else if (groups[o.org_id]) {
+        groupKey = o.org_id;
+      }
+      // 3. 공공기관: ministry 필드로 매칭 시도
+      else if (o.ministry) {
+        for (const [id, g] of Object.entries(groups)) {
+          if (g.name === o.ministry) { groupKey = id; break; }
+        }
+        // 매칭 안 되면 ministry 이름으로 새 그룹
+        if (!groupKey) {
+          groupKey = 'ext_' + o.ministry;
+          if (!groups[groupKey]) {
+            groups[groupKey] = {
+              ministry_id: groupKey,
+              name: o.ministry,
+              name_en: '',
+              children: [],
+              totalScore: 0
+            };
+          }
+        }
+      }
+      // 4. 지자체 등은 자기 자신
+      else {
+        groupKey = o.org_id;
+        if (!groups[groupKey]) {
+          groups[groupKey] = {
+            ministry_id: groupKey,
+            name: o.name,
+            name_en: o.name_en || '',
+            children: [],
+            totalScore: 0
+          };
+        }
+      }
+
+      if (groupKey && groups[groupKey]) {
+        groups[groupKey].children.push(o);
+        groups[groupKey].totalScore += o.scores.total;
+      }
+    });
+
+    // 빈 그룹 제거 + 평균 계산
+    const result = Object.values(groups).filter(m => m.children.length > 0);
+    result.forEach(m => {
       m.avgScore = Math.round(m.totalScore / m.children.length * 10) / 10;
       m.grade = gradeFromScore(m.avgScore);
     });
-    return Object.values(ministries).sort((a, b) => b.avgScore - a.avgScore);
+    return result.sort((a, b) => b.avgScore - a.avgScore);
   }
 
   // Build navigation DOM

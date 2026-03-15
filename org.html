@@ -6,12 +6,98 @@
   <title>기관 상세 — Are We Open?</title>
   <meta name="description" content="기관별 LLM 친화성 분석 상세 결과">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Scoring criteria tooltip styles */
+    .item-code-btn {
+      background: none;
+      border: none;
+      padding: 2px 6px;
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      color: var(--navy-light);
+      cursor: pointer;
+      text-decoration: underline dotted;
+      border-radius: var(--radius-sm);
+      transition: background var(--duration) var(--ease);
+    }
+    .item-code-btn:hover {
+      background: var(--bg-warm);
+    }
+    .scoring-criteria {
+      display: none;
+      margin-top: var(--space-xs);
+      padding: var(--space-sm) var(--space-md);
+      background: var(--bg-warm);
+      border-radius: var(--radius-sm);
+      font-size: 0.78rem;
+      line-height: 1.6;
+      color: var(--text-secondary);
+      border-left: 3px solid var(--navy-light);
+    }
+    .scoring-criteria.open {
+      display: block;
+    }
+    .scoring-criteria-label {
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 2px;
+    }
+    /* Snapshot tab styles */
+    .snapshot-section {
+      margin-bottom: var(--space-xl);
+    }
+    .snapshot-badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: var(--radius-sm);
+      font-size: 0.7rem;
+      font-weight: 600;
+      margin-left: var(--space-sm);
+      vertical-align: middle;
+    }
+    .snapshot-badge.exists {
+      background: rgba(42, 127, 98, 0.1);
+      color: var(--jade);
+    }
+    .snapshot-badge.missing {
+      background: rgba(201, 53, 69, 0.1);
+      color: var(--vermillion);
+    }
+    /* Crawler mentioned badge */
+    .crawler-mentioned {
+      font-size: 0.65rem;
+      padding: 1px 5px;
+      border-radius: var(--radius-sm);
+      margin-left: 4px;
+      background: rgba(91, 155, 213, 0.1);
+      color: var(--severity-info);
+    }
+    /* Recommendation card */
+    .recommendation-card {
+      padding: var(--space-md) var(--space-lg);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      margin-bottom: var(--space-md);
+      background: var(--surface);
+    }
+    .recommendation-card-title {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: var(--space-xs);
+    }
+    .recommendation-card-body {
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+  </style>
 </head>
 <body>
   <div id="nav"></div>
   <main>
     <div class="container">
-      <a href="ranking.html" class="back-link">← 순위표로 돌아가기</a>
+      <a href="ranking.html" class="back-link">&larr; 순위표로 돌아가기</a>
       <div id="orgContent">
         <div class="loading">데이터 로딩 중</div>
       </div>
@@ -37,7 +123,7 @@
         return;
       }
 
-      document.title = org.name + ' — Are We Open?';
+      document.title = org.name + ' \u2014 Are We Open?';
       root.textContent = '';
 
       // === Header ===
@@ -55,7 +141,7 @@
       var metaItems = [
         { label: org.name_en },
         { label: App.orgTypeLabel(org.org_type) },
-        { label: '분석일: ' + org.scan_date }
+        { label: '\uBD84\uC11D\uC77C: ' + org.scan_date }
       ];
       metaItems.forEach(function(m) {
         var span = document.createElement('span');
@@ -100,10 +186,11 @@
 
       // === Tabs ===
       var tabData = [
-        { id: 'scores', label: '점수 상세' },
-        { id: 'issues', label: '문제사항 (' + (org.issues || []).length + ')' },
-        { id: 'crawlers', label: '크롤러 현황' },
-        { id: 'suggestion', label: '개선 제안' }
+        { id: 'scores', label: '\uC810\uC218 \uC0C1\uC138' },
+        { id: 'issues', label: '\uBB38\uC81C\uC0AC\uD56D (' + (org.issues || []).length + ')' },
+        { id: 'crawlers', label: '\uD06C\uB864\uB7EC \uD604\uD669' },
+        { id: 'snapshots', label: '\uC6D0\uBCF8 \uD30C\uC77C' },
+        { id: 'suggestion', label: '\uAC1C\uC120 \uC81C\uC548' }
       ];
 
       var tabsDiv = document.createElement('div');
@@ -130,6 +217,56 @@
       });
 
       root.appendChild(tabsDiv);
+
+      // === Helper: build scoring criteria detail for an item code ===
+      function buildScoringCriteria(code) {
+        var itemInfo = App.ITEM_DESCRIPTIONS[code];
+        if (!itemInfo) return null;
+
+        var criteriaMap = {
+          'RT-01': { full: 'robots.txt\uAC00 \uC874\uC7AC\uD558\uACE0 HTTP 200\uC73C\uB85C \uC751\uB2F5', zero: 'robots.txt\uAC00 \uC874\uC7AC\uD558\uC9C0 \uC54A\uC74C (404 \uB4F1)' },
+          'RT-02': { full: 'robots.txt \uBB38\uBC95\uC774 \uC62C\uBC14\uB974\uACE0 \uD30C\uC2F1 \uC5D0\uB7EC \uC5C6\uC74C', zero: 'robots.txt\uC5D0 \uBB38\uBC95 \uC624\uB958\uAC00 \uC788\uAC70\uB098 \uD30C\uC2F1 \uBD88\uAC00' },
+          'RT-03': { full: 'LLM \uD06C\uB864\uB7EC(GPTBot, ClaudeBot \uB4F1)\uAC00 \uBAA8\uB450 \uD5C8\uC6A9\uB428', zero: 'LLM \uD06C\uB864\uB7EC\uAC00 \uCC28\uB2E8\uB428 (\uCC28\uB2E8 \uC218\uC5D0 \uBE44\uB840\uD558\uC5EC \uAC10\uC810)' },
+          'RT-04': { full: '\uC804\uBA74 \uCC28\uB2E8(Disallow: /)\uC774 \uC5C6\uC74C', zero: 'User-agent: * Disallow: / \uB85C \uBAA8\uB4E0 \uD06C\uB864\uB7EC \uC804\uBA74 \uCC28\uB2E8' },
+          'RT-05': { full: '\uBCF4\uB3C4\uC790\uB8CC/\uC815\uCC45/\uACF5\uC9C0 \uACBD\uB85C\uAC00 robots.txt\uC5D0\uC11C \uCC28\uB2E8\uB418\uC9C0 \uC54A\uC74C', zero: '\uD575\uC2EC \uCF58\uD150\uCE20 \uACBD\uB85C\uAC00 Disallow\uB85C \uCC28\uB2E8\uB428' },
+          'CA-01': { full: '\uBCF4\uB3C4\uC790\uB8CC \uACBD\uB85C\uC5D0 LLM\uC774 \uC811\uADFC \uAC00\uB2A5', zero: '\uBCF4\uB3C4\uC790\uB8CC \uACBD\uB85C\uAC00 \uCC28\uB2E8\uB418\uC5B4 LLM \uC811\uADFC \uBD88\uAC00' },
+          'CA-02': { full: '\uC815\uCC45\uC18C\uAC1C \uACBD\uB85C\uC5D0 LLM\uC774 \uC811\uADFC \uAC00\uB2A5', zero: '\uC815\uCC45\uC18C\uAC1C \uACBD\uB85C\uAC00 \uCC28\uB2E8\uB418\uC5B4 LLM \uC811\uADFC \uBD88\uAC00' },
+          'CA-03': { full: '\uACF5\uC9C0\uC0AC\uD56D \uACBD\uB85C\uC5D0 LLM\uC774 \uC811\uADFC \uAC00\uB2A5', zero: '\uACF5\uC9C0\uC0AC\uD56D \uACBD\uB85C\uAC00 \uCC28\uB2E8\uB418\uC5B4 LLM \uC811\uADFC \uBD88\uAC00' },
+          'CA-04': { full: '\uCF58\uD150\uCE20 \uACBD\uB85C\uAC00 \uBA85\uD655\uD558\uACE0 \uD0D0\uC0C9 \uAC00\uB2A5\uD55C \uAD6C\uC870', zero: '\uCF58\uD150\uCE20 \uACBD\uB85C\uAC00 \uBD88\uBA85\uD655\uD558\uAC70\uB098 \uD0D0\uC0C9 \uBD88\uAC00' },
+          'CA-05': { full: 'SSR \uBC29\uC2DD\uC73C\uB85C LLM\uC774 JS \uC5C6\uC774 \uCF58\uD150\uCE20 \uC77D\uAE30 \uAC00\uB2A5', zero: 'CSR \uBC29\uC2DD\uC73C\uB85C LLM\uC774 \uCF58\uD150\uCE20\uB97C \uC77D\uAE30 \uC5B4\uB824\uC6C0' },
+          'SD-01': { full: '\uACE0\uC720\uD55C title \uD0DC\uADF8\uAC00 \uC874\uC7AC\uD568', zero: 'title \uD0DC\uADF8\uAC00 \uC5C6\uAC70\uB098 \uBE44\uC5B4 \uC788\uC74C' },
+          'SD-02': { full: 'meta description\uC774 \uC874\uC7AC\uD558\uC5EC LLM\uC774 \uD398\uC774\uC9C0 \uC694\uC57D \uD30C\uC545 \uAC00\uB2A5', zero: 'meta description\uC774 \uC5C6\uC74C' },
+          'SD-03': { full: 'Open Graph \uD0DC\uADF8(og:title, og:description \uB4F1) \uC874\uC7AC', zero: 'Open Graph \uD0DC\uADF8\uAC00 \uC5C6\uC74C' },
+          'SD-04': { full: 'JSON-LD \uB4F1 schema.org \uAD6C\uC870\uD654 \uB370\uC774\uD130 \uC874\uC7AC', zero: 'schema.org \uAD6C\uC870\uD654 \uB370\uC774\uD130\uAC00 \uC5C6\uC74C' },
+          'SD-05': { full: 'html lang="\uD55C\uAD6D\uC5B4" \uC18D\uC131\uC774 \uC124\uC815\uB418\uC5B4 \uC788\uC74C', zero: 'lang \uC18D\uC131\uC774 \uC5C6\uC5B4 LLM\uC774 \uC5B8\uC5B4 \uC778\uC2DD \uBD88\uAC00' },
+          'TA-01': { full: 'HTTPS\uB85C \uBCF4\uC548 \uC811\uC18D \uAC00\uB2A5', zero: 'HTTPS \uBBF8\uC801\uC6A9 (HTTP\uB9CC \uAC00\uB2A5)' },
+          'TA-02': { full: 'TTFB \uC751\uB2F5 \uC18D\uB3C4\uAC00 3\uCD08 \uBBF8\uB9CC\uC73C\uB85C \uC591\uD638', zero: 'TTFB\uAC00 3\uCD08 \uC774\uC0C1\uC73C\uB85C \uD0C0\uC784\uC544\uC6C3 \uC704\uD5D8' },
+          'TA-03': { full: '\uBA54\uC778 \uD398\uC774\uC9C0\uAC00 HTTP 200\uC73C\uB85C \uC815\uC0C1 \uC751\uB2F5', zero: '\uBA54\uC778 \uD398\uC774\uC9C0\uAC00 \uC624\uB958 \uC0C1\uD0DC\uCF54\uB4DC \uBC18\uD658' },
+          'TA-04': { full: 'viewport \uC124\uC815\uC774 \uC788\uC5B4 \uBAA8\uBC14\uC77C \uB300\uC751', zero: 'viewport \uC124\uC815\uC774 \uC5C6\uC5B4 \uBAA8\uBC14\uC77C \uBBF8\uB300\uC751' },
+          'LT-01': { full: 'llms.txt \uD30C\uC77C\uC774 \uC874\uC7AC\uD568', zero: 'llms.txt \uD30C\uC77C\uC774 \uC5C6\uC74C' },
+          'LT-02': { full: 'llms.txt\uAC00 \uC2A4\uD399\uC744 \uC900\uC218\uD558\uB294 \uC62C\uBC14\uB978 \uBB38\uBC95', zero: 'llms.txt \uBB38\uBC95\uC774 \uC62C\uBC14\uB974\uC9C0 \uC54A\uC74C' },
+          'LT-03': { full: '\uAE30\uAD00 \uC124\uBA85 + \uD575\uC2EC \uCF58\uD150\uCE20 \uACBD\uB85C\uB97C \uC548\uB0B4\uD568', zero: 'llms.txt\uAC00 \uCDA9\uBD84\uD55C \uC815\uBCF4\uB97C \uC81C\uACF5\uD558\uC9C0 \uC54A\uC74C' },
+          'SM-01': { full: 'sitemap.xml\uC774 \uC874\uC7AC\uD558\uC5EC \uCF58\uD150\uCE20 \uBC1C\uACAC \uAC00\uB2A5', zero: 'sitemap.xml\uC774 \uC5C6\uC74C' },
+          'SM-02': { full: '\uBCF4\uB3C4\uC790\uB8CC/\uC815\uCC45/\uACF5\uC9C0 URL\uC774 sitemap\uC5D0 \uD3EC\uD568', zero: '\uD575\uC2EC \uCF58\uD150\uCE20 URL\uC774 sitemap\uC5D0 \uC5C6\uC74C' }
+        };
+
+        var criteria = criteriaMap[code];
+        if (!criteria) return null;
+
+        var div = document.createElement('div');
+        div.className = 'scoring-criteria';
+
+        var fullLabel = document.createElement('div');
+        fullLabel.className = 'scoring-criteria-label';
+        fullLabel.textContent = '\u2714 \uB9CC\uC810(' + itemInfo.max + '\uC810): ' + criteria.full;
+        div.appendChild(fullLabel);
+
+        var zeroLabel = document.createElement('div');
+        zeroLabel.textContent = '\u2716 0\uC810: ' + criteria.zero;
+        div.appendChild(zeroLabel);
+
+        return div;
+      }
 
       // === Tab: Scores ===
       var scoresPanel = panels.scores;
@@ -172,15 +309,20 @@
       // Item-level scores table
       var itemTitle = document.createElement('h3');
       itemTitle.style.cssText = 'margin: var(--space-xl) 0 var(--space-md); font-size: 1rem;';
-      itemTitle.textContent = '항목별 점수';
+      itemTitle.textContent = '\uD56D\uBAA9\uBCC4 \uC810\uC218';
       scoresPanel.appendChild(itemTitle);
+
+      var itemHint = document.createElement('p');
+      itemHint.style.cssText = 'font-size: 0.78rem; color: var(--text-tertiary); margin-bottom: var(--space-md);';
+      itemHint.textContent = '\uD56D\uBAA9 \uCF54\uB4DC\uB97C \uD074\uB9AD\uD558\uBA74 \uD310\uC815 \uAE30\uC900 \uC0C1\uC138\uB97C \uD655\uC778\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4.';
+      scoresPanel.appendChild(itemHint);
 
       var itemsTable = document.createElement('div');
       itemsTable.className = 'table-container';
       var tbl = document.createElement('table');
       var tHead = document.createElement('thead');
       var hRow = document.createElement('tr');
-      ['항목 코드', '항목명', '판정 기준', '점수', '비율'].forEach(function(h) {
+      ['\uD56D\uBAA9 \uCF54\uB4DC', '\uD56D\uBAA9\uBA85', '\uD310\uC815 \uAE30\uC900', '\uC810\uC218', '\uBE44\uC728'].forEach(function(h) {
         var th = document.createElement('th');
         th.textContent = h;
         hRow.appendChild(th);
@@ -197,10 +339,26 @@
         var pct = Math.round((val / max) * 100);
         var tr = document.createElement('tr');
 
+        // FIX #5: Item code is a clickable button that toggles scoring criteria
         var tdCode = document.createElement('td');
         tdCode.style.fontFamily = 'var(--font-mono)';
         tdCode.style.fontSize = '0.85rem';
-        tdCode.textContent = code;
+        var codeBtn = document.createElement('button');
+        codeBtn.className = 'item-code-btn';
+        codeBtn.textContent = code;
+        codeBtn.setAttribute('type', 'button');
+        tdCode.appendChild(codeBtn);
+
+        var criteriaDiv = buildScoringCriteria(code);
+
+        // Bind click to toggle criteria
+        (function(btn, cd) {
+          btn.addEventListener('click', function() {
+            if (cd) {
+              cd.classList.toggle('open');
+            }
+          });
+        })(codeBtn, criteriaDiv);
 
         var tdName = document.createElement('td');
         tdName.style.cssText = 'white-space:normal;font-size:0.85rem;font-weight:500';
@@ -232,6 +390,18 @@
         tr.appendChild(tdScore);
         tr.appendChild(tdBar);
         tBody.appendChild(tr);
+
+        // Add criteria row below the main row
+        if (criteriaDiv) {
+          var criteriaTr = document.createElement('tr');
+          var criteriaTd = document.createElement('td');
+          criteriaTd.setAttribute('colspan', '5');
+          criteriaTd.style.padding = '0';
+          criteriaTd.style.border = 'none';
+          criteriaTd.appendChild(criteriaDiv);
+          criteriaTr.appendChild(criteriaTd);
+          tBody.appendChild(criteriaTr);
+        }
       });
       tbl.appendChild(tBody);
       itemsTable.appendChild(tbl);
@@ -245,7 +415,7 @@
         var noIssue = document.createElement('div');
         noIssue.className = 'empty-state';
         var np = document.createElement('p');
-        np.textContent = '발견된 문제사항이 없습니다.';
+        np.textContent = '\uBC1C\uACAC\uB41C \uBB38\uC81C\uC0AC\uD56D\uC774 \uC5C6\uC2B5\uB2C8\uB2E4.';
         noIssue.appendChild(np);
         issuesPanel.appendChild(noIssue);
       } else {
@@ -290,35 +460,59 @@
       if (org.robots_txt && org.robots_txt.crawler_rules) {
         var crawlerTitle = document.createElement('h3');
         crawlerTitle.style.cssText = 'margin-bottom: var(--space-md); font-size: 1rem;';
-        crawlerTitle.textContent = '크롤러별 접근 상태';
+        crawlerTitle.textContent = '\uD06C\uB864\uB7EC\uBCC4 \uC811\uADFC \uC0C1\uD0DC';
         crawlerPanel.appendChild(crawlerTitle);
 
         var robotsInfo = document.createElement('div');
         robotsInfo.style.cssText = 'margin-bottom: var(--space-lg); font-size: 0.85rem; color: var(--text-secondary);';
-        robotsInfo.textContent = 'robots.txt 존재: ' + (org.robots_txt.exists ? '예' : '아니오')
-          + ' | 문법 유효: ' + (org.robots_txt.syntax_valid ? '예' : '아니오');
+        var infoText = 'robots.txt \uC874\uC7AC: ' + (org.robots_txt.exists ? '\uC608' : '\uC544\uB2C8\uC624')
+          + ' | \uBB38\uBC95 \uC720\uD6A8: ' + (org.robots_txt.syntax_valid ? '\uC608' : '\uC544\uB2C8\uC624');
+        if (org.robots_txt.full_block) {
+          infoText += ' | \uC804\uBA74 \uCC28\uB2E8: \uC608';
+        }
+        robotsInfo.textContent = infoText;
         crawlerPanel.appendChild(robotsInfo);
 
         var grid = document.createElement('div');
         grid.className = 'crawler-grid';
         Object.keys(org.robots_txt.crawler_rules).forEach(function(crawler) {
-          var status = org.robots_txt.crawler_rules[crawler];
+          var ruleData = org.robots_txt.crawler_rules[crawler];
+          // FIX #1: Handle new nested object format { status: "allowed", mentioned: false }
+          // as well as legacy string format "allowed"
+          var status;
+          var mentioned = false;
+          if (ruleData && typeof ruleData === 'object') {
+            status = ruleData.status;
+            mentioned = ruleData.mentioned;
+          } else {
+            status = ruleData;
+          }
+
           var item = document.createElement('div');
           item.className = 'crawler-item';
 
           var dot = document.createElement('div');
           dot.className = 'crawler-status ' + App.crawlerStatusDot(status);
 
-          var name = document.createElement('span');
-          name.className = 'crawler-name';
-          name.textContent = crawler;
+          var nameSpan = document.createElement('span');
+          nameSpan.className = 'crawler-name';
+          nameSpan.textContent = crawler;
+
+          item.appendChild(dot);
+          item.appendChild(nameSpan);
+
+          // Show "mentioned" badge if the crawler was explicitly mentioned in robots.txt
+          if (mentioned) {
+            var mentionBadge = document.createElement('span');
+            mentionBadge.className = 'crawler-mentioned';
+            mentionBadge.textContent = '\uBA85\uC2DC';
+            item.appendChild(mentionBadge);
+          }
 
           var label = document.createElement('span');
           label.style.cssText = 'margin-left: auto; font-size: 0.75rem; color: var(--text-tertiary);';
           label.textContent = App.crawlerStatusLabel(status);
 
-          item.appendChild(dot);
-          item.appendChild(name);
           item.appendChild(label);
           grid.appendChild(item);
         });
@@ -329,19 +523,17 @@
       if (org.metadata) {
         var metaTitle = document.createElement('h3');
         metaTitle.style.cssText = 'margin: var(--space-xl) 0 var(--space-md); font-size: 1rem;';
-        metaTitle.textContent = '메타데이터 현황';
+        metaTitle.textContent = '\uBA54\uD0C0\uB370\uC774\uD130 \uD604\uD669';
         crawlerPanel.appendChild(metaTitle);
 
         var metaGrid = document.createElement('div');
         metaGrid.className = 'crawler-grid';
         var metaChecks = [
-          { label: 'title 태그', val: org.metadata.has_title },
-          { label: 'title 고유성', val: org.metadata.title_unique_per_page },
+          { label: 'title \uD0DC\uADF8', val: org.metadata.has_title },
           { label: 'meta description', val: org.metadata.has_meta_description },
-          { label: 'description 고유성', val: org.metadata.meta_description_unique },
           { label: 'Open Graph', val: org.metadata.has_og_tags },
           { label: 'schema.org', val: org.metadata.has_schema_org },
-          { label: 'lang 속성', val: org.metadata.has_lang_attribute }
+          { label: 'lang \uC18D\uC131', val: org.metadata.has_lang_attribute }
         ];
         metaChecks.forEach(function(mc) {
           var item = document.createElement('div');
@@ -362,7 +554,7 @@
       if (org.technical) {
         var techTitle = document.createElement('h3');
         techTitle.style.cssText = 'margin: var(--space-xl) 0 var(--space-md); font-size: 1rem;';
-        techTitle.textContent = '기술 현황';
+        techTitle.textContent = '\uAE30\uC220 \uD604\uD669';
         crawlerPanel.appendChild(techTitle);
 
         var techGrid = document.createElement('div');
@@ -370,9 +562,9 @@
         var techChecks = [
           { label: 'HTTPS', val: org.technical.https },
           { label: 'TTFB: ' + org.technical.ttfb_ms + 'ms', val: org.technical.ttfb_ms < 3000 },
-          { label: '메인 페이지: ' + org.technical.main_page_status, val: org.technical.main_page_status === 200 },
-          { label: '모바일 대응', val: org.technical.mobile_viewport },
-          { label: '렌더링: ' + (org.technical.primary_rendering || '-').toUpperCase(), val: org.technical.primary_rendering === 'ssr' }
+          { label: '\uBA54\uC778 \uD398\uC774\uC9C0: ' + org.technical.main_page_status, val: org.technical.main_page_status === 200 },
+          { label: '\uBAA8\uBC14\uC77C \uB300\uC751', val: org.technical.mobile_viewport },
+          { label: '\uB80C\uB354\uB9C1: ' + (org.technical.primary_rendering || '-').toUpperCase(), val: org.technical.primary_rendering === 'ssr' }
         ];
         techChecks.forEach(function(tc) {
           var item = document.createElement('div');
@@ -391,13 +583,114 @@
 
       root.appendChild(crawlerPanel);
 
-      // === Tab: Suggestion ===
+      // === Tab: Snapshots (FIX #4 — show raw robots.txt & llms.txt content) ===
+      var snapPanel = panels.snapshots;
+
+      // Helper to create a code block for a snapshot
+      function buildSnapshotBlock(title, filename, content, exists) {
+        var section = document.createElement('div');
+        section.className = 'snapshot-section';
+
+        var heading = document.createElement('h3');
+        heading.style.cssText = 'margin-bottom: var(--space-md); font-size: 1rem;';
+        heading.textContent = title;
+
+        var statusBadge = document.createElement('span');
+        statusBadge.className = 'snapshot-badge ' + (exists ? 'exists' : 'missing');
+        statusBadge.textContent = exists ? '\uC874\uC7AC' : '\uC5C6\uC74C';
+        heading.appendChild(statusBadge);
+
+        section.appendChild(heading);
+
+        if (content) {
+          var block = document.createElement('div');
+          block.className = 'code-block';
+
+          var blockHeader = document.createElement('div');
+          blockHeader.className = 'code-block-header';
+          var blockTitle = document.createElement('span');
+          blockTitle.className = 'code-block-title';
+          blockTitle.textContent = filename;
+          var copyBtn = document.createElement('button');
+          copyBtn.className = 'btn-copy';
+          copyBtn.textContent = '\u2398 \uBCF5\uC0AC\uD558\uAE30';
+          copyBtn.addEventListener('click', function() {
+            App.copyToClipboard(content, copyBtn);
+          });
+          blockHeader.appendChild(blockTitle);
+          blockHeader.appendChild(copyBtn);
+          block.appendChild(blockHeader);
+
+          var pre = document.createElement('pre');
+          pre.textContent = content;
+          block.appendChild(pre);
+          section.appendChild(block);
+        } else {
+          var emptyMsg = document.createElement('div');
+          emptyMsg.className = 'info-box info';
+          var emptyP = document.createElement('p');
+          emptyP.textContent = filename + ' \uD30C\uC77C\uC774 \uC874\uC7AC\uD558\uC9C0 \uC54A\uAC70\uB098 \uC2A4\uB0C5\uC0F7\uC744 \uC218\uC9D1\uD560 \uC218 \uC5C6\uC5C8\uC2B5\uB2C8\uB2E4.';
+          emptyMsg.appendChild(emptyP);
+          section.appendChild(emptyMsg);
+        }
+
+        return section;
+      }
+
+      // robots.txt snapshot
+      var robotsSnapshot = (org.robots_txt && org.robots_txt.snapshot) ? org.robots_txt.snapshot : null;
+      var robotsExists = org.robots_txt && org.robots_txt.exists;
+      snapPanel.appendChild(buildSnapshotBlock('\uC6D0\uBCF8 robots.txt', 'robots.txt', robotsSnapshot, robotsExists));
+
+      // llms.txt snapshot
+      var llmsSnapshot = (org.llms_txt && org.llms_txt.snapshot) ? org.llms_txt.snapshot : null;
+      var llmsExists = org.llms_txt && org.llms_txt.exists;
+      snapPanel.appendChild(buildSnapshotBlock('\uC6D0\uBCF8 llms.txt', 'llms.txt', llmsSnapshot, llmsExists));
+
+      // Additional info
+      if (org.sitemap_xml) {
+        var sitemapInfo = document.createElement('div');
+        sitemapInfo.className = 'snapshot-section';
+        var sitemapTitle = document.createElement('h3');
+        sitemapTitle.style.cssText = 'margin-bottom: var(--space-md); font-size: 1rem;';
+        sitemapTitle.textContent = 'sitemap.xml \uC815\uBCF4';
+        var sitemapBadge = document.createElement('span');
+        sitemapBadge.className = 'snapshot-badge ' + (org.sitemap_xml.exists ? 'exists' : 'missing');
+        sitemapBadge.textContent = org.sitemap_xml.exists ? '\uC874\uC7AC' : '\uC5C6\uC74C';
+        sitemapTitle.appendChild(sitemapBadge);
+        sitemapInfo.appendChild(sitemapTitle);
+
+        if (org.sitemap_xml.exists) {
+          var sitemapDetails = document.createElement('div');
+          sitemapDetails.style.cssText = 'font-size: 0.85rem; color: var(--text-secondary); padding: var(--space-md); border: 1px solid var(--border-light); border-radius: var(--radius-md);';
+          sitemapDetails.textContent = '\uC720\uD6A8\uC131: ' + (org.sitemap_xml.valid ? '\uC720\uD6A8' : '\uBB38\uC81C \uC788\uC74C')
+            + ' | URL \uC218: ' + (org.sitemap_xml.url_count || 0).toLocaleString() + '\uAC1C';
+          sitemapInfo.appendChild(sitemapDetails);
+        }
+        snapPanel.appendChild(sitemapInfo);
+      }
+
+      var snapNote = document.createElement('div');
+      snapNote.className = 'info-box info';
+      snapNote.style.marginTop = 'var(--space-md)';
+      var snapNoteP = document.createElement('p');
+      snapNoteP.textContent = '\uC704 \uC2A4\uB0C5\uC0F7\uC740 \uBD84\uC11D \uC2DC\uC810\uC5D0 \uC218\uC9D1\uB41C \uC6D0\uBCF8 \uD30C\uC77C \uB0B4\uC6A9\uC785\uB2C8\uB2E4. \uD604\uC7AC \uC2DC\uC810\uC758 \uD30C\uC77C\uACFC \uB2E4\uB97C \uC218 \uC788\uC2B5\uB2C8\uB2E4.';
+      snapNote.appendChild(snapNoteP);
+      snapPanel.appendChild(snapNote);
+
+      root.appendChild(snapPanel);
+
+      // === Tab: Suggestion (FIX #3 — handle missing suggested_robots_txt / suggested_llms_txt) ===
       var sugPanel = panels.suggestion;
 
-      if (org.suggested_robots_txt) {
+      // Check if suggested files exist in data
+      var hasSuggestedRobots = !!org.suggested_robots_txt;
+      var hasSuggestedLlms = !!org.suggested_llms_txt;
+
+      if (hasSuggestedRobots) {
         var rtTitle = document.createElement('h3');
         rtTitle.style.cssText = 'margin-bottom: var(--space-md); font-size: 1rem;';
-        rtTitle.textContent = '제안 robots.txt';
+        rtTitle.textContent = '\uC81C\uC548 robots.txt';
         sugPanel.appendChild(rtTitle);
 
         var rtBlock = document.createElement('div');
@@ -409,7 +702,7 @@
         rtFileName.textContent = 'robots.txt';
         var rtCopy = document.createElement('button');
         rtCopy.className = 'btn-copy';
-        rtCopy.textContent = '\u2398 복사하기';
+        rtCopy.textContent = '\u2398 \uBCF5\uC0AC\uD558\uAE30';
         rtCopy.addEventListener('click', function() {
           App.copyToClipboard(org.suggested_robots_txt, rtCopy);
         });
@@ -422,10 +715,10 @@
         sugPanel.appendChild(rtBlock);
       }
 
-      if (org.suggested_llms_txt) {
+      if (hasSuggestedLlms) {
         var ltTitle = document.createElement('h3');
         ltTitle.style.cssText = 'margin: var(--space-xl) 0 var(--space-md); font-size: 1rem;';
-        ltTitle.textContent = '제안 llms.txt';
+        ltTitle.textContent = '\uC81C\uC548 llms.txt';
         sugPanel.appendChild(ltTitle);
 
         var ltBlock = document.createElement('div');
@@ -437,7 +730,7 @@
         ltFileName.textContent = 'llms.txt';
         var ltCopy = document.createElement('button');
         ltCopy.className = 'btn-copy';
-        ltCopy.textContent = '\u2398 복사하기';
+        ltCopy.textContent = '\u2398 \uBCF5\uC0AC\uD558\uAE30';
         ltCopy.addEventListener('click', function() {
           App.copyToClipboard(org.suggested_llms_txt, ltCopy);
         });
@@ -450,11 +743,114 @@
         sugPanel.appendChild(ltBlock);
       }
 
+      // If neither suggested file exists, generate recommendations based on issues
+      if (!hasSuggestedRobots && !hasSuggestedLlms) {
+        var recTitle = document.createElement('h3');
+        recTitle.style.cssText = 'margin-bottom: var(--space-md); font-size: 1rem;';
+        recTitle.textContent = '\uBD84\uC11D \uACB0\uACFC \uAE30\uBC18 \uAC1C\uC120 \uC81C\uC548';
+        sugPanel.appendChild(recTitle);
+
+        var recommendations = [];
+
+        // Build recommendations from issues
+        if (org.issues && org.issues.length > 0) {
+          org.issues.forEach(function(issue) {
+            var rec = { title: '', body: '' };
+            if (issue.code.indexOf('RT-04') === 0) {
+              rec.title = 'robots.txt \uC804\uBA74 \uCC28\uB2E8 \uD574\uC81C';
+              rec.body = '\uD604\uC7AC "Disallow: /" \uB85C \uBAA8\uB4E0 \uD06C\uB864\uB7EC\uAC00 \uCC28\uB2E8\uB418\uC5B4 \uC788\uC2B5\uB2C8\uB2E4. \uBCF4\uB3C4\uC790\uB8CC, \uC815\uCC45\uC18C\uAC1C, \uACF5\uC9C0\uC0AC\uD56D \uB4F1 \uACF5\uACF5 \uCF58\uD150\uCE20 \uACBD\uB85C\uB294 \uD06C\uB864\uB7EC \uC811\uADFC\uC744 \uD5C8\uC6A9\uD558\uB294 \uAC83\uC744 \uAD8C\uC7A5\uD569\uB2C8\uB2E4.';
+              recommendations.push(rec);
+            } else if (issue.code.indexOf('RT-03') === 0) {
+              rec.title = 'LLM \uD06C\uB864\uB7EC \uCC28\uB2E8 \uD574\uC81C';
+              rec.body = issue.description + '. GPTBot, ClaudeBot \uB4F1 LLM \uD06C\uB864\uB7EC\uAC00 \uACF5\uACF5 \uCF58\uD150\uCE20\uC5D0 \uC811\uADFC\uD560 \uC218 \uC788\uB3C4\uB85D robots.txt\uC5D0\uC11C \uD574\uB2F9 \uD06C\uB864\uB7EC \uCC28\uB2E8\uC744 \uC81C\uAC70\uD574 \uC8FC\uC138\uC694.';
+              recommendations.push(rec);
+            } else if (issue.code.indexOf('LT-01') === 0) {
+              rec.title = 'llms.txt \uD30C\uC77C \uCD94\uAC00';
+              rec.body = '\uAE30\uAD00 \uC18C\uAC1C, \uC8FC\uC694 \uCF58\uD150\uCE20 \uACBD\uB85C, \uC5F0\uB77D\uCC98 \uB4F1\uC744 \uD3EC\uD568\uD558\uB294 llms.txt \uD30C\uC77C\uC744 \uC0DD\uC131\uD558\uC5EC \uC6F9\uC0AC\uC774\uD2B8 \uB8E8\uD2B8\uC5D0 \uBC30\uCE58\uD558\uBA74 LLM\uC774 \uAE30\uAD00 \uC815\uBCF4\uB97C \uB354 \uC798 \uC774\uD574\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4.';
+              recommendations.push(rec);
+            } else if (issue.code.indexOf('SM-01') === 0) {
+              rec.title = 'sitemap.xml \uCD94\uAC00';
+              rec.body = 'sitemap.xml\uC744 \uC0DD\uC131\uD558\uC5EC \uBCF4\uB3C4\uC790\uB8CC, \uC815\uCC45\uC18C\uAC1C, \uACF5\uC9C0\uC0AC\uD56D URL\uC744 \uD3EC\uD568\uD558\uBA74 LLM\uACFC \uAC80\uC0C9\uC5D4\uC9C4\uC774 \uCF58\uD150\uCE20\uB97C \uB354 \uC798 \uBC1C\uACAC\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4.';
+              recommendations.push(rec);
+            } else if (issue.code.indexOf('CA-05') === 0) {
+              rec.title = 'SSR(Server-Side Rendering) \uB3C4\uC785';
+              rec.body = '\uD604\uC7AC CSR(\uD074\uB77C\uC774\uC5B8\uD2B8 \uC0AC\uC774\uB4DC \uB80C\uB354\uB9C1) \uBC29\uC2DD\uC73C\uB85C LLM\uC774 \uCF58\uD150\uCE20\uB97C \uC77D\uAE30 \uC5B4\uB835\uC2B5\uB2C8\uB2E4. SSR \uB610\uB294 \uC815\uC801 HTML \uC0DD\uC131\uC744 \uD1B5\uD574 JS \uC5C6\uC774\uB3C4 \uCF58\uD150\uCE20\uB97C \uC77D\uC744 \uC218 \uC788\uB3C4\uB85D \uAC1C\uC120\uD574 \uC8FC\uC138\uC694.';
+              recommendations.push(rec);
+            } else if (issue.code.indexOf('SD-02') === 0) {
+              rec.title = 'meta description \uCD94\uAC00';
+              rec.body = '\uAC01 \uD398\uC774\uC9C0\uC5D0 \uACE0\uC720\uD55C meta description\uC744 \uCD94\uAC00\uD558\uBA74 LLM\uC774 \uD398\uC774\uC9C0 \uB0B4\uC6A9\uC744 \uD30C\uC545\uD558\uB294 \uB370 \uB3C4\uC6C0\uC774 \uB429\uB2C8\uB2E4.';
+              recommendations.push(rec);
+            } else if (issue.code.indexOf('SD-05') === 0) {
+              rec.title = 'html lang \uC18D\uC131 \uCD94\uAC00';
+              rec.body = '<html lang="ko"> \uC18D\uC131\uC744 \uCD94\uAC00\uD558\uC5EC LLM\uC774 \uD398\uC774\uC9C0 \uC5B8\uC5B4\uB97C \uC815\uD655\uD788 \uC778\uC2DD\uD560 \uC218 \uC788\uB3C4\uB85D \uD574\uC8FC\uC138\uC694.';
+              recommendations.push(rec);
+            }
+          });
+        }
+
+        // Always add a general recommendation if score is low
+        if (org.scores.total < 60) {
+          recommendations.push({
+            title: '\uC885\uD569 \uAC1C\uC120 \uD544\uC694',
+            body: '\uD604\uC7AC \uC810\uC218\uAC00 ' + org.scores.total + '\uC810\uC73C\uB85C, LLM \uCE5C\uD654\uC131\uC774 \uBD80\uC871\uD569\uB2C8\uB2E4. robots.txt \uC815\uCC45 \uAC1C\uC120, \uAD6C\uC870\uD654\uB41C \uB370\uC774\uD130 \uCD94\uAC00, llms.txt \uC0DD\uC131 \uB4F1\uC744 \uC885\uD569\uC801\uC73C\uB85C \uAC80\uD1A0\uD574 \uC8FC\uC138\uC694.'
+          });
+        }
+
+        if (recommendations.length === 0) {
+          var perfectMsg = document.createElement('div');
+          perfectMsg.className = 'empty-state';
+          var perfectP = document.createElement('p');
+          perfectP.textContent = '\uD2B9\uBCC4\uD55C \uAC1C\uC120 \uC81C\uC548 \uC0AC\uD56D\uC774 \uC5C6\uC2B5\uB2C8\uB2E4. \uC6B0\uC218\uD55C LLM \uCE5C\uD654\uC131\uC744 \uBCF4\uC5EC\uC8FC\uACE0 \uC788\uC2B5\uB2C8\uB2E4.';
+          perfectMsg.appendChild(perfectP);
+          sugPanel.appendChild(perfectMsg);
+        } else {
+          recommendations.forEach(function(rec) {
+            var card = document.createElement('div');
+            card.className = 'recommendation-card';
+            var cardTitle = document.createElement('div');
+            cardTitle.className = 'recommendation-card-title';
+            cardTitle.textContent = rec.title;
+            var cardBody = document.createElement('div');
+            cardBody.className = 'recommendation-card-body';
+            cardBody.textContent = rec.body;
+            card.appendChild(cardTitle);
+            card.appendChild(cardBody);
+            sugPanel.appendChild(card);
+          });
+        }
+
+        // Show current snapshots as reference in suggestion tab
+        if (robotsSnapshot) {
+          var refTitle = document.createElement('h3');
+          refTitle.style.cssText = 'margin: var(--space-xl) 0 var(--space-md); font-size: 1rem;';
+          refTitle.textContent = '\uD604\uC7AC robots.txt (\uCC38\uACE0\uC6A9)';
+          sugPanel.appendChild(refTitle);
+
+          var refBlock = document.createElement('div');
+          refBlock.className = 'code-block';
+          var refHeader = document.createElement('div');
+          refHeader.className = 'code-block-header';
+          var refName = document.createElement('span');
+          refName.className = 'code-block-title';
+          refName.textContent = 'robots.txt (\uD604\uC7AC)';
+          refHeader.appendChild(refName);
+          refBlock.appendChild(refHeader);
+          var refPre = document.createElement('pre');
+          refPre.textContent = robotsSnapshot;
+          refBlock.appendChild(refPre);
+          sugPanel.appendChild(refBlock);
+        }
+      }
+
       var note = document.createElement('div');
       note.className = 'info-box info';
       note.style.marginTop = 'var(--space-xl)';
       var noteP = document.createElement('p');
-      noteP.textContent = '위 제안은 분석 결과를 기반으로 자동 생성된 것입니다. 기관의 보안 정책과 실제 운영 환경을 고려하여 적절히 수정 후 적용해 주시기 바랍니다.';
+      if (hasSuggestedRobots || hasSuggestedLlms) {
+        noteP.textContent = '\uC704 \uC81C\uC548\uC740 \uBD84\uC11D \uACB0\uACFC\uB97C \uAE30\uBC18\uC73C\uB85C \uC790\uB3D9 \uC0DD\uC131\uB41C \uAC83\uC785\uB2C8\uB2E4. \uAE30\uAD00\uC758 \uBCF4\uC548 \uC815\uCC45\uACFC \uC2E4\uC81C \uC6B4\uC601 \uD658\uACBD\uC744 \uACE0\uB824\uD558\uC5EC \uC801\uC808\uD788 \uC218\uC815 \uD6C4 \uC801\uC6A9\uD574 \uC8FC\uC2DC\uAE30 \uBC14\uB78D\uB2C8\uB2E4.';
+      } else {
+        noteP.textContent = '\uC704 \uAC1C\uC120 \uC81C\uC548\uC740 \uBC1C\uACAC\uB41C \uBB38\uC81C\uC0AC\uD56D\uC744 \uAE30\uBC18\uC73C\uB85C \uC790\uB3D9 \uC0DD\uC131\uB418\uC5C8\uC2B5\uB2C8\uB2E4. \uAE30\uAD00\uC758 \uBCF4\uC548 \uC815\uCC45\uACFC \uC2E4\uC81C \uC6B4\uC601 \uD658\uACBD\uC744 \uACE0\uB824\uD558\uC5EC \uC801\uC808\uD788 \uC218\uC815 \uD6C4 \uC801\uC6A9\uD574 \uC8FC\uC2DC\uAE30 \uBC14\uB78D\uB2C8\uB2E4.';
+      }
       note.appendChild(noteP);
       sugPanel.appendChild(note);
 

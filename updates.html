@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>업데이트 이력 — Are We Open?</title>
-  <meta name="description" content="Are We Open? 프로젝트의 분석 업데이트 이력과 예정 일정">
+  <meta name="description" content="Are We Open? 프로젝트의 분석 업데이트 이력">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -14,36 +14,22 @@
       <div class="container" style="max-width: 800px;">
         <div class="section-header">
           <h2 class="section-title">업데이트 이력</h2>
-          <p class="section-desc">분석 데이터의 업데이트 이력과 향후 계획</p>
+          <p class="section-desc">분석 데이터의 업데이트 이력</p>
         </div>
 
-        <!-- Update summary -->
         <div class="stats-grid" style="margin-bottom: var(--space-2xl);">
           <div class="card stat-card">
             <div class="stat-value" id="lastUpdate">—</div>
-            <div class="stat-label">최근 업데이트</div>
+            <div class="stat-label">최근 분석일</div>
           </div>
           <div class="card stat-card">
             <div class="stat-value" id="totalScanned">—</div>
             <div class="stat-label">분석 완료 기관</div>
           </div>
-          <div class="card stat-card">
-            <div class="stat-value" id="nextBatch">—</div>
-            <div class="stat-label">다음 분석 예정</div>
-          </div>
         </div>
 
-        <!-- Timeline -->
         <h3 style="font-family: var(--font-display); font-size: 1.25rem; color: var(--navy); margin-bottom: var(--space-lg);">변경 이력</h3>
         <div class="timeline" id="timeline"></div>
-
-        <!-- Queue preview -->
-        <div style="margin-top: var(--space-3xl);">
-          <h3 style="font-family: var(--font-display); font-size: 1.25rem; color: var(--navy); margin-bottom: var(--space-lg);">분석 큐 현황</h3>
-          <div class="info-box info">
-            <p>현재 중앙부처 10개 기관의 1차 분석이 완료되었습니다. 향후 청/위원회, 공공기관, 지자체 순으로 분석을 확대할 예정입니다.</p>
-          </div>
-        </div>
       </div>
     </section>
   </main>
@@ -53,29 +39,21 @@
   <script>
     App.initPage('updates', function(data) {
       var orgs = data.organizations;
-      var completed = orgs.length;
 
-      document.getElementById('lastUpdate').textContent = data.meta.last_updated.split('T')[0];
-      document.getElementById('totalScanned').textContent = completed + '개';
-      document.getElementById('nextBatch').textContent = '청/위원회';
+      document.getElementById('lastUpdate').textContent = data.meta.last_updated ? data.meta.last_updated.split('T')[0] : '—';
+      document.getElementById('totalScanned').textContent = orgs.length + '개';
 
-      // Timeline
       var timelineEl = document.getElementById('timeline');
       var updates = [
         {
-          date: '2025-01-15',
-          title: '중앙부처 10개 기관 최초 분석 완료',
-          desc: '과학기술정보통신부, 행정안전부, 기획재정부, 외교부, 보건복지부, 교육부, 환경부, 국토교통부, 법무부, 국방부의 LLM 친화성 분석을 완료했습니다.'
+          date: '2026-03-15',
+          title: '전체 401개 기관 최초 분석 완료',
+          desc: '정부조직법 기반 중앙행정기관 40개(19부 + 6처 + 15청), 광역 지자체 17개, ALIO 공공기관 344개의 robots.txt, llms.txt, sitemap.xml, 메타데이터를 분석했습니다.'
         },
         {
-          date: '2025-01-10',
-          title: '분석 작업 시작',
-          desc: '중앙부처 10개 기관을 대상으로 robots.txt, sitemap.xml, 메타데이터, 기술적 접근성 등 6개 카테고리 분석을 시작했습니다.'
-        },
-        {
-          date: '2025-01-01',
+          date: '2026-03-15',
           title: '프로젝트 시작',
-          desc: '대한민국 공공 웹사이트 LLM 친화성 평가 프로젝트를 시작했습니다. 스코어링 모델, 문제사항 코드 체계, 데이터 구조를 설계했습니다.'
+          desc: '대한민국 공공 웹사이트의 데이터 개방 수준을 평가하는 "Are We Open?" 프로젝트를 시작했습니다. 정부조직법과 ALIO 데이터를 기반으로 분석 대상을 선정했습니다.'
         }
       ];
 
