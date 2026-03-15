@@ -1,0 +1,5 @@
+# Are We Open? — 모든 크롤러 허용
+User-agent: *
+Allow: /
+
+Sitemap: https://ffee21.github.io/are-we-open/sitemap.xml

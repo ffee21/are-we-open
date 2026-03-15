@@ -9,6 +9,28 @@
   <meta property="og:description" content="대한민국 정부 웹사이트들이 얼마나 LLM 친화적인지 분석하여 순위를 매기고, 기관별 개선방향을 제시합니다.">
   <meta property="og:type" content="website">
   <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "name": "대한민국 공공 웹사이트 LLM 친화성 평가 데이터",
+    "description": "대한민국 정부 웹사이트들의 LLM 친화성을 분석한 점수, 등급, 문제사항 데이터",
+    "url": "https://ffee21.github.io/are-we-open/",
+    "license": "https://github.com/ffee21/are-we-open/blob/main/LICENSE",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "encodingFormat": "application/json",
+        "contentUrl": "https://ffee21.github.io/are-we-open/data/results.json"
+      },
+      {
+        "@type": "DataDownload",
+        "encodingFormat": "text/csv",
+        "contentUrl": "https://ffee21.github.io/are-we-open/data/summary_scores.csv"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <div id="nav"></div>
