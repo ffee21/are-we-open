@@ -1,0 +1,132 @@
+[
+  {
+    "name": "서울특별시",
+    "url": "http://www.seoul.go.kr",
+    "parent": "서울특별시"
+  },
+  {
+    "name": "종로구",
+    "url": "http://www.jongno.go.kr",
+    "parent": "서울특별시"
+  },
+  {
+    "name": "중구",
+    "url": "http://www.junggu.seoul.kr/index.html",
+    "parent": "서울특별시"
+  },
+  {
+    "name": "용산구",
+    "url": "http://www.yongsan.go.kr",
+    "parent": "서울특별시"
+  },
+  {
+    "name": "성동구",
+    "url": "https://www.sd.go.kr/main/index.do",
+    "parent": "서울특별시"
+  },
+  {
+    "name": "광진구",
+    "url": "http://www.gwangjin.go.kr",
+    "parent": "서울특별시"
+  },
+  {
+    "name": "동대문구",
+    "url": "http://www.ddm.go.kr",
+    "parent": "서울특별시"
+  },
+  {
+    "name": "중랑구",
+    "url": "http://www.jungnang.go.kr",
+    "parent": "서울특별시"
+  },
+  {
+    "name": "성북구",
+    "url": "http://www.sb.go.kr/",
+    "parent": "서울특별시"
+  },
+  {
+    "name": "강북구",
+    "url": "http://www.gangbuk.go.kr",
+    "parent": "서울특별시"
+  },
+  {
+    "name": "도봉구",
+    "url": "http://www.dobong.go.kr",
+    "parent": "서울특별시"
+  },
+  {
+    "name": "노원구",
+    "url": "http://www.nowon.kr",
+    "parent": "서울특별시"
+  },
+  {
+    "name": "은평구",
+    "url": "https://www.ep.go.kr/www/index.do",
+    "parent": "서울특별시"
+  },
+  {
+    "name": "서대문구",
+    "url": "http://www.sdm.go.kr",
+    "parent": "서울특별시"
+  },
+  {
+    "name": "마포구",
+    "url": "http://www.mapo.go.kr",
+    "parent": "서울특별시"
+  },
+  {
+    "name": "양천구",
+    "url": "http://www.yangcheon.go.kr",
+    "parent": "서울특별시"
+  },
+  {
+    "name": "강서구",
+    "url": "http://www.gangseo.seoul.kr",
+    "parent": "서울특별시"
+  },
+  {
+    "name": "구로구",
+    "url": "http://www.guro.go.kr",
+    "parent": "서울특별시"
+  },
+  {
+    "name": "금천구",
+    "url": "https://www.geumcheon.go.kr/portal/index.do",
+    "parent": "서울특별시"
+  },
+  {
+    "name": "영등포구",
+    "url": "http://www.ydp.go.kr",
+    "parent": "서울특별시"
+  },
+  {
+    "name": "동작구",
+    "url": "http://www.dongjak.go.kr",
+    "parent": "서울특별시"
+  },
+  {
+    "name": "관악구",
+    "url": "http://www.gwanak.go.kr",
+    "parent": "서울특별시"
+  },
+  {
+    "name": "서초구",
+    "url": "http://www.seocho.go.kr",
+    "parent": "서울특별시"
+  },
+  {
+    "name": "강남구",
+    "url": "http://www.gangnam.go.kr",
+    "parent": "서울특별시"
+  },
+  {
+    "name": "송파구",
+    "url": "http://www.songpa.go.kr",
+    "parent": "서울특별시"
+  },
+  {
+    "name": "강동구",
+    "url": "http://www.gangdong.go.kr",
+    "parent": "서울특별시"
+  }
+]

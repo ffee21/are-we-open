@@ -121,12 +121,26 @@ async function analyzeRobotsTxt(baseUrl) {
 }
 
 // === llms.txt 분석 ===
+// llms.txt는 반드시 '#'으로 시작해야 함 (llms.txt 스펙)
+function looksLikeLlmsTxt(text) {
+  if (!text) return false;
+  const trimmed = text.trim();
+  // llms.txt 스펙: '#'으로 시작하는 마크다운 형식
+  if (!trimmed.startsWith('#')) return false;
+  // 에러 메시지나 HTML이 아닌지 확인
+  if (looksLikeHtml(text)) return false;
+  // 한국어 에러 메시지 패턴 감지
+  const errorPatterns = /장애|오류|에러|error|not found|서비스.*중단|점검|unavailable/i;
+  if (errorPatterns.test(trimmed) && trimmed.length < 200) return false;
+  return true;
+}
+
 async function analyzeLlmsTxt(baseUrl) {
   const url = new URL('/llms.txt', baseUrl).href;
   const res = await fetchWithTimeout(url);
 
   const result = {
-    exists: res.ok && res.status === 200 && !looksLikeHtml(res.text),
+    exists: res.ok && res.status === 200 && looksLikeLlmsTxt(res.text),
     status_code: res.status,
     content_length: 0,
     has_description: false,
