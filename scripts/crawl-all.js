@@ -35,8 +35,11 @@ function loadOrganizations() {
   const raw = fs.readFileSync(path.resolve(ORG_FILE), 'utf-8');
   let orgs = JSON.parse(raw).organizations;
 
+  // URL이 없는 기관은 제외
+  orgs = orgs.filter(o => o.url && o.url.startsWith('http'));
+
   if (FILTER_TYPE) {
-    orgs = orgs.filter(o => o.type === FILTER_TYPE);
+    orgs = orgs.filter(o => o.type === FILTER_TYPE || o.subtype === FILTER_TYPE);
   }
   if (FILTER_IDS) {
     const ids = new Set(FILTER_IDS.split(','));

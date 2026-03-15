@@ -34,6 +34,8 @@ const App = (() => {
     agency:             '소속청',
     commission:         '위원회',
     public_institution: '공공기관',
+    local_metro:        '특별·광역시',
+    local_province:     '도',
     local_government:   '지자체'
   };
 
