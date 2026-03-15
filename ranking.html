@@ -17,6 +17,12 @@
           <p class="section-desc">전체 기관의 LLM 친화성 점수와 등급을 비교합니다</p>
         </div>
 
+        <!-- View toggle: 기관별 / 부처별 -->
+        <div class="tabs" id="viewTabs" style="margin-bottom: var(--space-lg);">
+          <button class="tab active" data-view="org">기관별</button>
+          <button class="tab" data-view="ministry">부처별 종합</button>
+        </div>
+
         <div class="toolbar" id="toolbar">
           <input type="text" class="search-input" id="searchInput" placeholder="기관명 검색...">
           <div class="filter-group" id="gradeFilter"></div>
@@ -38,6 +44,18 @@
       var sortDir = -1;
       var searchTerm = '';
       var gradeFilter = null;
+      var viewMode = 'org'; // 'org' or 'ministry'
+
+      // View toggle
+      document.querySelectorAll('#viewTabs .tab').forEach(function(tab) {
+        tab.addEventListener('click', function() {
+          document.querySelectorAll('#viewTabs .tab').forEach(function(t) { t.classList.remove('active'); });
+          tab.classList.add('active');
+          viewMode = tab.getAttribute('data-view');
+          if (viewMode === 'ministry') renderMinistryView();
+          else renderTable();
+        });
+      });
 
       // Build grade filter buttons
       var filterContainer = document.getElementById('gradeFilter');
@@ -245,6 +263,123 @@
           tr.appendChild(tdI);
 
           tbody.appendChild(tr);
+        });
+
+        table.appendChild(tbody);
+        container.appendChild(table);
+      }
+
+      // === Ministry View ===
+      function renderMinistryView() {
+        var ministries = App.groupByMinistry(orgs);
+        var container = document.getElementById('rankingTable');
+        container.textContent = '';
+
+        var table = document.createElement('table');
+        var thead = document.createElement('thead');
+        var hRow = document.createElement('tr');
+        ['#', '부처', '평균 등급', '평균 점수', '소속 기관', '기관 수'].forEach(function(h) {
+          var th = document.createElement('th');
+          th.textContent = h;
+          hRow.appendChild(th);
+        });
+        thead.appendChild(hRow);
+        table.appendChild(thead);
+
+        var tbody = document.createElement('tbody');
+        ministries.forEach(function(m, i) {
+          // Ministry header row
+          var tr = document.createElement('tr');
+          tr.style.background = 'var(--bg-warm)';
+
+          var tdR = document.createElement('td');
+          tdR.style.cssText = 'color:var(--text-tertiary);font-family:var(--font-mono);font-size:0.85rem';
+          tdR.textContent = i + 1;
+          tr.appendChild(tdR);
+
+          var tdN = document.createElement('td');
+          tdN.className = 'td-name';
+          tdN.style.fontWeight = '700';
+          var nameLink = document.createElement('a');
+          nameLink.href = 'org.html?id=' + encodeURIComponent(m.ministry_id);
+          nameLink.textContent = m.name;
+          var nameEn = document.createElement('span');
+          nameEn.className = 'name-en';
+          nameEn.textContent = m.name_en;
+          nameLink.appendChild(nameEn);
+          tdN.appendChild(nameLink);
+          tr.appendChild(tdN);
+
+          var tdG = document.createElement('td');
+          var badge = document.createElement('span');
+          badge.className = 'grade-badge grade-badge-sm ' + App.getGradeClass(m.grade);
+          badge.textContent = m.grade;
+          tdG.appendChild(badge);
+          tr.appendChild(tdG);
+
+          var tdS = document.createElement('td');
+          tdS.className = 'td-score';
+          tdS.textContent = m.avgScore;
+          tr.appendChild(tdS);
+
+          var tdChildren = document.createElement('td');
+          tdChildren.style.cssText = 'white-space:normal;font-size:0.8rem;color:var(--text-secondary)';
+          tdChildren.textContent = m.children.map(function(c) { return c.name; }).join(', ');
+          tr.appendChild(tdChildren);
+
+          var tdCount = document.createElement('td');
+          tdCount.style.fontFamily = 'var(--font-mono)';
+          tdCount.textContent = m.children.length;
+          tr.appendChild(tdCount);
+
+          tbody.appendChild(tr);
+
+          // Child org rows
+          m.children.sort(function(a,b) { return b.scores.total - a.scores.total; }).forEach(function(child) {
+            var ctr = document.createElement('tr');
+            ctr.style.cursor = 'pointer';
+            ctr.addEventListener('click', function() {
+              window.location.href = 'org.html?id=' + encodeURIComponent(child.org_id);
+            });
+
+            var cR = document.createElement('td');
+            cR.textContent = '';
+            ctr.appendChild(cR);
+
+            var cN = document.createElement('td');
+            cN.className = 'td-name';
+            cN.style.paddingLeft = 'var(--space-2xl)';
+            var cLink = document.createElement('a');
+            cLink.href = 'org.html?id=' + encodeURIComponent(child.org_id);
+            cLink.textContent = child.name;
+            var isParent = child.org_id === m.ministry_id;
+            if (isParent) cLink.style.fontWeight = '500';
+            var cEn = document.createElement('span');
+            cEn.className = 'name-en';
+            cEn.textContent = child.parent_org_id ? App.orgTypeLabel(child.org_type) : '본부';
+            cLink.appendChild(cEn);
+            cN.appendChild(cLink);
+            ctr.appendChild(cN);
+
+            var cG = document.createElement('td');
+            var cBadge = document.createElement('span');
+            cBadge.className = 'grade-badge grade-badge-sm ' + App.getGradeClass(child.scores.grade);
+            cBadge.textContent = child.scores.grade;
+            cG.appendChild(cBadge);
+            ctr.appendChild(cG);
+
+            var cS = document.createElement('td');
+            cS.className = 'td-score';
+            cS.textContent = child.scores.total;
+            ctr.appendChild(cS);
+
+            var cEmpty1 = document.createElement('td');
+            ctr.appendChild(cEmpty1);
+            var cEmpty2 = document.createElement('td');
+            ctr.appendChild(cEmpty2);
+
+            tbody.appendChild(ctr);
+          });
         });
 
         table.appendChild(tbody);

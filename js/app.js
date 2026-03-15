@@ -43,7 +43,44 @@ const App = (() => {
     info: 'Info'
   };
 
+  const ITEM_DESCRIPTIONS = {
+    'RT-01': { name: 'robots.txt 존재', max: 5, desc: '200 응답 = 만점, 404/기타 = 0점' },
+    'RT-02': { name: '문법 유효성', max: 3, desc: '파싱 에러 없음 = 만점' },
+    'RT-03': { name: 'LLM 크롤러 명시적 허용', max: 7, desc: 'GPTBot/ClaudeBot/Google-Extended 허용 수에 비례' },
+    'RT-04': { name: '전면 차단 아님', max: 5, desc: 'User-agent: * Disallow: / 가 아닌 경우 만점' },
+    'RT-05': { name: '콘텐츠 경로 접근 허용', max: 5, desc: '보도자료/정책/공지 경로 차단 여부' },
+    'CA-01': { name: '보도자료 개별 URL', max: 7, desc: '고유 URL로 접근 가능 여부' },
+    'CA-02': { name: '정책자료 개별 URL', max: 5, desc: '정책 페이지 직접 링크 가능 여부' },
+    'CA-03': { name: '공지사항 개별 URL', max: 5, desc: '공지사항 직접 링크 가능 여부' },
+    'CA-04': { name: 'URL 패턴 일관성', max: 4, desc: 'RESTful/예측 가능 패턴 사용 여부' },
+    'CA-05': { name: 'SSR 렌더링', max: 4, desc: 'HTML 소스에 본문 포함 여부' },
+    'SD-01': { name: 'title 태그 적절성', max: 4, desc: '존재 + 페이지별 고유 여부' },
+    'SD-02': { name: 'meta description', max: 4, desc: '존재 + 페이지별 고유 여부' },
+    'SD-03': { name: 'Open Graph 태그', max: 4, desc: 'og:title, og:description, og:image' },
+    'SD-04': { name: 'schema.org 데이터', max: 5, desc: 'JSON-LD 존재 + 유효 여부' },
+    'SD-05': { name: '언어 속성', max: 3, desc: 'html lang="ko" 존재 여부' },
+    'TA-01': { name: 'HTTPS 적용', max: 3, desc: '전체 HTTPS 여부' },
+    'TA-02': { name: '응답 속도 (TTFB)', max: 4, desc: '1초 미만 만점, 3초 이상 0점' },
+    'TA-03': { name: 'HTTP 상태코드', max: 4, desc: '주요 페이지 200 응답 여부' },
+    'TA-04': { name: '모바일 대응', max: 4, desc: 'viewport 메타 + 반응형 여부' },
+    'LT-01': { name: 'llms.txt 존재', max: 4, desc: '200 응답 여부' },
+    'LT-02': { name: 'llms.txt 문법', max: 3, desc: '스펙 준수 여부' },
+    'LT-03': { name: 'llms.txt 충실도', max: 3, desc: '실질적 기관 설명 + 주요 링크 포함' },
+    'SM-01': { name: 'sitemap.xml 존재', max: 2, desc: '200 응답 여부' },
+    'SM-02': { name: 'sitemap 콘텐츠 포함', max: 3, desc: 'XML 유효 + 주요 콘텐츠 URL 포함' }
+  };
+
   // Data loading
+  let _history = null;
+  async function loadHistory() {
+    if (_history) return _history;
+    try {
+      const res = await fetch('data/history.json');
+      if (!res.ok) return null;
+      _history = await res.json();
+      return _history;
+    } catch (err) { return null; }
+  }
   async function loadData() {
     if (_data) return _data;
     try {
@@ -175,6 +212,36 @@ const App = (() => {
     return { avg: Math.round(avg * 10) / 10, grades, totalIssues, criticals, count: orgs.length };
   }
 
+  // Ministry grouping: aggregate orgs by parent ministry
+  function groupByMinistry(orgs) {
+    const ministries = {};
+    const parentOrgs = {};
+    // Index all orgs by id
+    orgs.forEach(o => { parentOrgs[o.org_id] = o; });
+    // Group
+    orgs.forEach(o => {
+      const parentId = o.parent_org_id || o.org_id;
+      if (!ministries[parentId]) {
+        const parent = parentOrgs[parentId] || o;
+        ministries[parentId] = {
+          ministry_id: parentId,
+          name: parent.name,
+          name_en: parent.name_en,
+          children: [],
+          totalScore: 0
+        };
+      }
+      ministries[parentId].children.push(o);
+      ministries[parentId].totalScore += o.scores.total;
+    });
+    // Calculate averages
+    Object.values(ministries).forEach(m => {
+      m.avgScore = Math.round(m.totalScore / m.children.length * 10) / 10;
+      m.grade = gradeFromScore(m.avgScore);
+    });
+    return Object.values(ministries).sort((a, b) => b.avgScore - a.avgScore);
+  }
+
   // Build navigation DOM
   function buildNav(activePage) {
     const pages = [
@@ -182,7 +249,9 @@ const App = (() => {
       { id: 'ranking', label: '순위표', href: 'ranking.html' },
       { id: 'stats', label: '통계', href: 'stats.html' },
       { id: 'updates', label: '업데이트', href: 'updates.html' },
-      { id: 'about', label: '소개', href: 'about.html' }
+      { id: 'about', label: '소개', href: 'about.html' },
+      { id: 'meta', label: 'robots.txt', href: 'robots.txt' },
+      { id: 'meta2', label: 'llms.txt', href: 'llms.txt' }
     ];
 
     const nav = createElement('nav', { className: 'nav' });
@@ -230,6 +299,8 @@ const App = (() => {
       + '</ul></div><div><h4>데이터</h4><ul class="footer-links">'
       + '<li><a href="data/results.json">결과 JSON</a></li>'
       + '<li><a href="data/summary_scores.csv">점수 CSV</a></li>'
+      + '<li><a href="robots.txt">robots.txt</a></li>'
+      + '<li><a href="llms.txt">llms.txt</a></li>'
       + '<li><a href="https://github.com/ffee21/are-we-open" target="_blank" rel="noopener">GitHub</a></li>'
       + '</ul></div><div class="footer-bottom">'
       + '<span>본 웹사이트는 개인 프로젝트로 운영되며, 정부 공식 입장과 무관합니다.</span>'
@@ -278,10 +349,10 @@ const App = (() => {
   }
 
   return {
-    loadData, getGradeInfo, gradeFromScore, getGradeColor, getGradeClass,
+    loadData, loadHistory, getGradeInfo, gradeFromScore, getGradeColor, getGradeClass,
     gradeBadgeHtml, severityBadgeHtml, miniBarHtml, issueChipsHtml, orgTypeLabel,
-    crawlerStatusDot, crawlerStatusLabel, calcStats,
+    crawlerStatusDot, crawlerStatusLabel, calcStats, groupByMinistry,
     escapeHtml, copyToClipboard, getParam, initPage, createElement,
-    GRADES, CATEGORIES, ORG_TYPES, SEVERITY_LABELS
+    GRADES, CATEGORIES, ORG_TYPES, SEVERITY_LABELS, ITEM_DESCRIPTIONS
   };
 })();

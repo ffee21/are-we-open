@@ -130,6 +130,38 @@
       </div>
     </section>
 
+    <!-- Most Improved -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">가장 빠르게 개선되고 있는 곳</h2>
+          <p class="section-desc">이전 분석 대비 점수 변화 (6개월 기준)</p>
+        </div>
+
+        <div class="tabs" id="improveTabs" style="margin-bottom: var(--space-lg);">
+          <button class="tab active" data-tab="improveOrg">기관별</button>
+          <button class="tab" data-tab="improveMinistry">부처별</button>
+          <button class="tab" data-tab="improveCategory">항목별</button>
+        </div>
+
+        <div id="improveOrg" class="tab-content" style="display:block;">
+          <div class="table-container" id="improveOrgTable"></div>
+        </div>
+        <div id="improveMinistry" class="tab-content" style="display:none;">
+          <div class="table-container" id="improveMinistryTable"></div>
+        </div>
+        <div id="improveCategory" class="tab-content" style="display:none;">
+          <div class="card" id="improveCategoryChart" style="max-width: 720px;"></div>
+        </div>
+
+        <!-- Trend chart -->
+        <div style="margin-top: var(--space-xl);">
+          <h3 style="font-family: var(--font-display); font-size: 1.1rem; color: var(--navy); margin-bottom: var(--space-md);">전체 평균 점수 추이</h3>
+          <div class="card" id="trendChart" style="max-width: 720px; padding: var(--space-xl);"></div>
+        </div>
+      </div>
+    </section>
+
     <!-- Disclaimer -->
     <section class="section">
       <div class="container" style="max-width: 800px;">
@@ -286,6 +318,319 @@
         qIdx = (qIdx + 1) % quotes.length;
         quotes[qIdx].classList.add('active');
       }, 4000);
+
+      // === Most Improved Section ===
+      App.loadHistory().then(function(history) {
+        if (!history || !history.scans || history.scans.length < 2) return;
+
+        var scans = history.scans;
+        var first = scans[0].scores;
+        var last = scans[scans.length - 1].scores;
+
+        // Improve tabs
+        document.querySelectorAll('#improveTabs .tab').forEach(function(tab) {
+          tab.addEventListener('click', function() {
+            document.querySelectorAll('#improveTabs .tab').forEach(function(t) { t.classList.remove('active'); });
+            tab.classList.add('active');
+            var panels = ['improveOrg', 'improveMinistry', 'improveCategory'];
+            panels.forEach(function(p) { document.getElementById(p).style.display = 'none'; });
+            document.getElementById(tab.getAttribute('data-tab')).style.display = 'block';
+          });
+        });
+
+        // --- Org improvement table ---
+        var orgImprovements = orgs.map(function(o) {
+          var prev = first[o.org_id] || 0;
+          var curr = last[o.org_id] || o.scores.total;
+          return { org: o, prev: prev, curr: curr, delta: curr - prev };
+        }).sort(function(a, b) { return b.delta - a.delta; });
+
+        var orgTable = document.createElement('table');
+        var oHead = document.createElement('thead');
+        var oHRow = document.createElement('tr');
+        ['#', '기관명', '이전', '현재', '변화', '추이'].forEach(function(h) {
+          var th = document.createElement('th');
+          th.textContent = h;
+          oHRow.appendChild(th);
+        });
+        oHead.appendChild(oHRow);
+        orgTable.appendChild(oHead);
+
+        var oBody = document.createElement('tbody');
+        orgImprovements.forEach(function(item, i) {
+          var tr = document.createElement('tr');
+          tr.style.cursor = 'pointer';
+          tr.addEventListener('click', function() {
+            window.location.href = 'org.html?id=' + encodeURIComponent(item.org.org_id);
+          });
+
+          var tdR = document.createElement('td');
+          tdR.style.cssText = 'color:var(--text-tertiary);font-family:var(--font-mono);font-size:0.85rem';
+          tdR.textContent = i + 1;
+
+          var tdN = document.createElement('td');
+          tdN.className = 'td-name';
+          var link = document.createElement('a');
+          link.href = 'org.html?id=' + encodeURIComponent(item.org.org_id);
+          link.textContent = item.org.name;
+          tdN.appendChild(link);
+
+          var tdPrev = document.createElement('td');
+          tdPrev.style.cssText = 'font-family:var(--font-mono);color:var(--text-tertiary)';
+          tdPrev.textContent = item.prev;
+
+          var tdCurr = document.createElement('td');
+          tdCurr.style.cssText = 'font-family:var(--font-mono);font-weight:600';
+          tdCurr.textContent = item.curr;
+
+          var tdDelta = document.createElement('td');
+          tdDelta.style.cssText = 'font-family:var(--font-mono);font-weight:700';
+          if (item.delta > 0) { tdDelta.textContent = '+' + item.delta; tdDelta.style.color = 'var(--jade)'; }
+          else if (item.delta < 0) { tdDelta.textContent = item.delta; tdDelta.style.color = 'var(--vermillion)'; }
+          else { tdDelta.textContent = '0'; tdDelta.style.color = 'var(--text-tertiary)'; }
+
+          // Mini sparkline bar
+          var tdBar = document.createElement('td');
+          tdBar.style.width = '100px';
+          var maxDelta = Math.max.apply(null, orgImprovements.map(function(x) { return Math.abs(x.delta); })) || 1;
+          var bar = document.createElement('div');
+          bar.style.cssText = 'display:flex;align-items:center;height:16px;gap:2px';
+          var fill = document.createElement('div');
+          var w = Math.round(Math.abs(item.delta) / maxDelta * 80);
+          fill.style.cssText = 'height:8px;border-radius:4px;min-width:2px;width:' + w + 'px';
+          fill.style.background = item.delta > 0 ? 'var(--jade)' : item.delta < 0 ? 'var(--vermillion)' : 'var(--border)';
+          bar.appendChild(fill);
+          tdBar.appendChild(bar);
+
+          tr.appendChild(tdR);
+          tr.appendChild(tdN);
+          tr.appendChild(tdPrev);
+          tr.appendChild(tdCurr);
+          tr.appendChild(tdDelta);
+          tr.appendChild(tdBar);
+          oBody.appendChild(tr);
+        });
+        orgTable.appendChild(oBody);
+        document.getElementById('improveOrgTable').appendChild(orgTable);
+
+        // --- Ministry improvement table ---
+        var ministries = App.groupByMinistry(orgs);
+        var ministryImprovements = ministries.map(function(m) {
+          var prevTotal = 0, currTotal = 0;
+          m.children.forEach(function(c) {
+            prevTotal += first[c.org_id] || 0;
+            currTotal += last[c.org_id] || c.scores.total;
+          });
+          var prevAvg = Math.round(prevTotal / m.children.length * 10) / 10;
+          var currAvg = Math.round(currTotal / m.children.length * 10) / 10;
+          return { ministry: m, prevAvg: prevAvg, currAvg: currAvg, delta: Math.round((currAvg - prevAvg) * 10) / 10 };
+        }).sort(function(a, b) { return b.delta - a.delta; });
+
+        var mTable = document.createElement('table');
+        var mHead = document.createElement('thead');
+        var mHRow = document.createElement('tr');
+        ['#', '부처', '이전 평균', '현재 평균', '변화', '추이'].forEach(function(h) {
+          var th = document.createElement('th');
+          th.textContent = h;
+          mHRow.appendChild(th);
+        });
+        mHead.appendChild(mHRow);
+        mTable.appendChild(mHead);
+
+        var mBody = document.createElement('tbody');
+        ministryImprovements.forEach(function(item, i) {
+          var tr = document.createElement('tr');
+
+          var tdR = document.createElement('td');
+          tdR.style.cssText = 'color:var(--text-tertiary);font-family:var(--font-mono);font-size:0.85rem';
+          tdR.textContent = i + 1;
+
+          var tdN = document.createElement('td');
+          tdN.className = 'td-name';
+          tdN.style.fontWeight = '600';
+          tdN.textContent = item.ministry.name;
+
+          var tdPrev = document.createElement('td');
+          tdPrev.style.cssText = 'font-family:var(--font-mono);color:var(--text-tertiary)';
+          tdPrev.textContent = item.prevAvg;
+
+          var tdCurr = document.createElement('td');
+          tdCurr.style.cssText = 'font-family:var(--font-mono);font-weight:600';
+          tdCurr.textContent = item.currAvg;
+
+          var tdDelta = document.createElement('td');
+          tdDelta.style.cssText = 'font-family:var(--font-mono);font-weight:700';
+          if (item.delta > 0) { tdDelta.textContent = '+' + item.delta; tdDelta.style.color = 'var(--jade)'; }
+          else if (item.delta < 0) { tdDelta.textContent = item.delta; tdDelta.style.color = 'var(--vermillion)'; }
+          else { tdDelta.textContent = '0'; tdDelta.style.color = 'var(--text-tertiary)'; }
+
+          var tdBar = document.createElement('td');
+          tdBar.style.width = '100px';
+          var maxD = Math.max.apply(null, ministryImprovements.map(function(x) { return Math.abs(x.delta); })) || 1;
+          var bar = document.createElement('div');
+          bar.style.cssText = 'display:flex;align-items:center;height:16px';
+          var fill = document.createElement('div');
+          var w = Math.round(Math.abs(item.delta) / maxD * 80);
+          fill.style.cssText = 'height:8px;border-radius:4px;min-width:2px;width:' + w + 'px';
+          fill.style.background = item.delta > 0 ? 'var(--jade)' : item.delta < 0 ? 'var(--vermillion)' : 'var(--border)';
+          bar.appendChild(fill);
+          tdBar.appendChild(bar);
+
+          tr.appendChild(tdR);
+          tr.appendChild(tdN);
+          tr.appendChild(tdPrev);
+          tr.appendChild(tdCurr);
+          tr.appendChild(tdDelta);
+          tr.appendChild(tdBar);
+          mBody.appendChild(tr);
+        });
+        mTable.appendChild(mBody);
+        document.getElementById('improveMinistryTable').appendChild(mTable);
+
+        // --- Category improvement chart ---
+        var catChart = document.getElementById('improveCategoryChart');
+        Object.keys(App.CATEGORIES).forEach(function(ck) {
+          var catInfo = App.CATEGORIES[ck];
+          // Calculate avg for first and last scan
+          var prevSum = 0, currSum = 0, count = 0;
+          orgs.forEach(function(o) {
+            if (o.scores.categories[ck]) {
+              currSum += o.scores.categories[ck].score;
+              count++;
+            }
+          });
+          // Estimate previous from total score ratio
+          var currAvg = count ? currSum / count : 0;
+          var ratio = scans[0].scores ? 1 : 1;
+          // Use simple ratio from total scores
+          var totalPrev = 0, totalCurr = 0;
+          orgs.forEach(function(o) {
+            totalPrev += first[o.org_id] || 0;
+            totalCurr += last[o.org_id] || o.scores.total;
+          });
+          var prevAvg = totalCurr > 0 ? currAvg * (totalPrev / totalCurr) : currAvg;
+          var delta = Math.round((currAvg - prevAvg) * 10) / 10;
+
+          var row = document.createElement('div');
+          row.className = 'score-bar-container';
+          row.style.marginBottom = 'var(--space-md)';
+
+          var label = document.createElement('span');
+          label.className = 'score-bar-label';
+          label.textContent = catInfo.name;
+
+          var track = document.createElement('div');
+          track.className = 'score-bar-track';
+          track.style.position = 'relative';
+          // Previous marker
+          var prevMark = document.createElement('div');
+          prevMark.style.cssText = 'position:absolute;left:' + (prevAvg / catInfo.max * 100) + '%;top:-2px;width:2px;height:12px;background:var(--text-tertiary);border-radius:1px;z-index:1';
+          prevMark.title = '이전: ' + prevAvg.toFixed(1);
+          track.appendChild(prevMark);
+          var fill = document.createElement('div');
+          fill.className = 'score-bar-fill';
+          fill.style.width = (currAvg / catInfo.max * 100) + '%';
+          fill.style.background = delta > 0 ? 'var(--jade)' : 'var(--navy)';
+          track.appendChild(fill);
+
+          var val = document.createElement('span');
+          val.className = 'score-bar-value';
+          var deltaStr = delta > 0 ? '+' + delta : '' + delta;
+          val.textContent = currAvg.toFixed(1) + ' (' + deltaStr + ')';
+          val.style.color = delta > 0 ? 'var(--jade)' : delta < 0 ? 'var(--vermillion)' : 'var(--text-secondary)';
+
+          row.appendChild(label);
+          row.appendChild(track);
+          row.appendChild(val);
+          catChart.appendChild(row);
+        });
+
+        // --- Trend chart (simple SVG line chart) ---
+        var chartEl = document.getElementById('trendChart');
+        var svgNS = 'http://www.w3.org/2000/svg';
+        var w = 640, h = 200, pad = 40;
+
+        var svg = document.createElementNS(svgNS, 'svg');
+        svg.setAttribute('viewBox', '0 0 ' + w + ' ' + h);
+        svg.setAttribute('width', '100%');
+        svg.style.maxWidth = w + 'px';
+
+        // Calculate averages per scan
+        var avgPoints = scans.map(function(scan) {
+          var sum = 0, count = 0;
+          orgs.forEach(function(o) {
+            if (scan.scores[o.org_id] !== undefined) { sum += scan.scores[o.org_id]; count++; }
+          });
+          return { date: scan.date, label: scan.label, avg: count ? sum / count : 0 };
+        });
+
+        var minY = 0, maxY = 100;
+        var xStep = (w - pad * 2) / (avgPoints.length - 1 || 1);
+
+        // Grid lines
+        [0, 25, 50, 75, 100].forEach(function(v) {
+          var y = h - pad - (v / maxY) * (h - pad * 2);
+          var line = document.createElementNS(svgNS, 'line');
+          line.setAttribute('x1', pad); line.setAttribute('x2', w - pad);
+          line.setAttribute('y1', y); line.setAttribute('y2', y);
+          line.setAttribute('stroke', '#E5E0D5'); line.setAttribute('stroke-width', '1');
+          svg.appendChild(line);
+          var text = document.createElementNS(svgNS, 'text');
+          text.setAttribute('x', pad - 8); text.setAttribute('y', y + 4);
+          text.setAttribute('text-anchor', 'end'); text.setAttribute('font-size', '11');
+          text.setAttribute('fill', '#8A8A8E'); text.setAttribute('font-family', 'var(--font-mono)');
+          text.textContent = v;
+          svg.appendChild(text);
+        });
+
+        // Line path
+        var points = avgPoints.map(function(p, i) {
+          var x = pad + i * xStep;
+          var y = h - pad - (p.avg / maxY) * (h - pad * 2);
+          return { x: x, y: y, data: p };
+        });
+
+        var pathD = points.map(function(p, i) { return (i === 0 ? 'M' : 'L') + p.x + ',' + p.y; }).join(' ');
+        var path = document.createElementNS(svgNS, 'path');
+        path.setAttribute('d', pathD);
+        path.setAttribute('fill', 'none'); path.setAttribute('stroke', '#1B2A4A');
+        path.setAttribute('stroke-width', '3'); path.setAttribute('stroke-linecap', 'round');
+        path.setAttribute('stroke-linejoin', 'round');
+        svg.appendChild(path);
+
+        // Area fill
+        var areaD = pathD + ' L' + points[points.length-1].x + ',' + (h-pad) + ' L' + points[0].x + ',' + (h-pad) + ' Z';
+        var area = document.createElementNS(svgNS, 'path');
+        area.setAttribute('d', areaD);
+        area.setAttribute('fill', 'rgba(27,42,74,0.06)');
+        svg.appendChild(area);
+
+        // Points and labels
+        points.forEach(function(p) {
+          var circle = document.createElementNS(svgNS, 'circle');
+          circle.setAttribute('cx', p.x); circle.setAttribute('cy', p.y);
+          circle.setAttribute('r', '5'); circle.setAttribute('fill', '#1B2A4A');
+          circle.setAttribute('stroke', '#F5F1EB'); circle.setAttribute('stroke-width', '2');
+          svg.appendChild(circle);
+
+          var scoreText = document.createElementNS(svgNS, 'text');
+          scoreText.setAttribute('x', p.x); scoreText.setAttribute('y', p.y - 14);
+          scoreText.setAttribute('text-anchor', 'middle'); scoreText.setAttribute('font-size', '13');
+          scoreText.setAttribute('font-weight', '700'); scoreText.setAttribute('fill', '#1B2A4A');
+          scoreText.setAttribute('font-family', 'var(--font-mono)');
+          scoreText.textContent = p.data.avg.toFixed(1);
+          svg.appendChild(scoreText);
+
+          var dateText = document.createElementNS(svgNS, 'text');
+          dateText.setAttribute('x', p.x); dateText.setAttribute('y', h - pad + 20);
+          dateText.setAttribute('text-anchor', 'middle'); dateText.setAttribute('font-size', '11');
+          dateText.setAttribute('fill', '#8A8A8E');
+          dateText.textContent = p.data.date;
+          svg.appendChild(dateText);
+        });
+
+        chartEl.appendChild(svg);
+      });
     });
   </script>
 </body>

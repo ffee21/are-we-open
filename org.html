@@ -180,7 +180,7 @@
       var tbl = document.createElement('table');
       var tHead = document.createElement('thead');
       var hRow = document.createElement('tr');
-      ['항목 코드', '점수', '비율'].forEach(function(h) {
+      ['항목 코드', '항목명', '판정 기준', '점수', '비율'].forEach(function(h) {
         var th = document.createElement('th');
         th.textContent = h;
         hRow.appendChild(th);
@@ -189,18 +189,11 @@
       tbl.appendChild(tHead);
 
       var tBody = document.createElement('tbody');
-      var itemMax = {
-        'RT-01':5,'RT-02':3,'RT-03':7,'RT-04':5,'RT-05':5,
-        'CA-01':7,'CA-02':5,'CA-03':5,'CA-04':4,'CA-05':4,
-        'SD-01':4,'SD-02':4,'SD-03':4,'SD-04':5,'SD-05':3,
-        'TA-01':3,'TA-02':4,'TA-03':4,'TA-04':4,
-        'LT-01':4,'LT-02':3,'LT-03':3,
-        'SM-01':2,'SM-02':3
-      };
-      Object.keys(itemMax).forEach(function(code) {
+      Object.keys(App.ITEM_DESCRIPTIONS).forEach(function(code) {
+        var itemInfo = App.ITEM_DESCRIPTIONS[code];
         var val = org.scores.items[code];
         if (val === undefined) val = 0;
-        var max = itemMax[code];
+        var max = itemInfo.max;
         var pct = Math.round((val / max) * 100);
         var tr = document.createElement('tr');
 
@@ -208,6 +201,14 @@
         tdCode.style.fontFamily = 'var(--font-mono)';
         tdCode.style.fontSize = '0.85rem';
         tdCode.textContent = code;
+
+        var tdName = document.createElement('td');
+        tdName.style.cssText = 'white-space:normal;font-size:0.85rem;font-weight:500';
+        tdName.textContent = itemInfo.name;
+
+        var tdDesc = document.createElement('td');
+        tdDesc.style.cssText = 'white-space:normal;font-size:0.8rem;color:var(--text-tertiary);max-width:200px';
+        tdDesc.textContent = itemInfo.desc;
 
         var tdScore = document.createElement('td');
         tdScore.style.fontFamily = 'var(--font-mono)';
@@ -226,6 +227,8 @@
         tdBar.appendChild(bar);
 
         tr.appendChild(tdCode);
+        tr.appendChild(tdName);
+        tr.appendChild(tdDesc);
         tr.appendChild(tdScore);
         tr.appendChild(tdBar);
         tBody.appendChild(tr);

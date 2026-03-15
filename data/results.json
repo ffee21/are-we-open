@@ -1,7 +1,7 @@
 {
   "meta": {
     "last_updated": "2025-01-15T09:00:00+09:00",
-    "total_organizations": 10,
+    "total_organizations": 15,
     "scan_version": "v1",
     "note": "본 데이터는 프로젝트 시연을 위한 샘플 데이터입니다. 실제 분석 결과와 다를 수 있습니다."
   },
@@ -604,6 +604,257 @@
       },
       "suggested_robots_txt": "# 검색엔진 허용 (보안이 필요한 경로만 차단)\nUser-agent: Googlebot\nAllow: /user/\nDisallow: /admin/\nDisallow: /cop/\n\nUser-agent: GPTBot\nAllow: /user/newsInUserRecord.action\nAllow: /user/boardList.action\nDisallow: /admin/\nDisallow: /cop/\n\nUser-agent: ClaudeBot\nAllow: /user/newsInUserRecord.action\nAllow: /user/boardList.action\nDisallow: /admin/\nDisallow: /cop/\n\nUser-agent: *\nDisallow: /admin/\nDisallow: /cop/\n\nSitemap: https://www.mnd.go.kr/sitemap.xml",
       "suggested_llms_txt": "# 국방부 (Ministry of National Defense)\n> 대한민국 국방부 공식 웹사이트입니다.\n\n## 주요 콘텐츠\n- [보도자료](https://www.mnd.go.kr/user/newsInUserRecord.action)\n- [공지사항](https://www.mnd.go.kr/user/boardList.action)"
+    },
+    {
+      "org_id": "GOV-011",
+      "name": "질병관리청",
+      "name_en": "Korea Disease Control and Prevention Agency",
+      "org_type": "agency",
+      "url": "https://www.kdca.go.kr",
+      "parent_org_id": "GOV-005",
+      "scan_date": "2025-01-15",
+      "scan_version": "v1",
+      "scores": {
+        "total": 65,
+        "grade": "B",
+        "categories": {
+          "robots_txt": { "score": 18, "max": 25 },
+          "content_accessibility": { "score": 17, "max": 25 },
+          "structured_data": { "score": 12, "max": 20 },
+          "technical_accessibility": { "score": 14, "max": 15 },
+          "llms_txt": { "score": 0, "max": 10 },
+          "sitemap_xml": { "score": 4, "max": 5 }
+        },
+        "items": {
+          "RT-01": 5, "RT-02": 3, "RT-03": 2, "RT-04": 5, "RT-05": 3,
+          "CA-01": 7, "CA-02": 3, "CA-03": 5, "CA-04": 0, "CA-05": 2,
+          "SD-01": 4, "SD-02": 2, "SD-03": 2, "SD-04": 0, "SD-05": 3,
+          "TA-01": 3, "TA-02": 4, "TA-03": 4, "TA-04": 3,
+          "LT-01": 0, "LT-02": 0, "LT-03": 0,
+          "SM-01": 2, "SM-02": 2
+        }
+      },
+      "issues": [
+        { "code": "RT-03-major", "severity": "major", "description": "주요 LLM 크롤러에 대한 명시적 규칙이 없습니다.", "detail": "", "recommendation_code": "REC-RT-03" },
+        { "code": "CA-04-minor", "severity": "minor", "description": "URL 패턴이 불규칙합니다.", "detail": "게시판 ID 기반 쿼리스트링 URL.", "recommendation_code": "REC-CA-04" },
+        { "code": "SD-04-info", "severity": "info", "description": "schema.org 구조화된 데이터가 없습니다.", "detail": "", "recommendation_code": "REC-SD-04" },
+        { "code": "LT-01-info", "severity": "info", "description": "llms.txt 파일이 존재하지 않습니다.", "detail": "", "recommendation_code": "REC-LT-01" }
+      ],
+      "robots_txt": {
+        "exists": true, "syntax_valid": true,
+        "crawler_rules": { "GPTBot": "not_mentioned", "ClaudeBot": "not_mentioned", "Google-Extended": "not_mentioned", "Googlebot": "allowed", "Bytespider": "not_mentioned", "CCBot": "not_mentioned", "*": "partial_allow" }
+      },
+      "llms_txt": { "exists": false },
+      "sitemap_xml": { "exists": true, "valid": true, "contains_content_urls": false },
+      "metadata": { "has_title": true, "title_unique_per_page": true, "has_meta_description": true, "meta_description_unique": false, "has_og_tags": false, "has_schema_org": false, "has_lang_attribute": true },
+      "technical": { "https": true, "ttfb_ms": 680, "main_page_status": 200, "mobile_viewport": true, "primary_rendering": "ssr" },
+      "content_paths": {
+        "press_releases": { "list_url": "https://www.kdca.go.kr/board/board.es?mid=a20501010000", "individual_url_accessible": true, "rendering_method": "ssr" },
+        "notices": { "list_url": "https://www.kdca.go.kr/board/board.es?mid=a20501020000", "individual_url_accessible": true, "rendering_method": "ssr" }
+      },
+      "suggested_robots_txt": "User-agent: Googlebot\nAllow: /\n\nUser-agent: GPTBot\nAllow: /board/\nDisallow: /admin/\n\nUser-agent: ClaudeBot\nAllow: /board/\nDisallow: /admin/\n\nUser-agent: *\nDisallow: /admin/\n\nSitemap: https://www.kdca.go.kr/sitemap.xml",
+      "suggested_llms_txt": "# 질병관리청 (KDCA)\n> 대한민국 질병관리청 공식 웹사이트입니다.\n\n## 주요 콘텐츠\n- [보도자료](https://www.kdca.go.kr/board/board.es?mid=a20501010000)\n- [공지사항](https://www.kdca.go.kr/board/board.es?mid=a20501020000)"
+    },
+    {
+      "org_id": "GOV-012",
+      "name": "기상청",
+      "name_en": "Korea Meteorological Administration",
+      "org_type": "agency",
+      "url": "https://www.kma.go.kr",
+      "parent_org_id": "GOV-007",
+      "scan_date": "2025-01-15",
+      "scan_version": "v1",
+      "scores": {
+        "total": 55,
+        "grade": "C",
+        "categories": {
+          "robots_txt": { "score": 15, "max": 25 },
+          "content_accessibility": { "score": 13, "max": 25 },
+          "structured_data": { "score": 10, "max": 20 },
+          "technical_accessibility": { "score": 13, "max": 15 },
+          "llms_txt": { "score": 0, "max": 10 },
+          "sitemap_xml": { "score": 4, "max": 5 }
+        },
+        "items": {
+          "RT-01": 5, "RT-02": 2, "RT-03": 0, "RT-04": 5, "RT-05": 3,
+          "CA-01": 5, "CA-02": 3, "CA-03": 3, "CA-04": 2, "CA-05": 0,
+          "SD-01": 2, "SD-02": 2, "SD-03": 2, "SD-04": 0, "SD-05": 3,
+          "TA-01": 3, "TA-02": 4, "TA-03": 4, "TA-04": 2,
+          "LT-01": 0, "LT-02": 0, "LT-03": 0,
+          "SM-01": 2, "SM-02": 2
+        }
+      },
+      "issues": [
+        { "code": "RT-03-major", "severity": "major", "description": "주요 LLM 크롤러에 대한 명시적 규칙이 없습니다.", "detail": "", "recommendation_code": "REC-RT-03" },
+        { "code": "CA-05-major", "severity": "major", "description": "일부 콘텐츠 페이지가 CSR 전용입니다.", "detail": "기상 데이터 페이지가 JS 렌더링.", "recommendation_code": "REC-CA-05" },
+        { "code": "SD-04-info", "severity": "info", "description": "schema.org 구조화된 데이터가 없습니다.", "detail": "", "recommendation_code": "REC-SD-04" },
+        { "code": "LT-01-info", "severity": "info", "description": "llms.txt 파일이 존재하지 않습니다.", "detail": "", "recommendation_code": "REC-LT-01" }
+      ],
+      "robots_txt": {
+        "exists": true, "syntax_valid": false,
+        "crawler_rules": { "GPTBot": "not_mentioned", "ClaudeBot": "not_mentioned", "Google-Extended": "not_mentioned", "Googlebot": "allowed", "Bytespider": "not_mentioned", "CCBot": "not_mentioned", "*": "partial_allow" }
+      },
+      "llms_txt": { "exists": false },
+      "sitemap_xml": { "exists": true, "valid": true, "contains_content_urls": true },
+      "metadata": { "has_title": true, "title_unique_per_page": false, "has_meta_description": true, "meta_description_unique": false, "has_og_tags": false, "has_schema_org": false, "has_lang_attribute": true },
+      "technical": { "https": true, "ttfb_ms": 850, "main_page_status": 200, "mobile_viewport": true, "primary_rendering": "ssr" },
+      "content_paths": {
+        "press_releases": { "list_url": "https://www.kma.go.kr/notify/press/kma_list.jsp", "individual_url_accessible": true, "rendering_method": "ssr" },
+        "notices": { "list_url": "https://www.kma.go.kr/notify/notice/notice_list.jsp", "individual_url_accessible": true, "rendering_method": "ssr" }
+      },
+      "suggested_robots_txt": "User-agent: Googlebot\nAllow: /\n\nUser-agent: GPTBot\nAllow: /notify/\nAllow: /weather/\nDisallow: /admin/\n\nUser-agent: ClaudeBot\nAllow: /notify/\nAllow: /weather/\nDisallow: /admin/\n\nUser-agent: *\nDisallow: /admin/\n\nSitemap: https://www.kma.go.kr/sitemap.xml",
+      "suggested_llms_txt": "# 기상청 (KMA)\n> 대한민국 기상청 공식 웹사이트입니다.\n\n## 주요 콘텐츠\n- [보도자료](https://www.kma.go.kr/notify/press/kma_list.jsp)\n- [공지사항](https://www.kma.go.kr/notify/notice/notice_list.jsp)"
+    },
+    {
+      "org_id": "GOV-013",
+      "name": "통계청",
+      "name_en": "Statistics Korea",
+      "org_type": "agency",
+      "url": "https://kostat.go.kr",
+      "parent_org_id": "GOV-003",
+      "scan_date": "2025-01-15",
+      "scan_version": "v1",
+      "scores": {
+        "total": 72,
+        "grade": "B+",
+        "categories": {
+          "robots_txt": { "score": 20, "max": 25 },
+          "content_accessibility": { "score": 19, "max": 25 },
+          "structured_data": { "score": 14, "max": 20 },
+          "technical_accessibility": { "score": 14, "max": 15 },
+          "llms_txt": { "score": 0, "max": 10 },
+          "sitemap_xml": { "score": 5, "max": 5 }
+        },
+        "items": {
+          "RT-01": 5, "RT-02": 3, "RT-03": 3, "RT-04": 5, "RT-05": 4,
+          "CA-01": 7, "CA-02": 3, "CA-03": 5, "CA-04": 2, "CA-05": 2,
+          "SD-01": 4, "SD-02": 4, "SD-03": 2, "SD-04": 0, "SD-05": 3,
+          "TA-01": 3, "TA-02": 4, "TA-03": 4, "TA-04": 3,
+          "LT-01": 0, "LT-02": 0, "LT-03": 0,
+          "SM-01": 2, "SM-02": 3
+        }
+      },
+      "issues": [
+        { "code": "RT-03-major", "severity": "major", "description": "주요 LLM 크롤러에 대한 명시적 규칙이 없습니다.", "detail": "ClaudeBot, Google-Extended 미언급.", "recommendation_code": "REC-RT-03" },
+        { "code": "SD-04-info", "severity": "info", "description": "schema.org 구조화된 데이터가 없습니다.", "detail": "통계 데이터에 Dataset 스키마 적용 권장.", "recommendation_code": "REC-SD-04" },
+        { "code": "LT-01-info", "severity": "info", "description": "llms.txt 파일이 존재하지 않습니다.", "detail": "", "recommendation_code": "REC-LT-01" }
+      ],
+      "robots_txt": {
+        "exists": true, "syntax_valid": true,
+        "crawler_rules": { "GPTBot": "partial_allow", "ClaudeBot": "not_mentioned", "Google-Extended": "not_mentioned", "Googlebot": "allowed", "Bytespider": "not_mentioned", "CCBot": "not_mentioned", "*": "partial_allow" }
+      },
+      "llms_txt": { "exists": false },
+      "sitemap_xml": { "exists": true, "valid": true, "contains_content_urls": true },
+      "metadata": { "has_title": true, "title_unique_per_page": true, "has_meta_description": true, "meta_description_unique": true, "has_og_tags": false, "has_schema_org": false, "has_lang_attribute": true },
+      "technical": { "https": true, "ttfb_ms": 550, "main_page_status": 200, "mobile_viewport": true, "primary_rendering": "ssr" },
+      "content_paths": {
+        "press_releases": { "list_url": "https://kostat.go.kr/board.es?mid=a10301010000", "individual_url_accessible": true, "rendering_method": "ssr" },
+        "notices": { "list_url": "https://kostat.go.kr/board.es?mid=a10301020000", "individual_url_accessible": true, "rendering_method": "ssr" }
+      },
+      "suggested_robots_txt": "User-agent: Googlebot\nAllow: /\n\nUser-agent: GPTBot\nAllow: /board.es\nAllow: /incomeNa498/\nDisallow: /admin/\n\nUser-agent: ClaudeBot\nAllow: /board.es\nAllow: /incomeNa498/\nDisallow: /admin/\n\nUser-agent: *\nDisallow: /admin/\n\nSitemap: https://kostat.go.kr/sitemap.xml",
+      "suggested_llms_txt": "# 통계청 (Statistics Korea)\n> 대한민국 통계청 공식 웹사이트입니다.\n\n## 주요 콘텐츠\n- [보도자료](https://kostat.go.kr/board.es?mid=a10301010000)\n- [공지사항](https://kostat.go.kr/board.es?mid=a10301020000)"
+    },
+    {
+      "org_id": "GOV-014",
+      "name": "병무청",
+      "name_en": "Military Manpower Administration",
+      "org_type": "agency",
+      "url": "https://www.mma.go.kr",
+      "parent_org_id": "GOV-010",
+      "scan_date": "2025-01-15",
+      "scan_version": "v1",
+      "scores": {
+        "total": 22,
+        "grade": "D",
+        "categories": {
+          "robots_txt": { "score": 7, "max": 25 },
+          "content_accessibility": { "score": 3, "max": 25 },
+          "structured_data": { "score": 5, "max": 20 },
+          "technical_accessibility": { "score": 7, "max": 15 },
+          "llms_txt": { "score": 0, "max": 10 },
+          "sitemap_xml": { "score": 0, "max": 5 }
+        },
+        "items": {
+          "RT-01": 5, "RT-02": 2, "RT-03": 0, "RT-04": 0, "RT-05": 0,
+          "CA-01": 0, "CA-02": 0, "CA-03": 3, "CA-04": 0, "CA-05": 0,
+          "SD-01": 2, "SD-02": 0, "SD-03": 0, "SD-04": 0, "SD-05": 3,
+          "TA-01": 3, "TA-02": 0, "TA-03": 2, "TA-04": 2,
+          "LT-01": 0, "LT-02": 0, "LT-03": 0,
+          "SM-01": 0, "SM-02": 0
+        }
+      },
+      "issues": [
+        { "code": "RT-04-critical", "severity": "critical", "description": "User-agent: * Disallow: /로 모든 크롤러를 전면 차단하고 있습니다.", "detail": "", "recommendation_code": "REC-RT-04" },
+        { "code": "CA-01-critical", "severity": "critical", "description": "보도자료에 개별 URL이 없습니다.", "detail": "동적 로딩 방식.", "recommendation_code": "REC-CA-01" },
+        { "code": "CA-05-critical", "severity": "critical", "description": "주요 콘텐츠 페이지가 CSR 전용입니다.", "detail": "", "recommendation_code": "REC-CA-05" },
+        { "code": "SD-02-major", "severity": "major", "description": "<meta description>이 없습니다.", "detail": "", "recommendation_code": "REC-SD-02" },
+        { "code": "SM-01-minor", "severity": "minor", "description": "sitemap.xml이 존재하지 않습니다.", "detail": "", "recommendation_code": "REC-SM-01" },
+        { "code": "LT-01-info", "severity": "info", "description": "llms.txt 파일이 존재하지 않습니다.", "detail": "", "recommendation_code": "REC-LT-01" }
+      ],
+      "robots_txt": {
+        "exists": true, "syntax_valid": true,
+        "crawler_rules": { "GPTBot": "not_mentioned", "ClaudeBot": "not_mentioned", "Google-Extended": "not_mentioned", "Googlebot": "not_mentioned", "Bytespider": "not_mentioned", "CCBot": "not_mentioned", "*": "blocked" }
+      },
+      "llms_txt": { "exists": false },
+      "sitemap_xml": { "exists": false, "valid": false, "contains_content_urls": false },
+      "metadata": { "has_title": true, "title_unique_per_page": false, "has_meta_description": false, "meta_description_unique": false, "has_og_tags": false, "has_schema_org": false, "has_lang_attribute": true },
+      "technical": { "https": true, "ttfb_ms": 3500, "main_page_status": 200, "mobile_viewport": true, "primary_rendering": "csr" },
+      "content_paths": {
+        "press_releases": { "list_url": "https://www.mma.go.kr/board/boardList.do?boardId=press", "individual_url_accessible": false, "rendering_method": "csr" },
+        "notices": { "list_url": "https://www.mma.go.kr/board/boardList.do?boardId=notice", "individual_url_accessible": true, "rendering_method": "ssr" }
+      },
+      "suggested_robots_txt": "User-agent: Googlebot\nAllow: /\n\nUser-agent: GPTBot\nAllow: /board/\nDisallow: /admin/\n\nUser-agent: ClaudeBot\nAllow: /board/\nDisallow: /admin/\n\nUser-agent: *\nAllow: /board/\nDisallow: /admin/\n\nSitemap: https://www.mma.go.kr/sitemap.xml",
+      "suggested_llms_txt": "# 병무청 (Military Manpower Administration)\n> 대한민국 병무청 공식 웹사이트입니다.\n\n## 주요 콘텐츠\n- [보도자료](https://www.mma.go.kr/board/boardList.do?boardId=press)\n- [공지사항](https://www.mma.go.kr/board/boardList.do?boardId=notice)"
+    },
+    {
+      "org_id": "GOV-015",
+      "name": "소방청",
+      "name_en": "National Fire Agency",
+      "org_type": "agency",
+      "url": "https://www.nfa.go.kr",
+      "parent_org_id": "GOV-002",
+      "scan_date": "2025-01-15",
+      "scan_version": "v1",
+      "scores": {
+        "total": 48,
+        "grade": "C",
+        "categories": {
+          "robots_txt": { "score": 14, "max": 25 },
+          "content_accessibility": { "score": 10, "max": 25 },
+          "structured_data": { "score": 9, "max": 20 },
+          "technical_accessibility": { "score": 12, "max": 15 },
+          "llms_txt": { "score": 0, "max": 10 },
+          "sitemap_xml": { "score": 3, "max": 5 }
+        },
+        "items": {
+          "RT-01": 5, "RT-02": 2, "RT-03": 0, "RT-04": 5, "RT-05": 2,
+          "CA-01": 3, "CA-02": 0, "CA-03": 3, "CA-04": 2, "CA-05": 2,
+          "SD-01": 2, "SD-02": 2, "SD-03": 2, "SD-04": 0, "SD-05": 3,
+          "TA-01": 3, "TA-02": 4, "TA-03": 4, "TA-04": 1,
+          "LT-01": 0, "LT-02": 0, "LT-03": 0,
+          "SM-01": 2, "SM-02": 1
+        }
+      },
+      "issues": [
+        { "code": "RT-03-major", "severity": "major", "description": "주요 LLM 크롤러에 대한 명시적 규칙이 없습니다.", "detail": "", "recommendation_code": "REC-RT-03" },
+        { "code": "CA-02-major", "severity": "major", "description": "정책자료 페이지에 개별 URL이 없습니다.", "detail": "", "recommendation_code": "REC-CA-02" },
+        { "code": "SD-04-info", "severity": "info", "description": "schema.org 구조화된 데이터가 없습니다.", "detail": "", "recommendation_code": "REC-SD-04" },
+        { "code": "LT-01-info", "severity": "info", "description": "llms.txt 파일이 존재하지 않습니다.", "detail": "", "recommendation_code": "REC-LT-01" }
+      ],
+      "robots_txt": {
+        "exists": true, "syntax_valid": false,
+        "crawler_rules": { "GPTBot": "not_mentioned", "ClaudeBot": "not_mentioned", "Google-Extended": "not_mentioned", "Googlebot": "allowed", "Bytespider": "not_mentioned", "CCBot": "not_mentioned", "*": "partial_allow" }
+      },
+      "llms_txt": { "exists": false },
+      "sitemap_xml": { "exists": true, "valid": true, "contains_content_urls": false },
+      "metadata": { "has_title": true, "title_unique_per_page": false, "has_meta_description": true, "meta_description_unique": false, "has_og_tags": false, "has_schema_org": false, "has_lang_attribute": true },
+      "technical": { "https": true, "ttfb_ms": 920, "main_page_status": 200, "mobile_viewport": true, "primary_rendering": "ssr" },
+      "content_paths": {
+        "press_releases": { "list_url": "https://www.nfa.go.kr/nfa/news/press/press/", "individual_url_accessible": true, "rendering_method": "ssr" },
+        "notices": { "list_url": "https://www.nfa.go.kr/nfa/news/notice/notice/", "individual_url_accessible": true, "rendering_method": "ssr" }
+      },
+      "suggested_robots_txt": "User-agent: Googlebot\nAllow: /\n\nUser-agent: GPTBot\nAllow: /nfa/news/\nDisallow: /admin/\n\nUser-agent: ClaudeBot\nAllow: /nfa/news/\nDisallow: /admin/\n\nUser-agent: *\nDisallow: /admin/\n\nSitemap: https://www.nfa.go.kr/sitemap.xml",
+      "suggested_llms_txt": "# 소방청 (National Fire Agency)\n> 대한민국 소방청 공식 웹사이트입니다.\n\n## 주요 콘텐츠\n- [보도자료](https://www.nfa.go.kr/nfa/news/press/press/)\n- [공지사항](https://www.nfa.go.kr/nfa/news/notice/notice/)"
     }
   ]
 }
