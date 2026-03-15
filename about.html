@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>소개 — Are We Open?</title>
+  <meta name="description" content="Are We Open? 프로젝트 소개, 스코어링 기준, 기여 방법 안내">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="nav"></div>
+  <main>
+    <section class="section" style="padding-top: var(--space-2xl);">
+      <div class="container" style="max-width: 800px;">
+        <div class="section-header">
+          <h2 class="section-title">프로젝트 소개</h2>
+        </div>
+
+        <div class="prose">
+          <h2>프로젝트 취지</h2>
+          <p>이 프로젝트는 대한민국 정부가 AI 시대에 맞춰 공공 웹사이트의 접근성을 <strong>점진적으로 개선해 나가기 위한 노력</strong>의 일환입니다. 한 번에 모든 것을 바꾸자는 것이 아니라, 현재 상태를 투명하게 파악하고 개선의 방향을 제시하는 데 목적이 있습니다.</p>
+          <p>GPT, Claude, Gemini 등 대규모 언어 모델(LLM)이 빠르게 보급되면서, 공공정보에 대한 접근 방식도 변화하고 있습니다. 시민들이 AI를 통해 정부 정보를 더 쉽게 찾고 이해할 수 있으려면, 공공 웹사이트가 LLM 크롤러에게 적절히 열려 있어야 합니다.</p>
+
+          <h2>평가 항목</h2>
+          <p>총 100점 만점으로 6개 카테고리를 평가합니다.</p>
+        </div>
+
+        <div class="table-container" style="margin: var(--space-xl) 0;">
+          <table class="scoring-table">
+            <thead>
+              <tr>
+                <th>카테고리</th>
+                <th>배점</th>
+                <th>주요 평가 항목</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>robots.txt</strong></td>
+                <td style="font-family: var(--font-mono); font-weight: 600;">25점</td>
+                <td>존재 여부, 문법 유효성, LLM 크롤러 허용 여부, 전면 차단 여부, 콘텐츠 경로 접근 허용</td>
+              </tr>
+              <tr>
+                <td><strong>콘텐츠 접근성</strong></td>
+                <td style="font-family: var(--font-mono); font-weight: 600;">25점</td>
+                <td>보도자료/정책/공지 개별 URL, URL 패턴 일관성, SSR 렌더링</td>
+              </tr>
+              <tr>
+                <td><strong>구조화된 데이터</strong></td>
+                <td style="font-family: var(--font-mono); font-weight: 600;">20점</td>
+                <td>title/meta description 적절성, Open Graph, schema.org, 언어 속성</td>
+              </tr>
+              <tr>
+                <td><strong>기술적 접근성</strong></td>
+                <td style="font-family: var(--font-mono); font-weight: 600;">15점</td>
+                <td>HTTPS, 응답 속도, HTTP 상태, 모바일 대응</td>
+              </tr>
+              <tr>
+                <td><strong>llms.txt</strong></td>
+                <td style="font-family: var(--font-mono); font-weight: 600;">10점</td>
+                <td>파일 존재 여부, 문법 유효성, 내용 충실도</td>
+              </tr>
+              <tr>
+                <td><strong>sitemap.xml</strong></td>
+                <td style="font-family: var(--font-mono); font-weight: 600;">5점</td>
+                <td>존재 여부, 유효성 및 콘텐츠 URL 포함</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="prose">
+          <h2>등급 체계</h2>
+        </div>
+
+        <div class="table-container" style="margin: var(--space-xl) 0;">
+          <table class="scoring-table" id="gradeTable"></table>
+        </div>
+
+        <div class="prose">
+          <h2>제약사항</h2>
+          <p>각 기관은 상급기관의 보안 지침 또는 자체 정보보안 정책에 따라 웹사이트 설정이 제한될 수 있습니다. 예를 들어, 국가정보원의 보안 가이드라인, 상위 부처의 일괄 보안 정책, 기관 자체 정보보호 규정 등으로 인해 robots.txt나 크롤링 정책을 기관 단독으로 변경하기 어려운 경우가 있습니다.</p>
+          <p>본 평가는 이러한 제약을 비난하려는 것이 아니라, 현황을 파악하고 개선 논의의 출발점을 제공하기 위한 것입니다.</p>
+
+          <h2>분석 방법</h2>
+          <p>분석은 아래 과정을 거쳐 수행됩니다:</p>
+          <ol>
+            <li>대상 기관 웹사이트의 robots.txt, llms.txt, sitemap.xml 수집</li>
+            <li>주요 콘텐츠 경로 파악 (보도자료, 정책자료, 공지사항 등)</li>
+            <li>메타데이터 및 구조화된 데이터 점검</li>
+            <li>기술적 접근성 테스트 (HTTPS, 응답 속도, 렌더링 방식 등)</li>
+            <li>스코어링 기준에 따른 점수 산정 및 등급 부여</li>
+            <li>문제사항 코드 생성 및 개선 권고문 작성</li>
+          </ol>
+
+          <h2>기여 방법</h2>
+          <p>이 프로젝트는 오픈소스로 운영됩니다. 다음과 같은 방법으로 기여할 수 있습니다:</p>
+          <ul>
+            <li><strong>오류 제보</strong>: 분석 결과에 오류가 있다면 GitHub Issues를 통해 알려주세요.</li>
+            <li><strong>데이터 추가</strong>: 아직 분석되지 않은 기관의 데이터를 추가해 주세요.</li>
+            <li><strong>기능 개선</strong>: 웹사이트 기능이나 스코어링 모델 개선 제안을 환영합니다.</li>
+            <li><strong>홍보</strong>: 이 프로젝트를 알려주시면 더 많은 기관이 개선에 참여할 수 있습니다.</li>
+          </ul>
+          <p><a href="https://github.com/ffee21/are-we-open" target="_blank" rel="noopener" style="text-decoration:underline;">GitHub 저장소 바로가기</a></p>
+
+          <h2>데이터 접근</h2>
+          <p>분석 결과 데이터는 누구나 자유롭게 활용할 수 있습니다:</p>
+          <ul>
+            <li><a href="data/results.json" style="text-decoration:underline;">결과 JSON</a> — 전체 분석 데이터</li>
+            <li><a href="data/summary_scores.csv" style="text-decoration:underline;">점수 CSV</a> — 기관별 점수 요약</li>
+            <li><a href="data/issue_stats.csv" style="text-decoration:underline;">문제 통계 CSV</a> — 문제사항 빈도 통계</li>
+          </ul>
+        </div>
+
+        <div class="disclaimer" style="margin-top: var(--space-2xl);">
+          <p><strong>Disclaimer</strong></p>
+          <p>본 웹사이트는 개인 프로젝트로 운영되며, 정부 공식 입장과 무관합니다. 분석 결과는 자동화된 도구와 수작업 검토를 병행하여 생성되나, 정확성을 완전히 보장하지 않습니다. 오류를 발견하신 경우 GitHub Issues를 통해 알려주시면 확인 후 수정하겠습니다.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="footer"></div>
+
+  <script src="js/app.js"></script>
+  <script>
+    App.initPage('about', function() {
+      // Build grade table
+      var table = document.getElementById('gradeTable');
+      var thead = document.createElement('thead');
+      var hRow = document.createElement('tr');
+      ['등급', '점수 범위', '의미'].forEach(function(h) {
+        var th = document.createElement('th');
+        th.textContent = h;
+        hRow.appendChild(th);
+      });
+      thead.appendChild(hRow);
+      table.appendChild(thead);
+
+      var tbody = document.createElement('tbody');
+      var grades = [
+        { grade: 'A+', range: '90-100', meaning: 'LLM 매우 친화적' },
+        { grade: 'A', range: '80-89', meaning: 'LLM 친화적' },
+        { grade: 'B+', range: '70-79', meaning: '양호, 개선 여지 있음' },
+        { grade: 'B', range: '60-69', meaning: '보통' },
+        { grade: 'C', range: '40-59', meaning: '미흡, 개선 필요' },
+        { grade: 'D', range: '20-39', meaning: '매우 미흡' },
+        { grade: 'F', range: '0-19', meaning: 'LLM 접근 사실상 불가' }
+      ];
+      grades.forEach(function(g) {
+        var tr = document.createElement('tr');
+        var tdGrade = document.createElement('td');
+        var badge = document.createElement('span');
+        badge.className = 'grade-badge grade-badge-sm ' + App.getGradeClass(g.grade);
+        badge.textContent = g.grade;
+        tdGrade.appendChild(badge);
+        var tdRange = document.createElement('td');
+        tdRange.style.fontFamily = 'var(--font-mono)';
+        tdRange.textContent = g.range;
+        var tdMeaning = document.createElement('td');
+        tdMeaning.textContent = g.meaning;
+        tr.appendChild(tdGrade);
+        tr.appendChild(tdRange);
+        tr.appendChild(tdMeaning);
+        tbody.appendChild(tr);
+      });
+      table.appendChild(tbody);
+    });
+  </script>
+</body>
+</html>

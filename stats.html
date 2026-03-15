@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>통계 — Are We Open?</title>
+  <meta name="description" content="대한민국 공공 웹사이트 LLM 친화성 종합 통계. 카테고리별 평균, 문제사항 빈도 등.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="nav"></div>
+  <main>
+    <section class="section" style="padding-top: var(--space-2xl);">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">종합 통계</h2>
+          <p class="section-desc">전체 분석 결과를 다양한 관점에서 살펴봅니다</p>
+        </div>
+
+        <!-- Overview stats -->
+        <div class="stats-grid" id="overviewStats"></div>
+
+        <!-- Category averages -->
+        <div style="margin-top: var(--space-3xl);">
+          <h3 style="font-family: var(--font-display); font-size: 1.25rem; color: var(--navy); margin-bottom: var(--space-lg);">카테고리별 평균 점수</h3>
+          <div class="card" id="categoryAvgs" style="max-width: 720px;"></div>
+        </div>
+
+        <!-- Issue frequency -->
+        <div style="margin-top: var(--space-3xl);">
+          <h3 style="font-family: var(--font-display); font-size: 1.25rem; color: var(--navy); margin-bottom: var(--space-lg);">가장 흔한 문제 TOP 10</h3>
+          <div class="table-container" id="issueFreq"></div>
+        </div>
+
+        <!-- llms.txt / sitemap adoption -->
+        <div style="margin-top: var(--space-3xl);">
+          <h3 style="font-family: var(--font-display); font-size: 1.25rem; color: var(--navy); margin-bottom: var(--space-lg);">주요 지표 채택률</h3>
+          <div class="stats-grid" id="adoptionStats"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="footer"></div>
+
+  <script src="js/app.js"></script>
+  <script>
+    App.initPage('stats', function(data) {
+      var orgs = data.organizations;
+      var stats = App.calcStats(orgs);
+
+      // Overview stats
+      var overviewEl = document.getElementById('overviewStats');
+      var overviewItems = [
+        { value: stats.avg + '점', label: '전체 평균', sub: '100점 만점' },
+        { value: stats.count + '개', label: '분석 기관', sub: '중앙부처' },
+        { value: stats.totalIssues + '건', label: '전체 문제', sub: '모든 심각도 포함' },
+        { value: stats.criticals + '건', label: 'Critical 문제', sub: '즉시 개선 필요' }
+      ];
+      overviewItems.forEach(function(item) {
+        var card = document.createElement('div');
+        card.className = 'card stat-card';
+        var val = document.createElement('div');
+        val.className = 'stat-value';
+        val.textContent = item.value;
+        var lab = document.createElement('div');
+        lab.className = 'stat-label';
+        lab.textContent = item.label;
+        var sub = document.createElement('div');
+        sub.className = 'stat-sub';
+        sub.textContent = item.sub;
+        card.appendChild(val);
+        card.appendChild(lab);
+        card.appendChild(sub);
+        overviewEl.appendChild(card);
+      });
+
+      // Category averages
+      var catEl = document.getElementById('categoryAvgs');
+      Object.keys(App.CATEGORIES).forEach(function(ck) {
+        var catInfo = App.CATEGORIES[ck];
+        var total = 0;
+        orgs.forEach(function(o) {
+          if (o.scores.categories[ck]) total += o.scores.categories[ck].score;
+        });
+        var avg = total / orgs.length;
+        var pct = (avg / catInfo.max) * 100;
+
+        var row = document.createElement('div');
+        row.className = 'score-bar-container';
+        row.style.marginBottom = 'var(--space-md)';
+
+        var label = document.createElement('span');
+        label.className = 'score-bar-label';
+        label.textContent = catInfo.name;
+
+        var track = document.createElement('div');
+        track.className = 'score-bar-track';
+        var fill = document.createElement('div');
+        fill.className = 'score-bar-fill';
+        fill.style.width = pct + '%';
+        var grade = App.gradeFromScore(pct);
+        fill.style.background = App.getGradeColor(grade);
+        track.appendChild(fill);
+
+        var val = document.createElement('span');
+        val.className = 'score-bar-value';
+        val.textContent = avg.toFixed(1) + ' / ' + catInfo.max;
+
+        row.appendChild(label);
+        row.appendChild(track);
+        row.appendChild(val);
+        catEl.appendChild(row);
+      });
+
+      // Issue frequency
+      var issueCounts = {};
+      orgs.forEach(function(o) {
+        (o.issues || []).forEach(function(issue) {
+          var key = issue.code;
+          if (!issueCounts[key]) {
+            issueCounts[key] = { code: key, severity: issue.severity, desc: issue.description, count: 0 };
+          }
+          issueCounts[key].count++;
+        });
+      });
+      var issueList = Object.values(issueCounts).sort(function(a, b) { return b.count - a.count; }).slice(0, 10);
+
+      var freqEl = document.getElementById('issueFreq');
+      var table = document.createElement('table');
+      var thead = document.createElement('thead');
+      var hRow = document.createElement('tr');
+      ['코드', '심각도', '설명', '기관 수', '비율'].forEach(function(h) {
+        var th = document.createElement('th');
+        th.textContent = h;
+        hRow.appendChild(th);
+      });
+      thead.appendChild(hRow);
+      table.appendChild(thead);
+
+      var tbody = document.createElement('tbody');
+      issueList.forEach(function(issue) {
+        var tr = document.createElement('tr');
+
+        var tdCode = document.createElement('td');
+        tdCode.style.fontFamily = 'var(--font-mono)';
+        tdCode.style.fontSize = '0.8rem';
+        tdCode.textContent = issue.code;
+
+        var tdSev = document.createElement('td');
+        var badge = document.createElement('span');
+        badge.className = 'severity-badge severity-' + issue.severity;
+        badge.textContent = App.SEVERITY_LABELS[issue.severity] || issue.severity;
+        tdSev.appendChild(badge);
+
+        var tdDesc = document.createElement('td');
+        tdDesc.style.whiteSpace = 'normal';
+        tdDesc.style.maxWidth = '400px';
+        tdDesc.textContent = issue.desc;
+
+        var tdCount = document.createElement('td');
+        tdCount.style.fontFamily = 'var(--font-mono)';
+        tdCount.style.fontWeight = '600';
+        tdCount.textContent = issue.count;
+
+        var tdPct = document.createElement('td');
+        tdPct.style.fontFamily = 'var(--font-mono)';
+        tdPct.textContent = Math.round(issue.count / orgs.length * 100) + '%';
+
+        tr.appendChild(tdCode);
+        tr.appendChild(tdSev);
+        tr.appendChild(tdDesc);
+        tr.appendChild(tdCount);
+        tr.appendChild(tdPct);
+        tbody.appendChild(tr);
+      });
+      table.appendChild(tbody);
+      freqEl.appendChild(table);
+
+      // Adoption stats
+      var adoptionEl = document.getElementById('adoptionStats');
+      var llmsCount = orgs.filter(function(o) { return o.llms_txt && o.llms_txt.exists; }).length;
+      var sitemapCount = orgs.filter(function(o) { return o.sitemap_xml && o.sitemap_xml.exists; }).length;
+      var robotsCount = orgs.filter(function(o) { return o.robots_txt && o.robots_txt.exists; }).length;
+      var httpsCount = orgs.filter(function(o) { return o.technical && o.technical.https; }).length;
+      var ssrCount = orgs.filter(function(o) { return o.technical && o.technical.primary_rendering === 'ssr'; }).length;
+
+      var adoptionItems = [
+        { value: Math.round(robotsCount / orgs.length * 100) + '%', label: 'robots.txt 보유', sub: robotsCount + ' / ' + orgs.length },
+        { value: Math.round(sitemapCount / orgs.length * 100) + '%', label: 'sitemap.xml 보유', sub: sitemapCount + ' / ' + orgs.length },
+        { value: Math.round(llmsCount / orgs.length * 100) + '%', label: 'llms.txt 보유', sub: llmsCount + ' / ' + orgs.length },
+        { value: Math.round(httpsCount / orgs.length * 100) + '%', label: 'HTTPS 적용', sub: httpsCount + ' / ' + orgs.length },
+        { value: Math.round(ssrCount / orgs.length * 100) + '%', label: 'SSR 렌더링', sub: ssrCount + ' / ' + orgs.length }
+      ];
+
+      adoptionItems.forEach(function(item) {
+        var card = document.createElement('div');
+        card.className = 'card stat-card';
+        var val = document.createElement('div');
+        val.className = 'stat-value';
+        val.textContent = item.value;
+        var lab = document.createElement('div');
+        lab.className = 'stat-label';
+        lab.textContent = item.label;
+        var sub = document.createElement('div');
+        sub.className = 'stat-sub';
+        sub.textContent = item.sub;
+        card.appendChild(val);
+        card.appendChild(lab);
+        card.appendChild(sub);
+        adoptionEl.appendChild(card);
+      });
+    });
+  </script>
+</body>
+</html>
