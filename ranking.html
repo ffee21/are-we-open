@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>순위표 — Are We Open?</title>
+  <meta name="description" content="대한민국 공공 웹사이트 LLM 친화성 순위표. 기관별 점수, 등급, 카테고리별 세부 점수를 확인하세요.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="nav"></div>
+  <main>
+    <section class="section" style="padding-top: var(--space-2xl);">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">순위표</h2>
+          <p class="section-desc">전체 기관의 LLM 친화성 점수와 등급을 비교합니다</p>
+        </div>
+
+        <div class="toolbar" id="toolbar">
+          <input type="text" class="search-input" id="searchInput" placeholder="기관명 검색...">
+          <div class="filter-group" id="gradeFilter"></div>
+        </div>
+
+        <div class="table-container" id="rankingTable">
+          <div class="loading">데이터 로딩 중</div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="footer"></div>
+
+  <script src="js/app.js"></script>
+  <script>
+    App.initPage('ranking', function(data) {
+      var orgs = data.organizations;
+      var sortKey = 'total';
+      var sortDir = -1;
+      var searchTerm = '';
+      var gradeFilter = null;
+
+      // Build grade filter buttons
+      var filterContainer = document.getElementById('gradeFilter');
+      var allBtn = document.createElement('button');
+      allBtn.className = 'filter-btn active';
+      allBtn.textContent = '전체';
+      allBtn.addEventListener('click', function() { gradeFilter = null; applyFilter(); });
+      filterContainer.appendChild(allBtn);
+
+      ['A+', 'A', 'B+', 'B', 'C', 'D', 'F'].forEach(function(g) {
+        var btn = document.createElement('button');
+        btn.className = 'filter-btn';
+        btn.textContent = g;
+        btn.addEventListener('click', function() { gradeFilter = g; applyFilter(); });
+        filterContainer.appendChild(btn);
+      });
+
+      // Search
+      document.getElementById('searchInput').addEventListener('input', function(e) {
+        searchTerm = e.target.value.toLowerCase();
+        renderTable();
+      });
+
+      function applyFilter() {
+        var btns = filterContainer.querySelectorAll('.filter-btn');
+        btns.forEach(function(b) { b.classList.remove('active'); });
+        if (gradeFilter) {
+          btns.forEach(function(b) { if (b.textContent === gradeFilter) b.classList.add('active'); });
+        } else {
+          btns[0].classList.add('active');
+        }
+        renderTable();
+      }
+
+      function getFilteredOrgs() {
+        var filtered = orgs;
+        if (gradeFilter) {
+          filtered = filtered.filter(function(o) { return o.scores.grade === gradeFilter; });
+        }
+        if (searchTerm) {
+          filtered = filtered.filter(function(o) {
+            return o.name.toLowerCase().indexOf(searchTerm) !== -1 ||
+                   o.name_en.toLowerCase().indexOf(searchTerm) !== -1 ||
+                   o.org_id.toLowerCase().indexOf(searchTerm) !== -1;
+          });
+        }
+        return filtered;
+      }
+
+      function sortOrgs(list) {
+        return list.slice().sort(function(a, b) {
+          var va, vb;
+          if (sortKey === 'total') { va = a.scores.total; vb = b.scores.total; }
+          else if (sortKey === 'name') { va = a.name; vb = b.name; }
+          else if (sortKey === 'grade') { va = a.scores.total; vb = b.scores.total; }
+          else {
+            va = a.scores.categories[sortKey] ? a.scores.categories[sortKey].score : 0;
+            vb = b.scores.categories[sortKey] ? b.scores.categories[sortKey].score : 0;
+          }
+          if (typeof va === 'string') return sortDir * va.localeCompare(vb);
+          return sortDir * (va - vb);
+        });
+      }
+
+      function setSortKey(key) {
+        if (sortKey === key) { sortDir *= -1; } else { sortKey = key; sortDir = -1; }
+        renderTable();
+      }
+
+      function renderTable() {
+        var filtered = sortOrgs(getFilteredOrgs());
+        var container = document.getElementById('rankingTable');
+        container.textContent = '';
+
+        if (filtered.length === 0) {
+          var empty = document.createElement('div');
+          empty.className = 'empty-state';
+          var p = document.createElement('p');
+          p.textContent = '해당하는 기관이 없습니다.';
+          empty.appendChild(p);
+          container.appendChild(empty);
+          return;
+        }
+
+        var table = document.createElement('table');
+        var thead = document.createElement('thead');
+        var headRow = document.createElement('tr');
+
+        var columns = [
+          { key: null, label: '#', width: '50px' },
+          { key: 'name', label: '기관명', width: null },
+          { key: 'grade', label: '등급', width: '60px' },
+          { key: 'total', label: '점수', width: '70px' },
+          { key: 'robots_txt', label: 'robots.txt', width: '80px' },
+          { key: 'content_accessibility', label: '콘텐츠', width: '80px' },
+          { key: 'structured_data', label: '구조화', width: '80px' },
+          { key: 'technical_accessibility', label: '기술', width: '70px' },
+          { key: 'llms_txt', label: 'llms.txt', width: '70px' },
+          { key: 'sitemap_xml', label: 'sitemap', width: '70px' },
+          { key: null, label: '문제', width: '100px' }
+        ];
+
+        columns.forEach(function(col) {
+          var th = document.createElement('th');
+          th.textContent = col.label;
+          if (col.width) th.style.width = col.width;
+          if (col.key) {
+            th.style.cursor = 'pointer';
+            if (sortKey === col.key) {
+              th.classList.add('sorted');
+              var icon = document.createElement('span');
+              icon.className = 'sort-icon';
+              icon.textContent = sortDir === -1 ? '\u25BC' : '\u25B2';
+              th.appendChild(icon);
+            }
+            th.addEventListener('click', (function(k) { return function() { setSortKey(k); }; })(col.key));
+          }
+          headRow.appendChild(th);
+        });
+
+        thead.appendChild(headRow);
+        table.appendChild(thead);
+
+        var tbody = document.createElement('tbody');
+        var globalRanks = {};
+        orgs.slice().sort(function(a,b) { return b.scores.total - a.scores.total; })
+          .forEach(function(o, i) { globalRanks[o.org_id] = i + 1; });
+
+        filtered.forEach(function(org) {
+          var tr = document.createElement('tr');
+          tr.style.cursor = 'pointer';
+          tr.addEventListener('click', function() {
+            window.location.href = 'org.html?id=' + encodeURIComponent(org.org_id);
+          });
+
+          // Rank
+          var tdR = document.createElement('td');
+          tdR.style.cssText = 'color:var(--text-tertiary);font-family:var(--font-mono);font-size:0.85rem';
+          tdR.textContent = globalRanks[org.org_id];
+          tr.appendChild(tdR);
+
+          // Name
+          var tdN = document.createElement('td');
+          tdN.className = 'td-name';
+          var link = document.createElement('a');
+          link.href = 'org.html?id=' + encodeURIComponent(org.org_id);
+          link.textContent = org.name;
+          var en = document.createElement('span');
+          en.className = 'name-en';
+          en.textContent = org.name_en;
+          link.appendChild(en);
+          tdN.appendChild(link);
+          tr.appendChild(tdN);
+
+          // Grade
+          var tdG = document.createElement('td');
+          var badge = document.createElement('span');
+          badge.className = 'grade-badge grade-badge-sm ' + App.getGradeClass(org.scores.grade);
+          badge.textContent = org.scores.grade;
+          tdG.appendChild(badge);
+          tr.appendChild(tdG);
+
+          // Total score
+          var tdS = document.createElement('td');
+          tdS.className = 'td-score';
+          tdS.textContent = org.scores.total;
+          tr.appendChild(tdS);
+
+          // Category scores
+          var catKeys = ['robots_txt', 'content_accessibility', 'structured_data', 'technical_accessibility', 'llms_txt', 'sitemap_xml'];
+          catKeys.forEach(function(ck) {
+            var td = document.createElement('td');
+            td.style.cssText = 'font-family:var(--font-mono);font-size:0.85rem';
+            var cat = org.scores.categories[ck];
+            if (cat) {
+              td.textContent = cat.score + '/' + cat.max;
+              var pct = cat.score / cat.max;
+              if (pct >= 0.8) td.style.color = 'var(--jade)';
+              else if (pct >= 0.5) td.style.color = 'var(--text-secondary)';
+              else if (pct >= 0.2) td.style.color = 'var(--gold)';
+              else td.style.color = 'var(--vermillion)';
+            } else {
+              td.textContent = '-';
+            }
+            tr.appendChild(td);
+          });
+
+          // Issues
+          var tdI = document.createElement('td');
+          var counts = { critical: 0, major: 0, minor: 0, info: 0 };
+          (org.issues || []).forEach(function(issue) {
+            counts[issue.severity] = (counts[issue.severity] || 0) + 1;
+          });
+          var chips = document.createElement('div');
+          chips.className = 'issue-chips';
+          ['critical', 'major', 'minor', 'info'].forEach(function(sev) {
+            if (counts[sev] > 0) {
+              var chip = document.createElement('span');
+              chip.className = 'issue-chip severity-' + sev;
+              chip.textContent = counts[sev];
+              chips.appendChild(chip);
+            }
+          });
+          tdI.appendChild(chips);
+          tr.appendChild(tdI);
+
+          tbody.appendChild(tr);
+        });
+
+        table.appendChild(tbody);
+        container.appendChild(table);
+      }
+
+      renderTable();
+    });
+  </script>
+</body>
+</html>

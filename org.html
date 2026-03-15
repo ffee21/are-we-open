@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>기관 상세 — Are We Open?</title>
+  <meta name="description" content="기관별 LLM 친화성 분석 상세 결과">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="nav"></div>
+  <main>
+    <div class="container">
+      <a href="ranking.html" class="back-link">← 순위표로 돌아가기</a>
+      <div id="orgContent">
+        <div class="loading">데이터 로딩 중</div>
+      </div>
+    </div>
+  </main>
+  <div id="footer"></div>
+
+  <script src="js/app.js"></script>
+  <script>
+    App.initPage('ranking', function(data) {
+      var orgId = App.getParam('id');
+      var org = data.organizations.find(function(o) { return o.org_id === orgId; });
+      var root = document.getElementById('orgContent');
+
+      if (!org) {
+        root.textContent = '';
+        var empty = document.createElement('div');
+        empty.className = 'empty-state';
+        var p = document.createElement('p');
+        p.textContent = '해당 기관을 찾을 수 없습니다.';
+        empty.appendChild(p);
+        root.appendChild(empty);
+        return;
+      }
+
+      document.title = org.name + ' — Are We Open?';
+      root.textContent = '';
+
+      // === Header ===
+      var header = document.createElement('div');
+      header.className = 'org-header';
+
+      var info = document.createElement('div');
+      info.className = 'org-header-info';
+      var h1 = document.createElement('h1');
+      h1.textContent = org.name;
+      info.appendChild(h1);
+
+      var meta = document.createElement('div');
+      meta.className = 'org-meta';
+      var metaItems = [
+        { label: org.name_en },
+        { label: App.orgTypeLabel(org.org_type) },
+        { label: '분석일: ' + org.scan_date }
+      ];
+      metaItems.forEach(function(m) {
+        var span = document.createElement('span');
+        span.textContent = m.label;
+        meta.appendChild(span);
+      });
+      info.appendChild(meta);
+
+      var urlLink = document.createElement('a');
+      urlLink.href = org.url;
+      urlLink.target = '_blank';
+      urlLink.rel = 'noopener';
+      urlLink.textContent = org.url;
+      urlLink.style.cssText = 'display:block;margin-top:var(--space-sm);font-size:0.85rem;color:var(--text-tertiary)';
+      info.appendChild(urlLink);
+
+      header.appendChild(info);
+
+      // Score summary
+      var scoreSummary = document.createElement('div');
+      scoreSummary.className = 'org-score-summary';
+
+      var totalDiv = document.createElement('div');
+      totalDiv.className = 'org-total-score';
+      var scoreNum = document.createElement('div');
+      scoreNum.className = 'score-number';
+      scoreNum.textContent = org.scores.total;
+      var scoreMax = document.createElement('div');
+      scoreMax.className = 'score-max';
+      scoreMax.textContent = '/ 100';
+      totalDiv.appendChild(scoreNum);
+      totalDiv.appendChild(scoreMax);
+      scoreSummary.appendChild(totalDiv);
+
+      var badge = document.createElement('span');
+      badge.className = 'grade-badge grade-badge-xl ' + App.getGradeClass(org.scores.grade);
+      badge.textContent = org.scores.grade;
+      scoreSummary.appendChild(badge);
+
+      header.appendChild(scoreSummary);
+      root.appendChild(header);
+
+      // === Tabs ===
+      var tabData = [
+        { id: 'scores', label: '점수 상세' },
+        { id: 'issues', label: '문제사항 (' + (org.issues || []).length + ')' },
+        { id: 'crawlers', label: '크롤러 현황' },
+        { id: 'suggestion', label: '개선 제안' }
+      ];
+
+      var tabsDiv = document.createElement('div');
+      tabsDiv.className = 'tabs';
+      var panels = {};
+
+      tabData.forEach(function(t, i) {
+        var btn = document.createElement('button');
+        btn.className = 'tab' + (i === 0 ? ' active' : '');
+        btn.textContent = t.label;
+        btn.setAttribute('data-tab', t.id);
+        btn.addEventListener('click', function() {
+          tabsDiv.querySelectorAll('.tab').forEach(function(b) { b.classList.remove('active'); });
+          btn.classList.add('active');
+          Object.values(panels).forEach(function(p) { p.style.display = 'none'; });
+          panels[t.id].style.display = 'block';
+        });
+        tabsDiv.appendChild(btn);
+
+        var panel = document.createElement('div');
+        panel.className = 'tab-content';
+        panel.style.display = i === 0 ? 'block' : 'none';
+        panels[t.id] = panel;
+      });
+
+      root.appendChild(tabsDiv);
+
+      // === Tab: Scores ===
+      var scoresPanel = panels.scores;
+      var catGrid = document.createElement('div');
+      catGrid.className = 'category-scores';
+
+      Object.keys(App.CATEGORIES).forEach(function(ck) {
+        var catInfo = App.CATEGORIES[ck];
+        var catScore = org.scores.categories[ck];
+        if (!catScore) return;
+
+        var card = document.createElement('div');
+        card.className = 'category-score-card';
+
+        var name = document.createElement('span');
+        name.className = 'cat-name';
+        name.textContent = catInfo.name;
+
+        var barTrack = document.createElement('div');
+        barTrack.className = 'cat-bar';
+        var barFill = document.createElement('div');
+        barFill.className = 'cat-bar-fill';
+        var pct = (catScore.score / catScore.max) * 100;
+        barFill.style.width = pct + '%';
+        var grade = App.gradeFromScore(pct);
+        barFill.style.background = App.getGradeColor(grade);
+        barTrack.appendChild(barFill);
+
+        var scoreText = document.createElement('span');
+        scoreText.className = 'cat-score';
+        scoreText.textContent = catScore.score + ' / ' + catScore.max;
+
+        card.appendChild(name);
+        card.appendChild(barTrack);
+        card.appendChild(scoreText);
+        catGrid.appendChild(card);
+      });
+      scoresPanel.appendChild(catGrid);
+
+      // Item-level scores table
+      var itemTitle = document.createElement('h3');
+      itemTitle.style.cssText = 'margin: var(--space-xl) 0 var(--space-md); font-size: 1rem;';
+      itemTitle.textContent = '항목별 점수';
+      scoresPanel.appendChild(itemTitle);
+
+      var itemsTable = document.createElement('div');
+      itemsTable.className = 'table-container';
+      var tbl = document.createElement('table');
+      var tHead = document.createElement('thead');
+      var hRow = document.createElement('tr');
+      ['항목 코드', '점수', '비율'].forEach(function(h) {
+        var th = document.createElement('th');
+        th.textContent = h;
+        hRow.appendChild(th);
+      });
+      tHead.appendChild(hRow);
+      tbl.appendChild(tHead);
+
+      var tBody = document.createElement('tbody');
+      var itemMax = {
+        'RT-01':5,'RT-02':3,'RT-03':7,'RT-04':5,'RT-05':5,
+        'CA-01':7,'CA-02':5,'CA-03':5,'CA-04':4,'CA-05':4,
+        'SD-01':4,'SD-02':4,'SD-03':4,'SD-04':5,'SD-05':3,
+        'TA-01':3,'TA-02':4,'TA-03':4,'TA-04':4,
+        'LT-01':4,'LT-02':3,'LT-03':3,
+        'SM-01':2,'SM-02':3
+      };
+      Object.keys(itemMax).forEach(function(code) {
+        var val = org.scores.items[code];
+        if (val === undefined) val = 0;
+        var max = itemMax[code];
+        var pct = Math.round((val / max) * 100);
+        var tr = document.createElement('tr');
+
+        var tdCode = document.createElement('td');
+        tdCode.style.fontFamily = 'var(--font-mono)';
+        tdCode.style.fontSize = '0.85rem';
+        tdCode.textContent = code;
+
+        var tdScore = document.createElement('td');
+        tdScore.style.fontFamily = 'var(--font-mono)';
+        tdScore.textContent = val + ' / ' + max;
+
+        var tdBar = document.createElement('td');
+        tdBar.style.width = '200px';
+        var bar = document.createElement('div');
+        bar.className = 'mini-bar';
+        bar.style.width = '100%';
+        var fill = document.createElement('div');
+        fill.className = 'mini-bar-fill';
+        fill.style.width = pct + '%';
+        fill.style.background = pct >= 80 ? 'var(--jade)' : pct >= 40 ? 'var(--gold)' : 'var(--vermillion)';
+        bar.appendChild(fill);
+        tdBar.appendChild(bar);
+
+        tr.appendChild(tdCode);
+        tr.appendChild(tdScore);
+        tr.appendChild(tdBar);
+        tBody.appendChild(tr);
+      });
+      tbl.appendChild(tBody);
+      itemsTable.appendChild(tbl);
+      scoresPanel.appendChild(itemsTable);
+
+      root.appendChild(scoresPanel);
+
+      // === Tab: Issues ===
+      var issuesPanel = panels.issues;
+      if (!org.issues || org.issues.length === 0) {
+        var noIssue = document.createElement('div');
+        noIssue.className = 'empty-state';
+        var np = document.createElement('p');
+        np.textContent = '발견된 문제사항이 없습니다.';
+        noIssue.appendChild(np);
+        issuesPanel.appendChild(noIssue);
+      } else {
+        org.issues.forEach(function(issue) {
+          var item = document.createElement('div');
+          item.className = 'issue-item';
+
+          var left = document.createElement('div');
+          left.style.minWidth = '140px';
+
+          var codeEl = document.createElement('div');
+          codeEl.className = 'issue-code';
+          codeEl.textContent = issue.code;
+          left.appendChild(codeEl);
+
+          var sevBadge = document.createElement('span');
+          sevBadge.className = 'severity-badge severity-' + issue.severity;
+          sevBadge.textContent = App.SEVERITY_LABELS[issue.severity] || issue.severity;
+          left.appendChild(sevBadge);
+
+          var right = document.createElement('div');
+          right.className = 'issue-content';
+          var desc = document.createElement('p');
+          desc.textContent = issue.description;
+          right.appendChild(desc);
+          if (issue.detail) {
+            var detail = document.createElement('p');
+            detail.className = 'issue-detail';
+            detail.textContent = issue.detail;
+            right.appendChild(detail);
+          }
+
+          item.appendChild(left);
+          item.appendChild(right);
+          issuesPanel.appendChild(item);
+        });
+      }
+      root.appendChild(issuesPanel);
+
+      // === Tab: Crawlers ===
+      var crawlerPanel = panels.crawlers;
+      if (org.robots_txt && org.robots_txt.crawler_rules) {
+        var crawlerTitle = document.createElement('h3');
+        crawlerTitle.style.cssText = 'margin-bottom: var(--space-md); font-size: 1rem;';
+        crawlerTitle.textContent = '크롤러별 접근 상태';
+        crawlerPanel.appendChild(crawlerTitle);
+
+        var robotsInfo = document.createElement('div');
+        robotsInfo.style.cssText = 'margin-bottom: var(--space-lg); font-size: 0.85rem; color: var(--text-secondary);';
+        robotsInfo.textContent = 'robots.txt 존재: ' + (org.robots_txt.exists ? '예' : '아니오')
+          + ' | 문법 유효: ' + (org.robots_txt.syntax_valid ? '예' : '아니오');
+        crawlerPanel.appendChild(robotsInfo);
+
+        var grid = document.createElement('div');
+        grid.className = 'crawler-grid';
+        Object.keys(org.robots_txt.crawler_rules).forEach(function(crawler) {
+          var status = org.robots_txt.crawler_rules[crawler];
+          var item = document.createElement('div');
+          item.className = 'crawler-item';
+
+          var dot = document.createElement('div');
+          dot.className = 'crawler-status ' + App.crawlerStatusDot(status);
+
+          var name = document.createElement('span');
+          name.className = 'crawler-name';
+          name.textContent = crawler;
+
+          var label = document.createElement('span');
+          label.style.cssText = 'margin-left: auto; font-size: 0.75rem; color: var(--text-tertiary);';
+          label.textContent = App.crawlerStatusLabel(status);
+
+          item.appendChild(dot);
+          item.appendChild(name);
+          item.appendChild(label);
+          grid.appendChild(item);
+        });
+        crawlerPanel.appendChild(grid);
+      }
+
+      // Metadata summary
+      if (org.metadata) {
+        var metaTitle = document.createElement('h3');
+        metaTitle.style.cssText = 'margin: var(--space-xl) 0 var(--space-md); font-size: 1rem;';
+        metaTitle.textContent = '메타데이터 현황';
+        crawlerPanel.appendChild(metaTitle);
+
+        var metaGrid = document.createElement('div');
+        metaGrid.className = 'crawler-grid';
+        var metaChecks = [
+          { label: 'title 태그', val: org.metadata.has_title },
+          { label: 'title 고유성', val: org.metadata.title_unique_per_page },
+          { label: 'meta description', val: org.metadata.has_meta_description },
+          { label: 'description 고유성', val: org.metadata.meta_description_unique },
+          { label: 'Open Graph', val: org.metadata.has_og_tags },
+          { label: 'schema.org', val: org.metadata.has_schema_org },
+          { label: 'lang 속성', val: org.metadata.has_lang_attribute }
+        ];
+        metaChecks.forEach(function(mc) {
+          var item = document.createElement('div');
+          item.className = 'crawler-item';
+          var dot = document.createElement('div');
+          dot.className = 'crawler-status ' + (mc.val ? 'allowed' : 'blocked');
+          var label = document.createElement('span');
+          label.style.fontSize = '0.85rem';
+          label.textContent = mc.label;
+          item.appendChild(dot);
+          item.appendChild(label);
+          metaGrid.appendChild(item);
+        });
+        crawlerPanel.appendChild(metaGrid);
+      }
+
+      // Technical info
+      if (org.technical) {
+        var techTitle = document.createElement('h3');
+        techTitle.style.cssText = 'margin: var(--space-xl) 0 var(--space-md); font-size: 1rem;';
+        techTitle.textContent = '기술 현황';
+        crawlerPanel.appendChild(techTitle);
+
+        var techGrid = document.createElement('div');
+        techGrid.className = 'crawler-grid';
+        var techChecks = [
+          { label: 'HTTPS', val: org.technical.https },
+          { label: 'TTFB: ' + org.technical.ttfb_ms + 'ms', val: org.technical.ttfb_ms < 3000 },
+          { label: '메인 페이지: ' + org.technical.main_page_status, val: org.technical.main_page_status === 200 },
+          { label: '모바일 대응', val: org.technical.mobile_viewport },
+          { label: '렌더링: ' + (org.technical.primary_rendering || '-').toUpperCase(), val: org.technical.primary_rendering === 'ssr' }
+        ];
+        techChecks.forEach(function(tc) {
+          var item = document.createElement('div');
+          item.className = 'crawler-item';
+          var dot = document.createElement('div');
+          dot.className = 'crawler-status ' + (tc.val ? 'allowed' : 'blocked');
+          var label = document.createElement('span');
+          label.style.fontSize = '0.85rem';
+          label.textContent = tc.label;
+          item.appendChild(dot);
+          item.appendChild(label);
+          techGrid.appendChild(item);
+        });
+        crawlerPanel.appendChild(techGrid);
+      }
+
+      root.appendChild(crawlerPanel);
+
+      // === Tab: Suggestion ===
+      var sugPanel = panels.suggestion;
+
+      if (org.suggested_robots_txt) {
+        var rtTitle = document.createElement('h3');
+        rtTitle.style.cssText = 'margin-bottom: var(--space-md); font-size: 1rem;';
+        rtTitle.textContent = '제안 robots.txt';
+        sugPanel.appendChild(rtTitle);
+
+        var rtBlock = document.createElement('div');
+        rtBlock.className = 'code-block';
+        var rtHeader = document.createElement('div');
+        rtHeader.className = 'code-block-header';
+        var rtFileName = document.createElement('span');
+        rtFileName.className = 'code-block-title';
+        rtFileName.textContent = 'robots.txt';
+        var rtCopy = document.createElement('button');
+        rtCopy.className = 'btn-copy';
+        rtCopy.textContent = '\u2398 복사하기';
+        rtCopy.addEventListener('click', function() {
+          App.copyToClipboard(org.suggested_robots_txt, rtCopy);
+        });
+        rtHeader.appendChild(rtFileName);
+        rtHeader.appendChild(rtCopy);
+        rtBlock.appendChild(rtHeader);
+        var rtPre = document.createElement('pre');
+        rtPre.textContent = org.suggested_robots_txt;
+        rtBlock.appendChild(rtPre);
+        sugPanel.appendChild(rtBlock);
+      }
+
+      if (org.suggested_llms_txt) {
+        var ltTitle = document.createElement('h3');
+        ltTitle.style.cssText = 'margin: var(--space-xl) 0 var(--space-md); font-size: 1rem;';
+        ltTitle.textContent = '제안 llms.txt';
+        sugPanel.appendChild(ltTitle);
+
+        var ltBlock = document.createElement('div');
+        ltBlock.className = 'code-block';
+        var ltHeader = document.createElement('div');
+        ltHeader.className = 'code-block-header';
+        var ltFileName = document.createElement('span');
+        ltFileName.className = 'code-block-title';
+        ltFileName.textContent = 'llms.txt';
+        var ltCopy = document.createElement('button');
+        ltCopy.className = 'btn-copy';
+        ltCopy.textContent = '\u2398 복사하기';
+        ltCopy.addEventListener('click', function() {
+          App.copyToClipboard(org.suggested_llms_txt, ltCopy);
+        });
+        ltHeader.appendChild(ltFileName);
+        ltHeader.appendChild(ltCopy);
+        ltBlock.appendChild(ltHeader);
+        var ltPre = document.createElement('pre');
+        ltPre.textContent = org.suggested_llms_txt;
+        ltBlock.appendChild(ltPre);
+        sugPanel.appendChild(ltBlock);
+      }
+
+      var note = document.createElement('div');
+      note.className = 'info-box info';
+      note.style.marginTop = 'var(--space-xl)';
+      var noteP = document.createElement('p');
+      noteP.textContent = '위 제안은 분석 결과를 기반으로 자동 생성된 것입니다. 기관의 보안 정책과 실제 운영 환경을 고려하여 적절히 수정 후 적용해 주시기 바랍니다.';
+      note.appendChild(noteP);
+      sugPanel.appendChild(note);
+
+      root.appendChild(sugPanel);
+    });
+  </script>
+</body>
+</html>
