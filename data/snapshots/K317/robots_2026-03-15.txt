@@ -1,0 +1,5 @@
+#  ROBOTS.TXT
+User-agent: Googlebot
+Disallow: /user/
+
+Crawl-Delay: 10

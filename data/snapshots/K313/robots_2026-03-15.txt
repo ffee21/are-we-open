@@ -1,0 +1,8 @@
+# robots.txt make by orange communication
+User-agent: *
+Allow:/
+
+
+# Disallow Mgmt page
+User-agent: *
+Disallow:/synergy/

@@ -1,0 +1,4 @@
+User-agent: Googlebot
+Disallow: /user/dept/
+Disallow: /user/customerProposal/
+Allow: /

@@ -9,7 +9,8 @@
     "central_government": 40,
     "local_government": 17,
     "public_institutions": 344,
-    "total": 401
+    "total": 628,
+    "local_basic": 227
   },
   "organizations": [
     {
@@ -4291,6 +4292,1822 @@
       "ministry": "해양수산부",
       "parent_org_name": null,
       "url": "https://www.koem.or.kr"
+    },
+    {
+      "id": "B001",
+      "name": "강남구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L01",
+      "url": ""
+    },
+    {
+      "id": "B002",
+      "name": "강동구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L01",
+      "url": ""
+    },
+    {
+      "id": "B003",
+      "name": "강북구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L01",
+      "url": ""
+    },
+    {
+      "id": "B004",
+      "name": "강서구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L01",
+      "url": ""
+    },
+    {
+      "id": "B005",
+      "name": "관악구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L01",
+      "url": ""
+    },
+    {
+      "id": "B006",
+      "name": "광진구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L01",
+      "url": ""
+    },
+    {
+      "id": "B007",
+      "name": "구로구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L01",
+      "url": ""
+    },
+    {
+      "id": "B008",
+      "name": "금천구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L01",
+      "url": ""
+    },
+    {
+      "id": "B009",
+      "name": "노원구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L01",
+      "url": ""
+    },
+    {
+      "id": "B010",
+      "name": "도봉구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L01",
+      "url": ""
+    },
+    {
+      "id": "B011",
+      "name": "동대문구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L01",
+      "url": ""
+    },
+    {
+      "id": "B012",
+      "name": "동작구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L01",
+      "url": ""
+    },
+    {
+      "id": "B013",
+      "name": "마포구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L01",
+      "url": ""
+    },
+    {
+      "id": "B014",
+      "name": "서대문구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L01",
+      "url": ""
+    },
+    {
+      "id": "B015",
+      "name": "서초구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L01",
+      "url": ""
+    },
+    {
+      "id": "B016",
+      "name": "성동구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L01",
+      "url": ""
+    },
+    {
+      "id": "B017",
+      "name": "성북구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L01",
+      "url": ""
+    },
+    {
+      "id": "B018",
+      "name": "송파구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L01",
+      "url": ""
+    },
+    {
+      "id": "B019",
+      "name": "양천구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L01",
+      "url": ""
+    },
+    {
+      "id": "B020",
+      "name": "영등포구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L01",
+      "url": ""
+    },
+    {
+      "id": "B021",
+      "name": "용산구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L01",
+      "url": ""
+    },
+    {
+      "id": "B022",
+      "name": "은평구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L01",
+      "url": ""
+    },
+    {
+      "id": "B023",
+      "name": "종로구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L01",
+      "url": ""
+    },
+    {
+      "id": "B024",
+      "name": "중구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L01",
+      "url": ""
+    },
+    {
+      "id": "B025",
+      "name": "중랑구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L01",
+      "url": ""
+    },
+    {
+      "id": "B026",
+      "name": "강서구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L02",
+      "url": ""
+    },
+    {
+      "id": "B027",
+      "name": "금정구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L02",
+      "url": ""
+    },
+    {
+      "id": "B028",
+      "name": "기장군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L02",
+      "url": ""
+    },
+    {
+      "id": "B029",
+      "name": "남구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L02",
+      "url": ""
+    },
+    {
+      "id": "B030",
+      "name": "동구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L02",
+      "url": ""
+    },
+    {
+      "id": "B031",
+      "name": "동래구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L02",
+      "url": ""
+    },
+    {
+      "id": "B032",
+      "name": "부산진구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L02",
+      "url": ""
+    },
+    {
+      "id": "B033",
+      "name": "북구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L02",
+      "url": ""
+    },
+    {
+      "id": "B034",
+      "name": "사상구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L02",
+      "url": ""
+    },
+    {
+      "id": "B035",
+      "name": "사하구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L02",
+      "url": ""
+    },
+    {
+      "id": "B036",
+      "name": "서구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L02",
+      "url": ""
+    },
+    {
+      "id": "B037",
+      "name": "수영구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L02",
+      "url": ""
+    },
+    {
+      "id": "B038",
+      "name": "연제구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L02",
+      "url": ""
+    },
+    {
+      "id": "B039",
+      "name": "영도구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L02",
+      "url": ""
+    },
+    {
+      "id": "B040",
+      "name": "중구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L02",
+      "url": ""
+    },
+    {
+      "id": "B041",
+      "name": "해운대구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L02",
+      "url": ""
+    },
+    {
+      "id": "B042",
+      "name": "군위군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L03",
+      "url": ""
+    },
+    {
+      "id": "B043",
+      "name": "남구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L03",
+      "url": ""
+    },
+    {
+      "id": "B044",
+      "name": "달서구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L03",
+      "url": ""
+    },
+    {
+      "id": "B045",
+      "name": "달성군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L03",
+      "url": ""
+    },
+    {
+      "id": "B046",
+      "name": "동구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L03",
+      "url": ""
+    },
+    {
+      "id": "B047",
+      "name": "북구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L03",
+      "url": ""
+    },
+    {
+      "id": "B048",
+      "name": "서구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L03",
+      "url": ""
+    },
+    {
+      "id": "B049",
+      "name": "수성구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L03",
+      "url": ""
+    },
+    {
+      "id": "B050",
+      "name": "중구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L03",
+      "url": ""
+    },
+    {
+      "id": "B051",
+      "name": "강화군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L04",
+      "url": ""
+    },
+    {
+      "id": "B052",
+      "name": "계양구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L04",
+      "url": ""
+    },
+    {
+      "id": "B053",
+      "name": "남동구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L04",
+      "url": ""
+    },
+    {
+      "id": "B054",
+      "name": "동구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L04",
+      "url": ""
+    },
+    {
+      "id": "B055",
+      "name": "미추홀구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L04",
+      "url": ""
+    },
+    {
+      "id": "B056",
+      "name": "부평구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L04",
+      "url": ""
+    },
+    {
+      "id": "B057",
+      "name": "서구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L04",
+      "url": ""
+    },
+    {
+      "id": "B058",
+      "name": "연수구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L04",
+      "url": ""
+    },
+    {
+      "id": "B059",
+      "name": "옹진군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L04",
+      "url": ""
+    },
+    {
+      "id": "B060",
+      "name": "중구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L04",
+      "url": ""
+    },
+    {
+      "id": "B061",
+      "name": "광산구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L05",
+      "url": ""
+    },
+    {
+      "id": "B062",
+      "name": "남구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L05",
+      "url": ""
+    },
+    {
+      "id": "B063",
+      "name": "동구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L05",
+      "url": ""
+    },
+    {
+      "id": "B064",
+      "name": "북구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L05",
+      "url": ""
+    },
+    {
+      "id": "B065",
+      "name": "서구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L05",
+      "url": ""
+    },
+    {
+      "id": "B066",
+      "name": "대덕구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L06",
+      "url": ""
+    },
+    {
+      "id": "B067",
+      "name": "동구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L06",
+      "url": ""
+    },
+    {
+      "id": "B068",
+      "name": "서구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L06",
+      "url": ""
+    },
+    {
+      "id": "B069",
+      "name": "유성구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L06",
+      "url": ""
+    },
+    {
+      "id": "B070",
+      "name": "중구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L06",
+      "url": ""
+    },
+    {
+      "id": "B071",
+      "name": "남구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L07",
+      "url": ""
+    },
+    {
+      "id": "B072",
+      "name": "동구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L07",
+      "url": ""
+    },
+    {
+      "id": "B073",
+      "name": "북구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L07",
+      "url": ""
+    },
+    {
+      "id": "B074",
+      "name": "울주군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L07",
+      "url": ""
+    },
+    {
+      "id": "B075",
+      "name": "중구",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L07",
+      "url": ""
+    },
+    {
+      "id": "B076",
+      "name": "세종특별자치시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L08",
+      "url": ""
+    },
+    {
+      "id": "B077",
+      "name": "가평군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L09",
+      "url": ""
+    },
+    {
+      "id": "B078",
+      "name": "고양시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L09",
+      "url": ""
+    },
+    {
+      "id": "B079",
+      "name": "과천시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L09",
+      "url": ""
+    },
+    {
+      "id": "B080",
+      "name": "광명시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L09",
+      "url": ""
+    },
+    {
+      "id": "B081",
+      "name": "광주시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L09",
+      "url": ""
+    },
+    {
+      "id": "B082",
+      "name": "구리시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L09",
+      "url": ""
+    },
+    {
+      "id": "B083",
+      "name": "군포시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L09",
+      "url": ""
+    },
+    {
+      "id": "B084",
+      "name": "김포시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L09",
+      "url": ""
+    },
+    {
+      "id": "B085",
+      "name": "남양주시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L09",
+      "url": ""
+    },
+    {
+      "id": "B086",
+      "name": "동두천시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L09",
+      "url": ""
+    },
+    {
+      "id": "B087",
+      "name": "부천시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L09",
+      "url": ""
+    },
+    {
+      "id": "B088",
+      "name": "성남시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L09",
+      "url": ""
+    },
+    {
+      "id": "B089",
+      "name": "수원시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L09",
+      "url": ""
+    },
+    {
+      "id": "B090",
+      "name": "시흥시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L09",
+      "url": ""
+    },
+    {
+      "id": "B091",
+      "name": "안산시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L09",
+      "url": ""
+    },
+    {
+      "id": "B092",
+      "name": "안성시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L09",
+      "url": ""
+    },
+    {
+      "id": "B093",
+      "name": "안양시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L09",
+      "url": ""
+    },
+    {
+      "id": "B094",
+      "name": "양주시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L09",
+      "url": ""
+    },
+    {
+      "id": "B095",
+      "name": "양평군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L09",
+      "url": ""
+    },
+    {
+      "id": "B096",
+      "name": "여주시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L09",
+      "url": ""
+    },
+    {
+      "id": "B097",
+      "name": "연천군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L09",
+      "url": ""
+    },
+    {
+      "id": "B098",
+      "name": "오산시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L09",
+      "url": ""
+    },
+    {
+      "id": "B099",
+      "name": "용인시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L09",
+      "url": ""
+    },
+    {
+      "id": "B100",
+      "name": "의왕시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L09",
+      "url": ""
+    },
+    {
+      "id": "B101",
+      "name": "의정부시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L09",
+      "url": ""
+    },
+    {
+      "id": "B102",
+      "name": "이천시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L09",
+      "url": ""
+    },
+    {
+      "id": "B103",
+      "name": "파주시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L09",
+      "url": ""
+    },
+    {
+      "id": "B104",
+      "name": "평택시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L09",
+      "url": ""
+    },
+    {
+      "id": "B105",
+      "name": "포천시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L09",
+      "url": ""
+    },
+    {
+      "id": "B106",
+      "name": "하남시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L09",
+      "url": ""
+    },
+    {
+      "id": "B107",
+      "name": "화성시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L09",
+      "url": ""
+    },
+    {
+      "id": "B108",
+      "name": "강릉시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L10",
+      "url": ""
+    },
+    {
+      "id": "B109",
+      "name": "고성군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L10",
+      "url": ""
+    },
+    {
+      "id": "B110",
+      "name": "동해시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L10",
+      "url": ""
+    },
+    {
+      "id": "B111",
+      "name": "삼척시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L10",
+      "url": ""
+    },
+    {
+      "id": "B112",
+      "name": "속초시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L10",
+      "url": ""
+    },
+    {
+      "id": "B113",
+      "name": "양구군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L10",
+      "url": ""
+    },
+    {
+      "id": "B114",
+      "name": "양양군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L10",
+      "url": ""
+    },
+    {
+      "id": "B115",
+      "name": "영월군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L10",
+      "url": ""
+    },
+    {
+      "id": "B116",
+      "name": "원주시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L10",
+      "url": ""
+    },
+    {
+      "id": "B117",
+      "name": "인제군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L10",
+      "url": ""
+    },
+    {
+      "id": "B118",
+      "name": "정선군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L10",
+      "url": ""
+    },
+    {
+      "id": "B119",
+      "name": "철원군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L10",
+      "url": ""
+    },
+    {
+      "id": "B120",
+      "name": "춘천시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L10",
+      "url": ""
+    },
+    {
+      "id": "B121",
+      "name": "태백시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L10",
+      "url": ""
+    },
+    {
+      "id": "B122",
+      "name": "평창군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L10",
+      "url": ""
+    },
+    {
+      "id": "B123",
+      "name": "홍천군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L10",
+      "url": ""
+    },
+    {
+      "id": "B124",
+      "name": "화천군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L10",
+      "url": ""
+    },
+    {
+      "id": "B125",
+      "name": "횡성군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L10",
+      "url": ""
+    },
+    {
+      "id": "B126",
+      "name": "괴산군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L11",
+      "url": ""
+    },
+    {
+      "id": "B127",
+      "name": "단양군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L11",
+      "url": ""
+    },
+    {
+      "id": "B128",
+      "name": "보은군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L11",
+      "url": ""
+    },
+    {
+      "id": "B129",
+      "name": "영동군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L11",
+      "url": ""
+    },
+    {
+      "id": "B130",
+      "name": "옥천군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L11",
+      "url": ""
+    },
+    {
+      "id": "B131",
+      "name": "음성군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L11",
+      "url": ""
+    },
+    {
+      "id": "B132",
+      "name": "제천시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L11",
+      "url": ""
+    },
+    {
+      "id": "B133",
+      "name": "증평군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L11",
+      "url": ""
+    },
+    {
+      "id": "B134",
+      "name": "진천군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L11",
+      "url": ""
+    },
+    {
+      "id": "B135",
+      "name": "청주시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L11",
+      "url": ""
+    },
+    {
+      "id": "B136",
+      "name": "충주시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L11",
+      "url": ""
+    },
+    {
+      "id": "B137",
+      "name": "계룡시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L12",
+      "url": ""
+    },
+    {
+      "id": "B138",
+      "name": "공주시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L12",
+      "url": ""
+    },
+    {
+      "id": "B139",
+      "name": "금산군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L12",
+      "url": ""
+    },
+    {
+      "id": "B140",
+      "name": "논산시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L12",
+      "url": ""
+    },
+    {
+      "id": "B141",
+      "name": "당진시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L12",
+      "url": ""
+    },
+    {
+      "id": "B142",
+      "name": "보령시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L12",
+      "url": ""
+    },
+    {
+      "id": "B143",
+      "name": "부여군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L12",
+      "url": ""
+    },
+    {
+      "id": "B144",
+      "name": "서산시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L12",
+      "url": ""
+    },
+    {
+      "id": "B145",
+      "name": "서천군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L12",
+      "url": ""
+    },
+    {
+      "id": "B146",
+      "name": "아산시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L12",
+      "url": ""
+    },
+    {
+      "id": "B147",
+      "name": "예산군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L12",
+      "url": ""
+    },
+    {
+      "id": "B148",
+      "name": "천안시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L12",
+      "url": ""
+    },
+    {
+      "id": "B149",
+      "name": "청양군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L12",
+      "url": ""
+    },
+    {
+      "id": "B150",
+      "name": "태안군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L12",
+      "url": ""
+    },
+    {
+      "id": "B151",
+      "name": "홍성군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L12",
+      "url": ""
+    },
+    {
+      "id": "B152",
+      "name": "고창군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L13",
+      "url": ""
+    },
+    {
+      "id": "B153",
+      "name": "군산시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L13",
+      "url": ""
+    },
+    {
+      "id": "B154",
+      "name": "김제시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L13",
+      "url": ""
+    },
+    {
+      "id": "B155",
+      "name": "남원시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L13",
+      "url": ""
+    },
+    {
+      "id": "B156",
+      "name": "무주군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L13",
+      "url": ""
+    },
+    {
+      "id": "B157",
+      "name": "부안군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L13",
+      "url": ""
+    },
+    {
+      "id": "B158",
+      "name": "순창군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L13",
+      "url": ""
+    },
+    {
+      "id": "B159",
+      "name": "완주군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L13",
+      "url": ""
+    },
+    {
+      "id": "B160",
+      "name": "익산시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L13",
+      "url": ""
+    },
+    {
+      "id": "B161",
+      "name": "임실군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L13",
+      "url": ""
+    },
+    {
+      "id": "B162",
+      "name": "장수군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L13",
+      "url": ""
+    },
+    {
+      "id": "B163",
+      "name": "전주시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L13",
+      "url": ""
+    },
+    {
+      "id": "B164",
+      "name": "정읍시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L13",
+      "url": ""
+    },
+    {
+      "id": "B165",
+      "name": "진안군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L13",
+      "url": ""
+    },
+    {
+      "id": "B166",
+      "name": "강진군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L14",
+      "url": ""
+    },
+    {
+      "id": "B167",
+      "name": "고흥군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L14",
+      "url": ""
+    },
+    {
+      "id": "B168",
+      "name": "곡성군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L14",
+      "url": ""
+    },
+    {
+      "id": "B169",
+      "name": "광양시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L14",
+      "url": ""
+    },
+    {
+      "id": "B170",
+      "name": "구례군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L14",
+      "url": ""
+    },
+    {
+      "id": "B171",
+      "name": "나주시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L14",
+      "url": ""
+    },
+    {
+      "id": "B172",
+      "name": "담양군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L14",
+      "url": ""
+    },
+    {
+      "id": "B173",
+      "name": "목포시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L14",
+      "url": ""
+    },
+    {
+      "id": "B174",
+      "name": "무안군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L14",
+      "url": ""
+    },
+    {
+      "id": "B175",
+      "name": "보성군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L14",
+      "url": ""
+    },
+    {
+      "id": "B176",
+      "name": "순천시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L14",
+      "url": ""
+    },
+    {
+      "id": "B177",
+      "name": "신안군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L14",
+      "url": ""
+    },
+    {
+      "id": "B178",
+      "name": "여수시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L14",
+      "url": ""
+    },
+    {
+      "id": "B179",
+      "name": "영광군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L14",
+      "url": ""
+    },
+    {
+      "id": "B180",
+      "name": "영암군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L14",
+      "url": ""
+    },
+    {
+      "id": "B181",
+      "name": "완도군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L14",
+      "url": ""
+    },
+    {
+      "id": "B182",
+      "name": "장성군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L14",
+      "url": ""
+    },
+    {
+      "id": "B183",
+      "name": "장흥군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L14",
+      "url": ""
+    },
+    {
+      "id": "B184",
+      "name": "진도군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L14",
+      "url": ""
+    },
+    {
+      "id": "B185",
+      "name": "함평군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L14",
+      "url": ""
+    },
+    {
+      "id": "B186",
+      "name": "해남군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L14",
+      "url": ""
+    },
+    {
+      "id": "B187",
+      "name": "화순군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L14",
+      "url": ""
+    },
+    {
+      "id": "B188",
+      "name": "경산시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L15",
+      "url": ""
+    },
+    {
+      "id": "B189",
+      "name": "경주시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L15",
+      "url": ""
+    },
+    {
+      "id": "B190",
+      "name": "고령군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L15",
+      "url": ""
+    },
+    {
+      "id": "B191",
+      "name": "구미시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L15",
+      "url": ""
+    },
+    {
+      "id": "B192",
+      "name": "김천시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L15",
+      "url": ""
+    },
+    {
+      "id": "B193",
+      "name": "문경시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L15",
+      "url": ""
+    },
+    {
+      "id": "B194",
+      "name": "봉화군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L15",
+      "url": ""
+    },
+    {
+      "id": "B195",
+      "name": "상주시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L15",
+      "url": ""
+    },
+    {
+      "id": "B196",
+      "name": "성주군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L15",
+      "url": ""
+    },
+    {
+      "id": "B197",
+      "name": "안동시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L15",
+      "url": ""
+    },
+    {
+      "id": "B198",
+      "name": "영덕군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L15",
+      "url": ""
+    },
+    {
+      "id": "B199",
+      "name": "영양군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L15",
+      "url": ""
+    },
+    {
+      "id": "B200",
+      "name": "영주시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L15",
+      "url": ""
+    },
+    {
+      "id": "B201",
+      "name": "영천시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L15",
+      "url": ""
+    },
+    {
+      "id": "B202",
+      "name": "예천군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L15",
+      "url": ""
+    },
+    {
+      "id": "B203",
+      "name": "울릉군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L15",
+      "url": ""
+    },
+    {
+      "id": "B204",
+      "name": "울진군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L15",
+      "url": ""
+    },
+    {
+      "id": "B205",
+      "name": "의성군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L15",
+      "url": ""
+    },
+    {
+      "id": "B206",
+      "name": "청도군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L15",
+      "url": ""
+    },
+    {
+      "id": "B207",
+      "name": "청송군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L15",
+      "url": ""
+    },
+    {
+      "id": "B208",
+      "name": "칠곡군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L15",
+      "url": ""
+    },
+    {
+      "id": "B209",
+      "name": "포항시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L15",
+      "url": ""
+    },
+    {
+      "id": "B210",
+      "name": "거제시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L16",
+      "url": ""
+    },
+    {
+      "id": "B211",
+      "name": "거창군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L16",
+      "url": ""
+    },
+    {
+      "id": "B212",
+      "name": "고성군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L16",
+      "url": ""
+    },
+    {
+      "id": "B213",
+      "name": "김해시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L16",
+      "url": ""
+    },
+    {
+      "id": "B214",
+      "name": "남해군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L16",
+      "url": ""
+    },
+    {
+      "id": "B215",
+      "name": "밀양시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L16",
+      "url": ""
+    },
+    {
+      "id": "B216",
+      "name": "사천시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L16",
+      "url": ""
+    },
+    {
+      "id": "B217",
+      "name": "산청군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L16",
+      "url": ""
+    },
+    {
+      "id": "B218",
+      "name": "양산시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L16",
+      "url": ""
+    },
+    {
+      "id": "B219",
+      "name": "의령군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L16",
+      "url": ""
+    },
+    {
+      "id": "B220",
+      "name": "진주시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L16",
+      "url": ""
+    },
+    {
+      "id": "B221",
+      "name": "창녕군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L16",
+      "url": ""
+    },
+    {
+      "id": "B222",
+      "name": "창원시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L16",
+      "url": ""
+    },
+    {
+      "id": "B223",
+      "name": "통영시",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L16",
+      "url": ""
+    },
+    {
+      "id": "B224",
+      "name": "하동군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L16",
+      "url": ""
+    },
+    {
+      "id": "B225",
+      "name": "함안군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L16",
+      "url": ""
+    },
+    {
+      "id": "B226",
+      "name": "함양군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L16",
+      "url": ""
+    },
+    {
+      "id": "B227",
+      "name": "합천군",
+      "name_en": "",
+      "type": "local_basic",
+      "parent_id": "L16",
+      "url": ""
     }
   ]
 }
