@@ -1,0 +1,51 @@
+
+
+
+
+
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>한국도로공사 시스템 점검중</title>
+<style type="text/css">
+html,body{margin:0;padding:0;height:100%; background-color:#f8f8f8;}
+img{vertical-align:middle;}
+.error_box{position:relative; width:100%;  margin:0 auto;  text-align:center; font-family:'Malgun Gothic','MalgunGothic';}
+.error_box .logo{position:absolute; top:-30px; left:0;}
+.errorB{position:relative; margin: 0 auto; max-width:782px;  margin-top:8%;padding-top:50px;background:url("/images/site/error_top_bg2.gif") left top no-repeat #fff;
+ border-left:1px solid #e4e4e4; border-right:1px solid #e4e4e4; border-bottom:1px solid #e4e4e4; }
+.error_con{padding-bottom:50px;text-align:left; font-size:13px; color:#7b7b7b; padding-left:39%;background:url("/images/site/error_character.jpg") 10% top no-repeat; background-size:27% auto;}
+.error_con .title{text-align:left; font-size:26px; line-height:32px;color:#0a2986; font-weight:bold; margin-bottom:15px;}
+.error_con .con{line-height:20px; margin-top:0px; display:block;}
+.error_con .btn{margin-top:10px;background-color:#e64701;width:210px; text-align:center;}
+.error_con .btn a{ color:#fff; text-decoration:none; padding:10px; display:block; }
+.error_bottom:after{display:block;clear:both;content:"";}
+.error_bottom {font-size:12px;  overflow:hidden; margin-top:15px;margin: 0 auto; max-width:782px; }
+.error_bottom p{width:100%;text-align:center;float:left;margin-top:10px;font-size:11px; letter-spacing:-0.5px;}
+</style>
+</head>
+<body>
+
+<div class="error_box">
+	<div class="errorB">
+		<div class="logo"><img src="/images/site/error_logo.png" alt="한국도로공사" /></div>
+		<div class="errorC">
+			<div class="error_con">
+				<div class="title">죄송합니다. <br />
+				요청하신 페이지를 찾을 수 없습니다.</div>
+				<p class="con">방문하시려는 페이지에 주소가 잘못 입력 되었거나,<br />
+						페이지에 주소가 변경 혹은 삭제되어 요청하신 페이지를 찾을수가 없습니다.<br />
+						입력하신 주소가 정확한지 다시 한번 확인해 주시기 바랍니다.<br />
+						감사합니다. 
+				</p>
+				<div class="btn"><a href="http://www.ex.co.kr">한국도로공사 홈으로 이동&nbsp;&nbsp;&gt;</a></div>
+			</div>
+		</div>
+	</div>
+	<div class="error_bottom">
+		<p>우) 39660 경상북도 김천시 혁신8로 77(율곡동, 한국도로공사) COPYRIGHT ⓒ 2016 Korea Expressway Corporation. All Rights reserved.</p>
+	</div>
+</div>
+</body>
+</html>

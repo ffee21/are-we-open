@@ -1,0 +1,5 @@
+User-agent: Googlebot
+Allow: /
+Disallow: /common/search/front/Search.do
+Disallow: /kodit/na/ntt/selectNttInfo.do
+Disallow: /kodit/na/ntt/selectNttList.do

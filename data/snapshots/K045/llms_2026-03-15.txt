@@ -1,0 +1,3485 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+
+
+
+
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="naver-site-verification" content="e374de58d8119647fc555bfa1eec59e43cf69644" />
+    <title>
+    	
+    		
+    		국립중앙의료원
+    	
+    </title>
+    
+    <link rel="shortcut icon" href="/styles/assets/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/styles/assets/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="/styles/assets/css/reset.css" />
+    <link rel="stylesheet" href="/styles/assets/css/common.css?ver=250912" />
+    <link rel="stylesheet" href="/styles/assets/css/responsive/m_common.css" />
+
+    <link rel="stylesheet" href="/styles/assets/js/package/swiper-bundle.min.css" />
+
+    <script src="/styles/assets/js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="/styles/assets/js/package/swiper-bundle.min.js"></script>
+<!--
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    -->
+    <script src="/common/js/validation.js"></script>
+    <script src="/common/js/paging.js"></script>
+    <script src="/common/js/common.js"></script>
+    <script src="/common/js/color.js"></script>
+   
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EGW6GKL0GJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EGW6GKL0GJ');
+</script>
+<script>
+const themeColor = '#2677bb';
+const subColor = '#8bb8e8';
+
+// 로그인 세션 확인
+var userInfo = '';
+var userNm = '';
+
+$(document).ready(function() {
+	if('' != null && '' != '' ){
+		alert('');
+	}
+	// ajax 호출 시 세션 확인을 위한 헤더 설정
+	$.ajaxSetup({
+		async: false,
+		beforeSend: function(xhr) {
+			xhr.setRequestHeader("ajax", true);
+		},
+	});
+
+	// 테마 색상 적용
+	let themeColor = '#2677bb';
+	let subColor = '#8bb8e8';
+	
+	if(themeColor != '') {
+		let mainFilter = getFilter(themeColor);
+		$('.theme_main_background').css('backgroundColor', themeColor);
+		$('.theme_main_font').css('color', themeColor);
+		$('.theme_main_border').css('borderColor', themeColor);
+		$('.theme_main_filter').css('filter', mainFilter);
+		
+		$('.theme_main_icon img').css('filter', mainFilter);
+		$('.theme_main_icon').hover(function(e) {
+			if($(e.target).hasClass('theme_main_icon')) {
+				$(e.target).css('backgroundColor', themeColor);
+				$(e.target).find('img').css('filter', getFilter('#fff'));
+				$(e.target).children().css('color', '#fff');
+			}
+		}, function(e) {
+			if($(e.target).hasClass('theme_main_icon')) {
+				$(e.target).css('backgroundColor', '#fff');
+				$(e.target).find('img').css('filter', mainFilter);
+				$(e.target).children().css('color', '');
+			}
+		});
+		$('.theme_main_icon_reverse').css('backgroundColor', themeColor);
+		$('.theme_main_icon_reverse img').css('filter', getFilter('#fff'));
+		$('.theme_main_icon_reverse').children().css('color', '#fff');
+		$('.theme_main_icon_reverse').hover(function(e) {
+			if($(e.target).hasClass('theme_main_icon_reverse')) {
+				$(e.target).css('backgroundColor', '#fff');
+				$(e.target).find('img').css('filter', mainFilter);
+				$(e.target).children().css('color', '');
+			}
+		}, function(e) {
+			if($(e.target).hasClass('theme_main_icon_reverse')) {
+				$(e.target).css('backgroundColor', themeColor);
+				$(e.target).find('img').css('filter', getFilter('#fff'));
+				$(e.target).children().css('color', '#fff');
+			}
+		});
+	}
+	if(subColor != '') {
+		let subFilter = getFilter(subColor);
+		$('.theme_sub_background').css('backgroundColor', subColor);
+		$('.theme_sub_font').css('color', subColor);
+		$('.theme_sub_border').css('borderColor', subColor);
+		$('.theme_sub_filter').css('filter', subFilter);
+
+		$('.theme_sub_icon img').css('filter', subFilter);
+		$('.theme_sub_icon').hover(function(e) {
+			if($(e.target).hasClass('theme_sub_icon')) {
+				$(e.target).css('backgroundColor', subColor);
+				$(e.target).find('img').css('filter', getFilter('#fff'));
+				$(e.target).children().css('color', '#fff');
+			}
+		}, function(e) {
+			if($(e.target).hasClass('theme_sub_icon')) {
+				$(e.target).css('backgroundColor', '#fff');
+				$(e.target).find('img').css('filter', subFilter);
+				$(e.target).children().css('color', '');
+			}
+		});
+		$('.theme_sub_icon_reverse').css('backgroundColor', subColor);
+		$('.theme_sub_icon_reverse img').css('filter', getFilter('#fff'));
+		$('.theme_sub_icon_reverse').children().css('color', '#fff');
+		$('.theme_sub_icon_reverse').hover(function(e) {
+			if($(e.target).hasClass('theme_sub_icon_reverse')) {
+				$(e.target).css('backgroundColor', '#fff');
+				$(e.target).find('img').css('filter', subFilter);
+				$(e.target).children().css('color', '');
+			}
+		}, function(e) {
+			if($(e.target).hasClass('theme_sub_icon_reverse')) {
+				$(e.target).css('backgroundColor', subColor);
+				$(e.target).find('img').css('filter', getFilter('#fff'));
+				$(e.target).children().css('color', '#fff');
+			}
+		});
+	}
+	
+	if(userInfo != null && userInfo != ''){
+		$('#login').text('로그아웃'+'('+ userNm + ')');
+		$('#login').attr('onclick',"location.href='/nmc/user/logout'");
+		
+		$('#join').text('마이페이지');
+		$('#join').attr('onclick',"location.href='/nmc/mypage/reservation'");
+		
+		$('#m_join').attr('onclick',"location.href='/nmc/mypage/reservation'");
+		
+	}
+	$('.sub_content').addClass('');
+
+	// 접근성
+	setTimeout(function() {
+		focusAccessibility();
+	}, 300);
+	$('.noUrl_tab button, .noUrl_tab a').click(function() {
+		focusAccessibility();
+	});
+	
+	// 온라인 예약(회원) 메뉴 링크 변경
+	$(".second_depth_inner_left_content_subtitle a[href='/nmc/online/verifyMe']").attr("href", "javascript: goMemReserve()");
+	
+	// 후원 링크 변경
+	$(".second_depth_inner_left_content_subtitle a[href='/nmc/fixed/donation'], .depthDropbox a[href='/nmc/fixed/donation'], #siteMap a[href='/nmc/fixed/donation'], .mb-menu3 a[href='/nmc/fixed/donation']").attr("href", "/nmc/fixed/donation/step01");
+	$(".second_depth_inner_left_content_subtitle a[href='/nmc/fixed/donationResult'], .depthDropbox a[href='/nmc/fixed/donationResult'], #siteMap a[href='/nmc/fixed/donationResult'], .mb-menu3 a[href='/nmc/fixed/donationResult']").attr("href", "/nmc/fixed/donationResult/confirm");
+	
+	if( location.href.indexOf("/nmc/fixed/donationResult/") != -1 ) {
+		$(".depth3 > div > a").text("온라인 후원 내역조회");
+		$(".depth3Header h1").text("온라인 후원 내역조회");
+	}
+	
+	
+	
+});
+
+let containerLast = false;
+// 접근성 focus 항목 탐색
+function focusAccessibility() {
+	document.querySelector('#container').removeEventListener("keydown", keyDownTab);
+	containerLast = false;
+	document.querySelector('#container').addEventListener("keydown", keyDownTab);
+}
+// 탭 클릭 이벤트(접근성)
+function keyDownTab(e) {
+	const focusItems = $('#container a:visible, #container button:visible, #container *[tabindex=0]');
+	if (e.key === "Tab" && !e.shiftKey) {
+		if(containerLast) {
+			e.preventDefault();
+			$('#sideMenu a').first().focus();
+			containerLast = false;
+		}
+		if(document.activeElement == focusItems[focusItems.length -2]) {
+			containerLast = true;
+		}
+	}
+}
+// 온라인 예약
+function openReserve( deptCd, profEmpCd ) {
+	
+	if( !deptCd ) deptCd = "";
+	if( !profEmpCd ) profEmpCd = "";
+	
+	var _width = '1920';
+	var _height = '1100';
+
+	var xPos = (document.body.offsetWidth/2)-(_width/2);
+	xPos += window.screenLeft;	// 듀얼모니터일 때
+	var yPos = (document.body.offsetHeight/2) - (_height/2) + 50;
+	
+	var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+	
+	if( isMobile == true ) {
+	
+		location.href = "/nmc/online/reservePop?deptCd=" + deptCd + "&profEmpCd=" + profEmpCd;
+		
+	} else {
+	
+		// 인터넷 진료예약
+		var pop = window.open("/nmc/online/reservePop?deptCd=" + deptCd + "&profEmpCd=" + profEmpCd, 'openReserve', "width=" + _width + ", height=" + _height + ", left=" + xPos + ", top=" + yPos + ", menubar=no, toolbar=no, location=no, directories=no, status=no, scrollbars=yes, copyhistory=no, resizable=yes");
+		
+		if( pop == null ){
+			alert("팝업이 차단 되었습니다.\n차단을 해제해주세요.");
+		}
+	
+	}
+		
+}
+
+function goMemReserve( deptCd, profEmpCd ){
+	
+	var patNo = "";
+	if( patNo ) {
+		
+		$.ajax({
+			type: "POST",
+			url: "/nmc/online/verifyProc",
+			data: { 
+				"patNo": patNo,
+				"dutyYn": "N",
+				"memberYn": "Y",
+				"zipCode": "",
+				"buildNo": "",
+				"addr1": "",
+				"addr2": "",			
+				"mobile1": "",
+				"mobile2": "",
+				"mobile3": "",
+				"ssn1": "",
+				"ssn2": ""
+			},
+			success: function( res ){
+				
+				if( res ){
+					
+					alert( res );
+					return;
+						
+				}
+				
+				// 진료예약 팝업
+				openReserve(deptCd, profEmpCd);
+				
+			}
+		});
+		
+	} else {
+		
+		location.href = "/nmc/online/verifyMe?deptCd=" + deptCd + "&profEmpCd=" + profEmpCd;
+		
+	}
+	
+}
+
+function goReserve( deptCd, profEmpCd ){
+	
+	var userId = "";
+	var patNo = "";
+	
+	if( userId ) {
+	
+		if( patNo ) {
+		
+			$.ajax({
+				type: "POST",
+				url: "/nmc/online/verifyProc",
+				data: { 
+					"patNo": patNo,
+					"dutyYn": "N",
+					"memberYn": "Y",
+					"zipCode": "",
+					"buildNo": "",
+					"addr1": "",
+					"addr2": "",			
+					"mobile1": "",
+					"mobile2": "",
+					"mobile3": "",
+					"ssn1": "",
+					"ssn2": ""
+				},
+				success: function( res ){
+					
+					if( res ){
+						
+						alert( res );
+						return;
+							
+					}
+					
+					// 진료예약 팝업
+					openReserve(deptCd, profEmpCd);
+					
+				}
+			});
+			
+		} else {
+			
+			location.href = "/nmc/online/verifyMe?deptCd=" + deptCd + "&profEmpCd=" + profEmpCd;
+			
+		}
+		
+	} else {
+		
+		location.href = "/nmc/online/verifyNomember?deptCd=" + deptCd + "&profEmpCd=" + profEmpCd;
+		
+	}
+	
+}
+</script>
+<script type="application/ld+json">
+	{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "국립중앙의료원",
+		"url": "https://www.nmc.or.kr/",
+		"sameAs": [
+			"https://www.youtube.com/@NMCPR",
+			"https://www.instagram.com/nmc_official",
+			"https://blog.naver.com/nmc_official",
+		]
+	}
+</script>
+<link rel="stylesheet" href="/styles/assets/css/subPattern1.css?ver=260213" />
+<link rel="stylesheet" href="/styles/assets/css/subPattern2.css?ver=250630" />
+<link rel="stylesheet" href="/styles/assets/css/responsive/m_subPattern1.css?ver=260115" />
+<link rel="stylesheet" href="/styles/assets/css/responsive/m_subPattern2.css?ver=250630" />
+<body>
+	
+	
+    	
+	<div id="u_skip">
+		<style> #u_skip a { top: -300px; opacity: 1; } #u_skip a:focus { top: 0; z-index: 1000; }   
+</style>
+<script>
+$(document).ready(function () {
+    $('#menuShortcut').click(function (e) {
+        e.preventDefault();
+        toggleSiteMap(true);
+    });
+  
+ 	$('a[href="#container"]').click(function (e) {
+        e.preventDefault();
+        moveToContainer();
+    });
+  
+   	var gnbMenu = $('.gnbWrap');
+  	
+  	gnbMenu.on('keydown', 'a', function (e) {
+        var isLastMenuItem =
+            $(this).is(gnbMenu.find('nav a').last()) && e.key === 'Tab';
+        if (isLastMenuItem && !e.shiftKey) {
+            e.preventDefault();
+            moveToContainer();
+        }
+    });
+  
+  $('#container').on('keydown', 'a, button, input, select, textarea', function (e) {
+    var isLastElement =
+        $(this).is($('#container').find('a, button, input, select, textarea').last()) &&
+        e.key === 'Tab';
+    
+    if (isLastElement && !e.shiftKey) {
+        e.preventDefault();
+        focusFirstGnbMenuItem();
+    }
+});
+  	
+   $('#footer .sitemap .set').on('focus', function () {
+        $(this).addClass('active');
+    });
+
+    $('#footer .sitemap .set').on('blur', function () {
+        var self = $(this);
+        setTimeout(function () {
+            if (!self.find('a').is(':focus')) {
+                self.removeClass('active');
+            }
+        }, 100);
+    });
+
+   $('#footer .sitemap .set').on('mousedown', function (e) {
+    e.preventDefault();
+});
+  
+  $('#footer a').on('keydown', function (e) {
+        var footerLinks = $('#footer a');
+        var isLastFooterLink = $(this).is(footerLinks.last()) && e.key === 'Tab' && !e.shiftKey;
+
+        if (isLastFooterLink) {
+            e.preventDefault();
+            $('#skipToContent').focus();
+        }
+    });
+
+    $(window).on('scroll', function () {
+        var scrollTop = $(window).scrollTop();
+        var containerTop = $('#container').offset().top;
+
+        if (scrollTop > containerTop) {
+            gnbMenu.css({
+                position: 'sticky',
+                top: '0',
+            });
+        } else {
+            gnbMenu.css({
+                position: 'relative',
+                top: 'auto',
+            });
+        }
+    });
+
+    function moveToContainer() {
+        var targetSection = $('#container');
+        if (targetSection.length) {
+            $('html, body').animate(
+                { scrollTop: targetSection.offset().top },
+                500,
+                function () {
+                var focusableElements = targetSection.find(
+                    'a, button, input, select, textarea'
+                ).filter(':visible');
+                
+                if (focusableElements.length > 0) {
+                    focusableElements.first().focus();
+                } else {
+                    targetSection.attr('tabindex', '-1').focus();
+                }
+            }
+            );
+        }
+    }
+  
+  function focusFirstGnbMenuItem() {
+        var firstMenuItem = gnbMenu.find('nav a').first();
+        if (firstMenuItem.length) {
+            firstMenuItem.focus();
+        }
+    }
+});
+</script><a href="#container" id="skipToContent" aria-hidden="false"> <span>본문 내용 바로가기</span> </a><a href="javascript:void(0);" id="menuShortcut" aria-hidden="false"> <span>메뉴 바로가기</span> </a>
+	</div>
+	<iframe width="0" height="0" name="hiddenFrame" style="display:none;"></iframe>
+	<div id="wrap">
+		
+		<div id="topAsideMenu" class="topHeader topSticky theme_main_background"> 
+<h1> <a href="/"> <img src="/styles/assets/logo.svg" class="logo" alt="국립중앙의료원 로고"> <img src="/styles/assets/logo-white.png" class="wlogo" alt="국립중앙의료원 흰로고"> </a> </h1> 
+<div class="toprightHeader"><a href="javascript: goReserve()" class="reservationBtn"> <button class="outReservation " tabindex="-1"> <i class=""></i><span class="">온라인 예약</span></button></a><a href="/nmc/reserve/quickReserve" class="reservationBtn"><button class="fastReservation theme_sub_border" tabindex="-1"><i class="theme_main_filter"></i><span class="theme_main_font">콜백 전화예약</span></button> </a><!--    <a href="javascript:void(0);" class="reservationBtn"> <button class="outReservation theme_sub_border" tabindex="-1">   <i class="theme_main_filter"></i><span class="theme_main_font">외래진료 예약</span></button>   </a> --> 
+<ul> 
+<li><a id="login" href="javascript:void(0);" onclick="getLoginForm()">로그인</a></li> 
+<li><a href="javascript:void(0)" id="join" onclick="location.href='/nmc/user/join/select'">회원가입</a></li> <!-- <li><a href="/attach_file/B0000009/202010/731a307136ba4fbdbd3d931cb0216b4c.pdf" target="_blank" title="새창열림" style="color: rgb(51, 51, 51);">ENGLISH</a></li> --> 
+<li><a href="javascript:void(0)" class="eng_alert" target="_self" style="color: rgb(51, 51, 51);">ENGLISH</a> </li>
+</ul><button class="searchBtn" type="button" onclick="searchOn()"><span class="accessibility-read">검색</span> </button><button class="userBtn" id="m_join" onclick="getLoginForm()"><span></span></button><a class="menu-trigger" href="javascript:void(0);"> <span></span> <span></span> <span></span> </a></div> 
+<div class="mtopleftHeader"><a href="/nmc/reserve/quickReserve" class="reservationBtn"><button class="fastReservation theme_sub_border" tabindex="-1"><i class="theme_main_filter"></i><span class="theme_main_font">콜백 전화예약</span></button> </a><a href="javascript: goReserve()"> <button class="outReservation" tabindex="-1"><i></i><span>온라인 예약</span></button> </a></div> 
+<div class="mGnbWrap"><a href="javascript:void(0);"> </a> 
+<div class="mGnbHeader"><a href="javascript:void(0);"> </a> 
+<div class="mGnbHeaderLeft"><a href="javascript:void(0);"></a><a href="/nmc/reserve/quickReserve" class="reservationBtn"> <button class="fastReservation" tabindex="-1"><i class="theme_main_filter"></i><span>콜백 전화예약</span></button> </a><a href="javascript: goReserve()" class="reservationBtn"> <button class="outReservation" tabindex="-1"><i></i><span>온라인 예약</span></button> </a></div></div> 
+<div class="mGnbSiteWrap"> 
+<div class="swiper4 sub_site_swiper"> 
+<div class="swiper-wrapper"> 
+<div class="swiper-slide"><a target="_blank" title="새창열림" href="https://www.e-gen.or.kr/egen/holiday_medical.do;jsessionid=ECD7C9D5D979F6AE9F0E2AA9D4B404D9.egenlb?emergencyViewYn=Y"> 
+<div></div> <!--p>중앙응급<br />  의료센터</p--> </a></div> 
+<div class="swiper-slide"><a target="_blank" title="새창열림" href="https://www.nid.or.kr/main/main.aspx"> 
+<div></div> <!--p>중앙<br />  치매센터터</p--> </a></div> 
+<div class="swiper-slide"><a target="_blank" title="새창열림" href="https://www.ppm.or.kr/"> 
+<div></div> <!--p>공공보건<br />  의료지원센터</p--> </a></div> 
+<div class="swiper-slide"><a target="_blank" title="새창열림" href="https://www.edunmc.or.kr/nplms/home"> 
+<div></div> <!--p>공공보건<br />  의료교육훈련센터</p--> </a></div> 
+<div class="swiper-slide"><a target="_blank" title="새창열림" href="https://www.nmc.or.kr/instlm/main"> 
+<div></div> <!--p>공공보건<br />  의료연구소</p--> </a></div> 
+<div class="swiper-slide"><a target="_blank" title="새창열림" href="javascript:void(0);"> 
+<div></div> <!--p>중앙감염병<br />  병원운영센터</p--> </a></div> 
+<div class="swiper-slide"><a target="_blank" title="새창열림" href="http://cmcmc.nmc.or.kr/main/main.do"> 
+<div></div> <!--p>중앙모자<br />  의료센터</p--> </a></div></div> 
+<div class="swiper-scrollbar"><br></div></div></div></div></div>
+<script>
+  var subSiteSwiper = new Swiper('.sub_site_swiper', {
+    slidesPerView: 'auto',
+    spaceBetween: 10,
+    scrollbar: {
+      el:'.swiper-scrollbar',
+      hide: true,
+      draggable: true, 
+      dragSize: 50,
+    },
+  });
+  
+  $(document).ready(function () {
+      $('.eng_alert').on('click', function () {
+        alert('현재 영문 홈페이지는 준비 중입니다.');
+      })
+    });
+</script>
+		
+
+
+
+
+
+<style>
+	.blind {position: absolute; clip: rect(0, 0, 0, 0); width: 1px; height: 1px; overflow: hidden; color: transparent !important}
+</style>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+	const menuWraps = document.querySelectorAll(".gnbMenuWrap");
+	const menuListWrap = document.querySelector('.gnbWrap ul');
+
+	menuWraps.forEach((wrap, index) => {
+		const secondDepth = wrap.querySelector(".second_depth");
+		if (!secondDepth) return;
+		const links = Array.from(secondDepth.querySelectorAll("a"));
+
+		const showMenu = () => {
+			secondDepth.style.display = "block";
+			secondDepth.style.maxHeight = secondDepth.scrollHeight + "px";
+		};
+
+		const hideMenu = () => {
+			secondDepth.style.maxHeight = "0";
+			secondDepth.style.display = "none";
+		};
+
+		// 마우스 이벤트
+		wrap.addEventListener("mouseover", showMenu);
+		menuListWrap.addEventListener("mouseout", hideMenu);
+
+		// 키보드 focus 이벤트
+		wrap.addEventListener("focusin", showMenu);
+		wrap.addEventListener("focusout", (e) => {
+			if (!wrap.contains(e.relatedTarget)) {
+				hideMenu();
+			}
+		});
+
+		links.forEach((link) => {
+			link.addEventListener("focusin", showMenu);
+			link.addEventListener("focusout", (e) => {
+				if (!wrap.contains(e.relatedTarget)) {
+					hideMenu();
+				}
+			});
+		});
+	});
+});
+
+var focusItem = null;
+var focusBefore = null;
+$(document).ready(function(){
+	$('#topAsideMenu .menu-trigger').click(function() {
+		toggleMobileMenu();
+	});
+	
+	$('#mobileMenu .mbGnb-left > ul > li').click(function() {
+		const menuId = $(this).attr('id').replace('mb-', '');
+		$('#mobileMenu .mbGnb-left > ul > li').removeClass('current');
+		$(this).addClass('current');
+		$('#mobileMenu .mbGnb-right > div').removeClass('current');
+		$('#mobileMenu .mbGnb-right > div#mbSub-' + menuId).addClass('current');
+	});
+
+	$(window).on('resize', function(){
+		if(window.innerWidth > 1023) {
+			$('#mobileMenu').hide();
+			if(!$('#siteMap').is(':visible')) {
+				toggleBodyScoll(false);
+			}
+		}
+	});
+	
+	// 접근성 확인
+	$('*').on('focus', function(e) {
+		focusBefore = focusItem;
+		focusItem = e.target;
+	});
+});
+
+let siteMapBeforeItem = null;
+function toggleSiteMap(show, obj) {
+	if(show) {
+		siteMapBeforeItem = obj;
+		$('#siteMap').show();
+		toggleBodyScoll(true);
+
+		$('.site_map_close').focus();
+	} else {
+		$('#siteMap').hide();
+		toggleBodyScoll(false);
+		siteMapBeforeItem.focus();
+		siteMapBeforeItem = null;
+	}
+}
+
+function toggleMobileMenu() {
+	$('.mGnbWrap').toggleClass('on');
+	$('.topHeader .menu-trigger, .topHeader .searchBtn, .topHeader .userBtn').toggleClass('active');
+	
+	if($('.mGnbWrap').hasClass('on')) {
+		let headerTop = $('.mGnbWrap').height();
+		
+		$('#mobileMenu').css('top', headerTop);
+		$('#mobileMenu').css('height', 'calc(100% - ' + headerTop + 'px)');
+		$('#mobileMenu').show();
+		toggleBodyScoll(true);
+	} else {
+		$('#mobileMenu').hide();
+		toggleBodyScoll(false);
+	}
+}
+</script>
+<div id="mobileMenu" class="mbGnb" style="display:none;">
+	<div class="mbGnb-top">
+		<div class="mbGnb-left">
+			<ul>
+				
+					<li id="mb-100001" class="">진료안내</li>
+				
+					<li id="mb-100002" class="">이용안내</li>
+				
+					<li id="mb-100003" class="">교육·연구</li>
+				
+					<li id="mb-100004" class="">공공의료정보</li>
+				
+					<li id="mb-100005" class="">국가중앙센터</li>
+				
+					<li id="mb-100006" class="">고객참여</li>
+				
+					<li id="mb-100007" class="">국립중앙의료원</li>
+				
+			</ul>
+			
+		</div>
+		<div class="mbGnb-right">
+			
+				<div id="mbSub-100001" class="">
+					<ul class="mb-menu2">
+						
+							<li>
+								
+									
+										<span class="">진료·예약</span>
+									
+									
+								
+								<ul class="mb-menu3">
+									
+										
+											<li>
+												<a href="/nmc/contents/diagnosis_reserve_info"  class="">진료 예약 안내</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/reserve/quickReserve"  class="">콜백 전화예약</a>
+											</li>
+										
+									
+								</ul>
+							</li>
+						
+							<li>
+								
+									
+										<span class="">온라인 예약</span>
+									
+									
+								
+								<ul class="mb-menu3">
+									
+										
+											<li>
+												<a href="/nmc/online/verifyMe"  class="">회원 예약</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/online/reserveMemList"  class="">회원 예약 확인</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/online/verifyNomember"  class="">비회원 예약</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/online/reserveNom"  class="">비회원 예약 확인</a>
+											</li>
+										
+									
+								</ul>
+							</li>
+						
+							<li>
+								
+									
+										<span class="">진료과·의료진</span>
+									
+									
+								
+								<ul class="mb-menu3">
+									
+										
+											<li>
+												<a href="/nmc/medicalDept/deptList"  class="">전체보기</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/doctor/search"  class="">의료진 찾기</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/fixed/docSchedule/list"  class="">진료시간표</a>
+											</li>
+										
+									
+								</ul>
+							</li>
+						
+							<li>
+								
+									
+										<span class="">전문센터</span>
+									
+									
+								
+								<ul class="mb-menu3">
+									
+										
+											<li>
+												<a href="/nmc/medicalDept/cntrList"  class="">전체보기</a>
+											</li>
+										
+											<li>
+												<a href="/health/main"  class="">건강증진예방센터</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/medicalDept/cntrDetail?typeCd=D&amp;deptCd=&amp;cntrCd=2300300000"  class="">서울권역외상센터</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/medicalDept/cntrDetail?typeCd=D&amp;deptCd=&amp;cntrCd=2303299999"  class="">응급의료센터</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/medicalDept/cntrDetail?typeCd=D&amp;deptCd=&amp;cntrCd=2304300000"  class="">호스피스완화의료센터</a>
+											</li>
+										
+									
+								</ul>
+							</li>
+						
+							<li>
+								
+									
+										<span class="">전문클리닉</span>
+									
+									
+								
+								<ul class="mb-menu3">
+									
+										
+											<li>
+												<a href="/clinic/main"  class="">해외여행클리닉(공수병/광견병포함)</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/contents/day_ward"  class="">낮병동</a>
+											</li>
+										
+									
+								</ul>
+							</li>
+						
+							<li>
+								
+									
+										<span class="">진료지원부서</span>
+									
+									
+								
+								<ul class="mb-menu3">
+									
+										
+											<li>
+												<a href="/nrs/main" target="_blank" title="새창으로 열림" class="">간호부</a>
+											</li>
+										
+											<li>
+												<a href="/mdntf/main"  class="">약제부</a>
+											</li>
+										
+									
+								</ul>
+							</li>
+						
+							<li>
+								
+									
+									
+										<a href="/nmc/fixed/expense"  class="">비급여진료비</a>
+									
+								
+								<ul class="mb-menu3">
+									
+								</ul>
+							</li>
+						
+					</ul>
+				</div>
+			
+				<div id="mbSub-100002" class="">
+					<ul class="mb-menu2">
+						
+							<li>
+								
+									
+										<span class="">진료 이용</span>
+									
+									
+								
+								<ul class="mb-menu3">
+									
+										
+											<li>
+												<a href="/nmc/contents/outpatient_treatment_procedures"  class="">외래진료절차</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/contents/emergency_treatment_information"  class="">응급진료안내</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/contents/icu_information"  class="">중환자실 이용 안내</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/contents/admission_discharge_guide"  class="">입퇴원 안내</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/contents/nurse_service"  class="">간호서비스</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/contents/health_screenings_information"  class="">건강검진 안내</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/contents/vaccination_guide"  class="">예방접종 안내</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/contents/receiver_use_guide"  class="">진료비 수납기 이용안내</a>
+											</li>
+										
+									
+								</ul>
+							</li>
+						
+							<li>
+								
+									
+										<span class="">증명서 발급</span>
+									
+									
+								
+								<ul class="mb-menu3">
+									
+										
+											<li>
+												<a href="/nmc/contents/certificate_issue_guide"  class="">이용안내</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/contents/certification_issuance_procedure_guide"  class="">제증명 발급 절차 안내</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/contents/issuance_copy_medical_records_guide"  class="">의무기록 사본 발급안내</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/contents/issuance_medical_imaging_cd"  class="">의료영상 CD발급</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/contents/tax_settlement_medical_receipt"  class="">연말정산 진료영수증</a>
+											</li>
+										
+											<li>
+												<a href="http://nmc.medcerti.com/" target="_blank" title="새창으로 열림" class="">온라인 증명서 발급사이트</a>
+											</li>
+										
+									
+								</ul>
+							</li>
+						
+							<li>
+								
+									
+									
+										<a href="/nmc/contents/medical_cooperation_guide"  class="">진료협력안내</a>
+									
+								
+								<ul class="mb-menu3">
+									
+								</ul>
+							</li>
+						
+							<li>
+								
+									
+										<span class="">공공의료사업안내</span>
+									
+									
+								
+								<ul class="mb-menu3">
+									
+										
+											<li>
+												<a href="/nmc/contents/publichealth_info"  class="">의료사회복지상담 안내</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/contents/publichealth_detail"  class="">주요사업</a>
+											</li>
+										
+									
+								</ul>
+							</li>
+						
+							<li>
+								
+									
+										<span class="">병원시설안내</span>
+									
+									
+								
+								<ul class="mb-menu3">
+									
+										
+											<li>
+												<a href="/nmc/contents/come_way"  class="">오시는길</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/contents/parking_guide"  class="">주차안내</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/contents/phonenumber_guide"  class="">전화번호안내</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/contents/medical_department_location"  class="">진료과위치안내</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/contents/convenience_service"  class="">편의시설</a>
+											</li>
+										
+									
+								</ul>
+							</li>
+						
+							<li>
+								
+									
+									
+										<a href="/nmc/contents/hospital_visit_guide"  class="">병문안 안내</a>
+									
+								
+								<ul class="mb-menu3">
+									
+								</ul>
+							</li>
+						
+							<li>
+								
+									
+									
+										<a href="/nmc/board/B0000004"  class="">자주하는질문</a>
+									
+								
+								<ul class="mb-menu3">
+									
+								</ul>
+							</li>
+						
+					</ul>
+				</div>
+			
+				<div id="mbSub-100003" class="">
+					<ul class="mb-menu2">
+						
+							<li>
+								
+									
+									
+										<a href="/nmc/fixed/education"  class="">일정공지</a>
+									
+								
+								<ul class="mb-menu3">
+									
+								</ul>
+							</li>
+						
+							<li>
+								
+									
+										<span class="">교육 안내</span>
+									
+									
+								
+								<ul class="mb-menu3">
+									
+										
+											<li>
+												<a href="/nmc/contents/edu_nplms"  class="">공공보건의료인력교육</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/contents/edu_egen"  class="">응급의료교육과정</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/contents/edu_kdls"  class="">재난의료교육</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/contents/edu_edc"  class="">전공의 수련교육</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/contents/edu_sidrc"  class="">감염병 대응 역량 강화교육</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/contents/edu_nid"  class="">치매센터교육</a>
+											</li>
+										
+									
+								</ul>
+							</li>
+						
+							<li>
+								
+									
+										<span class="">공공보건의료연구소</span>
+									
+									
+								
+								<ul class="mb-menu3">
+									
+										
+											<li>
+												<a href="/ctcr/main"  class="">임상시험센터</a>
+											</li>
+										
+											<li>
+												<a href="https://www.r-bay.co.kr/agency/main/bnprTFFEK0lJKytoOFpsYnJ5WnFwZz09" target="_blank" title="새창으로 열림" class="">IRB</a>
+											</li>
+										
+									
+								</ul>
+							</li>
+						
+							<li>
+								
+									
+									
+										<a href="https://lib.nmc.or.kr/"  class="">의학정보실</a>
+									
+								
+								<ul class="mb-menu3">
+									
+								</ul>
+							</li>
+						
+					</ul>
+				</div>
+			
+				<div id="mbSub-100004" class="">
+					<ul class="mb-menu2">
+						
+							<li>
+								
+									
+										<span class="">일상의료정보</span>
+									
+									
+								
+								<ul class="mb-menu3">
+									
+										
+											<li>
+												<a href="/nmc/fixed/publicHospital"  class="">공공의료기관찾기</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/babyList"  class="">달빛어린이병원</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/emergencyRoom"  class="">응급실 찾기</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/contents/proper_emergency_treatment_guide"  class="">올바른 응급처리 방법</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/aed"  class="">자동심장충격기(AED) 찾기</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/pharmacy"  class="">약국찾기</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/contents/public_health_care_site"  class="">공공보건의료 관련사이트</a>
+											</li>
+										
+									
+								</ul>
+							</li>
+						
+							<li>
+								
+									
+										<span class="">정보통계</span>
+									
+									
+								
+								<ul class="mb-menu3">
+									
+										
+											<li>
+												<a href="/nmc/contents/health_map"  class="">헬스맵</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/board/B0000058"  class="">공공보건의료통계</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/contents/stat_emr"  class="">응급의료통계</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/contents/emergency_synthesis_sign"  class="">응급실 종합상황판</a>
+											</li>
+										
+									
+								</ul>
+							</li>
+						
+							<li>
+								
+									
+										<span class="">모니터링/관리시스템</span>
+									
+									
+								
+								<ul class="mb-menu3">
+									
+										
+											<li>
+												<a href="/nmc/contents/center_cp_guideline"  class="">중앙CP가이드라인</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/contents/public_medical_network"  class="">공공의료연계망</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/contents/emergency_diagnosis_monitoring"  class="">응급의료모니터링시스템</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/contents/antidote_possession_status"  class="">해독제 및 중독물질 분석 지원</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/contents/drug_safety_center"  class="">약물안전센터</a>
+											</li>
+										
+									
+								</ul>
+							</li>
+						
+					</ul>
+				</div>
+			
+				<div id="mbSub-100005" class="">
+					<ul class="mb-menu2">
+						
+							<li>
+								
+									
+										<span class="">센터바로가기</span>
+									
+									
+								
+								<ul class="mb-menu3">
+									
+										
+											<li>
+												<a href="/nmc/contents/ppm_roles"  class="">공공보건의료지원센터</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/contents/edunmc_roles"  class="">공공보건의료교육훈련센터</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/contents/egen_roles"  class="">중앙응급의료센터</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/contents/nmc22762276_roles"  class="">중앙난임임산부심리상담센터</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/contents/nid_roles"  class="">중앙치매센터</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/contents/cmcmc_roles"  class="">중앙모자의료센터</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/contents/phsc_roles"  class="">정책통계지원센터</a>
+											</li>
+										
+									
+								</ul>
+							</li>
+						
+					</ul>
+				</div>
+			
+				<div id="mbSub-100006" class="">
+					<ul class="mb-menu2">
+						
+							<li>
+								
+									
+										<span class="">고객상담</span>
+									
+									
+								
+								<ul class="mb-menu3">
+									
+										
+											<li>
+												<a href="/nmc/board/B0000019"  class="">칭찬합시다</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/board/B0000020"  class="">고객의 소리</a>
+											</li>
+										
+									
+								</ul>
+							</li>
+						
+							<li>
+								
+									
+									
+										<a href="/nmc/contents/volunteer"  class="">자원봉사안내</a>
+									
+								
+								<ul class="mb-menu3">
+									
+								</ul>
+							</li>
+						
+							<li>
+								
+									
+										<span class="">후원안내</span>
+									
+									
+								
+								<ul class="mb-menu3">
+									
+										
+											<li>
+												<a href="/nmc/contents/fund_info"  class="">후원소개</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/contents/fund_usage"  class="">후원방법</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/fixed/donation"  class="">온라인 후원하기</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/fixed/donationResult"  class="">온라인 후원 내역조회</a>
+											</li>
+										
+									
+								</ul>
+							</li>
+						
+					</ul>
+				</div>
+			
+				<div id="mbSub-100007" class="">
+					<ul class="mb-menu2">
+						
+							<li>
+								
+									
+										<span class="">의료원 소개</span>
+									
+									
+								
+								<ul class="mb-menu3">
+									
+										
+											<li>
+												<a href="/nmc/contents/greetings"  class="">원장 인사말</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/contents/mission_vision_corevalue"  class="">미션/비전/핵심가치</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/contents/organization"  class="">조직도</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/contents/symbol"  class="">상징체계(CI)</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/fixed/chronicle"  class="">연혁</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/fixed/representative"  class="">역대의료원장</a>
+											</li>
+										
+									
+								</ul>
+							</li>
+						
+							<li>
+								
+									
+										<span class="">의료원 소식</span>
+									
+									
+								
+								<ul class="mb-menu3">
+									
+										
+											<li>
+												<a href="/nmc/board/B0000001"  class="">공지사항</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/board/B0000007"  class="">채용공고</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/board/B0000003"  class="">입찰공고</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/board/B0000008"  class="">보도자료</a>
+											</li>
+										
+									
+								</ul>
+							</li>
+						
+							<li>
+								
+									
+										<span class="">소통채널</span>
+									
+									
+								
+								<ul class="mb-menu3">
+									
+										
+											<li>
+												<a href="/nmc/fixed/press"  class="">언론보도</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/board/B0000104"  class="">간행물</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/fixed/video"  class="">영상 콘텐츠</a>
+											</li>
+										
+											<li>
+												<a href="/archive"  class="">미디어 아카이브</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/fixed/blog"  class="">네이버 블로그</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/fixed/instagram"  class="">인스타그램</a>
+											</li>
+										
+									
+								</ul>
+							</li>
+						
+							<li>
+								
+									
+									
+										<a href="/nmc/contents/management_announcement"  class="">경영공시</a>
+									
+								
+								<ul class="mb-menu3">
+									
+								</ul>
+							</li>
+						
+							<li>
+								
+									
+										<span class="">행정정보공개안내</span>
+									
+									
+								
+								<ul class="mb-menu3">
+									
+										
+											<li>
+												<a href="/nmc/contents/disclosure_guide"  class="">정보공개제도안내</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/board/B0000012"  class="">사전정보공개</a>
+											</li>
+										
+											<li>
+												<a href="https://www.open.go.kr/"  class="">사전정보공개 청구</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/board/B0000018"  class="">사업실명제</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/contents/public_data_open"  class="">공공데이터 개방</a>
+											</li>
+										
+											<li>
+												<a href="/nmc/contents/epeople"  class="">국민신문고</a>
+											</li>
+										
+											<li>
+												<a href="https://www.epeople.go.kr/nep/pttn/negativePttn/NegativePttnCotents.npaid"  class="">소극행정 신고센터</a>
+											</li>
+										
+									
+								</ul>
+							</li>
+						
+					</ul>
+				</div>
+			
+		</div>
+	</div>
+	<div class="mbGnb-bottom">
+		<div class="mainPhone">
+			<i></i>
+			<p>대표전화</p>
+			<em>1588-1775</em>
+		</div>
+		<div class="callCenter">
+			<i></i>
+			<p>콜센터</p>
+			<em>02-2260-7114</em>
+		</div>
+	</div>
+</div>
+<div id="gnbMenu" class="gnbWrap theme_main_background">
+	<nav>
+		<ul>
+			
+				<li class="gnbMenuWrap">
+					<a href="/nmc/contents/diagnosis_reserve_info"  id="100001" class="">
+						진료안내
+					</a>
+					<div class="second_depth">
+						<div class="second_depth_inner">
+							<div class="second_depth_inner_left">
+								
+									<div class="second_depth_inner_left_content">
+										<div class="second_depth_inner_left_content_title">
+											<a href="/nmc/contents/diagnosis_reserve_info"  class="theme_main_font ">진료·예약</a>
+										</div>
+										
+											<ul>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/contents/diagnosis_reserve_info"  class="">진료 예약 안내</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/reserve/quickReserve"  class="">콜백 전화예약</a>
+													</li>
+												
+											</ul>
+										
+									</div>
+								
+									<div class="second_depth_inner_left_content">
+										<div class="second_depth_inner_left_content_title">
+											<a href="/nmc/online/verifyMe"  class="theme_main_font ">온라인 예약</a>
+										</div>
+										
+											<ul>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/online/verifyMe"  class="">회원 예약</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/online/reserveMemList"  class="">회원 예약 확인</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/online/verifyNomember"  class="">비회원 예약</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/online/reserveNom"  class="">비회원 예약 확인</a>
+													</li>
+												
+											</ul>
+										
+									</div>
+								
+									<div class="second_depth_inner_left_content">
+										<div class="second_depth_inner_left_content_title">
+											<a href="/nmc/medicalDept/deptList"  class="theme_main_font ">진료과·의료진</a>
+										</div>
+										
+											<ul>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/medicalDept/deptList"  class="">전체보기</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/doctor/search"  class="">의료진 찾기</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/fixed/docSchedule/list"  class="">진료시간표</a>
+													</li>
+												
+											</ul>
+										
+									</div>
+								
+									<div class="second_depth_inner_left_content">
+										<div class="second_depth_inner_left_content_title">
+											<a href="/nmc/medicalDept/cntrList"  class="theme_main_font ">전문센터</a>
+										</div>
+										
+											<ul>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/medicalDept/cntrList"  class="">전체보기</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/health/main"  class="">건강증진예방센터</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/medicalDept/cntrDetail?typeCd=D&amp;deptCd=&amp;cntrCd=2300300000"  class="">서울권역외상센터</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/medicalDept/cntrDetail?typeCd=D&amp;deptCd=&amp;cntrCd=2303299999"  class="">응급의료센터</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/medicalDept/cntrDetail?typeCd=D&amp;deptCd=&amp;cntrCd=2304300000"  class="">호스피스완화의료센터</a>
+													</li>
+												
+											</ul>
+										
+									</div>
+								
+									<div class="second_depth_inner_left_content">
+										<div class="second_depth_inner_left_content_title">
+											<a href="/nmc/contents/specialized_clinic"  class="theme_main_font ">전문클리닉</a>
+										</div>
+										
+											<ul>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/clinic/main"  class="">해외여행클리닉(공수병/광견병포함)</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/contents/day_ward"  class="">낮병동</a>
+													</li>
+												
+											</ul>
+										
+									</div>
+								
+									<div class="second_depth_inner_left_content">
+										<div class="second_depth_inner_left_content_title">
+											<a href="/nmc/contents/medical_support"  class="theme_main_font ">진료지원부서</a>
+										</div>
+										
+											<ul>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nrs/main" target="_blank" title="새창으로 열림" class="">간호부</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/mdntf/main"  class="">약제부</a>
+													</li>
+												
+											</ul>
+										
+									</div>
+								
+									<div class="second_depth_inner_left_content">
+										<div class="second_depth_inner_left_content_title">
+											<a href="/nmc/fixed/expense"  class="theme_main_font ">비급여진료비</a>
+										</div>
+										
+									</div>
+								
+							</div>
+							
+							
+						</div>
+					</div>
+				</li>
+			
+				<li class="gnbMenuWrap">
+					<a href="/nmc/contents/outpatient_treatment_procedures"  id="100002" class="">
+						이용안내
+					</a>
+					<div class="second_depth">
+						<div class="second_depth_inner">
+							<div class="second_depth_inner_left">
+								
+									<div class="second_depth_inner_left_content">
+										<div class="second_depth_inner_left_content_title">
+											<a href="/nmc/contents/outpatient_treatment_procedures"  class="theme_main_font ">진료 이용</a>
+										</div>
+										
+											<ul>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/contents/outpatient_treatment_procedures"  class="">외래진료절차</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/contents/emergency_treatment_information"  class="">응급진료안내</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/contents/icu_information"  class="">중환자실 이용 안내</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/contents/admission_discharge_guide"  class="">입퇴원 안내</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/contents/nurse_service"  class="">간호서비스</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/contents/health_screenings_information"  class="">건강검진 안내</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/contents/vaccination_guide"  class="">예방접종 안내</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/contents/receiver_use_guide"  class="">진료비 수납기 이용안내</a>
+													</li>
+												
+											</ul>
+										
+									</div>
+								
+									<div class="second_depth_inner_left_content">
+										<div class="second_depth_inner_left_content_title">
+											<a href="/nmc/contents/certificate_issue_guide"  class="theme_main_font ">증명서 발급</a>
+										</div>
+										
+											<ul>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/contents/certificate_issue_guide"  class="">이용안내</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/contents/certification_issuance_procedure_guide"  class="">제증명 발급 절차 안내</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/contents/issuance_copy_medical_records_guide"  class="">의무기록 사본 발급안내</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/contents/issuance_medical_imaging_cd"  class="">의료영상 CD발급</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/contents/tax_settlement_medical_receipt"  class="">연말정산 진료영수증</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="http://nmc.medcerti.com/" target="_blank" title="새창으로 열림" class="">온라인 증명서 발급사이트</a>
+													</li>
+												
+											</ul>
+										
+									</div>
+								
+									<div class="second_depth_inner_left_content">
+										<div class="second_depth_inner_left_content_title">
+											<a href="/nmc/contents/medical_cooperation_guide"  class="theme_main_font ">진료협력안내</a>
+										</div>
+										
+									</div>
+								
+									<div class="second_depth_inner_left_content">
+										<div class="second_depth_inner_left_content_title">
+											<a href="/nmc/contents/publichealth_info"  class="theme_main_font ">공공의료사업안내</a>
+										</div>
+										
+											<ul>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/contents/publichealth_info"  class="">의료사회복지상담 안내</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/contents/publichealth_detail"  class="">주요사업</a>
+													</li>
+												
+											</ul>
+										
+									</div>
+								
+									<div class="second_depth_inner_left_content">
+										<div class="second_depth_inner_left_content_title">
+											<a href="/nmc/contents/come_way"  class="theme_main_font ">병원시설안내</a>
+										</div>
+										
+											<ul>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/contents/come_way"  class="">오시는길</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/contents/parking_guide"  class="">주차안내</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/contents/phonenumber_guide"  class="">전화번호안내</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/contents/medical_department_location"  class="">진료과위치안내</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/contents/convenience_service"  class="">편의시설</a>
+													</li>
+												
+											</ul>
+										
+									</div>
+								
+									<div class="second_depth_inner_left_content">
+										<div class="second_depth_inner_left_content_title">
+											<a href="/nmc/contents/hospital_visit_guide"  class="theme_main_font ">병문안 안내</a>
+										</div>
+										
+									</div>
+								
+									<div class="second_depth_inner_left_content">
+										<div class="second_depth_inner_left_content_title">
+											<a href="/nmc/board/B0000004"  class="theme_main_font ">자주하는질문</a>
+										</div>
+										
+									</div>
+								
+							</div>
+							
+							
+						</div>
+					</div>
+				</li>
+			
+				<li class="gnbMenuWrap">
+					<a href="/nmc/fixed/education"  id="100003" class="">
+						교육·연구
+					</a>
+					<div class="second_depth">
+						<div class="second_depth_inner">
+							<div class="second_depth_inner_left">
+								
+									<div class="second_depth_inner_left_content">
+										<div class="second_depth_inner_left_content_title">
+											<a href="/nmc/fixed/education"  class="theme_main_font ">일정공지</a>
+										</div>
+										
+									</div>
+								
+									<div class="second_depth_inner_left_content">
+										<div class="second_depth_inner_left_content_title">
+											<a href="/nmc/contents/edu_nplms"  class="theme_main_font ">교육 안내</a>
+										</div>
+										
+											<ul>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/contents/edu_nplms"  class="">공공보건의료인력교육</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/contents/edu_egen"  class="">응급의료교육과정</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/contents/edu_kdls"  class="">재난의료교육</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/contents/edu_edc"  class="">전공의 수련교육</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/contents/edu_sidrc"  class="">감염병 대응 역량 강화교육</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/contents/edu_nid"  class="">치매센터교육</a>
+													</li>
+												
+											</ul>
+										
+									</div>
+								
+									<div class="second_depth_inner_left_content">
+										<div class="second_depth_inner_left_content_title">
+											<a href="/instlm/main"  class="theme_main_font ">공공보건의료연구소</a>
+										</div>
+										
+											<ul>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/ctcr/main"  class="">임상시험센터</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="https://www.r-bay.co.kr/agency/main/bnprTFFEK0lJKytoOFpsYnJ5WnFwZz09" target="_blank" title="새창으로 열림" class="">IRB</a>
+													</li>
+												
+											</ul>
+										
+									</div>
+								
+									<div class="second_depth_inner_left_content">
+										<div class="second_depth_inner_left_content_title">
+											<a href="https://lib.nmc.or.kr/"  class="theme_main_font ">의학정보실</a>
+										</div>
+										
+									</div>
+								
+							</div>
+							
+							
+						</div>
+					</div>
+				</li>
+			
+				<li class="gnbMenuWrap">
+					<a href="/nmc/fixed/publicHospital"  id="100004" class="">
+						공공의료정보
+					</a>
+					<div class="second_depth">
+						<div class="second_depth_inner">
+							<div class="second_depth_inner_left">
+								
+									<div class="second_depth_inner_left_content">
+										<div class="second_depth_inner_left_content_title">
+											<a href="/nmc/fixed/publicHospital"  class="theme_main_font ">일상의료정보</a>
+										</div>
+										
+											<ul>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/fixed/publicHospital"  class="">공공의료기관찾기</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/babyList"  class="">달빛어린이병원</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/emergencyRoom"  class="">응급실 찾기</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/contents/proper_emergency_treatment_guide"  class="">올바른 응급처리 방법</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/aed"  class="">자동심장충격기(AED) 찾기</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/pharmacy"  class="">약국찾기</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/contents/public_health_care_site"  class="">공공보건의료 관련사이트</a>
+													</li>
+												
+											</ul>
+										
+									</div>
+								
+									<div class="second_depth_inner_left_content">
+										<div class="second_depth_inner_left_content_title">
+											<a href="/nmc/contents/health_map"  class="theme_main_font ">정보통계</a>
+										</div>
+										
+											<ul>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/contents/health_map"  class="">헬스맵</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/board/B0000058"  class="">공공보건의료통계</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/contents/stat_emr"  class="">응급의료통계</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/contents/emergency_synthesis_sign"  class="">응급실 종합상황판</a>
+													</li>
+												
+											</ul>
+										
+									</div>
+								
+									<div class="second_depth_inner_left_content">
+										<div class="second_depth_inner_left_content_title">
+											<a href="/nmc/contents/center_cp_guideline"  class="theme_main_font ">모니터링/관리시스템</a>
+										</div>
+										
+											<ul>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/contents/center_cp_guideline"  class="">중앙CP가이드라인</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/contents/public_medical_network"  class="">공공의료연계망</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/contents/emergency_diagnosis_monitoring"  class="">응급의료모니터링시스템</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/contents/antidote_possession_status"  class="">해독제 및 중독물질 분석 지원</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/contents/drug_safety_center"  class="">약물안전센터</a>
+													</li>
+												
+											</ul>
+										
+									</div>
+								
+							</div>
+							
+							
+						</div>
+					</div>
+				</li>
+			
+				<li class="gnbMenuWrap">
+					<a href="/nmc/contents/ppm_roles"  id="100005" class="">
+						국가중앙센터
+					</a>
+					<div class="second_depth">
+						<div class="second_depth_inner">
+							<div class="second_depth_inner_left">
+								
+									<div class="second_depth_inner_left_content">
+										<div class="second_depth_inner_left_content_title">
+											<a href="/nmc/contents/ppm_roles"  class="theme_main_font ">센터바로가기</a>
+										</div>
+										
+											<ul>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/contents/ppm_roles"  class="">공공보건의료지원센터</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/contents/edunmc_roles"  class="">공공보건의료교육훈련센터</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/contents/egen_roles"  class="">중앙응급의료센터</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/contents/nmc22762276_roles"  class="">중앙난임임산부심리상담센터</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/contents/nid_roles"  class="">중앙치매센터</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/contents/cmcmc_roles"  class="">중앙모자의료센터</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/contents/phsc_roles"  class="">정책통계지원센터</a>
+													</li>
+												
+											</ul>
+										
+									</div>
+								
+							</div>
+							
+							
+						</div>
+					</div>
+				</li>
+			
+				<li class="gnbMenuWrap">
+					<a href="/nmc/board/B0000019"  id="100006" class="">
+						고객참여
+					</a>
+					<div class="second_depth">
+						<div class="second_depth_inner">
+							<div class="second_depth_inner_left">
+								
+									<div class="second_depth_inner_left_content">
+										<div class="second_depth_inner_left_content_title">
+											<a href="/nmc/board/B0000019"  class="theme_main_font ">고객상담</a>
+										</div>
+										
+											<ul>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/board/B0000019"  class="">칭찬합시다</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/board/B0000020"  class="">고객의 소리</a>
+													</li>
+												
+											</ul>
+										
+									</div>
+								
+									<div class="second_depth_inner_left_content">
+										<div class="second_depth_inner_left_content_title">
+											<a href="/nmc/contents/volunteer"  class="theme_main_font ">자원봉사안내</a>
+										</div>
+										
+									</div>
+								
+									<div class="second_depth_inner_left_content">
+										<div class="second_depth_inner_left_content_title">
+											<a href="/nmc/contents/fund_info"  class="theme_main_font ">후원안내</a>
+										</div>
+										
+											<ul>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/contents/fund_info"  class="">후원소개</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/contents/fund_usage"  class="">후원방법</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/fixed/donation"  class="">온라인 후원하기</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/fixed/donationResult"  class="">온라인 후원 내역조회</a>
+													</li>
+												
+											</ul>
+										
+									</div>
+								
+							</div>
+							
+							
+						</div>
+					</div>
+				</li>
+			
+				<li class="gnbMenuWrap">
+					<a href="/nmc/contents/greetings"  id="100007" class="">
+						국립중앙의료원
+					</a>
+					<div class="second_depth">
+						<div class="second_depth_inner">
+							<div class="second_depth_inner_left">
+								
+									<div class="second_depth_inner_left_content">
+										<div class="second_depth_inner_left_content_title">
+											<a href="/nmc/contents/greetings"  class="theme_main_font ">의료원 소개</a>
+										</div>
+										
+											<ul>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/contents/greetings"  class="">원장 인사말</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/contents/mission_vision_corevalue"  class="">미션/비전/핵심가치</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/contents/organization"  class="">조직도</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/contents/symbol"  class="">상징체계(CI)</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/fixed/chronicle"  class="">연혁</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/fixed/representative"  class="">역대의료원장</a>
+													</li>
+												
+											</ul>
+										
+									</div>
+								
+									<div class="second_depth_inner_left_content">
+										<div class="second_depth_inner_left_content_title">
+											<a href="/nmc/board/B0000001"  class="theme_main_font ">의료원 소식</a>
+										</div>
+										
+											<ul>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/board/B0000001"  class="">공지사항</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/board/B0000007"  class="">채용공고</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/board/B0000003"  class="">입찰공고</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/board/B0000008"  class="">보도자료</a>
+													</li>
+												
+											</ul>
+										
+									</div>
+								
+									<div class="second_depth_inner_left_content">
+										<div class="second_depth_inner_left_content_title">
+											<a href="/nmc/fixed/press"  class="theme_main_font ">소통채널</a>
+										</div>
+										
+											<ul>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/fixed/press"  class="">언론보도</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/board/B0000104"  class="">간행물</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/fixed/video"  class="">영상 콘텐츠</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/archive"  class="">미디어 아카이브</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/fixed/blog"  class="">네이버 블로그</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/fixed/instagram"  class="">인스타그램</a>
+													</li>
+												
+											</ul>
+										
+									</div>
+								
+									<div class="second_depth_inner_left_content">
+										<div class="second_depth_inner_left_content_title">
+											<a href="/nmc/contents/management_announcement"  class="theme_main_font ">경영공시</a>
+										</div>
+										
+									</div>
+								
+									<div class="second_depth_inner_left_content">
+										<div class="second_depth_inner_left_content_title">
+											<a href="/nmc/contents/disclosure_guide"  class="theme_main_font ">행정정보공개안내</a>
+										</div>
+										
+											<ul>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/contents/disclosure_guide"  class="">정보공개제도안내</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/board/B0000012"  class="">사전정보공개</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="https://www.open.go.kr/"  class="">사전정보공개 청구</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/board/B0000018"  class="">사업실명제</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/contents/public_data_open"  class="">공공데이터 개방</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="/nmc/contents/epeople"  class="">국민신문고</a>
+													</li>
+												
+													<li class="second_depth_inner_left_content_subtitle">
+														<a href="https://www.epeople.go.kr/nep/pttn/negativePttn/NegativePttnCotents.npaid"  class="">소극행정 신고센터</a>
+													</li>
+												
+											</ul>
+										
+									</div>
+								
+							</div>
+							
+							
+						</div>
+					</div>
+				</li>
+			
+			<li>
+				<a class="menu-trigger" href="javascript:void(0);" onclick="toggleSiteMap(true, this)">
+					사이트맵
+					<span></span>
+					<span></span>
+					<span></span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+</div>
+
+
+
+
+
+<style>
+	table caption { font-size: 0; }
+</style>
+<div id="siteMap" class="sitemap_wrap theme_main_background" style="display: none;">
+	<div class="sitemap_inner">
+		<h2>사이트맵 <button class="site_map_close" onclick="toggleSiteMap(false)"><span class="accessibility-read">사이트맵 닫기</span></button></h2>
+		
+			<table>
+				<caption class="blind">진료안내 하위 메뉴</caption>
+				<colgroup>
+					<col style="width: 130px" />
+					<col style="width: 190px" />
+					<col style="width: auto" />
+				</colgroup>
+				<tbody>
+					
+						<tr>
+							<th>
+								
+									<span>진료안내</span>
+								
+							</th>
+							<th>
+								<a href="/nmc/contents/diagnosis_reserve_info" >진료·예약</a>
+							</th>
+							<td>
+								
+									<a href="/nmc/contents/diagnosis_reserve_info" >진료 예약 안내</a>
+								
+									<a href="/nmc/reserve/quickReserve" >콜백 전화예약</a>
+								
+							</td>
+						</tr>
+						
+					
+						<tr>
+							<th>
+								
+							</th>
+							<th>
+								<a href="/nmc/online/verifyMe" >온라인 예약</a>
+							</th>
+							<td>
+								
+									<a href="/nmc/online/verifyMe" >회원 예약</a>
+								
+									<a href="/nmc/online/reserveMemList" >회원 예약 확인</a>
+								
+									<a href="/nmc/online/verifyNomember" >비회원 예약</a>
+								
+									<a href="/nmc/online/reserveNom" >비회원 예약 확인</a>
+								
+							</td>
+						</tr>
+						
+					
+						<tr>
+							<th>
+								
+							</th>
+							<th>
+								<a href="/nmc/medicalDept/deptList" >진료과·의료진</a>
+							</th>
+							<td>
+								
+									<a href="/nmc/medicalDept/deptList" >전체보기</a>
+								
+									<a href="/nmc/doctor/search" >의료진 찾기</a>
+								
+									<a href="/nmc/fixed/docSchedule/list" >진료시간표</a>
+								
+							</td>
+						</tr>
+						
+					
+						<tr>
+							<th>
+								
+							</th>
+							<th>
+								<a href="/nmc/medicalDept/cntrList" >전문센터</a>
+							</th>
+							<td>
+								
+									<a href="/nmc/medicalDept/cntrList" >전체보기</a>
+								
+									<a href="/health/main" >건강증진예방센터</a>
+								
+									<a href="/nmc/medicalDept/cntrDetail?typeCd=D&amp;deptCd=&amp;cntrCd=2300300000" >서울권역외상센터</a>
+								
+									<a href="/nmc/medicalDept/cntrDetail?typeCd=D&amp;deptCd=&amp;cntrCd=2303299999" >응급의료센터</a>
+								
+									<a href="/nmc/medicalDept/cntrDetail?typeCd=D&amp;deptCd=&amp;cntrCd=2304300000" >호스피스완화의료센터</a>
+								
+							</td>
+						</tr>
+						
+					
+						<tr>
+							<th>
+								
+							</th>
+							<th>
+								<a href="/nmc/contents/specialized_clinic" >전문클리닉</a>
+							</th>
+							<td>
+								
+									<a href="/clinic/main" >해외여행클리닉(공수병/광견병포함)</a>
+								
+									<a href="/nmc/contents/day_ward" >낮병동</a>
+								
+							</td>
+						</tr>
+						
+					
+						<tr>
+							<th>
+								
+							</th>
+							<th>
+								<a href="/nmc/contents/medical_support" >진료지원부서</a>
+							</th>
+							<td>
+								
+									<a href="/nrs/main" target="_blank" title="새창으로 열림">간호부</a>
+								
+									<a href="/mdntf/main" >약제부</a>
+								
+							</td>
+						</tr>
+						
+					
+						<tr>
+							<th>
+								
+							</th>
+							<th>
+								<a href="/nmc/fixed/expense" >비급여진료비</a>
+							</th>
+							<td>
+								
+							</td>
+						</tr>
+						
+					
+				</tbody>
+			</table>
+			
+				<div class="site_divider"></div>
+			
+		
+			<table>
+				<caption class="blind">이용안내 하위 메뉴</caption>
+				<colgroup>
+					<col style="width: 130px" />
+					<col style="width: 190px" />
+					<col style="width: auto" />
+				</colgroup>
+				<tbody>
+					
+						<tr>
+							<th>
+								
+									<span>이용안내</span>
+								
+							</th>
+							<th>
+								<a href="/nmc/contents/outpatient_treatment_procedures" >진료 이용</a>
+							</th>
+							<td>
+								
+									<a href="/nmc/contents/outpatient_treatment_procedures" >외래진료절차</a>
+								
+									<a href="/nmc/contents/emergency_treatment_information" >응급진료안내</a>
+								
+									<a href="/nmc/contents/icu_information" >중환자실 이용 안내</a>
+								
+									<a href="/nmc/contents/admission_discharge_guide" >입퇴원 안내</a>
+								
+									<a href="/nmc/contents/nurse_service" >간호서비스</a>
+								
+									<a href="/nmc/contents/health_screenings_information" >건강검진 안내</a>
+								
+									<a href="/nmc/contents/vaccination_guide" >예방접종 안내</a>
+								
+									<a href="/nmc/contents/receiver_use_guide" >진료비 수납기 이용안내</a>
+								
+							</td>
+						</tr>
+						
+					
+						<tr>
+							<th>
+								
+							</th>
+							<th>
+								<a href="/nmc/contents/certificate_issue_guide" >증명서 발급</a>
+							</th>
+							<td>
+								
+									<a href="/nmc/contents/certificate_issue_guide" >이용안내</a>
+								
+									<a href="/nmc/contents/certification_issuance_procedure_guide" >제증명 발급 절차 안내</a>
+								
+									<a href="/nmc/contents/issuance_copy_medical_records_guide" >의무기록 사본 발급안내</a>
+								
+									<a href="/nmc/contents/issuance_medical_imaging_cd" >의료영상 CD발급</a>
+								
+									<a href="/nmc/contents/tax_settlement_medical_receipt" >연말정산 진료영수증</a>
+								
+									<a href="http://nmc.medcerti.com/" target="_blank" title="새창으로 열림">온라인 증명서 발급사이트</a>
+								
+							</td>
+						</tr>
+						
+					
+						<tr>
+							<th>
+								
+							</th>
+							<th>
+								<a href="/nmc/contents/medical_cooperation_guide" >진료협력안내</a>
+							</th>
+							<td>
+								
+							</td>
+						</tr>
+						
+					
+						<tr>
+							<th>
+								
+							</th>
+							<th>
+								<a href="/nmc/contents/publichealth_info" >공공의료사업안내</a>
+							</th>
+							<td>
+								
+									<a href="/nmc/contents/publichealth_info" >의료사회복지상담 안내</a>
+								
+									<a href="/nmc/contents/publichealth_detail" >주요사업</a>
+								
+							</td>
+						</tr>
+						
+					
+						<tr>
+							<th>
+								
+							</th>
+							<th>
+								<a href="/nmc/contents/come_way" >병원시설안내</a>
+							</th>
+							<td>
+								
+									<a href="/nmc/contents/come_way" >오시는길</a>
+								
+									<a href="/nmc/contents/parking_guide" >주차안내</a>
+								
+									<a href="/nmc/contents/phonenumber_guide" >전화번호안내</a>
+								
+									<a href="/nmc/contents/medical_department_location" >진료과위치안내</a>
+								
+									<a href="/nmc/contents/convenience_service" >편의시설</a>
+								
+							</td>
+						</tr>
+						
+					
+						<tr>
+							<th>
+								
+							</th>
+							<th>
+								<a href="/nmc/contents/hospital_visit_guide" >병문안 안내</a>
+							</th>
+							<td>
+								
+							</td>
+						</tr>
+						
+					
+						<tr>
+							<th>
+								
+							</th>
+							<th>
+								<a href="/nmc/board/B0000004" >자주하는질문</a>
+							</th>
+							<td>
+								
+							</td>
+						</tr>
+						
+					
+				</tbody>
+			</table>
+			
+				<div class="site_divider"></div>
+			
+		
+			<table>
+				<caption class="blind">교육·연구 하위 메뉴</caption>
+				<colgroup>
+					<col style="width: 130px" />
+					<col style="width: 190px" />
+					<col style="width: auto" />
+				</colgroup>
+				<tbody>
+					
+						<tr>
+							<th>
+								
+									<span>교육·연구</span>
+								
+							</th>
+							<th>
+								<a href="/nmc/fixed/education" >일정공지</a>
+							</th>
+							<td>
+								
+							</td>
+						</tr>
+						
+					
+						<tr>
+							<th>
+								
+							</th>
+							<th>
+								<a href="/nmc/contents/edu_nplms" >교육 안내</a>
+							</th>
+							<td>
+								
+									<a href="/nmc/contents/edu_nplms" >공공보건의료인력교육</a>
+								
+									<a href="/nmc/contents/edu_egen" >응급의료교육과정</a>
+								
+									<a href="/nmc/contents/edu_kdls" >재난의료교육</a>
+								
+									<a href="/nmc/contents/edu_edc" >전공의 수련교육</a>
+								
+									<a href="/nmc/contents/edu_sidrc" >감염병 대응 역량 강화교육</a>
+								
+									<a href="/nmc/contents/edu_nid" >치매센터교육</a>
+								
+							</td>
+						</tr>
+						
+					
+						<tr>
+							<th>
+								
+							</th>
+							<th>
+								<a href="/instlm/main" >공공보건의료연구소</a>
+							</th>
+							<td>
+								
+									<a href="/ctcr/main" >임상시험센터</a>
+								
+									<a href="https://www.r-bay.co.kr/agency/main/bnprTFFEK0lJKytoOFpsYnJ5WnFwZz09" target="_blank" title="새창으로 열림">IRB</a>
+								
+							</td>
+						</tr>
+						
+					
+						<tr>
+							<th>
+								
+							</th>
+							<th>
+								<a href="https://lib.nmc.or.kr/" >의학정보실</a>
+							</th>
+							<td>
+								
+							</td>
+						</tr>
+						
+					
+				</tbody>
+			</table>
+			
+				<div class="site_divider"></div>
+			
+		
+			<table>
+				<caption class="blind">공공의료정보 하위 메뉴</caption>
+				<colgroup>
+					<col style="width: 130px" />
+					<col style="width: 190px" />
+					<col style="width: auto" />
+				</colgroup>
+				<tbody>
+					
+						<tr>
+							<th>
+								
+									<span>공공의료정보</span>
+								
+							</th>
+							<th>
+								<a href="/nmc/fixed/publicHospital" >일상의료정보</a>
+							</th>
+							<td>
+								
+									<a href="/nmc/fixed/publicHospital" >공공의료기관찾기</a>
+								
+									<a href="/nmc/babyList" >달빛어린이병원</a>
+								
+									<a href="/nmc/emergencyRoom" >응급실 찾기</a>
+								
+									<a href="/nmc/contents/proper_emergency_treatment_guide" >올바른 응급처리 방법</a>
+								
+									<a href="/nmc/aed" >자동심장충격기(AED) 찾기</a>
+								
+									<a href="/nmc/pharmacy" >약국찾기</a>
+								
+									<a href="/nmc/contents/public_health_care_site" >공공보건의료 관련사이트</a>
+								
+							</td>
+						</tr>
+						
+					
+						<tr>
+							<th>
+								
+							</th>
+							<th>
+								<a href="/nmc/contents/health_map" >정보통계</a>
+							</th>
+							<td>
+								
+									<a href="/nmc/contents/health_map" >헬스맵</a>
+								
+									<a href="/nmc/board/B0000058" >공공보건의료통계</a>
+								
+									<a href="/nmc/contents/stat_emr" >응급의료통계</a>
+								
+									<a href="/nmc/contents/emergency_synthesis_sign" >응급실 종합상황판</a>
+								
+							</td>
+						</tr>
+						
+					
+						<tr>
+							<th>
+								
+							</th>
+							<th>
+								<a href="/nmc/contents/center_cp_guideline" >모니터링/관리시스템</a>
+							</th>
+							<td>
+								
+									<a href="/nmc/contents/center_cp_guideline" >중앙CP가이드라인</a>
+								
+									<a href="/nmc/contents/public_medical_network" >공공의료연계망</a>
+								
+									<a href="/nmc/contents/emergency_diagnosis_monitoring" >응급의료모니터링시스템</a>
+								
+									<a href="/nmc/contents/antidote_possession_status" >해독제 및 중독물질 분석 지원</a>
+								
+									<a href="/nmc/contents/drug_safety_center" >약물안전센터</a>
+								
+							</td>
+						</tr>
+						
+					
+				</tbody>
+			</table>
+			
+				<div class="site_divider"></div>
+			
+		
+			<table>
+				<caption class="blind">국가중앙센터 하위 메뉴</caption>
+				<colgroup>
+					<col style="width: 130px" />
+					<col style="width: 190px" />
+					<col style="width: auto" />
+				</colgroup>
+				<tbody>
+					
+						<tr>
+							<th>
+								
+									<span>국가중앙센터</span>
+								
+							</th>
+							<th>
+								<a href="/nmc/contents/ppm_roles" >센터바로가기</a>
+							</th>
+							<td>
+								
+									<a href="/nmc/contents/ppm_roles" >공공보건의료지원센터</a>
+								
+									<a href="/nmc/contents/edunmc_roles" >공공보건의료교육훈련센터</a>
+								
+									<a href="/nmc/contents/egen_roles" >중앙응급의료센터</a>
+								
+									<a href="/nmc/contents/nmc22762276_roles" >중앙난임임산부심리상담센터</a>
+								
+									<a href="/nmc/contents/nid_roles" >중앙치매센터</a>
+								
+									<a href="/nmc/contents/cmcmc_roles" >중앙모자의료센터</a>
+								
+									<a href="/nmc/contents/phsc_roles" >정책통계지원센터</a>
+								
+							</td>
+						</tr>
+						
+					
+				</tbody>
+			</table>
+			
+				<div class="site_divider"></div>
+			
+		
+			<table>
+				<caption class="blind">고객참여 하위 메뉴</caption>
+				<colgroup>
+					<col style="width: 130px" />
+					<col style="width: 190px" />
+					<col style="width: auto" />
+				</colgroup>
+				<tbody>
+					
+						<tr>
+							<th>
+								
+									<span>고객참여</span>
+								
+							</th>
+							<th>
+								<a href="/nmc/board/B0000019" >고객상담</a>
+							</th>
+							<td>
+								
+									<a href="/nmc/board/B0000019" >칭찬합시다</a>
+								
+									<a href="/nmc/board/B0000020" >고객의 소리</a>
+								
+							</td>
+						</tr>
+						
+					
+						<tr>
+							<th>
+								
+							</th>
+							<th>
+								<a href="/nmc/contents/volunteer" >자원봉사안내</a>
+							</th>
+							<td>
+								
+							</td>
+						</tr>
+						
+					
+						<tr>
+							<th>
+								
+							</th>
+							<th>
+								<a href="/nmc/contents/fund_info" >후원안내</a>
+							</th>
+							<td>
+								
+									<a href="/nmc/contents/fund_info" >후원소개</a>
+								
+									<a href="/nmc/contents/fund_usage" >후원방법</a>
+								
+									<a href="/nmc/fixed/donation" >온라인 후원하기</a>
+								
+									<a href="/nmc/fixed/donationResult" >온라인 후원 내역조회</a>
+								
+							</td>
+						</tr>
+						
+					
+				</tbody>
+			</table>
+			
+				<div class="site_divider"></div>
+			
+		
+			<table>
+				<caption class="blind">국립중앙의료원 하위 메뉴</caption>
+				<colgroup>
+					<col style="width: 130px" />
+					<col style="width: 190px" />
+					<col style="width: auto" />
+				</colgroup>
+				<tbody>
+					
+						<tr>
+							<th>
+								
+									<span>국립중앙의료원</span>
+								
+							</th>
+							<th>
+								<a href="/nmc/contents/greetings" >의료원 소개</a>
+							</th>
+							<td>
+								
+									<a href="/nmc/contents/greetings" >원장 인사말</a>
+								
+									<a href="/nmc/contents/mission_vision_corevalue" >미션/비전/핵심가치</a>
+								
+									<a href="/nmc/contents/organization" >조직도</a>
+								
+									<a href="/nmc/contents/symbol" >상징체계(CI)</a>
+								
+									<a href="/nmc/fixed/chronicle" >연혁</a>
+								
+									<a href="/nmc/fixed/representative" >역대의료원장</a>
+								
+							</td>
+						</tr>
+						
+					
+						<tr>
+							<th>
+								
+							</th>
+							<th>
+								<a href="/nmc/board/B0000001" >의료원 소식</a>
+							</th>
+							<td>
+								
+									<a href="/nmc/board/B0000001" >공지사항</a>
+								
+									<a href="/nmc/board/B0000007" >채용공고</a>
+								
+									<a href="/nmc/board/B0000003" >입찰공고</a>
+								
+									<a href="/nmc/board/B0000008" >보도자료</a>
+								
+							</td>
+						</tr>
+						
+					
+						<tr>
+							<th>
+								
+							</th>
+							<th>
+								<a href="/nmc/fixed/press" >소통채널</a>
+							</th>
+							<td>
+								
+									<a href="/nmc/fixed/press" >언론보도</a>
+								
+									<a href="/nmc/board/B0000104" >간행물</a>
+								
+									<a href="/nmc/fixed/video" >영상 콘텐츠</a>
+								
+									<a href="/archive" >미디어 아카이브</a>
+								
+									<a href="/nmc/fixed/blog" >네이버 블로그</a>
+								
+									<a href="/nmc/fixed/instagram" >인스타그램</a>
+								
+							</td>
+						</tr>
+						
+					
+						<tr>
+							<th>
+								
+							</th>
+							<th>
+								<a href="/nmc/contents/management_announcement" >경영공시</a>
+							</th>
+							<td>
+								
+							</td>
+						</tr>
+						
+					
+						<tr>
+							<th>
+								
+							</th>
+							<th>
+								<a href="/nmc/contents/disclosure_guide" >행정정보공개안내</a>
+							</th>
+							<td>
+								
+									<a href="/nmc/contents/disclosure_guide" >정보공개제도안내</a>
+								
+									<a href="/nmc/board/B0000012" >사전정보공개</a>
+								
+									<a href="https://www.open.go.kr/" >사전정보공개 청구</a>
+								
+									<a href="/nmc/board/B0000018" >사업실명제</a>
+								
+									<a href="/nmc/contents/public_data_open" >공공데이터 개방</a>
+								
+									<a href="/nmc/contents/epeople" >국민신문고</a>
+								
+									<a href="https://www.epeople.go.kr/nep/pttn/negativePttn/NegativePttnCotents.npaid" >소극행정 신고센터</a>
+								
+							</td>
+						</tr>
+						
+					
+				</tbody>
+			</table>
+			
+		
+	</div>
+</div>
+		
+
+
+
+
+<script>
+$(document).ready(function() {
+	$('nav.lnb [class^="depth"] > div > a').click(function() {
+		$(this).next().toggleClass('active');
+	});
+	$('html').click(function(e) {
+		if($(e.target).closest('nav.lnb').length < 1) {
+			$('nav.lnb div').removeClass('active');
+		}
+	});
+});
+</script>
+
+<input type="hidden" id="testa" value="" />
+<input type="hidden" id="testb" value="" />
+
+
+
+		
+
+
+
+
+<script>
+$(document).ready(function() {
+	$('.integrated_search').click(function(e) {
+		if($(e.target).hasClass('integrated_search')) {
+			closeSearchArea();
+		}
+	});
+	
+	// 인기 검색어
+	$.ajax({
+		type: "GET",
+		url: '/nmc/search/keyword/popular',
+		data: {range : 'M'},
+		async: false,
+		success: function(data) {
+			let result = data.Data;
+			let words = result.Query;
+			
+			$('.integrated_search .search_keywords').html('');
+			$.each(words, function(idx, item) {
+				$('.integrated_search .search_keywords').append('<a href="javascript:void(0);" onclick="document.getElementById(\'keyword\').value = \'' + item.content + '\'">#' + item.content + '</a>');
+			});
+		},
+		error : function(err) {
+			console.log(err);
+		}
+	});
+});
+
+function closeSearchArea() {
+	$('.integrated_search').removeClass('on');
+	toggleBodyScoll(false);
+	$('.searchBtn').focus();
+}
+
+function searchOn() {
+	$('#keyword').val('');
+	toggleBodyScoll(true);
+	$('.integrated_search').addClass('on');
+	$('.search_close').focus();
+}
+</script>
+<div class="integrated_search">
+	<div class="integrated_search_area">
+		<button type="button" onclick="closeSearchArea()" class="search_close">통합검색 닫기</button>
+		<h2>통합검색</h2>
+		<form class="search_item" method="GET" action="/nmc/search">
+			<input type="text" name="keyword" id="keyword" value="" placeholder="검색어를 입력해 주세요." title="검색어 입력">
+			<button type="submit" class="theme_main_background">검색</button>
+		</form>
+		<div class="search_keywords">
+		</div>
+	</div>
+</div>
+		<div id="container" role="main">
+			
+
+
+
+
+<script>
+function shareThisPage(obj) {
+	copyToClipboard(location.href, '', obj);
+}
+
+function addBookmark() {
+	var bookmarkURL = window.location.href;
+    var bookmarkTitle = document.title;
+    var triggerDefault = false;
+
+    if (window.sidebar && window.sidebar.addPanel) {
+      // Firefox version < 23
+      window.sidebar.addPanel(bookmarkTitle, bookmarkURL, '');0
+    } else if ((window.sidebar && (navigator.userAgent.toLowerCase().indexOf('firefox') > -1)) || (window.opera && window.print)) {
+      // Firefox version >= 23 and Opera Hotlist
+      var $this = $(this);
+      $this.attr('href', bookmarkURL);
+      $this.attr('title', bookmarkTitle);
+      $this.attr('rel', 'sidebar');
+      $this.off(e);
+      triggerDefault = true;
+    } else {
+      // WebKit - Safari/Chrome
+      alert((navigator.userAgent.toLowerCase().indexOf('mac') != -1 ? 'Cmd' : 'Ctrl') + '+D 키를 눌러 즐겨찾기에 등록하실 수 있습니다.');
+    }
+    
+    return triggerDefault;
+}
+
+function printThisPage() {
+	window.open('/common/print', '', 'left=0,top=0,width=800,height=900,toolbar=0,scrollbars=0,status=0');
+}
+</script>
+
+<style>
+:root {
+	--hue: 223;
+	--trans-dur: 0.3s;
+}
+body {
+	-webkit-font-smoothing: antialiased;
+}
+.paper {
+	display: block;
+	margin: auto;
+	overflow: visible;
+	width: 100%;
+	max-width: 224px;
+	height: auto;
+}
+.paper__fill {
+	fill: hsl(0,0%,100%);
+}
+.paper__outline,
+.paper__lines {
+	transition: stroke var(--trans-dur);
+}
+.paper__outline {
+	stroke: hsl(var(--hue),10%,10%);
+}
+.paper__lines {
+	stroke: hsl(var(--hue),10%,70%);
+}
+.paper__shadow {
+	fill: hsl(var(--hue),10%,70%);
+	transition: fill var(--trans-dur);
+}
+.paper__top,
+.paper__bottom,
+.paper__tear,
+.paper__tear-fill {
+	animation: paperTop 1.25s cubic-bezier(0.77,0,0.18,1);
+}
+.paper__top,
+.paper__bottom {
+	transform-origin: 0 148px;
+	transition: transform var(--trans-dur) cubic-bezier(0.77,0,0.18,1);
+}
+.paper__top {
+	transform: translate(0,8px);
+}
+.paper__bottom {
+	animation-name: paperBottom;
+	transform: translate(0,42px);
+}
+.paper__tear,
+.paper__tear-fill {
+	animation-timing-function: cubic-bezier(0.32,0,0.67,0);
+}
+.paper__tear {
+	animation-name: paperTear;
+	stroke-dashoffset: 0;
+}
+.paper__tear-fill {
+	animation-name: paperTearFill;
+}
+.paper__outline:hover .paper__top,
+.paper__outline:hover .paper__bottom {
+	transform: translate(0,25px);
+}
+
+/* Beyond mobile */
+@media (min-width: 768px) {
+	.paper {
+		max-width: 300px;
+	}
+}
+
+/* Animations */
+@keyframes paperTop {
+	from,
+	40% {
+		animation-timing-function: cubic-bezier(0.32,0,0.67,0);
+		transform: translate(0,25px) rotate(0);
+		transform-origin: 61px 148px;
+	}
+	70% {
+		animation-timing-function: cubic-bezier(0.33,1,0.67,1.5);
+		transform: translate(0,25px) rotate(-5deg);
+		transform-origin: 61px 148px;
+	}
+	to {
+		transform: translate(0,8px) rotate(0);
+		transform-origin: 0 148px;
+	}
+}
+@keyframes paperBottom {
+	from,
+	40% {
+		animation-timing-function: cubic-bezier(0.32,0,0.67,0);
+		transform: translate(0,25px) rotate(0);
+		transform-origin: 61px 148px;
+	}
+	70% {
+		animation-timing-function: cubic-bezier(0.33,1,0.67,1.5);
+		transform: translate(0,25px) rotate(5deg);
+		transform-origin: 61px 148px;
+	}
+	to {
+		transform: translate(0,42px) rotate(0);
+		transform-origin: 0 148px;
+	}
+}
+@keyframes paperTear {
+	from,
+	40% {
+		stroke-dashoffset: -198;
+	}
+	70%,
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+@keyframes paperTearFill {
+	from,
+	40% {
+		width: 187px;
+	}
+	70%,
+	to {
+		width: 0;
+	}
+}
+
+.error_page {
+	display: flex;
+	height: 500px;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 50px;
+	gap: 40px;
+}
+.error_page .error_image {
+	width: 230px;
+}
+.error_page .error_message {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.error_page .error_message h1 {
+	font-size: 26px;
+	font-weight: 700;
+}
+.error_page .error_message p {
+	font-size: 18px;
+	font-weight: 500;
+	margin: 10px 0;
+}
+@media  (max-width : 767px) {
+	 .error_page {
+	 	flex-direction: column;
+	 }
+	 .error_page .error_image {
+	 	width: 180px;
+	 	max-width: 40%;
+	 }
+	 .error_page .error_message {
+	 	text-align: center;
+	 }
+	 .error_page .error_message p {
+	 	font-size: 16px;
+	 }
+}
+</style>
+<div class="error_page sub_content ">
+	<div class="error_image">
+		<svg class="paper" viewBox="0 0 300 300" width="300px" height="300px" role="img" aria-label="A piece of paper torn in half">
+			<g class="paper__outline" fill="none" stroke="hsl(0,10%,10%)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" transform="translate(61,4)">
+				<g class="paper__top" transform="translate(0,25)">
+					<polygon class="paper__shadow" fill="hsl(0,10%,70%)" stroke="none" points="0 148,0 0,137 0,187 50,187 148,155 138,124 148,93 138,62 148,31 138" transform="translate(-12,12)" />
+					<rect class="paper__tear-fill" fill="hsl(0,0%,100%)" stroke="none" x="0" y="137" width="0" height="23px" />
+					<polygon class="paper__fill" fill="hsl(0,0%,100%)" stroke="none" points="0 148,0 0,137 0,187 50,187 148,155 138,124 148,93 138,62 148,31 138" />
+					<polygon class="paper__shadow" fill="hsl(0,10%,70%)" stroke="none" points="137 0,132 55,187 50,142 45" />
+					<polyline points="137 0,142 45,187 50" />
+					<polyline points="0 148,0 0,137 0,187 50,187 148" />
+					<g class="paper__lines" stroke="hsl(0,10%,70%)">
+						<polyline points="22 88,165 88" />
+						<polyline points="22 110,165 110" />
+						<polyline points="22 132,165 132" />
+					</g>
+					<polyline class="paper__tear" points="0 148,31 138,62 148,93 138,124 148,155 138,187 148" stroke-dasharray="198 198" stroke-dashoffset="-198" />
+				</g>
+				<g class="paper__bottom" transform="translate(0,25)">
+					<polygon class="paper__shadow" fill="hsl(0,10%,70%)" stroke="none" points="0 148,31 138,62 148,93 138,124 148,155 138,187 148,187 242,0 242" transform="translate(-12,12)" />
+					<polygon class="paper__fill" fill="hsl(0,0%,100%)" stroke="none" points="0 148,31 140,62 148,93 138,124 148,155 138,187 148,187 242,0 242" />
+					<polyline points="187 148,187 242,0 242,0 148" />
+					<g class="paper__lines" stroke="hsl(0,10%,70%)">
+						<polyline points="22 154,165 154" />
+						<polyline points="22 176,165 176" />
+						<polyline points="22 198,94 198" />
+					</g>
+					<polyline class="paper__tear" points="0 148,31 138,62 148,93 138,124 148,155 138,187 148" stroke-dasharray="198 198" stroke-dashoffset="-198" />
+				</g>
+			</g>
+		</svg>
+	</div>
+	<div class="error_message">
+		<h1>페이지를 찾을 수 없습니다.</h1>
+		<div>
+			<p>페이지가 존재하지 않거나, 사용할 수 없는 페이지입니다.</p>
+			<p>입력하신 주소가 정확한지 다시 한 번 확인해 주세요.</p>
+		</div>
+		<div>
+			<button class="btn" onclick="history.back();">이전 페이지</button>
+			<button class="btn" onclick="location.href='/nmc'">메인으로 이동</button>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+		</div>
+		<style> .footerTop li a { color: #939393; } .footerTop .footer_privacy a { color: #d85600 !important; } .sitemap .set:focus-within {     display: block; } .sitemap .set:focus-within ul {     display: block; }  
+</style>
+<div id="sideMenu" class="sideMenu active"> 
+<div class="sideFrequency"> 
+<ul> 
+<li><a href="javascript:void(0);" onclick="toggleSiteMap(true, this)"><i></i><span>사이트맵</span></a></li> 
+<li><a target="_blank" title="콜백 전화예약 새창열림" href="/nmc/reserve/quickReserve"><i></i><span>콜백 전화예약</span></a></li><!-- <li><a target="_blank" title="새창열림" href="javascript:void(0);"><i></i><span>외래진료<br /> --> 
+<li><a target="_blank" title="공공의료기관찾기 새창열림" href="/nmc/fixed/publicHospital"><i></i><span>공공의료기관찾기</span></a></li> 
+<li><a target="_blank" title="미디어아카이브 바로가기 새창열림" href="/archive/main"><i></i><span>미디어아카이브<br> 바로가기</span></a></li> 
+<li><a target="_blank" title="후원안내 바로가기 새창열림" href="/nmc/contents/fund_info"><i></i><span>후원안내<br> 바로가기</span></a></li> 
+</ul></div> 
+<div class="sideMedia"> 
+<ul> 
+<li><a target="_blank" title="유튜브 새창열림" href="https://www.youtube.com/@NMCPR"></a></li> 
+<li><a target="_blank" title="네이버 블로그 새창열림" href="https://blog.naver.com/nmc_official"></a></li> 
+<li><a target="_blank" title="인스타그램 새창열림" href="https://www.instagram.com/nmc_official"></a></li> 
+</ul></div><button type="&rdquo;button&rdquo;" class="sideButton" title="접기 또는 펼치기 버튼"> 
+<div></div></button></div>
+<div id="footer"> 
+<div class="footerTop"> 
+<ul> 
+<li class="footer_privacy"><a href="/nmc/privacy_policy">개인정보처리방침</a></li> 
+<li><a href="/nmc/contents/videoinformation">영상정보처리기기 운영관리 방침</a></li> 
+<li><a href="/nmc/contents/email_collection_refusal">이메일무단수집거부</a></li> 
+<li><a href="/nmc/contents/copyright_policy">저작권정책</a></li> 
+<li><a href="/nmc/contents/patient_bill_of_rights">환자권리장전</a></li> 
+<li><a href="/nmc/contents/terms_of_use">이용약관</a></li> 
+<li><a href="/nmc/contents/download_viewer">뷰어다운로드</a></li> 
+</ul></div> 
+<div class="footerBottom"> 
+<div class="agencyInfo"> 
+<div class="adressInfo">(04564) 서울 중구 을지로 245 (을지로 6가)</div> 
+<div class="callInfo"> 
+<div class="integrated">통합예약 : 02-2260-7114</div> 
+<div class="checkup">검진상담예약 : 02-2260-7432</div></div> 
+<div class="copyrightInfo">Copyright(C) National Medical Center. All Rights Reserved.</div></div> 
+<div class="markSite"> 
+<div class="markWrap"> 
+<div aria-label="4주기인증마크" class="healthcarequality"></div> 
+<div aria-label="과학기술정보통신부 WA(WEB접근성) 품질인증 마크, 웹와치(WebWatch) 2026.01.13 ~ 2027.01.12" class="webaccess"></div> 
+<div aria-label="기관생명윤리위원회" class="ban_mark2"></div></div> 
+<div class="sitemap"> 
+<div class="set shortcut"><button type="button">바로가기</button> 
+<ul> 
+<li><a target="_blank" title="새창열림" href="/nrs/main">간호부</a></li> 
+<li><a target="_blank" title="새창열림" href="/health/main">건강증진&middot;예방센터</a></li> 
+<li><a target="_blank" title="새창열림" href="/instlm/main">공공보건의료연구소</a></li> 
+<li><a target="_blank" title="새창열림" href="https://www.ppm.or.kr/">공공보건의료지원센터</a></li> 
+<li><a target="_blank" title="새창열림" href="https://www.pubcp.or.kr/introduce/intro.do">공공의료cp모니터링</a></li> 
+<li><a target="_blank" title="새창열림" href="http://www.301nss.or.kr">공공의료복지연계서비스</a></li> 
+<li><a target="_blank" title="새창열림" href="http://www.nmc.or.kr/kidos/">대한민국 감염병 극복 지원 사업</a></li> 
+<li><a target="_blank" title="새창열림" href="/mdntf/main">약제부</a></li> 
+<li><a target="_blank" title="새창열림" href="https://www.e-gen.or.kr/nemc/education.do">응급의료교육과정</a></li> 
+<li><a target="_blank" title="새창열림" href="https://dw.nemc.or.kr/nemcMonitoring/mainmgr/Main.do">응급의료모니터링시스템</a></li> 
+<li><a target="_blank" title="새창열림" href="/fnrl/main">장례식장</a></li> 
+<li><a target="_blank" title="새창열림" href="https://erpoison.nemc.or.kr/">중독정보관리 시스템</a></li> 
+<li><a target="_blank" title="새창열림" href="https://22762276.nmc.or.kr/nmc22762276/main/main.do">중앙난임&middot;임산부심리상담센터</a></li> 
+<li><a target="_blank" title="새창열림" href="https://cmcmc.nmc.or.kr/main/main.do">중앙모자의료센터</a></li> 
+<li><a target="_blank" title="새창열림" href="https://www.e-gen.or.kr/">중앙응급의료센터</a></li> 
+<li><a target="_blank" title="새창열림" href="https://www.nid.or.kr/main/main.aspx">중앙치매센터</a></li> 
+<li><a target="_blank" title="새창열림" href="https://rhs.mohw.go.kr/">지역거점공공병원 알리미</a></li> 
+<li><a target="_blank" title="새창열림" href="/mdcin/main">약물안전센터</a></li> 
+<li><a target="_blank" title="새창열림" href="https://www.edunmc.or.kr/nplms/">학습관리시스템</a></li> 
+<li><a target="_blank" title="새창열림" href="/clinic/main">해외여행클리닉</a></li> 
+<li><a target="_blank" title="새창열림" href="https://www.healthmap.or.kr/">헬스맵</a></li> 
+</ul></div> 
+<div class="set related"><button type="button">관련기관</button> 
+<ul> 
+<li><a target="_blank" title="새창열림" href="https://www.mohw.go.kr/">보건복지부</a></li> 
+<li><a target="_blank" title="새창열림" href="https://www.kdca.go.kr/">질병관리청</a></li> 
+<li><a target="_blank" title="새창열림" href="https://www.mois.go.kr/frt/a01/frtMain.do">행정안전부</a></li> 
+</ul></div></div></div></div></div>
+	</div>
+</body>
+<link rel="stylesheet" href="/styles/assets/css/dev.css" />
+</html>

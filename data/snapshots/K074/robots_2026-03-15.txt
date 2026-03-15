@@ -1,0 +1,24 @@
+User-agent: *
+Disallow: /
+
+Allow: /menu.es
+Allow: /board.es
+Allow: /boardDownload.es
+Allow: /gallery.es
+Allow: /galleryDownload.es
+Allow: /galleryExtraDownload.es
+Allow: /galleryImgView.es
+Allow: /galleryRelate.es
+Allow: /dataOrder/form.es
+Allow: /dataSignup/form.es
+Allow: /newsletterSubscription/form.es
+Allow: /seminar/index.es
+Allow: /seminar/view.es
+Allow: /attachedFileDownload.es
+Allow: /rss/board.es
+Allow: /rss/gallery.es
+Allow: /organization/index.es
+Allow: /organization/list.es
+Allow: /scrap/index.es
+Allow: /visitor/index.es
+Allow: /visitor/view.es

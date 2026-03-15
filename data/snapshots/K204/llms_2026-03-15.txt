@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,user-scalable=yes" />
+<meta name="title" content="" />
+<meta name="keyword" content="" />
+<meta name="description" content="" />
+<title>에러페이지 | 한국마사회</title>
+    
+<link rel="stylesheet" href="/common/css/swiper.css">
+<link rel="stylesheet" href="/common/css/default.css">
+<link rel="stylesheet" href="/common/css/common.css">
+<link rel="stylesheet" href="/common/css/layout.css">
+<link rel="stylesheet" href="/common/css/sub.css">
+
+<script src="/common/js/jquery-3.4.1.min.js"></script>
+<script src="/common/js/swiper.js"></script>
+<script src="/common/js/common.js"></script>
+
+<!-- 
+	/kra.co.kr/WebContent/pub/contents/common/erro-01-00-00.html
+-->
+
+</head>
+<body>
+<!-- wrapper -->
+<div id="wrapper" class="header-wt error-page">
+	<!-- header -->
+	<header id="header">
+		<div class="header-wrap">
+			<div class="header-inbox">
+				<div class="hleft-area">
+					<h1 class="logo"><a href="/"><span class="blind">메인페이지로 이동</span></a></h1><!-- 오늘의 경주일 경우 class logo-erace 추가 -->
+				</div>
+			</div>
+			<!-- //header-inbox -->
+		</div>
+		<!-- //header-wrap -->
+	</header>
+	<!-- //header -->
+	<!-- container -->
+	<div id="container" class="sub-container">
+		<div class="subin-wrap">
+			<div class="error-inbox">
+				 <p class="txt01">죄송합니다. 페이지를 찾을 수 없습니다.</p>
+				 <p class="txt02">존재하지 않는 주소를 입력하셨거나<br>요청하신 페이지의 주소가 변경, 삭제되어 찾을 수 없습니다.</p>
+				 <p class="txt03">궁금한 점이 있으시면 언제든 고객센터를 통해 문의해 주시기 바랍니다.</p>
+				 <div class="btn-box">
+					<a href="/main.do" class="btn">메인으로</a>
+				 </div>
+			</div>
+		</div>
+	</div>
+	<!-- //container -->
+</div>
+<!-- //wrapper -->
+</body>
+</html>

@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /bohunDesign/
+Disallow: /common/
+Disallow: /editor/
+Disallow: /excel/
+Disallow: /*/lo/login/
+Disallow: /apple/
+Disallow: /help/
+Disallow: /council/
+Disallow: /academy/
+

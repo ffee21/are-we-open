@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /cmm/fms/Download.do
+Disallow: /cmm/fms/kopoImg.do
+Disallow: /viewer.do
+Disallow: /previewer.do
+Disallow: /skin/
+Disallow: /search.do
+Disallow: /*/search.do

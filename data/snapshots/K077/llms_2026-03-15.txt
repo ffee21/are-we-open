@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<meta name="Generator" content="newbreed.co.kr">
+<meta name="Author" content="newbreed.co.kr">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<meta name="msapplication-TileImage" content="/skin/basic/img/favicon/ms-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="57x57" href="/skin/basic/img/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/skin/basic/img/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/skin/basic/img/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/skin/basic/img/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/skin/basic/img/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/skin/basic/img/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/skin/basic/img/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/skin/basic/img/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/skin/basic/img/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/skin/basic/img/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/skin/basic/img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/skin/basic/img/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/skin/basic/img/favicon/favicon-16x16.png">
+<title>대한석탄공사</title>
+<link rel="stylesheet" href="../skin/basic/asset/lib/slick/slick.css" type="text/css" />
+<link rel="stylesheet" href="../skin/basic/asset/lib/slick/slick-theme.css" type="text/css" />
+<link rel="stylesheet" href="../skin/basic/asset/css/style.css?ver=20241205" type="text/css" />
+<!-- <link rel="stylesheet" href="../skin/basic/css/style.css">
+<link rel="stylesheet" href="../skin/basic/member/member.css"  type="text/css"> -->
+<script src="../skin/basic/js/jquery-3.6.4.min.js"></script>
+<!-- <script src="../skin/basic/js/jquery-ui.min.js"></script> -->
+<!-- <script src="../skin/basic/js/jquery.bxslider.min.js"></script> -->
+<!-- <script src="../skin/basic/js/jquery.flexslider.js"></script> -->
+<script src="../skin/basic/js/common2.js"></script>
+<script src="../common/js/master.js"></script>
+<script src="../skin/basic/asset/lib/slick/slick.min.js"></script>
+<!-- <script src="../skin/basic/asset/js/common.js"></script> -->
+
+<link rel="stylesheet" href="../skin/basic/plugin/jquery-ui.css" type="text/css">
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script >
+$( function() {
+ jQuery(".auto_complete").autocomplete({
+	minLength: 1,
+	delay : 200,
+	source: function(request, response) { 
+	jQuery.ajax({
+	  url: "../common/auto_keyword.php",
+	  data:  {
+	     mode : "ajax",
+		 limit : 15,
+		 txt : request.term
+		},
+	   dataType: "json",
+		   success: function(data) 	{
+			 response(data);
+		   }	
+		})
+	  },		 
+	  select: function( event, ui ) {
+	      //log( ui.item ?  "Selected: " + ui.item.label :  "Nothing selected, input was " + this.value);		 
+      },
+      open: function() {		  
+        $(this).removeClass("ui-corner-all").addClass("ui-corner-top");
+      },
+      close: function() {
+        $( this ).removeClass("ui-corner-top").addClass("ui-corner-all");
+      },focus: function(event, ui){ 
+		return false;
+	  }
+ });
+});
+</script>
+
+<script >
+		$(document).ready(function () {
+			 $('#content').append('<!-- 161014 팝업 테두리 (border:1px solid #c0c0c0;) 삭제 --><div id=\"popup_160\" class=\"popup_drag popup_160\" style=\"position: absolute; top:100px; left: 100px; z-index:999160; background-color:#fff;border:1px solid #e7e7e7; line-height:0\">	<table style=\"width:645px;height:645px;\" cellpadding=\"0\" cellspacing=\"0\">		<tr>			<td valign=\"top\">					<img src=\"../../../../data/editor/177258206517ee48429c2a9ff654f89c5ab2df578e.jpg\" title=\"\"><br style=\"clear:both;\"><br style=\"clear:both;\"><br>			</td>		</tr>		<tr height=\"27\">		<!-- 161014 팝업창 하단 백그라운드컬러 #313031에서 #c3c4c8로 변경 -->			<td style=\"text-align:right;font-size:12px;background-color:#c3c4c8;vertical-align:middle; padding-right:10px;\">				<a style=\"font-size:12px;text-decoration:none;color:#fff;\" href=\"javascript:void(0);\" onclick=\"popup_close_layer(160);\">오늘 하루 열지않음&nbsp;&nbsp;&nbsp;&nbsp;</a>				<a href=\"javascript:void(0);\"  style=\"font-size:12px;text-decoration:none;color:#fff;\" onclick=\"popup_close_layer_normal(\'160\');\">닫기 X</a>			</td>		</tr>	</table></div>');
+			$(".popup_drag").draggable({
+				cursor: "move",
+				stack: ".popup_drag",
+				opacity: 0.7
+			});
+		});</script>
+</head>
+<body>
+<div id="wrap">
+<div id="anchorDott"></div>
+<!-- skipNavi -->
+<ul id="skipNavi">
+	<li><a href="#container" ></a></li>
+</ul>
+<!-- //skipNavi -->
+<!-- 상단배너
+<a href="https://www.youtube.com/watch?v=YdLtgT2OoYo" onclick="$('#bg1').slideUp(400);" target="_blank">
+<div id="bg1" style="text-align: center;background-color: #E1D4C4;"><img src="/skin/basic/img/banner_cat.jpg"></div>
+	</a>
+ 상단배너 끝 -->
+<header id="header" data-selector="header" class="">
+<!-- include header.html -->
+<div id="notice_area"></div>
+<div class="head-top" data-selector="header-top">
+	<div class="m-main">
+		<h1 class="logo">
+				<a href="/"><img src="/skin/basic/img/logo.png" alt="대한석탄공사"></a>
+
+		</h1>
+		<a href="javascript:void(0)" class="all-menu" data-action="menuOn"><span class="bar"></span><span class="a11y">menu on / off</span></a>
+
+		<form name="fsearch" id="fsearch" method="get" action="/service/search.php">
+			<input type="hidden" name="sel" value="all">
+			<label class="all-search">
+			<input type="text" value="" name="keyword" id="search" placeholder="검색">
+			<a href="javascript:topSearch();" class="btn-search"><img src="/skin/basic/img/ico_find.png" alt="검색"></a>
+			</label>
+		</form>
+		<script>
+		function topSearch()
+		{
+			$("#fsearch").submit();
+		}
+		</script>
+
+		<nav class="right-nav m-hide">
+		<!-- <a href="" class="item">사이트맵</a>
+            <a href="" class="item">ENG</a> -->
+		&nbsp;&nbsp;
+		<a href="/newpage/newpage.php?f_id=sitemap" class="item">사이트맵</a>
+		<a href="/eng/" target="_blank" class="item">ENG</a>  &nbsp;&nbsp;
+		<!--<span style="vertical-align:middle; display:inline-block;" class="m-hide">
+			  <a href="https://blog.naver.com/kocoal1950" target="_blank"  style="vertical-align:middle; display:inline-block;"><img src="/skin/basic/img/sns4.png" alt="블러그" style="vertical-align:middle; "></a> &nbsp;
+				<a href="https://www.facebook.com/KOREACOAL" target="_blank"  style="vertical-align:middle; display:inline-block;"><img src="/skin/basic/img/sns1.png" alt="페이스북" style="vertical-align:middle; "></a> &nbsp;
+			    <a href="https://www.instagram.com/kocoal_official"  target="_blank"style="vertical-align:middle; display:inline-block;"><img src="/skin/basic/img/sns2.png" alt="인스타그램" style="vertical-align:middle; "></a>-->
+
+		</nav>
+	</div>
+</div>
+<div class="head-btt">
+	<div class="m-main">
+		<ul class="main-nav after" data-selector="allNav">
+			<li data-selector="depth1Container" data-sid="1" class="">
+			<a href="javascript:void(0)" class="depth1" data-action="depth1">소개</a>
+			<ul class="rowdepth" data-selector="rowdepth">
+				<li data-selector="depth2Container" data-sid="1">
+				<a href="/newpage/newpage.php?f_id=intro_ceo" class="depth2" data-action="depth2">대한석탄공사는</a>
+				<nav data-selector="depth3Container">
+				<a href="/newpage/newpage.php?f_id=intro_ceo" class="depth3" data-action="depth3" data-sid="1">CEO 인사말</a>
+				<a href="/newpage/newpage.php?f_id=intro_road" class="depth3" data-action="depth3" data-sid="2">걸어온 길</a>
+				<a href="/newpage/newpage.php?f_id=intro_vision" class="depth3" data-action="depth3" data-sid="3">비전ㆍ전략ㆍ가치</a>
+				<a href="/newpage/newpage.php?f_id=intro_symbol" class="depth3" data-action="depth3" data-sid="4">상징</a>
+				<a href="/newpage/newpage.php?f_id=intro_come" class="depth3" data-action="depth3" data-sid="5">오시는 길</a>
+				</nav>
+				</li>
+				<li data-selector="depth2Container" data-sid="2">
+				<a href="/newpage/newpage.php?f_id=intro_product" class="depth2" data-action="depth2">사업 안내</a>
+				<nav data-selector="depth3Container">
+				<a href="/newpage/newpage.php?f_id=intro_product" class="depth3" data-action="depth3" data-sid="1">석탄생산</a>
+				<a href="/newpage/newpage.php?f_id=intro_sale" class="depth3" data-action="depth3" data-sid="2">석탄판매</a>
+				<a href="/newpage/newpage.php?f_id=intro_business" class="depth3" data-action="depth3" data-sid="3">주요사업 안내</a>
+				</nav>
+				</li>
+				<li data-selector="depth2Container" data-sid="3">
+				<a href="/newpage/newpage.php?f_id=intro_headoffice" class="depth2" data-action="depth2">조직도</a>
+				<nav data-selector="depth3Container">
+				<a href="/newpage/newpage.php?f_id=intro_headoffice" class="depth3" data-action="depth3" data-sid="1">본사</a>
+				<!-- <a href="/newpage/newpage.php?f_id=intro_research" class="depth3" data-action="depth3" data-sid="7">연구소</a> -->
+				<!-- <a href="/newpage/newpage.php?f_id=intro_jang" class="depth3" data-action="depth3" data-sid="2">장성광업소</a> -->
+				<a href="/newpage/newpage.php?f_id=intro_do" class="depth3" data-action="depth3" data-sid="3">도계광업소</a>
+				<!-- <a href="/newpage/newpage.php?f_id=intro_hwa" class="depth3" data-action="depth3" data-sid="4">화순광업소</a> -->
+				<a href="/newpage/newpage.php?f_id=intro_etc" class="depth3" data-action="depth3" data-sid="5">기타</a>
+				<a href="/board/board_list.php?board_name=meeting" class="depth3" data-action="depth3" data-sid="6">이사회</a>
+				</nav>
+				</li>
+				<!-- <li data-selector="depth2Container" data-sid="4">
+                        <a href="/v2_board/list.php?table=1002" class="depth2" data-action="depth2">알림</a>
+                        <nav data-selector="depth3Container">
+                            <a href="/v2/intro/?m=4&page=2" class="depth3" data-action="depth3" data-sid="1">채용</a>
+                        </nav>
+                    </li> -->
+			</ul>
+			</li>
+
+			<li data-selector="depth1Container" data-sid="2">
+			<a href="javascript:void(0)" class="depth1" data-action="depth1">열린경영</a>
+			<ul class="rowdepth" data-selector="rowdepth">
+				<li data-selector="depth2Container" data-sid="1">
+				<a href="/board/board_list.php?board_name=manage_gongsi" class="depth2" data-action="depth2">경영공시</a>
+				<nav data-selector="depth3Container">
+				<a href="/board/board_list.php?board_name=manage_gongsi" class="depth3" data-action="depth3" data-sid="1">통합공시</a>
+				<a href="/board/board_list.php?board_name=self_gongsi" class="depth3" data-action="depth3" data-sid="2">자체공시</a>
+				</nav>
+				</li>
+				<li data-selector="depth2Container" data-sid="2">
+				<a href="/newpage/newpage.php?f_id=manage_info_guide" class="depth2" data-action="depth2">정보공개</a>
+				<nav data-selector="depth3Container">
+				<a href="/newpage/newpage.php?f_id=manage_info_guide" class="depth3" data-action="depth3" data-sid="1">정보공개안내</a>
+				<!-- <a href="/board/board_list.php?board_name=info_apply" class="depth3" data-action="depth3" data-sid="2">정보공개신청</a> -->
+				<a href="/board/board_list.php?board_name=info_apply" class="depth3" data-action="depth3" data-sid="2">정보공개신청</a>
+				<a href="/board/board_list.php?board_name=pre_info" class="depth3" data-action="depth3" data-sid="3">사전정보 공개</a>
+				</nav>
+				</li>
+				<li data-selector="depth2Container" data-sid="3">
+				<a href="/newpage/newpage.php?f_id=manage_pub_data" class="depth2" data-action="depth2">공공데이터 개방</a>
+				<nav data-selector="depth3Container">
+				<a href="/newpage/newpage.php?f_id=manage_pub_data" class="depth3" data-action="depth3" data-sid="1">공공데이터 개방이란?</a>
+				<a href="/newpage/newpage.php?f_id=manage_pub_dataList" class="depth3" data-action="depth3" data-sid="2">공공데이터 개방 목록</a>
+				<a href="/board/board_list.php?board_name=pubdata_singo" class="depth3" data-action="depth3" data-sid="3">공공데이터 오류 신고</a>
+				<a href="/newpage/newpage.php?f_id=manage_pub_data_apply" class="depth3" data-action="depth3" data-sid="4">공공데이터 제공 신청</a>
+				<!-- <a href="https://www.data.go.kr/subMain.jsp#/L3B1Ym4vbGFiL2V4bS9Jcm9zVXNlRXhhbUxpc3QyJEBeMDIxbTI=" class="depth3" data-action="depth3" data-sid="3">공공데이터 활용 실적</a> -->
+				</nav>
+				</li>
+				<li data-selector="depth2Container" data-sid="4">
+				<a href="/newpage/newpage.php?f_id=manage_budongsan" class="depth2" data-action="depth2">입찰 및 계약 정보</a>
+				<nav data-selector="depth3Container">
+				<a href="/newpage/newpage.php?f_id=manage_budongsan" class="depth3" data-action="depth3" data-sid="1">부동산 입찰 안내</a>
+				<a href="/newpage/newpage.php?f_id=manage_jodal" class="depth3" data-action="depth3" data-sid="2">입찰조달 정보</a>
+				<a href="http://www.g2b.go.kr:8067/contract/contListG.jsp?tCode=B410004" target="_blank" class="depth3" data-action="depth3" data-sid="3">계약 정보</a>
+				<a href="/board/board_list.php?board_name=contract" class="depth3" data-action="depth3" data-sid="4">수의계약 정보</a>
+				</nav>
+				</li>
+				<li data-selector="depth2Container" data-sid="5">
+				<a href="/board/board_list.php?board_name=real_name" class="depth2" data-action="depth2">기타 정보</a>
+				<nav data-selector="depth3Container">
+				<a href="/board/board_list.php?board_name=real_name" class="depth3" data-action="depth3" data-sid="1">사업실명제</a>
+				<a href="/newpage/newpage.php?f_id=manage_roadmap" class="depth3" data-action="depth3" data-sid="2">국정과제</a>
+				<a href="/newpage/newpage.php?f_id=manage_hire" class="depth3" data-action="depth3" data-sid="3">채용</a>
+				<a href="/newpage/newpage.php?f_id=copyright_guide" class="depth3" data-action="depth3" data-sid="4">저작권정책</a>
+				</nav>
+				</li>
+			</ul>
+			</li>
+
+			<li data-selector="depth1Container" data-sid="3">
+			<a href="javascript:void(0)" class="depth1" data-action="depth1">홍보센터</a>
+			<ul class="rowdepth" data-selector="rowdepth">
+				<li data-selector="depth2Container" data-sid="1">
+				<a href="/newpage/newpage.php?f_id=pr_gongsa_01" class="depth2" data-action="depth2">공사현황</a>
+				<nav data-selector="depth3Container">
+				<a href="/newpage/newpage.php?f_id=pr_gongsa_01" class="depth3" data-action="depth3" data-sid="1">경영방침</a>
+				<a href="/newpage/newpage.php?f_id=pr_gongsa_02" class="depth3" data-action="depth3" data-sid="2">가행여건</a>
+				</nav>
+				</li>
+				<li data-selector="depth2Container" data-sid="2">
+				<a href="/board/board_list.php?board_name=news&search_category=보도자료" class="depth2" data-action="depth2">NEWS</a>
+				<nav data-selector="depth3Container">
+				<a href="/board/board_list.php?board_name=news&search_category=공지사항" class="depth3" data-action="depth3" data-sid="1">공지사항</a>
+				<a href="/board/board_list.php?board_name=news&search_category=보도자료" class="depth3" data-action="depth3" data-sid="2">보도자료</a>
+				<a href="/board/board_list.php?board_name=kocoalnews" class="depth3" data-action="depth3" data-sid="3">석공뉴스</a>
+				<!-- <a href="/board/board_list.php?board_name=news&search_category=석공뉴스" class="depth3" data-action="depth3" data-sid="3">석공뉴스</a> -->
+				</nav>
+				</li>
+				<li data-selector="depth2Container" data-sid="3">
+				<a href="/newpage/newpage.php?f_id=pr_history_01" class="depth2" data-action="depth2">History</a>
+				<nav data-selector="depth3Container">
+				<a href="/newpage/newpage.php?f_id=pr_history_01" class="depth3" data-action="depth3" data-sid="1">석탄공사 50년사</a>
+				<a href="/board/board_list.php?board_name=history_50years_01" class="depth3" data-action="depth3" data-sid="2">석탄공사 50년사 화보</a>
+				<a href="/board/board_list.php?board_name=history_sabo" class="depth3" data-action="depth3" data-sid="3">사보</a>
+				<a href="/newpage/newpage.php?f_id=pr_video" class="depth3" data-action="depth3" data-sid="4">석탄공사 홍보영상</a>
+				</nav>
+				</li>
+				<!-- <li data-selector="depth2Container" data-sid="4">
+                        <a href="/v2/pr/?m=4&page=1" class="depth2" data-action="depth2">SNS</a>
+                    </li> -->
+				<li data-selector="depth2Container" data-sid="4">
+				<a href="/board/board_list.php?board_name=pr_gallery" class="depth2" data-action="depth2">Gallery</a>
+				<nav data-selector="depth3Container">
+				<a href="/board/board_list.php?board_name=pr_gallery" class="depth3" data-action="depth3" data-sid="1">Gallery</a>
+				</nav>
+				</li>
+
+
+
+				<!--li data-selector="depth2Container" data-sid="7">
+				<a href="/board/board_list.php?board_name=energy" class="depth2" data-action="depth2">석공매거진</a>
+				<nav data-selector="depth3Container">
+				<a href="/board/board_list.php?board_name=energy" class="depth3" data-action="depth3" data-sid="1">서민에너지에서 평화에너지로</a>
+				</nav>
+				</li-->
+			</ul>
+			</li>
+
+			<li data-selector="depth1Container" data-sid="4" class="">
+			<a href="javascript:void(0)" class="depth1" data-action="depth1">민원/부패·공익신고</a>
+			<!--	<a href="javascript:void(0)" class="depth1" data-action="depth1">통합민원</a> -->
+			<ul class="rowdepth" data-selector="rowdepth">
+				<li data-selector="depth2Container" data-sid="1">
+				<a href="/newpage/newpage.php?f_id=cs_01" class="depth2" data-action="depth2">고객서비스 헌장</a>
+				</li>
+				<li data-selector="depth2Container" data-sid="2">
+				<a href="/board/board_list.php?board_name=cs" class="depth2" data-action="depth2">일반신고</a><!--문의합니다-->
+				<nav data-selector="depth3Container">
+				<a href="/board/board_list.php?board_name=cs" class="depth3" data-action="depth3" data-sid="1">문의하기</a>
+				<a href="/board/board_list.php?board_name=cs_faq" class="depth3" data-action="depth3" data-sid="2">FAQ</a>
+				</nav>
+				</li>
+				<li data-selector="depth2Container" data-sid="3">
+				<a href="/newpage/newpage.php?f_id=cs_03_01" class="depth2" data-action="depth2">부패·공익신고</a> <!--통합신고-->
+				<nav data-selector="depth3Container">
+				<a href="/newpage/newpage.php?f_id=cs_03_01" class="depth3" data-action="depth3" data-sid="1">부패ㆍ방만경영 신고</a>
+				<a href="/newpage/newpage.php?f_id=cs_03_02" class="depth3" data-action="depth3" data-sid="2">갑질(인권)신고</a>
+				<a href="/newpage/newpage.php?f_id=cs_03_03" class="depth3" data-action="depth3" data-sid="3">공익신고</a>
+				<a href="/newpage/newpage.php?f_id=cs_03_04" class="depth3" data-action="depth3" data-sid="4">청탁금지법 위반행위 신고</a>
+				</nav>
+				</li>
+				<li data-selector="depth2Container" data-sid="4">
+				<a href="/board/board_list.php?board_name=community" class="depth2" data-action="depth2">혁신소통</a>
+				</li>
+				<li data-selector="depth2Container" data-sid="5">
+
+				<a href="/board/board_list.php?board_name=certification" class="depth2" data-action="depth2">경력증명서 등 발급</a>
+
+				</li>
+
+				<li data-selector="depth2Container" data-sid="7">
+					<a href="/newpage/newpage.php?f_id=cs_07_01" class="depth2" data-action="depth2">기업성장응답센터</a>
+					<nav data-selector="depth3Container">
+						<a href="/newpage/newpage.php?f_id=cs_07_01" class="depth3" data-action="depth3" data-sid="1">기업성장응답센터 소개</a>
+						<a href="/newpage/newpage.php?f_id=cs_07_02" class="depth3" data-action="depth3" data-sid="2">규제애로 신고</a>
+						<a href="/newpage/newpage.php?f_id=cs_07_03" class="depth3" data-action="depth3" data-sid="3">기업민원 보호·서비스 헌장</a>
+						<a href="/newpage/newpage.php?f_id=cs_07_04" class="depth3" data-action="depth3" data-sid="4">기업민원 피해 신고</a>
+					</nav>
+				</li>
+
+
+			</ul>
+			</li>
+
+			<li data-selector="depth1Container" data-sid="5" class="">
+			<a href="javascript:void(0)" class="depth1" data-action="depth1">사회적책임경영</a>
+			<ul class="rowdepth" data-selector="rowdepth">
+				<li data-selector="depth2Container" data-sid="4">
+				<a href="/newpage/newpage.php?f_id=love_04_01" class="depth2" data-action="depth2">도시재생</a>
+				<nav data-selector="depth3Container">
+				<a href="/newpage/newpage.php?f_id=love_04_01" class="depth3" data-action="depth3" data-sid="1">사회적책임 추진전략</a>
+				<a href="/newpage/newpage.php?f_id=love_04_02" class="depth3" data-action="depth3" data-sid="2">장성광업소 도시재생 사업</a>
+				<a href="/newpage/newpage.php?f_id=love_04_03" class="depth3" data-action="depth3" data-sid="3">도계광업소 도시재생 사업</a>
+				</nav>
+				</li>
+				<li data-selector="depth2Container" data-sid="1">
+				<a href="/newpage/newpage.php?f_id=love_01_01" class="depth2" data-action="depth2">사회공헌</a>
+				<nav data-selector="depth3Container">
+				<a href="/newpage/newpage.php?f_id=love_01_01" class="depth3" data-action="depth3" data-sid="1">석공사랑 봉사단 소개</a>
+				<a href="/board/board_list.php?board_name=major_act&search_category=A" class="depth3" data-action="depth3" data-sid="2">주요 활동소식</a>
+				<a href="/newpage/newpage.php?f_id=love_01_03" class="depth3" data-action="depth3" data-sid="3">아름다운 기금</a>
+				</nav>
+				</li>
+				<li data-selector="depth2Container" data-sid="2">
+				<a href="/board/board_list.php?board_name=integrity" class="depth2" data-action="depth2">윤리경영</a>
+				<nav data-selector="depth3Container">
+				<a href="/board/board_list.php?board_name=integrity" class="depth3" data-action="depth3" data-sid="1">청렴석공</a>
+				<a href="/newpage/newpage.php?f_id=love_02_02" class="depth3" data-action="depth3" data-sid="2">청렴계약제</a>
+
+				<a href="/board/board_list.php?board_name=Prohibition&search_category=제재현황" class="depth3" data-action="depth3" data-sid="3">부패행위자 제재현황</a>
+
+				<a href="/newpage/newpage.php?f_id=love_02_04" class="depth3" data-action="depth3" data-sid="4">신고자보호제도</a>
+				<a href="/board/board_list.php?board_name=Prohibition&search_category=청탁금지법" class="depth3" data-action="depth3" data-sid="5">청탁금지법 상담 및 조치</a>
+				</nav>
+				</li>
+
+				<li data-selector="depth2Container" data-sid="5">
+				<a href="/newpage/newpage.php?f_id=love_05_01" class="depth2" data-action="depth2">인권경영</a>
+				<nav data-selector="depth3Container">
+				<a href="/newpage/newpage.php?f_id=love_05_01" class="depth3" data-action="depth3" data-sid="1">인권경영헌장</a>
+				<a href="/newpage/newpage.php?f_id=love_05_02" class="depth3" data-action="depth3" data-sid="2">인권경영 이행지침</a>
+				<a href="/board/board_list.php?board_name=bhr" class="depth3" data-action="depth3" data-sid="3">인권경영 추진현황</a>
+				</nav>
+				</li>
+
+
+				<li data-selector="depth2Container" data-sid="3">
+				<a href="/newpage/newpage.php?f_id=love_03_01" class="depth2" data-action="depth2">안전경영</a>
+				<nav data-selector="depth3Container">
+				<a href="/newpage/newpage.php?f_id=love_03_01" class="depth3" data-action="depth3" data-sid="1">안전보건 경영방침</a>
+				<a href="/board/board_list.php?board_name=safety" class="depth3" data-action="depth3" data-sid="2">안전보건활동</a>
+				<a href="/newpage/newpage.php?f_id=love_03_03" class="depth3" data-action="depth3" data-sid="3">기능연속성계획 도입 선언문</a>
+				</nav>
+				</li>
+
+			</ul>
+			</li>
+
+			<li data-selector="depth1Container" data-sid="6">
+			<a href="javascript:void(0)" class="depth1" data-action="depth1">지식센터</a>
+			<ul class="rowdepth" data-selector="rowdepth">
+				<li data-selector="depth2Container" data-sid="1">
+				<a href="/board/board_list.php?board_name=study" class="depth2" data-action="depth2">석탄</a>
+				<nav data-selector="depth3Container">
+				<a href="/board/board_list.php?board_name=study" class="depth3" data-action="depth3" data-sid="1">석탄학습장</a>
+				<a href="/newpage/newpage.php?f_id=know_01_02_01" class="depth3" data-action="depth3" data-sid="2">연탄학습장</a>
+				</nav>
+				</li>
+				<li data-selector="depth2Container" data-sid="2">
+				<a href="/board/board_list.php?board_name=coal_price&search_category=유연탄" class="depth2" data-action="depth2">석탄산업</a>
+				<nav data-selector="depth3Container">
+				<a href="/board/board_list.php?board_name=coal_price&search_category=유연탄" class="depth3" data-action="depth3" data-sid="1">유연탄 가격동향</a>
+				<!-- <a href="/board/board_list.php?board_name=coal_price&search_category=무연탄" class="depth3" data-action="depth3" data-sid="2">무연탄판매 가격표</a> -->
+				<a href="/newpage/newpage.php?f_id=know_02_02" class="depth3" data-action="depth3" data-sid="2">무연탄판매 가격표</a>
+				<a href="/newpage/newpage.php?f_id=know_02_03" class="depth3" data-action="depth3" data-sid="3">국내 민영탄광 소개</a>
+				</nav>
+				</li>
+				<li data-selector="depth2Container" data-sid="3">
+				<a href="/board/board_list.php?board_name=rules&search_category=규정" class="depth2" data-action="depth2">사규집</a>
+				<nav data-selector="depth3Container" style="display:none">
+				<a href="/board/board_list.php?board_name=rules&search_category=규정" class="depth3" data-action="depth3" data-sid="1">규정</a>
+				<a href="/board/board_list.php?board_name=rules&search_category=세칙" class="depth3" data-action="depth3" data-sid="2">세칙</a>
+				<a href="/board/board_list.php?board_name=rules&search_category=지침" class="depth3" data-action="depth3" data-sid="3">지침</a>
+				<a href="/board/board_list.php?board_name=rules&search_category=요령" class="depth3" data-action="depth3" data-sid="4">요령</a>
+				<a href="/board/board_list.php?board_name=rules&search_category=개정" class="depth3" data-action="depth3" data-sid="5">개정</a>
+				<a href="/board/board_list.php?board_name=rules&search_category=예고" data-action="depth3" data-sid="6">제·개정 예고 </a>
+				</nav>
+				</li>
+			</ul>
+			</li>
+			<li data-selector="depth1Container" data-sid="7" style="display:none">
+			<a href="javascript:void(0)" class="depth1" data-action="depth1">홈페이지 정보</a>
+			<ul class="rowdepth" data-selector="rowdepth">
+				<li data-selector="depth2Container" data-sid="1">
+				<a href="/newpage/newpage.php?f_id=privacy" class="depth2" data-action="depth2">개인정보처리 방침</a>
+				</li>
+				<li data-selector="depth2Container" data-sid="2">
+				<a href="/newpage/newpage.php?f_id=sitemap" class="depth2" data-action="depth2">사이트맵</a>
+				</li>
+				<li data-selector="depth2Container" data-sid="3">
+				<a href="/newpage/newpage.php?f_id=banner" data-action="depth2">홍보배너모음</a>
+				</li>
+				<li data-selector="depth2Container" data-sid="4">
+				<a href="/service/search.php" class="depth2" data-action="depth2">통합검색</a>
+				</li>
+				<li data-selector="depth2Container" data-sid="5">
+				<a href="/service/namecheck.php" class="depth2" data-action="depth2">실명인증</a>
+				</li>
+			</ul>
+			</li>
+		</ul>
+	</div>
+</div>
+<!--// include header.html -->
+<ul class="quick-nav">
+	<li class="sns_iconbox">
+		<p class="Mb20"><a href="https://www.facebook.com/KOREACOAL" target="_blank" style="vertical-align:middle; display:inline-block;"><img src="/v2/img/q_sns01.png" alt="페이스북" style="vertical-align:middle; "></a></p>
+		<p class="Mb20"><a href="https://www.instagram.com/kocoal_official" target="_blank" style="vertical-align:middle; display:inline-block;"><img src="/v2/img/q_sns02.png" alt="인스타그램" style="vertical-align:middle; "></a></p>
+		<p><a href="https://blog.naver.com/kocoal1950" target="_blank" style="vertical-align:middle; display:inline-block;"><img src="/v2/img/q_sns03.png" alt="블러그" style="vertical-align:middle; "></a></p>
+	</li>
+	<li><a href="/newpage/newpage.php?f_id=manage_info_guide" class="item i4">정보공개</a></li>
+    <li><a href="/newpage/newpage.php?f_id=manage_jodal" class="item i2">입찰조달<br>정보</a></li>
+    <li><a href="#" id="go_top" class="item i3">TOP</a></li>
+</ul>
+</header>
+<!-- container -->
+	<div id="container" class="page-main"> 
+		<div id="content">
+	
+			<ul class="now-section">
+				<li><a href="javascript:void(0)" class="anchor" data-action="anchor" data-sid="top">KOREA COAL COrporation</a></li>
+				<li><a href="javascript:void(0)" class="anchor" data-action="anchor" data-sid="sec2">LOVE COAL</a></li>
+				<li><a href="javascript:void(0)" class="anchor" data-action="anchor" data-sid="sec3">communication</a></li>
+			</ul>
+
+			<section class="sec sec-kv" data-selector="anchorSec" data-sid="sec1">
+			<h2 class="a11y">KOREA COAL COporation</h2>
+			<div class="slide-container" id="main-kv">
+				<div class="slide-wrap" data-action="slide">
+					<div class="slide-item">
+						<div class="img-box m-hide" style="background-image:url(/v2/img/main_kv2.jpg)"></div>
+						<div class="img-box pc-hide" style="background-image:url(/v2/img/main_kv2_m.jpg)"></div>
+						<div class="dec-wrap">
+							<small class="txt">KOREA COAL CORPORATION</small>
+							<strong class="tit">사회적 책임 경영으로<br />더 나은 미래를 만들어 갑니다.</strong>
+							<!-- <a href="" class="more">자세히 보기</a> -->
+						</div>
+					</div>
+					<div class="slide-item">
+						<div class="img-box m-hide" style="background-image:url(/v2/img/main_kv1.jpg)"></div>
+						<div class="img-box pc-hide" style="background-image:url(/v2/img/main_kv1_m.jpg)"></div>
+						<div class="dec-wrap">
+							<small class="txt">KOREA COAL CORPORATION</small>
+							<strong class="tit">힘들고 고된 그들이 있어<br />많은 사람들이 따뜻해집니다.</strong>
+							<!-- <a href="" class="more">자세히 보기</a> -->
+						</div>
+					</div>
+					<div class="slide-item">
+						<div class="img-box m-hide" style="background-image:url(/v2/img/main_kv3.jpg)"></div>
+						<div class="img-box pc-hide" style="background-image:url(/v2/img/main_kv3_m.jpg)"></div>
+						<div class="dec-wrap">
+							<small class="txt">KOREA COAL CORPORATION</small>
+							<strong class="tit">사회공헌 프로그램으로<br />더 따뜻한 에너지를 전달합니다.</strong>
+							<!-- <a href="" class="more">자세히 보기</a> -->
+						</div>
+					</div>
+				</div>
+
+			</div>
+			</section>
+
+			<section class="sec sec2" data-selector="anchorSec" data-sid="sec2">
+			<div class="m-main">
+
+				<div class="floatBox">
+					<div class="col-wrap a1 float01">
+					<!-- LOVE COAL -->
+					<header class="article-head article-item new_height" data-col="box1">
+					<small>KOREA COAL CORPORATION</small>
+					<!-- <h2 class="article-tit"><strong>LOVE</strong> COAL</h2> -->
+					<h2 class="article-tit" style="font-size:29px;"><strong>석공사랑</strong> 봉사단</h2>
+					<a href="/board/board_list.php?board_name=major_act&search_category=A" class="more">+ 더보기</a>
+					</header>
+					<!--LOVE COAL 옆 비활성화 
+					<div class="article-item  f_right  new_height" data-col="box1">
+						<a href="../board/board_view.php?view_id=55&amp;board_name=kocoalnews&page=" class="item" title="글 보기">
+						<div class="img-box" style="background-image:url('../data/board/kocoalnews/thumb/1730181922f5d43f9cd5a8b664d309d34ed5baa1fc.jpg')"></div>
+						<div class="dec-wrap">
+							<strong class="tit">폐광지역 고용안정 지원을 위한 강원특별자치도경제진흥원-한국광해광업공단-대한석탄공사 업...</strong>
+							<p class="dec">&nbsp;대한석탄공사는 10월 29일(화) 14시 원주 본사 5층 대강당에서 강원특별자치도경제진흥원, 한국광해광업공단과 '폐광지역 고용안정 지원을 위한 업무협약'을 체결하였...</p>
+						</div>
+						</a>
+					</div>
+					</div>
+						LOVE COAL 옆 비활성화 -->
+
+                       <!--석공뉴스-->
+                     <div class="article-item new_box" data-col="box2">
+						<!-- <a href="/v2_board/read.php?table=1072&amp;number=9070&amp;sel_cat=" class="item"> -->
+						<a href="../board/board_view.php?view_id=55&amp;board_name=kocoalnews&page=" class="item">
+						<p class="tit">석공뉴스</p>
+						<div><!-- <img src="/skin/basic/img/img/main_img01.jpg" alt="" style="width:100%;"/> <img src="/skin/basic/img/proc/getimage.php?img_name=/v2_board/files/1072/image/20191114_722354.jpg" alt="" style="width:100%;"/>--></div>
+						<div><img src="../data/board/kocoalnews/1730181922f5d43f9cd5a8b664d309d34ed5baa1fc.jpg" alt="폐광지역 고용안정 지원을 위한 강원특별자치도경제진흥원-한국광해광업공단-대한석탄공사 업..." style="width:100%;"/></div>
+						<div class="dec-wrap">
+							<strong class="tit02">폐광지역 고용안정 지원을 위한 강원특별자치도경제진흥원-한국광해광업공단-대한석탄공사 업...</strong>
+							<p class="dec02">&nbsp;대한석탄공사는 10월 29일(화) 14시 원주 본사 5층 대강당에서 강원특별자치도경제진흥원, 한국광해광업공단과 '폐광지역 고용안정 지원을 위한 업무협약'을 체결하였...</p>
+						</div>
+						</a>
+					</div>
+
+</div>
+                <!--석공뉴스-->
+
+		      <!-- LOVE COAL -->
+
+					<div class="col-wrap a1 float02">
+					<!-- 청렴석공 -->
+					<div class="article-item new_box" data-col="box2">
+						<!-- <a href="/v2_board/read.php?table=1072&amp;number=9070&amp;sel_cat=" class="item"> -->
+						<a href="../board/board_view.php?view_id=219&amp;board_name=integrity&page=" class="item">
+						<p class="tit">청렴석공</p>
+						<div><!-- <img src="/skin/basic/img/img/main_img01.jpg" alt="" style="width:100%;"/> <img src="/skin/basic/img/proc/getimage.php?img_name=/v2_board/files/1072/image/20191114_722354.jpg" alt="" style="width:100%;"/>--></div>
+						<div><img src="../data/board/integrity/thumb/171134081599596ac8e88f8b6430b8dc9d1693ba57.JPG" alt="2024년 상반기 상임감사 현장방문 실시" style="width:100%;"/></div>
+						<div class="dec-wrap">
+							<strong class="tit02">2024년 상반기 상임감사 현장방문 실시</strong>
+							<p class="dec02">&nbsp;​2024년 상반기 상임감사 현장방문 실시​대한석탄공사 진기엽 상임감사는 3월 13일(수) 장성광업소, 3월 14일(목) 도계광업소, 3월 15(금) 석항사...</p>
+						</div>
+						</a>
+					</div>
+					<!-- 청렴석공 -->
+
+					<!-- 알림창 -->
+					<div class="article-item new_box down_img f_right" data-col="box2">
+						<p class="tit">알림창</p>
+
+						<div class="news_banner">
+							<ul class="news_slider">
+								<li><a href='http://www.acrc.go.kr' target='_blank'><img src='../data/board/main_notice/thumb/15820143232aa4a3d2b1db0d06e6a97e964662f1d6.jpg' alt='http://www.acrc.go.kr' width='229' height='138' /></a></li>
+								<li><a href='http://www.cdc.go.kr/' target='_blank'><img src='../data/board/main_notice/thumb/1582014189f59e2bbc73cff388819cb9f6fe8a106d.png' alt='http://www.cdc.go.kr/' width='229' height='138' /></a></li>
+								<li><a href='https://www.kehi.co.kr' target='_blank'><img src='../data/board/main_notice/thumb/1731914242f755962b1dddd12c6e11d58835388aa4.jpg' alt='https://www.kehi.co.kr' width='229' height='138' /></a></li>
+							</ul>
+						</div>
+						<div class="b_img">
+							<img src="/skin/basic/img/alert_img01.jpg" alt="알림이미지" style="width:100%;"/>
+						</div>
+					</div>
+					<script src="../skin/basic/js/jquery.bxslider.min.js?ver=4215"></script>
+					<script>
+
+					$('.news_slider').bxSlider({
+					auto: true,
+					mode: 'fade',
+					captions: true,
+					adaptiveHeight: true
+					});
+					</script>
+					<!-- 알림창 -->
+
+					</div>
+				</div>
+
+				<div class="col-wrap col2">
+					<div class="a2 tab-container main_board_sty" data-selector="tabContainer">
+					<header class="tab-btn-container">
+					<p class="tit_sns">공지사항</p>
+					<div class="clear"></div>
+					</header>
+					<div class="tab-wrap" data-selector="tabContent" data-sid="1">
+						<ul class="list">
+							<li>
+							<a href="../board/board_view.php?view_id=1116&amp;board_name=news&page=&search_category=공지사항" class="list-item ellip">(카드뉴스) 2026 설 명절 청탁금지법 선물 바로 알기</a>
+							<span class="date">2026-01-22</span>
+							</li>
+							<li>
+							<a href="../board/board_view.php?view_id=1115&amp;board_name=news&page=&search_category=공지사항" class="list-item ellip">비실명 대리신고 제도 안내 카드뉴스</a>
+							<span class="date">2025-11-12</span>
+							</li>
+							<li>
+							<a href="../board/board_view.php?view_id=1114&amp;board_name=news&page=&search_category=공지사항" class="list-item ellip">2025년 추석 명절 청탁금지법 선물 바로알기</a>
+							<span class="date">2025-09-23</span>
+							</li>
+							<li>
+							<a href="../board/board_view.php?view_id=1103&amp;board_name=news&page=&search_category=공지사항" class="list-item ellip">2024년도 공공기관 청렴도 측정 관련 개인정보 제3자 제공사항 알림</a>
+							<span class="date">2024-07-16</span>
+							</li>
+							<li>
+							<a href="../board/board_view.php?view_id=1100&amp;board_name=news&page=&search_category=공지사항" class="list-item ellip">장성광업소 조기폐광에 따른 탄광근로자 지원 안내</a>
+							<span class="date">2024-05-27</span>
+							</li>
+						</ul>
+					</div>
+					</div>
+
+					<div class="a2 tab-container main_board_sty" data-selector="tabContainer">
+					<header class="tab-btn-container floatBox">
+					<p class="tit_sns">보도자료</p>
+					<div class="clear"></div>
+					</header>
+					<div class="tab-wrap" data-selector="tabContent" data-sid="1">
+						<ul class="list2">
+							<li>
+							<a href="../board/board_view.php?view_id=1113&amp;board_name=news&page=&search_category=보도자료" class="list-item ellip">대한석탄공사, 아름다운 폐광을 위해 노사와 맞손잡아</a>
+							<span class="date">2025-05-29</span>
+							</li>
+							<li>
+							<a href="../board/board_view.php?view_id=1112&amp;board_name=news&page=&search_category=보도자료" class="list-item ellip">대한석탄공사, 한국석탄광물(주)와 '대한민국 석탄 생산 생산기술 보존 및 전략물자 개...</a>
+							<span class="date">2025-04-23</span>
+							</li>
+							<li>
+							<a href="../board/board_view.php?view_id=1111&amp;board_name=news&page=&search_category=보도자료" class="list-item ellip">대한석탄공사, 고용노동부, 강원특별자치도, 삼척시와 '탄광근로자 이·전직 지원 업무...</a>
+							<span class="date">2025-04-01</span>
+							</li>
+							<li>
+							<a href="../board/board_view.php?view_id=1110&amp;board_name=news&page=&search_category=보도자료" class="list-item ellip">대한석탄공사, 지역 전통시장에서 장보기 행사 진행</a>
+							<span class="date">2025-02-05</span>
+							</li>
+							<li>
+							<a href="../board/board_view.php?view_id=1109&amp;board_name=news&page=&search_category=보도자료" class="list-item ellip">대한석탄공사, 지역경제활성화를 위한 폐광지역 취약계층 지원 사업 실시</a>
+							<span class="date">2025-01-07</span>
+							</li>
+						</ul>
+					</div>
+					</div>
+				</div>
+			</div>
+			</section>
+
+			<section class="sec sec3" data-selector="anchorSec" data-sid="sec3">
+			<div class="m-main">
+				<div class="col-wrap">
+					<div class="col-left">
+						<header class="article-head">
+						<small>COMMUNICATION</small>
+						<h2 class="article-tit">통합민원</h2>
+						</header>
+					</div>
+
+					<div class="col-right after">
+						<ul class="btn-nav after">
+							<li><a href="/newpage/newpage.php?f_id=cs_01" class="nav-item i1" data-col="ico1">고객서비스 헌장</a></li>
+							<li><a href="/board/board_list.php?board_name=cs&search_category=문의하기" class="nav-item i2" data-col="ico1">문의합니다</a></li>
+							<li><a href="/newpage/newpage.php?f_id=cs_03_01" class="nav-item i3" data-col="ico1">통합신고센터</a></li>
+							<li><a href="/board/board_list.php?board_name=community" class="nav-item i4" data-col="ico1">협력업체와의 소통</a></li>
+							<!-- <li><a href="/v2_docu/certify.php" class="nav-item i5" data-col="ico1">경력증명서 등 발급</a></li>-->
+							<li><a href="http://www.alioplus.go.kr/facilities/facltByTypeList.do;jsessionid=9nOuWTPhlK4JZA+EAz9qfax7.node11?pageNo=1&typ=type&schFstCateCd=&schScdCateCd=&schSiNa=&schSggNa=&schApbaId=&schFacltNa=%25EC%2584%259D%25ED%2583%2584" class="nav-item i5" data-col="ico1" target="_blank">시설 개방정보</a></li>
+							<li><!-- <a href="/newpage/newpage.php?f_id=cs_06_01" class="nav-item i6" data-col="ico1">석탄분석 서비스</a> --></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			</section>
+
+			<section class="sec sec4">
+			<div class="m-main">
+				<div class="col-wrap">
+					<div class="col-left">
+						<header class="article-head">
+						<small>QUICK MENU</small>
+						<h2 class="article-tit">주요메뉴 바로가기</h2>
+						</header>
+					</div>
+
+					<div class="col-right after">
+						<ul class="btn-nav after">							
+							<li><a href="/newpage/newpage.php?f_id=intro_headoffice" class="nav-item i2">부서소개</a></li>
+							<li><a href="/newpage/newpage.php?f_id=manage_jodal" class="nav-item i3">입찰조달 정보</a></li>
+							<li><a href="/board/board_list.php?board_name=manage_gongsi" class="nav-item i4">경영공시</a></li>
+							<li><!-- <a href="/newpage/newpage.php?f_id=cs_06_01" class="nav-item i1">석탄분석 서비스</a> --></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			</section>
+
+		</div>
+		<!--content-->
+	</div>
+	<!--container-->
+	<script>
+		$(function(){
+			ND.SLIDE.slick($("#main-kv"));
+			setTimeout("showNoticeDiv()", "1500");
+		})
+
+		function setCookie( name, value, expiredays ) {
+			var todayDate = new Date();
+			todayDate.setDate( todayDate.getDate() + expiredays );
+			document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+		}
+
+		function getCookie( name ) {
+			var nameOfCookie = name + "=";
+			var x = 0;
+			while ( x <= document.cookie.length ) {
+				var y = (x+nameOfCookie.length);
+				if ( document.cookie.substring( x, y ) == nameOfCookie ) {
+					if ( (endOfCookie=document.cookie.indexOf( ";", y )) == -1 )
+						endOfCookie = document.cookie.length;
+					return unescape( document.cookie.substring( y, endOfCookie ) );
+				}
+				x = document.cookie.indexOf( " ", x ) + 1;
+				if ( x == 0 )
+					break;
+			}
+			return "";
+		}
+
+		// 상단 알림 레이어 open
+		function showNoticeDiv() {
+			if(getCookie("popup_notice") != "done") {
+				if($("#top_notice_wrap")) {
+					$("#top_notice_wrap").slideDown(600);
+				}
+			}
+		}
+
+		// 상단 알림 레이어 close
+		function closeNoticeDiv() {
+			if($("#top_notice_close").is(":checked")==true) {
+				setCookie("popup_notice", "done" , 1); 
+			}
+			$("#top_notice_wrap").hide();
+		}
+	</script>
+<footer id="footer">
+		<!-- include footer.html -->
+		<div class="m-main">
+    <div class="col-wrap">
+        <div class="col-left">
+            <img src="/skin/basic/img/foot_logo.png" class="logo-foot" alt="대한석탄공사">
+            <address>우편번호 : 26460 강원도 원주시 배울로 85 (반곡동 991-2)</address>
+            <div class="info-wrap">
+                <dl>
+                    <dt>대표전화</dt>
+                    <dd>033 749 0600</dd>
+                </dl>
+                <dl>
+                    <dt>대표팩스</dt>
+                    <dd>033 749 0651</dd>
+                </dl>
+            </div>
+            <p class="copy">COPYRIGHT 2018 by Korea coal corporation ALL RIGHTS RESERVED.</p>
+        </div>
+
+        <div class="col-right">
+            <ul class="foot-nav">
+                <li><a href="/newpage/newpage.php?f_id=banner">홍보배너모음</a></li>
+                <li><a href="/newpage/newpage.php?f_id=privacy" class="link-privacy">개인정보처리방침</a></li>
+                <li><a href="/newpage/newpage.php?f_id=sitemap">사이트맵</a></li>
+            </ul>
+            <nav class="sns-nav">
+                <!-- <a href="https://blog.naver.com/kocoal1950" target="_blank"  style="vertical-align:middle; display:inline-block;"><img src="/skin/basic/img/sns4.png" alt="블러그" style="vertical-align:middle; "></a> &nbsp;
+				<a href="https://www.facebook.com/KOREACOAL" target="_blank"  style="vertical-align:middle; display:inline-block;"><img src="/skin/basic/img/sns1.png" alt="페이스북" style="vertical-align:middle; "></a> &nbsp;
+			    <a href="https://www.instagram.com/kocoal_official"  target="_blank"style="vertical-align:middle; display:inline-block;"><img src="/skin/basic/img/sns2.png" alt="인스타그램" style="vertical-align:middle; "></a> -->
+                <!-- <a href="" class="sns"><img src="/skin/basic/img/sns3.png" alt="트위터" /></a> -->
+            </nav>
+            <!-- <select class="family-site" data-action="familySite">
+                <option value="">유관기관</option>
+            </select> -->
+        </div>
+    </div>
+</div>
+		<!--// include footer.html -->
+</footer>
+</div>
+</body>
+</html>
+<!-- http://www.newbreed.co.kr / ver : 1.0.0  /	copyrightⓒ NewBreed all rights reserved... -->

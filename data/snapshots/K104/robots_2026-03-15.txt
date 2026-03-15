@@ -1,0 +1,13 @@
+User-agent: *
+
+Disallow: /*/gu/gurt/
+Disallow: /*/qna/
+Disallow: /*/tbCinfo/
+Disallow: /*/lo/login/
+Disallow: /*/mw/
+Disallow: /*/is/
+Disallow: /*/rs/
+Disallow: /*/OnlineDebt/
+Disallow: /apple/
+
+Sitemap: https://www.koreg.or.kr/sitemap.xml

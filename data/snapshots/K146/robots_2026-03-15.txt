@@ -1,0 +1,13 @@
+User-agent: *
+DisAllow : /
+
+Allow : /board
+Allow : /contents
+Allow : /kapeNuri
+Allow : /introduce
+Allow : /communication
+Allow : /sms
+Allow : /printBook
+Allow : /informpublic
+
+

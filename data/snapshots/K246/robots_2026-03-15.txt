@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /base
+Disallow: /eniacms
+Disallow: /search
+Disallow: /upload
+Disallow: /upload2

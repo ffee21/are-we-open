@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+Disallow: /search/
+
+User-agent: Googlebot
+Disallow: /nsh/SH/PTS/SHPTS001M0.do
+Disallow: /nsh/SH/PTS/SHPTS001F0.do
+Disallow: /nsh/SH/PTS/SHPTS023M0.do
+Disallow: /nsh/SH/PTS/SHPTS023F0.do
+Disallow: /nsh/SH/PTS/SHPTS002M0.do
+Disallow: /nsh/SH/PTS/SHPTS002F0.do
+Disallow: /nsh/SH/PTS/SHPTS020M0.do
+Disallow: /nsh/SH/PTS/SHPTS020F0.do

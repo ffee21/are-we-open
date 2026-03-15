@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /menu.es?mid=a10104000000
+Disallow: /
+Crawl-delay: 10
+
+User-agent: Googlebot
+Allow: /
+Disallow: /search/
+Disallow: /board/
+
+User-agent: Yeti
+Allow: /
+Disallow: /search/
+
+User-agent: Daum
+Allow: /
+Disallow: /search/

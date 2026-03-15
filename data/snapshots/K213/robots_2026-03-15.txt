@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+Allow: /d2b/
+Disallow: /forbidden/
+Disallow: /ip-job/center/serch/search.do
+Disallow: /ip-job/center/center02.jsp
+Disallow: /*성매매*
+Disallow: /*유흥*
+Disallow: /*호빠*
+Disallow: /*대출*
+Disallow: /*마약*
+Disallow: /*토토*
+Disallow: /*호스트*
+Disallow: /*도박*
+Disallow: /*사기*
+Disallow: /*음란*
+Sitemap: https://www.kipa.org/sitemap.xml
+Sitemap: https://www.kipa.org/d2b/sitemap.xml
+
+

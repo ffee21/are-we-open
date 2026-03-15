@@ -1,0 +1,10 @@
+# Specific rules for Googlebot
+User-agent: Googlebot
+# search Page
+Disallow: /ebz/*/allSearch/
+# board page
+Disallow: /ebz/*/bbs/
+
+# Rules for all other 
+User-agent: *
+Disallow: 

@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<script src="/asset/js/lib/jquery-3.4.1.min.js"></script>
+<script src="/asset/js/lib/jquery-ui.min.js"></script>
+<script src="/asset/js/lib/swiper.min.js"></script>
+<script src="/asset/js/ui_common.js"></script>
+<link rel="stylesheet" href="/asset/js/lib/jquery-ui.css">
+<link rel="stylesheet" href="/asset/css/swiper.css">
+<link rel="stylesheet" href="/asset/css/common.css">
+<link rel="stylesheet" href="/asset/css/board.css">
+<link rel="stylesheet" href="/asset/css/sub.css">
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?1">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" href="/apple-icon-72x72.png">
+<title>에러페이지 | 한국가스안전공사</title>
+<script type="text/javascript">
+	document.oncontextmenu = function(){return false;}
+</script>
+<script type="application/ld+json">
+{
+	"@context": "http://schema.org",
+	"@type": "Organization",
+	"name": "한국가스안전공사",
+	"url": "https://kgs.or.kr",
+	"sameAs": [
+		"https://blog.naver.com/kgs_safety",
+		"https://www.instagram.com/kgs_safety",
+		"https://www.youtube.com/channel/UCWYH—lqDidv2HFulfDg-XA",
+		"https://story.kakao.com/ch/kgs2014"
+	]
+}
+</script>
+</head>
+
+<body>
+<div id="skip_nav"> <a href="#content">본문 바로가기</a> <a href="#gnb">주메뉴 바로가기</a> </div>
+<div id="wrap">
+	<!--header-->
+	<header id="header">
+		<div class="header_top">
+			<ul class="clearfix top_list">
+				<li class="active"><a href="/" target="_blank" title="새창열림"><span>한국가스안전공사</span></a></li>
+				<li><a href="/gse/index.do" target="_blank" title="새창열림"><span>가스안전교육원</span></a></li>
+				<li><a href="/gsr/index.do" target="_blank" title="새창열림"><span>가스안전연구원</span></a></li>
+				<li><a href="/hst/index.do" target="_blank" title="새창열림"><span>수소안전기술원</span></a></li>
+				<li><a href="/igt/index.do" target="_blank" title="새창열림"><span>산업가스안전기술센터</span></a></li>
+				<li><a href="/esr/index.do" target="_blank" title="새창열림"><span>에너지안전실증연구센터</span></a></li>
+				<li><a href="/ecs/index.do" target="_blank" title="새창열림"><span>수출기업지원서비스</span></a></li>
+				<li class="local">
+					<button type="button" class="bt_site"><span>광역본부ㆍ본부ㆍ지사</span></button>
+					<div class="site_list">
+						<ul>
+							<li><a href="/kgs/adeg/org.do" title="전체보기"><span>전체보기</span></a></li>
+							<li><a href="/seoul/index.do" target="_blank" title="새창열림"><span>서울광역본부</span></a></li>
+							<li><a href="/incheon/index.do" target="_blank" title="새창열림"><span>인천본부</span></a></li>
+							<li><a href="/wseoul/index.do" target="_blank" title="새창열림"><span>서울서부지사</span></a></li>
+							<li><a href="/sseoul/index.do" target="_blank" title="새창열림"><span>서울남부지사</span></a></li>
+							<li><a href="/eseoul/index.do" target="_blank" title="새창열림"><span>서울동부지사</span></a></li>
+							<li><a href="/busan/index.do" target="_blank" title="새창열림"><span>부산광역본부</span></a></li>
+							<li><a href="/gyeongnam/index.do" target="_blank" title="새창열림"><span>경남본부(창원)</span></a></li>
+							<li><a href="/nbusan/index.do" target="_blank" title="새창열림"><span>부산북부지사</span></a></li>
+							<li><a href="/wgyeongnam/index.do" target="_blank" title="새창열림"><span>경남서부지사(진주)</span></a></li>
+							<li><a href="/daegu/index.do" target="_blank" title="새창열림"><span>대구광역본부</span></a></li>
+							<li><a href="/ulsan/index.do" target="_blank" title="새창열림"><span>울산본부</span></a></li>
+							<li><a href="/egyeongbuk/index.do" target="_blank" title="새창열림"><span>경북동부지사(포항)</span></a></li>
+							<li><a href="/ngyeongbuk/index.do" target="_blank" title="새창열림"><span>경북북부지사(안동)</span></a></li>
+							<li><a href="/daejeon/index.do" target="_blank" title="새창열림"><span>대전광역본부</span></a></li>
+							<li><a href="/chungbuk/index.do" target="_blank" title="새창열림"><span>충북본부(청주)</span></a></li>
+							<li><a href="/nchungnam/index.do" target="_blank" title="새창열림"><span>충남본부</span></a></li>
+							<li><a href="/nchungbuk/index.do" target="_blank" title="새창열림"><span>충북북부지사(충주)</span></a></li>
+							<li><a href="/gwangju/index.do" target="_blank" title="새창열림"><span>광주광역본부</span></a></li>
+							<li><a href="/jeonbuk/index.do" target="_blank" title="새창열림"><span>전북본부(전주)</span></a></li>
+							<li><a href="/ejeonnam/index.do" target="_blank" title="새창열림"><span>전남동부지사(여수)</span></a></li>
+							<li><a href="/wjeonnam/index.do" target="_blank" title="새창열림"><span>전남서부지사(무안)</span></a></li>
+							<li><a href="/gyeonggi/index.do" target="_blank" title="새창열림"><span>경기광역본부</span></a></li>
+							<li><a href="/ngyeonggi/index.do" target="_blank" title="새창열림"><span>경기북부지사(의정부)</span></a></li>
+							<li><a href="/wgyeonggi/index.do" target="_blank" title="새창열림"><span>경기서부지사(부천)</span></a></li>
+							<li><a href="/egyeonggi/index.do" target="_blank" title="새창열림"><span>경기동부지사(광주)</span></a></li>
+							<li><a href="/mgyeonggi/index.do" target="_blank" title="새창열림"><span>경기중부지사(일산)</span></a></li>
+							<li><a href="/gangwon/index.do" target="_blank" title="새창열림"><span>강원광역본부</span></a></li>
+							<li><a href="/egangwon/index.do" target="_blank" title="새창열림"><span>강원영동지사(강릉)</span></a></li>
+							<li><a href="/jeju/index.do" target="_blank" title="새창열림"><span>제주본부</span></a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<nav id="gnb_layout">
+			<div id="gnb" class="gnb">
+				<div class="inner">
+					<h1 class="logo"><a href="/"><span class="sr-only">한국가스안전공사 로고</span></a></h1>
+					<ul class="navi navi_pc">
+						<li class="menu01"><a href="/kgs/aaaa/board.do" class="th_1st"><span>고객센터</span></a>
+							<div class="depth_02"><div class="gnb_title"><strong>고객센터</strong><p>궁금해 하시는 질문에 대해<br/>친절하게 안내해드립니다.</p></div>
+								<div class="gnb_list">
+									<ul class="clearfix">
+										<li><a href="/kgs/aaaa/board.do"><span>질의응답</span></a>
+											<ul class="depth_03">
+												<li><a href="/kgs/aaaa/board.do"><span>자주하는질문</span></a></li>
+												<li><a href="/kgs/aaab/view.do"><span>질의응답</span></a></li>
+											</ul>
+										</li>
+										<li><a href="/kgs/aab/view.do"><span>국민제안</span></a>
+										</li>
+										<li><a href="/kgs/aac/view.do"><span>칭찬하기</span></a>
+										</li>
+										<li><a href="/kgs/aad/view.do"><span>불편불만</span></a>
+										</li>
+										<li><a href="/kgs/aaea/view.do"><span>신고센터</span></a>
+											<ul class="depth_03">
+												<li><a href="/kgs/aaea/view.do"><span>부정부패신고</span></a></li>
+												<li><a href="/kgs/aaeb/view.do"><span>예산낭비신고</span></a></li>
+												<li><a href="/kgs/aaec/view.do"><span>불법행위신고</span></a></li>
+												<li><a href="/kgs/aaed/view.do"><span>검사이의제기</span></a></li>
+											</ul>
+										</li>
+										<li><a href="/kgs/aaf/view.do"><span>구인구직</span></a>
+										</li>
+										<li><a href="/kgs/aag/view.do"><span>규제신문고</span></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="menu02"><a href="/kgs/abaa/view.do" class="th_1st"><span>가스와생활</span></a>
+							<div class="depth_02"><div class="gnb_title"><strong>가스와생활</strong><p>가스와 가스안전에 필요한<br/>기본지식을 안내합니다.</p></div>
+								<div class="gnb_list">
+									<ul class="clearfix">
+										<li><a href="/kgs/abaa/view.do"><span>국민행동요령</span></a>
+											<ul class="depth_03">
+												<li><a href="/kgs/abaa/view.do"><span>가스안전사용요령</span></a></li>
+												<li><a href="/kgs/abab/view.do"><span>재난유형별 행동요령</span></a></li>
+												<li><a href="/kgs/abac/view.do"><span>예상재해별안전관리</span></a></li>
+												<li><a href="/kgs/abad/view.do"><span>누출시의응급조치</span></a></li>
+												<li><a href="/kgs/abae/view.do"><span>계절별안전관리</span></a></li>
+												<li><a href="/kgs/abaf/view.do"><span>다문화가족 가스안전요령</span></a></li>
+											</ul>
+										</li>
+										<li><a href="/kgs/abba/view.do"><span>가스안전제도</span></a>
+											<ul class="depth_03">
+												<li><a href="/kgs/abba/view.do"><span>공급자안전관리</span></a></li>
+												<li><a href="/kgs/abbb/view.do"><span>가스시설법정검사</span></a></li>
+												<li><a href="/kgs/abbc/view.do"><span>사용자자율점검</span></a></li>
+												<li><a href="/kgs/abbd/view.do"><span>LP가스체적거래제</span></a></li>
+												<li><a href="/kgs/abbe/view.do"><span>취약계층 안전지원사업</span></a></li>
+												<li><a href="/kgs/abbi/view.do"><span>LPG용기시설개선</span></a></li>
+												<li><a href="/kgs/abbf/tab.do"><span>우수판매업체인증</span></a></li>
+												<li><a href="/kgs/abbg/tab.do"><span>가스안전보안관</span></a></li>
+												<li><a href="/kgs/abbh/view.do"><span>가스안전관리자금융자</span></a></li>
+											</ul>
+										</li>
+										<li><a href="/kgs/abca/board.do"><span>가스사고정보</span></a>
+											<ul class="depth_03">
+												<li><a href="/kgs/abca/board.do"><span>가스사고발간자료</span></a></li>
+												<li><a href="/kgs/abcb/board.do"><span>가스사고현황</span></a></li>
+												<li><a href="/kgs/abcc/board.do"><span>가스사고통계</span></a></li>
+												<li><a href="/kgs/abcd/board.do"><span>국내사고사례</span></a></li>
+												<li><a href="/kgs/abce/board.do"><span>가스사고예방사례</span></a></li>
+												<li><a href="/kgs/abcf/board.do"><span>아차사고 사례</span></a></li>
+											</ul>
+										</li>
+										<li><a href="/kgs/abda/view.do"><span>도시가스사 안내</span></a>
+											<ul class="depth_03">
+												<li><a href="/kgs/abda/view.do"><span>전국도시가스사</span></a></li>
+												<li><a href="/kgs/abdb/board.do"><span>도시가스지역관리소</span></a></li>
+											</ul>
+										</li>
+										<li><a href="/kgs/abe/board.do"><span>가스안전알쓸신잡</span></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="menu03"><a href="/kgs/acaa/board.do" class="th_1st"><span>정보공개</span></a>
+							<div class="depth_02"><div class="gnb_title"><strong>정보공개</strong><p>한국가스안전공사가 보유ㆍ관리<br/>하는 정보를 공개합니다.</p></div>
+								<div class="gnb_list">
+									<ul class="clearfix">
+										<li><a href="/kgs/acaa/board.do"><span>정보공개제도</span></a>
+											<ul class="depth_03">
+												<li><a href="/kgs/acaa/board.do"><span>사전정보공표</span></a></li>
+												<li><a href="/kgs/acab/view.do"><span>정보공개 제도안내</span></a></li>
+												<li><a href="/kgs/acac/board.do"><span>생산문서 목록공개</span></a></li>
+											</ul>
+										</li>
+										<li><a href="/kgs/acba/view.do"><span>공공데이터</span></a>
+											<ul class="depth_03">
+												<li><a href="/kgs/acba/view.do"><span>공공데이터 제도안내</span></a></li>
+												<li><a href="/kgs/acbb/view.do"><span>공공데이터 제공목록</span></a></li>
+											</ul>
+										</li>
+										<li><a href="/kgs/acca/view.do"><span>사업실명제</span></a>
+											<ul class="depth_03">
+												<li><a href="/kgs/acca/view.do"><span>사업실명제 제도안내</span></a></li>
+												<li><a href="/kgs/accb/board.do"><span>사업실명제 목록공개</span></a></li>
+											</ul>
+										</li>
+										<li><a href="/kgs/acda/board.do"><span>가스법규정보</span></a>
+											<ul class="depth_03">
+												<li><a href="/kgs/acda/board.do"><span>법규정책</span></a></li>
+												<li><a href="/kgs/acdb/view.do"><span>법령고시</span></a></li>
+												<li><a href="/kgs/acdc/board.do"><span>기준지침</span></a></li>
+												<li><a href="/kgs/acdd/board.do"><span>안전관리규정</span></a></li>
+												<li><a href="/kgs/acde/view.do"><span>KGS Code</span></a></li>
+												<li><a href="/kgs/acdf/board.do"><span>법정수수료</span></a></li>
+											</ul>
+										</li>
+										<li><a href="/kgs/acea/tab.do"><span>민원업무절차/서식</span></a>
+											<ul class="depth_03">
+												<li><a href="/kgs/acea/tab.do"><span>민원업무절차</span></a></li>
+												<li><a href="/kgs/aceb/tab.do"><span>민원업무서식</span></a></li>
+											</ul>
+										</li>
+										<li><a href="/kgs/acfd/board.do"><span>가스물성정보</span></a>
+											<ul class="depth_03">
+												<li><a href="/kgs/acfd/board.do"><span>일반가스 물성정보</span></a></li>
+												<li><a href="/kgs/acfe/board.do"><span>독성가스 물성정보</span></a></li>
+												<li><a href="/kgs/acff/board.do"><span>응급대응지시서</span></a></li>
+											</ul>
+										</li>
+										<li><a href="/kgs/acg/board.do"><span>실무기술정보</span></a>
+										</li>
+										<li><a href="/kgs/ach/board.do"><span>가스용어사전</span></a>
+										</li>
+										<li><a href="/kgs/aci/board.do"><span>가스통계</span></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="menu04"><a href="/kgs/ada/view.do" class="th_1st"><span>공사소개</span></a>
+							<div class="depth_02"><div class="gnb_title"><strong>공사소개</strong><p>한국가스안전공사를<br/>소개합니다.</p></div>
+								<div class="gnb_list">
+									<ul class="clearfix">
+										<li><a href="/kgs/ada/view.do"><span>CEO인사말</span></a>
+										</li>
+										<li><a href="/kgs/adb/view.do"><span>비전 2035</span></a>
+										</li>
+										<li><a href="/kgs/adcb/view.do"><span>KGS는</span></a>
+											<ul class="depth_03">
+												<li><a href="/kgs/adcb/view.do"><span>연혁</span></a></li>
+												<li><a href="/kgs/adcc/view.do"><span>CI</span></a></li>
+												<li><a href="/kgs/adcd/view.do"><span>주요사업</span></a></li>
+												<li><a href="/kgs/adce/board.do"><span>수상실적</span></a></li>
+												<li><a href="/kgs/adcf/view.do"><span>가스안전인수칙</span></a></li>
+											</ul>
+										</li>
+										<li><a href="/kgs/adda/view.do"><span>경영공시</span></a>
+											<ul class="depth_03">
+												<li><a href="/kgs/adda/view.do"><span>통합공시(ALIO)</span></a></li>
+												<li><a href="/kgs/addb/view.do"><span>공사자체공시</span></a></li>
+												<li></li>
+											</ul>
+										</li>
+										<li><a href="/kgs/adea/org.do"><span>조직안내</span></a>
+											<ul class="depth_03">
+												<li><a href="/kgs/adea/org.do"><span>본사</span></a></li>
+												<li><a href="/kgs/adeb/org.do"><span>가스안전교육원</span></a></li>
+												<li><a href="/kgs/adec/org.do"><span>가스안전연구원</span></a></li>
+												<li><a href="/kgs/adeg/org.do"><span>광역본부·본부·지사</span></a></li>
+												<li><a href="/kgs/adeh/empl.do"><span>직원찾기</span></a></li>
+											</ul>
+										</li>
+										<li><a href="/kgs/adfa/view.do"><span>오시는길</span></a>
+											<ul class="depth_03">
+												<li><a href="/kgs/adfa/view.do"><span>본사·연구원</span></a></li>
+												<li><a href="/kgs/adfb/view.do"><span>가스안전교육원</span></a></li>
+												<li><a href="/kgs/adfc/view.do"><span>산업가스안전기술센터</span></a></li>
+												<li><a href="/kgs/adfd/view.do"><span>에너지안전기술지원센터</span></a></li>
+												<li><a href="/kgs/adfe/view.do"><span>광역본부·본부·지사</span></a></li>
+											</ul>
+										</li>
+										<li><a href="/kgs/adga/view.do"><span>채용정보</span></a>
+											<ul class="depth_03">
+												<li><a href="/kgs/adga/view.do"><span>인사제도</span></a></li>
+												<li><a href="/kgs/adgb/board.do"><span>채용안내</span></a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="menu05"><a href="/kgs/ae/view.do" class="th_1st"><span>ESG경영</span></a>
+							<div class="depth_02"><div class="gnb_title"><strong>ESG경영</strong><p>한국가스안전공사의 경영철학을 <br/> 소개합니다.</p><div class="gnb_btn"><a href="/kgs/ae/view.do"><span>KGS ESG경영</span></a></div></div>
+								<div class="gnb_list">
+									<ul class="clearfix gnb_sec">
+										<li><p class="dep_tit">환경</p></li>
+										<li><a href="/kgs/aeaa/view.do"><span>환경경영</span></a>
+											<ul class="depth_03">
+												<li><a href="/kgs/aeaa/view.do"><span>정책개요</span></a></li>
+												<li><a href="/kgs/aeab/view.do"><span>추진체계</span></a></li>
+												<li><a href="/kgs/aeac/view.do"><span>추진과제</span></a></li>
+												<li><a href="/kgs/aead/board.do"><span>추진실적</span></a></li>
+											</ul>
+										</li>
+									</ul>
+									<ul class="clearfix gnb_sec">
+										<li><p class="dep_tit">사회</p></li>
+										<li><a href="/kgs/aeba/view.do"><span>인권경영</span></a>
+											<ul class="depth_03">
+												<li><a href="/kgs/aeba/view.do"><span>정책개요</span></a></li>
+												<li><a href="/kgs/aebb/view.do"><span>추진체계</span></a></li>
+												<li><a href="/kgs/aebc/view.do"><span>성희롱·성폭력고충상담</span></a></li>
+												<li><a href="/kgs/aebd/board.do"><span>추진실적</span></a></li>
+											</ul>
+										</li>
+										<li><a href="/kgs/aeca/view.do"><span>고객감동</span></a>
+											<ul class="depth_03">
+												<li><a href="/kgs/aeca/view.do"><span>정책개요</span></a></li>
+												<li><a href="/kgs/aecb/view.do"><span>추진체계</span></a></li>
+												<li><a href="/kgs/aecc/view.do"><span>고객만족도</span></a></li>
+											</ul>
+										</li>
+										<li><a href="/kgs/aeda/view.do"><span>동반성장</span></a>
+											<ul class="depth_03">
+												<li><a href="/kgs/aeda/view.do"><span>정책개요</span></a></li>
+												<li><a href="/kgs/aedb/view.do"><span>추진체계</span></a></li>
+												<li><a href="/kgs/aedc/view.do"><span>추진과제</span></a></li>
+												<li><a href="/kgs/aedd/board.do"><span>추진실적</span></a></li>
+											</ul>
+										</li>
+										<li><a href="/kgs/aeea/view.do"><span>사회공헌</span></a>
+											<ul class="depth_03">
+												<li><a href="/kgs/aeea/view.do"><span>정책개요</span></a></li>
+												<li><a href="/kgs/aeeb/view.do"><span>추진체계</span></a></li>
+												<li><a href="/kgs/aeec/board.do"><span>추진실적</span></a></li>
+											</ul>
+										</li>
+										<li><a href="/kgs/aefa/view.do"><span>안전경영</span></a>
+											<ul class="depth_03">
+												<li><a href="/kgs/aefa/view.do"><span>정책개요</span></a></li>
+												<li><a href="/kgs/aefb/view.do"><span>추진체계</span></a></li>
+												<li><a href="/kgs/aefc/board.do"><span>추진실적</span></a></li>
+											</ul>
+										</li>
+									</ul>
+									<ul class="clearfix gnb_sec">
+										<li><p class="dep_tit">지배구조</p></li>
+										<li><a href="/kgs/aeha/view.do"><span>적극행정</span></a>
+											<ul class="depth_03">
+												<li><a href="/kgs/aeha/view.do"><span>정책개요</span></a></li>
+												<li><a href="/kgs/aehb/view.do"><span>추진체계</span></a></li>
+												<li><a href="/kgs/aehc/board.do"><span>추진실적</span></a></li>
+											</ul>
+										</li>
+										<li><a href="/kgs/aeia/view.do"><span>윤리경영</span></a>
+											<ul class="depth_03">
+												<li><a href="/kgs/aeia/view.do"><span>정책개요</span></a></li>
+												<li><a href="/kgs/aeib/view.do"><span>추진체계</span></a></li>
+												<li><a href="/kgs/aeic/board.do"><span>추진실적</span></a></li>
+											</ul>
+										</li>
+										<li><a href="/kgs/aeja/view.do"><span>반부패ㆍ청렴</span></a>
+											<ul class="depth_03">
+												<li><a href="/kgs/aeja/view.do"><span>정책개요</span></a></li>
+												<li><a href="/kgs/aejb/view.do"><span>추진체계</span></a></li>
+												<li><a href="/kgs/aejc/board.do"><span>추진실적</span></a></li>
+												<li><a href="/kgs/aejd/board.do"><span>상임감사활동</span></a></li>
+												<li><a href="/kgs/aeje/board.do"><span>업무추진비공개</span></a></li>
+												<li><a href="/kgs/aejf/board.do"><span>상품권내역공개</span></a></li>
+												<li><a href="/kgs/aejg/board.do"><span>수의계약현황</span></a></li>
+												<li><a href="/kgs/aejh/board.do"><span>해외출장내역</span></a></li>
+												<li><a href="/kgs/aeji/board.do"><span>부패공직자현황</span></a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="menu06"><a href="/kgs/afaa/view.do" class="th_1st"><span>주요사업</span></a>
+							<div class="depth_02"><div class="gnb_title"><strong>주요사업</strong></div>
+								<div class="gnb_list">
+									<ul class="clearfix">
+										<li><a href="/kgs/afaa/view.do"><span>가스시설검사</span></a>
+											<ul class="depth_03">
+												<li><a href="/kgs/afaa/view.do"><span>고압가스시설검사</span></a></li>
+												<li><a href="/kgs/afab/view.do"><span>액화석유가스시설검사</span></a></li>
+												<li><a href="/kgs/afac/view.do"><span>도시가스시설검사</span></a></li>
+												<li><a href="/kgs/afad/view.do"><span>가스안전영향평가</span></a></li>
+												<li><a href="/kgs/afae/view.do"><span>SMS</span></a></li>
+											</ul>
+										</li>
+										<li><a href="/kgs/afba/view.do"><span>가스시설진단</span></a>
+											<ul class="depth_03">
+												<li><a href="/kgs/afba/view.do"><span>안전진단·컨설팅</span></a></li>
+												<li><a href="/kgs/afbc/view.do"><span>유해화학물질검사·진단</span></a></li>
+											</ul>
+										</li>
+										<li><a href="/kgs/afca/view.do"><span>가스제품검사</span></a>
+											<ul class="depth_03">
+												<li><a href="/kgs/afca/view.do"><span>용기ㆍ특정설비검사</span></a></li>
+												<li><a href="/kgs/afcc/view.do"><span>가스용품검사</span></a></li>
+												<li><a href="/kgs/afcd/view.do"><span>공장심사</span></a></li>
+												<li><a href="/kgs/afbb/view.do"><span>외주품질관리등록</span></a></li>
+												<li><a href="/kgs/afce/view.do"><span>가스품질검사</span></a></li>
+												<li><a href="/kgs/afcb/view.do"><span>가스용품ㆍ의뢰시험</span></a></li>
+											</ul>
+										</li>
+										<li><a href="/kgs/afda/view.do"><span>시설제품인증</span></a>
+											<ul class="depth_03">
+												<li><a href="/kgs/afda/view.do"><span>성능인증</span></a></li>
+												<li><a href="/kgs/afdb/view.do"><span>KGS제품인증</span></a></li>
+												<li><a href="/kgs/afdc/view.do"><span>방호인증</span></a></li>
+												<li><a href="/kgs/afdd/view.do"><span>KS인증</span></a></li>
+												<li><a href="/kgs/afde/view.do"><span>국내방폭인증</span></a></li>
+												<li><a href="/kgs/afdf/view.do"><span>해외방폭인증</span></a></li>
+												<li><a href="/kgs/afdg/view.do"><span>표준물질생산</span></a></li>
+											</ul>
+										</li>
+										<li><a href="/kgs/afea/view.do"><span>ISO·온실가스</span></a>
+											<ul class="depth_03">
+												<li><a href="/kgs/afea/view.do"><span>ISO인증신청</span></a></li>
+												<li><a href="/kgs/afeb/view.do"><span>ISO인증교육</span></a></li>
+												<li><a href="/kgs/afec/view.do"><span>온실가스검증</span></a></li>
+												<li><a href="/kgs/afdh/view.do"><span>KGS-QA</span></a></li>
+											</ul>
+										</li>
+										<li><a href="/kgs/affa/view.do"><span>해외사업지원</span></a>
+											<ul class="depth_03">
+												<li><a href="/kgs/affa/view.do"><span>해외수출지원</span></a></li>
+												<li><a href="/kgs/affb/view.do"><span>해외사무소운영</span></a></li>
+											</ul>
+										</li>
+										<li><a href="/kgs/afga/view.do"><span>산업가스안전</span></a>
+											<ul class="depth_03">
+												<li><a href="/kgs/afga/view.do"><span>중화 및 잔가스처리</span></a></li>
+												<li><a href="/kgs/afgb/view.do"><span>산업가스안전기기시험</span></a></li>
+												<li><a href="/kgs/afgc/view.do"><span>전자기적합성(EMC)시험</span></a></li>
+												<li><a href="/kgs/afgd/view.do"><span>산업가스안전교육</span></a></li>
+											</ul>
+										</li>
+										<li><a href="/kgs/afha/view.do"><span>가스안전연구</span></a>
+											<ul class="depth_03">
+												<li><a href="/kgs/afha/view.do"><span>연구개발</span></a></li>
+												<li><a href="/kgs/afhb/view.do"><span>표준개발협력기관</span></a></li>
+											</ul>
+										</li>
+										<li><a href="/kgs/afia/view.do"><span>가스안전교육</span></a>
+											<ul class="depth_03">
+												<li><a href="/kgs/afia/view.do"><span>전문교육</span></a></li>
+												<li><a href="/kgs/afib/view.do"><span>특별교육</span></a></li>
+												<li><a href="/kgs/afic/view.do"><span>양성교육</span></a></li>
+												<li><a href="/kgs/afid/view.do"><span>위탁교육</span></a></li>
+											</ul>
+										</li>
+										<li><a href="/kgs/afja/view.do"><span>가스안전홍보</span></a>
+											<ul class="depth_03">
+												<li><a href="/kgs/afja/view.do"><span>언론홍보</span></a></li>
+												<li><a href="/kgs/afjb/view.do"><span>SNS홍보</span></a></li>
+												<li><a href="/kgs/afjc/view.do"><span>행사홍보</span></a></li>
+												<li><a href="/kgs/afjd/view.do"><span>가스안전대상</span></a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="menu07"><a href="/kgs/aga/board.do" class="th_1st"><span>알림마당</span></a>
+							<div class="depth_02"><div class="gnb_title"><strong>알림마당</strong></div>
+								<div class="gnb_list">
+									<ul class="clearfix">
+										<li><a href="/kgs/aga/board.do"><span>공지사항</span></a>
+										</li>
+										<li><a href="/kgs/agb/board.do"><span>입찰공고</span></a>
+										</li>
+										<li><a href="/kgs/agc/board.do"><span>KGS뉴스</span></a>
+										</li>
+										<li><a href="/kgs/agd/view.do"><span>SNS이용</span></a>
+										</li>
+										<li><a href="/kgs/age/board.do"><span>가스안전지</span></a>
+										</li>
+										<li><a href="/kgs/agf/board.do"><span>KGS사보</span></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<div class="navi_util pc">
+						<ul class="clearfix">
+							<li class="box_pc">
+								<a href="/kgs/aha/view.do" class="btn_sitemap" title="사이트맵 바로가기"><span class="sr-only">사이트맵 바로가기</span></a>
+							</li>
+							<li class="box_pc">
+								<a href="/eng" class="btn_lang" target="_blank" title="한국가스안전공사 영문사이트 새창으로 열림"><span class="sr-only">한국가스안전공사 영문사이트 바로가기</span></a>
+							</li>
+							<li class="box_mo">
+								<button type="button" class="btn_allmenu">전체메뉴</button>&nbsp;&nbsp;
+								<a href="/eng" class="btn_lang" target="_blank" title="한국가스안전공사 영문사이트 새창으로 열림"><span class="sr-only">한국가스안전공사 영문사이트 바로가기</span></a>
+							</li>
+							<li><a href="#none" class="btn_search" title="검색창 열기"><span class="sr-only">검색창 열기</span></a> </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div  id="total_search" class="total_search">
+			<div class="search">
+				<form name="total_search" action="/kgs/total_search.do" method="post">
+					<div class="search_top">
+						<label for="search" class="search_nm">통합검색</label>
+						<input type="text" name="search" id="search" class="search_input" placeholder="검색어를 입력하세요">
+						<button type="button" class="bt-search"><span class="sr-only">검색버튼</span></button>
+						<button type="button" class="bt-close">닫기</button>
+					</div>
+				</form>
+				<script type="text/javascript">
+				$(function(){
+					$("#total_search .bt-search").click(function(){
+						document.total_search.submit();
+					});
+				});
+				function fn_totalSearch(){
+					
+				}
+				</script>
+				<!-- <div class="search_result">
+					<ul>
+						<li><a href="#none"><span class="sr_word">가스</span>안전공사</a></li>
+						<li><a href="#none"><span class="sr_word">가스</span>안전위원회</a></li>
+						<li><a href="#none"><span class="sr_word">가스</span>와 생활</a></li>
+						<li><a href="#none"><span class="sr_word">가스</span>검침</a></li>
+						<li><a href="#none">도시<span class="sr_word">가스</span> 지역관리소</a></li>
+					</ul>
+				</div> -->
+			</div>
+		</div>
+
+		<!--gnb_mobile-->
+		<div class="gnb_mobile clearfix">
+			<div class="gnb_m_wrap">
+				<div class="navi_util">
+					<div class="navi_m_logo"><a href="/"><img src="/asset/img/comm/logo.svg" alt="한국가스안전공사 로고"></a></div>
+					<div class="navi_m_close"><a href="#"><img src="/asset/img/comm/icon_close_m.png" alt="모바일 전체 메뉴 닫기"></a></div>
+				</div>
+				<div class="navi navi_mobile">
+					<ul class="link_ul">
+						<li> <a href="#none"><span>부설기관</span></a>
+							<ul class="depth2_ul">
+								<li><a href="/gse/index.do" target="_blank" title="새창열림"><span>가스안전교육원</span></a></li>
+								<li><a href="/gsr/index.do" target="_blank" title="새창열림"><span>가스안전연구원</span></a></li>
+								<li><a href="/hst/index.do" target="_blank" title="새창열림"><span>수소안전기술원</span></a></li>
+								<li><a href="/igt/index.do" target="_blank" title="새창열림"><span>산업가스안전기술센터</span></a></li>
+								<li><a href="/esr/index.do" target="_blank" title="새창열림"><span>에너지안전실증연구센터</span></a></li>
+								<li><a href="/ecs/index.do" target="_blank" title="새창열림"><span>수출기업지원서비스</span></a></li>
+							</ul>
+						</li>
+						<li> <a href="#none"><span>광역본부ㆍ본부ㆍ지사</span></a>
+							<ul class="depth2_ul">
+								<li><a href="/seoul/index.do" target="_blank" title="새창열림"><span>서울광역본부</span></a></li><li><a href="/incheon/index.do" target="_blank" title="새창열림"><span>인천본부</span></a></li><li><a href="/wseoul/index.do" target="_blank" title="새창열림"><span>서울서부지사</span></a></li><li><a href="/sseoul/index.do" target="_blank" title="새창열림"><span>서울남부지사</span></a></li><li><a href="/eseoul/index.do" target="_blank" title="새창열림"><span>서울동부지사</span></a></li><li><a href="/busan/index.do" target="_blank" title="새창열림"><span>부산광역본부</span></a></li><li><a href="/gyeongnam/index.do" target="_blank" title="새창열림"><span>경남본부(창원)</span></a></li><li><a href="/nbusan/index.do" target="_blank" title="새창열림"><span>부산북부지사</span></a></li><li><a href="/wgyeongnam/index.do" target="_blank" title="새창열림"><span>경남서부지사(진주)</span></a></li><li><a href="/daegu/index.do" target="_blank" title="새창열림"><span>대구광역본부</span></a></li><li><a href="/ulsan/index.do" target="_blank" title="새창열림"><span>울산본부</span></a></li><li><a href="/egyeongbuk/index.do" target="_blank" title="새창열림"><span>경북동부지사(포항)</span></a></li><li><a href="/ngyeongbuk/index.do" target="_blank" title="새창열림"><span>경북북부지사(안동)</span></a></li><li><a href="/daejeon/index.do" target="_blank" title="새창열림"><span>대전광역본부</span></a></li><li><a href="/chungbuk/index.do" target="_blank" title="새창열림"><span>충북본부(청주)</span></a></li><li><a href="/nchungnam/index.do" target="_blank" title="새창열림"><span>충남본부</span></a></li><li><a href="/nchungbuk/index.do" target="_blank" title="새창열림"><span>충북북부지사(충주)</span></a></li><li><a href="/gwangju/index.do" target="_blank" title="새창열림"><span>광주광역본부</span></a></li><li><a href="/jeonbuk/index.do" target="_blank" title="새창열림"><span>전북본부(전주)</span></a></li><li><a href="/ejeonnam/index.do" target="_blank" title="새창열림"><span>전남동부지사(여수)</span></a></li><li><a href="/wjeonnam/index.do" target="_blank" title="새창열림"><span>전남서부지사(무안)</span></a></li><li><a href="/gyeonggi/index.do" target="_blank" title="새창열림"><span>경기광역본부</span></a></li><li><a href="/ngyeonggi/index.do" target="_blank" title="새창열림"><span>경기북부지사(의정부)</span></a></li><li><a href="/wgyeonggi/index.do" target="_blank" title="새창열림"><span>경기서부지사(부천)</span></a></li><li><a href="/egyeonggi/index.do" target="_blank" title="새창열림"><span>경기동부지사(광주)</span></a></li><li><a href="/mgyeonggi/index.do" target="_blank" title="새창열림"><span>경기중부지사(일산)</span></a></li><li><a href="/gangwon/index.do" target="_blank" title="새창열림"><span>강원광역본부</span></a></li><li><a href="/egangwon/index.do" target="_blank" title="새창열림"><span>강원영동지사(강릉)</span></a></li><li><a href="/jeju/index.do" target="_blank" title="새창열림"><span>제주본부</span></a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="depth1_ul">
+						<li class="menu01"><a href="#none"><span>고객센터</span></a>
+							<ul class="depth2_ul">
+								<li><a href="#none"><span>질의응답</span></a>
+									<ul class="depth3_ul">
+										<li><a href="/kgs/aaaa/board.do"><span>자주하는질문</span></a></li>
+										<li><a href="/kgs/aaab/view.do"><span>질의응답</span></a></li>
+									</ul>
+								</li>
+								<li><a href="/kgs/aab/view.do"><span>국민제안</span></a></li>
+								<li><a href="/kgs/aac/view.do"><span>칭찬하기</span></a></li>
+								<li><a href="/kgs/aad/view.do"><span>불편불만</span></a></li>
+								<li><a href="#none"><span>신고센터</span></a>
+									<ul class="depth3_ul">
+										<li><a href="/kgs/aaea/view.do"><span>부정부패신고</span></a></li>
+										<li><a href="/kgs/aaeb/view.do"><span>예산낭비신고</span></a></li>
+										<li><a href="/kgs/aaec/view.do"><span>불법행위신고</span></a></li>
+										<li><a href="/kgs/aaed/view.do"><span>검사이의제기</span></a></li>
+									</ul>
+								</li>
+								<li><a href="/kgs/aaf/view.do"><span>구인구직</span></a></li>
+								<li><a href="/kgs/aag/view.do"><span>규제신문고</span></a></li>
+							</ul>
+						</li>
+						<li class="menu02"><a href="#none"><span>가스와생활</span></a>
+							<ul class="depth2_ul">
+								<li><a href="#none"><span>국민행동요령</span></a>
+									<ul class="depth3_ul">
+										<li><a href="/kgs/abaa/view.do"><span>가스안전사용요령</span></a></li>
+										<li><a href="/kgs/abab/view.do"><span>재난유형별 행동요령</span></a></li>
+										<li><a href="/kgs/abac/view.do"><span>예상재해별안전관리</span></a></li>
+										<li><a href="/kgs/abad/view.do"><span>누출시의응급조치</span></a></li>
+										<li><a href="/kgs/abae/view.do"><span>계절별안전관리</span></a></li>
+										<li><a href="/kgs/abaf/view.do"><span>다문화가족 가스안전요령</span></a></li>
+									</ul>
+								</li>
+								<li><a href="#none"><span>가스안전제도</span></a>
+									<ul class="depth3_ul">
+										<li><a href="/kgs/abba/view.do"><span>공급자안전관리</span></a></li>
+										<li><a href="/kgs/abbb/view.do"><span>가스시설법정검사</span></a></li>
+										<li><a href="/kgs/abbc/view.do"><span>사용자자율점검</span></a></li>
+										<li><a href="/kgs/abbd/view.do"><span>LP가스체적거래제</span></a></li>
+										<li><a href="/kgs/abbe/view.do"><span>취약계층 안전지원사업</span></a></li>
+										<li><a href="/kgs/abbi/view.do"><span>LPG용기시설개선</span></a></li>
+										<li><a href="/kgs/abbf/tab.do"><span>우수판매업체인증</span></a></li>
+										<li><a href="/kgs/abbg/tab.do"><span>가스안전보안관</span></a></li>
+										<li><a href="/kgs/abbh/view.do"><span>가스안전관리자금융자</span></a></li>
+									</ul>
+								</li>
+								<li><a href="#none"><span>가스사고정보</span></a>
+									<ul class="depth3_ul">
+										<li><a href="/kgs/abca/board.do"><span>가스사고발간자료</span></a></li>
+										<li><a href="/kgs/abcb/board.do"><span>가스사고현황</span></a></li>
+										<li><a href="/kgs/abcc/board.do"><span>가스사고통계</span></a></li>
+										<li><a href="/kgs/abcd/board.do"><span>국내사고사례</span></a></li>
+										<li><a href="/kgs/abce/board.do"><span>가스사고예방사례</span></a></li>
+										<li><a href="/kgs/abcf/board.do"><span>아차사고 사례</span></a></li>
+									</ul>
+								</li>
+								<li><a href="#none"><span>도시가스사 안내</span></a>
+									<ul class="depth3_ul">
+										<li><a href="/kgs/abda/view.do"><span>전국도시가스사</span></a></li>
+										<li><a href="/kgs/abdb/board.do"><span>도시가스지역관리소</span></a></li>
+									</ul>
+								</li>
+								<li><a href="/kgs/abe/board.do"><span>가스안전알쓸신잡</span></a></li>
+							</ul>
+						</li>
+						<li class="menu03"><a href="#none"><span>정보공개</span></a>
+							<ul class="depth2_ul">
+								<li><a href="#none"><span>정보공개제도</span></a>
+									<ul class="depth3_ul">
+										<li><a href="/kgs/acaa/board.do"><span>사전정보공표</span></a></li>
+										<li><a href="/kgs/acab/view.do"><span>정보공개 제도안내</span></a></li>
+										<li><a href="/kgs/acac/board.do"><span>생산문서 목록공개</span></a></li>
+									</ul>
+								</li>
+								<li><a href="#none"><span>공공데이터</span></a>
+									<ul class="depth3_ul">
+										<li><a href="/kgs/acba/view.do"><span>공공데이터 제도안내</span></a></li>
+										<li><a href="/kgs/acbb/view.do"><span>공공데이터 제공목록</span></a></li>
+									</ul>
+								</li>
+								<li><a href="#none"><span>사업실명제</span></a>
+									<ul class="depth3_ul">
+										<li><a href="/kgs/acca/view.do"><span>사업실명제 제도안내</span></a></li>
+										<li><a href="/kgs/accb/board.do"><span>사업실명제 목록공개</span></a></li>
+									</ul>
+								</li>
+								<li><a href="#none"><span>가스법규정보</span></a>
+									<ul class="depth3_ul">
+										<li><a href="/kgs/acda/board.do"><span>법규정책</span></a></li>
+										<li><a href="/kgs/acdb/view.do"><span>법령고시</span></a></li>
+										<li><a href="/kgs/acdc/board.do"><span>기준지침</span></a></li>
+										<li><a href="/kgs/acdd/board.do"><span>안전관리규정</span></a></li>
+										<li><a href="/kgs/acde/view.do"><span>KGS Code</span></a></li>
+										<li><a href="/kgs/acdf/board.do"><span>법정수수료</span></a></li>
+									</ul>
+								</li>
+								<li><a href="#none"><span>민원업무절차/서식</span></a>
+									<ul class="depth3_ul">
+										<li><a href="/kgs/acea/tab.do"><span>민원업무절차</span></a></li>
+										<li><a href="/kgs/aceb/tab.do"><span>민원업무서식</span></a></li>
+									</ul>
+								</li>
+								<li><a href="#none"><span>가스물성정보</span></a>
+									<ul class="depth3_ul">
+										<li><a href="/kgs/acfd/board.do"><span>일반가스 물성정보</span></a></li>
+										<li><a href="/kgs/acfe/board.do"><span>독성가스 물성정보</span></a></li>
+										<li><a href="/kgs/acff/board.do"><span>응급대응지시서</span></a></li>
+									</ul>
+								</li>
+								<li><a href="/kgs/acg/board.do"><span>실무기술정보</span></a></li>
+								<li><a href="/kgs/ach/board.do"><span>가스용어사전</span></a></li>
+								<li><a href="/kgs/aci/board.do"><span>가스통계</span></a></li>
+							</ul>
+						</li>
+						<li class="menu04"><a href="#none"><span>공사소개</span></a>
+							<ul class="depth2_ul">
+								<li><a href="/kgs/ada/view.do"><span>CEO인사말</span></a></li>
+								<li><a href="/kgs/adb/view.do"><span>비전 2035</span></a></li>
+								<li><a href="#none"><span>KGS는</span></a>
+									<ul class="depth3_ul">
+										<li><a href="/kgs/adcb/view.do"><span>연혁</span></a></li>
+										<li><a href="/kgs/adcc/view.do"><span>CI</span></a></li>
+										<li><a href="/kgs/adcd/view.do"><span>주요사업</span></a></li>
+										<li><a href="/kgs/adce/board.do"><span>수상실적</span></a></li>
+										<li><a href="/kgs/adcf/view.do"><span>가스안전인수칙</span></a></li>
+									</ul>
+								</li>
+								<li><a href="#none"><span>경영공시</span></a>
+									<ul class="depth3_ul">
+										<li><a href="/kgs/adda/view.do"><span>통합공시(ALIO)</span></a></li>
+										<li><a href="/kgs/addb/view.do"><span>공사자체공시</span></a></li>
+										<li><a href="/kgs/addg/board.do"><span>공사자체공시</span></a></li>
+									</ul>
+								</li>
+								<li><a href="#none"><span>조직안내</span></a>
+									<ul class="depth3_ul">
+										<li><a href="/kgs/adea/org.do"><span>본사</span></a></li>
+										<li><a href="/kgs/adeb/org.do"><span>가스안전교육원</span></a></li>
+										<li><a href="/kgs/adec/org.do"><span>가스안전연구원</span></a></li>
+										<li><a href="/kgs/adeg/org.do"><span>광역본부·본부·지사</span></a></li>
+										<li><a href="/kgs/adeh/empl.do"><span>직원찾기</span></a></li>
+									</ul>
+								</li>
+								<li><a href="#none"><span>오시는길</span></a>
+									<ul class="depth3_ul">
+										<li><a href="/kgs/adfa/view.do"><span>본사·연구원</span></a></li>
+										<li><a href="/kgs/adfb/view.do"><span>가스안전교육원</span></a></li>
+										<li><a href="/kgs/adfc/view.do"><span>산업가스안전기술센터</span></a></li>
+										<li><a href="/kgs/adfd/view.do"><span>에너지안전기술지원센터</span></a></li>
+										<li><a href="/kgs/adfe/view.do"><span>광역본부·본부·지사</span></a></li>
+									</ul>
+								</li>
+								<li><a href="#none"><span>채용정보</span></a>
+									<ul class="depth3_ul">
+										<li><a href="/kgs/adga/view.do"><span>인사제도</span></a></li>
+										<li><a href="/kgs/adgb/board.do"><span>채용안내</span></a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="menu05"><a href="#none"><span>ESG경영</span></a>
+							<ul class="depth2_ul">
+								<li><a href="#none"><span>환경경영</span></a>
+									<ul class="depth3_ul">
+										<li><a href="/kgs/aeaa/view.do"><span>정책개요</span></a></li>
+										<li><a href="/kgs/aeab/view.do"><span>추진체계</span></a></li>
+										<li><a href="/kgs/aeac/view.do"><span>추진과제</span></a></li>
+										<li><a href="/kgs/aead/board.do"><span>추진실적</span></a></li>
+									</ul>
+								</li>
+								<li><a href="#none"><span>인권경영</span></a>
+									<ul class="depth3_ul">
+										<li><a href="/kgs/aeba/view.do"><span>정책개요</span></a></li>
+										<li><a href="/kgs/aebb/view.do"><span>추진체계</span></a></li>
+										<li><a href="/kgs/aebc/view.do"><span>성희롱·성폭력고충상담</span></a></li>
+										<li><a href="/kgs/aebd/board.do"><span>추진실적</span></a></li>
+									</ul>
+								</li>
+								<li><a href="#none"><span>고객감동</span></a>
+									<ul class="depth3_ul">
+										<li><a href="/kgs/aeca/view.do"><span>정책개요</span></a></li>
+										<li><a href="/kgs/aecb/view.do"><span>추진체계</span></a></li>
+										<li><a href="/kgs/aecc/view.do"><span>고객만족도</span></a></li>
+									</ul>
+								</li>
+								<li><a href="#none"><span>동반성장</span></a>
+									<ul class="depth3_ul">
+										<li><a href="/kgs/aeda/view.do"><span>정책개요</span></a></li>
+										<li><a href="/kgs/aedb/view.do"><span>추진체계</span></a></li>
+										<li><a href="/kgs/aedc/view.do"><span>추진과제</span></a></li>
+										<li><a href="/kgs/aedd/board.do"><span>추진실적</span></a></li>
+									</ul>
+								</li>
+								<li><a href="#none"><span>사회공헌</span></a>
+									<ul class="depth3_ul">
+										<li><a href="/kgs/aeea/view.do"><span>정책개요</span></a></li>
+										<li><a href="/kgs/aeeb/view.do"><span>추진체계</span></a></li>
+										<li><a href="/kgs/aeec/board.do"><span>추진실적</span></a></li>
+									</ul>
+								</li>
+								<li><a href="#none"><span>안전경영</span></a>
+									<ul class="depth3_ul">
+										<li><a href="/kgs/aefa/view.do"><span>정책개요</span></a></li>
+										<li><a href="/kgs/aefb/view.do"><span>추진체계</span></a></li>
+										<li><a href="/kgs/aefc/board.do"><span>추진실적</span></a></li>
+									</ul>
+								</li>
+								<li><a href="#none"><span>적극행정</span></a>
+									<ul class="depth3_ul">
+										<li><a href="/kgs/aeha/view.do"><span>정책개요</span></a></li>
+										<li><a href="/kgs/aehb/view.do"><span>추진체계</span></a></li>
+										<li><a href="/kgs/aehc/board.do"><span>추진실적</span></a></li>
+									</ul>
+								</li>
+								<li><a href="#none"><span>윤리경영</span></a>
+									<ul class="depth3_ul">
+										<li><a href="/kgs/aeia/view.do"><span>정책개요</span></a></li>
+										<li><a href="/kgs/aeib/view.do"><span>추진체계</span></a></li>
+										<li><a href="/kgs/aeic/board.do"><span>추진실적</span></a></li>
+									</ul>
+								</li>
+								<li><a href="#none"><span>반부패ㆍ청렴</span></a>
+									<ul class="depth3_ul">
+										<li><a href="/kgs/aeja/view.do"><span>정책개요</span></a></li>
+										<li><a href="/kgs/aejb/view.do"><span>추진체계</span></a></li>
+										<li><a href="/kgs/aejc/board.do"><span>추진실적</span></a></li>
+										<li><a href="/kgs/aejd/board.do"><span>상임감사활동</span></a></li>
+										<li><a href="/kgs/aeje/board.do"><span>업무추진비공개</span></a></li>
+										<li><a href="/kgs/aejf/board.do"><span>상품권내역공개</span></a></li>
+										<li><a href="/kgs/aejg/board.do"><span>수의계약현황</span></a></li>
+										<li><a href="/kgs/aejh/board.do"><span>해외출장내역</span></a></li>
+										<li><a href="/kgs/aeji/board.do"><span>부패공직자현황</span></a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="menu06"><a href="#none"><span>주요사업</span></a>
+							<ul class="depth2_ul">
+								<li><a href="#none"><span>가스시설검사</span></a>
+									<ul class="depth3_ul">
+										<li><a href="/kgs/afaa/view.do"><span>고압가스시설검사</span></a></li>
+										<li><a href="/kgs/afab/view.do"><span>액화석유가스시설검사</span></a></li>
+										<li><a href="/kgs/afac/view.do"><span>도시가스시설검사</span></a></li>
+										<li><a href="/kgs/afad/view.do"><span>가스안전영향평가</span></a></li>
+										<li><a href="/kgs/afae/view.do"><span>SMS</span></a></li>
+									</ul>
+								</li>
+								<li><a href="#none"><span>가스시설진단</span></a>
+									<ul class="depth3_ul">
+										<li><a href="/kgs/afba/view.do"><span>안전진단·컨설팅</span></a></li>
+										<li><a href="/kgs/afbc/view.do"><span>유해화학물질검사·진단</span></a></li>
+									</ul>
+								</li>
+								<li><a href="#none"><span>가스제품검사</span></a>
+									<ul class="depth3_ul">
+										<li><a href="/kgs/afca/view.do"><span>용기ㆍ특정설비검사</span></a></li>
+										<li><a href="/kgs/afcc/view.do"><span>가스용품검사</span></a></li>
+										<li><a href="/kgs/afcd/view.do"><span>공장심사</span></a></li>
+										<li><a href="/kgs/afbb/view.do"><span>외주품질관리등록</span></a></li>
+										<li><a href="/kgs/afce/view.do"><span>가스품질검사</span></a></li>
+										<li><a href="/kgs/afcb/view.do"><span>가스용품ㆍ의뢰시험</span></a></li>
+									</ul>
+								</li>
+								<li><a href="#none"><span>시설제품인증</span></a>
+									<ul class="depth3_ul">
+										<li><a href="/kgs/afda/view.do"><span>성능인증</span></a></li>
+										<li><a href="/kgs/afdb/view.do"><span>KGS제품인증</span></a></li>
+										<li><a href="/kgs/afdc/view.do"><span>방호인증</span></a></li>
+										<li><a href="/kgs/afdd/view.do"><span>KS인증</span></a></li>
+										<li><a href="/kgs/afde/view.do"><span>국내방폭인증</span></a></li>
+										<li><a href="/kgs/afdf/view.do"><span>해외방폭인증</span></a></li>
+										<li><a href="/kgs/afdg/view.do"><span>표준물질생산</span></a></li>
+									</ul>
+								</li>
+								<li><a href="#none"><span>ISO·온실가스</span></a>
+									<ul class="depth3_ul">
+										<li><a href="/kgs/afea/view.do"><span>ISO인증신청</span></a></li>
+										<li><a href="/kgs/afeb/view.do"><span>ISO인증교육</span></a></li>
+										<li><a href="/kgs/afec/view.do"><span>온실가스검증</span></a></li>
+										<li><a href="/kgs/afdh/view.do"><span>KGS-QA</span></a></li>
+									</ul>
+								</li>
+								<li><a href="#none"><span>해외사업지원</span></a>
+									<ul class="depth3_ul">
+										<li><a href="/kgs/affa/view.do"><span>해외수출지원</span></a></li>
+										<li><a href="/kgs/affb/view.do"><span>해외사무소운영</span></a></li>
+									</ul>
+								</li>
+								<li><a href="#none"><span>산업가스안전</span></a>
+									<ul class="depth3_ul">
+										<li><a href="/kgs/afga/view.do"><span>중화 및 잔가스처리</span></a></li>
+										<li><a href="/kgs/afgb/view.do"><span>산업가스안전기기시험</span></a></li>
+										<li><a href="/kgs/afgc/view.do"><span>전자기적합성(EMC)시험</span></a></li>
+										<li><a href="/kgs/afgd/view.do"><span>산업가스안전교육</span></a></li>
+									</ul>
+								</li>
+								<li><a href="#none"><span>가스안전연구</span></a>
+									<ul class="depth3_ul">
+										<li><a href="/kgs/afha/view.do"><span>연구개발</span></a></li>
+										<li><a href="/kgs/afhb/view.do"><span>표준개발협력기관</span></a></li>
+									</ul>
+								</li>
+								<li><a href="#none"><span>가스안전교육</span></a>
+									<ul class="depth3_ul">
+										<li><a href="/kgs/afia/view.do"><span>전문교육</span></a></li>
+										<li><a href="/kgs/afib/view.do"><span>특별교육</span></a></li>
+										<li><a href="/kgs/afic/view.do"><span>양성교육</span></a></li>
+										<li><a href="/kgs/afid/view.do"><span>위탁교육</span></a></li>
+									</ul>
+								</li>
+								<li><a href="#none"><span>가스안전홍보</span></a>
+									<ul class="depth3_ul">
+										<li><a href="/kgs/afja/view.do"><span>언론홍보</span></a></li>
+										<li><a href="/kgs/afjb/view.do"><span>SNS홍보</span></a></li>
+										<li><a href="/kgs/afjc/view.do"><span>행사홍보</span></a></li>
+										<li><a href="/kgs/afjd/view.do"><span>가스안전대상</span></a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="menu07"><a href="#none"><span>알림마당</span></a>
+							<ul class="depth2_ul">
+								<li><a href="/kgs/aga/board.do"><span>공지사항</span></a></li>
+								<li><a href="/kgs/agb/board.do"><span>입찰공고</span></a></li>
+								<li><a href="/kgs/agc/board.do"><span>KGS뉴스</span></a></li>
+								<li><a href="/kgs/agd/view.do"><span>SNS이용</span></a></li>
+								<li><a href="/kgs/age/board.do"><span>가스안전지</span></a></li>
+								<li><a href="/kgs/agf/board.do"><span>KGS사보</span></a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="overlay"></div>
+	</header>
+	<!--//header-->
+	<main>
+		<!--container-->
+		<div id="container" class="container">
+			<div class="contentWrap clearfix">
+
+				<!--content-->
+				<section id="content" class="content">
+					<article class="error_w">
+						<div class="error_bx">
+							<div class="img">
+								<img src="/asset/img/comm/icon-error.png" alt="한국가스안전공사 캐릭터 안전이와 행복이가 금지아이콘을 가리키고 있는 모습"/>
+							</div>
+							<div class="txt">
+								<p class="dec">죄송합니다. <br> <strong>오류가 발생하였습니다. </strong> <br> 관리자에게 문의하시기 바랍니다.
+									<span>문의 전화 : 1544-4500</span>
+								</p>
+							</div>
+						</div>
+					</article>
+				</section>
+				 <!--//content-->
+			</div>
+		</div>
+		<!--//container-->
+	</main>
+	<!--footer-->
+	<footer id="footer">
+		<div class="footer-wrap inner">
+			<div class="footer-information">
+				<ul class="footer-policy">
+					<li><a href="/kgs/ahc/view.do"><strong>개인정보 처리방침</strong></a></li>
+					<li><a href="/kgs/ahd/view.do"><strong>고정형 영상정보처리 기기운영·관리방침</strong></a></li>
+					<li><a href="/kgs/aab/view.do">홈페이지개선의견</a></li>
+					<li><a href="/kgs/ahe/view.do">이메일 무단수집거부</a></li>
+					<li><a href="/kgs/ahb/view.do">홈페이지 이용안내</a></li>
+					<li><a href="http://mail.kgs.or.kr" target="_blank" title="새창열림">KGS 메일</a></li>
+				</ul>
+				<address>
+				<p> <span>본사 : (27738) 충북 음성군 맹동면 원중로 1390 (한국가스안전공사), Tel. 1544-4500<br/>교육원 : (31228) 충남 천안시 동남구 목천읍 교천지산길 331-39 (가스안전교육원), Tel. 041-629-0500</span><br/>
+					Copyright &copy; Korea Gas Safety Corporation. All Rights Reserved. </p>
+				</address>
+			</div>
+			<div class="footer-util">
+				<div class="footer-util-top">
+					<div class="footer-sns">
+						<a href="https://blog.naver.com/kgs_safety" target="_blank" title="새창열림" class="ft-icon-blog"><span class="sr-only">블로그 바로가기</span></a>
+						<a href="https://www.instagram.com/kgs_safety" target="_blank" title="새창열림" class="ft-icon-instagram"><span class="sr-only">인스타그램 바로가기</span></a>
+<!-- 						<a href="https://www.facebook.com/kgscs" target="_blank" title="새창열림" class="ft-icon-facebook"><span class="sr-only">페이스북 바로가기</span></a> -->
+						<a href="https://www.youtube.com/channel/UCWYH--lqDIdv2HFulfDg-XA" target="_blank" title="새창열림" class="ft-icon-youtube"><span class="sr-only">유튜브 바로가기</span></a>
+						<a href="http://webzine.kgs.or.kr/" target="_blank" title="새창열림" class="ft-icon-webzine"><span class="sr-only">웹진 바로가기</span></a>
+						<!-- <a href="https://story.kakao.com/ch/kgs2014" target="_blank" title="새창열림" class="ft-icon-kakao"><span class="sr-only">카카오스토리 바로가기</span></a> -->
+						<a href="/kgs/agf/board.do" class="ft-icon-kgs"><span class="sr-only">공감 KGS 바로가기</span></a>
+					</div>
+					<div class="fam-site">
+						<button type="button" class="bt_fam"> <span class="fam_txt">패밀리 사이트</span><span class="sr-only">자세히보기</span> </button>
+						<div class="fam-bx">
+							<ul>
+								
+								
+									<li><a href="https://cyber.kgs.or.kr/kgscode.Index.do" title="KGS Code-새창열기">KGS Code</a></li>
+								
+									<li><a href="https://cyber.kgs.or.kr/gtopia.index.ex.do" title="G-Topia-새창열기">G-Topia</a></li>
+								
+									<li><a href="https://cyber.kgs.or.kr/gas.index.do" title="독성가스센터-새창열기">독성가스센터</a></li>
+								
+									<li><a href="https://cyber.kgs.or.kr/seip.index.do" title="전문검사기관(SEIP)-새창열기">전문검사기관(SEIP)</a></li>
+								
+									<li><a href="http://www.eocs.or.kr/" title="굴착공사정보지원센터-새창열기">굴착공사정보지원센터</a></li>
+								
+									<li><a href="http://www.korealpg.or.kr" title="한국엘피가스판매협회중앙회-새창열기">한국엘피가스판매협회중앙회</a></li>
+								
+									<li><a href="http://cafe.naver.com/kgsbuddy" title="KGS시니어직능클럽-새창열기">KGS시니어직능클럽</a></li>
+								
+									<li><a href="http://union.kgs.or.kr/" title="노동조합-새창열기">노동조합</a></li>
+								
+								<!-- li><a href="https://cyber.kgs.or.kr/kgscode.Index.do" target="_blank" title="새창열림">KGS Code</a></li>
+									<li><a href="https://cyber.kgs.or.kr/gtopia.index.ex.do" target="_blank" title="새창열림">G-Topia</a></li>
+									<li><a href="https://cyber.kgs.or.kr/gas.index.do" target="_blank" title="새창열림">독성가스센터</a></li>
+									<li><a href="https://cyber.kgs.or.kr/seip.index.do" target="_blank" title="새창열림">전문검사기관(SEIP)</a></li>
+									<li><a href="http://www.eocs.or.kr/" target="_blank" title="새창열림">굴착공사정보지원센터</a></li>
+									<li><a href="https://www.smplatform.go.kr/svp/common/index.do?guide=yes" target="_blank" title="새창열림">경영혁신플랫폼</a></li>
+									<li><a target="_blank" title="새창열림">KGS시니어직능클럽</a></li>
+									<li><a target="_blank" title="새창열림">노동조합</a></li -->
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="footer-count clear">
+					<p>방문고객님: <strong>금일<span> 5,076</span>명</strong></p>
+					<!-- <button type="button"><span>바로가기</span></button> -->
+				</div>
+			</div>
+		</div>
+		<div class="mark-img inner">
+			<ul>
+				<li> <a href="http://www.wa.or.kr/ target="_blank" title="새창열림"> <img src="/asset/img/comm/img_mark01.jpg" alt="한국웹접근성평가센터 로고"> </a> </li>
+				<li> <a href="https://www.kogl.or.kr/index.do" target="_blank" title="새창열림"> <img src="/asset/img/comm/img_mark02.jpg" alt="공공누리 로고"> </a> </li>
+				<li> <a href="https://support.globalsign.com/" target="_blank" title="새창열림"> <img src="/asset/img/comm/img_mark03.jpg" alt="secure 로고"> </a> </li>
+			</ul>
+		</div>
+	</footer>
+	<!--//footer-->
+</div>
+<!-- quick 메뉴 -->
+
+
+<aside class="quick" id="quick">
+	<!-- 50년사 홈페이지 바로가기 -->
+	
+		
+		
+			<div class="50th"><a href="https://kgs.or.kr/50th/index.html" title="50년사(바로가기)" class="btn_50th" target="_blank"><span class="sr-only">50년사 바로가기</span></a></div>
+		
+	
+	<div class="consult"> <a href="https://cyber.kgs.or.kr/KgsIndex.do" target="_blank" title="한국가스안전공사 사이버지사 바로가기 - 새창" class="btn_consult"><span class="sr-only">사이버지사</span></a>
+		<div id="TIP-TEL" class="tooltip">
+			<p class="tooltip-text"> 검사ㆍ교육 신청 및 조회, 재증명발급은 <br/>
+				사이버지사를 이용하세요. <a href="https://cyber.kgs.or.kr/KgsIndex.do" target="_blank" title="새창열림" class="bt-site"><span class="sr-only">사이버칭구 바로가기</span></a></p>
+			<a href="#none" class="bt-close"><span class="sr-only">닫기</span></a> </div>
+	</div>
+	<!--(D) 수소뮤지엄 바로가기 추가:S-->
+	<div class="h2m"><a href="https://www.kgs.or.kr/h2m/index.do" title="수소뮤지엄(바로가기)" class="btn_h2m" target="_blank"><span class="sr-only">수소뮤지엄 바로가기</span></a></div>
+	<!--// (D) 수소뮤지엄 바로가기 추가:E-->
+	<div class="move-top"><a href="#top" title="Go to Top"><span class="sr-only">TOP</span></a></div>
+</aside>
+<script>
+	$(function(){
+		var param = "#gnb_layout",
+			obj = ".depth_02",
+			btn = ".th_1st",
+			wrap = "#header",
+			dur = 300,
+			meth = "easeOutCubic";
+		gnb(param,obj,btn,wrap,dur,meth);
+	});
+</script>
+<script>
+$(function(){
+	var param = "#gnb_layout",
+		obj = ".depth_02",
+		btn = ".th_1st",
+		wrap = "#header",
+		dur = 300,
+		meth = "easeOutCubic";
+	gnb(param,obj,btn,wrap,dur,meth);
+});
+</script>
+</body>
+</html>

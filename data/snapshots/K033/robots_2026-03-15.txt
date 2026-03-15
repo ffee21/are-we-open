@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /attach
+Disallow: /*?*searchStr=
+Allow: /
+
+Sitemap: https://www.kr.or.kr/sitemap.xml

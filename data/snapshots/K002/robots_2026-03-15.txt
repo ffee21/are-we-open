@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /01_news/introduction.aspx
+Disallow: /01_news/*.aspx
+Disallow: /09_search/total_search.aspx

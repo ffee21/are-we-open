@@ -1,0 +1,3 @@
+User-agent : Googlebot
+
+Disallow: /kosep/cm/search/main.do

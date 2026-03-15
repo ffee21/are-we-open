@@ -1,0 +1,8 @@
+User-agent: Googlebot
+
+# 검색결과 페이지 차단
+Disallow: /main/allSearch.do
+
+# 게시판 페이지 차단
+Disallow: /board/answerBbs/qnaListPage.do
+

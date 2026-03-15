@@ -1,0 +1,3 @@
+User-agent: Googlebot
+Disallow: /koem/search/TotalSearch.do
+Disallow: /site/koem/ex/board/

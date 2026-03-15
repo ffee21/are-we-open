@@ -1,0 +1,2225 @@
+<!DOCTYPE html>
+<!-- https://adminlte.io/themes/v3/ -->
+<html lang="ko">
+<head>
+    
+    <title>아시아·태평양경제협력체 기후센터</title>
+
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index,follow">
+    <meta name="csrf-header" content="X-CSRF-TOKEN">
+    <meta name="csrf-parameter" content="_csrf">
+    <meta name="csrf-token" content="92e861f2-4486-47df-b2e1-6e912ff45be7">
+    <meta name="locale" content="ko">
+    <meta name="lang" content="ko">
+    <meta name="title" content="아시아·태평양경제협력체 기후센터">
+    <meta name="description" content="아시아·태평양경제협력체 기후센터입니다.">
+    <meta name="keywords" content="아시아·태평양경제협력체 기후센터, APCC, 기후센터, 기후, APEC Climate Center">
+
+    <meta name="og:title" content="아시아·태평양경제협력체 기후센터">
+    <meta name="og:description" content="아시아·태평양경제협력체 기후센터입니다.">
+    <meta name="og:url" content="https://www.apcc21.org">
+
+    <meta name="twitter:title" content="아시아·태평양경제협력체 기후센터">
+    <meta name="twitter:description" content="아시아·태평양경제협력체 기후센터입니다.">
+    <meta name="twitter:url" content="https://www.apcc21.org">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+
+
+    
+    <link rel="stylesheet" href="/apcc/css/normalize-144638bbecf2df0104777b82dbd32ddf.css">
+    <link rel="stylesheet" href="/apcc/css/bootstrap.min-96dcbffaf31442954956c3ca7a83eae0.css">
+    <link rel="stylesheet" href="/apcc/css/base_style-acf1215d19099d9fb653daac46d5fe35.css">
+    <link rel="stylesheet" href="/apcc/css/apcc_style-31f6293c5972dc709a26821db026cfe0.css">
+    
+    <link rel="stylesheet" href="/apcc/css/ckeditor-e2063aed2463b268be8d4a8c7a69acae.css">
+    <link rel="stylesheet" href="/lib/cropperjs/dist/cropper.min.css">
+<!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">-->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+          integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />-->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"
+          integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+          integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+
+    
+
+    
+
+    
+    <style>
+        .ck-content ul {list-style-type: none !important;}
+    </style>
+
+
+    
+    <script src="/lib/cash-dom/dist/cash.min.js"></script>
+    <script src="/lib/holdon/holdon.min.cash.js"></script>
+
+<!--    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>-->
+    <script src="/apcc/js/chart.v3.5.1.min-8816771bf627fee82a3e13fe1d418ad1.js"></script>
+    <script src="/lib/cropperjs/dist/cropper.min.js"></script>
+    <script src="/common/js/spinner-cb51b41698ed96cd4e15afe6e49eb344.js"></script> 
+
+    <!--<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>-->
+<!--    <script src="https://cdn.jsdelivr.net/npm/vue@3.4.21/dist/vue.global.min.js"></script>-->
+    <script src="/apcc/js/vue.v3.4.21.global.min-c08da89463e7e2421368971eed291e5e.js"></script>
+    <script src="/lib/axios/0.27.2/axios.min.js"></script>
+    <script src="/common/js/global-fe0f66e1fbb594a0cd608b9698338032.js"></script>
+    <script>
+        // 서버 설정에서 가져온 파일 업로드 제한 (MB)
+        window.MAX_UPLOAD_FILE_SIZE_MB = 100;
+        // 허용된 파일 확장자 목록
+        window.ALLOWED_FILE_EXTENSIONS = ["jpeg","jpg","bmp","png","gif","txt","pdf","doc","ppt","pptx","xls","xlsx","zip","rar","alz","hwp","hwpx","show","cell","docx","do","psd","csv","nc","mp4"];
+        // 파일 업로드 관련 다국어 메시지
+        window.FILE_UPLOAD_MSG = {
+            sizeExceeded: "\uD30C\uC77C \uC6A9\uB7C9\uC774 \uB108\uBB34 \uD07D\uB2C8\uB2E4. {0}MB \uC774\uD558\uC758 \uD30C\uC77C\uB9CC \uC5C5\uB85C\uB4DC \uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4. (\uD604\uC7AC \uD30C\uC77C \uD06C\uAE30: {1}MB)",
+            uploadFailed: "\uD30C\uC77C \uC5C5\uB85C\uB4DC\uC5D0 \uC2E4\uD328\uD558\uC600\uC2B5\uB2C8\uB2E4.",
+            uploadFailedWithName: "\uD30C\uC77C \uC5C5\uB85C\uB4DC\uC5D0 \uC2E4\uD328\uD588\uC2B5\uB2C8\uB2E4: {0}",
+            uploading: "\uC5C5\uB85C\uB4DC \uC911...",
+            notAllowed: "\uD5C8\uC6A9\uB418\uC9C0 \uC54A\uB294 \uD30C\uC77C \uC5C5\uB85C\uB4DC\uC785\uB2C8\uB2E4.",
+            stillUploading: "\uD30C\uC77C \uC5C5\uB85C\uB4DC\uAC00 \uC9C4\uD589 \uC911\uC785\uB2C8\uB2E4. \uC644\uB8CC \uD6C4 \uB2E4\uC2DC \uC2DC\uB3C4\uD574\uC8FC\uC138\uC694.",
+            invalidExtension: "\uD5C8\uC6A9\uB418\uC9C0 \uC54A\uB294 \uD30C\uC77C \uD615\uC2DD\uC785\uB2C8\uB2E4.",
+            invalidContent: "HTML \uD0DC\uADF8 \uBC0F \uC2A4\uD06C\uB9BD\uD2B8\uB294 \uC0AC\uC6A9\uD560 \uC218 \uC5C6\uC2B5\uB2C8\uB2E4."
+        };
+    </script>
+    <script src="/homepage/js/api-9f16c76a3cd8395299e2f579209563b1.js"></script>
+    <script src="/apcc/js/common-ac27005da37778f58313c9d6db4eba56.js"></script>
+    <script src="/apcc/js/print-f6c026d5b60b0737a4d02d5701919c9f.js"></script>
+    <script src="/apcc/js/apcc_js-20c92f1ce6e06162378fba648a74dde7.js"></script>
+
+    <script src="/apcc/js/i18n-3af4031ece9b5734b5479f8d022ef611.js"></script>
+    <script src="https://wowjs.uk/dist/wow.min.js"></script>
+    <script src="/lib/ckeditor5/build/ckeditor.js"></script>
+
+    <!-- Swiper.JS only -->
+<!--    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <!-- PDF Viewer -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.12/pdfobject.min.js" integrity="sha512-lDL6DD6x4foKuSTkRUKIMQJAoisDeojVPXknggl4fZWMr2/M/hMiKLs6sqUvxP/T2zXdrDMbLJ0/ru8QSZrnoQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="/apcc/js/bottom-edde0684be8fe42c708ad0a97d600f50.js"></script>
+
+
+
+    
+    
+</head>
+
+<body>
+
+<div id="app">
+    <header id="apcc_header" class="shadow sticky">
+        
+    <div class="apcc_h_style1">
+        <div class="container">
+            <div class="row row-cols-auto justify-content-between position-relative">
+                <div class="col">
+                    
+                        <a href="/?lang=ko"><h1><img src="/apcc/img/acpp_logo1.png" height="55" alt="APCC 로고"></h1></a>
+                    
+                    
+                </div>
+
+                <div class="col m-none">
+                    <div class="apcc_top_search_box f_s4">
+                        <form class="custom-form" action="/board/searchAll" method="get">
+                            <input type="hidden" name="lang" value="ko" title="lang value" id="search_lang">
+                            <label for="searchKeyword" class="d-none">Search all</label>
+                            <input type="text" name="keyword" id="searchKeyword" class="apcc_top_search" value="" title="Search" placeholder="컨텐츠 내용, 직원 성명 또는 업무, 메뉴명 검색">
+                            <button class="apcc_top_search_btn"><img src="/apcc/img/apcc_icon_search.png" alt="search icon"></button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col">
+
+                    <div class="d-flex align-items-center">
+                        <ul class="d-flex apcc_language_list">
+                            <!--<li class="tr-none"><a href="/content/map">CONTACT US</a></li> 채용공고 있을 때 채용 공고 나타나게 -->
+                            <li>
+                                
+                                    <a href="/?lang=en">ENG</a>
+                                
+                                
+                            </li>
+                        </ul>
+
+                        <span class="apcc_header_divider tr-none" style="margin: 0 12px; color: #ccc;">|</span>
+
+                        <div class="d-flex tr-none align-items-center gap-2">
+                            <a href="https://sso.apcc21.org/sign/in?siteCd=HOMEPAGE" class="apcc_header_link">로그인</a>
+                            <a href="https://sso.apcc21.org/sign/agree?siteCd=HOMEPAGE&amp;joinType=apcc" class="apcc_header_link">회원가입</a>
+                            
+                            <!--href="https://sso.apcc21.org/sign/helpDesk"-->
+                            <a href="https://www.apcc21.org/board/helpdesk" target="_blank" class="apcc_btn1 type2">도움 창구</a>
+                        </div>
+                        <div class="tr-block">
+                            <button onclick="apcc_md_menu_show()"><img src="/apcc/img/apcc_Union.png" alt="apcc_union"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="apcc_h_style2 border-bottom">
+        <div>
+            <div class="row position-relative">
+                <div class="col">
+                    <div class="apcc_nav_md_top tr-block ps-2">
+                        <img src="/apcc/img/acpp_logo1.png" height="45" alt="apcc logo">
+                    </div>
+                    <div class="apcc_nav_box">
+                        <nav class="apcc_nav">
+                            <ul class="f_s6 d-flex justify-content-between">
+
+                                
+                                    <li>
+                                        
+                                        <a href="javascript:void(0)?lang=ko" class="nav_title1">연구</a>
+
+                                        <ul class="apcc_more_nav f_s3 fw_nnR">
+                                            
+                                                
+                                                    <li >
+                                                        <a href="javascript:void(0)" class="more">연구분야</a>
+                                                        
+                                                            <ul class="apcc_more_nav2 f_s2">
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="/content/clpre?lang=ko">예측정보 생산 및 서비스</a>
+                                                                        <i></i>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="/content/preresdev?lang=ko">예측기술 개발</a>
+                                                                        <i></i>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="/content/clichan?lang=ko">기후변화분석</a>
+                                                                        <i></i>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="/content/climotest?lang=ko">기후모델테스트베드</a>
+                                                                        <i></i>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="/content/infosyssec?lang=ko">전산보안연구지원</a>
+                                                                        <i></i>
+                                                                    
+                                                                </li>
+                                                            </ul>
+                                                        
+                                                    </li>
+                                                
+                                            
+                                                
+                                                    <li >
+                                                        <a href="javascript:void(0)" class="more">연구성과</a>
+                                                        
+                                                            <ul class="apcc_more_nav2 f_s2">
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="/board/BBSMSTR_000000000002?lang=ko">연구보고서</a>
+                                                                        <i></i>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="/board/BBSMSTR_000000000003?lang=ko">논문</a>
+                                                                        <i></i>
+                                                                    
+                                                                </li>
+                                                            </ul>
+                                                        
+                                                    </li>
+                                                
+                                            
+                                        </ul>
+                                    </li>
+                                
+                                    <li>
+                                        
+                                        <a href="javascript:void(0)?lang=ko" class="nav_title1">기후예측</a>
+
+                                        <ul class="apcc_more_nav f_s3 fw_nnR">
+                                            
+                                                
+                                                    <li >
+                                                        <a href="javascript:void(0)" class="more">동아시아 계절예측</a>
+                                                        
+                                                            <ul class="apcc_more_nav2 f_s2">
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="/prediction/eastasia/moni?lang=ko">감시정보</a>
+                                                                        <i></i>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="/prediction/eastasia/fcst?lang=ko">예측정보</a>
+                                                                        <i></i>
+                                                                    
+                                                                </li>
+                                                            </ul>
+                                                        
+                                                    </li>
+                                                
+                                            
+                                                
+                                                    <li >
+                                                        <a href="javascript:void(0)" class="more">전지구 기후예측</a>
+                                                        
+                                                            <ul class="apcc_more_nav2 f_s2">
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="/prediction/global/outlook?lang=ko">기후전망</a>
+                                                                        <i></i>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="/prediction/global/sst?lang=ko">해수면온도정보</a>
+                                                                        <i></i>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="/prediction/global/fcst?lang=ko">예측정보</a>
+                                                                        <i></i>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="/prediction/global/foreveri?lang=ko">검증정보</a>
+                                                                        <i></i>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="/prediction/global/method?lang=ko">방법론</a>
+                                                                        <i></i>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="/prediction/global/model?lang=ko">모델정보</a>
+                                                                        <i></i>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    
+                                                                </li>
+                                                            </ul>
+                                                        
+                                                    </li>
+                                                
+                                            
+                                                
+                                                    <li >
+                                                        <a href="javascript:void(0)" class="more">여름철 계절내진동 예측</a>
+                                                        
+                                                            <ul class="apcc_more_nav2 f_s2">
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="/prediction/bsiso/intro?lang=ko">정의</a>
+                                                                        <i></i>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="/prediction/bsiso/moni?lang=ko">감시정보</a>
+                                                                        <i></i>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="/prediction/bsiso/fcst?lang=ko">예측정보</a>
+                                                                        <i></i>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="/prediction/bsiso/veri?lang=ko">검증정보</a>
+                                                                        <i></i>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="/prediction/bsiso/model?lang=ko">모델정보</a>
+                                                                        <i></i>
+                                                                    
+                                                                </li>
+                                                            </ul>
+                                                        
+                                                    </li>
+                                                
+                                            
+                                                
+                                                    <li >
+                                                        <a href="/clik?lang=ko">기후정보서비스</a>
+                                                        
+                                                    </li>
+                                                
+                                            
+                                                
+                                                    <li >
+                                                        <a href="javascript:void(0)" class="more">기후정보 활용 현황</a>
+                                                        
+                                                            <ul class="apcc_more_nav2 f_s2">
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="/content/usage?lang=ko">논문</a>
+                                                                        <i></i>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="/content/usage_news?lang=ko">뉴스</a>
+                                                                        <i></i>
+                                                                    
+                                                                </li>
+                                                            </ul>
+                                                        
+                                                    </li>
+                                                
+                                            
+                                        </ul>
+                                    </li>
+                                
+                                    <li>
+                                        
+                                        <a href="#" class="nav_title1">기후현황</a>
+
+                                        <ul class="apcc_more_nav f_s3 fw_nnR">
+                                            
+                                                
+                                                    <li >
+                                                        <a href="javascript:void(0)" class="more">최근기후</a>
+                                                        
+                                                            <ul class="apcc_more_nav2 f_s2">
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="/monitoring/recent/anomaly?lang=ko">편차값</a>
+                                                                        <i></i>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="/monitoring/recent/climate_normals?lang=ko">기후평년값</a>
+                                                                        <i></i>
+                                                                    
+                                                                </li>
+                                                            </ul>
+                                                        
+                                                    </li>
+                                                
+                                            
+                                                
+                                                    <li >
+                                                        <a href="javascript:void(0)" class="more">기후지수</a>
+                                                        
+                                                            <ul class="apcc_more_nav2 f_s2">
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="/monitoring/cindex/pacific?lang=ko">태평양 해수면온도지수</a>
+                                                                        <i></i>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="/monitoring/cindex/indian_atlantic?lang=ko">인도양·대서양 해수면온도지수</a>
+                                                                        <i></i>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="/monitoring/cindex/atmosphere?lang=ko">대기지수</a>
+                                                                        <i></i>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="/monitoring/cindex/monsoon?lang=ko">몬순지수</a>
+                                                                        <i></i>
+                                                                    
+                                                                </li>
+                                                            </ul>
+                                                        
+                                                    </li>
+                                                
+                                            
+                                                
+                                                    <li >
+                                                        <a href="/monitoring/drought?lang=ko">가뭄지수</a>
+                                                        
+                                                    </li>
+                                                
+                                            
+                                        </ul>
+                                    </li>
+                                
+                                    <li>
+                                        
+                                        <a href="#" class="nav_title1">국제협력</a>
+
+                                        <ul class="apcc_more_nav f_s3 fw_nnR">
+                                            
+                                                
+                                                    <li >
+                                                        <a href="javascript:void(0)" class="more">APEC 활동</a>
+                                                        
+                                                            <ul class="apcc_more_nav2 f_s2">
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="/content/APEC_info?lang=ko">APEC 소개</a>
+                                                                        <i></i>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="/content/APEC_PPSTI?lang=ko">APEC PPSTI 소속 활동</a>
+                                                                        <i></i>
+                                                                    
+                                                                </li>
+                                                            </ul>
+                                                        
+                                                    </li>
+                                                
+                                            
+                                                
+                                                    <li >
+                                                        <a href="javascript:void(0)" class="more">APCC 네트워크</a>
+                                                        
+                                                            <ul class="apcc_more_nav2 f_s2">
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="/content/MODEL_Agency?lang=ko">모델 데이터 제공 기관</a>
+                                                                        <i></i>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="/content/MEMBER_working_group?lang=ko">회원국실무단</a>
+                                                                        <i></i>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="/content/Pacific_ocean_Network?lang=ko">태평양도서국 네트워크</a>
+                                                                        <i></i>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="/content/BUSAN_council?lang=ko">부산기후변화협의체</a>
+                                                                        <i></i>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="/content/Cooperation_Agency?lang=ko">국내외 협력기관</a>
+                                                                        <i></i>
+                                                                    
+                                                                </li>
+                                                            </ul>
+                                                        
+                                                    </li>
+                                                
+                                            
+                                                
+                                                    <li >
+                                                        <a href="javascript:void(0)" class="more">APEC 기후심포지엄</a>
+                                                        
+                                                            <ul class="apcc_more_nav2 f_s2">
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="/content/apsinfo?lang=ko">소개</a>
+                                                                        <i></i>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="/board/BBSMSTR_000000000031?lang=ko">연도별 현황</a>
+                                                                        <i></i>
+                                                                    
+                                                                </li>
+                                                            </ul>
+                                                        
+                                                    </li>
+                                                
+                                            
+                                                
+                                                    <li >
+                                                        <a href="javascript:void(0)" class="more">워크숍 및 세미나</a>
+                                                        
+                                                            <ul class="apcc_more_nav2 f_s2">
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="/board/BBSMSTR_000000000024?lang=ko">워크숍</a>
+                                                                        <i></i>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="/board/BBSMSTR_000000000023?lang=ko">세미나</a>
+                                                                        <i></i>
+                                                                    
+                                                                </li>
+                                                            </ul>
+                                                        
+                                                    </li>
+                                                
+                                            
+                                                
+                                                    <li >
+                                                        <a href="javascript:void(0)" class="more">기후기술 협력사업</a>
+                                                        
+                                                            <ul class="apcc_more_nav2 f_s2">
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="/content/coopbus?lang=ko">안내</a>
+                                                                        <i></i>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="/board/BBSMSTR_000000000005?lang=ko">기술교류 워크숍</a>
+                                                                        <i></i>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="/board/BBSMSTR_000000000021?lang=ko">젊은과학자지원프로그램</a>
+                                                                        <i></i>
+                                                                    
+                                                                </li>
+                                                            </ul>
+                                                        
+                                                    </li>
+                                                
+                                            
+                                                
+                                                    <li >
+                                                        <a href="/content/International_project?lang=ko">국제협력 프로젝트</a>
+                                                        
+                                                    </li>
+                                                
+                                            
+                                        </ul>
+                                    </li>
+                                
+                                    <li>
+                                        
+                                        <a href="#" class="nav_title1">APCC소식</a>
+
+                                        <ul class="apcc_more_nav f_s3 fw_nnR">
+                                            
+                                                
+                                                    <li >
+                                                        <a href="javascript:void(0)" class="more">공지사항</a>
+                                                        
+                                                            <ul class="apcc_more_nav2 f_s2">
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="/board/BBSMSTR_000000000016?lang=ko">일반공지</a>
+                                                                        <i></i>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="/board/BBSMSTR_000000000018?lang=ko">입찰공고</a>
+                                                                        <i></i>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="/board/BBSMSTR_000000000017?lang=ko">채용공고</a>
+                                                                        <i></i>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="/board/relatives_recruit?lang=ko">임직원 친인척 채용현황</a>
+                                                                        <i></i>
+                                                                    
+                                                                </li>
+                                                            </ul>
+                                                        
+                                                    </li>
+                                                
+                                            
+                                                
+                                                    <li >
+                                                        <a href="/board/BBSMSTR_000000000999?lang=ko">포토뉴스</a>
+                                                        
+                                                    </li>
+                                                
+                                            
+                                                
+                                                    <li >
+                                                        <a href="/board/BBSMSTR_000000000013?lang=ko">보도자료</a>
+                                                        
+                                                    </li>
+                                                
+                                            
+                                                
+                                                    <li >
+                                                        <a href="javascript:void(0)" class="more">언론기고‧보도</a>
+                                                        
+                                                            <ul class="apcc_more_nav2 f_s2">
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="/board/BBSMSTR_000000000015?lang=ko">특별기고 및 칼럼</a>
+                                                                        <i></i>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="/board/BBSMSTR_000000000014?lang=ko">언론 속 APCC</a>
+                                                                        <i></i>
+                                                                    
+                                                                </li>
+                                                            </ul>
+                                                        
+                                                    </li>
+                                                
+                                            
+                                                
+                                                    <li >
+                                                        <a href="/board/BBSMSTR_000000000065?lang=ko">글로벌 기후소식</a>
+                                                        
+                                                    </li>
+                                                
+                                            
+                                                
+                                                    <li >
+                                                        <a href="/board/BBSMSTR_000000000012?lang=ko">연차보고서</a>
+                                                        
+                                                    </li>
+                                                
+                                            
+                                                
+                                                    <li >
+                                                        <a href="/board/BBSMSTR_000000000026?lang=ko">뉴스레터</a>
+                                                        
+                                                    </li>
+                                                
+                                            
+                                        </ul>
+                                    </li>
+                                
+                                    <li>
+                                        
+                                        <a href="#" class="nav_title1">정보공개</a>
+
+                                        <ul class="apcc_more_nav f_s3 fw_nnR">
+                                            
+                                                
+                                                    <li >
+                                                        <a href="/content/humanrights?lang=ko">인권경영 선언문</a>
+                                                        
+                                                    </li>
+                                                
+                                            
+                                                
+                                                    <li >
+                                                        <a href="javascript:void(0)" class="more">정보공개</a>
+                                                        
+                                                            <ul class="apcc_more_nav2 f_s2">
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="/content/openinfo?lang=ko">정보공개 안내</a>
+                                                                        <i></i>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="/board/work_promotion?lang=ko">업무추진비</a>
+                                                                        <i></i>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="/board/giftcard?lang=ko">상품권 구입현황</a>
+                                                                        <i></i>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="https://www.open.go.kr/com/main/mainView.do?lang=ko" target="_blank">정보공개 청구</a>
+                                                                        <i class="bi bi-box-arrow-up-right ms-2"></i>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="/content/opendata?lang=ko">공공데이터 개방</a>
+                                                                        <i></i>
+                                                                    
+                                                                </li>
+                                                            </ul>
+                                                        
+                                                    </li>
+                                                
+                                            
+                                                
+                                                    <li >
+                                                        <a href="/content/cleaninfo?lang=ko">클린신고센터</a>
+                                                        
+                                                    </li>
+                                                
+                                            
+                                                
+                                                    <li >
+                                                        <a href="/content/alio?lang=ko">경영공시</a>
+                                                        
+                                                    </li>
+                                                
+                                            
+                                                
+                                                    <li >
+                                                        <a href="/board/BBSMSTR_000000000040?lang=ko">사업실명제</a>
+                                                        
+                                                    </li>
+                                                
+                                            
+                                                
+                                                    <li >
+                                                        <a href="/board/BBSMSTR_000000000061?lang=ko">출장보고서</a>
+                                                        
+                                                    </li>
+                                                
+                                            
+                                        </ul>
+                                    </li>
+                                
+                                    <li>
+                                        
+                                        <a href="#" class="nav_title1">APCC소개</a>
+
+                                        <ul class="apcc_more_nav f_s3 fw_nnR">
+                                            
+                                                
+                                                    <li >
+                                                        <a href="/content/intro?lang=ko">소개</a>
+                                                        
+                                                    </li>
+                                                
+                                            
+                                                
+                                                    <li >
+                                                        <a href="javascript:void(0)" class="more">원장 인사말</a>
+                                                        
+                                                            <ul class="apcc_more_nav2 f_s2">
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="/content/greeting?lang=ko">인사말</a>
+                                                                        <i></i>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="/content/directorHistory?lang=ko">역대 원장</a>
+                                                                        <i></i>
+                                                                    
+                                                                </li>
+                                                            </ul>
+                                                        
+                                                    </li>
+                                                
+                                            
+                                                
+                                                    <li >
+                                                        <a href="/content/history?lang=ko">연혁</a>
+                                                        
+                                                    </li>
+                                                
+                                            
+                                                
+                                                    <li >
+                                                        <a href="/org/department?lang=ko">조직도</a>
+                                                        
+                                                    </li>
+                                                
+                                            
+                                                
+                                                    <li >
+                                                        <a href="javascript:void(0)" class="more">정보관</a>
+                                                        
+                                                            <ul class="apcc_more_nav2 f_s2">
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="/content/ci?lang=ko">CI</a>
+                                                                        <i></i>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    
+                                                                        <i class="bi bi-dot"></i>
+                                                                        <a href="/board/BBSMSTR_000000000010?lang=ko">소개자료</a>
+                                                                        <i></i>
+                                                                    
+                                                                </li>
+                                                                <li>
+                                                                    
+                                                                </li>
+                                                            </ul>
+                                                        
+                                                    </li>
+                                                
+                                            
+                                                
+                                                    <li >
+                                                        <a href="/content/charter?lang=ko">고객헌장</a>
+                                                        
+                                                    </li>
+                                                
+                                            
+                                                
+                                                    <li >
+                                                        <a href="/content/map?lang=ko">오시는길</a>
+                                                        
+                                                    </li>
+                                                
+                                            
+                                        </ul>
+                                    </li>
+                                
+
+                            </ul>
+                        </nav>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="apcc_nav_bg shadow"></div>
+    <div class="apcc_nav_bg2" onClick="apcc_md_menu_close()"></div>
+
+
+    </header>
+
+    <section class="main_content">
+        <div>
+        <div class="apcc_main_banner1">
+            <div class="container">
+                <div class="row mb_70 d-none d-md-block">
+                    <div class="col">
+                        <h3 class="ft_smt text-center f_c_w fw_nnR"><span class="fw_nnH">아시아·태평양경제협력체 기후센터</span>는 기후예측 전문 연구기관입니다.</h3>
+                    </div>
+                </div>
+
+                <div id="APP_MAINVISUAL_SLIDE" class="row">
+                    <div class="col">
+                        <div class="apcc_main_banner_slide_box mb_10">
+                            <div id="slider1" class="wow animate__animated animate__slideInLeft">
+                                <div class="position-relative">
+                                    <p class="apcc_main_banner1_title1 ft_s3">MME 계절전망 -  <span class="fw_nnH">기온</span></p>
+                                    <div class="apcc_slide_control1">
+                                        <!--
+                                        <p class="f_c_w mr_10 f_s3">
+                                            <span class="f_c_active current_page"></span> / <span class="total_page"></span>
+                                        </p>
+                                        -->
+                                        <button class="apcc_slide_btn1 prev" >
+                                            <img src="/apcc/img/acpp_main_banner2_icon1.png" alt="banner icon1">
+                                        </button>
+                                        <button class="apcc_slide_btn1 stop" >
+                                            <img src="/apcc/img/acpp_main_banner2_icon2.png" alt="banner icon2">
+                                        </button>
+                                        <button class="apcc_slide_btn1 next" >
+                                            <img src="/apcc/img/acpp_main_banner2_icon3.png" alt="banner icon3">
+                                        </button>
+                                        <div class="apcc_slide_btn1">
+                                            <a href="/prediction/global/outlook"><img src="/apcc/img/acpp_main_banner2_icon4.png" alt="banner icon4"></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="apcc_main_banner_slide1 targetSlideWrap ">
+                                    <ul>
+                                        <li class="show spinner" onClick="location.href='/prediction/global/outlook'">
+                                            <img class="t2m01 " src="/apcc/img/sub09/blankimage.gif" onerror="this.src='/apcc/img/sub09/errorimage.png'" alt="기온1">
+                                        </li>
+                                        <li class="spinner" onClick="location.href='/prediction/global/outlook'">
+                                            <img class="t2m02 " src="/apcc/img/sub09/blankimage.gif" onerror="this.src='/apcc/img/sub09/errorimage.png'" alt="기온2">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div id="slider2" class="wow animate__animated animate__slideInRight">
+                                <div class="position-relative">
+                                    <p class="apcc_main_banner1_title1 ft_s3 type2">MME 계절전망 - <span class="fw_nnH">강수</span></p>
+                                    <div class="apcc_slide_control1">
+                                        <!--
+                                        <p class="f_c_w mr_10 f_s3">
+                                            <span class="f_c_active current_page"></span> / <span class="total_page"></span>
+                                        </p>
+                                        -->
+                                        <button class="apcc_slide_btn1 prev">
+                                            <img src="/apcc/img/acpp_main_banner2_icon1.png" alt="banner icon1">
+                                        </button>
+                                        <button class="apcc_slide_btn1 stop" >
+                                            <img src="/apcc/img/acpp_main_banner2_icon2.png" alt="banner icon2">
+                                        </button>
+                                        <button class="apcc_slide_btn1 next" >
+                                            <img src="/apcc/img/acpp_main_banner2_icon3.png" alt="banner icon3">
+                                        </button>
+                                        <div class="apcc_slide_btn1">
+                                            <a href="/prediction/global/outlook"><img src="/apcc/img/acpp_main_banner2_icon4.png" alt="banner icon4"></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="apcc_main_banner_slide1 targetSlideWrap">
+                                    <ul>
+                                        <li class="show spinner" onClick="location.href='/prediction/global/outlook'">
+                                            <img class="prec01" src="/apcc/img/sub09/blankimage.gif" onerror="this.src='/apcc/img/sub09/errorimage.png'" alt="강수1">
+                                        </li>
+                                        <li class="spinner" onClick="location.href='/prediction/global/outlook'">
+                                            <img class="prec02" src="/apcc/img/sub09/blankimage.gif" onerror="this.src='/apcc/img/sub09/errorimage.png'" alt="강수2">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="APP_EASTASIA_SLIDE" class="apcc_main_banner2 wow animate__animated animate__zoomIn">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <ul class="apcc_main_banner2_list">
+                            <li id="slider3">
+                                <div class="position-relative">
+                                    <p class="apcc_main_banner2_title ft_s3 fw_nnE f_c_b">동아시아 MME 계절전망</p>
+                                    <div id="main-cont1" class="apcc_slide_control1">
+                                        <!--
+                                        <p class="mr_10 f_s3 d-none d-sm-block">
+                                            <span class="f_c_active current_page"></span> / <span class="total_page"></span>
+                                        </p>
+                                        -->
+                                        <button class="apcc_slide_btn1 type2 prev">
+                                            <img src="/apcc/img/acpp_main_banner3_icon1.png" alt="banner icon1">
+                                        </button>
+                                        <button class="apcc_slide_btn1 type2 stop">
+                                            <img src="/apcc/img/acpp_main_banner3_icon2.png" alt="banner icon2">
+                                        </button>
+                                        <button class="apcc_slide_btn1 type2 next">
+                                            <img src="/apcc/img/acpp_main_banner3_icon3.png" alt="banner icon3">
+                                        </button>
+                                        <a class="apcc_slide_btn1 type2" href="/prediction/eastasia/fcst">
+                                            <img src="/apcc/img/acpp_main_banner3_icon4.png" alt="banner icon4">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="apcc_main_banner_slide2 targetSlideWrap">
+                                    <ul id="main-data1">
+                                        <li class="show spinner" onClick="location.href='/prediction/eastasia/fcst'">
+                                            <img class="onLoadImg h-100per img01" src="/apcc/img/sub09/blankimage.gif" onerror="this.src='/apcc/img/sub09/errorimage.png'" alt="동아시아1" >
+                                        </li>
+                                        <li class="spinner" onClick="location.href='/prediction/eastasia/fcst'">
+                                            <img class="onLoadImg h-100per img02 " src="/apcc/img/sub09/blankimage.gif" onerror="this.src='/apcc/img/sub09/errorimage.png'" alt="동아시아2" >
+                                        </li>
+                                        <li class="spinner" onClick="location.href='/prediction/eastasia/fcst'">
+                                            <img class="onLoadImg h-100per img03 " src="/apcc/img/sub09/blankimage.gif" onerror="this.src='/apcc/img/sub09/errorimage.png'" alt="동아시아3" >
+                                        </li>
+                                        <li class="spinner" onClick="location.href='/prediction/eastasia/fcst'">
+                                            <img class="onLoadImg h-100per img04 " src="/apcc/img/sub09/blankimage.gif" onerror="this.src='/apcc/img/sub09/errorimage.png'" alt="동아시아4" >
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li id="slider5">
+                                <p class="apcc_main_banner2_title ft_s3 fw_nnE f_c_b">MME ENSO 경보</p>
+                                <div class="apcc_main_banner_slide2">
+                                    <ul>
+                                        <li class="show enso01-frame"><a href="/prediction/global/sst" class="spinner"><img style="width:100%" src="/apcc/img/sub09/blankimage.gif" onerror="this.src='/apcc/img/sub09/errorimage.png'" class="enso01 onLoadImg h-90per" alt="error image"></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li id="slider4">
+                                <div class="position-relative">
+                                    <p class="apcc_main_banner2_title ft_s3 fw_nnE f_c_b">기후현황</p>
+                                    <div id="main-cont2" class="apcc_slide_control1">
+                                        <!--
+                                        <p class="mr_10 f_s3 d-none d-sm-block">
+                                            <span class="f_c_active current_page"></span> / <span class="total_page"></span>
+                                        </p>
+                                        -->
+                                        <button class="apcc_slide_btn1 type2 prev">
+                                            <img src="/apcc/img/acpp_main_banner3_icon1.png" alt="banner icon1">
+                                        </button>
+                                        <button class="apcc_slide_btn1 type2 stop">
+                                            <img src="/apcc/img/acpp_main_banner3_icon2.png" alt="banner icon2">
+                                        </button>
+                                        <button class="apcc_slide_btn1 type2 next">
+                                            <img src="/apcc/img/acpp_main_banner3_icon3.png" alt="banner icon3">
+                                        </button>
+                                        <a class="apcc_slide_btn1 type2" href="/monitoring/recent">
+                                            <img src="/apcc/img/acpp_main_banner3_icon4.png" alt="banner icon4">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="apcc_main_banner_slide2 targetSlideWrap">
+                                    <ul id="main-data2">
+                                        <li data-variable="air" class="show spinner">
+                                            <img class="h-100per img02 " src="/apcc/img/sub09/blankimage.gif" onerror="this.src='/apcc/img/sub09/errorimage.png'" alt="동아시아2">
+                                        </li>
+                                        <li class="spinner" data-variable="hgt">
+                                            <img class="h-100per img03" src="/apcc/img/sub09/blankimage.gif" onerror="this.src='/apcc/img/sub09/errorimage.png'" alt="동아시아3">
+                                        </li>
+                                        <li class="spinner" data-variable="olr">
+                                            <img class="h-100per img04" src="/apcc/img/sub09/blankimage.gif" onerror="this.src='/apcc/img/sub09/errorimage.png'" alt="동아시아4">
+                                        </li>
+                                        <li class="spinner" data-variable="precip">
+                                            <img class="h-100per img05" src="/apcc/img/sub09/blankimage.gif" onerror="this.src='/apcc/img/sub09/errorimage.png'" alt="동아시아4">
+                                        </li>
+                                        <li class="spinner" data-variable="sst">
+                                            <img class="m_w-100 img06" src="/apcc/img/sub09/blankimage.gif" onerror="this.src='/apcc/img/sub09/errorimage.png'" alt="동아시아4">
+                                        </li>
+                                        <li class="spinner" data-variable="uwnd">
+                                            <img class="h-100per img07" src="/apcc/img/sub09/blankimage.gif" onerror="this.src='/apcc/img/sub09/errorimage.png'" alt="동아시아4">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="apcc_main_banner2_title ft_s3 fw_nnE f_c_b">기후정보 서비스 도구</p>
+                                <div class="apcc_main_banner_slide2">
+                                    <ul>
+                                        <li class="show">
+                                            <div>
+                                                <p class="f_s3 fw_nnR w_b_n mb_20 justify">사용자가 웹 화면에서 직접 기후모델, 예측변수, 예측지역 분석기법을 자유롭게 선택하여 자신이 원하는 기후예측정보를 생산하는 툴입니다.</p>
+                                                <p class="ft_s5 fw_nnE text-center text-success mb_20">CLIK</p>
+                                                <div class="text-center">
+                                                    <a href="https://apcc21.org/clik" target="_blank" class="apcc_more_btn"> 바로가기 <i class="bi bi-chevron-right ms-1"></i></a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="apcc_main_banner3 wow animate__animated animate__zoomIn">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h3 class="ft_s5 mb_50 fw_nnE text-center">포토뉴스</h3>
+                    </div>
+                </div>
+                <div id="APP_NOTICE_SLIDE" class="row">
+                    <div class="col" >
+                        <div class="mb_40 en-none">
+                            <ul class="apcc_main_banner3_tab f_s6 text-center">
+                                <li class="active cursor" data-num="1">포토뉴스</li>
+                                <li class="cursor" data-num="2">입찰공고</li>
+                                <li class="cursor" data-num="3">채용공고</li>
+                            </ul>
+                        </div>
+
+                        <div class="apcc_main_banner3_slide">
+                            <div>
+                                <button class="apcc_main_banner3_btn prev">
+                                    <img src="/apcc/img/apcc_prev_icon1.png" alt="prev">
+                                </button>
+                                <button class="apcc_main_banner3_btn next">
+                                    <img src="/apcc/img/apcc_next_icon1.png" alt="next">
+                                </button>
+                            </div>
+
+                            <ul class="slide-list" id="slide1">
+                                <li class="num1">
+                                    <a href="/board/BBSMSTR_000000000999/view/43035fa8-1c4d-11f1-a908-05ad464c4a35">
+                                        <p class="apcc_main_banner3_slide_cate fw_nnR mb_30">포토뉴스</p>
+                                        <p class="apcc_main_banner3_slide_title f_s6 mb_30 f_c_b justify">APCC, 농업 현장의 활용성 극대화를 위한 '농업부문 영향 지수' 개선 및 고도화</p>
+                                        <p class="apcc_main_banner3_slide_content f_s5 mb_30 f_c_g2 fw_nnR justify">아시아·태평양경제협력체 기후센터(APCC) 신용희 선임연구원팀은 국립한국농수산대학교, 국립축산과학원, 국립원예특작과학원 등 각 분야 전문가 자문을 통해 기존 8종의 농업 부문 영향 지수를 현장 활용성이 높은 5종의 ...</p>
+                                        <p class="apcc_main_banner3_slide_time f_c_g3">
+                                            <img alt="time icon" src="/apcc/img/apcc_time_icon.png" class="mr_10"> 2026.03.10
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="num2">
+                                    <a href="/board/BBSMSTR_000000000999/view/446fdca8-13a1-11f1-a908-3d8c29b7cede">
+                                        <p class="apcc_main_banner3_slide_cate fw_nnR mb_30">포토뉴스</p>
+                                        <p class="apcc_main_banner3_slide_title f_s6 mb_30 f_c_b justify">APCC 전종안 기후변화분석과장, 코이카(KOICA) 매거진에 바누아투 AI 농업 정보 시스템 성과 기고</p>
+                                        <p class="apcc_main_banner3_slide_content f_s5 mb_30 f_c_g2 fw_nnR justify">아시아태평양경제협력체 기후센터(APCC) 전종안 기후변화분석과장이 코이카(KOICA) 매거진 최근호(2026년 VOL. 8호)에 ‘재배 시기 계획부터 작물 무게 측정까지 AI와 함께’ AI 농업 정보 시스템으로 달라...</p>
+                                        <p class="apcc_main_banner3_slide_time f_c_g3">
+                                            <img alt="time icon" src="/apcc/img/apcc_time_icon.png" class="mr_10"> 2026.02.27
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="num3">
+                                    <a href="/board/BBSMSTR_000000000999/view/c0595ee6-fce8-11f0-b4bd-b9634cabcf5b">
+                                        <p class="apcc_main_banner3_slide_cate fw_nnR mb_30">포토뉴스</p>
+                                        <p class="apcc_main_banner3_slide_title f_s6 mb_30 f_c_b justify">APCC와 KIST 연구진, 전 세계 기상·기후에 큰 영향을 주는 매든-줄리안 진동(MJO)의 예측 성능 향상시키는데 성공</p>
+                                        <p class="apcc_main_banner3_slide_content f_s5 mb_30 f_c_g2 fw_nnR justify">아시아·태평양경제협력체 기후센터(APCC)와 한국과학기술연구원(KIST)의 연구진은 최근 인공지능(AI) 딥러닝 기술을 활용해 전 세계 기상·기후에 막대한 영향을 주는 매든-줄리안 진동(MJO)의 예측 성능을 높이는...</p>
+                                        <p class="apcc_main_banner3_slide_time f_c_g3">
+                                            <img alt="time icon" src="/apcc/img/apcc_time_icon.png" class="mr_10"> 2026.01.29
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="num4">
+                                    <a href="/board/BBSMSTR_000000000999/view/bf4b3265-ef6f-11f0-b660-a79104143a4c">
+                                        <p class="apcc_main_banner3_slide_cate fw_nnR mb_30">포토뉴스</p>
+                                        <p class="apcc_main_banner3_slide_title f_s6 mb_30 f_c_b justify">APCC, '백윤학 교수 초빙 인문학 강의' 개최</p>
+                                        <p class="apcc_main_banner3_slide_content f_s5 mb_30 f_c_g2 fw_nnR justify">아시아·태평양경제협력체 기후센터(APCC)는 지난 2026년 1월 12일(월) APCC 건물 내 국제회의장에서 영남대학교 백윤학 교수를 초빙하여 &#39;음악과 과학: 공학도의 눈으로 본 음악&#39;을 주제로 전체...</p>
+                                        <p class="apcc_main_banner3_slide_time f_c_g3">
+                                            <img alt="time icon" src="/apcc/img/apcc_time_icon.png" class="mr_10"> 2026.01.12
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="num5">
+                                    <a href="/board/BBSMSTR_000000000999/view/826676cf-ea03-11f0-9761-e1c37fbec2cd">
+                                        <p class="apcc_main_banner3_slide_cate fw_nnR mb_30">포토뉴스</p>
+                                        <p class="apcc_main_banner3_slide_title f_s6 mb_30 f_c_b justify">아시아·태평양경제협력체 기후센터, 2026년도 신년 인사회 개최</p>
+                                        <p class="apcc_main_banner3_slide_content f_s5 mb_30 f_c_g2 fw_nnR justify">아시아·태평양경제협력체 기후센터(APCC)는 지난 2026년 1월 5일(월)에  APCC 내 국제회의장에서 2026년도 신년 인사회를 개최했다.이날 신년 인사회는 2025년 지난 한 해 동안 직원들의 노고를 격려하고...</p>
+                                        <p class="apcc_main_banner3_slide_time f_c_g3">
+                                            <img alt="time icon" src="/apcc/img/apcc_time_icon.png" class="mr_10"> 2026.01.05
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="num6">
+                                    <a href="/board/BBSMSTR_000000000999/view/825be7b6-dc9e-11f0-919a-0bdfe9060d8a">
+                                        <p class="apcc_main_banner3_slide_cate fw_nnR mb_30">포토뉴스</p>
+                                        <p class="apcc_main_banner3_slide_title f_s6 mb_30 f_c_b justify">APCC, 2025년도 아태사업 고객만족도 조사 결과 리뷰 및 CS 워크숍 개최</p>
+                                        <p class="apcc_main_banner3_slide_content f_s5 mb_30 f_c_g2 fw_nnR justify">아시아·태평양경제협력체 기후센터(APCC)는 지난 2025년 12월 18일(목) APCC 건물 내 국제회의장에서 2025년도 아태사업 고객만족도(CS) 조사 결과 리뷰 및 CS 워크숍을 개최하였다.이번 워크숍은 AP...</p>
+                                        <p class="apcc_main_banner3_slide_time f_c_g3">
+                                            <img alt="time icon" src="/apcc/img/apcc_time_icon.png" class="mr_10"> 2025.12.19
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="num7">
+                                    <a href="/board/BBSMSTR_000000000999/view/5698a4cd-da48-11f0-8c29-850a3dd477ac">
+                                        <p class="apcc_main_banner3_slide_cate fw_nnR mb_30">포토뉴스</p>
+                                        <p class="apcc_main_banner3_slide_title f_s6 mb_30 f_c_b justify">APCC, 2025년도 우수성과 및 논문 발표회 개최 </p>
+                                        <p class="apcc_main_banner3_slide_content f_s5 mb_30 f_c_g2 fw_nnR justify">아시아·태평양경제협력체 기후센터(APCC)는 9편의 2025년도 기관의 우수한 성과 및 논문을 센터내 연구자·직원들과 공유하고자 &#34;2025년도 우수성과·논문 발표회&#34;를 2025년도 12월 16일(화) ...</p>
+                                        <p class="apcc_main_banner3_slide_time f_c_g3">
+                                            <img alt="time icon" src="/apcc/img/apcc_time_icon.png" class="mr_10"> 2025.12.16
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="num8">
+                                    <a href="/board/BBSMSTR_000000000999/view/c095890b-d584-11f0-8c29-0773620f74a9">
+                                        <p class="apcc_main_banner3_slide_cate fw_nnR mb_30">포토뉴스</p>
+                                        <p class="apcc_main_banner3_slide_title f_s6 mb_30 f_c_b justify">APCC, 2025년도 APCC 회원국 실무단 회의 및 제6차 MME 모델제공기관 회의 중요 내용 공유 위한 세미나 개최</p>
+                                        <p class="apcc_main_banner3_slide_content f_s5 mb_30 f_c_g2 fw_nnR justify">아시아·태평양경제협력체 기후센터(APCC)는 2025년 12월 10일에 APCC 건물 내 국제회의장에서 “2025년도 APCC 회원국 실무단 회의 및 제6차 MME 모델제공기관 회의 중요 내용 공유”를 주제로 세미나...</p>
+                                        <p class="apcc_main_banner3_slide_time f_c_g3">
+                                            <img alt="time icon" src="/apcc/img/apcc_time_icon.png" class="mr_10"> 2025.12.10
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="num9">
+                                    <a href="/board/BBSMSTR_000000000999/view/fbb29298-cb58-11f0-8c29-7d5fd83ea15b">
+                                        <p class="apcc_main_banner3_slide_cate fw_nnR mb_30">포토뉴스</p>
+                                        <p class="apcc_main_banner3_slide_title f_s6 mb_30 f_c_b justify">APCC-UNICEF 동아시아태평양지역사무소(EAPRO) 지식공유 행사 개최</p>
+                                        <p class="apcc_main_banner3_slide_content f_s5 mb_30 f_c_g2 fw_nnR justify">아시아·태평양경제협력체 기후센터(APCC)는 유엔아동기금(UNICEF)과 ‘APCC-UNICEF 동아시아태평양지역사무소(EAPRO) 지식공유 행사(APCC-UNICEF EAPRO Learning Event)’를 20...</p>
+                                        <p class="apcc_main_banner3_slide_time f_c_g3">
+                                            <img alt="time icon" src="/apcc/img/apcc_time_icon.png" class="mr_10"> 2025.11.27
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="num10">
+                                    <a href="/board/BBSMSTR_000000000999/view/97ef0d72-ca91-11f0-858e-05c4d5076021">
+                                        <p class="apcc_main_banner3_slide_cate fw_nnR mb_30">포토뉴스</p>
+                                        <p class="apcc_main_banner3_slide_title f_s6 mb_30 f_c_b justify">APCC, 2025년도 연구성과 최종 발표회 개최 </p>
+                                        <p class="apcc_main_banner3_slide_content f_s5 mb_30 f_c_g2 fw_nnR justify">아시아·태평양경제협력체 기후센터(APCC)는 2025년 11월 26일(수)  APCC 청사 내 국제회의장에서 ‘2025년도 연구성과 최종 발표회’를 개최하였다. 이번 최종 발표회는 APCC가 2025년 동안 수행한 ...</p>
+                                        <p class="apcc_main_banner3_slide_time f_c_g3">
+                                            <img alt="time icon" src="/apcc/img/apcc_time_icon.png" class="mr_10"> 2025.11.26
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <ul class="slide-list d-none" id="slide2">
+                                <li class="num1">
+                                    <a href="/board/BBSMSTR_000000000018/view/d0743803-1dcb-11f1-81c0-1dc6cacb12ac">
+                                        <p class="apcc_main_banner3_slide_cate fw_nnR mb_30">입찰공고</p>
+                                        <p class="apcc_main_banner3_slide_title f_s6 mb_30 f_c_b justify">[입찰공고] 태평양 도서국 맞춤형 기후예측시스템(PICASO)의 5개 국가 특화 개선</p>
+                                        <p class="apcc_main_banner3_slide_content f_s5 mb_30 f_c_g2 fw_nnR justify">조달물자(용역) 입찰 공고(긴급)○ 입찰공고번호 : R26BK01385960-000○ 공     고     명 : 태평양 도서국 맞춤형 기후예측시스템(PICASO)의 5개 국가 특화 개선○ 입찰마감일시 : 2026....</p>
+                                        <p class="apcc_main_banner3_slide_time f_c_g3">
+                                            <img alt="time icon" src="/apcc/img/apcc_time_icon.png" class="mr_10"> 2026.03.12
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="num2">
+                                    <a href="/board/BBSMSTR_000000000018/view/a0010b3e-d17f-11f0-8c29-2b64193dbb4a">
+                                        <p class="apcc_main_banner3_slide_cate fw_nnR mb_30">입찰공고</p>
+                                        <p class="apcc_main_banner3_slide_title f_s6 mb_30 f_c_b justify">[입찰공고] (재공고)2026년 아시아·태평양경제협력체 기후센터 청사관리용역</p>
+                                        <p class="apcc_main_banner3_slide_content f_s5 mb_30 f_c_g2 fw_nnR justify">조달물자(용역) 입찰 공고 ○ 입찰공고번호: R25BK01203537-000○ 공 고 명: [재공고] 2026년 아시아·태평양경제협력체 기후센터 청사관리용역○ 입찰마감일시: 2025.12.11 10:00○ 공 고 내...</p>
+                                        <p class="apcc_main_banner3_slide_time f_c_g3">
+                                            <img alt="time icon" src="/apcc/img/apcc_time_icon.png" class="mr_10"> 2025.12.05
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="num3">
+                                    <a href="/board/BBSMSTR_000000000018/view/4f7485d7-cb64-11f0-b74f-e3d9b99c5f2b">
+                                        <p class="apcc_main_banner3_slide_cate fw_nnR mb_30">입찰공고</p>
+                                        <p class="apcc_main_banner3_slide_title f_s6 mb_30 f_c_b justify">[입찰공고] (재공고)2026년 기후정보서비스 통합유지관리</p>
+                                        <p class="apcc_main_banner3_slide_content f_s5 mb_30 f_c_g2 fw_nnR justify">조달물자(용역) 입찰 공고 ○ 입찰공고번호: R25BK01184835-000○ 공 고 명: [재공고]2026년 기후정보서비스 통합유지관리○ 입찰마감일시: 2025.12.3 10:00○ 공 고 내 용: 첨부파일 참조 ...</p>
+                                        <p class="apcc_main_banner3_slide_time f_c_g3">
+                                            <img alt="time icon" src="/apcc/img/apcc_time_icon.png" class="mr_10"> 2025.11.27
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="num4">
+                                    <a href="/board/BBSMSTR_000000000018/view/34663ca3-cb21-11f0-8c29-19427f9a8c7c">
+                                        <p class="apcc_main_banner3_slide_cate fw_nnR mb_30">입찰공고</p>
+                                        <p class="apcc_main_banner3_slide_title f_s6 mb_30 f_c_b justify">[입찰공고] 2026년 아시아·태평양경제협력체 기후센터 청사관리용역</p>
+                                        <p class="apcc_main_banner3_slide_content f_s5 mb_30 f_c_g2 fw_nnR justify"> 조달물자(용역) 입찰 공고 ○ 입찰공고번호: R25BK01184242-000○ 공 고 명: 2026년 아시아·태평양경제협력체 기후센터 청사관리용역○ 입찰마감일시: 2025.12.04 10:00○ 공 고 내 용: 첨...</p>
+                                        <p class="apcc_main_banner3_slide_time f_c_g3">
+                                            <img alt="time icon" src="/apcc/img/apcc_time_icon.png" class="mr_10"> 2025.11.27
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="num5">
+                                    <a href="/board/BBSMSTR_000000000018/view/3e9f740d-bf63-11f0-b74f-d52679fa6a62">
+                                        <p class="apcc_main_banner3_slide_cate fw_nnR mb_30">입찰공고</p>
+                                        <p class="apcc_main_banner3_slide_title f_s6 mb_30 f_c_b justify">[입찰공고] 2026년 기후정보서비스 통합유지관리</p>
+                                        <p class="apcc_main_banner3_slide_content f_s5 mb_30 f_c_g2 fw_nnR justify">조달물자(용역) 입찰 공고 ○ 입찰공고번호: R25BK01143065-000○ 공 고 명: 2026년 기후정보서비스 통합유지관리○ 입찰마감일시: 2025.11.27 10:00○ 공 고 내 용: 첨부파일 참조 및 나라...</p>
+                                        <p class="apcc_main_banner3_slide_time f_c_g3">
+                                            <img alt="time icon" src="/apcc/img/apcc_time_icon.png" class="mr_10"> 2025.11.12
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="num6">
+                                    <a href="/board/BBSMSTR_000000000018/view/21d021c8-afcd-11f0-9e5f-e10afb71045a">
+                                        <p class="apcc_main_banner3_slide_cate fw_nnR mb_30">입찰공고</p>
+                                        <p class="apcc_main_banner3_slide_title f_s6 mb_30 f_c_b justify">[입찰공고] (재공고)아태기후센터 경영 현황 분석을 통한 기관 운영체계 개선 방안 도출 용역</p>
+                                        <p class="apcc_main_banner3_slide_content f_s5 mb_30 f_c_g2 fw_nnR justify">조달물자(용역) 입찰 공고(긴급) ○ 입찰공고번호: R25BK01108433-000○ 공 고 명: [재공고]아태기후센터 경영 현황 분석을 통한 기관 운영체계 개선 방안 도출 용역○ 입찰마감일시: 2025.11.07 ...</p>
+                                        <p class="apcc_main_banner3_slide_time f_c_g3">
+                                            <img alt="time icon" src="/apcc/img/apcc_time_icon.png" class="mr_10"> 2025.10.23
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="num7">
+                                    <a href="/board/BBSMSTR_000000000018/view/8c61d7b1-a814-11f0-b823-e5cf12c39274">
+                                        <p class="apcc_main_banner3_slide_cate fw_nnR mb_30">입찰공고</p>
+                                        <p class="apcc_main_banner3_slide_title f_s6 mb_30 f_c_b justify">[입찰공고] 마셜제도 및 투발루 가뭄 조기 경보 생산 기술 개발</p>
+                                        <p class="apcc_main_banner3_slide_content f_s5 mb_30 f_c_g2 fw_nnR justify">조달물자(용역) 입찰 공고(긴급) ○ 입찰공고번호: R25BK01085258 - 000○ 공 고 명: 마셜제도 및 투발루 가뭄 조기 경보 생산 기술 개발○ 입찰마감일시: 2025.10.24 10:00○ 공 고 내 용...</p>
+                                        <p class="apcc_main_banner3_slide_time f_c_g3">
+                                            <img alt="time icon" src="/apcc/img/apcc_time_icon.png" class="mr_10"> 2025.10.13
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="num8">
+                                    <a href="/board/BBSMSTR_000000000018/view/46977675-9d93-11f0-8e0c-ff0d5db458dc">
+                                        <p class="apcc_main_banner3_slide_cate fw_nnR mb_30">입찰공고</p>
+                                        <p class="apcc_main_banner3_slide_title f_s6 mb_30 f_c_b justify">[입찰공고] (신규공고)아태기후센터 경영 현황 분석을 통한 기관 운영체계 개선 방안 도출 용역</p>
+                                        <p class="apcc_main_banner3_slide_content f_s5 mb_30 f_c_g2 fw_nnR justify">조달물자(용역) 입찰 공고(긴급) ○ 입찰공고번호: R25BK01078381-000○ 공 고 명: 아태기후센터 경영 현황 분석을 통한 기관 운영체계 개선 방안 도출 용역○ 입찰마감일시: 2025.10.22 10:00...</p>
+                                        <p class="apcc_main_banner3_slide_time f_c_g3">
+                                            <img alt="time icon" src="/apcc/img/apcc_time_icon.png" class="mr_10"> 2025.09.30
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="num9">
+                                    <a href="/board/BBSMSTR_000000000018/view/378a8c2e-9d01-11f0-adc4-a9c1dc1a7a61">
+                                        <p class="apcc_main_banner3_slide_cate fw_nnR mb_30">입찰공고</p>
+                                        <p class="apcc_main_banner3_slide_title f_s6 mb_30 f_c_b justify">[입찰공고] 팔라우 Ngerimel 댐의 기후예측 기반 수위예측 정보생산 기술개발</p>
+                                        <p class="apcc_main_banner3_slide_content f_s5 mb_30 f_c_g2 fw_nnR justify">조달물자(용역) 입찰 공고(긴급) ○ 입찰공고번호: R25BK01076974-000○ 공 고 명: 팔라우 Ngerimel 댐의 기후예측 기반 수위예측 정보생산 기술개발○ 입찰마감일시: 2025.10.14 10:00○...</p>
+                                        <p class="apcc_main_banner3_slide_time f_c_g3">
+                                            <img alt="time icon" src="/apcc/img/apcc_time_icon.png" class="mr_10"> 2025.09.29
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="num10">
+                                    <a href="/board/BBSMSTR_000000000018/view/1ae5c8ac-9d01-11f0-adc4-81bbe2c99fee">
+                                        <p class="apcc_main_banner3_slide_cate fw_nnR mb_30">입찰공고</p>
+                                        <p class="apcc_main_banner3_slide_title f_s6 mb_30 f_c_b justify">[입찰공고] 니우에(Niue) 산불 발생 위험 예측 정보 생산 기술 개발</p>
+                                        <p class="apcc_main_banner3_slide_content f_s5 mb_30 f_c_g2 fw_nnR justify">조달물자(용역) 입찰 공고(긴급) ○ 입찰공고번호: R25BK01076256-000○ 공 고 명: 니우에(Niue) 산불 발생 위험 예측 정보 생산 기술 개발○ 입찰마감일시: 2025.10.14 10:00○ 공 고 ...</p>
+                                        <p class="apcc_main_banner3_slide_time f_c_g3">
+                                            <img alt="time icon" src="/apcc/img/apcc_time_icon.png" class="mr_10"> 2025.09.29
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <ul class="slide-list d-none" id="slide3">
+                                <li class="num1">
+                                    <a href="/board/BBSMSTR_000000000017/view/45e668ee-0d62-11f1-bd97-6589a07f58c0">
+                                        <p class="apcc_main_banner3_slide_cate fw_nnR mb_30">채용공고</p>
+                                        <p class="apcc_main_banner3_slide_title f_s6 mb_30 f_c_b justify">아시아·태평양경제협력체 기후센터 연구원 및 행정원 채용 공고(2026-01)</p>
+                                        <p class="apcc_main_banner3_slide_content f_s5 mb_30 f_c_g2 fw_nnR justify"> ...</p>
+                                        <p class="apcc_main_banner3_slide_time f_c_g3">
+                                            <img alt="time icon" src="/apcc/img/apcc_time_icon.png" class="mr_10"> 2026.02.19
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="num2">
+                                    <a href="/board/BBSMSTR_000000000017/view/aaff1d96-f830-11f0-a417-29a3de8e9b54">
+                                        <p class="apcc_main_banner3_slide_cate fw_nnR mb_30">채용공고</p>
+                                        <p class="apcc_main_banner3_slide_title f_s6 mb_30 f_c_b justify">아태기후센터 행정원 채용 최종 합격자 발표(2025-08)</p>
+                                        <p class="apcc_main_banner3_slide_content f_s5 mb_30 f_c_g2 fw_nnR justify">아시아·태평양경제협력체 기후센터 직원 채용 최종 합격자 발표(2025-8호) 아태기후센터 직원 채용 최종 합격자를 다음과 같이 알려드립니다. &#xff0a; 회계·예산 분야   - 최종 합격자수험번호성명연락처 끝 2...</p>
+                                        <p class="apcc_main_banner3_slide_time f_c_g3">
+                                            <img alt="time icon" src="/apcc/img/apcc_time_icon.png" class="mr_10"> 2026.01.23
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="num3">
+                                    <a href="/board/BBSMSTR_000000000017/view/e06a43a7-f293-11f0-ad94-1161cd094f9e">
+                                        <p class="apcc_main_banner3_slide_cate fw_nnR mb_30">채용공고</p>
+                                        <p class="apcc_main_banner3_slide_title f_s6 mb_30 f_c_b justify">아태기후센터 행정원 채용 최종 합격자 발표(2025-04-02)</p>
+                                        <p class="apcc_main_banner3_slide_content f_s5 mb_30 f_c_g2 fw_nnR justify">아시아·태평양경제협력체 기후센터 직원 채용 최종 합격자 발표(2025-04-02호) 아태기후센터 직원 채용 최종 합격자를 다음과 같이 알려드립니다. &#xff0a; 태평양 지역 국제협력사업 관리 분야  - 최종 합격...</p>
+                                        <p class="apcc_main_banner3_slide_time f_c_g3">
+                                            <img alt="time icon" src="/apcc/img/apcc_time_icon.png" class="mr_10"> 2026.01.16
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="num4">
+                                    <a href="/board/BBSMSTR_000000000017/view/37797a4d-f1e8-11f0-91e2-c31d1ac150a3">
+                                        <p class="apcc_main_banner3_slide_cate fw_nnR mb_30">채용공고</p>
+                                        <p class="apcc_main_banner3_slide_title f_s6 mb_30 f_c_b justify">아태기후센터 육아휴직 대체(행정원) 채용 서류전형 합격자 발표(2025-08)</p>
+                                        <p class="apcc_main_banner3_slide_content f_s5 mb_30 f_c_g2 fw_nnR justify">아태기후센터 직원 채용 서류전형 합격자 발표(2025-08) 아태기후센터 육아휴직 대체(행정원) 채용 서류전형 합격자를 다음과 같이 알려드립니다. [회계·예산 분야]수험번호성명연락처 끝 2자리 번호apcc-25080...</p>
+                                        <p class="apcc_main_banner3_slide_time f_c_g3">
+                                            <img alt="time icon" src="/apcc/img/apcc_time_icon.png" class="mr_10"> 2026.01.15
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="num5">
+                                    <a href="/board/BBSMSTR_000000000017/view/760569a5-f127-11f0-ab49-0d13b71fb1e7">
+                                        <p class="apcc_main_banner3_slide_cate fw_nnR mb_30">채용공고</p>
+                                        <p class="apcc_main_banner3_slide_title f_s6 mb_30 f_c_b justify">아태기후센터 연구원 채용 최종 합격자 발표(2025-06)</p>
+                                        <p class="apcc_main_banner3_slide_content f_s5 mb_30 f_c_g2 fw_nnR justify">아시아·태평양경제협력체 기후센터 직원 채용 최종 합격자 발표(2025-6호) 아태기후센터 직원 채용 최종 합격자를 다음과 같이 알려드립니다. &#xff0a; KEITI-부탄 사업 지원 분야  - 최종 합격자수험번호성...</p>
+                                        <p class="apcc_main_banner3_slide_time f_c_g3">
+                                            <img alt="time icon" src="/apcc/img/apcc_time_icon.png" class="mr_10"> 2026.01.14
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="num6">
+                                    <a href="/board/BBSMSTR_000000000017/view/92d61a4d-ed1b-11f0-918c-6f2cdeb95bfe">
+                                        <p class="apcc_main_banner3_slide_cate fw_nnR mb_30">채용공고</p>
+                                        <p class="apcc_main_banner3_slide_title f_s6 mb_30 f_c_b justify">아태기후센터 행정원 채용 최종 합격자 발표(2025-07)</p>
+                                        <p class="apcc_main_banner3_slide_content f_s5 mb_30 f_c_g2 fw_nnR justify">아시아·태평양경제협력체 기후센터 직원 채용 최종 합격자 발표(2025-7호) 아태기후센터 직원 채용 최종 합격자를 다음과 같이 알려드립니다. &#xff0a; 총무 및 일반사무 분야   - 최종 합격자수험번호성명연락처...</p>
+                                        <p class="apcc_main_banner3_slide_time f_c_g3">
+                                            <img alt="time icon" src="/apcc/img/apcc_time_icon.png" class="mr_10"> 2026.01.09
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="num7">
+                                    <a href="/board/BBSMSTR_000000000017/view/42d5e221-e7b7-11f0-826e-f9adebb79e89">
+                                        <p class="apcc_main_banner3_slide_cate fw_nnR mb_30">채용공고</p>
+                                        <p class="apcc_main_banner3_slide_title f_s6 mb_30 f_c_b justify">아태기후센터 행정원 채용 서류전형 합격자 발표(2025-04-03)</p>
+                                        <p class="apcc_main_banner3_slide_content f_s5 mb_30 f_c_g2 fw_nnR justify">아태기후센터 행정원 채용 서류전형 합격자 발표(2025-04-03) 아태기후센터 행정원 채용 서류전형 결과를 아래와 같이 안내드립니다. 사무행정 분야(장애인 및 고졸 제한경쟁 / 행정원) : 합격자 없음※ 본 전형 ...</p>
+                                        <p class="apcc_main_banner3_slide_time f_c_g3">
+                                            <img alt="time icon" src="/apcc/img/apcc_time_icon.png" class="mr_10"> 2026.01.02
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="num8">
+                                    <a href="/board/BBSMSTR_000000000017/view/070b71d3-e7b6-11f0-a500-a5e2a4c14dcc">
+                                        <p class="apcc_main_banner3_slide_cate fw_nnR mb_30">채용공고</p>
+                                        <p class="apcc_main_banner3_slide_title f_s6 mb_30 f_c_b justify">아태기후센터 연구원 및 행정원 채용 서류전형 합격자 발표(2025-04-02)</p>
+                                        <p class="apcc_main_banner3_slide_content f_s5 mb_30 f_c_g2 fw_nnR justify">아태기후센터 연구원 및 행정원 채용 서류전형 합격자 발표(2025-04-02) 아태기후센터 연구원 및 행정원 채용 서류전형 합격자를 다음과 같이 알려드립니다. [태평양 지역 국제협력사업 관리 분야/행정원]수험번호성명...</p>
+                                        <p class="apcc_main_banner3_slide_time f_c_g3">
+                                            <img alt="time icon" src="/apcc/img/apcc_time_icon.png" class="mr_10"> 2026.01.02
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="num9">
+                                    <a href="/board/BBSMSTR_000000000017/view/fe7f6c6e-e477-11f0-ac46-3bd1f686c207">
+                                        <p class="apcc_main_banner3_slide_cate fw_nnR mb_30">채용공고</p>
+                                        <p class="apcc_main_banner3_slide_title f_s6 mb_30 f_c_b justify">아태기후센터 연구원 채용 서류전형 합격자 발표(2025-06)</p>
+                                        <p class="apcc_main_banner3_slide_content f_s5 mb_30 f_c_g2 fw_nnR justify">아태기후센터 연구원 채용 서류전형 합격자 발표(2025-06) 아태기후센터 연구원(기간제) 채용 서류전형 합격자를 다음과 같이 알려드립니다. [KEITI-부탄 사업 지원 분야]수험번호성명연락처 끝 2자리 번호apcc...</p>
+                                        <p class="apcc_main_banner3_slide_time f_c_g3">
+                                            <img alt="time icon" src="/apcc/img/apcc_time_icon.png" class="mr_10"> 2025.12.29
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="num10">
+                                    <a href="/board/BBSMSTR_000000000017/view/22d3e7c7-e24c-11f0-b6e7-5d6adff83a8a">
+                                        <p class="apcc_main_banner3_slide_cate fw_nnR mb_30">채용공고</p>
+                                        <p class="apcc_main_banner3_slide_title f_s6 mb_30 f_c_b justify">아시아·태평양경제협력체 기후센터 육아휴직 대체(행정원) 채용 공고(2025-08)</p>
+                                        <p class="apcc_main_banner3_slide_content f_s5 mb_30 f_c_g2 fw_nnR justify"> ...</p>
+                                        <p class="apcc_main_banner3_slide_time f_c_g3">
+                                            <img alt="time icon" src="/apcc/img/apcc_time_icon.png" class="mr_10"> 2025.12.26
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="apcc_main_banner4 wow animate__animated animate__zoomIn">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="apcc_main_banner4_box1">
+                            <div class="apcc_main_banner4_box2">
+                                <div class="text_box">
+                                    <p class="f_s6 mb_10 f_c_b text-nowrap">APCC 기후모델 참여기관</p>
+                                    <p class="f_s3 mb_20 f_c_g2 w_b_n fw_nnR justify lh-md">아시아·태평양경제협력체 기후센터는 전 세계 11개국 16개 기관의 기후예측 모델 자료를 수집하고, 계통적 오차를 모델 간 앙상블 기법을 통해 보정하여 고품질 기후정보를 아시아·태평양경제협력체 기후센터 홈페이지를 통해 실시간 제공하고 있습니다</p>
+                                    <a href="/content/MODEL_Agency" class="apcc_more_btn">바로가기 <i class="bi bi-chevron-right ms-1"></i></a>
+                                </div>
+
+                                <div class="img_box">
+                                    
+                                        <img src="/apcc/img/sub05/mme_ko2_resize.jpg" usemap="#image-map" class="m_w-100" alt="mme map">
+                                    
+                                    
+
+                                    
+                                        <map name="image-map">
+                                            <area coords="203,250,339,387" target="_blank" shape="rect" href="https://meteofrance.com/" alt="프랑스기상청">
+                                            <area coords="944,263,1085,386" target="_blank" shape="rect" href="https://www.weather.gov/" alt="미국기상청">
+                                            <area coords="487,1013,802,1150" target="_blank" shape="rect" href="http://www.bom.gov.au" alt="호주기상청">
+                                            <area coords="305,119,429,235" target="_blank" shape="rect" href="http://www.metoffice.gov.uk/" alt="영국기상청">
+                                            <area coords="1011,398,1157,536" target="_blank" shape="rect" href="http://www.nasa.gov/" alt="미국 항공우주국">
+                                            <area coords="815,108,1038,236" target="_blank" shape="rect" href="http://weather.gc.ca" alt="캐나다 기상청">
+                                            <area coords="330,460,469,610" target="_blank" shape="rect" href="http://www.cma.gov.cn" alt="베이징 기후센터">
+                                            <area coords="548,184,729,328" target="_blank" shape="rect" href="http://voeikovmgo.ru/?lang=ru" alt="러시아중앙지구물리연구소">
+                                            <area coords="326,661,466,791" target="_blank" shape="rect" href="https://www.cwa.gov.tw/eng/" alt="대만기상청">
+                                            <area coords="535,350,748,438" target="_blank" shape="rect" href="http://wmc.meteoinfo.ru" alt="러시아기상청">
+                                            <area coords="455,798,619,920" target="_blank" shape="rect" href="https://www.naas.go.kr/naas_index.do" alt="국립농업과학원">
+                                            <area coords="86,400,277,534" target="_blank" shape="rect" href="http://www.cmcc.it" alt="유럽지중해기후변화센터">
+                                            <area coords="807,642,945,788" target="_blank" shape="rect" href="http://www.jma.go.jp/jma/indexe.html" alt="일본기상청">
+                                            <area coords="800,488,939,612" target="_blank" shape="rect" href="http://www.kma.go.kr" alt="한국기상청">
+                                            <area coords="644,794,791,924" target="_blank" shape="rect" href="https://www.pknu.ac.kr/main" alt="부경대학교">
+                                        </map>
+
+
+                                    
+
+                                    
+                                    <!-- 반응형 이미지맵을 구현해 주는 자바스크립트 - 아래 코드 넣으면 자동으로 반응형 됨 -->
+                                    <script>
+                                        function fixImageMaps(force) {
+                                            var imgs = document.querySelectorAll("img[usemap]");
+                                            [].forEach.call(imgs, function(img) {
+                                                if (!img.naturalHeight) { return; }
+                                                var h = img.height / img.naturalHeight;
+                                                var w = img.width / img.naturalWidth;
+                                                var map = document.getElementsByName(img.useMap.slice(1))[0];
+                                                if (!map) { return; }
+                                                for (var i = 0; i < map.children.length; i++) {
+                                                    var area = map.children[i];
+                                                    if (!area.coords) { continue; }
+                                                    var coords = area.coords;
+                                                    if (!area.originalCoords) {
+                                                        area.originalCoords = coords;
+                                                    } else {
+                                                        coords = area.originalCoords;
+                                                    }
+                                                    var split = coords.split(",")
+                                                    var fixed = "";
+                                                    split.forEach(function(coord, n) {
+                                                        if (n != 0) { fixed += ","; }
+                                                        fixed += n % 2 == 0 ? Number(coord) * w : Number(coord) * h;
+                                                    })
+                                                    area.coords = fixed;
+                                                }
+                                            });
+                                        }
+                                        window.onresize = fixImageMaps;
+                                        window.onload = fixImageMaps;
+                                    </script>
+                                    <!-- END 반응형 이미지맵을 구현해 주는 자바스크립트 -->
+                                </div>
+                            </div>
+
+
+                            
+                                <div>
+                                    <ul class="apcc_main_banner4_list1 f_c_w text-center mb_30">
+                                        <li class="type1 px-1">
+                                            <a class="link-light" href="/board/BBSMSTR_000000000012">
+                                                <div class="mt-2 mb_5 img_box">
+                                                    <img src="/apcc/img/bottom_link1.png" alt="연차보고서 icon">
+                                                </div>
+                                                <div class="text_box">
+                                                    <p class="ft_s2 fw_nnE mb_20">연차보고서</p>
+                                                    <div><img src="/apcc/img/acpp_main_banner4_bg4.png" alt="화살표 아이콘"></div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="type3 px-1">
+                                            <a class="link-light" href="/board/BBSMSTR_000000000002">
+                                                <div class="mt-2 mb_5 img_box">
+                                                    <img src="/apcc/img/bottom_link2.png" alt="연구보고서 icon">
+                                                </div>
+                                                <div class="text_box">
+                                                    <p class="ft_s2 fw_nnE mb_20">연구보고서</p>
+                                                    <div><img src="/apcc/img/acpp_main_banner4_bg4.png" alt="화살표 아이콘"></div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                    <ul class="apcc_main_banner4_list1 text-center">
+                                        <li class="type2 px-1">
+                                            <a class="link-light" href="/board/BBSMSTR_000000000003">
+                                                <div class="mt-2 mb_5 img_box">
+                                                    <img src="/apcc/img/bottom_link3.png" alt="논문 icon">
+                                                </div>
+                                                <div class="text_box">
+                                                    <p class="ft_s2 fw_nnE mb_20">논문</p>
+                                                    <div><img src="/apcc/img/acpp_main_banner4_bg4.png" alt="화살표 아이콘"></div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="type2 px-1">
+                                            <a class="link-light" href="/board/BBSMSTR_000000000065">
+                                                <div class="mt-2 mb_5 img_box">
+                                                    <img src="/apcc/img/bottom_link4.png" alt="글로벌 기후소식 icon">
+                                                </div>
+                                                <div class="text_box">
+                                                    <p class="ft_s2 fw_nnE mb_20 text-nowrap">글로벌 기후소식</p>
+                                                    <div><img src="/apcc/img/acpp_main_banner4_bg4.png" alt="화살표 아이콘"></div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            
+
+                            
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <footer id="apcc_footer">
+        <div class="apcc_footer_top">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="d-flex align-items-center justify-content-center">
+                    <div class="mr_30 f_s5 text-nowrap">관련기관</div>
+                    <!--<div class="apcc_footer_slid_con d-flex">
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>-->
+                    <div class="apcc_footer_slid_con d-flex">
+                        <button class="footer-banner-prev"><img src="/apcc/img/apcc_footer_left.png" alt="이전 슬라이드 아이콘"></button>
+                        <button class="footer-banner-stop"><img src="/apcc/img/apcc_footer_stop.png" alt="멈춤 슬라이드 아이콘"></button>
+                        <button class="footer-banner-next"><img src="/apcc/img/apcc_footer_right.png" alt="다음 슬라이드 아이콘"></button>
+                    </div>
+                    <div class="swiper banner">
+                        <ul class="swiper-wrapper align-items-center">
+                            
+                                
+                                    
+                                        <li class="footer_banner_list swiper-slide">
+                                            
+                                                <a href="https://www.apec.org/" title="새창" target="_blank">
+                                                    <img src="/image/thumb?id=c60d102c-97ba-11ee-aea0-0f857db968e2" height="50"  alt="banner">
+                                                </a>
+                                            
+                                            
+                                        </li>
+                                    
+                                
+                                    
+                                        <li class="footer_banner_list swiper-slide">
+                                            
+                                                <a href="http://web.kma.go.kr/" title="새창" target="_blank">
+                                                    <img src="/image/thumb?id=20a9c792-97bb-11ee-aea0-d33cb2e15483" height="50"  alt="banner">
+                                                </a>
+                                            
+                                            
+                                        </li>
+                                    
+                                
+                                    
+                                        <li class="footer_banner_list swiper-slide">
+                                            
+                                                <a href="http://www.busan.go.kr" title="새창" target="_blank">
+                                                    <img src="/image/thumb?id=4613263d-b0f5-11ee-9488-299f3e176911" height="50"  alt="banner">
+                                                </a>
+                                            
+                                            
+                                        </li>
+                                    
+                                
+                                    
+                                        <li class="footer_banner_list swiper-slide">
+                                            
+                                                <a href="https://www.kisti.re.kr/" title="새창" target="_blank">
+                                                    <img src="/image/thumb?id=087b5ef3-b5cd-11ee-a805-f954c492d348" height="50"  alt="banner">
+                                                </a>
+                                            
+                                            
+                                        </li>
+                                    
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="apcc_footer_middle apcc_footer_bg1">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="apcc_footer_flexbox align-items-center">
+                    <div class="d-flex align-items-center">
+                        <div class="apcc_footer_logo">
+                            <h2 class="mb_0"><img src="/apcc/img/apcc_footer_logo.png" alt="APCC 로고"></h2>
+                        </div>
+                        <div class="min-996">
+                            <ul class="apcc_footer_list1">
+                                <li><a href="/content/privacy-2025" class="f_c_w text-warning">개인정보처리방침</a></li>
+                                <li><a href="/content/cctv" class="f_c_w">CCTV 설치‧운영현황</a></li>
+                                <li><a href="/content/email_security" class="f_c_w">이메일 무단수집 거부</a></li>
+                            </ul>
+                        </div>
+                        <div class="apcc_footer_moreSite max-768 my-3">
+                            <button class="f_s3" onclick="$('.apcc_footer_etcSiteList').toggle()">기타메뉴 바로가기</button>
+                            <ul class="apcc_footer_etcSiteList">
+                                <li><a href="/content/privacy-2025" class="f_c_w text-warning">개인정보처리방침</a></li>
+                                <li><a href="/content/cctv#" class="f_c_w">CCTV 설치‧운영현황</a></li>
+                                <li><a href="/content/email_security" class="f_c_w">이메일 무단수집 거부</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <ul class="apcc_footer_list3">
+                            <li><a target="_blank" href="http://www.facebook.com/apcc21" class="bg_facebook">facebook</a></li>
+                            <li class="ms-3"><a target="_blank" href="http://www.twitter.com/apcc21" class="bg_twitter">twitter</a></li>
+                            <!--
+                            <li><a target="_blank" href="http://youtube.com/APECClimateCenter" class="bg_youtube">youtube</a></li>
+                            <li><a target="_blank" href="http://flickr.com/photos/apcc21" class="bg_flickr">Flickr</a></li>
+                            -->
+                        </ul>
+                        <a href="javascript:window.scrollTo({top:0, behavior:'smooth'})" class="apcc_top_btn1 ms-3"><img src="/apcc/img/go-top.png" alt="최상단 이동 아이콘" onMouseOver="this.src='/apcc/img/go-top-over.png'" onMouseOut="this.src='/apcc/img/go-top.png'"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="apcc_footer_bottom apcc_footer_bg1">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="apcc_footer_flexbox">
+                    <div>
+                        <ul class="apcc_footer_list2">
+                            <li>주소 : 48058 부산광역시 해운대구 센텀7로 12</li>
+                            <li>Tel : 82-51-745-3900</li>
+                            <li>Fax : 82-51-745-3949 </li>
+                            <li>이메일 : apcc@apcc21.org</li>
+                        </ul>
+
+                        <p>© 2015 Copyright APCC All Rights Reserved</p>
+                    </div>
+
+
+                    <div class="apcc_footer_moreSite max-576 my-3">
+                        <button class="f_s3" onclick="$('.apcc_footer_etcSiteList').toggle()">기타메뉴 바로가기</button>
+                        <ul class="apcc_footer_etcSiteList">
+                            <li><a href="/content/privacy-2025" class="f_c_w text-warning">개인정보처리방침</a></li>
+                            <li><a href="/content/cctv" class="f_c_w">CCTV 설치‧운영현황</a></li>
+                            <li><a href="/content/email_security" class="f_c_w">이메일 무단수집 거부</a></li>
+                        </ul>
+                    </div>
+                    <!--
+                    <div class="apcc_footer_moreSite">
+                        <button class="f_s3" onclick="$('.apcc_footer_moreSiteList').toggle()" th:text="#{label.footer.related-sites-shortcut}">관련사이트 바로가기</button>
+                        <ul class="apcc_footer_moreSiteList">type="text/javascript"
+                            <li><a href="https://www.apec.org/" target="_blank" th:text="#{label.footer.link.apec}">APEC사무국</a></li>
+                            <li><a href="https://www.weather.go.kr/w/index.do" target="_blank" th:text="#{label.footer.link.weather}">기상청</a></li>
+                            <li><a href="https://www.busan.go.kr/index" target="_blank" th:text="#{label.footer.link.busan}">부산광역시청</a></li>
+                        </ul>
+                    </div>
+                    -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="/apcc/js/apcc_insight_webanalytics.js"></script>
+
+
+<!-- 기상청 통계 LOGGER(TM) TRACKING SCRIPT V.40 FOR logger.co.kr / 100009 : COMBINE TYPE / DO NOT ALTER THIS SCRIPT. -->
+<script type="text/javascript">var _TRK_LID = "100009";var _L_TD = "webstats.kma.go.kr";var _TRK_CDMN = ".apcc21.org";</script>
+<script type="text/javascript">var _CDN_DOMAIN = location.protocol == "https:" ? "https://webstats.kma.go.kr" : "http://webstats.kma.go.kr";
+(function (b, s) { var f = b.getElementsByTagName(s)[0], j = b.createElement(s); j.async = true; j.src = "//webstats.kma.go.kr/fs4/bstrk.sol.js"; f.parentNode.insertBefore(j, f); })(document, "script");
+</script>
+<noscript><img alt="Logger Script" width="1" height="1" src="http://webstats.kma.go.kr/tracker.sol.tsp?u=100009&amp;js=N"/></noscript>
+<!-- END OF LOGGER TRACKING SCRIPT -->
+
+
+    </footer>
+</div>
+
+        <script src="/apcc/js/slide.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".onLoadImg").on("load", function(){
+                    reseizeImage($(this));
+                });
+            });
+
+            function reseizeImage(elem, $outframe) {
+                let $this = $(elem);
+                let $parent = $this.parent();
+                let ratio = $this.data("width") / $this.data("height"); // $this.width() / $this.height();
+                let ratio4parent = $parent.width() / $parent.height();
+                if ( typeof $outframe == "undefined" ) {
+                    $outframe = null;
+                }
+                //console.log("ratio", ratio.toFixed(1), $parent.data("variable"));
+                //console.log("img :", $this.width(), $this.height(), $this.data("width"), $this.data("height"));
+                //console.log("parent :", $parent.width(), $parent.height());
+                // alert( $parent.width() + "/" + $parent.height() );
+                //if ( $this.width() >= $parent.width() ) {
+                if ( $outframe ) {
+                    if ($this.width() > $outframe.width()) {
+                        $this.css({"width":$outframe.width() + "px", "height":"auto"});
+                        window.setTimeout(function(){
+                            if ($this.height() > $outframe.height()) {
+                                $this.css({"width":"auto", "height":$outframe.height() + "px"});
+                            }
+                        }, 100);
+                    } else if ($this.height() > $outframe.height()) {
+                        $this.css({"width":"auto", "height":$outframe.height() + "px"});
+                    }
+
+                    //alert($this.width()+","+$outframe.width());
+                    //alert($this.height()+","+$outframe.height());
+                } else {
+                    if ( ratio4parent < ratio ) {
+                        //console.log("width 큼 :", $this.width(), $this.height(), ">("+ratio+") ", ($this.width() / ratio));
+                        $this.css({"width":"100%", "height":"auto"}); //"height":($this.width() / ratio)+"px"});
+                    } else {
+                        //console.log("height 큼 :");
+                        $this.css({"width":"auto", "height":"100%"});
+                    }
+                }
+            }
+
+            $(function(){
+                const month_idx_2_engabbr = {'01':'JAN','02':'FEB', '03':'MAR', '04':'APR', '05':'MAY', '06':'JUN', '07':'JUL', '08':'AUG', '09':'SEP', '10':'OCT', '11':'NOV', '12':'DEC'};
+                const month_idx_2_m23 = {'01':'JFM', '02':'FMA', '03':'MAM', '04':'AMJ', '05':'MJJ', '06':'JJA', '07':'JAS', '08':'ASO', '09':'SON', '10':'OND', '11':'NDJ', '12':'DJF'};
+                const month_idx_2_m56 = {'10':'JFM', '11':'FMA', '12':'MAM', '01':'AMJ', '02':'MJJ', '03':'JJA', '04':'JAS', '05':'ASO', '06':'SON', '07':'OND', '08':'NDJ', '09':'DJF'};
+                const url = new URL(document.URL);
+                // console.log(url);
+                let CONST_HOSTNAME = url.origin;
+                if ( url.host.indexOf("localhost")>=0 || url.port == "8181" || url.port == "8282" ) {
+                    CONST_HOSTNAME = 'https://dev.apcc21.org';
+                }
+                function textM23(mmm) {
+                    var idx = parseInt(mmm);
+                    idx = idx % 12; if ( idx == 0 ) idx = 12;
+                    return (idx < 10 ? month_idx_2_m23['0'+idx] : month_idx_2_m23[idx]);
+                }
+                function textM56(mmm) {
+                    var idx = parseInt(mmm);
+                    idx = idx % 12; if ( idx == 0 ) idx = 12;
+                    return (idx < 10 ? month_idx_2_m56['0'+idx] : month_idx_2_m56[idx]);
+                }
+                function textCMON(mmm, add){
+                    if ( typeof add == "undefined" ) add = 0;
+                    var idx = ((parseInt(mmm) + add) % 12);
+                    if ( idx == 0 ) idx = 12;
+                    return idx < 10 ? month_idx_2_engabbr['0'+idx] : month_idx_2_engabbr[idx];
+                }
+                function textM23456(mmm) {
+                    return textM23(mmm) + textM56(mmm)
+                }
+
+                //전지구 전망.
+                axios.get("/climatecomponent/globe-outlook/"+Math.random(), {
+                }).then(function(response) {
+                    // console.log(response);
+                    const data = response.data.data;
+                    const year = data.ccMaxYm.substring(0, 4);
+                    const month = data.ccMaxYm.substring(4, 6);
+                    $("#slider1 .t2m01").prop("src"
+                        , CONST_HOSTNAME+ "/apcc_images/MME_FIG/MME_OUT/3-MON/FORECAST/GAUS/{{YEAR}}/{{month}}/Seasonal/{{3mSEASb}}/Global/t2m.png"
+                        .replaceAll("{{YEAR}}", year)
+                        .replaceAll("{{month}}", parseInt(month))
+                        .replaceAll("{{3mSEASb}}", textM23(month))
+                    ).on("load", function(){
+                        let $this = $(this);
+                        $this.parent().removeClass("spinner");
+                    });
+                    $("#slider1 .t2m02").prop("src"
+                        , CONST_HOSTNAME+ "/apcc_images/MME_FIG/MME_OUT/6-MON/FORECAST/GAUS/{{YEAR}}/{{month}}/Seasonal/{{3mSEASa}}/Global/t2m.png"
+                        .replaceAll("{{YEAR}}", year)
+                        .replaceAll("{{month}}", parseInt(month))
+                        .replaceAll("{{3mSEASa}}", textM56(month))
+                    ).on("load", function(){
+                        let $this = $(this);
+                        $this.parent().removeClass("spinner");
+                    });
+                    $("#slider2 .prec01").prop("src"
+                        , CONST_HOSTNAME+ "/apcc_images/MME_FIG/MME_OUT/3-MON/FORECAST/GAUS/{{YEAR}}/{{month}}/Seasonal/{{3mSEASb}}/Global/prec.png"
+                        .replaceAll("{{YEAR}}", year)
+                        .replaceAll("{{month}}", parseInt(month))
+                        .replaceAll("{{3mSEASb}}", textM23(month))
+                    ).on("load", function(){
+                        let $this = $(this);
+                        $this.parent().removeClass("spinner");
+                    });
+                    $("#slider2 .prec02").prop("src"
+                        , CONST_HOSTNAME+ "/apcc_images/MME_FIG/MME_OUT/6-MON/FORECAST/GAUS/{{YEAR}}/{{month}}/Seasonal/{{3mSEASa}}/Global/prec.png"
+                        .replaceAll("{{YEAR}}", year)
+                        .replaceAll("{{month}}", parseInt(month))
+                        .replaceAll("{{3mSEASa}}", textM56(month))
+                    ).on("load", function(){
+                        let $this = $(this);
+                        $this.parent().removeClass("spinner");
+                    });
+
+                    const slide1 = new MainImageSlide("#slider1");
+                    slide1.setAutoSlide(8000);
+                    slide1.setPauseImage("/apcc/img/acpp_main_banner2_icon2.png");
+                    slide1.setPlayImage("/apcc/img/acpp_main_banner2_icon5.png");
+
+                    const slide2 = new MainImageSlide("#slider2");
+                    slide2.setAutoSlide(8000);
+                    slide2.setPauseImage("/apcc/img/acpp_main_banner2_icon2.png");
+                    slide2.setPlayImage("/apcc/img/acpp_main_banner2_icon5.png");
+
+                    $("#slider5 .enso01").prop("src"
+                        , CONST_HOSTNAME + "/apcc_images/MME_FIG/ENSO_OUT/{{6mSEAS}}/{{YEAR}}/Alert/ENSO_Alert.png"
+                        .replaceAll("{{YEAR}}", year)
+                        .replaceAll("{{6mSEAS}}", textM23456(month))
+                    ).on("load", function(){
+                        let $this = $(this);
+                        $this.parent().removeClass("spinner");
+                        $this.attr("data-width", $this.width());
+                        $this.attr("data-height", $this.height());
+                        window.setTimeout(function(){
+                            reseizeImage($this, $(".enso01-frame"));
+                        }, 250);
+                    });
+
+                    const slider5 = new MainImageSlide("#slider5");
+                    slider5.setAutoSlide(8000);
+                    slider5.setPauseImage("/apcc/img/acpp_main_banner3_icon2.png");
+                    slider5.setPlayImage("/apcc/img/acpp_main_banner3_icon5.png");
+
+                }).catch(function (error) {
+                    console.log(error);
+                });
+
+
+                //최근기후
+                axios.get("/climatecomponent/recentclimate_openlayers/"+Math.random(), {
+                }).then(function(response) {
+                    // console.log(response);
+                    const data = response.data.data;
+                    const year = data.ccMaxYm.substring(0, 4);
+                    const month = data.ccMaxYm.substring(4, 6);
+
+                    $("#slider4 .img02").prop("src"
+                        , CONST_HOSTNAME+ "/apcc_images/CMS_map/{{YEAR}}/{{month}}/Global/air.png"
+                        .replaceAll("{{YEAR}}", year)
+                        .replaceAll("{{month}}", parseInt(month))
+                    ).on("load", function(){
+                        let $this = $(this);
+                        $this.parent().removeClass("spinner");
+                        $this.attr("data-width", $this.width());
+                        $this.attr("data-height", $this.height());
+                        window.setTimeout(function(){
+                            reseizeImage($this);
+                        }, 250);
+                    });
+                    $("#slider4 .img03").prop("src"
+                        , CONST_HOSTNAME+ "/apcc_images/CMS_map/{{YEAR}}/{{month}}/Global/hgt.png"
+                        .replaceAll("{{YEAR}}", year)
+                        .replaceAll("{{month}}", parseInt(month))
+                    ).on("load", function(){
+                        let $this = $(this);
+                        $this.parent().removeClass("spinner");
+                        $this.attr("data-width", $this.width());
+                        $this.attr("data-height", $this.height());
+                        window.setTimeout(function(){
+                            reseizeImage($this);
+                        }, 250);
+                    });
+                    $("#slider4 .img04").prop("src"
+                        , CONST_HOSTNAME+ "/apcc_images/CMS_map/{{YEAR}}/{{month}}/Global/olr.png"
+                        .replaceAll("{{YEAR}}", year)
+                        .replaceAll("{{month}}", parseInt(month))
+                    ).on("load", function(){
+                        let $this = $(this);
+                        $this.parent().removeClass("spinner");
+                        $this.attr("data-width", $this.width());
+                        $this.attr("data-height", $this.height());
+                        window.setTimeout(function(){
+                            reseizeImage($this);
+                        }, 250);
+                    });
+                    $("#slider4 .img05").prop("src"
+                        , CONST_HOSTNAME+ "/apcc_images/CMS_map/{{YEAR}}/{{month}}/Global/prec.png"
+                        .replaceAll("{{YEAR}}", year)
+                        .replaceAll("{{month}}", parseInt(month))
+                    ).on("load", function(){
+                        let $this = $(this);
+                        $this.parent().removeClass("spinner");
+                        $this.attr("data-width", $this.width());
+                        $this.attr("data-height", $this.height());
+                        window.setTimeout(function(){
+                            reseizeImage($this);
+                        }, 250);
+                    });
+                    $("#slider4 .img06").prop("src"
+                        , CONST_HOSTNAME+ "/apcc_images/CMS_map/{{YEAR}}/{{month}}/Global/sst.png"
+                        .replaceAll("{{YEAR}}", year)
+                        .replaceAll("{{month}}", parseInt(month))
+                    ).on("load", function(){
+                        let $this = $(this);
+                        $this.parent().removeClass("spinner");
+                        $this.attr("data-width", $this.width());
+                        $this.attr("data-height", $this.height());
+                        window.setTimeout(function(){
+                            reseizeImage($this);
+                        }, 250);
+                    });
+                    $("#slider4 .img07").prop("src"
+                        , CONST_HOSTNAME+ "/apcc_images/CMS_map/{{YEAR}}/{{month}}/Global/uwnd.png"
+                        .replaceAll("{{YEAR}}", year)
+                        .replaceAll("{{month}}", parseInt(month))
+                    ).on("load", function(){
+                        let $this = $(this);
+                        $this.parent().removeClass("spinner");
+                        $this.attr("data-width", $this.width());
+                        $this.attr("data-height", $this.height());
+                        window.setTimeout(function(){
+                            reseizeImage($this);
+                        }, 250);
+                    });
+
+                    const slider4 = new MainImageSlide("#slider4");
+                    slider4.setAutoSlide(8000);
+                    slider4.setPauseImage("/apcc/img/acpp_main_banner3_icon2.png");
+                    slider4.setPlayImage("/apcc/img/acpp_main_banner3_icon5.png");
+
+                    $("#main-data2").on("click", function(){
+                        location.href="/monitoring/recent?variable=" + $("#main-data2 .show").data("variable");
+                    });
+
+                }).catch(function (error) {
+                    console.log(error);
+                });
+
+                //동아시아 예측
+                axios.get("/climatecomponent/eastasia-pred/"+Math.random(), {
+                }).then(function(response) {
+                    // console.log(response);
+                    const data = response.data.data;
+                    const year = data.ccMaxYm.substring(0, 4);
+                    const month = data.ccMaxYm.substring(4, 6);
+
+                    // https://dev.apcc21.org/apcc_images/MME_FIG/MME_OUT/3-MON/FORECAST/SCM/2024/1/Monthly/JAN/East_asia/t2m.png
+                    $("#slider3 .img01").prop("src"
+                        , CONST_HOSTNAME+ "/apcc_images/MME_FIG/MME_OUT/3-MON/FORECAST/SCM/{{YEAR}}/{{month}}/Monthly/{{CMON}}/East_asia/t2m.png"
+                        .replaceAll("{{YEAR}}", year)
+                        .replaceAll("{{month}}", parseInt(month))
+                        .replaceAll("{{CMON}}", textCMON(month))
+                    ).on("load", function(){
+                        let $this = $(this);
+                        $this.parent().removeClass("spinner");
+                        $this.attr("data-width", $this.width());
+                        $this.attr("data-height", $this.height());
+                        window.setTimeout(function(){
+                            reseizeImage($this);
+                        }, 250);
+                    });
+                    $("#slider3 .img02").prop("src"
+                        , CONST_HOSTNAME+ "/apcc_images/MME_FIG/MME_OUT/3-MON/FORECAST/SCM/{{YEAR}}/{{month}}/Monthly/{{CMON}}/East_asia/prec.png"
+                        .replaceAll("{{YEAR}}", year)
+                        .replaceAll("{{month}}", parseInt(month))
+                        .replaceAll("{{CMON}}", textCMON(month))
+                    ).on("load", function(){
+                        let $this = $(this);
+                        $this.parent().removeClass("spinner");
+                        $this.attr("data-width", $this.width());
+                        $this.attr("data-height", $this.height());
+                        window.setTimeout(function(){
+                            reseizeImage($this);
+                        }, 250);
+                    });
+                    $("#slider3 .img03").prop("src"
+                        , CONST_HOSTNAME+ "/apcc_images/MME_FIG/MME_OUT/3-MON/FORECAST/SCM/{{YEAR}}/{{month}}/Monthly/{{CMON}}/East_asia/slp.png"
+                        .replaceAll("{{YEAR}}", year)
+                        .replaceAll("{{month}}", parseInt(month))
+                        .replaceAll("{{CMON}}", textCMON(month))
+                    ).on("load", function(){
+                        let $this = $(this);
+                        $this.parent().removeClass("spinner");
+                        $this.attr("data-width", $this.width());
+                        $this.attr("data-height", $this.height());
+                        window.setTimeout(function(){
+                            reseizeImage($this);
+                        }, 250);
+                    });
+                    $("#slider3 .img04").prop("src"
+                        , CONST_HOSTNAME+ "/apcc_images/MME_FIG/MME_OUT/3-MON/FORECAST/SCM/{{YEAR}}/{{month}}/Monthly/{{CMON}}/East_asia/z500.png"
+                        .replaceAll("{{YEAR}}", year)
+                        .replaceAll("{{month}}", parseInt(month))
+                        .replaceAll("{{CMON}}", textCMON(month))
+                    ).on("load", function(){
+                        let $this = $(this);
+                        $this.parent().removeClass("spinner");
+                        $this.attr("data-width", $this.width());
+                        $this.attr("data-height", $this.height());
+                        window.setTimeout(function(){
+                            reseizeImage($this);
+                        }, 250);
+                    });
+
+                    const slide3 = new MainImageSlide("#slider3");
+                    slide3.setAutoSlide(8000);
+                    slide3.setPauseImage("/apcc/img/acpp_main_banner3_icon2.png");
+                    slide3.setPlayImage("/apcc/img/acpp_main_banner3_icon5.png");
+
+                }).catch(function (error) {
+                    console.log(error);
+                });
+            });
+        </script>
+        <script src="/apcc/js/popup-6274afc33b64903836521ac1c2baf48c.js"></script>
+        <script>
+            $(document).ready(function(){
+                //popup 관련
+                axios.get("/popup", {
+                }).then(function(response) {
+                    // console.log(response);
+                    const data = response.data.popup;
+                    console.log(data);
+                    data.forEach(function (data) {
+                        Popup.open(data);
+                        //console.log(data);
+                    });
+                });
+            });
+            window.addEventListener('resize', function(){
+                const sections = document.querySelectorAll("#slider3 .targetSlideWrap img, #slider4 .targetSlideWrap img");
+                sections.forEach((item) => {
+                    reseizeImage(item);
+                    console.log("reseize ", "call");
+                });
+                //for (let i = 0; i < sections.length; i++) {
+                //    reseizeImage($(sections.item(i)));
+                //    console.log("reseize ", "call");
+                //}
+            });
+        </script>
+    
+
+</body>
+</html>

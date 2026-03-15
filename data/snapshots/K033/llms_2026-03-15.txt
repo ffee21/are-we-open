@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="ko">
+<head>	
+	<meta charset="utf-8" />
+	<title>국가철도공단</title>
+</head>
+<body>
+<div style="text-align:center;">
+<br><br><br><br>
+허용하지 않는 페이지에 접속하였습니다.<br><br>
+모든 웹 브라우저를 종료하시고 재접속 해주시기 바랍니다.<br><br>
+현재 페이지가 지속적으로 나타날 경우 관리자에게 문의 바랍니다.<br><br>
+헬프데스크 042)607-4981, 4982 (전자조달, CPMS, 실적증명, 홈페이지 등.)<br><br>
+<br><br>
+
+
+</div>
+</body>
+</html>

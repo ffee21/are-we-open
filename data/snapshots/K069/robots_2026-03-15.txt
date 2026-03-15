@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /portal/admin/
+Disallow: /portal/nosa/cusSquare/
+Disallow: /portal/nosa/FoundnIntro/organization/
+Disallow: /nosa/

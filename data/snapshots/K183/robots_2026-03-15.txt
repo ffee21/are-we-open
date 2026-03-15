@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /talk
+Allow: /eng
+Allow: /rus
+Allow: /fre
+Allow: /spa
+Allow: /ara
+Allow: /chn
+Disallow: /kor

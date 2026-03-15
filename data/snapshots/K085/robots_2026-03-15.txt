@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /pnukh/index.do
+Allow: /prc/index.do
+Allow: /pnuh/index.do
+Allow: /pnuh/medical/
+Disallow: /pnuh/patients/
+Disallow: /pnuh/etc/
+Disallow: /

@@ -1,0 +1,40 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+<title>KERIS 한국교육학술정보원</title>
+<link rel="stylesheet" href="/css/web/main/common_v1.css" media="all">
+<link rel="stylesheet" href="/css/web/main/layout.css" media="all">
+<link rel="stylesheet" href="/css/web/main/webfont.css" media="all">
+<link rel="stylesheet" href="/css/web/main/con_com.css" media="all">
+<link rel="stylesheet" href="/css/web/main/sub_cnt.css" media="all">
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script type="text/javascript" src="/js/web/main/html5shiv.js"></script>
+<script type="text/javascript" src="/js/web/main/common.js"></script>
+<script type="text/javascript" src="/js/web/main/sub.js"></script>
+</head>
+<body>
+<div id="wrap"> 
+      <section id="subContent" class="error"> 
+          <div class="subContent_body">
+              <div class="con_area"> 
+                  <div>
+                      <div class="Coming_soon">
+                          <div class="inner"> <img class="ac" src="/images/web/main/sub_cnt/img_err.png" alt="요청하신페이지가 정상적으로 처리되지 않았습니다. 불편을 드려 죄송합니다.">
+                              <p>요청하신페이지가 정상적으로 처리되지 않았습니다. 불편을 드려 죄송합니다.</p>
+                          </div>
+                      </div>
+                      <p class="ac mgt20"><a class="btn_gr ico_w" href="/main/main.do">메인으로<span class="glan"></span></a></p>
+                  </div>
+              </div>
+          </div>
+      </section>
+</div>
+</body>
+</html>

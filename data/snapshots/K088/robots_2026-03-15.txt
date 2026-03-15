@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /home/kor/board.do
+Disallow: /home/kor/customerSupport/compliment/index.do

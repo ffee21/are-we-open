@@ -1,0 +1,11 @@
+User-agent: *
+allow: /
+
+User-agent: Googlebot
+Disallow: /tsearch/result.do
+
+User-agent: Googlebot
+Disallow: /bbs/
+
+User-agent: Naverbot
+Disallow: /tsearch/result.do

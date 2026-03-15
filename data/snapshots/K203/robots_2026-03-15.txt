@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /portal/search/
+Disallow: /info/
+Disallow: /reference/
+Disallow: /eng/eventBbsList.do
+Disallow: /eng/newsBbsList.do

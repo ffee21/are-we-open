@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="shortcut icon" href="/_public/images/common/favicon.ico" type="image/x-icon">
+<title>ERROR </title>
+<link href="/_public/kr/css/base.css" rel="stylesheet">
+<link href="/_public/kr/css/error.css" rel="stylesheet">
+</head>
+<body cz-shortcut-listen="true">
+	<div class="error-wrap">
+		<h1 class="logo"><a href="https://www.mmk.or.kr/" target="_blank" title="새창열기" style="font-size:0;">국립해양박물관</a></h1>
+		<div class="error-box">
+			<em><img src="/_public/images/common/icon_error.png" alt="에러 아이콘"></em>잘못된 경로이거나 만기된 페이지입니다.
+		</div>
+		<a href="#" class="error-button" onclick="history.go(-1);" title="이전 페이지로 이동">뒤로가기</a>
+	</div>
+
+</body>
+</html>

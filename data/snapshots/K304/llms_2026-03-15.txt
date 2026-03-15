@@ -1,0 +1,47 @@
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="Pragma" content="no-cache">
+	<meta name="Cache-Control" content="no-cache">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+	<title>Error</title>
+	<style>
+		@font-face {font-family:'NanumSquare'; font-weight:500; src:url(/css/font/NanumSquareR.woff2) format('woff2')}
+		html,body,div,span,p,a,button {word-wrap:break-word; margin:0; padding:0; border:0;}
+		body {font-family:'NanumSquare'; font-size:15px; font-weight:500; color:#333; letter-spacing:0; line-height:1.4;}
+		a, button {display:inline-block; vertical-align:middle; border:none; background:none; text-decoration:none; box-sizing:border-box;}
+		.error_wrap {width:100%; max-width:400px; height:auto; margin:50px auto; padding:25px 35px 35px 35px; background:#f6f7f9; box-sizing:border-box;}
+		.error_tit {margin-bottom:20px; padding-bottom:18px; border-bottom:1px solid #ddd;}
+		.error_tit p {width:162px; height:20px; text-indent:-9999px; background:url('/images/kor/kor_logo.png') no-repeat; background-size:cover;}
+		.error_cont img {display:block; margin:35px auto; padding:0 15px;}
+		.error_info {margin-bottom:25px;}
+		.error_info p {font-size:17px;}
+		.error_info span {display:block; margin-top:5px; color:#666;}
+		.error_btn {text-align:center;}
+		.error_btn a {display:block; height:45px; margin-top:10px; padding:0 15px; font-weight:500; color:#fff !important; line-height:45px; border:1px solid #786f62; background:#786f62; border-radius:3px; text-align:center;}
+		.error_btn a:first-of-type {margin-top:0; color:#786f62 !important; border:1px solid #786f62; background:#fff;}
+	</style>
+</head>
+<body>
+	<div class="error_wrap">
+		<div class="error_tit">
+			<p>KRIVET 한국직업능력연구원</p>
+		</div>
+		<div class="error_cont">
+			<img src="/images/common/adm_error.png" alt="">
+			<div class="error_info">
+				<p>
+					
+							처리중 오류가 발생하였습니다.
+						</p>
+				<span>잠시후 다시 접속해주세요.</span>
+			</div>
+		</div>
+		<div class="error_btn">
+			<a href='/kor/index.do'>HOME으로</a>
+			<a href="#" onclick="window.history.back();return false;">이전 페이지로</a>
+		</div>
+	</div>
+</body>
+</html>

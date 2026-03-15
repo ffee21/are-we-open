@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js ie6"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js ie7"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js ie8"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" itemscope="itemscope" itemtype="http://schema.org/WebPage" lang="ko"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>에러</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="/static/css/common.css">
+	<script src="/static/js/lib/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
+
+	<div class="errorWrap">
+		<section class="error">
+			<p class="img"><img src="/static/images/error/txtErr.gif" alt="죄송합니다. 현재 서비스가 원활하지 않습니다..." /></p>
+			<p class="txt"></p>
+			<div class="btnGroup">
+				<a href="#back" class="btn" onclick="history.back();">뒤로가기</a>
+				<a href="/index.do" class="btn btnPost">홈으로 가기</a>
+			</div>
+		</section>
+	</div>
+
+</body>
+</html>

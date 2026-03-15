@@ -1,0 +1,21 @@
+<pre style="word-wrap: break-word; white-space: pre_wrap;">
+User-agent: AdsBot-Google-Mobile
+Disallow: /all-search/
+Disallow: /qna/
+Disallow: /career/
+Disallow: /civil/
+User-agent: AdsBot-Google
+Disallow: /all-search/
+Disallow: /qna/
+Disallow: /career/
+Disallow: /civil/
+User-agent: Googlebot
+Disallow: /all-search/
+Disallow: /qna/
+Disallow: /career/
+Disallow: /civil/
+User-agent: Yeti
+Allow: /
+User-agent: Daumoa
+Allow: /
+</pre>

@@ -1,0 +1,4577 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/img/koda.ico" type="image/x-icon">
+  <title>한국장기조직기증원(KODA) - 생명과 생명을 잇는 기증관리 전문기관</title>
+
+  <link rel="stylesheet" href="/css/plugins/swiper-bundle.min.css">
+  <link rel="stylesheet" href="/css/common/common.css">
+  <link rel="stylesheet" href="/css/styles/main.css">
+  <link rel="stylesheet" href="/css/styles/sub.css">
+  <script src="/js/component/ui-script.js"></script>
+  <script src="/js/plugins/swiper-bundle.min.js"></script>
+  <script src="/js/common.js"></script>
+</head>
+
+<style>
+
+    /* 메인 페이지: 본문 바로가기 시 스크롤 내려감 방지 */
+    #content-start {
+        scroll-margin-top: 0 !important;
+    }
+
+    .main-vban-wrap img {
+        display: block;
+    }
+
+    .main-vban-wrap .in > a {
+        display: inline-block;
+    }
+
+    .main-vban-wrap .in > a img {
+        display: block;
+    }
+
+    /* Swiper overflow 영향 없는 포커스 처리 */
+    /*.main-vban-wrap .in > a:focus-visible {*/
+    /*    outline: 6px solid #005fcc;*/
+    /*    outline-offset: -4px;*/
+    /*}*/
+    .main-vban-wrap .in:has(a:focus-visible) {
+        outline: 5px solid #005fcc;
+        outline-offset: -4px;
+    }
+
+    /* 마우스 클릭 시 과도한 포커스 제거 */
+    .main-vban-wrap .in > a:focus:not(:focus-visible) {
+        outline: none;
+    }
+
+    /* 링크 없는 배너 div 포커스 처리 */
+    .main-vban-wrap .in:focus-visible {
+        outline: 5px solid #005fcc;
+        outline-offset: -4px;
+    }
+
+    .main-vban-wrap .in:focus:not(:focus-visible) {
+        outline: none;
+    }
+
+    /* 탭 전체 영역 */
+    .story-tab-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* 탭 버튼 묶음 */
+    .story-tab-header .tab-left {
+        display: flex;
+        gap: 8px;
+    }
+
+    /* SNS 아이콘 영역 */
+    .story-tab-header .sns-icons {
+        display: flex;
+        gap: 12px;
+    }
+
+    /* SNS 아이콘 크기 */
+    .story-tab-header .sns-icons img {
+        width: 35px;
+        height: 35px;
+        object-fit: contain;
+        cursor: pointer;
+    }
+
+
+    .popup-btn:hover {
+        background: #ddd;
+    }
+
+</style>
+<body>
+  
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EN30GYLK5G"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-EN30GYLK5G');
+    </script>
+
+    <!-- Naver Analytics -->
+    <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+    <script type="text/javascript">
+        if(!wcs_add) var wcs_add = {};
+        wcs_add["wa"] = "1188a55ca8c9640";
+        if(window.wcs) {
+            wcs_do();
+        }
+    </script>
+</head>
+<style>
+    .header .box-btn .ri-global-line{
+        width: 20px;
+    }
+
+    /* 활성화된 메뉴에 hover 효과와 동일한 스타일 적용 */
+    .header-menu-item.active > .gnb-link,
+    .header-menu-item:hover > .gnb-link {
+        font-weight: 700;
+        color: var(--primary-color, #0066cc);
+    }
+
+    /* 활성화된 메뉴의 서브메뉴 표시 */
+    .header-menu-item.active > .sub-nav,
+    .header-menu-item:hover > .sub-nav {
+        display: block;
+    }
+</style>
+
+  
+  
+    <a href="#content-start" class="skip-link">본문 바로가기</a>
+  
+  
+  
+  
+  
+  
+  
+
+<header class="header">
+  <div class="header-inner">
+    <div class="inner">
+      <h1 class="header-logo">
+        <a href="/">
+          <img src="/img/logo.svg" alt="한국장기조직기증원 KODA">
+        </a>
+      </h1>
+      <ul class="header-menu">
+        
+        
+          <li class="header-menu-item">
+            <a class="gnb-link" href="/major-business/donation/organ" id="gnb1">
+              주요업무
+            </a>
+
+            
+            
+            
+              <div class="sub-nav">
+                <div class="inner sub-nav-inner">
+                  
+                  
+                  
+                    <ul class="sub-nav-list">
+                      
+                      
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link sub-nav-title" href="/major-business/donation/organ">
+                            장기 · 조직기증
+                          </a>
+                        </li>
+
+                        
+                        
+                        
+                          <li class="sub-nav-item">
+                            <a class="sub-nav-link" href="/major-business/donation/organ">
+                              장기기증
+                            </a>
+                          </li>
+                        
+                          <li class="sub-nav-item">
+                            <a class="sub-nav-link" href="/major-business/donation/tissue">
+                              조직기증
+                            </a>
+                          </li>
+                        
+                          <li class="sub-nav-item">
+                            <a class="sub-nav-link" href="/major-business/donation/notification-center">
+                              장기조직통보센터
+                            </a>
+                          </li>
+                        
+                          <li class="sub-nav-item">
+                            <a class="sub-nav-link" href="/major-business/donation/opc">
+                              장기조직구득코디네이터(OPC)
+                            </a>
+                          </li>
+                        
+                          <li class="sub-nav-item">
+                            <a class="sub-nav-link" href="/major-business/donation/term">
+                              기증 용어 사전
+                            </a>
+                          </li>
+                        
+                      
+                    </ul>
+                  
+                    <ul class="sub-nav-list">
+                      
+                      
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link sub-nav-title" href="/major-business/contract/medical">
+                            협약업무
+                          </a>
+                        </li>
+
+                        
+                        
+                        
+                          <li class="sub-nav-item">
+                            <a class="sub-nav-link" href="/major-business/contract/medical">
+                              뇌사자 관리업무 협약기관
+                            </a>
+                          </li>
+                        
+                          <li class="sub-nav-item">
+                            <a class="sub-nav-link" href="/major-business/contract/dip">
+                              기증 활성화 프로그램 협약기관
+                            </a>
+                          </li>
+                        
+                      
+                        
+                        <li class="sub-nav-item mt-16">
+                          <a class="sub-nav-link sub-nav-title" href="/major-business/promotion">
+                            기증 활성화 프로그램
+                          </a>
+                        </li>
+
+                        
+                        
+                        
+                      
+                    </ul>
+                  
+                    <ul class="sub-nav-list">
+                      
+                      
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link sub-nav-title" href="/major-business/donor/support">
+                            기증자 예우
+                          </a>
+                        </li>
+
+                        
+                        
+                        
+                          <li class="sub-nav-item">
+                            <a class="sub-nav-link" href="/major-business/donor/support">
+                              기증자 예우 · 유가족 지원
+                            </a>
+                          </li>
+                        
+                          <li class="sub-nav-item">
+                            <a class="sub-nav-link" href="/major-business/donor/event-info">
+                              기증자 기념행사 · 유가족 모임
+                            </a>
+                          </li>
+                        
+                          <li class="sub-nav-item">
+                            <a class="sub-nav-link" href="/major-business/donor/events">
+                              행사 소식
+                            </a>
+                          </li>
+                        
+                      
+                    </ul>
+                  
+                    <ul class="sub-nav-list">
+                      
+                      
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link sub-nav-title" href="/major-business/education">
+                            생명나눔교육
+                          </a>
+                        </li>
+
+                        
+                        
+                        
+                          <li class="sub-nav-item">
+                            <a class="sub-nav-link" href="/major-business/education">
+                              교육 안내
+                            </a>
+                          </li>
+                        
+                          <li class="sub-nav-item">
+                            <a class="sub-nav-link" href="/major-business/education/schedule">
+                              교육 일정
+                            </a>
+                          </li>
+                        
+                          <li class="sub-nav-item">
+                            <a class="sub-nav-link" href="/major-business/education/apply">
+                              교육 신청
+                            </a>
+                          </li>
+                        
+                      
+                        
+                        <li class="sub-nav-item mt-16">
+                          <a class="sub-nav-link sub-nav-title" href="/major-business/lab/about">
+                            KODA LAB
+                          </a>
+                        </li>
+
+                        
+                        
+                        
+                          <li class="sub-nav-item">
+                            <a class="sub-nav-link" href="/major-business/lab/about">
+                              검사실 소개
+                            </a>
+                          </li>
+                        
+                          <li class="sub-nav-item">
+                            <a class="sub-nav-link" href="/major-business/lab/tests">
+                              검사 안내
+                            </a>
+                          </li>
+                        
+                          <li class="sub-nav-item">
+                            <a class="sub-nav-link" href="/major-business/lab/resources">
+                              자료실
+                            </a>
+                          </li>
+                        
+                      
+                    </ul>
+                  
+                </div>
+              </div>
+            
+          </li>
+        
+          <li class="header-menu-item">
+            <a class="gnb-link" href="/donor-register/about" id="gnb2">
+              기증희망등록
+            </a>
+
+            
+            
+            
+              <div class="sub-nav">
+                <div class="inner sub-nav-inner">
+                  
+                  
+                  
+                    <ul class="sub-nav-list">
+                      
+                      
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link sub-nav-title" href="/donor-register/about">
+                            기증희망등록 방법 안내
+                          </a>
+                        </li>
+
+                        
+                        
+                        
+                      
+                    </ul>
+                  
+                    <ul class="sub-nav-list">
+                      
+                      
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link sub-nav-title" href="/donor-register/online">
+                            기증희망등록 온라인 신청
+                          </a>
+                        </li>
+
+                        
+                        
+                        
+                      
+                    </ul>
+                  
+                    <ul class="sub-nav-list">
+                      
+                      
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link sub-nav-title" href="/donor-register/check">
+                            기증희망등록 확인·변경·취소
+                          </a>
+                        </li>
+
+                        
+                        
+                        
+                      
+                    </ul>
+                  
+                </div>
+              </div>
+            
+          </li>
+        
+          <li class="header-menu-item">
+            <a class="gnb-link" href="/memorial/donors" id="gnb3">
+              추모공간
+            </a>
+
+            
+            
+            
+              <div class="sub-nav">
+                <div class="inner sub-nav-inner">
+                  
+                  
+                  
+                    <ul class="sub-nav-list">
+                      
+                      
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link sub-nav-title" href="/memorial/donors">
+                            기증자 추모관
+                          </a>
+                        </li>
+
+                        
+                        
+                        
+                      
+                    </ul>
+                  
+                    <ul class="sub-nav-list">
+                      
+                      
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link sub-nav-title" href="/memorial/donor-letters">
+                            하늘나라 편지
+                          </a>
+                        </li>
+
+                        
+                        
+                        
+                      
+                        
+                        <li class="sub-nav-item mt-16">
+                          <a class="sub-nav-link sub-nav-title" href="/memorial/recipient-letters">
+                            수혜자 편지
+                          </a>
+                        </li>
+
+                        
+                        
+                        
+                      
+                    </ul>
+                  
+                    <ul class="sub-nav-list">
+                      
+                      
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link sub-nav-title" href="/memorial/stories">
+                            기증 후 이야기
+                          </a>
+                        </li>
+
+                        
+                        
+                        
+                      
+                    </ul>
+                  
+                    <ul class="sub-nav-list">
+                      
+                      
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link sub-nav-title" href="/memorial/mail-box">
+                            희망우체통
+                          </a>
+                        </li>
+
+                        
+                        
+                        
+                      
+                    </ul>
+                  
+                </div>
+              </div>
+            
+          </li>
+        
+          <li class="header-menu-item">
+            <a class="gnb-link" href="/communication/notices" id="gnb4">
+              참여소통
+            </a>
+
+            
+            
+            
+              <div class="sub-nav">
+                <div class="inner sub-nav-inner">
+                  
+                  
+                  
+                    <ul class="sub-nav-list">
+                      
+                      
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link sub-nav-title" href="/communication/notices">
+                            공지사항
+                          </a>
+                        </li>
+
+                        
+                        
+                        
+                      
+                        
+                        <li class="sub-nav-item mt-16">
+                          <a class="sub-nav-link sub-nav-title" href="/communication/agency-schedules">
+                            기관일정
+                          </a>
+                        </li>
+
+                        
+                        
+                        
+                      
+                        
+                        <li class="sub-nav-item mt-16">
+                          <a class="sub-nav-link sub-nav-title" href="/communication/agency-events">
+                            기관행사
+                          </a>
+                        </li>
+
+                        
+                        
+                        
+                      
+                        
+                        <li class="sub-nav-item mt-16">
+                          <a class="sub-nav-link sub-nav-title" href="/communication/bid-notices">
+                            입찰안내
+                          </a>
+                        </li>
+
+                        
+                        
+                        
+                      
+                        
+                        <li class="sub-nav-item mt-16">
+                          <a class="sub-nav-link sub-nav-title" href="/communication/recruitments">
+                            채용안내
+                          </a>
+                        </li>
+
+                        
+                        
+                        
+                      
+                    </ul>
+                  
+                    <ul class="sub-nav-list">
+                      
+                      
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link sub-nav-title" href="/communication/people/complaints">
+                            국민소통
+                          </a>
+                        </li>
+
+                        
+                        
+                        
+                          <li class="sub-nav-item">
+                            <a class="sub-nav-link" href="/communication/people/complaints">
+                              민원신청
+                            </a>
+                          </li>
+                        
+                          <li class="sub-nav-item">
+                            <a class="sub-nav-link" href="/communication/people/faqs">
+                              자주 하는 질문
+                            </a>
+                          </li>
+                        
+                      
+                    </ul>
+                  
+                    <ul class="sub-nav-list">
+                      
+                      
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link sub-nav-title" href="/communication/participation/events">
+                            공모 · 참여
+                          </a>
+                        </li>
+
+                        
+                        
+                        
+                          <li class="sub-nav-item">
+                            <a class="sub-nav-link" href="/communication/participation/events">
+                              이벤트 소식
+                            </a>
+                          </li>
+                        
+                          <li class="sub-nav-item">
+                            <a class="sub-nav-link" href="/communication/guardian">
+                              생명나눔 가디언스
+                            </a>
+                          </li>
+                        
+                      
+                        
+                        <li class="sub-nav-item mt-16">
+                          <a class="sub-nav-link sub-nav-title" href="/communication/idea-suggestion">
+                            혁신 아이디어 제안
+                          </a>
+                        </li>
+
+                        
+                        
+                        
+                      
+                    </ul>
+                  
+                    <ul class="sub-nav-list">
+                      
+                      
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link sub-nav-title" href="/communication/honors-club/about">
+                            아너스클럽
+                          </a>
+                        </li>
+
+                        
+                        
+                        
+                          <li class="sub-nav-item">
+                            <a class="sub-nav-link" href="/communication/honors-club/about">
+                              기부안내
+                            </a>
+                          </li>
+                        
+                          <li class="sub-nav-item">
+                            <a class="sub-nav-link" href="/communication/honors-club/donation-news">
+                              기부소식
+                            </a>
+                          </li>
+                        
+                          <li class="sub-nav-item">
+                            <a class="sub-nav-link" href="/communication/honors-club/hall">
+                              명예의 전당
+                            </a>
+                          </li>
+                        
+                          <li class="sub-nav-item">
+                            <a class="sub-nav-link" href="/communication/honors-club/stories">
+                              나눔 후 이야기
+                            </a>
+                          </li>
+                        
+                      
+                    </ul>
+                  
+                </div>
+              </div>
+            
+          </li>
+        
+          <li class="header-menu-item">
+            <a class="gnb-link" href="/data/promotions/press" id="gnb5">
+              기관자료
+            </a>
+
+            
+            
+            
+              <div class="sub-nav">
+                <div class="inner sub-nav-inner">
+                  
+                  
+                  
+                    <ul class="sub-nav-list">
+                      
+                      
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link sub-nav-title" href="/data/promotions/press">
+                            홍보자료
+                          </a>
+                        </li>
+
+                        
+                        
+                        
+                          <li class="sub-nav-item">
+                            <a class="sub-nav-link" href="/data/promotions/press">
+                              보도자료
+                            </a>
+                          </li>
+                        
+                          <li class="sub-nav-item">
+                            <a class="sub-nav-link" href="/data/promotions/videos">
+                              영상
+                            </a>
+                          </li>
+                        
+                          <li class="sub-nav-item">
+                            <a class="sub-nav-link" href="/data/promotions/posters">
+                              홍보물
+                            </a>
+                          </li>
+                        
+                          <li class="sub-nav-item">
+                            <a class="sub-nav-link" href="/data/promotions/card-news">
+                              카드뉴스
+                            </a>
+                          </li>
+                        
+                          <li class="sub-nav-item">
+                            <a class="sub-nav-link" href="/data/promotions/character">
+                              캐릭터
+                            </a>
+                          </li>
+                        
+                          <li class="sub-nav-item">
+                            <a class="sub-nav-link" href="/data/promotions/song">
+                              로고송
+                            </a>
+                          </li>
+                        
+                      
+                    </ul>
+                  
+                    <ul class="sub-nav-list">
+                      
+                      
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link sub-nav-title" href="/data/statistics/donor">
+                            통계자료
+                          </a>
+                        </li>
+
+                        
+                        
+                        
+                          <li class="sub-nav-item">
+                            <a class="sub-nav-link" href="/data/statistics/donor">
+                              기증자 통계
+                            </a>
+                          </li>
+                        
+                          <li class="sub-nav-item">
+                            <a class="sub-nav-link" href="/data/statistics/trend">
+                              연도별 기증 추이
+                            </a>
+                          </li>
+                        
+                          <li class="sub-nav-item">
+                            <a class="sub-nav-link" href="/data/statistics/annual-reports">
+                              연간보고서
+                            </a>
+                          </li>
+                        
+                          <li class="sub-nav-item">
+                            <a class="sub-nav-link" href="/data/statistics/brain-death-reports">
+                              의료기관 뇌사추정자 신고현황
+                            </a>
+                          </li>
+                        
+                      
+                    </ul>
+                  
+                </div>
+              </div>
+            
+          </li>
+        
+          <li class="header-menu-item">
+            <a class="gnb-link" href="/open-info/about" id="gnb6">
+              정보공개
+            </a>
+
+            
+            
+            
+              <div class="sub-nav">
+                <div class="inner sub-nav-inner">
+                  
+                  
+                  
+                    <ul class="sub-nav-list">
+                      
+                      
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link sub-nav-title" href="/open-info/about">
+                            정보공개 제도
+                          </a>
+                        </li>
+
+                        
+                        
+                        
+                      
+                        
+                        <li class="sub-nav-item mt-16">
+                          <a class="sub-nav-link sub-nav-title" href="/open-info/records">
+                            사전정보공표
+                          </a>
+                        </li>
+
+                        
+                        
+                        
+                      
+                        
+                        <li class="sub-nav-item mt-16">
+                          <a class="sub-nav-link sub-nav-title" href="/open-info/real-name">
+                            사업실명제
+                          </a>
+                        </li>
+
+                        
+                        
+                        
+                      
+                    </ul>
+                  
+                    <ul class="sub-nav-list">
+                      
+                      
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link sub-nav-title" href="/open-info/official-notice">
+                            경영공시
+                          </a>
+                        </li>
+
+                        
+                        
+                        
+                      
+                        
+                        <li class="sub-nav-item mt-16">
+                          <a class="sub-nav-link sub-nav-title" href="/open-info/active-gov">
+                            적극행정
+                          </a>
+                        </li>
+
+                        
+                        
+                        
+                      
+                        
+                        <li class="sub-nav-item mt-16">
+                          <a class="sub-nav-link sub-nav-title" href="/open-info/open-data">
+                            공공데이터 개방
+                          </a>
+                        </li>
+
+                        
+                        
+                        
+                      
+                    </ul>
+                  
+                    <ul class="sub-nav-list">
+                      
+                      
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link sub-nav-title" href="/open-info/public-license">
+                            공공누리
+                          </a>
+                        </li>
+
+                        
+                        
+                        
+                      
+                        
+                        <li class="sub-nav-item mt-16">
+                          <a class="sub-nav-link sub-nav-title" href="/open-info/privacy">
+                            개인정보보호
+                          </a>
+                        </li>
+
+                        
+                        
+                        
+                      
+                    </ul>
+                  
+                </div>
+              </div>
+            
+          </li>
+        
+          <li class="header-menu-item">
+            <a class="gnb-link" href="/agency/intro/about" id="gnb7">
+              기관소개
+            </a>
+
+            
+            
+            
+              <div class="sub-nav">
+                <div class="inner sub-nav-inner">
+                  
+                  
+                  
+                    <ul class="sub-nav-list">
+                      
+                      
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link sub-nav-title" href="/agency/intro/about">
+                            KODA 소개
+                          </a>
+                        </li>
+
+                        
+                        
+                        
+                          <li class="sub-nav-item">
+                            <a class="sub-nav-link" href="/agency/intro/about">
+                              설립목적
+                            </a>
+                          </li>
+                        
+                          <li class="sub-nav-item">
+                            <a class="sub-nav-link" href="/agency/intro/history">
+                              기관연혁
+                            </a>
+                          </li>
+                        
+                          <li class="sub-nav-item">
+                            <a class="sub-nav-link" href="/agency/intro/strategy">
+                              경영전략
+                            </a>
+                          </li>
+                        
+                          <li class="sub-nav-item">
+                            <a class="sub-nav-link" href="/agency/intro/ci">
+                              CI 로고
+                            </a>
+                          </li>
+                        
+                      
+                    </ul>
+                  
+                    <ul class="sub-nav-list">
+                      
+                      
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link sub-nav-title" href="/agency/director/greeting">
+                            원장소개
+                          </a>
+                        </li>
+
+                        
+                        
+                        
+                          <li class="sub-nav-item">
+                            <a class="sub-nav-link" href="/agency/director/greeting">
+                              인사말
+                            </a>
+                          </li>
+                        
+                          <li class="sub-nav-item">
+                            <a class="sub-nav-link" href="/agency/director/history">
+                              원장약력
+                            </a>
+                          </li>
+                        
+                          <li class="sub-nav-item">
+                            <a class="sub-nav-link" href="/agency/director/schedule">
+                              원장일정
+                            </a>
+                          </li>
+                        
+                          <li class="sub-nav-item">
+                            <a class="sub-nav-link" href="/agency/director/previous">
+                              역대원장
+                            </a>
+                          </li>
+                        
+                      
+                    </ul>
+                  
+                    <ul class="sub-nav-list">
+                      
+                      
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link sub-nav-title" href="/agency/organization">
+                            조직 안내
+                          </a>
+                        </li>
+
+                        
+                        
+                        
+                      
+                        
+                        <li class="sub-nav-item mt-16">
+                          <a class="sub-nav-link sub-nav-title" href="/agency/commercial">
+                            홍보대사
+                          </a>
+                        </li>
+
+                        
+                        
+                        
+                      
+                        
+                        <li class="sub-nav-item mt-16">
+                          <a class="sub-nav-link sub-nav-title" href="/agency/management/human-rights">
+                            인권 · 윤리 경영
+                          </a>
+                        </li>
+
+                        
+                        
+                        
+                          <li class="sub-nav-item">
+                            <a class="sub-nav-link" href="/agency/management/human-rights">
+                              인권경영
+                            </a>
+                          </li>
+                        
+                          <li class="sub-nav-item">
+                            <a class="sub-nav-link" href="/agency/management/ethics">
+                              윤리경영
+                            </a>
+                          </li>
+                        
+                          <li class="sub-nav-item">
+                            <a class="sub-nav-link" href="/agency/management/board">
+                              인권 · 윤리경영 게시판
+                            </a>
+                          </li>
+                        
+                          <li class="sub-nav-item">
+                            <a class="sub-nav-link" href="/agency/management/ethics-report">
+                              클린신고센터
+                            </a>
+                          </li>
+                        
+                      
+                    </ul>
+                  
+                    <ul class="sub-nav-list">
+                      
+                      
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link sub-nav-title" href="/agency/safety-health">
+                            안전 · 보건 경영
+                          </a>
+                        </li>
+
+                        
+                        
+                        
+                      
+                        
+                        <li class="sub-nav-item mt-16">
+                          <a class="sub-nav-link sub-nav-title" href="/agency/location">
+                            오시는 길
+                          </a>
+                        </li>
+
+                        
+                        
+                        
+                      
+                    </ul>
+                  
+                </div>
+              </div>
+            
+          </li>
+        
+      </ul>
+      <div class="box-btn g-24">
+        <div class="search-area-wrap">
+          <div class="btn header-btn" id="search-btn">
+            <a href="/english" class="krds-btn xsmall tertiary" style="gap: 5px"><i class="svg-icon ico-global" aria-hidden="true"></i>ENGLISH</a>
+          </div>
+        </div>
+        <div class="all-menu-wrap" id="all-menu-wrap">
+          <button class="btn header-btn" aria-expanded="false" aria-controls="all-menu-subnav" aria-label="전체메뉴 열기">
+            <span class="sr-only">전체메뉴</span>
+            <i class="svg-icon ico-all" aria-hidden="true"></i>
+          </button>
+          <button type="button" class="btn header-btn all-menu-close" aria-label="전체메뉴 닫기" style="display: none;">
+            <span class="sr-only">닫기</span>
+            <i class="svg-icon ico-popup-close" aria-hidden="true"></i>
+          </button>
+          
+          <div class="sub-nav" id="all-menu-subnav" aria-hidden="true" role="region" aria-label="전체 메뉴">
+            <div class="inner sub-nav-inner">
+               
+               
+               
+                 <ul class="sub-nav-list">
+                  
+                  
+                    
+                    
+
+                    
+                    
+                    <li class="sub-nav-item">
+                      <a class="sub-nav-link sub-nav-title-big" href="/major-business/donation/organ">
+                        주요업무
+                      </a>
+                    </li>
+
+                    
+                    
+                    
+                      
+                      
+                      
+                      
+                      
+
+                      
+                      
+                      
+                      
+                      
+                      
+                      <li class="sub-nav-item">
+                        <a class="sub-nav-link sub-nav-title" href="/major-business/donation/organ">
+                          장기 · 조직기증
+                        </a>
+                      </li>
+
+                      
+                      
+                        
+                        
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link" href="/major-business/donation/organ">
+                            장기기증
+                          </a>
+                        </li>
+                      
+                        
+                        
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link" href="/major-business/donation/tissue">
+                            조직기증
+                          </a>
+                        </li>
+                      
+                        
+                        
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link" href="/major-business/donation/notification-center">
+                            장기조직통보센터
+                          </a>
+                        </li>
+                      
+                        
+                        
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link" href="/major-business/donation/opc">
+                            장기조직구득코디네이터(OPC)
+                          </a>
+                        </li>
+                      
+                        
+                        
+                        
+                          
+                            
+                            
+                            
+                            
+                              
+                            
+                          
+                        
+                        <li class="sub-nav-item mb-16">
+                          <a class="sub-nav-link" href="/major-business/donation/term">
+                            기증 용어 사전
+                          </a>
+                        </li>
+                      
+                    
+                      
+                      
+                      
+                      
+                      
+
+                      
+                      
+                      
+                      
+                        
+                      
+                      
+                      
+                      <li class="sub-nav-item mt-16">
+                        <a class="sub-nav-link sub-nav-title" href="/major-business/contract/medical">
+                          협약업무
+                        </a>
+                      </li>
+
+                      
+                      
+                        
+                        
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link" href="/major-business/contract/medical">
+                            뇌사자 관리업무 협약기관
+                          </a>
+                        </li>
+                      
+                        
+                        
+                        
+                          
+                            
+                            
+                            
+                            
+                              
+                            
+                          
+                        
+                        <li class="sub-nav-item mb-16">
+                          <a class="sub-nav-link" href="/major-business/contract/dip">
+                            기증 활성화 프로그램 협약기관
+                          </a>
+                        </li>
+                      
+                    
+                      
+                      
+                      
+                      
+                      
+
+                      
+                      
+                      
+                      
+                        
+                      
+                      
+                      
+                        
+                          
+                          
+                          
+                          
+                            
+                          
+                        
+                      
+                      <li class="sub-nav-item mt-16 mb-16">
+                        <a class="sub-nav-link sub-nav-title" href="/major-business/promotion">
+                          기증 활성화 프로그램
+                        </a>
+                      </li>
+
+                      
+                      
+                    
+                      
+                      
+                      
+                      
+                      
+
+                      
+                      
+                      
+                      
+                        
+                      
+                      
+                      
+                      <li class="sub-nav-item mt-16">
+                        <a class="sub-nav-link sub-nav-title" href="/major-business/donor/support">
+                          기증자 예우
+                        </a>
+                      </li>
+
+                      
+                      
+                        
+                        
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link" href="/major-business/donor/support">
+                            기증자 예우 · 유가족 지원
+                          </a>
+                        </li>
+                      
+                        
+                        
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link" href="/major-business/donor/event-info">
+                            기증자 기념행사 · 유가족 모임
+                          </a>
+                        </li>
+                      
+                        
+                        
+                        
+                          
+                            
+                            
+                            
+                            
+                              
+                            
+                          
+                        
+                        <li class="sub-nav-item mb-16">
+                          <a class="sub-nav-link" href="/major-business/donor/events">
+                            행사 소식
+                          </a>
+                        </li>
+                      
+                    
+                      
+                      
+                      
+                      
+                      
+
+                      
+                      
+                      
+                      
+                        
+                      
+                      
+                      
+                      <li class="sub-nav-item mt-16">
+                        <a class="sub-nav-link sub-nav-title" href="/major-business/education">
+                          생명나눔교육
+                        </a>
+                      </li>
+
+                      
+                      
+                        
+                        
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link" href="/major-business/education">
+                            교육 안내
+                          </a>
+                        </li>
+                      
+                        
+                        
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link" href="/major-business/education/schedule">
+                            교육 일정
+                          </a>
+                        </li>
+                      
+                        
+                        
+                        
+                          
+                            
+                            
+                            
+                            
+                              
+                            
+                          
+                        
+                        <li class="sub-nav-item mb-16">
+                          <a class="sub-nav-link" href="/major-business/education/apply">
+                            교육 신청
+                          </a>
+                        </li>
+                      
+                    
+                      
+                      
+                      
+                      
+                      
+
+                      
+                      
+                      
+                      
+                        
+                      
+                      
+                      
+                      <li class="sub-nav-item mt-16">
+                        <a class="sub-nav-link sub-nav-title" href="/major-business/lab/about">
+                          KODA LAB
+                        </a>
+                      </li>
+
+                      
+                      
+                        
+                        
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link" href="/major-business/lab/about">
+                            검사실 소개
+                          </a>
+                        </li>
+                      
+                        
+                        
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link" href="/major-business/lab/tests">
+                            검사 안내
+                          </a>
+                        </li>
+                      
+                        
+                        
+                        
+                          
+                            
+                            
+                            
+                            
+                          
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link" href="/major-business/lab/resources">
+                            자료실
+                          </a>
+                        </li>
+                      
+                    
+                  
+                </ul>
+              
+                 <ul class="sub-nav-list">
+                  
+                  
+                    
+                    
+
+                    
+                    
+                    <li class="sub-nav-item">
+                      <a class="sub-nav-link sub-nav-title-big" href="/donor-register/about">
+                        기증희망등록
+                      </a>
+                    </li>
+
+                    
+                    
+                    
+                      
+                      
+                      
+                      
+                      
+
+                      
+                      
+                      
+                      
+                      
+                      
+                        
+                          
+                          
+                          
+                          
+                            
+                          
+                        
+                      
+                      <li class="sub-nav-item mb-16">
+                        <a class="sub-nav-link sub-nav-title" href="/donor-register/about">
+                          기증희망등록 방법 안내
+                        </a>
+                      </li>
+
+                      
+                      
+                    
+                      
+                      
+                      
+                      
+                      
+
+                      
+                      
+                      
+                      
+                        
+                      
+                      
+                      
+                        
+                          
+                          
+                          
+                          
+                            
+                          
+                        
+                      
+                      <li class="sub-nav-item mt-16 mb-16">
+                        <a class="sub-nav-link sub-nav-title" href="/donor-register/online">
+                          기증희망등록 온라인 신청
+                        </a>
+                      </li>
+
+                      
+                      
+                    
+                      
+                      
+                      
+                      
+                      
+
+                      
+                      
+                      
+                      
+                        
+                      
+                      
+                      
+                        
+                          
+                          
+                            
+                          
+                          
+                          
+                        
+                      
+                      <li class="sub-nav-item mt-16 mb-36">
+                        <a class="sub-nav-link sub-nav-title" href="/donor-register/check">
+                          기증희망등록 확인·변경·취소
+                        </a>
+                      </li>
+
+                      
+                      
+                    
+                  
+                    
+                    
+
+                    
+                    
+                    <li class="sub-nav-item mt-36">
+                      <a class="sub-nav-link sub-nav-title-big" href="/memorial/donors">
+                        추모공간
+                      </a>
+                    </li>
+
+                    
+                    
+                    
+                      
+                      
+                      
+                      
+                      
+
+                      
+                      
+                      
+                      
+                      
+                      
+                        
+                          
+                          
+                          
+                          
+                            
+                          
+                        
+                      
+                      <li class="sub-nav-item mb-16">
+                        <a class="sub-nav-link sub-nav-title" href="/memorial/donors">
+                          기증자 추모관
+                        </a>
+                      </li>
+
+                      
+                      
+                    
+                      
+                      
+                      
+                      
+                      
+
+                      
+                      
+                      
+                      
+                        
+                      
+                      
+                      
+                        
+                          
+                          
+                          
+                          
+                            
+                          
+                        
+                      
+                      <li class="sub-nav-item mt-16 mb-16">
+                        <a class="sub-nav-link sub-nav-title" href="/memorial/donor-letters">
+                          하늘나라 편지
+                        </a>
+                      </li>
+
+                      
+                      
+                    
+                      
+                      
+                      
+                      
+                      
+
+                      
+                      
+                      
+                      
+                        
+                      
+                      
+                      
+                        
+                          
+                          
+                          
+                          
+                            
+                          
+                        
+                      
+                      <li class="sub-nav-item mt-16 mb-16">
+                        <a class="sub-nav-link sub-nav-title" href="/memorial/recipient-letters">
+                          수혜자 편지
+                        </a>
+                      </li>
+
+                      
+                      
+                    
+                      
+                      
+                      
+                      
+                      
+
+                      
+                      
+                      
+                      
+                        
+                      
+                      
+                      
+                        
+                          
+                          
+                          
+                          
+                            
+                          
+                        
+                      
+                      <li class="sub-nav-item mt-16 mb-16">
+                        <a class="sub-nav-link sub-nav-title" href="/memorial/stories">
+                          기증 후 이야기
+                        </a>
+                      </li>
+
+                      
+                      
+                    
+                      
+                      
+                      
+                      
+                      
+
+                      
+                      
+                      
+                      
+                        
+                      
+                      
+                      
+                        
+                          
+                          
+                          
+                          
+                        
+                      
+                      <li class="sub-nav-item mt-16">
+                        <a class="sub-nav-link sub-nav-title" href="/memorial/mail-box">
+                          희망우체통
+                        </a>
+                      </li>
+
+                      
+                      
+                    
+                  
+                </ul>
+              
+                 <ul class="sub-nav-list">
+                  
+                  
+                    
+                    
+
+                    
+                    
+                    <li class="sub-nav-item">
+                      <a class="sub-nav-link sub-nav-title-big" href="/communication/notices">
+                        참여소통
+                      </a>
+                    </li>
+
+                    
+                    
+                    
+                      
+                      
+                      
+                      
+                      
+
+                      
+                      
+                      
+                      
+                      
+                      
+                        
+                          
+                          
+                          
+                          
+                            
+                          
+                        
+                      
+                      <li class="sub-nav-item mb-16">
+                        <a class="sub-nav-link sub-nav-title" href="/communication/notices">
+                          공지사항
+                        </a>
+                      </li>
+
+                      
+                      
+                    
+                      
+                      
+                      
+                      
+                      
+
+                      
+                      
+                      
+                      
+                        
+                      
+                      
+                      
+                        
+                          
+                          
+                          
+                          
+                            
+                          
+                        
+                      
+                      <li class="sub-nav-item mt-16 mb-16">
+                        <a class="sub-nav-link sub-nav-title" href="/communication/agency-schedules">
+                          기관일정
+                        </a>
+                      </li>
+
+                      
+                      
+                    
+                      
+                      
+                      
+                      
+                      
+
+                      
+                      
+                      
+                      
+                        
+                      
+                      
+                      
+                        
+                          
+                          
+                          
+                          
+                            
+                          
+                        
+                      
+                      <li class="sub-nav-item mt-16 mb-16">
+                        <a class="sub-nav-link sub-nav-title" href="/communication/agency-events">
+                          기관행사
+                        </a>
+                      </li>
+
+                      
+                      
+                    
+                      
+                      
+                      
+                      
+                      
+
+                      
+                      
+                      
+                      
+                        
+                      
+                      
+                      
+                        
+                          
+                          
+                          
+                          
+                            
+                          
+                        
+                      
+                      <li class="sub-nav-item mt-16 mb-16">
+                        <a class="sub-nav-link sub-nav-title" href="/communication/bid-notices">
+                          입찰안내
+                        </a>
+                      </li>
+
+                      
+                      
+                    
+                      
+                      
+                      
+                      
+                      
+
+                      
+                      
+                      
+                      
+                        
+                      
+                      
+                      
+                        
+                          
+                          
+                          
+                          
+                            
+                          
+                        
+                      
+                      <li class="sub-nav-item mt-16 mb-16">
+                        <a class="sub-nav-link sub-nav-title" href="/communication/recruitments">
+                          채용안내
+                        </a>
+                      </li>
+
+                      
+                      
+                    
+                      
+                      
+                      
+                      
+                      
+
+                      
+                      
+                      
+                      
+                        
+                      
+                      
+                      
+                      <li class="sub-nav-item mt-16">
+                        <a class="sub-nav-link sub-nav-title" href="/communication/people/complaints">
+                          국민소통
+                        </a>
+                      </li>
+
+                      
+                      
+                        
+                        
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link" href="/communication/people/complaints">
+                            민원신청
+                          </a>
+                        </li>
+                      
+                        
+                        
+                        
+                          
+                            
+                            
+                            
+                            
+                              
+                            
+                          
+                        
+                        <li class="sub-nav-item mb-16">
+                          <a class="sub-nav-link" href="/communication/people/faqs">
+                            자주 하는 질문
+                          </a>
+                        </li>
+                      
+                    
+                      
+                      
+                      
+                      
+                      
+
+                      
+                      
+                      
+                      
+                        
+                      
+                      
+                      
+                      <li class="sub-nav-item mt-16">
+                        <a class="sub-nav-link sub-nav-title" href="/communication/participation/events">
+                          공모 · 참여
+                        </a>
+                      </li>
+
+                      
+                      
+                        
+                        
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link" href="/communication/participation/events">
+                            이벤트 소식
+                          </a>
+                        </li>
+                      
+                        
+                        
+                        
+                          
+                            
+                            
+                            
+                            
+                              
+                            
+                          
+                        
+                        <li class="sub-nav-item mb-16">
+                          <a class="sub-nav-link" href="/communication/guardian">
+                            생명나눔 가디언스
+                          </a>
+                        </li>
+                      
+                    
+                      
+                      
+                      
+                      
+                      
+
+                      
+                      
+                      
+                      
+                        
+                      
+                      
+                      
+                        
+                          
+                          
+                          
+                          
+                            
+                          
+                        
+                      
+                      <li class="sub-nav-item mt-16 mb-16">
+                        <a class="sub-nav-link sub-nav-title" href="/communication/idea-suggestion">
+                          혁신 아이디어 제안
+                        </a>
+                      </li>
+
+                      
+                      
+                    
+                      
+                      
+                      
+                      
+                      
+
+                      
+                      
+                      
+                      
+                        
+                      
+                      
+                      
+                      <li class="sub-nav-item mt-16">
+                        <a class="sub-nav-link sub-nav-title" href="/communication/honors-club/about">
+                          아너스클럽
+                        </a>
+                      </li>
+
+                      
+                      
+                        
+                        
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link" href="/communication/honors-club/about">
+                            기부안내
+                          </a>
+                        </li>
+                      
+                        
+                        
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link" href="/communication/honors-club/donation-news">
+                            기부소식
+                          </a>
+                        </li>
+                      
+                        
+                        
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link" href="/communication/honors-club/hall">
+                            명예의 전당
+                          </a>
+                        </li>
+                      
+                        
+                        
+                        
+                          
+                            
+                            
+                            
+                            
+                          
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link" href="/communication/honors-club/stories">
+                            나눔 후 이야기
+                          </a>
+                        </li>
+                      
+                    
+                  
+                </ul>
+              
+                 <ul class="sub-nav-list">
+                  
+                  
+                    
+                    
+
+                    
+                    
+                    <li class="sub-nav-item">
+                      <a class="sub-nav-link sub-nav-title-big" href="/data/promotions/press">
+                        기관자료
+                      </a>
+                    </li>
+
+                    
+                    
+                    
+                      
+                      
+                      
+                      
+                      
+
+                      
+                      
+                      
+                      
+                      
+                      
+                      <li class="sub-nav-item">
+                        <a class="sub-nav-link sub-nav-title" href="/data/promotions/press">
+                          홍보자료
+                        </a>
+                      </li>
+
+                      
+                      
+                        
+                        
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link" href="/data/promotions/press">
+                            보도자료
+                          </a>
+                        </li>
+                      
+                        
+                        
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link" href="/data/promotions/videos">
+                            영상
+                          </a>
+                        </li>
+                      
+                        
+                        
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link" href="/data/promotions/posters">
+                            홍보물
+                          </a>
+                        </li>
+                      
+                        
+                        
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link" href="/data/promotions/card-news">
+                            카드뉴스
+                          </a>
+                        </li>
+                      
+                        
+                        
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link" href="/data/promotions/character">
+                            캐릭터
+                          </a>
+                        </li>
+                      
+                        
+                        
+                        
+                          
+                            
+                            
+                            
+                            
+                              
+                            
+                          
+                        
+                        <li class="sub-nav-item mb-16">
+                          <a class="sub-nav-link" href="/data/promotions/song">
+                            로고송
+                          </a>
+                        </li>
+                      
+                    
+                      
+                      
+                      
+                      
+                      
+
+                      
+                      
+                      
+                      
+                        
+                      
+                      
+                      
+                      <li class="sub-nav-item mt-16">
+                        <a class="sub-nav-link sub-nav-title" href="/data/statistics/donor">
+                          통계자료
+                        </a>
+                      </li>
+
+                      
+                      
+                        
+                        
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link" href="/data/statistics/donor">
+                            기증자 통계
+                          </a>
+                        </li>
+                      
+                        
+                        
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link" href="/data/statistics/trend">
+                            연도별 기증 추이
+                          </a>
+                        </li>
+                      
+                        
+                        
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link" href="/data/statistics/annual-reports">
+                            연간보고서
+                          </a>
+                        </li>
+                      
+                        
+                        
+                        
+                          
+                            
+                            
+                            
+                            
+                          
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link" href="/data/statistics/brain-death-reports">
+                            의료기관 뇌사추정자 신고현황
+                          </a>
+                        </li>
+                      
+                    
+                  
+                </ul>
+              
+                 <ul class="sub-nav-list">
+                  
+                  
+                    
+                    
+
+                    
+                    
+                    <li class="sub-nav-item">
+                      <a class="sub-nav-link sub-nav-title-big" href="/open-info/about">
+                        정보공개
+                      </a>
+                    </li>
+
+                    
+                    
+                    
+                      
+                      
+                      
+                      
+                      
+
+                      
+                      
+                      
+                      
+                      
+                      
+                        
+                          
+                          
+                          
+                          
+                            
+                          
+                        
+                      
+                      <li class="sub-nav-item mb-16">
+                        <a class="sub-nav-link sub-nav-title" href="/open-info/about">
+                          정보공개 제도
+                        </a>
+                      </li>
+
+                      
+                      
+                    
+                      
+                      
+                      
+                      
+                      
+
+                      
+                      
+                      
+                      
+                        
+                      
+                      
+                      
+                        
+                          
+                          
+                          
+                          
+                            
+                          
+                        
+                      
+                      <li class="sub-nav-item mt-16 mb-16">
+                        <a class="sub-nav-link sub-nav-title" href="/open-info/records">
+                          사전정보공표
+                        </a>
+                      </li>
+
+                      
+                      
+                    
+                      
+                      
+                      
+                      
+                      
+
+                      
+                      
+                      
+                      
+                        
+                      
+                      
+                      
+                        
+                          
+                          
+                          
+                          
+                            
+                          
+                        
+                      
+                      <li class="sub-nav-item mt-16 mb-16">
+                        <a class="sub-nav-link sub-nav-title" href="/open-info/real-name">
+                          사업실명제
+                        </a>
+                      </li>
+
+                      
+                      
+                    
+                      
+                      
+                      
+                      
+                      
+
+                      
+                      
+                      
+                      
+                        
+                      
+                      
+                      
+                        
+                          
+                          
+                          
+                          
+                            
+                          
+                        
+                      
+                      <li class="sub-nav-item mt-16 mb-16">
+                        <a class="sub-nav-link sub-nav-title" href="/open-info/official-notice">
+                          경영공시
+                        </a>
+                      </li>
+
+                      
+                      
+                    
+                      
+                      
+                      
+                      
+                      
+
+                      
+                      
+                      
+                      
+                        
+                      
+                      
+                      
+                        
+                          
+                          
+                          
+                          
+                            
+                          
+                        
+                      
+                      <li class="sub-nav-item mt-16 mb-16">
+                        <a class="sub-nav-link sub-nav-title" href="/open-info/active-gov">
+                          적극행정
+                        </a>
+                      </li>
+
+                      
+                      
+                    
+                      
+                      
+                      
+                      
+                      
+
+                      
+                      
+                      
+                      
+                        
+                      
+                      
+                      
+                        
+                          
+                          
+                          
+                          
+                            
+                          
+                        
+                      
+                      <li class="sub-nav-item mt-16 mb-16">
+                        <a class="sub-nav-link sub-nav-title" href="/open-info/open-data">
+                          공공데이터 개방
+                        </a>
+                      </li>
+
+                      
+                      
+                    
+                      
+                      
+                      
+                      
+                      
+
+                      
+                      
+                      
+                      
+                        
+                      
+                      
+                      
+                        
+                          
+                          
+                          
+                          
+                            
+                          
+                        
+                      
+                      <li class="sub-nav-item mt-16 mb-16">
+                        <a class="sub-nav-link sub-nav-title" href="/open-info/public-license">
+                          공공누리
+                        </a>
+                      </li>
+
+                      
+                      
+                    
+                      
+                      
+                      
+                      
+                      
+
+                      
+                      
+                      
+                      
+                        
+                      
+                      
+                      
+                        
+                          
+                          
+                          
+                          
+                        
+                      
+                      <li class="sub-nav-item mt-16">
+                        <a class="sub-nav-link sub-nav-title" href="/open-info/privacy">
+                          개인정보보호
+                        </a>
+                      </li>
+
+                      
+                      
+                    
+                  
+                </ul>
+              
+                 <ul class="sub-nav-list">
+                  
+                  
+                    
+                    
+
+                    
+                    
+                    <li class="sub-nav-item">
+                      <a class="sub-nav-link sub-nav-title-big" href="/agency/intro/about">
+                        기관소개
+                      </a>
+                    </li>
+
+                    
+                    
+                    
+                      
+                      
+                      
+                      
+                      
+
+                      
+                      
+                      
+                      
+                      
+                      
+                      <li class="sub-nav-item">
+                        <a class="sub-nav-link sub-nav-title" href="/agency/intro/about">
+                          KODA 소개
+                        </a>
+                      </li>
+
+                      
+                      
+                        
+                        
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link" href="/agency/intro/about">
+                            설립목적
+                          </a>
+                        </li>
+                      
+                        
+                        
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link" href="/agency/intro/history">
+                            기관연혁
+                          </a>
+                        </li>
+                      
+                        
+                        
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link" href="/agency/intro/strategy">
+                            경영전략
+                          </a>
+                        </li>
+                      
+                        
+                        
+                        
+                          
+                            
+                            
+                            
+                            
+                              
+                            
+                          
+                        
+                        <li class="sub-nav-item mb-16">
+                          <a class="sub-nav-link" href="/agency/intro/ci">
+                            CI 로고
+                          </a>
+                        </li>
+                      
+                    
+                      
+                      
+                      
+                      
+                      
+
+                      
+                      
+                      
+                      
+                        
+                      
+                      
+                      
+                      <li class="sub-nav-item mt-16">
+                        <a class="sub-nav-link sub-nav-title" href="/agency/director/greeting">
+                          원장소개
+                        </a>
+                      </li>
+
+                      
+                      
+                        
+                        
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link" href="/agency/director/greeting">
+                            인사말
+                          </a>
+                        </li>
+                      
+                        
+                        
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link" href="/agency/director/history">
+                            원장약력
+                          </a>
+                        </li>
+                      
+                        
+                        
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link" href="/agency/director/schedule">
+                            원장일정
+                          </a>
+                        </li>
+                      
+                        
+                        
+                        
+                          
+                            
+                            
+                            
+                            
+                              
+                            
+                          
+                        
+                        <li class="sub-nav-item mb-16">
+                          <a class="sub-nav-link" href="/agency/director/previous">
+                            역대원장
+                          </a>
+                        </li>
+                      
+                    
+                      
+                      
+                      
+                      
+                      
+
+                      
+                      
+                      
+                      
+                        
+                      
+                      
+                      
+                        
+                          
+                          
+                          
+                          
+                            
+                          
+                        
+                      
+                      <li class="sub-nav-item mt-16 mb-16">
+                        <a class="sub-nav-link sub-nav-title" href="/agency/organization">
+                          조직 안내
+                        </a>
+                      </li>
+
+                      
+                      
+                    
+                      
+                      
+                      
+                      
+                      
+
+                      
+                      
+                      
+                      
+                        
+                      
+                      
+                      
+                        
+                          
+                          
+                          
+                          
+                            
+                          
+                        
+                      
+                      <li class="sub-nav-item mt-16 mb-16">
+                        <a class="sub-nav-link sub-nav-title" href="/agency/commercial">
+                          홍보대사
+                        </a>
+                      </li>
+
+                      
+                      
+                    
+                      
+                      
+                      
+                      
+                      
+
+                      
+                      
+                      
+                      
+                        
+                      
+                      
+                      
+                      <li class="sub-nav-item mt-16">
+                        <a class="sub-nav-link sub-nav-title" href="/agency/management/human-rights">
+                          인권 · 윤리 경영
+                        </a>
+                      </li>
+
+                      
+                      
+                        
+                        
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link" href="/agency/management/human-rights">
+                            인권경영
+                          </a>
+                        </li>
+                      
+                        
+                        
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link" href="/agency/management/ethics">
+                            윤리경영
+                          </a>
+                        </li>
+                      
+                        
+                        
+                        
+                        <li class="sub-nav-item">
+                          <a class="sub-nav-link" href="/agency/management/board">
+                            인권 · 윤리경영 게시판
+                          </a>
+                        </li>
+                      
+                        
+                        
+                        
+                          
+                            
+                            
+                            
+                            
+                              
+                            
+                          
+                        
+                        <li class="sub-nav-item mb-16">
+                          <a class="sub-nav-link" href="/agency/management/ethics-report">
+                            클린신고센터
+                          </a>
+                        </li>
+                      
+                    
+                      
+                      
+                      
+                      
+                      
+
+                      
+                      
+                      
+                      
+                        
+                      
+                      
+                      
+                        
+                          
+                          
+                          
+                          
+                            
+                          
+                        
+                      
+                      <li class="sub-nav-item mt-16 mb-16">
+                        <a class="sub-nav-link sub-nav-title" href="/agency/safety-health">
+                          안전 · 보건 경영
+                        </a>
+                      </li>
+
+                      
+                      
+                    
+                      
+                      
+                      
+                      
+                      
+
+                      
+                      
+                      
+                      
+                        
+                      
+                      
+                      
+                        
+                          
+                          
+                          
+                          
+                        
+                      
+                      <li class="sub-nav-item mt-16">
+                        <a class="sub-nav-link sub-nav-title" href="/agency/location">
+                          오시는 길
+                        </a>
+                      </li>
+
+                      
+                      
+                    
+                  
+                </ul>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<script>
+  // 전체메뉴 접근성 개선: aria-expanded / aria-hidden 동기화, 포커스 관리, Esc 닫기
+  (function() {
+    const allMenuWrap = document.getElementById('all-menu-wrap');
+    const toggleBtn = allMenuWrap ? allMenuWrap.querySelector('button.header-btn:not(.all-menu-close)') : null;
+    const closeBtn = allMenuWrap ? allMenuWrap.querySelector('button.all-menu-close') : null;
+    const panel = document.getElementById('all-menu-subnav');
+
+      function getFocusable() {
+          return Array.from(
+              allMenuWrap.querySelectorAll(
+                  'button.all-menu-close, a[href], button:not([disabled]), input, [tabindex]:not([tabindex="-1"])'
+              )
+          ).filter(el => {
+              return el.offsetParent !== null;
+          });
+      }
+
+      let isTrapBound = false;
+
+      function trapFocus() {
+          if (isTrapBound) return;
+          isTrapBound = true;
+
+          document.addEventListener('keydown', handleTrap);
+      }
+
+      function releaseTrap() {
+          document.removeEventListener('keydown', handleTrap);
+          isTrapBound = false;
+      }
+
+      function handleTrap(e) {
+          if (e.key !== 'Tab') return;
+          if (panel.getAttribute('aria-hidden') === 'true') return;
+
+          const focusable = getFocusable();
+          if (!focusable.length) return;
+
+          const first = focusable[0];
+          const last  = focusable[focusable.length - 1];
+
+          if (e.shiftKey) {
+              if (document.activeElement === first) {
+                  e.preventDefault();
+                  last.focus();
+              }
+          } else {
+              if (document.activeElement === last) {
+                  e.preventDefault();
+                  first.focus();
+              }
+          }
+      }
+
+
+      function openPanel() {
+      if (!allMenuWrap || !toggleBtn || !panel || !closeBtn) return;
+      allMenuWrap.classList.add('active');
+      document.body.classList.add('no-scroll');
+      toggleBtn.setAttribute('aria-expanded', 'true');
+      panel.setAttribute('aria-hidden', 'false');
+
+      // 토글 버튼 숨기고 닫기 버튼 표시
+      toggleBtn.style.display = 'none';
+      closeBtn.style.display = '';
+
+      // 포커스 가능한 첫 요소로 포커스 이동
+      // const first = panel.querySelector('a, button, input, [tabindex]:not([tabindex="-1"])');
+      // if (first) first.focus();
+      // else {
+      //   panel.setAttribute('tabindex', '-1');
+      //   panel.focus();
+      // }
+
+      closeBtn.focus();
+
+      trapFocus(allMenuWrap);
+    }
+
+    function closePanel() {
+      if (!allMenuWrap || !toggleBtn || !panel || !closeBtn) return;
+      allMenuWrap.classList.remove('active');
+      document.body.classList.remove('no-scroll');
+      toggleBtn.setAttribute('aria-expanded', 'false');
+      panel.setAttribute('aria-hidden', 'true');
+      if (panel.hasAttribute('tabindex')) panel.removeAttribute('tabindex');
+
+      // 닫기 버튼 숨기고 토글 버튼 표시
+      closeBtn.style.display = 'none';
+      toggleBtn.style.display = '';
+
+      // 포커스 복귀
+      releaseTrap();
+      toggleBtn.focus();
+    }
+
+    if (toggleBtn) {
+      toggleBtn.addEventListener('click', () => {
+        openPanel();
+      });
+    }
+
+    if (closeBtn) {
+      closeBtn.addEventListener('click', () => {
+        closePanel();
+      });
+    }
+
+    // Esc 키로 닫기
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' || e.key === 'Esc') {
+        if (panel && panel.getAttribute('aria-hidden') === 'false') closePanel();
+      }
+    });
+  })();
+
+  // 현재 URL 기준으로 메뉴 활성화
+  function activateGnbMenu() {
+    let currentPath = window.location.pathname;
+
+    // Context path 제거 (JSP에서 주입)
+    const contextPath = '';
+
+    if (contextPath && currentPath.startsWith(contextPath)) {
+      currentPath = currentPath.substring(contextPath.length);
+    }
+
+    // 경로가 비어있거나 홈이면 활성화 안 함
+    if (!currentPath || currentPath === '/') {
+      return;
+    }
+
+    // 현재 URL에서 대분류 추출 (첫 번째 세그먼트)
+    // 예: /major-business/donation/organ → major-business
+    const pathSegments = currentPath.split('/').filter(s => s);
+    const currentCategory = pathSegments[0]; // 대분류
+
+    if (!currentCategory) {
+      return;
+    }
+
+    // 모든 header-menu-item을 순회하며 하위 메뉴의 경로를 확인
+    const menuItems = document.querySelectorAll('.header-menu > .header-menu-item');
+
+    let matched = false;
+
+    menuItems.forEach((menuItem) => {
+      // 해당 대분류의 하위 메뉴들의 href를 확인
+      const subNavLinks = menuItem.querySelectorAll('.sub-nav a');
+      
+      subNavLinks.forEach(subLink => {
+        if (matched) return;
+        
+        let subHref = subLink.getAttribute('href') || '';
+
+        // Context path 제거
+        if (contextPath && subHref.startsWith(contextPath)) {
+          subHref = subHref.substring(contextPath.length);
+        }
+
+        // 하위 메뉴의 대분류 추출
+        const subSegments = subHref.split('/').filter(s => s);
+        const subCategory = subSegments[0];
+
+        // 현재 URL의 대분류와 하위 메뉴의 대분류가 일치하면 활성화
+        if (subCategory && subCategory === currentCategory) {
+          menuItem.classList.add('active');
+          matched = true;
+        }
+      });
+    });
+  }
+
+  // 페이지 로드 시 활성화
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', activateGnbMenu);
+  } else {
+    activateGnbMenu();
+  }
+</script>
+
+
+  <main class="main-wrap" id="main-wrap">
+    <!-- visual banner -->
+    <div class="main-vban-wrap bg">
+      <div class="vb-swiper">
+        <div class="swiper">
+          <ul class="swiper-wrapper">
+            
+              <li class="swiper-slide">
+                
+                  
+                    <div class="in">
+                      <a href="https://koda1458.kr/donor-register/online" target="_blank" title="기증희망등록 바로가기 배너 - 새 창 열기" rel="noopener noreferrer" id="content-start">
+                        <img src="/banner/preview/142"
+                             alt="기증희망등록 상담 1544-0606
+
+생명을 잇는 약속,
+기증희망서약
+
+가족의 이해와 존중으로 완성됩니다!
+
+생명나눔의 첫 걸음, 기증희망서약.
+우선순위 가족 1인의 장기기증 동의로 사랑하는 가족과 이웃 등
+최대 9명의 생명을 살릴 수 있습니다.
+
+기증희망등록 바로가기
+
+KODA 홍보대사 개그맨 김경식
+
+KODA 홍보대사 방송인 오수진
+(심장이식 수혜자)
+
+희망의 씨앗
+KODA 한국장기조직기증원"
+                             onerror="this.src=ctx + '/img/placeholder/no-img1.jpg'"/>
+                      </a>
+                    </div>
+                  
+                  
+                
+              </li>
+            
+              <li class="swiper-slide">
+                
+                  
+                    <div class="in">
+                      <a href="https://koda1458.kr/post" target="_blank" title="희망우체통 바로가기 배너 - 새 창 열기" rel="noopener noreferrer" >
+                        <img src="/banner/preview/143"
+                             alt="잊지 않고 있는 기적
+
+생명나눔 희망우체통
+
+서로의 안부를 묻는 것만큼 따뜻한 마음은 없습니다.
+
+생명나눔 희망우체통을 통해 기증자 유가족과 이식수혜자가
+이메일로 서신을 교환할 수 있습니다.
+
+희망의 씨앗
+KODA 한국장기조직기증원
+
+생명나눔 희망우체통"
+                             onerror="this.src=ctx + '/img/placeholder/no-img1.jpg'"/>
+                      </a>
+                    </div>
+                  
+                  
+                
+              </li>
+            
+              <li class="swiper-slide">
+                
+                  
+                    <div class="in">
+                      <a href="https://koda1458.kr" target="_blank" title="한국장기조직기증원 바로가기 배너 - 새 창 열기" rel="noopener noreferrer" >
+                        <img src="/banner/preview/144"
+                             alt="한국장기조직기증원
+Korea Organ Donation Agency
+
+누군가의 끝이 아니라 누군가의 시작.
+한국장기조직기증원이 함께합니다.
+
+희망의 씨앗
+KODA 한국장기조직기증원"
+                             onerror="this.src=ctx + '/img/placeholder/no-img1.jpg'"/>
+                      </a>
+                    </div>
+                  
+                  
+                
+              </li>
+            
+          </ul>
+        </div>
+        <div class="swiper-indicator text-center">
+          <div class="swiper-pagination"></div>
+
+          <!-- 스크린리더용 현재 배너 위치 안내 -->
+          <p id="banner-status" class="sr-only" aria-live="polite"></p>
+
+          <div class="swiper-controller">
+            <button type="button" class="swiper-button-play">
+              <span class="sr-only">슬라이드 재생</span>
+              <img src="/img/main/swiper-play.svg" alt="" aria-hidden="true">
+            </button>
+            <button type="button" class="swiper-button-stop">
+              <span class="sr-only">슬라이드 멈춤</span>
+              <img src="/img/main/swiper-pause.svg" alt="" aria-hidden="true">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //visual banner -->
+
+    <div class="main-content-wrap inner" tabindex="-1">
+      <!-- 자주 찾는 메뉴 -->
+      <section class="menu-section">
+        <div class="section-header">
+          <h3 class="section-title">자주 찾는 메뉴</h3>
+        </div>
+        <div class="link-wrap" style="border: 1px solid #e0e0e0; border-radius: 2.4rem; padding: 1rem 0;">
+          <a href="/major-business/donor/support" class="link-icon">
+            <img src="/img/main/main-link-1.svg" alt="">
+            <span>기증자예우</span>
+          </a>
+          <a href="/donor-register/online" class="link-icon">
+            <img src="/img/main/main-link-2.svg" alt="">
+            <span>기증희망등록</span>
+          </a>
+          <a href="/major-business/lab/about" class="link-icon">
+            <img src="/img/main/main-link-3.svg" alt="">
+            <span>KODA LAB</span>
+          </a>
+          <a href="/major-business/donation/organ" class="link-icon">
+            <img src="/img/main/main-link-4.svg" alt="">
+            <span>장기·조직기증</span>
+          </a>
+          <a href="/data/statistics/donor" class="link-icon">
+            <img src="/img/main/main-link-7.svg" alt="" style="width: 82px;">
+            <span>기증통계</span>
+          </a>
+          <a href="/data/promotions/press" class="link-icon">
+            <img src="/img/main/main-link-5.svg" alt="">
+            <span>홍보자료</span>
+          </a>
+          <a href="/communication/notices" class="link-icon">
+            <img src="/img/main/main-link-6.svg" alt="">
+            <span>기관소식</span>
+          </a>
+        </div>
+
+        <div class="d-flex g-24">
+            <a href="/donor-register/online" class="link-external">
+                기증희망등록
+                <div class="icon-box"><i class="svg-icon ico-arrow-diagonal" aria-hidden="true"></i></div>
+            </a>
+            <a href="/communication/honors-club/about" class="link-external">
+                아너스클럽
+                <div class="icon-box"><i class="svg-icon ico-arrow-diagonal" aria-hidden="true"></i></div>
+            </a>
+        </div>
+      </section>
+
+      
+      <section class="memorial-section">
+          <div class="section-header">
+            <div class="title-wrap">
+              <h3 class="section-title">기증자 추모</h3>
+              <a href="/memorial/donors" class="link-plus">
+                <span class="sr-only">기증자 추모 더보기</span>
+                <i class="svg-icon ico-plus" aria-hidden="true"></i>
+              </a>
+            </div>
+            <p class="section-subtitle">생명 나눔을 실천한 분들의 고귀한 뜻, 잊지 않겠습니다.</p>
+          </div>
+
+          <ul class="memorial-list">
+            
+              
+                
+                    <!-- 작성일과 현재 날짜 비교 -->
+                    <li class="memorial-item new">
+                      <a href="/memorial/donors/detail/SFCJCjebs6jkwNkOhJNLCf_kAlydc6nWHtIBkixE5x4" class="memorial-link">
+                      <!-- 기존 구조 그대로 유지 -->
+                      <img src="/img/main/memorial-ribbon.svg" alt="" aria-hidden="true">
+                      <div class="memorial-item-content">
+                        <p class="name">
+                            김용분
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </p>
+                        <p class="date">2026-03-06</p>
+                      </div>
+                      </a>
+                    </li>
+                
+                    <!-- 작성일과 현재 날짜 비교 -->
+                    <li class="memorial-item new">
+                      <a href="/memorial/donors/detail/FTfBy7wydNowhmPUubCld2I8qKOvb4NHY2nwKy6d5bA" class="memorial-link">
+                      <!-- 기존 구조 그대로 유지 -->
+                      <img src="/img/main/memorial-ribbon.svg" alt="" aria-hidden="true">
+                      <div class="memorial-item-content">
+                        <p class="name">
+                            황현주
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </p>
+                        <p class="date">2026-03-06</p>
+                      </div>
+                      </a>
+                    </li>
+                
+                    <!-- 작성일과 현재 날짜 비교 -->
+                    <li class="memorial-item new">
+                      <a href="/memorial/donors/detail/hpdjLB3QViiU2BfeMKvBIZY3r4i4lY5kInGW6jOXdOU" class="memorial-link">
+                      <!-- 기존 구조 그대로 유지 -->
+                      <img src="/img/main/memorial-ribbon.svg" alt="" aria-hidden="true">
+                      <div class="memorial-item-content">
+                        <p class="name">
+                            류*회
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </p>
+                        <p class="date">2026-03-06</p>
+                      </div>
+                      </a>
+                    </li>
+                
+                    <!-- 작성일과 현재 날짜 비교 -->
+                    <li class="memorial-item new">
+                      <a href="/memorial/donors/detail/tBotMU_DKpZ92QDEm3I35pWwnp4wEbBN03_5Vg-JoR4" class="memorial-link">
+                      <!-- 기존 구조 그대로 유지 -->
+                      <img src="/img/main/memorial-ribbon.svg" alt="" aria-hidden="true">
+                      <div class="memorial-item-content">
+                        <p class="name">
+                            권성권
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </p>
+                        <p class="date">2026-03-05</p>
+                      </div>
+                      </a>
+                    </li>
+                
+                    <!-- 작성일과 현재 날짜 비교 -->
+                    <li class="memorial-item new">
+                      <a href="/memorial/donors/detail/karIftoB7P8yPtRojQAorxiyaepvB3fDREN6n2cgD2c" class="memorial-link">
+                      <!-- 기존 구조 그대로 유지 -->
+                      <img src="/img/main/memorial-ribbon.svg" alt="" aria-hidden="true">
+                      <div class="memorial-item-content">
+                        <p class="name">
+                            박건식
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </p>
+                        <p class="date">2026-03-05</p>
+                      </div>
+                      </a>
+                    </li>
+                
+                    <!-- 작성일과 현재 날짜 비교 -->
+                    <li class="memorial-item new">
+                      <a href="/memorial/donors/detail/WQNlCT3H5pqf_3-NJn18GQn72qyNk2Dq7jNCVKaUVEk" class="memorial-link">
+                      <!-- 기존 구조 그대로 유지 -->
+                      <img src="/img/main/memorial-ribbon.svg" alt="" aria-hidden="true">
+                      <div class="memorial-item-content">
+                        <p class="name">
+                            이경태
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </p>
+                        <p class="date">2026-03-05</p>
+                      </div>
+                      </a>
+                    </li>
+                
+              
+              
+            
+          </ul>
+      </section>
+
+      
+      <section class="letter-section">
+          <div class="section-header">
+            <div class="title-wrap">
+              <h3 class="section-title">하늘나라 편지</h3>
+              <a href="/memorial/donor-letters" class="link-plus">
+                <span class="sr-only">하늘나라 편지 더보기</span>
+                <i class="svg-icon ico-plus" aria-hidden="true"></i>
+              </a>
+            </div>
+            <p class="section-subtitle">그리움과 사랑을 담아 소중한 이들을 기억하는 공간입니다.</p>
+          </div>
+
+          <ul class="letter-list">
+            
+                
+                    
+                        <li class="letter-item new">
+                            <a href="/memorial/donor-letters/detail/rZoGs4cDdo-faTtcRL84YpdwRoyR7LDm9iArq1p27yw">
+                                <div class="letter-header">
+                                    <i class="svg-icon ico-email" aria-hidden="true"></i>
+                                    <p class="letter-index"><span class="num">16917</span>번째 편지</p>
+                                </div>
+
+                                <p class="letter-title">천상에사랑</p>
+
+                                <div class="letter-footer">
+                                    <p class="date">2026-03-15</p>&nbsp;
+                                    웬수
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                </div>
+                            </a>
+                        </li>
+                    
+                        <li class="letter-item new">
+                            <a href="/memorial/donor-letters/detail/KqmUAoprVuIwzYYGUhMq9GIWAHtQRROBUTP3atIXTas">
+                                <div class="letter-header">
+                                    <i class="svg-icon ico-email" aria-hidden="true"></i>
+                                    <p class="letter-index"><span class="num">16916</span>번째 편지</p>
+                                </div>
+
+                                <p class="letter-title">다짐…</p>
+
+                                <div class="letter-footer">
+                                    <p class="date">2026-03-15</p>&nbsp;
+                                    양아영
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                </div>
+                            </a>
+                        </li>
+                    
+                        <li class="letter-item new">
+                            <a href="/memorial/donor-letters/detail/P3hFA2wT1xp1LFBngXLL0f265uBIo3Y4NC3tmLell0I">
+                                <div class="letter-header">
+                                    <i class="svg-icon ico-email" aria-hidden="true"></i>
+                                    <p class="letter-index"><span class="num">16915</span>번째 편지</p>
+                                </div>
+
+                                <p class="letter-title">자기야,  봄을 재촉하는 비가 오네여!...</p>
+
+                                <div class="letter-footer">
+                                    <p class="date">2026-03-15</p>&nbsp;
+                                    권유진
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                </div>
+                            </a>
+                        </li>
+                    
+                        <li class="letter-item new">
+                            <a href="/memorial/donor-letters/detail/YHkhp6gZm2uya0Xu_JdezHfw_eCFUiOq4QOUwl89JoU">
+                                <div class="letter-header">
+                                    <i class="svg-icon ico-email" aria-hidden="true"></i>
+                                    <p class="letter-index"><span class="num">16914</span>번째 편지</p>
+                                </div>
+
+                                <p class="letter-title">오늘도 다시또 丹心歌~!</p>
+
+                                <div class="letter-footer">
+                                    <p class="date">2026-03-15</p>&nbsp;
+                                    못난놈
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                </div>
+                            </a>
+                        </li>
+                    
+                
+                
+            
+          </ul>
+      </section>
+
+    
+    <section class="story-section">
+      <div class="section-header">
+        <div class="title-wrap">
+          <h3 class="section-title">생명나눔 이야기</h3>
+        </div>
+      </div>
+      <div class="tab-btns story-tab-header" role="tablist">
+        <div class="tab-left">
+          <button class="tab-btn active" role="tab" aria-selected="true" onclick="toggleStoryTab('story-card-news')">카드뉴스<span class="sr-only"> (선택됨)</span></button>
+          <button class="tab-btn" role="tab" aria-selected="false" onclick="toggleStoryTab('story-video')">영상</button>
+        </div>
+
+
+        <div class="sns-icons">
+            <a href="https://www.youtube.com/channel/UCbhsMbBEOm1vIpOZXbaZR7g" title="유튜브 새 창 열기" target="_blank" rel="noopener noreferrer">
+              <img src="/img/icon/youtube.png" alt="유튜브">
+            </a>
+            <a href="https://blog.naver.com/koda1458" title="네이버 블로그 새 창 열기" target="_blank" rel="noopener noreferrer">
+              <img src="/img/icon/naver.png" alt="네이버 블로그">
+            </a>
+            <a href="https://www.instagram.com/koda1458/?hl=ko" title="인스타그램 새 창 열기" target="_blank" rel="noopener noreferrer">
+              <img src="/img/icon/instagram.svg" alt="인스타그램">
+            </a>
+            <a href="http://pf.kakao.com/_NkIvxj" title="카카오톡 새 창 열기" target="_blank" rel="noopener noreferrer">
+              <img src="/img/icon/kakaotalk.svg" alt="카카오톡">
+            </a>
+            <a href="https://www.facebook.com/people/%ED%95%9C%EA%B5%AD%EC%9E%A5%EA%B8%B0%EC%A1%B0%EC%A7%81%EA%B8%B0%EC%A6%9D%EC%9B%90/100064909143070" title="페이스북 새 창 열기" target="_blank" rel="noopener noreferrer">
+              <img src="/img/icon/facebook.svg" alt="페이스북">
+            </a>
+          </div>
+      </div>
+      <div class="tab-panes">
+        <div class="tab-pane" id="story-card-news" style="display:block;">
+          <ul class="story-list">
+            
+              <li class="story-item">
+                <a href="/data/promotions/card-news/Hw6V0EKYdNK64y6vTYbOZdbbjoZAx2k6kTOHsC8g_-I">
+                  <div class="thumbnail">
+                    <img src="/upFile/20260309_68aa2ba9-4926-4c1e-b072-c750cd6ab0d1.jpg"
+                         alt="[생명나눔 이야기] 항공정비사를 꿈꾸던 소년, 여섯 생명의 기적이 되다!"
+                         data-context-path=""
+                         onerror="handleImageError(this, 'light')">
+                  </div>
+                  <p class="story-title">[생명나눔 이야기] 항공정비사를 꿈꾸던 소년, 여섯 생명의 기적이 되다!</p>
+                </a>
+              </li>
+            
+              <li class="story-item">
+                <a href="/data/promotions/card-news/mk1PDm4ypQJWtkRbLIcSrlZPzm1ms2wpQ8SSpnjfPWk">
+                  <div class="thumbnail">
+                    <img src="/upFile/20251230_d415307b-e8fd-4332-995f-7de52a3bce14.png"
+                         alt="[생명나눔 이야기] 아버지가 남긴 기적을 이어받아 생명나눔을 노래하는 딸"
+                         data-context-path=""
+                         onerror="handleImageError(this, 'light')">
+                  </div>
+                  <p class="story-title">[생명나눔 이야기] 아버지가 남긴 기적을 이어받아 생명나눔을 노래하는 딸</p>
+                </a>
+              </li>
+            
+              <li class="story-item">
+                <a href="/data/promotions/card-news/GIO_dyjQRMczDO8XlHXw_Rte1KyhKjGSFqPxu2SBe_s">
+                  <div class="thumbnail">
+                    <img src="/upFile/20251230_d5f918f7-4b8e-436f-a4fe-3a7ca3a348e8.png"
+                         alt="[생명나눔 이야기] 평범한 일상의 소중함,절망의 순간 경험한 기적같은 선물"
+                         data-context-path=""
+                         onerror="handleImageError(this, 'light')">
+                  </div>
+                  <p class="story-title">[생명나눔 이야기] 평범한 일상의 소중함,절망의 순간 경험한 기적같은 선물</p>
+                </a>
+              </li>
+            
+            
+          </ul>
+        </div>
+        <div class="tab-pane" id="story-video" style="display:none;">
+          <ul class="story-list">
+            
+              <li class="story-item">
+                <a href="/data/promotions/videos/idIbdvhbm4BhgnpHsvsUZkWeFwUEZleDc5Rgnf_R53U">
+                  <div class="thumbnail video">
+                    <img src="/upFile/20260310_8477c5b1-e182-44a7-a7b9-5ad475ae2411.jpg"
+                         alt="[생명나눔 감동이야기_기증자 김동건님]항공정비사를 꿈꾸던 17살 소년이 남긴 6개의 기적"
+                         data-context-path=""
+                         onerror="handleImageError(this, 'light')">
+                  </div>
+                  <p class="story-title">[생명나눔 감동이야기_기증자 김동건님]항공정비사를 꿈꾸던 17살 소년이 남긴 6개의 기적</p>
+                </a>
+              </li>
+            
+              <li class="story-item">
+                <a href="/data/promotions/videos/ZjYdfEJxez4R2z0rlQbkA3o4VO26yu0qYAoZ8I8LRC8">
+                  <div class="thumbnail video">
+                    <img src="/upFile/7961BC9E4CDAB8C538B817D9D97195A8_20251218164114.png"
+                         alt="[생명나눔 감동이야기] 소설 &#034;스파클&#034; 생명나눔과 성장의 찬란한 순간의 이야기"
+                         data-context-path=""
+                         onerror="handleImageError(this, 'light')">
+                  </div>
+                  <p class="story-title">[생명나눔 감동이야기] 소설 &#034;스파클&#034; 생명나눔과 성장의 찬란한 순간의 이야기</p>
+                </a>
+              </li>
+            
+            
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="notice-section">
+      <div class="section-header">
+        <div class="title-wrap"><h3 class="section-title">소식</h3></div>
+      </div>
+      <div class="board-container">
+        <div class="board-wrap">
+          <div class="board-header">
+            <div class="tab-btns" role="tablist">
+              <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="notice-tab" id="notice-tab-btn" onclick="toggleNoticeTab('notice-tab')">공지사항<span class="sr-only"> (선택됨)</span></button>
+              <button class="tab-btn" role="tab" aria-selected="false" aria-controls="press-tab" id="press-tab-btn" onclick="toggleNoticeTab('press-tab')">보도자료</button>
+            </div>
+            <a href="/communication/notices" class="link-plus" id="notice-link-plus"><span class="sr-only">공지사항 더보기</span><i class="svg-icon ico-plus" aria-hidden="true"></i></a>
+          </div>
+
+          <div class="tab-panes">
+            <div class="tab-pane" role="tabpanel" aria-labelledby="notice-tab-btn" id="notice-tab" style="display:block;">
+              <ul class="board-list">
+                
+                  
+                    
+                      <li class="board-item">
+                        <a href="/communication/notices/MyLqFX8bDzXqp6vkgfHNWf7-rqLCgCbdqiClOSkdc4A">
+                          <span class="title">개인정보법에 따른 기증희망등록 제도 변경 안내</span>
+                          <span class="date">2026-02-27</span>
+                        </a>
+                      </li>
+                    
+                      <li class="board-item">
+                        <a href="/communication/notices/6Xll5ijYa1ZxfawSzXzDJ8ggFTpbL5h8ogSAgTOGZV4">
+                          <span class="title">(한국장기조직기증원) 보건복지부 공공기관 업무보고 자료</span>
+                          <span class="date">2026-01-15</span>
+                        </a>
+                      </li>
+                    
+                      <li class="board-item">
+                        <a href="/communication/notices/pFGjvEVLQ44EG3MHEGd9RiCWiQ7aco6xedqLV9Bgop4">
+                          <span class="title">2026년 1분기 KODA 진단검사의학과의원 질가산율 고시</span>
+                          <span class="date">2025-12-17</span>
+                        </a>
+                      </li>
+                    
+                      <li class="board-item">
+                        <a href="/communication/notices/mMlw5fH20lgAW3szxdXRv3kbjz0_HS4_6FYKCWq_HhU">
+                          <span class="title">2022~2024년 생명나눔 사례집 장애인 접근성 추가 PDF 교체 안내</span>
+                          <span class="date">2025-11-24</span>
+                        </a>
+                      </li>
+                    
+                      <li class="board-item">
+                        <a href="/communication/notices/p2NfZvB1tUNzpa5tosIjFnX4CqIW1pvz2H1HAlk8ZFc">
+                          <span class="title">2025년 심폐소생술 교육참여자 선착순 모집</span>
+                          <span class="date">2025-11-07</span>
+                        </a>
+                      </li>
+                    
+                  
+                  
+                
+              </ul>
+            </div>
+
+            <div class="tab-pane" role="tabpanel" aria-labelledby="press-tab-btn" id="press-tab" style="display:none;">
+              <ul class="board-list">
+                
+                  
+                    
+                      <li class="board-item">
+                        <a href="/data/promotions/press/pDj3Pq-iPVVHGDcbST4UGPXV1Cx7TmxOl3WuGexGzNs">
+                          <span class="title">60일 된 딸아이의 아빠 박성배 씨, 뇌사 장기기증으로 5명의 생명 살리고 떠나</span>
+                          <span class="date">2026-03-13</span>
+                        </a>
+                      </li>
+                    
+                      <li class="board-item">
+                        <a href="/data/promotions/press/_B8SeF09yAiFwstDkfrtcNCuRQzQn1AEPgAVjZ3seVw">
+                          <span class="title">기증자의 폐로 새 삶을 선물 받은 가수 유열, 감사함 전하고자 생명나눔 공동 홍보대사로 활동</span>
+                          <span class="date">2026-03-09</span>
+                        </a>
+                      </li>
+                    
+                      <li class="board-item">
+                        <a href="/data/promotions/press/mSnz4hsEaZApdJrSzqGH0XGHg9-f1xADom49hhj0P7o">
+                          <span class="title">남을 돕고자 사회복지사를 꿈꾼 16살 박채연 양, 뇌사장기기증으로 6명의 생명 살리고 떠나</span>
+                          <span class="date">2026-03-03</span>
+                        </a>
+                      </li>
+                    
+                      <li class="board-item">
+                        <a href="/data/promotions/press/y_vDMsqqwhqQsXNiIXl48WrgKFDYlKE3X4XMVJZHGWk">
+                          <span class="title">66세 이원희 씨, 삶의 끝에서 뇌사 장기기증으로 2명 생명 살리고 떠나</span>
+                          <span class="date">2026-02-24</span>
+                        </a>
+                      </li>
+                    
+                      <li class="board-item">
+                        <a href="/data/promotions/press/NCFI9bkE8Ml8vc2CLlNydeUSw613JAnae1dnXwxsKVw">
+                          <span class="title">66세 홍연복 씨, 건널목에서 차 사고로 의식 잃어 뇌사 장기기증으로 2명에게 새 생명 전해</span>
+                          <span class="date">2026-02-06</span>
+                        </a>
+                      </li>
+                    
+                  
+                  
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="schedule-wrap">
+          <div class="schedule-header">
+            <p class="schedule-title">기관일정</p>
+            <a href="/communication/agency-schedules" class="link-plus"><span class="sr-only">기관일정 더보기</span><i class="svg-icon ico-plus" aria-hidden="true"></i></a>
+          </div>
+          <div class="schedule-box">
+            <p class="month">26년 03월</p>
+            <ul class="schedule-list">
+              
+              
+                <li class="schedule-item">이번 달 등록된 일정이 없습니다.</li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-wrap">
+        <a href="/data/statistics/donor"
+           class="left-box"
+           title="기증자 통계 바로가기">
+          <div>
+            <p class="info-title">2026 누적 기증자</p>
+            <p class="info-desc">
+            <small>
+                
+                    
+                        2026-03-09 (주간)
+                    
+                    
+                
+            </small>
+            </p>
+          </div>
+          <div class="info-num-wrap">
+            <div class="info-num-box">
+              <p class="info-desc">장기 기증자</p>
+              <p class="info-num">87</p>
+            </div>
+            <div class="info-num-box">
+              <p class="info-desc">조직 기증자</p>
+              <p class="info-num">57</p>
+            </div>
+          </div>
+        </a>
+        <div class="right-box">
+          <div class="info-phone">
+            <div><p class="info-title">의료진 전용</p><p class="info-desc">뇌사시 통보</p></div>
+            <p class="info-phone-num">1577-1458</p>
+          </div>
+          <div class="info-phone">
+            <div><p class="info-title">일반인 전용</p><p class="info-desc">기증희망등록</p></div>
+            <p class="info-phone-num">1544-0606</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
+  </main>
+
+  
+
+<!-- footer -->
+<footer id="krds-footer">
+    <div class="foot-quick">
+        <div class="inner">
+            <button type="button" class="link" title="관련 사이트 레이어">관련 사이트</button>
+        </div>
+        <div class="related-site">
+            <button type="button" class="btn-close" aria-label="관련 사이트 닫기">
+                <i class="svg-icon ico-modal-close" aria-hidden="true"></i>
+            </button>
+            <div class="popup-top">
+                <ul class="responsive">
+                    <li>
+                        <ul>
+                            <li class="one"><a href="https://www.mohw.go.kr/" ><img src="/img/footer/related-site1.png" alt="보건복지부"></a></li>
+                            <li><a href="https://www.129.go.kr/"><img src="/img/footer/related-site2.png" alt="보건복지부콜센터"></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li class="one"><a href="https://www.konos.go.kr/"><img src="/img/footer/related-site3.png" alt="국립장기조직혈액관리원"></a></li>
+                            <li><a href="https://mykst.org/"><img src="/img/footer/related-site4.png" alt="대한이식학회"></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="popup-bottom">
+                <div class="tab-wrap" role="tablist">
+                    <button type="button" class="tab-btn L active" role="tab" aria-selected="true">국내</button>
+                    <button type="button" class="tab-btn R" role="tab" aria-selected="false">국외</button>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-content-item active">
+                        <ul>
+                            <li><a href="https://www.129.go.kr/">보건복지부콜센터</a></li>
+                            <li><a href="http://www.mw.go.kr/">보건복지부</a></li>
+                            <li><a href="https://www.konos.go.kr/">보건복지부 국립장기조직혈액관리원</a></li>
+                            <li><a href="https://mykst.org/">대한이식학회</a></li>
+                            <li><a href="https://www.vitallink.or.kr/">(사)생명잇기</a></li>
+                            <li><a href="https://www.obos.or.kr/html/dh/main">(재)한마음한몸운동본부</a></li>
+                            <li><a href="https://www.lisa.or.kr/main">(사)생명나눔실천본부</a></li>
+                            <li><a href="https://www.donor.or.kr/home/index.asp">(재)사랑의장기기증운동본부</a></li>
+                            <li><a href="https://kptb.kr/">한국공공조직은행</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-content-item">
+                        <ul>
+                            <li><a href="https://www.tts.org">TTS</a></li>
+                            <li><a href="https://www.eurotransplant.org">eurotransplant</a></li>
+                            <li><a href="https://www.organdonation.nhs.uk">UK Transplant</a></li>
+
+                            <li><a href="https://www.swisstransplant.org">Swisstrasplant</a></li>
+                            <li><a href="https://www.trapianti.salute.gov.it">CNT</a></li>
+                            <li><a href="https://www.agence-biomedecine.fr">agence de la biomedecine</a></li>
+                            <li><a href="https://www.ovsz.hu">Hungarotransplant</a></li>
+
+                            <li><a href="https://www.jotnw.or.jp">JOTNW</a></li>
+
+                            <li><a href="https://www.unos.org/">UNOS</a></li>
+                            <li><a href="https://www.donatelife.gov.au/">donate life</a></li>
+                            <li><a href="https://www.donor.co.nz">Organ Donation New Zealand</a></li>
+                            <li><a href="https://www.grupopuntacana.org">GPC</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="inner">
+        <div class="f-logo">
+            <span class="sr-only">한국장기조직기증원 KODA</span>
+        </div>
+
+        <div class="f-cnt">
+            <div class="f-info">
+                <p class="info-addr">
+                    서울시 서대문구 충정로 36 국민연금공단 충정로사옥5층 한국장기조직기증원 (우)03741
+                </p>
+                <ul class="info-cs">
+                    <li>
+                        <strong class="strong">대표번호</strong>
+                        <span class="span">02-3447-5632</span>
+                        <div class="divider"></div>
+                        <strong class="strong">팩스</strong>
+                        <span class="span">02-3447-5631</span>
+                        <div class="divider"></div>
+                        <strong class="strong">전자우편</strong>
+                        <span class="span">koda@koda1458.kr</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="link-sns">
+                <a href="https://www.youtube.com/channel/UCbhsMbBEOm1vIpOZXbaZR7g" class="krds-btn xlarge icon border link-circle" target="_blank" title="유튜브 새 창 열림">
+                    <span class="sr-only">유튜브</span>
+                    <i class="svg-icon ico-youtube" aria-hidden="true"></i>
+                </a>
+                <a href="https://blog.naver.com/koda1458" class="krds-btn xlarge icon border link-circle" target="_blank" title="블로그 새 창 열림">
+                    <span class="sr-only">블로그</span>
+                    <i class="svg-icon ico-blog" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.instagram.com/koda1458/?hl=ko" class="krds-btn xlarge icon border link-circle" target="_blank" title="인스타그램 새 창 열림">
+                    <span class="sr-only">인스타그램</span>
+                    <i class="svg-icon ico-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="http://pf.kakao.com/_NkIvxj" class="krds-btn xlarge icon border link-circle" target="_blank" title="카카오톡 채널 새 창 열림">
+                    <span class="sr-only">카카오톡</span>
+                    <i class="svg-icon ico-kakao" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.facebook.com/people/%ED%95%9C%EA%B5%AD%EC%9E%A5%EA%B8%B0%EC%A1%B0%EC%A7%81%EA%B8%B0%EC%A6%9D%EC%9B%90/100064909143070" class="krds-btn xlarge icon border link-circle" target="_blank" title="페이스북 새 창 열림">
+                    <span class="sr-only">페이스북</span>
+                    <i class="svg-icon ico-facebook" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="inner p-0">
+        <div class="f-btm">
+            <div class="f-btm-text">
+                <!-- 하단 메뉴 수정 -->
+                <div class="f-menu">
+                    <a href="/footer/privacy"
+                       class="point" style="font-weight:bold;color: blue" target="_blank" title="개인정보 처리방침 새 창 열림">
+                        개인정보 처리방침
+                        <span class="sr-only">(새 창)</span>
+                    </a>
+                    <a href="/agency/location">위치안내</a>
+                    <a href="/open-info/official-notice">경영공시</a>
+                    <a href="/donor-register/online">기증희망등록</a>
+                    <a href="/open-info/public-license">공공누리정책</a>
+                </div>
+
+                <div class="f-menu-wrap">
+                    <a href="https://www.wa.or.kr/board/list.asp?search=title&amp;SearchString=%C7%D1%B1%B9%C0%E5%B1%E2&amp;BoardID=0006" target="_blank" title="웹접근성 인증기관 새 창 열림">
+                        <span class="sr-only">(새 창)</span>
+                        <img src="/img/icon/f-logo-1_.png" alt="웹접근성 인증기관" style="width: 70px; height: 50px"/>
+
+                    </a>
+                    <img src="/img/icon/f-logo-2.png" alt="가족친화 우수기관" />
+                    <img src="/img/icon/f-logo-3.png" alt="교육기부 우수기관" />
+                    <img src="/img/icon/f-logo-4.png" alt="장기매매 및 이식관광에 관한 이스탄불 선언(DICG)" />
+                </div>
+            </div>
+            <p class="f-copy">© 2015 Korea Organ Donation Agency. All rights reserved.</p>
+        </div>
+    </div>
+    <script>
+        (function() {
+            function initRelatedSite() {
+                const footer = document.getElementById('krds-footer');
+                if (!footer) return;
+
+                const linkBtn = footer.querySelector('.foot-quick .link');
+                const relatedSite = footer.querySelector('.related-site');
+                const closeBtn = footer.querySelector('.related-site .btn-close');
+
+                if (linkBtn && relatedSite) {
+                    // 이미 이벤트가 연결되어 있는지 확인
+                    if (linkBtn.dataset.listenerAttached === 'true') {
+                        return;
+                    }
+
+                    // 열기 버튼 클릭 이벤트
+                    // linkBtn.addEventListener('click', function(e) {
+                    //     e.preventDefault();
+                    //     relatedSite.classList.add('show');
+                    // });
+
+                    // 열기/닫기 토글 기능 적용
+                    linkBtn.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        relatedSite.classList.toggle('show');   // 토글로 변경
+                    });
+
+                    // 닫기 버튼 클릭 이벤트
+                    if (closeBtn) {
+                        closeBtn.addEventListener('click', function(e) {
+                            e.preventDefault();
+                            relatedSite.classList.remove('show');
+                        });
+                    }
+                    document.addEventListener('keydown', function (e){
+                        if(e.key === 'Escape'){
+                            relatedSite.classList.remove('show');
+                        }
+                    })
+
+
+
+                    // 이벤트가 연결되었음을 표시
+                    linkBtn.dataset.listenerAttached = 'true';
+                }
+            }
+
+            function initTabs() {
+                const footer = document.getElementById('krds-footer');
+                if (!footer) return;
+
+                const tabBtn = footer.querySelectorAll('.tab-btn');
+                const tabContent = footer.querySelectorAll('.tab-content-item');
+
+                if (tabBtn.length === 0 || tabContent.length === 0) {
+                    return;
+                }
+
+                tabBtn.forEach((btn, index) => {
+                    // 이미 이벤트가 연결되어 있는지 확인
+                    if (btn.dataset.listenerAttached === 'true') {
+                        return;
+                    }
+
+                    btn.addEventListener('click', function() {
+                        // 모든 탭 버튼에서 active 클래스 및 aria-selected 제거
+                        tabBtn.forEach(b => {
+                            b.classList.remove('active');
+                            b.setAttribute('aria-selected', 'false');
+                        });
+                        // 모든 탭 콘텐츠에서 active 클래스 제거
+                        tabContent.forEach(content => {
+                            content.classList.remove('active');
+                        });
+                        // 클릭된 버튼에 active 클래스 및 aria-selected 추가
+                        this.classList.add('active');
+                        this.setAttribute('aria-selected', 'true');
+                        // 해당 인덱스의 탭 콘텐츠에 active 클래스 추가
+                        if (tabContent[index]) {
+                            tabContent[index].classList.add('active');
+                        }
+                    });
+
+                    // 이벤트가 연결되었음을 표시
+                    btn.dataset.listenerAttached = 'true';
+                });
+            }
+
+            function initFooter() {
+                initRelatedSite();
+                initTabs();
+            }
+
+            // footer가 이미 로드되어 있으면 즉시 실행
+            if (document.getElementById('krds-footer')) {
+                initFooter();
+            }
+
+            // footer가 나중에 로드될 경우를 대비해 MutationObserver 사용
+            const observer = new MutationObserver(function(mutations) {
+                const footer = document.getElementById('krds-footer');
+                if (footer && footer.querySelectorAll('.tab-btn').length > 0) {
+                    initFooter();
+                    observer.disconnect();
+                }
+            });
+
+            observer.observe(document.body, {
+                childList: true,
+                subtree: true
+            });
+        })();
+    </script>
+</footer>
+<!-- //footer -->
+
+
+  
+
+
+  <script>
+    var ctx = '';
+  </script>
+  <script>
+    // 본문 바로가기 클릭 시 스크롤 방지
+    document.addEventListener('DOMContentLoaded', function() {
+      const skipLink = document.querySelector('.skip-link[href="#content-start"]');
+      if (skipLink) {
+        skipLink.addEventListener('click', function(e) {
+          e.preventDefault();
+          const target = document.getElementById('content-start');
+          if (target) {
+            target.focus();
+            // 스크롤 위치를 최상단으로 유지
+            window.scrollTo(0, 0);
+          }
+        });
+      }
+    });
+
+    // 배너 슬라이드 접근성 처리 함수
+    // function updateBannerTabindex() {
+    //   // 복제된 슬라이드의 링크/div는 비활성화
+    //   document.querySelectorAll('.vb-swiper .swiper-slide-duplicate a, .vb-swiper .swiper-slide-duplicate .in').forEach(el => {
+    //     el.setAttribute('tabindex', '-1');
+    //   });
+    //
+    //   // 복제되지 않은 실제 슬라이드의 링크는 모두 활성화
+    //   document.querySelectorAll('.vb-swiper .swiper-slide:not(.swiper-slide-duplicate) a').forEach(link => {
+    //     link.setAttribute('tabindex', '0');
+    //   });
+    //
+    //   // 복제되지 않은 실제 슬라이드의 링크 없는 배너(.in div)도 활성화
+    //   document.querySelectorAll('.vb-swiper .swiper-slide:not(.swiper-slide-duplicate) .in').forEach(div => {
+    //     // a 태그가 없는 div만 처리 (a 태그 있으면 이미 위에서 처리됨)
+    //     if (!div.querySelector('a')) {
+    //       div.setAttribute('tabindex', '0');
+    //     }
+    //   });
+    // }
+    function updateBannerStatus(swiper) {
+        const statusEl = document.getElementById('banner-status');
+        if (!statusEl) return;
+
+        const total = swiper.slides.length - swiper.loopedSlides * 2;
+        const current = swiper.realIndex + 1;
+
+        statusEl.textContent = `배너  / `;
+    }
+
+    function updateBannerTabindex() {
+      // 모든 배너 링크/포커스 요소 비활성화
+      document.querySelectorAll(
+        '.vb-swiper .swiper-slide a, .vb-swiper .swiper-slide .in'
+      ).forEach(el => {
+        el.setAttribute('tabindex', '-1');
+      });
+
+      // 현재 활성 + 복제 아닌 슬라이드만 활성화
+      const activeSlide = document.querySelector(
+        '.vb-swiper .swiper-slide-active:not(.swiper-slide-duplicate)'
+      );
+
+      if (!activeSlide) return;
+
+      // 링크가 있으면 a 태그에 포커스
+      const link = activeSlide.querySelector('a');
+      if (link) {
+        link.setAttribute('tabindex', '0');
+        return;
+      }
+
+      // 링크 없으면 .in div에 포커스
+      const div = activeSlide.querySelector('.in');
+      if (div) {
+        div.setAttribute('tabindex', '0');
+      }
+    }
+
+    // 비주얼 배너
+    const vbSwiper = new Swiper('.vb-swiper .swiper', {
+      slidesPerView: 1,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".vb-swiper .swiper-pagination",
+        clickable: true,
+      },
+      on: {
+        // 슬라이드 전환 완료 후 tabindex 및 상태 업데이트
+        slideChangeTransitionEnd: function() {
+          updateBannerTabindex();
+          updateBannerStatus(this);
+        },
+      },
+    });
+
+    // 초기 로드 시 tabindex 및 상태 설정
+    updateBannerTabindex();
+    updateBannerStatus(vbSwiper);
+
+    const playBtn = document.querySelector(".vb-swiper .swiper-button-play");
+    const stopBtn = document.querySelector(".vb-swiper .swiper-button-stop");
+    playBtn.style.display = "none";
+    stopBtn.addEventListener("click", () => {
+      vbSwiper.autoplay.stop();
+      stopBtn.style.display = "none";
+      playBtn.style.display = "";
+    });
+    playBtn.addEventListener("click", () => {
+      vbSwiper.autoplay.start();
+      playBtn.style.display = "none";
+      stopBtn.style.display = "";
+    });
+
+    // 생명나눔 이야기 탭 전환
+    function toggleStoryTab(tabId) {
+      // 모든 탭 숨기기
+      document.querySelectorAll('.story-section .tab-pane').forEach(pane => {
+        pane.style.display = 'none';
+      });
+
+      // 모든 탭 버튼 비활성화 및 aria-selected 해제, 선택됨 텍스트 제거
+      document.querySelectorAll('.story-section .tab-btn').forEach(btn => {
+        btn.classList.remove('active');
+        btn.setAttribute('aria-selected', 'false');
+        // 기존 선택됨 텍스트 제거
+        const selectedText = btn.querySelector('.sr-only');
+        if (selectedText) {
+          selectedText.remove();
+        }
+      });
+
+      // 선택된 탭 표시
+      document.getElementById(tabId).style.display = 'block';
+
+      // 클릭된 버튼 활성화 및 aria-selected 설정
+      event.target.classList.add('active');
+      event.target.setAttribute('aria-selected', 'true');
+
+      // 선택됨 텍스트 추가
+      const selectedSpan = document.createElement('span');
+      selectedSpan.className = 'sr-only';
+      selectedSpan.textContent = ' (선택됨)';
+      event.target.appendChild(selectedSpan);
+    }
+
+    // 공지사항/보도자료 탭 전환
+    function toggleNoticeTab(tabId) {
+      // 모든 탭 숨기기
+      document.querySelectorAll('.notice-section .tab-pane').forEach(pane => {
+        pane.style.display = 'none';
+      });
+
+      // 모든 탭 버튼 비활성화 및 aria-selected 해제, 선택됨 텍스트 제거
+      document.querySelectorAll('.notice-section .tab-btn').forEach(btn => {
+        btn.classList.remove('active');
+        btn.setAttribute('aria-selected', 'false');
+        // 기존 선택됨 텍스트 제거
+        const selectedText = btn.querySelector('.sr-only');
+        if (selectedText) {
+          selectedText.remove();
+        }
+      });
+
+      // 선택된 탭 표시
+      document.getElementById(tabId).style.display = 'block';
+
+      // 클릭된 버튼 활성화 및 aria-selected 설정
+      event.target.classList.add('active');
+      event.target.setAttribute('aria-selected', 'true');
+
+      // 선택됨 텍스트 추가
+      const selectedSpan = document.createElement('span');
+      selectedSpan.className = 'sr-only';
+      selectedSpan.textContent = ' (선택됨)';
+      event.target.appendChild(selectedSpan);
+
+      // + 버튼 링크 및 sr-only 텍스트 변경
+      const linkPlus = document.getElementById('notice-link-plus');
+      const srOnlyText = linkPlus.querySelector('.sr-only');
+      if (tabId === 'notice-tab') {
+        linkPlus.href = ctx + '/communication/notices';
+        srOnlyText.textContent = '공지사항 더보기';
+      } else if (tabId === 'press-tab') {
+        linkPlus.href = ctx + '/data/promotions/press';
+        srOnlyText.textContent = '보도자료 더보기';
+      }
+    }
+
+    // ===== 팝업 쿠키 관련 코드 시작 =====
+
+    // 쿠키 조회
+    function getCookie(name) {
+        const cookies = document.cookie ? document.cookie.split(';') : [];
+        for (let i = 0; i < cookies.length; i++) {
+            const c = cookies[i].trim();
+            if (c.indexOf(name + '=') === 0) {
+                return c.substring((name + '=').length, c.length);
+            }
+        }
+        return null;
+    }
+
+    // 쿠키 설정 (하루: max-age 사용)
+    function setCookie(name, value) {
+        const maxAge = 24 * 60 * 60; // 1일(초)
+        document.cookie = name + '=' + value + '; max-age=' + maxAge + '; path=/';
+    }
+
+    // DOM 준비 후에 이벤트 바인딩 & 쿠키 적용
+    document.addEventListener('DOMContentLoaded', function () {
+
+        // 페이지 로드시 쿠키 확인해서 숨길 팝업 먼저 숨기기
+        document.querySelectorAll('.popup-layer').forEach(function (popup) {
+            const id = popup.id;
+            const cookie = getCookie(id);
+            if (cookie === 'hide') {
+                popup.style.display = 'none';
+            } else {
+                popup.style.display = 'block';
+            }
+        });
+
+        // 닫기 버튼
+        document.querySelectorAll('.popup-btn.close').forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                const popup = btn.closest('.popup-layer');
+                if (popup) {
+                    popup.style.display = 'none';
+                }
+            });
+        });
+
+        // 오늘 하루 보지 않기 버튼
+        document.querySelectorAll('.popup-btn.day').forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                const popup = btn.closest('.popup-layer');
+                if (popup) {
+                    const id = popup.id;           // 예: popup-3
+                    setCookie(id, 'hide');         // popup-3=hide
+                    popup.style.display = 'none';
+                }
+            });
+        });
+
+    });
+
+
+  </script>
+</body>
+</html>

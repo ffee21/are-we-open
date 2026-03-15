@@ -1,0 +1,3 @@
+User-agent: Googlebot
+Disallow: /front/bbsList.do
+Disallow: /front/viewAritcle.do

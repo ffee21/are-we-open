@@ -1,0 +1,14 @@
+User-agent: Googlebot
+Disallow: /aivory/
+
+User-agent: Yeti
+Disallow: /aivory/
+
+User-agent: Daum
+Disallow: /aivory/
+
+User-agent: Bingbot
+Disallow: /aivory/
+
+User-agent: *
+Allow: /

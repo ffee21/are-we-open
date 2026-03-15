@@ -1,0 +1,24 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>KIAPS</title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+<meta name="title" content="" />
+<meta name="author" content="" />
+<meta name="subject" content="" />
+<meta name="language" content="en" />
+<meta name="keywords" content="" />
+<style>
+.error{margin:300px auto; width:352px; height:117px; padding:0px 0 0 0;}
+</style>
+</head>
+<body>
+<div id="wrap">
+	<div class="error"><img src="/images/error.gif" width="352" alt="시스템에러가 발생하였습니다. 잠시 후 다시 접속하여 주십시오." height="117" border="0" /></div>
+</div>
+</body>
+</html>

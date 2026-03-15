@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /fileDownload
+Disallow: /*.xls$
+Disallow: /*.xlsx$
+Disallow: /search
+Disallow: /appeal
+Disallow: /main/appeal
+Disallow: /main/search

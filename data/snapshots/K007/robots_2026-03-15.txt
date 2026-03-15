@@ -1,0 +1,4 @@
+User-agent: Googlebot
+Disallow: /board.do?*boardno=57*
+Disallow: /board.do?*menuno=228*
+# 위 설정은 Googlebot에만 적용됩니다.

@@ -1,0 +1,8 @@
+User-agent: Googlebot
+
+Disallow:/com/cmm/srch/search.do
+
+Allow:/
+
+
+

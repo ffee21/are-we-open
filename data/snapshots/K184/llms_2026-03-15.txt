@@ -1,0 +1,22 @@
+
+
+<!doctype html>
+<html lang="ko">
+<head>
+<link rel="stylesheet" type="text/css" href="/_css/web/default.css">
+<title>한국기상산업기술원</title>
+</head>
+<body>
+	<div class="error">
+		<p class="img"><img src="/_img/web/pc/comn/no_error.png" alt="" style="width:100%" ></p>
+		<p class="tit">
+			홈페이지 이용에 불편을 드려 죄송합니다.
+		</p>
+		<p class="text">
+			<!-- 사용에 불편을 드려서 죄송합니다. -->
+			잠시 후 다시 이용해 주시기 바랍니다.
+		</p>
+		<p class="view_btn"><a href="javascript:history.back(-1);" class="btn_blue01_big">이전화면으로</a> <a href="/" class="btn_b01_big">홈페이지로</a></p>
+	</div>
+</body>
+</html>

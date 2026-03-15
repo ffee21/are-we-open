@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://www.compa.re.kr/sitemap.xml

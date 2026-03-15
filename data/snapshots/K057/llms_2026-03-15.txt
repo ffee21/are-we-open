@@ -1,0 +1,72 @@
+<!DOCTYPE html><html lang="en"><head><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <meta charset="utf-8">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+  <title>국방전직교육원</title>
+  <base href="/">
+  <meta name="viewport" content="user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0, width=device-width">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet"> -->
+
+  <link rel="image_src" href="https://www.moti.or.kr/html/info/img/CI-1.gif">
+  <meta name="twitter:image" content="https://www.moti.or.kr/html/info/img/CI-1.gif">
+  <meta property="og:image" content="https://www.moti.or.kr/html/info/img/CI-1.gif">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary">
+  <meta name="referrer" content="always">
+  <meta name="twitter:title" content="국방전직교육원">
+  <meta name="description" content="국방전직교육원을 찾아주셔서 감사합니다.">
+  <meta name="og:description" content="국방전직교육원을 찾아주셔서 감사합니다.">
+  <meta name="twitter:description" content="국방전직교육원을 찾아주셔서 감사합니다.">
+  <meta name="robots" content="noindex, follow">
+
+  <!-- Google tag (gtag.js) -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-LLPB4K5NBN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-LLPB4K5NBN');
+  </script>
+  
+  <!-- 제니퍼 -->
+  <script>
+    (function(j,ennifer) {
+        j['dmndata']=[];j['jenniferFront']=function(args){window.dmndata.push(args)};
+        j['dmnaid']=ennifer;j['dmnatime']=new Date();j['dmnanocookie']=false;j['dmnajennifer']='JENNIFER_FRONT@INTG';
+    }(window, '661c335d'));
+  </script>
+  <script async="" src="https://d-collect.jennifersoft.com/661c335d/demian.js"></script>
+<style>.mat-typography{font:400 14px/20px Roboto,Helvetica Neue,sans-serif;letter-spacing:normal}:root{--swiper-theme-color:#007aff}body,html{padding:20px}body.mat-typography *{font-family:Roboto,Noto Sans KR,"sans-serif",Font Awesome\ 5 Free}body,html{color:#222;font-size:15px;height:100%;line-height:18px;margin:0;padding:0;letter-spacing:-.5px;box-sizing:border-box;word-wrap:break-word;word-break:keep-all;scroll-behavior:smooth;-webkit-overflow-scrolling:touch}html body{margin:0;padding:0;border:0;box-sizing:border-box;font-family:Noto Sans KR,NanumSquare,Malgun Gothic,"sans-serif",Dotum,Font Awesome\ 5 Free}</style><style>.mat-typography h1{font:400 24px/32px Roboto,Helvetica Neue,sans-serif;letter-spacing:normal;margin:0 0 16px}.mat-typography{font:400 14px/20px Roboto,Helvetica Neue,sans-serif;letter-spacing:normal}.mat-typography p{margin:0 0 12px}.cdk-visually-hidden{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;white-space:nowrap;outline:0;-webkit-appearance:none;-moz-appearance:none}:root{--swiper-theme-color:#007aff}body,html{padding:20px}body.mat-typography *{font-family:Roboto,Noto Sans KR,"sans-serif",Font Awesome\ 5 Free}.mat-typography p{margin:0}body,html{color:#222;font-size:15px;height:100%;line-height:18px;margin:0;padding:0;letter-spacing:-.5px;box-sizing:border-box;word-wrap:break-word;word-break:keep-all;scroll-behavior:smooth;-webkit-overflow-scrolling:touch}html a,html body,html div,html h1,html img,html p,html strong{margin:0;padding:0;border:0;box-sizing:border-box;font-family:Noto Sans KR,NanumSquare,Malgun Gothic,"sans-serif",Dotum,Font Awesome\ 5 Free}img{border:0}a,a:link{color:#464646}a,a:active,a:hover,a:link,a:visited{text-decoration:none}img{border:0}img{vertical-align:middle}</style><link rel="stylesheet" href="styles.17502cde8c1f7add7add.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.17502cde8c1f7add7add.css"></noscript><style ng-transition="serverApp"></style><link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&amp;family=Roboto:wght@100;300;400;500;700;900&amp;display=swap"><style ng-transition="serverApp">.body[_ngcontent-sc60]{margin:0;padding:0;background:#F5FAFF;height:100%;-webkit-font-smoothing:antialiased;letter-spacing:-.03em}.error[_ngcontent-sc60]{display:flex;justify-content:center;flex-direction:column;align-items:center;height:100%;padding:20px;box-sizing:border-box}.error_box[_ngcontent-sc60]{padding:40px 60px;background:#fff;border-radius:8px;text-align:center;line-height:1.5;width:910px;max-width:95%}.error_box[_ngcontent-sc60]   .img[_ngcontent-sc60]{margin-bottom:40px}.error_box[_ngcontent-sc60]   strong[_ngcontent-sc60]{font-size:1.2em;margin:10px 0 0;display:block}.error_box[_ngcontent-sc60]   p[_ngcontent-sc60]{color:#333;padding:0;margin:.5em 0 1em}.error[_ngcontent-sc60]   .btn_error[_ngcontent-sc60]{padding:.25em 2em .35em;background:#EF3123;color:#fff;text-decoration:none;border-radius:3px;margin-top:1.5em;display:inline-block}h1[_ngcontent-sc60]{display:block;font-size:2em;margin-block-start:.67em;margin-block-end:.67em;margin-inline-start:0px;margin-inline-end:0px;font-weight:bold;unicode-bidi:-webkit-isolate;unicode-bidi:isolate}div[_ngcontent-sc60]   .ng-scope[_ngcontent-sc60]{margin:7% auto 0}</style></head>
+<body class="mat-typography">
+  <app-root _nghost-sc99="" ng-version="12.2.17"><router-outlet _ngcontent-sc99=""></router-outlet><app-error _nghost-sc60=""><div _ngcontent-sc60="" class="body"><div _ngcontent-sc60="" class="error"><h1 _ngcontent-sc60="" class="logo"><img _ngcontent-sc60="" src="/assets/images/error/logo.png" alt="로고이미지"></h1><div _ngcontent-sc60="" class="error_box"><p _ngcontent-sc60="" class="img"><img _ngcontent-sc60="" src="/assets/images/error/img_errorpage.png" alt="에러이미지"></p><strong _ngcontent-sc60="">페이지를 이용하실 수 없습니다</strong><p _ngcontent-sc60=""> 페이지에 일시적인 오류가 있거나 정상적인 경로가 아닙니다.<br _ngcontent-sc60=""> 입력하신 주소가 정확한지 확인 후 다시 시도해 주시기 바랍니다.<br _ngcontent-sc60=""></p><a _ngcontent-sc60="" href="/main" class="btn_error">메인으로 이동</a></div></div></div></app-error><!----></app-root>
+  <style type="text/css">@font-face{font-family:'Material Icons';font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNa.woff) format('woff');}.material-icons{font-family:'Material Icons';font-weight:normal;font-style:normal;font-size:24px;line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;word-wrap:normal;direction:ltr;font-feature-settings:'liga';}@font-face{font-family:'Material Icons';font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2');}.material-icons{font-family:'Material Icons';font-weight:normal;font-style:normal;font-size:24px;line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;word-wrap:normal;direction:ltr;-webkit-font-feature-settings:'liga';-webkit-font-smoothing:antialiased;}</style>
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.2/main.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/47a97bc968.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.2/main.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.2/locales-all.min.js"></script>
+  <script type="text/javascript" src="https://static.nid.naver.com/js/naveridlogin_js_sdk_2.0.1.js" charset="utf-8"></script>
+  <script src="https://www.youtube.com/player_api"></script>
+  
+  <!-- 네이버 애널리스틱 -->
+  <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+  <script type="text/javascript">
+    if(!wcs_add) var wcs_add = {};
+    wcs_add["wa"] = "235a0e412a0272";
+    if(window.wcs) {
+      wcs_do();
+    }
+
+    /* 2025.03.18 i-pms 필터 적용을 위한 로딩창 팝업 변수 셋팅 함수 추가 */
+    function setDataloader(dataloader) {
+      setTimeout(function() {
+        window.pipe(dataloader);
+      }, 500);
+
+      console.log("[dataloader] : [" + dataloader + "]");
+    }
+  </script>
+<script src="runtime.6312f97047dcb6a4f02b.js" defer=""></script><script src="polyfills-es5.94b34adb036abea9edd7.js" nomodule="" defer=""></script><script src="polyfills.1e12ee9ae8b3569b4721.js" defer=""></script><script src="main.3bc42836c36262dcf127.js" defer=""></script>
+
+<div class="cdk-live-announcer-element cdk-visually-hidden" aria-atomic="true" aria-live="polite"></div></body></html>

@@ -1,0 +1,9 @@
+User-agent: Googlebot
+# 통합검색 결과 페이지 차단
+Disallow: /search.es
+
+# 민원 게시판 차단
+Disallow: /board.es?*bid=0012
+Disallow: /board.es?*bid=0034
+
+

@@ -1,0 +1,23 @@
+User-agent: Googlebot
+Disallow: /user/search/search_list.do*
+Disallow: /user/board/
+
+User-agent: Bingbot
+Disallow: /user/search/search_list.do*
+Disallow: /user/board/
+
+User-agent: Yeti
+Disallow: /user/search/search_list.do*
+Disallow: /user/board/
+
+User-agent: Daumoa
+Disallow: /user/search/search_list.do*
+Disallow: /user/board/
+
+User-agent: DuckDuckBot
+Disallow: /user/search/search_list.do*
+Disallow: /user/board/
+
+
+User-agent: *
+Disallow: /

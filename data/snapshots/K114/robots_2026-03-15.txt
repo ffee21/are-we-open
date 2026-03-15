@@ -1,0 +1,17 @@
+User-agent: *
+Disallow: /
+
+User-agent: Googlebot
+Allow: /
+Disallow: /search
+Disallow: /board
+
+User-agent: Yeti
+Allow: /
+Disallow: /search
+Disallow: /board
+
+User-agent: Daum
+Allow: /
+Disallow: /search
+Disallow: /board

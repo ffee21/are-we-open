@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /kor/content/other/search/
+Disallow: /kor/board/�亯��/

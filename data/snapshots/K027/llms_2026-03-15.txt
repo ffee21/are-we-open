@@ -1,0 +1,740 @@
+
+
+
+
+<!doctype html>
+<html lang="ko">
+<head>  
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="imagetoolbar" content="no">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	
+	<meta name="description" content="공간정보품질관리원 홈페이지" />
+	<meta name="keywords" content="공간정보품질관리원,홈페이지" />
+	<meta name="classification" content="공간정보품질관리원,홈페이지" />
+	<meta property="og:title" content="공간정보품질관리원" />
+	<meta property="og:description" content="공간정보품질관리원 홈페이지" />
+	<meta property="og:url" content="https://www.siqms.or.kr" />
+	<meta property="og:image" content="https://www.siqms.or.kr/img/og_image.jpg" />
+	<meta property="og:image:width" content="800" />
+	<meta property="og:image:height" content="400" />
+	<meta property="og:type" content="article" />
+	<meta property="og:site_name" content="공간정보품질관리원" />
+	
+	<meta name="google-site-verification" content="dSdBQtkI2kRqs-Sr_yXrh8q9tYIrqXmRWii_Eq0NWlc" />
+	
+	<link rel="canonical" href="https://www.siqms.or.kr" />
+	
+	<title>공간정보품질관리원</title>
+
+	<link rel="stylesheet" href="/js/jquery-ui-1.13.1.css">
+	
+	<!-- favicon -->
+	<link rel="shortcut icon" href="/img/favicon.ico">
+	<link rel="apple-touch-icon" href="/img/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+	<!-- //favicon -->
+	
+	<script>
+		const baseUrl = "https://www.siqms.or.kr";
+		const gtitle  = "공간정보품질관리원";
+	</script>
+	
+	<script src="/js/jquery-3.7.1.min.js"></script> <!-- old version 1.11.1 -->
+	<script src="/js/jquery-ui-1.13.1.js"></script>
+	<script src="/js/bootstrap-3.3.7.min.js"></script>
+	<script src="/js/simpleDialog.js"></script>
+	<script src="/js/common.js?ver=25021701"></script>
+	
+	
+
+	<link rel="stylesheet" href="/css/basic.css?ver=25021701">
+	<link rel="stylesheet" href="/css/layout.css?ver=25021701">
+	<link rel="stylesheet" href="/css/sub.css?ver=25021701">
+	<link rel="stylesheet" href="/css/sub_ex.css?ver=25021701">
+	
+	<script src="/js/jquery.scrollbar.min.js"></script>
+</head>
+<body class="">
+
+	
+
+
+
+
+<!-- TouchEnNx Start-->
+<script type='text/javascript' charset='utf-8' src='/raonnx/cmn/json2.js'></script>
+<script type='text/javascript' charset='utf-8' src='/raonnx/cmn/TouchEnNx.js'></script>
+<script type='text/javascript' charset='utf-8' src='/raonnx/cmn/TouchEnNx_exproto.js'></script>
+<script type='text/javascript' charset='utf-8' src='/raonnx/cmn/TouchEnNx_install.js'></script>
+<script type='text/javascript' charset='utf-8' src='/raonnx/cmn/TouchEnNx_daemon.js'></script>
+<!-- TouchEnNx End-->
+
+<!-- TouchEn nxKey Start -->
+<!-- í¤ë³´ëë³´ì ì ì©ì ì£¼ì í´ì  íì
+<script type='text/javascript' charset='utf-8' src='/raonnx/nxKey/js/nxkey_config.js'></script>
+<script type='text/javascript' charset='utf-8' src='/raonnx/nxKey/js/TouchEnNxKey_Interface.js'></script>
+<script type='text/javascript' charset='utf-8' src='/raonnx/nxKey/js/TouchEnNxKey.js'></script>
+-->
+<!-- TouchEn nxKey End -->
+
+<!-- TouchEn nxcr Start -->
+<!--
+<script type='text/javascript' charset='utf-8' src='/raonnx/nxCR/js/nxcr_config.js'></script>
+<script type='text/javascript' charset='utf-8' src='/raonnx/nxCR/js/NXCertRelay_Interface.js'></script>
+<script type='text/javascript' charset='utf-8' src='/raonnx/nxCR/js/NXCertRelay.js'></script>
+-->
+<!-- TouchEn nxcr End -->
+
+<!-- TouchEn nxfw Start -->
+<!--
+<script type='text/javascript' charset='utf-8' src='/raonnx/nxFw/js/nxfw_config.js'></script>
+<script type='text/javascript' charset='utf-8' src='/raonnx/nxFw/js/TouchEnNxFirewall_Interface.js'></script>
+<script type='text/javascript' charset='utf-8' src='/raonnx/nxFw/js/TouchEnNxFirewall.js'></script>
+-->
+<!-- TouchEn nxfw End -->
+<!-- 
+<script type='text/javascript' charset='utf-8' src='/raonnx/nxWeb/js/nxweb_config.js'></script>
+<script type='text/javascript' charset='utf-8' src='/raonnx/nxWeb/js/TouchEnNxWeb_Interface.js'></script>
+<script type='text/javascript' charset='utf-8' src='/raonnx/nxWeb/js/TouchEnNxWeb.js'></script>
+ -->
+<!-- ksbiz start -->
+<script type='text/javascript' charset='utf-8' src='/raonnx/ksbiz/js/ksbiz_config.js'></script>
+<script type='text/javascript' charset='utf-8' src='/raonnx/ksbiz/js/ksbiz_Interface.js'></script>
+<script type='text/javascript' charset='utf-8' src='/raonnx/ksbiz/js/ksbiz_extend.js'></script>
+<script type='text/javascript' charset='utf-8' src='/raonnx/ksbiz/js/ksbiz_internal.js'></script>
+<script type='text/javascript' charset='utf-8' src='/raonnx/ksbiz/js/ksbiz.js'></script>
+<script type='text/javascript' charset='utf-8' src='/raonnx/ksbiz/cxsign/xwckit.js'></script>
+<!-- ksbiz End -->
+
+<!--  
+<link rel='stylesheet' type='text/css' charset='utf-8' href='/raonsecure/transkey/transkey.css'</link>
+<script type='text/javascript' charset='utf-8' src='/raonsecure/transkey/transkey.js'></script>
+-->
+<!-- TouchEnNx Start-->
+<script type='text/javascript' charset='utf-8' src='/raonnx/cmn/TouchEnNx_loader.js'></script>
+<!-- TouchEnNx End-->
+
+<script type='text/javascript'>
+/*
+// uitype 
+function uitypechange(val){
+	KSBizConfig.uitype = val;
+}
+console.log("KSBizConfig.uitype", KSBizConfig.uitype);
+//selectCertBorder 
+function selectCertBorderchange(val){
+	KSBizConfig.selectCertBorder = val;
+}
+var htmlchecked, nativechecked;
+if(KSBizConfig.uitype == "html"){
+	htmlchecked = "checked";
+	nativechecked = "";
+} else {
+	htmlchecked = "";
+	nativechecked = "checked";	
+}
+var htmlcheckedstr = '<input type="radio" name="uitype" onclick="uitypechange(this.value)" value="html" ' + htmlchecked + '>html';
+var nativecheckedstr = '<input type="radio" name="uitype" onclick="uitypechange(this.value)" value="native" ' + nativechecked + '>native';
+document.write(htmlcheckedstr);
+document.write(nativecheckedstr);
+
+var selectCertBordertrue, selectCertBorderfalse;
+if(KSBizConfig.selectCertBorder){
+	selectCertBordertrue = "checked";
+	selectCertBorderfalse = "";
+} else {
+	selectCertBordertrue = "";
+	selectCertBorderfalse = "checked";	
+}
+var selectCertBordertruestr = '<input type="radio" name="selectCertBorder" onclick="selectCertBorderchange(this.value)" value="true" ' + selectCertBordertrue + '>true';
+var selectCertBorderfalsestr = '<input type="radio" name="selectCertBorder" onclick="selectCertBorderchange(this.value)" value="false" ' + selectCertBorderfalse + '>false';
+document.write("&nbsp;&nbsp;&nbsp;&nbsp;selectCertBorder: " + selectCertBordertruestr + selectCertBorderfalsestr);
+ */
+
+</script>
+
+
+<script type="text/javascript" src="/omniOneCX/asign/asign.js"></script>
+<script type="text/javascript" src="/js/rj/common.js"></script>
+<script type="text/javascript" src="/js/rj/loadingoverlay.min.js"></script>
+<script src="/raonnx/cmn/TouchEnNx.js"></script>
+
+<div id="WRAP">
+
+	<!-- LAYOUT_HEAD { -->
+	<header id="LAYOUT_HEAD">
+		<div class="wrapper">
+			<h1><a href="/" title="홈으로"><img src="/img/common_logo01.png" alt="공간정보품질관리원 로고" /></a></h1>
+			<form name="CXWindow" method="post" style="display:none"></form>
+			<form id="LAYOUT_SEARCH_W" class="search">
+				<input type="text" id="searchWord" name="searchWord" value="" required="required" title="검색어" />
+				<input type="submit" value="검색" id="LAYOUT_BTN_SEARCH_W" name="LAYOUT_BTN_SEARCH_W"/>
+			</form>
+			<div class="link">
+				
+				
+					<a href="/login.do">로그인</a>
+					<a href="javascript:doSign('easy', 'membJoin');">회원가입</a>
+				
+				
+				
+			</div>
+		</div>
+	</header>
+	<!-- } LAYOUT_HEAD -->
+	
+	<!-- LAYOUT_HEAD(MOBILE) { -->
+	<header id="LAYOUT_HEAD_M">
+		<div class="wrapper">
+			<h1><a href="/" title="홈으로"><img src="/img/common_logo01.png" alt="공간정보품질관리원 로고" /></a></h1>
+			<div class="btns">
+				<a class="search" href="javascript:;" id="LAYOUT_BTN_SEARCH">검색</a>
+				<a class="menu" href="javascript:;" id="LAYOUT_BTN_MENU">메뉴</a>
+			</div>
+		</div>
+		<form class="search" id="LAYOUT_SEARCH">
+			<div class="wrapper">
+				<div class="inp">
+					<input type="text" id="searchWord" name="searchWord" value="" required="required" title="검색어" placeholder="검색어를 입력하세요." />
+					<input type="submit" value="검색" id="LAYOUT_BTN_SEARCH_M" name="LAYOUT_BTN_SEARCH_M" />
+				</div>
+				<a class="close" href="javascript:;">검색 닫기</a>
+			</div>
+		</form>
+	</header>
+	<!-- } LAYOUT_HEAD(MOBILE) -->
+	
+	<!-- LAYOUT_MENU(MOBILE) { -->
+	<nav id="LAYOUT_MENU">
+		<div class="wrap">
+			<div class="btns">
+				
+				
+					<a href="/login.do">로그인</a>
+					<a href="/M9005000/index.do">회원가입</a>
+				
+				
+				
+			</div>
+			<div class="gnb">
+				<ul class="d1">
+					
+					
+				</ul>
+				
+				
+				
+			</div>
+		</div>
+	</nav>
+	<!-- } LAYOUT_MENU(MOBILE) -->
+	
+	<!-- LAYOUT_NAV { -->
+	<nav id="LAYOUT_NAV" class="rel">
+	
+		<!-- LAYOUT_GNB { -->
+		<section class="gnb">
+			<div class="wrapper">
+				<a class="sitemap" href="javascript:;" id="LAYOUT_BTN_SITEMAP_OPEN" title="사이트맵 열기">사이트맵 열기</a>
+				<ul>
+					
+				</ul>
+			</div>
+		</section>
+		<!-- } LAYOUT_GNB -->
+		
+		
+		
+			<!-- LAYOUT_LNB { -->
+			<section class="lnb">
+				<div class="wrapper">
+					<a class="home" href="/">홈으로</a>
+					
+					
+					
+						
+					
+						
+					
+						
+					
+					
+				</div>
+			</section>
+			<!-- } LAYOUT_LNB -->
+		
+	</nav>
+	<!-- } LAYOUT_NAV -->
+	
+	<!-- LAYOUT_BODY { -->
+	<main id="LAYOUT_BODY">
+		<div class="wrapper">
+			
+			
+				<section class="page-info">
+					<h2></h2>
+					<ul class="path">
+						
+					</ul>
+				</section>
+			
+			
+			<!-- LAYOUT_CONTENTS { -->
+			<article>
+	
+
+
+<section class="error-box">
+	<p class="code">404 ERROR</p>
+	<p class="message">알수없는 오류가 발생했습니다.</p>
+	<div class="btn-area btn-page">
+		<a class="btn t04" href="/main.do">홈으로 가기</a>
+		<!-- <a class="btn t05" href="javascript:;" id="POPUP_SAMPLE01_CANCEL">새로고침</a> -->
+	</div>
+	<!-- <p class="code"></p>
+	<p class="message"></p> -->
+</section>
+	
+
+
+
+			</article>
+			<!-- } LAYOUT_CONTENTS -->
+
+			<!-- LAYOUT_SURVEY(만족도조사) { -->
+			
+			<!-- } LAYOUT_SURVEY(만족도조사) -->
+
+
+			<!-- Quick link -->
+			<section class="quick">
+				<div class="tit">QUICK</div>
+				<ul>
+					<li><a href="/M1001010/asset.do">공공측량<br/>성과심사</a></li>
+					<li><a href="/M1003010/asset.do">기본측량<br/>품질검증</a></li>
+					<li><a href="/M4003020/index.do">임원·담당자</a></li>
+					<li><a href="/M2006000/board.do">뉴스레터</a></li>
+				</ul>
+				<a href="#WRAP">TOP</a>
+			</section>
+		</div>
+	</main>
+	<!-- } LAYOUT_BODY -->
+
+	<!-- LAYOUT_FOOT { -->
+	<footer id="LAYOUT_FOOT">
+		<section class="customs">
+			<div class="wrapper">
+				<div id="reletedSite" class="swiper related-site">
+					<div class="swiper-wrapper related-site-wrapper">
+						 
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="link">
+			<div class="wrapper">
+				<ul>
+					<li><a href="/M9007000/asset.do"><font color="red">개인정보 처리방침</font></a></li>
+					<li><a href="/M9008000/asset.do">영상정보처리기기방침</a></li>
+					<li><a href="https://www.molit.go.kr/USR/WPGE0201/m_37055/DTL.jsp" target="_blank">채용비리 신고</a></li>
+				</ul>
+			</div>
+		</section>
+		<section class="info">
+			<div class="wrapper">
+				<img class="logo" src="/img/common_logo01.png" alt="공간정보품질관리원 로고" />
+				<div class="info">
+					<p>
+						<span class="t1"><strong>사업자등록번호</strong> : 126-82-14836</span>
+						<span class="t1"><strong>대표자</strong> : 정형교</span>
+						<span class="t2"><strong>본사</strong> : 서울특별시 영등포구 양산로 91, 1202호, 1209호(당산동3가, 리드원센터)</span>
+					</p>
+	 				<p class="copy">COPYRIGHT 2025. SPATIAL INFORMATION QUALITY MANAGEMENT SERVICE.</p>
+				</div>
+				<div class="call">
+					<a class="ico" href="tel:02-6418-9100">02-6418-9100</a>
+					<div class="sub">
+						<p><strong>대표팩스</strong> <a href="tel:02-6418-9199">02-6418-9199</a></p>
+						<p><strong>심사팩스</strong> <a href="tel:02-6418-9198">02-6418-9198</a></p>
+					</div>
+				</div>
+				<dl class="link">
+					<dt>관련기관선택</dt>
+					<dd>
+						<ul>
+							<li><a target="_blank" href="http://www.molit.go.kr/portal.do">국토교통부</a></li>
+							<li><a target="_blank" href="https://www.ngii.go.kr/kor/main.do">국토지리정보원</a></li>
+						</ul>
+					</dd>
+				</dl>
+				<p class="copy">COPYRIGHT 2025. SPATIAL INFORMATION QUALITY MANAGEMENT SERVICE.</p>
+			</div>
+		</section>
+	</footer>
+	<!-- } LAYOUT_FOOT -->
+
+	<!-- 사이트맵 레이어 { -->
+	<aside id="LAYOUT_SITEMAP">
+		<a class="close" href="javascript:;" id="LAYOUT_SITEMAP_CLOSE" title="사이트맵 닫기">사이트맵 닫기</a>
+		<div class="scroll-wrap scrollbar-macosx of-auto" id="LAYOUT_SITEMAP_SCROLL">
+			<div class="wrapper">
+				
+				<ul class="d1">
+					
+				</ul>
+			</div>
+		</div>
+	</aside>
+	<!-- } 사이트맵 레이어 -->
+
+	<!-- 팝업 레이어 { -->
+	<aside class="popup-wrapper skeleton" id="LAYER_SKELETON">
+		<div class="wrap">
+			<div class="head">
+				<p class="title">소속기관 선택</p>
+				<a class="close" href="javascript:;">닫기</a>
+			</div>
+			<div class="body">
+			</div>
+		</div>
+	</aside>
+	<!-- } 팝업 레이어 -->
+
+</div>
+
+	<script>
+	$(function(){
+
+		$(document).ready(function(){
+			// 사이트맵 스크롤 초기화
+			$("#LAYOUT_SITEMAP_SCROLL").scrollbar({"autoScrollSize":true});
+		});
+
+
+
+		//
+		// LNB HOVER 처리
+		//
+		$("#LAYOUT_NAV > .lnb > .wrapper > dl").hover(
+			function(){
+				const $dd = $(this).children("dd:first");
+				$dd.addClass("ing");
+				setTimeout(function(){
+					$dd.addClass("on");
+				}, 10);
+			},
+			function(){
+				const $dd = $(this).children("dd:first");
+				$dd.removeClass("on");
+				setTimeout(function(){
+					$dd.removeClass("ing");
+				}, 300);
+			}
+		);
+
+
+		//
+		// FOOTER 관련기관 선택 HOVER 처리
+		//
+		$("#LAYOUT_FOOT > .info > .wrapper > .link").hover(
+			function(){
+				const $dd = $(this).children("dd:first");
+				$dd.addClass("ing");
+				setTimeout(function(){
+					$dd.addClass("on");
+				}, 10);
+			},
+			function(){
+				const $dd = $(this).children("dd:first");
+				$dd.removeClass("on");
+				setTimeout(function(){
+					$dd.removeClass("ing");
+				}, 300);
+			}
+		);
+
+		//
+		// 로그아웃 버튼 처리
+		//
+		$("#LAYOUT_BTN_LOGOUT,#LAYOUT_BTN_LOGOUT_M").click(function(){
+			callproc({
+				url     : "/logout.do"
+			  , success : function(res){
+				              if (res === true){
+						          location.href = "/main.do";
+						      }
+						  }
+			});
+		});
+
+		//
+		// 사이트맵 열기
+		//
+		$("#LAYOUT_BTN_SITEMAP_OPEN").click(function(){
+			const $layer = $("#LAYOUT_SITEMAP");
+			$layer.addClass("ing");
+			setTimeout(function(){
+				$layer.addClass("on");
+			}, 10);
+		});
+
+		// 사이트맵 닫기
+		$("#LAYOUT_SITEMAP_CLOSE").click(function(){
+			const $layer = $("#LAYOUT_SITEMAP");
+			$layer.removeClass("on");
+			setTimeout(function(){
+				$layer.removeClass("ing");
+			}, 300);
+		});
+
+		//
+		// 검색 열기 (모바일)
+		//
+		$("#LAYOUT_BTN_SEARCH").click(function(){
+			const $search = $("#LAYOUT_SEARCH");
+			$search.addClass("ing");
+			setTimeout(function(){
+				$search.addClass("on");
+				setTimeout(function(){
+					$search.find("input[type=text]").focus();
+				}, 300);
+			}, 10);
+		});
+
+		//
+		// 검색 닫기 (모바일)
+		//
+		$("#LAYOUT_SEARCH .close").click(function(){
+			const $search = $("#LAYOUT_SEARCH");
+			$search.removeClass("on");
+			setTimeout(function(){
+				$search.removeClass("ing");
+			}, 200);
+		});
+
+		//
+		// 통합검색
+		//
+		const $frm = $("#LAYOUT_SEARCH_W");
+		$frm.attr("method", "post");
+		$frm.attr("action", "/search.do");
+		$frm.submit(function(){
+			if (!searchWord) {
+				alert("검색어를 입력하세요");
+				return false;
+			}
+			return true;
+		});
+		// 모바일
+		const $frmm = $("#LAYOUT_SEARCH");
+		$frmm.attr("method", "post");
+		$frmm.attr("action", "/search.do");
+		$frmm.submit(function(){
+			if (!searchWord) {
+				alert("검색어를 입력하세요");
+				return false;
+			}
+			return true;
+		});
+
+		//
+		// Mobile 메뉴 열기/닫기
+		//
+		$("#LAYOUT_BTN_MENU").click(function(){
+			if ($(this).hasClass("on")){
+				menu_close();
+			}else{
+				const $menu = $("#LAYOUT_MENU");
+				$(this).addClass("on");
+				$menu.addClass("ing");
+				setTimeout(function(){
+					$menu.addClass("on");
+				}, 10);
+			}
+		});
+		const menu_close = function(){
+			const $menu = $("#LAYOUT_MENU");
+			$("#LAYOUT_BTN_MENU").removeClass("on");
+			$menu.removeClass("on");
+			setTimeout(function(){
+				$menu.removeClass("ing");
+			}, 300);
+
+		};
+		$("#LAYOUT_MENU").click(function(){
+			menu_close();
+		});
+		$("#LAYOUT_MENU > .wrap").click(function(ev){
+			ev.stopPropagation();
+		});
+
+
+		//
+		// LNB HOVER - 메가메뉴(해당 자식만) 처리
+		//
+		$("#LAYOUT_NAV > .gnb > .wrapper > ul > li > a").hover(function(){
+				$(".gnb-list-wrap").removeClass("on").css("display","none");
+				$(this).siblings(".gnb-list-wrap").addClass("on").css("display","block");
+		});
+		$(".gnb-list-wrap").mouseleave(function(){
+				$(this).removeClass("on").css("display","none");
+		});
+
+
+		//
+		// Mobile 메뉴 1Dept 열기
+		//
+		$("#LAYOUT_MENU .gnb ul.d1 > li > a").click(function(){
+			const mcd = $(this).data("mcd");
+			$("#LAYOUT_MENU .gnb ul.d1 > li > a.on").removeClass("on");
+			$(this).addClass("on");
+			$("#LAYOUT_MENU .gnb ul.d2.on").removeClass("on");
+			$("#LAYOUT_MENU .gnb ul.d2." + mcd).addClass("on");
+
+		});
+
+		//
+		// Mobile 메뉴 2Dept 열기/접기
+		//
+		$("#LAYOUT_MENU .gnb ul.d2 > li > a").click(function(){
+			const $li = $(this).parent();
+			if (!$li.hasClass("children"))
+				return true;
+			const $d3 = $(this).next("ul.d3");
+			if ($li.hasClass("open")){
+				$li.removeClass("open");
+				$d3.slideUp(200, function(){
+					$d3.addClass("on");
+				});
+			}else{
+				$li.addClass("open");
+				$d3.slideDown(200, function(){
+					$d3.addClass("on");
+				});
+			}
+			return false;
+		});
+
+		//
+		// 레이어 팝업 : 열기
+		//
+		window.popup_obj  = null;
+		window.popup_open = function(p){
+
+	        callload({
+	            url     : p.url
+	          , data    : p.data
+	          , success : function(res){
+	                const $res = $(res);
+	    			const $popup = $("#LAYER_SKELETON").clone().removeClass("skeleton").attr("id", null);
+	    			$popup.find(".head .title").text(p.title);
+	    			$popup.find(".head .close").click(function(){
+	    				popup_close($popup);
+	    			});
+	    			$res.data("popup", $popup);
+	    			$popup.find(".wrap > .body").append($res);
+	    			$popup.appendTo($(document.body));
+
+					if (p.type != null) {
+						$popup.addClass("msg");
+					}
+	    			$popup.addClass("ing");
+	    			setTimeout(function(){
+	    				$popup.addClass("on");
+	    			}, 10);
+	    			window.popup_obj = $popup;
+	            }
+	        });
+		};
+
+		//
+		// 레이어 팝업 : 닫기
+		//
+		window.popup_close = function($obj){
+			const $popup = $obj ? $obj : window.popup_obj;
+			$popup.removeClass("on");
+			setTimeout(function(){
+				$popup.removeClass("ing");
+				$popup.remove();
+			}, 300);
+		};
+
+
+		//
+		// 스크롤시 네비게이션 상단 고정
+		//
+		var sec_gnb = $('#LAYOUT_NAV').offset().top;
+		$(window).scroll(function(){
+			if($(this).scrollTop() < sec_gnb){
+				$("#LAYOUT_NAV").addClass('rel');
+				$("#LAYOUT_BODY").removeClass('rel');
+			}else if($(this).scrollTop() == 0){
+				$("#LAYOUT_NAV").addClass('rel');
+				$("#LAYOUT_BODY").removeClass('rel');
+			}else{
+				$("#LAYOUT_NAV").removeClass('rel');
+				$("#LAYOUT_BODY").addClass('rel');
+			}
+		});
+	});
+
+
+	var swiper = new Swiper("#reletedSite", {
+      slidesPerView: 6,
+      spaceBetween: 20,
+              autoplay: {
+            delay: 2000,
+        },
+        // Responsive breakpoints
+        breakpoints: {
+			// when window width is >= 320px
+			320: {
+			slidesPerView: 1,
+			spaceBetween: 20,
+			},
+			// when window width is >= 376px
+			390: {
+			slidesPerView: 2,
+			spaceBetween: 20,
+			},
+			580: {
+			slidesPerView: 3,
+			spaceBetween: 20,
+			},
+			960: {
+			slidesPerView: 4,
+			spaceBetween: 20,
+			},
+			1280: {
+			slidesPerView: 5,
+			spaceBetween: 20,
+			},
+			1440: {
+			slidesPerView: 6,
+			spaceBetween: 20,
+			},
+        }
+    });
+	</script>
+
+
+	
+	<!-- 
+	<p>SiteModel(siteCode=HOME, siteType=10, siteName=공간정보품질관리원, metaDescription=공간정보품질관리원 홈페이지, metaKeywords=공간정보품질관리원,홈페이지, metaUrl=http://www.siqms.or.kr, versionCss=25021701, versionJs=25021701, useAccessControl=N, pageRows=10, createId=admin, createTime=2025-02-17 00:00:00, modifyId=admin, modifyTime=2025-03-24 00:00:00)</p>
+	<p>MenuModel(menuCode=null, siteCode=null, menuType=null, menuName=null, parentCode=null, sortOrder=0, level=0, childrenCount=0, pathCodes=null, pathNames=null, isUse=null, isShow=null, isSurvey=null, action=null, createId=null, createTime=null, modifyId=null, modifyTime=null, canRead=false, canWrite=false, canModify=false, canDownload=false, children=[])</p>
+	<p>MemberModel(memberNo=, organNo=, memberId=, memberName=, memberType=, memberTypeName=, state=, stateName=, password=, cellNumber=, telNumber=, faxNumber=, email=, joinTime=, loginTime=, loginFailCount=0, lockYn=N, lockTime=, passwordTime=, agreeSmsYn=N, agreeSmsTime=, agreeKmsYn=N, agreeKmsTime=, agreeEmailYn=N, agreeEmailTime=, quitTime=, quitCode=, quitCodeName=, quitMemo=, agreeRequiredYn=N, agreeRequiredTime=, agreeChoiseYn=N, agreeChoiseTime=, certPublicNo=, certCellNo=, certIpinNO=, signFileNo=, bizCode=, bizCodeName=, bizRegion=, bizRegionName=, createId=, createTime=, modifyId=, modifyTime=, bizSeNm=, bsvdQltyVrfCflFmtYn=N, mbrWishCd=, mbrWishNm=, pstinstNm=, bizrno=, message=, rn=0, flfmtYr=null, bizCd=null, bizCdNm=null, bizDstrctCd=null, bizDstrctCdNm=null, adminYn=null)</p>
+	<p>https://www.siqms.or.kr</p>
+	<p>/error.do</p>
+ 	-->
+ 	
+</body>
+</html>

@@ -1,0 +1,25 @@
+User-agent: bingbot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: meta-externalagent
+Disallow: /
+
+User-agent: facebookexternalhit
+Allow: /kor
+Allow: /eng
+Disallow: /
+
+User-agent: Facebot
+Allow: /kor
+Allow: /eng
+Disallow: /
+
+User-agent: *
+Allow: /kor
+Allow: /prog
+Allow: /bbs
+Allow: /eng
+Disallow: /

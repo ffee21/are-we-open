@@ -1,0 +1,21 @@
+
+<html lang="ko">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>농림식품기술기획평가원 error page</title>
+</head>
+<body bgcolor="white" text="black" link="blue" vlink="purple" alink="red">
+<p align="center">&nbsp;</p>
+<p align="center"><img src="/images/error.png" width="419" height="385" border="0" alt="에러"></p>
+<p align="center"><a href="/"><img src="/images/btn_error_main.png" width="112" height="28" border="0"alt="에러버튼"></a></p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<DIV id=footer>
+    <p align="center"><font size="1" face="나눔고딕">Copyright&copy; 2011 KOREA INSTITUTE OF PLANNING AND EVALUATION FOR TECHNOLOGY IN FOOD, AGRICULTURE AND FORESTRY All right reserved.</font></p>
+</DIV>
+<p align="center">&nbsp;</p>
+<!--
+
+-->
+</body>
+</html>

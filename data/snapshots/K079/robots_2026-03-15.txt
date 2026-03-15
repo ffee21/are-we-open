@@ -1,0 +1,2670 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Expires" content="-1"> 
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	
+	<meta property="og:type" content="website" /> 
+	<meta property="og:title" content="대한적십자사"/> 
+	<meta property="og:description" content="대한적십자사는 가장 낮고 어두운 곳에서 위협 받는 모든 생명을 지키기 위해 노력합니다" /> 
+	<meta property="og:image" content="https://www.redcross.or.kr/images/common/layout/logo.svg" /> 
+	<meta property="og:url" content="https://www.redcross.or.kr" /> 
+	<meta name="description" content="대한적십자사는 가장 낮고 어두운 곳에서 위협 받는 모든 생명을 지키기 위해 노력합니다"> 
+	<meta name="keywords" content="대한적십자사, 후원, 봉사, RCY, 안전교육"> 
+	<meta name="robots" content="index, follow">
+	
+	<title>대한적십자사</title>	
+		<link rel="icon" href="/images/favicon.ico">
+		<!-- 공통파일 css -->
+	<link rel="stylesheet" href="/js/common/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="/css/common/print.css" media="print">
+	<!-- [P] KRDS 추가 -->
+	<link rel="stylesheet" href="/css/common/pattern_css.css" media="all">
+	<!-- [P] KRDS 커스텀 (공통 변경) -->
+	<link rel="stylesheet" href="/css/common/KRDS_cnt_layout.css" media="all">
+	<!-- [P] 레이아웃 커스텀 연결 -->
+	<link rel="stylesheet" href="/css/main/layout.css" media="all">
+	<!-- [P] ASIDE (공통) -->
+	<link rel="stylesheet" href="/css/common/aside.css" media="all">
+	<!-- [P] 메인페이지인 경우에만 생성되는 조건식 -->
+	<link rel="stylesheet" href="/css/main/main.css" media="all">
+	<!-- [P] 서브페이지인 경우에만 생성되는 조건식 -->
+	<!-- [P] 로그인 페이지에만 생성되는 조건식 -->
+	<!-- 공통파일 js -->
+	<script src="/js/common/jquery.min.js"></script>
+	<script src="/js/common/con_com.js"></script>
+	<script src="/js/common/board.js"></script>
+	<script src="/js/common/swiper/swiper-bundle.min.js"></script>
+	<script src="/js/common/slick-1.8.1/slick/slick.min.js"></script>
+	<script src="/js/web/common/common.js"></script>
+	<script src="/js/common.js"></script>
+	<!-- [P] 디자인시스템 제외하고 생성되는 조건식 -->
+	<script src="/js/common/layout.js"></script>
+	<script src="/js/jquery-ui.min.js"></script>
+	<script src="/js/jquery.form.min.js"></script>
+	<script src="/js/jquery.bpopup.min.js"></script>
+	<!-- 레이아웃 js -->
+	<script src="/js/main/layout.js"></script>
+	<script src="/js/counterup.js"></script>
+	<script src="/js/common/ScrollMagic.min.js"></script>
+	<!-- [P] 서브페이지인 경우에만 생성되는 조건식 -->
+	<script src="/js/main/main.js"></script>
+	<script src="/js/common/gsap.min.js"></script>
+	<!-- 부속 홈페이지 구분 ctxLocal -->
+<!-- //부속 홈페이지 구분 ctxLocal -->
+<!-- 구글 애널틱스 추가 2025.09.25 -->
+<!-- Google Tag Manager | 오늘의리포트 | 2025.08 -->
+<script>
+window.dataLayer = window.dataLayer || [];
+</script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KXXDX6');</script>
+<!-- End Google Tag Manager -->
+<meta name="csrfToken" content="1773570577229_6b015307-1ac4-4e34-92aa-6d683f3295c6" />
+<meta name="csrfParamNm" content="CSRFToken" />
+<!-- anyID -->
+<link href="/anyid/css/app.css" rel="stylesheet">
+<script type="text/javascript" src="/anyid/js/manifest.js"></script>
+<script type="text/javascript" src="/anyid/js/vendor.js"></script>
+<script type="text/javascript" src="/anyid/js/app.js"></script>
+<script type="text/javascript" src="/anyid/js/custom.js"></script>
+
+
+
+
+    <script>
+        var anyidAdaptor = anyidAdaptor || {};
+
+        /*이용기관 수정 영역 Start*/
+        anyidAdaptor.orgLogin = function(data){
+            //정부 통합인증SDK_연계가이드 4.4.1.3 이용기관 로그인(토글 off) 참조
+            //제공되는 라이브러리 메소드로 인증데이터 decrypt 이후 자체 로그인 로직 개발
+            const params = new URLSearchParams(location.search);
+            var obj ={
+                ssob : data.ssob,
+				tag : params.get("tx")
+            }
+            var xhr = new XMLHttpRequest();
+			var redcrMbrCiNo;
+
+            xhr.open("POST", "/anyid/jsp/orgLogin.jsp", true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    var response = JSON.parse(xhr.responseText);
+                    if (response.status == "success") {
+						const ci = JSON.parse(response.resultMap.ssobStr).ci;
+                        $.ajax({
+							type: "POST",
+							dataType:"json",
+							data : {
+								redcrMbrCiNo : ci,
+								lgnTy : "anyID",
+								mbrTypeCd : "01"
+							},
+							url: "/main/lo/login2/login.do",
+							success:function(data){
+								if(data.resultCd == "scs"){
+									alert("로그인되었습니다.");
+									location.href="/main/lo/myPage/loginMyPage.do?mi=1079";	
+								} else {
+									alert("대한적십자사 회원정보가 없습니다. 회원가입을 해주세요.");
+									location.href="/main/sb/sbscrb/insertSbscrbInfo00.do?mi=2441";
+								}
+							}
+							,error: function (data) {
+								alert("로그인에 실패하였습니다\n관리자에게 문의 주세요.");
+								return;
+							}
+						});
+					}else {
+						alert("로그인에 실패하였습니다\n관리자에게 문의 주세요.");
+						return;
+                    }
+                }
+            };
+            xhr.send(JSON.stringify(obj));
+            
+        }
+        /*이용기관 수정 영역 End*/
+
+
+        /*이용기관 문구수정 영역 Start*/
+        anyidAdaptor.JoinConfirm = function(portalJoinUri, memberData){
+            if(!confirm('Any-ID 사용자등록 하시겠습니까?')) {
+                anyidAdaptor.orgLogin(anyidAdaptor.certData);
+                return;
+            }else{
+                anyidAdaptor.receiveAnyIdJoin(portalJoinUri, memberData);
+            }
+        }
+        /*이용기관 문구수정 영역 End*/
+
+        anyidAdaptor.portalJoinUri = "null";
+        anyidAdaptor.certData = null;
+        anyidAdaptor.ssoByPass = "0";
+        anyidAdaptor.niRegYn = "null";
+        anyidAdaptor.agencyContextPath = "";
+
+
+        anyidAdaptor.success = function(data){
+            if(anyidAdaptor.ssoByPass != 0 || !data.useSso) {
+                anyidAdaptor.orgLogin(data);
+            } else {
+                anyidAdaptor.certData = data;
+                anyidAdaptor.userCheck();
+            }
+        }
+		
+		
+		anyidAdaptor.userCheck = function () {
+			//console.log(">>> userCheck 함수 진입");
+			var xhr = new XMLHttpRequest();
+			//console.log(">>> xhr 객체 생성 완료");
+			xhr.open("POST", "/oidc/userCheck", true);
+			//console.log(">>> xhr.open 호출 완료");
+			xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+			xhr.onreadystatechange = function () {
+				if (xhr.readyState !== 4) return;
+
+				//console.log("status:", xhr.status);
+				//console.log("responseText(raw):", xhr.responseText);
+				if (xhr.status === 200) {
+					//바디가 없으면 바로 리턴
+					if (!xhr.responseText || xhr.responseText.trim() === "") {
+						//console.warn("빈 응답입니다.");
+						return;
+					}
+					try {
+							var response = JSON.parse(xhr.responseText);
+							if (response && response.success) {
+								//SSO 로그인 성공
+								anyidAdaptor.ssoLogin();
+							} else {
+								setTimeout(function () {
+								//andId 가입안되어 있으면 가입 팝업창 띄움
+								var uri  = (response && response.uri)  ? response.uri  : undefined;
+								var data = (response && response.data) ? response.data : undefined;
+								anyidAdaptor.receiveAnyIdJoin(uri, data);
+							}, 100);
+						}
+					} catch (e) {
+							//console.log("error : " + e);
+							alert("오류가 발생하였습니다.\n관리자에게 문의하세요.!");	
+					}
+				} else {
+					alert("오류가 발생하였습니다.\n관리자에게 문의하세요..");	
+				}
+			};
+			const jsonObject = {
+				txId: anyidAdaptor.certData.txId,
+				ssob: anyidAdaptor.certData.ssob,
+				userSeCd: anyidAdaptor.certData.userSeCd,
+			};
+			const encodedString = btoa(JSON.stringify(jsonObject));
+			const data = "data=" + encodeURIComponent(encodedString) + "&txId=" + encodeURIComponent(anyidAdaptor.certData.txId);
+			xhr.send(data);
+		};
+	
+
+        //anyid가입
+        anyidAdaptor.receiveAnyIdJoin = function(portalJoinUri, memberData){
+
+            var url = portalJoinUri+encodeURIComponent(memberData);
+            anyidAdaptor.popup(url,"openAnyIdRegistUserIdv",700,740);
+
+            window.addEventListener("message", function (event) {
+
+			var result;
+
+			try {
+				if (typeof event.data === "string") {
+					result = JSON.parse(event.data);     // JSON 문자열이면 파싱
+				} else if (typeof event.data === "object" && event.data !== null) {
+					result = event.data;                 // 이미 객체면 그대로 사용
+				} else {
+					//console.log("Unexpected message data:", event.data);
+					return;
+				}
+			} catch (e) {
+				//console.log("message parse error:", e, "raw:", event.data);
+				alert("오류가 발생하였습니다.\n관리자에게 문의하세요.");
+				return;
+			}
+
+			if (!result.funcName || (result.funcName !== "trmsAgreComplete" && result.funcName !== "registUserComplete")) {
+				return;
+			}
+
+			if (result.status === "success") {
+				if (result.trmsAgreYn == "Y") {
+					anyidAdaptor.ssoLogin();
+				} else {
+					anyidAdaptor.orgLogin(anyidAdaptor.certData);
+				}
+			} else {
+				anyidAdaptor.orgLogin(anyidAdaptor.certData);
+			}
+
+		}, false);
+        }
+
+        // 팝업 호출
+        anyidAdaptor.popup = function(url, name, width, height){
+            let left = (screen.width) ? (screen.width-width)/2 : 0;
+            let top = (screen.height) ? (screen.height-height)/2 : 0;
+            let popup=window.open(url, name ,"resizable=yes,toolbar=no,scrollbars=yes,location=no,top="+top+"px,left="+left+"px,width="+width+"px,height="+height+"px");
+            if(popup){
+                popup.focus();
+            }
+        }
+
+        anyidAdaptor.ssoLogin = function(){
+            let jsonObject = new Object();
+            jsonObject.txId = anyidAdaptor.certData.txId;
+            jsonObject.ssob = anyidAdaptor.certData.ssob;
+            jsonObject.userSeCd = anyidAdaptor.certData.userSeCd;
+            jsonObject.afData = anyidAdaptor.certData.afData;
+            let jsonStr = JSON.stringify(jsonObject);
+
+            let encodedString = btoa(jsonStr);
+            var baseUrl = window.location.origin + anyidAdaptor.agencyContextPath + "/oidc/ssoLogin";
+            var urlWithParams = baseUrl + "?data=" + encodedString;
+            window.location.href = urlWithParams;
+
+        }
+
+        anyidAdaptor.ssoLoginPageSub = function(baseUrl, endPoint, acrValues){
+            var subUrl = "";
+
+            if (endPoint && endPoint.trim() !== "") {
+                subUrl = "?endPoint=" + encodeURIComponent(endPoint);
+            }
+
+            if (!acrValues && acrValues.trim() == "") {
+                acrValues = "3";
+            }
+
+            if (acrValues && acrValues.trim() !== "") {
+                if(subUrl == ""){
+                    subUrl = "?";
+                }else{
+                    subUrl = subUrl + "&";
+                }
+                subUrl = subUrl + "acrValues=" + acrValues;
+            }
+
+            window.location.replace(baseUrl+subUrl);
+        }
+
+        /**/
+        anyidAdaptor.ssoLogout = function(endPoint) {
+            endPoint = typeof endPoint !== 'undefined' ? endPoint : "/";
+            var baseUrl = window.location.origin + anyidAdaptor.agencyContextPath + "/oidc/ssoLogout";
+            baseUrl = baseUrl + "?endPoint=" + encodeURIComponent(endPoint);
+            window.location.replace(baseUrl);
+        }
+        /**/
+        anyidAdaptor.reAuthLevel = function(endPoint, acrValues){
+            endPoint = typeof endPoint !== 'undefined' ? endPoint : "/";
+            var baseUrl = window.location.origin + anyidAdaptor.agencyContextPath + "/oidc/reAuthLevel";
+            anyidAdaptor.ssoLoginPageSub(baseUrl, endPoint, acrValues);
+
+        }
+        /**/
+        anyidAdaptor.ssoLoginPage = function(endPoint, acrValues){
+            endPoint = typeof endPoint !== 'undefined' ? endPoint : "/";
+            var baseUrl = window.location.origin + anyidAdaptor.agencyContextPath + "/oidc/auth";
+            anyidAdaptor.ssoLoginPageSub(baseUrl, endPoint, acrValues);
+        }
+
+        /**/
+        anyidAdaptor.ssoSvcToSvc = function(url, endPoint){
+            var baseUrl = url + "/oidc/svcToSvc?endPoint=" + encodeURIComponent(endPoint);
+            window.open(baseUrl, "_blank");
+        }
+
+
+    </script><!-- anyID --></head>
+    <body>
+		<div id="wrap" class="g-wrap">
+	        <!-- 헤더 영역 -->
+	        <!-- 타임아웃 -->
+<div id="seout"></div>
+
+<!-- 구글 번역 -->
+
+    
+	<div style="display:none;">
+		<select id="selectLanguageOption" onchange="doGTranslate(this);" title="Language" >
+			<option value="">Select Language</option>
+			<option value="ko|af">Afrikaans</option>
+			<option value="ko|sq">Albanian</option>
+			<option value="ko|ar">Arabic</option>
+			<option value="ko|hy">Armenian</option>
+			<option value="ko|az">Azerbaijani</option>
+			<option value="ko|eu">Basque</option>
+			<option value="ko|be">Belarusian</option>
+			<option value="ko|bg">Bulgarian</option>
+			<option value="ko|ca">Catalan</option>
+			<option value="ko|zh-CN">Chinese (Simplified)</option>
+			<option value="ko|zh-TW">Chinese (Traditional)</option>
+			<option value="ko|hr">Croatian</option>
+			<option value="ko|cs">Czech</option>
+			<option value="ko|da">Danish</option>
+			<option value="ko|nl">Dutch</option>
+			<option value="ko|en">English</option>
+			<option value="ko|et">Estonian</option>
+			<option value="ko|tl">Filipino</option>
+			<option value="ko|fi">Finnish</option>
+			<option value="ko|fr">French</option>
+			<option value="ko|gl">Galician</option>
+			<option value="ko|ka">Georgian</option>
+			<option value="ko|de">German</option>
+			<option value="ko|el">Greek</option>
+			<option value="ko|ht">Haitian Creole</option>
+			<option value="ko|iw">Hebrew</option>
+			<option value="ko|hi">Hindi</option>
+			<option value="ko|hu">Hungarian</option>
+			<option value="ko|is">Icelandic</option>
+			<option value="ko|id">Indonesian</option>
+			<option value="ko|ga">Irish</option>
+			<option value="ko|it">Italian</option>
+			<option value="ko|ja">Japanese</option>
+			<option value="ko|ko">Korean</option>
+			<option value="ko|lv">Latvian</option>
+			<option value="ko|lt">Lithuanian</option>
+			<option value="ko|mk">Macedonian</option>
+			<option value="ko|ms">Malay</option>
+			<option value="ko|mt">Maltese</option>
+			<option value="ko|no">Norwegian</option>
+			<option value="ko|fa">Persian</option>
+			<option value="ko|pl">Polish</option>
+			<option value="ko|pt">Portuguese</option>
+			<option value="ko|ro">Romanian</option>
+			<option value="ko|ru">Russian</option>
+			<option value="ko|sr">Serbian</option>
+			<option value="ko|sk">Slovak</option>
+			<option value="ko|sl">Slovenian</option>
+			<option value="ko|es">Spanish</option>
+			<option value="ko|sw">Swahili</option>
+			<option value="ko|sv">Swedish</option>
+			<option value="ko|th">Thai</option>
+			<option value="ko|tr">Turkish</option>
+			<option value="ko|uk">Ukrainian</option>
+			<option value="ko|ur">Urdu</option>
+			<option value="ko|vi">Vietnamese</option>
+			<option value="ko|cy">Welsh</option>
+			<option value="ko|yi">Yiddish</option>
+		</select>
+		<div id="google_translate_element2"></div>
+	</div>
+	
+	<script>
+		function googleTranslateElementInit2() {new google.translate.TranslateElement({pageLanguage: 'ko',autoDisplay: false}, 'google_translate_element2');}
+	</script>
+	<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script>
+	<!-- KRDS 건너뛰기 링크 -->
+<div id="skip-nav">
+    <a href="#container">본문 바로가기</a>
+    <a href="#gnb">메인메뉴 바로가기</a></div>
+<!-- //KRDS 건너뛰기 링크 -->
+
+<!-- 상단 배너영역 -->
+<div id="krds-masthead">
+    <div class="toggle-wrap">
+        <div class="toggle-head">
+            <div class="inner">
+                <div class="head-etc">
+                    <ul class="etc-ul">
+                        <li>
+                            <div class="krds-drop-wrap zoom-drop"> <!-- zoom-drop KRDS 구버전 에서 가져옴 -->
+                            	
+                            	<button type="button" class="krds-btn small text drop-btn" aria-expanded="false">화면크기 <i class="svg-icon ico-toggle"></i></button>
+		                                <div class="drop-menu">
+		                                    <div class="drop-in">
+		                                        <ul class="drop-list">
+		                                            <li><button type="button" class="item-link xsm">작게</button></li>
+		                                            <li><button type="button" class="item-link sm active">보통</button></li>
+		                                            <li><button type="button" class="item-link md">조금 크게</button></li>
+		                                            <li><button type="button" class="item-link lg">크게</button></li>
+		                                            <li><button type="button" class="item-link xlg">가장크게</button></li>
+		                                        </ul>
+		                                    </div>
+		                                </div>
+					                </div>
+                        </li>
+                        <li>
+                            <div class="krds-drop-wrap"> <!-- KRDS 구버전 에서 가져옴 -->
+                                <button type="button" class="krds-btn small text drop-btn" aria-expanded="false">Language <i class="svg-icon ico-toggle"></i></button>
+                                <div class="drop-menu">
+                                    <div class="drop-in">
+                                        <ul class="drop-list">
+                                            <li><a href="javascript:doGTranslate('ko|ko')" class="item-link" title="Korean">Korean</a></li>
+											<li><a href="javascript:doGTranslate('ko|en')" class="item-link" title="English">English</a></li>
+											<li><a href="javascript:doGTranslate('ko|zh-CN')" class="item-link" title="Chinese(Simplified)">Chinese(Simplified)</a></li>
+											<li><a href="javascript:doGTranslate('ko|zh-TW')" class="item-link" title="Chinese(Traditional)">Chinese(Traditional)</a></li>
+											<li><a href="javascript:doGTranslate('ko|ja')" class="item-link" title="Japanese">Japanese</a></li>
+											<li><a href="javascript:doGTranslate('ko|vi')" class="item-link" title="Vietnamese">Vietnamese</a></li>
+											<li><a href="javascript:doGTranslate('ko|ru')" class="item-link" title="Russian">Russian</a></li>
+											<li><a href="javascript:doGTranslate('ko|de')" class="item-link" title="German">German</a></li>
+											<li><a href="javascript:doGTranslate('ko|af')" class="item-link" title="Afrikaans">Afrikaans</a></li>
+											<li><a href="javascript:doGTranslate('ko|sq')" class="item-link" title="Albanian">Albanian</a></li>
+											<li><a href="javascript:doGTranslate('ko|ar')" class="item-link" title="Arabic">Arabic</a></li>
+											<li><a href="javascript:doGTranslate('ko|hy')" class="item-link" title="Armenian">Armenian</a></li>
+											<li><a href="javascript:doGTranslate('ko|az')" class="item-link" title="Azerbaijani">Azerbaijani</a></li>
+											<li><a href="javascript:doGTranslate('ko|eu')" class="item-link" title="Basque">Basque</a></li>
+											<li><a href="javascript:doGTranslate('ko|be')" class="item-link" title="Belarusian">Belarusian</a></li>
+											<li><a href="javascript:doGTranslate('ko|bg')" class="item-link" title="Bulgarian">Bulgarian</a></li>
+											<li><a href="javascript:doGTranslate('ko|ca')" class="item-link" title="Catalan">Catalan</a></li>
+											<li><a href="javascript:doGTranslate('ko|hr')" class="item-link" title="Croatian">Croatian</a></li>
+											<li><a href="javascript:doGTranslate('ko|cs')" class="item-link" title="Czech">Czech</a></li>
+											<li><a href="javascript:doGTranslate('ko|da')" class="item-link" title="Danish">Danish</a></li>
+											<li><a href="javascript:doGTranslate('ko|nl')" class="item-link" title="Dutch">Dutch</a></li>
+											<li><a href="javascript:doGTranslate('ko|et')" class="item-link" title="Estonian">Estonian</a></li>
+											<li><a href="javascript:doGTranslate('ko|tl')" class="item-link" title="Filipino">Filipino</a></li>
+											<li><a href="javascript:doGTranslate('ko|fi')" class="item-link" title="Finnish">Finnish</a></li>
+											<li><a href="javascript:doGTranslate('ko|fr')" class="item-link" title="French">French</a></li>
+											<li><a href="javascript:doGTranslate('ko|gl')" class="item-link" title="Galician">Galician</a></li>
+											<li><a href="javascript:doGTranslate('ko|ka')" class="item-link" title="Georgian">Georgian</a></li>
+											<li><a href="javascript:doGTranslate('ko|el')" class="item-link" title="Greek">Greek</a></li>
+											<li><a href="javascript:doGTranslate('ko|ht')" class="item-link" title="Haitian Creole">Haitian Creole</a></li>
+											<li><a href="javascript:doGTranslate('ko|iw')" class="item-link" title="Hebrew">Hebrew</a></li>
+											<li><a href="javascript:doGTranslate('ko|hi')" class="item-link" title="Hindi">Hindi</a></li>
+											<li><a href="javascript:doGTranslate('ko|hu')" class="item-link" title="Hungarian">Hungarian</a></li>
+											<li><a href="javascript:doGTranslate('ko|is')" class="item-link" title="Icelandic">Icelandic</a></li>
+											<li><a href="javascript:doGTranslate('ko|id')" class="item-link" title="Indonesian">Indonesian</a></li>
+											<li><a href="javascript:doGTranslate('ko|ga')" class="item-link" title="Irish">Irish</a></li>
+											<li><a href="javascript:doGTranslate('ko|it')" class="item-link" title="Italian">Italian</a></li>
+											<li><a href="javascript:doGTranslate('ko|lv')" class="item-link" title="Latvian">Latvian</a></li>
+											<li><a href="javascript:doGTranslate('ko|lt')" class="item-link" title="Lithuanian">Lithuanian</a></li>
+											<li><a href="javascript:doGTranslate('ko|mk')" class="item-link" title="Macedonian">Macedonian</a></li>
+											<li><a href="javascript:doGTranslate('ko|ms')" class="item-link" title="Malay">Malay</a></li>
+											<li><a href="javascript:doGTranslate('ko|mt')" class="item-link" title="Maltese">Maltese</a></li>
+											<li><a href="javascript:doGTranslate('ko|no')" class="item-link" title="Norwegian">Norwegian</a></li>
+											<li><a href="javascript:doGTranslate('ko|fa')" class="item-link" title="Persian">Persian</a></li>
+											<li><a href="javascript:doGTranslate('ko|pl')" class="item-link" title="Polish">Polish</a></li>
+											<li><a href="javascript:doGTranslate('ko|pt')" class="item-link" title="Portuguese">Portuguese</a></li>
+											<li><a href="javascript:doGTranslate('ko|ro')" class="item-link" title="Romanian">Romanian</a></li>
+											<li><a href="javascript:doGTranslate('ko|sr')" class="item-link" title="Serbian">Serbian</a></li>
+											<li><a href="javascript:doGTranslate('ko|sk')" class="item-link" title="Slovak">Slovak</a></li>
+											<li><a href="javascript:doGTranslate('ko|sl')" class="item-link" title="Slovenian">Slovenian</a></li>
+											<li><a href="javascript:doGTranslate('ko|es')" class="item-link" title="Spanish">Spanish</a></li>
+											<li><a href="javascript:doGTranslate('ko|sw')" class="item-link" title="Swahili">Swahili</a></li>
+											<li><a href="javascript:doGTranslate('ko|sv')" class="item-link" title="Swedish">Swedish</a></li>
+											<li><a href="javascript:doGTranslate('ko|th')" class="item-link" title="Thai">Thai</a></li>
+											<li><a href="javascript:doGTranslate('ko|tr')" class="item-link" title="Turkish">Turkish</a></li>
+											<li><a href="javascript:doGTranslate('ko|uk')" class="item-link" title="Ukrainian">Ukrainian</a></li>
+											<li><a href="javascript:doGTranslate('ko|ur')" class="item-link" title="Urdu">Urdu</a></li>
+											<li><a href="javascript:doGTranslate('ko|cy')" class="item-link" title="Welsh">Welsh</a></li>
+											<li><a href="javascript:doGTranslate('ko|yi')" class="item-link" title="Yiddish">Yiddish</a></li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        </ul>
+                    <ul class="head-util">
+	                    <li><a href="/main/brof/intgMain.do"><i class="ri-building-4-line" aria-hidden="true"></i> 지사통합메인</a></li>
+		                        <li><a href="javascript:;" class="open-modal" data-target="siteModal"><i class="ri-home-2-line" aria-hidden="true"></i> 관련사이트</a></li>
+	                        </ul>
+                </div>
+            </div>
+        </div>
+   <!-- <div class="toggle-body">
+            <div class="inner">
+                <dl class="nuri">
+                    <dt>공식 누리집 주소 확인하기</dt>
+                    <dd class="desc">
+                        go.kr 주소를 사용하는 누리집은 대한민국 정부기관이 관리하는 누리집입니다.<br>
+                        이밖에 or.kr 또는 .kr등 다른 도메인 주소를 사용하고 있다면 아래 URL에서 도메인 주소를 확인해 보세요
+                    </dd>
+                    <dd>
+                        <a href="#" class="krds-btn xsmall text" target="_blank" title="새 창 열기"> 운영중인 공식 누리집보기 <i class="svg-icon ico-link"></i> </a>
+                    </dd>
+                </dl>
+            </div>
+        </div> -->
+    </div>
+</div>
+<!-- //상단 배너영역 -->
+
+<!-- 관련사이트 modal -->
+<div class="modal-wrap siteModal_wrap">
+    <section id="siteModal" class="krds-modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- close button -->
+                <button type="button" class="krds-btn medium icon btn-close close-modal">
+                    <span class="sr-only">닫기</span>
+                    <i class="svg-icon ico-popup-close"></i>
+                </button>
+                <!-- //close button -->
+                <!-- modal contents -->
+                <div class="modal-conts">
+                    <div class="conts-area">
+                        <div class="left_box">
+                            <div class="wrap">
+                                <h3>대한적십자사의 <span class="f_weightB">관련사이트 모아보기</span></h3>
+                                <div class="img_box" aria-hidden="true">
+                                    <img src="/images/common/char_hi.png" alt="">
+                                </div>
+                                <p class="sub">주요 사이트를 <span>한눈에!</span></p>
+                                <p>빠르게 원하는 사이트로<br>접속하실 수 있는 <span class="f_weightB">바로가기 서비스</span>입니다.</p>
+                            </div>
+                        </div>
+                        <div class="right_box">
+                            <h3><span class="f_weightB">관련사이트</span> 바로가기</h3>
+                            <ul>
+                                <li>
+                                    <a href="http://www.bloodinfo.net" title="새창열림" target="_blank">
+                                        <div class="icon_box ico-1" aria-hidden="true"></div>
+                                        <p class="tit">혈액관리본부</p>
+                                        <p class="btn">바로가기 <i class="ri-home-2-line"></i></p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/ihl/main.do" title="새창열림" target="_blank">
+                                        <div class="icon_box ico-2" aria-hidden="true"></div>
+                                        <p class="tit">인도법연구소</p>
+                                        <p class="btn">바로가기 <i class="ri-home-2-line"></i></p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.icrc.org" title="새창열림" target="_blank">
+                                        <div class="icon_box ico-3" aria-hidden="true"></div>
+                                        <p class="tit">ICRC<br>(국제적십자위원회)</p>
+                                        <p class="btn">바로가기 <i class="ri-home-2-line"></i></p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.ifrc.org" title="새창열림" target="_blank">
+                                        <div class="icon_box ico-4" aria-hidden="true"></div>
+                                        <p class="tit">IFRC<br>(국제적십자사)</p>
+                                        <p class="btn">바로가기 <i class="ri-home-2-line"></i></p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/apdrc/main.do" title="새창열림" target="_blank">
+                                        <div class="icon_box ico-5" aria-hidden="true"></div>
+                                        <p class="tit">APDRC<br>(아태재난복원력센터)</p>
+                                        <p class="btn">바로가기 <i class="ri-home-2-line"></i></p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/recovery/main.do" title="새창열림" target="_blank">
+                                        <div class="icon_box ico-6" aria-hidden="true"></div>
+                                        <p class="tit">재난심리<br>회복지원센터</p>
+                                        <p class="btn">바로가기 <i class="ri-home-2-line"></i></p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/disaster/main.do" title="새창열림" target="_blank">
+                                        <div class="icon_box ico-7" aria-hidden="true"></div>
+                                        <p class="tit">실시간<br>재난구호정보</p>
+                                        <p class="btn">바로가기 <i class="ri-home-2-line"></i></p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.rch.or.kr/" title="새창열림" target="_blank">
+                                        <div class="icon_box ico-8" aria-hidden="true"></div>
+                                        <p class="tit">대한적십자사<br>의료원</p>
+                                        <p class="btn">바로가기 <i class="ri-home-2-line"></i></p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.redcross21.or.kr" title="새창열림" target="_blank">
+                                        <div class="icon_box ico-9" aria-hidden="true"></div>
+                                        <p class="tit">적십자<br>수품센터</p>
+                                        <p class="btn">바로가기 <i class="ri-home-2-line"></i></p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- //modal contents -->
+            </div>
+        </div>
+        <div class="modal-back"></div>
+    </section>
+</div>
+<!-- 헤더-->
+<header id="header"> 
+    <div class="header-in">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+$(function(){
+	
+	$(document).on("click", ".lgnBtn, .wlogout, .mlogout",function (){
+		
+			
+				if($(this).hasClass("lgnBtn")){
+					anyidAdaptor.ssoLoginPage("","2");
+				} else {
+					anyidAdaptor.ssoLogout("/main/main.do");
+				}
+			
+			
+		
+	})
+			
+});
+</script>
+
+
+<!-- 임시 -->
+
+<form id="learnLgnTrsmForm" action="https://www.redcross.or.kr/learn/main/index.do" target="_blank">
+	<input type="hidden" name="redcrMbrSnEnc">
+	<input type="hidden" name="iv_mm">
+</form>
+			
+
+<div class="header-container">
+    <div class="inner">
+        <div class="header-branding">
+            <h2 class="logo">
+				
+				
+				
+				
+                	<a href="/main/main.do" title="메인으로 이동">
+						
+							
+								<img src="/images/common/layout/logo.svg" class="logo-im" alt="대한적십자사">
+							
+							
+						
+					</a>
+				
+            </h2>
+            
+            <div class="header-actions">
+                <!-- 메인메뉴 : 데스크탑 -->
+                
+		    		
+		    		
+		    			
+		    			<button type="button" class="btn-navi sch" id="searchOpen" title="통합검색 레이어" data-target="popTotalSch">통합검색</button>
+		    			
+		    			
+							<a href='#' class="btn-navi login lgnBtn">로그인</a>
+						
+						
+		    		
+	    		
+                <!-- 지사통합메인 외 표기 -->
+                
+                	
+                	
+                	
+                		
+	                		
+	                		
+	                		
+	                		
+	                		
+	                		
+	                		
+	                		
+	                		
+	                		
+	                		
+	                		
+	                		
+	                		
+	                		
+	                	
+	                	<a href="/main/ad/pay/redCrossPayStep01.do?mi=2406" class="btnServ"><i class="ri-service-fill" aria-hidden="true"></i>후원하기</a>
+                	
+		                
+	                <!-- //메인메뉴 : 데스크탑 -->
+					
+					
+			            <button type="button" class="btn-navi all" aria-controls="mobile-nav">
+			                 <em>
+			                     <i></i>
+			                     <i></i>
+			                     <i></i>
+			                 </em>
+			                 <span class="sr-only">전체메뉴</span>
+			             </button>
+		            
+                
+                <!-- //지사통합메인 외 표기 -->
+            </div>
+        </div>
+    </div>
+</div><nav class="krds-main-menu" id="gnb">
+            <div class="inner">
+                <ul class="gnb-menu" aria-label="메인 메뉴">
+                    <!-- gnb -->
+				    <!--START-->
+						<li>
+								<button type="button" class="gnb-main-trigger"  data-trigger="gnb" aria-controls="gnb01" aria-expanded="false" aria-haspopup="true">기관소개</button>
+								<div class="gnb-toggle-wrap" id="gnb01">
+									<div class="gnb-main-list">
+										<div class="sub-title-wrap">
+											<h2 class="sub-title"><span>기관소개</span></h2>
+											<div class="sub-info"><span>대한적십자사를&nbsp;소개합니다.</span><p><strong>Saving Lives,</strong> 적십자는 생명입니다.</p></div>
+										</div>
+										<div class="depth-child-menu">
+											<ul class="depth02-menu">
+												<li><a href="/main/ad/ex/crnclView.do?mi=1005" class=""  >기관안내</a>
+													<ul class="depth03-menu">
+														<li><a href="/main/ad/ex/crnclView.do?mi=1005"  class=""  >인사말</a></li>
+														<li><a href="/main/cm/conts/contsView.do?mi=1076&contsId=1017"  class=""  >설립목적</a></li>
+														<li><a href="/main/cm/conts/contsView.do?mi=2428&contsId=1062"  class=""  >주요연혁</a></li>
+														<li><a href="/main/cm/conts/contsView.do?mi=1010&contsId=1002"  class=""  >적십자운동</a></li>
+														<li><a href="/main/cm/conts/contsView.do?mi=1112&contsId=1683"  class=""  >경영방침</a></li>
+														<li><a href="/pub/basicSystem/index.jsp"  class="item-link"   rel="noopener noreferrer" target="_blank" title="새창열림">브랜드CI<i class="svg-icon ico-go"></i></a></li>
+														<li><a href="/main/cm/conts/contsView.do?mi=2264&contsId=1410"  class=""  >쎄호소개</a></li>
+													</ul>
+												</li>
+												<li><a href="/main/cm/conts/contsView.do?mi=1118&contsId=1007" class=""  >주요사업안내</a>
+													<ul class="depth03-menu">
+														<li><a href="/main/cm/conts/contsView.do?mi=1118&contsId=1007"  class=""  >국내사업</a></li>
+														<li><a href="/main/cm/conts/contsView.do?mi=1040&contsId=1011"  class=""  >국제사업</a></li>
+														<li><a href="/main/cm/conts/contsView.do?mi=2218&contsId=1396"  class=""  >남북사업</a></li>
+														<li><a href="/main/cm/conts/contsView.do?mi=1130&contsId=1021"  class=""  >공공의료사업</a></li>
+														<li><a href="/main/cm/conts/contsView.do?mi=1131&contsId=1022"  class=""  >혈액사업</a></li>
+													</ul>
+												</li>
+												<li><a href="/main/cm/conts/contsView.do?mi=1133&contsId=1023" class=""  >정보공개</a>
+													<ul class="depth03-menu">
+														<li><a href="/main/cm/conts/contsView.do?mi=1133&contsId=1023"  class=""  >정보공개제도안내</a></li>
+														<li><a href="/main/cm/conts/contsView.do?mi=1136&contsId=1103"  class=""  >예결산자료</a></li>
+														<li><a href="/main/pt/pst/selectPstList.do?mi=2621&bbsId=1562"  class=""  >기부금품 모집 및 지출명세서</a></li>
+														<li><a href="/main/pt/pst/selectPstList.do?mi=1139&bbsId=1013"  class=""  >법규</a></li>
+														<li><a href="/main/pt/pst/selectPstList.do?mi=2402&bbsId=1440"  class=""  >서식자료실</a></li>
+														<li><a href="/main/pt/pst/selectPstList.do?mi=1141&bbsId=1014"  class=""  >사업실명제</a></li>
+														<li><a href="/main/cm/conts/contsView.do?mi=1142&contsId=1025"  class=""  >공공데이터개방</a></li>
+														<li><a href="/main/cm/conts/contsView.do?mi=1145&contsId=1026"  class=""  >윤리경영자료실</a></li>
+														<li><a href="/main/pt/pst/selectPstList.do?mi=1161&bbsId=1026"  class=""  >감사자료</a></li>
+														<li><a href="https://www.alio.go.kr/organ/organDisclosureDtl.do?apbaId=C0059"  class="item-link"   rel="noopener noreferrer" target="_blank" title="새창열림">경영공시<i class="svg-icon ico-go"></i></a></li>
+													</ul>
+												</li>
+												<li><a href="/main/cm/conts/contsView.do?mi=1030&contsId=1019" class=""  >조직안내</a>
+													<ul class="depth03-menu">
+														<li><a href="/main/cm/conts/contsView.do?mi=1030&contsId=1019"  class=""  >조직도</a></li>
+														<li><a href="/main/tk/taskalctn/selectTaskAlctnView.do?mi=1117"  class=""  >업무담당자</a></li>
+														<li><a href="/main/ad/ex/excView.do?mi=1377"  class=""  >임원소개</a></li>
+														<li><a href="/main/cm/conts/contsView.do?mi=1384&contsId=1102"  class=""  >사업장 현황</a></li>
+													</ul>
+												</li>
+												<li><a href="/main/pp/prcplView/selectPrcplView.do?mi=2590" class=""  >서비스 이용안내</a>
+													<ul class="depth03-menu">
+														<li><a href="/main/pp/prcplView/selectPrcplView.do?mi=2590"  class=""  >개인정보처리방침</a></li>
+														<li><a href="/main/pt/pst/selectPstList.do?mi=2592&bbsId=1520"  class=""  >개인정보관리현황</a></li>
+														<li><a href="/main/iv/prvcView/selectEmailView.do?mi=2593"  class=""  >이메일주소수집거부</a></li>
+														<li><a href="/main/cm/conts/contsView.do?mi=2594&contsId=1685"  class=""  >이용약관</a></li>
+														<li><a href="/main/cm/conts/contsView.do?mi=2595&contsId=1686"  class=""  >정보공개지침</a></li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<button type="button" class="gnb-main-trigger"  data-trigger="gnb" aria-controls="gnb038" aria-expanded="false" aria-haspopup="true">후원</button>
+								<div class="gnb-toggle-wrap" id="gnb038">
+									<div class="gnb-main-list">
+										<div class="sub-title-wrap">
+											<h2 class="sub-title"><span>후원</span></h2>
+											<div class="sub-info"><span>세상을&nbsp;바꾸는&nbsp;실천<br>당신의&nbsp;참여로&nbsp;희망을&nbsp;만들어&nbsp;주세요.</span><p><strong>Saving Lives,</strong> 적십자는 생명입니다.</p></div>
+										</div>
+										<div class="depth-child-menu">
+											<ul class="depth02-menu">
+												<li><a href="/main/cm/cmpgn/selectCmpgnView.do?mi=2267" class=""  >개인후원</a></li>
+												<li><a href="/main/cm/conts/contsView.do?mi=2223&contsId=1481" class=""  >기업/단체후원</a></li>
+												<li><a href="/main/cm/conts/contsView.do?mi=2268&contsId=1414" class=""  >고액/유산기부</a>
+													<ul class="depth03-menu">
+														<li><a href="/main/cm/conts/contsView.do?mi=2268&contsId=1414"  class=""  >레드크로스 아너스클럽</a></li>
+														<li><a href="/main/cm/conts/contsView.do?mi=1184&contsId=1036"  class=""  >레드크로스 아너스기업</a></li>
+														<li><a href="/main/cm/conts/contsView.do?mi=2501&contsId=1651"  class=""  >명예의 전당</a></li>
+														<li><a href="/main/cm/conts/contsView.do?mi=2231&contsId=1038"  class=""  >유산기부</a></li>
+													</ul>
+												</li>
+												<li><a href="/main/cm/conts/contsView.do?mi=1189&contsId=1040" class=""  >적십자회비</a>
+													<ul class="depth03-menu">
+														<li><a href="/main/cm/conts/contsView.do?mi=1189&contsId=1040"  class=""  >적십자회비란</a></li>
+														<li><a href="/main/ad/pay/redCrossMembershipFeeMain.do?mi=2340"  class=""  >적십자회비 참여 및 확인</a></li>
+														<li><a href="/main/cm/conts/contsView.do?mi=1191&contsId=1042"  class=""  >적십자회비, 이렇게 쓰입니다.</a></li>
+														<li><a href="/main/cm/conts/contsView.do?mi=2600&contsId=1037"  class=""  >레드크로스 Giving Club</a></li>
+													</ul>
+												</li>
+												<li><a href="/main/sb/spnBplc/spnBplcView.do?mi=1179" class=""  >기부자 스토리</a>
+													<ul class="depth03-menu">
+														<li><a href="/main/sb/spnBplc/spnBplcView.do?mi=1179"  class=""  >후원참여 사업장</a></li>
+														<li><a href="/main/pt/pst/selectPstList.do?mi=2286&bbsId=1380"  class=""  >후원 이후 이야기</a></li>
+													</ul>
+												</li>
+												<li><a href="/main/sp/bill/spnBillPrntMain.do?mi=2587" class=""  >기부금 영수증</a>
+													<ul class="depth03-menu">
+														<li><a href="/main/sp/bill/spnBillPrntMain.do?mi=2587"  class=""  >기부금 영수증 발급</a></li>
+														<li><a href="/main/sp/bill/insertSpnBillAplyPage.do?mi=2588"  class=""  >무통장 기부금 영수증 신청</a></li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<button type="button" class="gnb-main-trigger"  data-trigger="gnb" aria-controls="gnb057" aria-expanded="false" aria-haspopup="true">봉사</button>
+								<div class="gnb-toggle-wrap" id="gnb057">
+									<div class="gnb-main-list">
+										<div class="sub-title-wrap">
+											<h2 class="sub-title"><span>봉사</span></h2>
+											<div class="sub-info"><span>세상을&nbsp;바꾸는&nbsp;실천<br>당신의&nbsp;참여로&nbsp;희망을&nbsp;만들어&nbsp;주세요.</span><p><strong>Saving Lives,</strong> 적십자는 생명입니다.</p></div>
+										</div>
+										<div class="depth-child-menu">
+											<ul class="depth02-menu">
+												<li><a href="/main/cm/conts/contsView.do?mi=1208&contsId=1050" class=""  >봉사활동안내</a>
+													<ul class="depth03-menu">
+														<li><a href="/main/cm/conts/contsView.do?mi=1208&contsId=1050"  class=""  >봉사활동가이드</a></li>
+														<li><a href="/main/cm/conts/contsView.do?mi=1209&contsId=1051"  class=""  >봉사활동소개</a></li>
+													</ul>
+												</li>
+												<li><a href="/main/cm/conts/contsView.do?mi=1216&contsId=1055" class=""  >봉사원소개</a>
+													<ul class="depth03-menu">
+														<li><a href="/main/cm/conts/contsView.do?mi=1216&contsId=1055"  class=""  >봉사원활동소개</a></li>
+														<li><a href="/main/cm/conts/contsView.do?mi=1218&contsId=1056"  class=""  >봉사원예우프로그램</a></li>
+													</ul>
+												</li>
+												<li><a href="/main/lo/myPage/linkSrvcJoinPage.do?mi=1212" class=""  >참여하기</a>
+													<ul class="depth03-menu">
+														<li><a href="/main/lo/myPage/linkSrvcJoinPage.do?mi=1212"  class=""  >봉사원가입</a></li>
+														<li><a href="/main/fm/fstvl/selectFstvlList.do?mi=1210"  class=""  >봉사활동신청</a></li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<button type="button" class="gnb-main-trigger"  data-trigger="gnb" aria-controls="gnb067" aria-expanded="false" aria-haspopup="true">RCY</button>
+								<div class="gnb-toggle-wrap" id="gnb067">
+									<div class="gnb-main-list">
+										<div class="sub-title-wrap">
+											<h2 class="sub-title"><span>RCY</span></h2>
+											<div class="sub-info"><span>Red&nbsp;CrossYouth!<br>매순간&nbsp;행복을&nbsp;만들어&nbsp;갑니다.</span><p><strong>Saving Lives,</strong> 적십자는 생명입니다.</p></div>
+										</div>
+										<div class="depth-child-menu">
+											<ul class="depth02-menu">
+												<li><a href="/main/cm/conts/contsView.do?mi=2238&contsId=1402" class=""  >RCY안내</a>
+													<ul class="depth03-menu">
+														<li><a href="/main/cm/conts/contsView.do?mi=2238&contsId=1402"  class=""  >RCY소개</a></li>
+														<li><a href="/main/cm/conts/contsView.do?mi=2596&contsId=1060"  class=""  >RCY구성안내</a></li>
+														<li><a href="/main/pt/pst/selectPstList.do?mi=2524&bbsId=1513"  class=""  >RCY공지사항</a></li>
+														<li><a href="/main/cm/conts/contsView.do?mi=2239&contsId=1401"  class=""  >활동목표</a></li>
+													</ul>
+												</li>
+												<li><a href="/main/cm/conts/contsView.do?mi=1235&contsId=1067" class=""  >RCY활동</a>
+													<ul class="depth03-menu">
+														<li><a href="/main/cm/conts/contsView.do?mi=1235&contsId=1067"  class=""  >찾아가는 인도주의 인성교육</a></li>
+														<li><a href="/main/cm/conts/contsView.do?mi=1240&contsId=1072"  class=""  >스승의 날 소개</a></li>
+														<li><a href="/main/cm/conts/contsView.do?mi=1241&contsId=1073"  class=""  >우정의 선물 DIY</a></li>
+														<li><a href="/main/cm/conts/contsView.do?mi=1236&contsId=1068"  class=""  >대학적십자 전국협의회</a></li>
+														<li><a href="/main/cm/conts/contsView.do?mi=1238&contsId=1070"  class=""  >RCGC프로그램</a></li>
+													</ul>
+												</li>
+												<li><a href="/main/cm/conts/contsView.do?mi=2244&contsId=1653" class=""  >지도자양성</a>
+													<ul class="depth03-menu">
+														<li><a href="/main/cm/conts/contsView.do?mi=2244&contsId=1653"  class=""  >지도자양성안내</a></li>
+														<li><a href="/main/pt/pst/selectPstList.do?mi=2511&bbsId=1506"  class=""  >교육프로그램</a></li>
+														<li><a href="https://www.redcross.or.kr/leader2/main/login2.do"  class="item-link"   rel="noopener noreferrer" target="_blank" title="새창열림">지도자용 드리미<i class="svg-icon ico-go"></i></a></li>
+													</ul>
+												</li>
+												<li><a href="/main/lo/myPage/linkSrvcJoinPage.do?mi=1244" class=""  >참여하기</a>
+													<ul class="depth03-menu">
+														<li><a href="/main/lo/myPage/linkSrvcJoinPage.do?mi=1244"  class=""  >단원모집</a></li>
+														<li><a href="/main/ad/rcy/re/selRcyEvntList.do?mi=1246"  class=""  >활동신청</a></li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a class="gnb-main-trigger is-link" href="https://www.redcross.or.kr/learn/"   rel="noopener noreferrer" target="_blank" title="새창열림">안전교육</a>
+							</li>
+							<li>
+								<button type="button" class="gnb-main-trigger"  data-trigger="gnb" aria-controls="gnb087" aria-expanded="false" aria-haspopup="true">소통</button>
+								<div class="gnb-toggle-wrap" id="gnb087">
+									<div class="gnb-main-list">
+										<div class="sub-title-wrap">
+											<h2 class="sub-title"><span>소통</span></h2>
+											<div class="sub-info"><span>대한적십자사의&nbsp;인도주의&nbsp;활동은<br>지금까지&nbsp;계속되고&nbsp;있습니다.</span><p><strong>Saving Lives,</strong> 적십자는 생명입니다.</p></div>
+										</div>
+										<div class="depth-child-menu">
+											<ul class="depth02-menu">
+												<li><a href="/main/pt/pst/selectPstList.do?mi=1009&bbsId=1001" class=""  >소식</a>
+													<ul class="depth03-menu">
+														<li><a href="/main/pt/pst/selectPstList.do?mi=1009&bbsId=1001"  class=""  >공지사항</a></li>
+														<li><a href="/main/pt/pst/selectPstList.do?mi=1045&bbsId=1003"  class=""  >보도자료</a></li>
+														<li><a href="/main/qr/qrspns/selectSrvyQrspnsList.do?mi=2384"  class=""  >설문조사</a></li>
+													</ul>
+												</li>
+												<li><a href="/main/pt/pst/selectPstList.do?mi=2378&bbsId=1422" class=""  >공고</a>
+													<ul class="depth03-menu">
+														<li><a href="/main/pt/pst/selectPstList.do?mi=2378&bbsId=1422"  class=""  >일반공고</a></li>
+														<li><a href="https://www.redcross.or.kr/recruit/"  class="item-link"   rel="noopener noreferrer" target="_blank" title="새창열림">채용공고<i class="svg-icon ico-go"></i></a></li>
+														<li><a href="https://www.g2b.go.kr/link//FIUA006_01/single/?untySrchSeCd=BK+BUK&amp;rowCnt=&amp;instCd=B460004&amp;demaInstNm=%EB%8C%80%ED%95%9C%EC%A0%81%EC%8B%AD%EC%9E%90%EC%82%AC&amp;hghrkInstCd=B460004&amp;prcmBsneAreaCd=%EC%A0%84%EC%B2%B4+%EC%A1%B0070001+%EC%A1%B0070002+%EC%A1%B0070003+%EC%A1%B0070004+%EC%A1%B0070005&amp;prcmMthoSeCd=&amp;frcpYn=N&amp;laseYn=N&amp;rsrvYn=N&amp;chkInstCd=&amp;urlSrchSeCd=hghrkInstCd&amp;demaInstCd=IN0100000040300"  class="item-link"   rel="noopener noreferrer" target="_blank" title="새창열림">입찰공고<i class="svg-icon ico-go"></i></a></li>
+														<li><a href="https://www.g2b.go.kr/link//FIUA006_01/single/?untySrchSeCd=BKOB&amp;rowCnt=&amp;instCd=B460004&amp;demaInstNm=%EB%8C%80%ED%95%9C%EC%A0%81%EC%8B%AD%EC%9E%90%EC%82%AC&amp;hghrkInstCd=B460004&amp;prcmBsneAreaCd=%EC%A0%84%EC%B2%B4+%EC%A1%B0070001+%EC%A1%B0070002+%EC%A1%B0070003+%EC%A1%B0070004+%EC%A1%B0070005&amp;prcmMthoSeCd=&amp;frcpYn=N&amp;laseYn=N&amp;rsrvYn=N&amp;chkInstCd=&amp;urlSrchSeCd=hghrkInstCd&amp;demaInstCd=IN0100000040300"  class="item-link"   rel="noopener noreferrer" target="_blank" title="새창열림">개찰결과<i class="svg-icon ico-go"></i></a></li>
+													</ul>
+												</li>
+												<li><a href="/main/cm/conts/contsView.do?mi=1047&contsId=1105" class=""  >민원/상담</a>
+													<ul class="depth03-menu">
+														<li><a href="/main/cm/conts/contsView.do?mi=1047&contsId=1105"  class=""  >고객의 소리</a></li>
+														<li><a href="/main/pt/pst/selectPstList.do?mi=1048&bbsId=1005"  class=""  >자주하는질문</a></li>
+													</ul>
+												</li>
+												<li><a href="/main/pt/pst/selectPstList.do?mi=1374&bbsId=1009" class=""  >자료실</a>
+													<ul class="depth03-menu">
+														<li><a href="/main/pt/pst/selectPstList.do?mi=1374&bbsId=1009"  class=""  >사업보고서</a></li>
+														<li><a href="/main/cm/conts/contsView.do?mi=2426&contsId=1609"  class=""  >기타자료</a></li>
+													</ul>
+												</li>
+												<li><a href="/main/ab/ambassadorMain.do?type=1&mi=1260" class=""  >홍보관</a>
+													<ul class="depth03-menu">
+														<li><a href="/main/ab/ambassadorMain.do?type=1&mi=1260"  class=""  >홍보대사</a></li>
+														<li><a href="/main/pt/pst/selectPstList.do?mi=2403&bbsId=1268"  class=""  >사진</a></li>
+														<li><a href="/main/pt/pst/selectPstList.do?mi=2404&bbsId=1350"  class=""  >동영상</a></li>
+														<li><a href="/main/pt/pst/selectPstList.do?mi=1258&bbsId=1035"  class=""  >스토리</a></li>
+														<li><a href="/main/pt/pst/selectPstList.do?mi=2506&bbsId=1501"  class=""  >간행물</a></li>
+													</ul>
+												</li>
+												<li><a href="/main/cm/conts/contsView.do?mi=2349&contsId=1465" class=""  >신고센터</a>
+													<ul class="depth03-menu">
+														<li><a href="/main/cm/conts/contsView.do?mi=2349&contsId=1465"  class=""  >청렴핫라인</a></li>
+														<li><a href="/main/cm/conts/contsView.do?mi=2302&contsId=1425"  class=""  >고충민원신고</a></li>
+														<li><a href="/main/cm/conts/contsView.do?mi=2303&contsId=1426"  class=""  >부패공익신고</a></li>
+														<li><a href="/main/cm/conts/contsView.do?mi=1268&contsId=1361"  class=""  >성희롱성폭력피해자신고</a></li>
+														<li><a href="/main/cm/conts/contsView.do?mi=2350&contsId=1466"  class=""  >비실명(익명)신고</a></li>
+														<li><a href="/main/dd/dclr/insertDstrDclrInfoPage.do?mi=1264"  class=""  >중대재해예방신고</a></li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a class="gnb-main-trigger " href="/main/cm/conts/contsView.do?mi=2412&amp;contsId=1592&mi=1269"  title="지원신청">지원신청</a>
+							</li>
+								<!--END-->
+				</ul>
+			</div>
+		</nav>
+	</div>
+	<!-- 검색창 -->
+	
+
+
+
+<div class="box_search">
+    <div class="box_wrap">
+    	
+	    	
+	    	
+	    		<h3 class="sr-only">통합검색</h3>
+		        <form name="siteSearchForm" id="searchForm" method="POST" action="/search/search.jsp" onsubmit="return false;" >
+					<div class="srch_box">
+						<input type="hidden" name="collection" id="collection"/>
+						<input type="hidden" name="sysId" id="searchSysId" value="main"/>
+						<input type="text" placeholder="검색어를 입력하세요" name="query" id="total_search" title="검색어를 입력해주세요"  onKeypress="javascript:pressCheck((event),this);">
+						<button type="button" class="srch_btn" onclick="doSearch();"><i class="xi-search" aria-hidden="true"></i><span class="hid">검색 (새창열림)</span></button>
+					</div>
+		        </form>
+	    	
+    	
+    </div>
+    <button class="btnSearchClose" id="btnSearchClose">
+        <i class="xi-close" aria-hidden="true"></i><span class="hid">검색 비활성화</span>
+    </button>
+</div>
+
+<script>
+	function doSearch(){
+		var searchForm = document.siteSearchForm; 
+
+		if (searchForm.query.value == "") {
+			alert("검색어를 입력하세요.");
+			searchForm.query.focus();
+			return false;
+		}
+		searchForm.collection.value = "ALL";
+		searchForm.target="_self";
+		searchForm.submit();
+	}
+	// 엔터 체크	
+	function pressCheck() {   
+		if (event.keyCode == 13) {
+			return doSearch();
+		}else{
+			return false;
+		}
+	}
+</script><!-- //검색창 -->
+	<!-- 전체메뉴 -->
+	
+
+
+
+
+
+<nav id="mobile-nav" class="krds-main-menu-mobile">
+    <div class="gnb-wrap" tabindex="0">
+		<!-- 모바일 검색폼 -->
+		
+
+
+
+
+
+<!-- search-layer-->
+<div class="search-layer">
+	<div class="search-header">
+		<!-- 검색 -->
+		<div class="sch-input">
+			<input type="text" class="krds-input" placeholder="찾고자 하는 메뉴명을 입력해 주세요" title="찾고자 하는 메뉴명 입력" id="mobileMenuSearchInput">
+			<button type="button" class="krds-btn medium icon ico-search" id="mobileMenuSearchButton">
+				<span class="sr-only">검색</span>
+				<i class="svg-icon ico-sch"></i>
+			</button>
+		</div>
+		<!-- //검색 -->
+	</div>
+	<div class="search-body">
+	</div>
+	<!-- layer-close -->
+	<button type="button" class="krds-btn medium icon search-close">
+		<span class="sr-only">메뉴검색 닫기</span>
+		<i class="svg-icon ico-popup-close"></i>
+	</button>
+	<!-- layer-close -->
+</div>
+<!-- //search-layer -->
+
+<!-- 상단메뉴 -->
+
+	
+		<div class="header-container">
+			<div class="header-con-wrap">
+				<h2 class="logo">
+					<a href="/main/main.do">
+						<img src="/images/common/layout/logo.svg" class="logo-im" alt="대한적십자사">
+					</a>
+				</h2>
+				<ul class="util">
+					<li><a href="/main/sb/sbscrb/insertSbscrbInfo00.do?mi=2441" class="btn-navi join">회원가입</a></li>
+					<!-- <li><button type="button" class="btn-navi sch" id="searchOpen" title="통합검색 레이어" data-target="popTotalSch">통합검색</button></li> -->
+				</ul>
+			</div>
+			
+				
+				
+					<div class="user-wrap">
+						<div class="user-info">
+							<p class="title"><span class="f_weightB">대한적십자와 함께하세요.</span></p>
+							<a href="#" class="btn-log lgnBtn">로그인 <i class="ri-arrow-right-s-line"></i></a>
+						</div>
+						<div class="user-btn">
+							<a href="/main/ad/pay/redCrossPayStep01.do?mi=2406" class="btnUser-service"><i class="ri-service-line" aria-hidden="true"></i> 후원하기</a>
+						</div>
+					</div>
+				
+			
+			<ul class="site-wrap">
+				<li><a href="/main/brof/intgMain.do" class="btnSite">지사통합메인 <i class="ri-arrow-right-s-line"></i></a></li>
+				<li><a href="#" class="btnSite open-modal" data-target="siteModal">관련사이트 <i class="ri-arrow-right-s-line"></i></a></li>
+			</ul>
+		</div>
+	
+	
+
+		<!-- //모바일 검색폼 -->
+		<div class="gnb-body">
+			<div class="gnb-menu">
+				<!--START-->
+				
+				<div class="menu-wrap">
+					<ul>
+						<li>
+							<a href="#mGnb-anchor1" class="dep1-title gnb-main-trigger">기관소개</a>
+						</li>
+						<li>
+							<a href="#mGnb-anchor2" class="dep1-title gnb-main-trigger">후원</a>
+						</li>
+						<li>
+							<a href="#mGnb-anchor3" class="dep1-title gnb-main-trigger">봉사</a>
+						</li>
+						<li>
+							<a href="#mGnb-anchor4" class="dep1-title gnb-main-trigger">RCY</a>
+						</li>
+						<li>
+							<a href="https://www.redcross.or.kr/learn/" class="dep1-title is-link" rel="noopener noreferrer" target="_blank" title="새창열림">안전교육</a>
+						</li>
+						<li>
+							<a href="#mGnb-anchor5" class="dep1-title gnb-main-trigger">소통</a>
+						</li>
+						<li>
+							<a href="/main/cm/conts/contsView.do?mi=2412&amp;contsId=1592&mi=1269" class="dep1-title ">지원신청</a>
+						</li>
+						
+						
+					</ul>
+				</div>
+				
+				<div class="submenu-wrap">
+					<div class="dep1">
+						<ul>
+							<li class="dep1-wrap">
+								<h2 class="dep1-title">기관소개</h2>
+								<div class="gnb-sub-list" id="mGnb-anchor1">
+									<div>
+										<h3 class="sub-title"><a href="#">기관안내</a></h3>
+										<ul>
+											<li><a href="/main/ad/ex/crnclView.do?mi=1005" class="gnb-sub-trigger">인사말</a></li>
+											<li><a href="/main/cm/conts/contsView.do?mi=1076&contsId=1017" class="gnb-sub-trigger">설립목적</a></li>
+											<li><a href="/main/cm/conts/contsView.do?mi=2428&contsId=1062" class="gnb-sub-trigger">주요연혁</a></li>
+											<li><a href="/main/cm/conts/contsView.do?mi=1010&contsId=1002" class="gnb-sub-trigger">적십자운동</a></li>
+											<li><a href="/main/cm/conts/contsView.do?mi=1112&contsId=1683" class="gnb-sub-trigger">경영방침</a></li>
+											<li><a href="/pub/basicSystem/index.jsp" class="gnb-sub-trigger is-link" rel="noopener noreferrer" target="_blank" title="새창열림">브랜드CI</a></li>
+											<li><a href="/main/cm/conts/contsView.do?mi=2264&contsId=1410" class="gnb-sub-trigger">쎄호소개</a></li>
+										</ul>
+									</div>
+									<div>
+										<h3 class="sub-title"><a href="#">주요사업안내</a></h3>
+										<ul>
+											<li><a href="/main/cm/conts/contsView.do?mi=1118&contsId=1007" class="gnb-sub-trigger">국내사업</a></li>
+											<li><a href="/main/cm/conts/contsView.do?mi=1040&contsId=1011" class="gnb-sub-trigger">국제사업</a></li>
+											<li><a href="/main/cm/conts/contsView.do?mi=2218&contsId=1396" class="gnb-sub-trigger">남북사업</a></li>
+											<li><a href="/main/cm/conts/contsView.do?mi=1130&contsId=1021" class="gnb-sub-trigger">공공의료사업</a></li>
+											<li><a href="/main/cm/conts/contsView.do?mi=1131&contsId=1022" class="gnb-sub-trigger">혈액사업</a></li>
+										</ul>
+									</div>
+									<div>
+										<h3 class="sub-title"><a href="#">정보공개</a></h3>
+										<ul>
+											<li><a href="/main/cm/conts/contsView.do?mi=1133&contsId=1023" class="gnb-sub-trigger">정보공개제도안내</a></li>
+											<li><a href="/main/cm/conts/contsView.do?mi=1136&contsId=1103" class="gnb-sub-trigger">예결산자료</a></li>
+											<li><a href="/main/pt/pst/selectPstList.do?mi=2621&bbsId=1562" class="gnb-sub-trigger">기부금품 모집 및 지출명세서</a></li>
+											<li><a href="/main/pt/pst/selectPstList.do?mi=1139&bbsId=1013" class="gnb-sub-trigger">법규</a></li>
+											<li><a href="/main/pt/pst/selectPstList.do?mi=2402&bbsId=1440" class="gnb-sub-trigger">서식자료실</a></li>
+											<li><a href="/main/pt/pst/selectPstList.do?mi=1141&bbsId=1014" class="gnb-sub-trigger">사업실명제</a></li>
+											<li><a href="/main/cm/conts/contsView.do?mi=1142&contsId=1025" class="gnb-sub-trigger">공공데이터개방</a></li>
+											<li><a href="/main/cm/conts/contsView.do?mi=1145&contsId=1026" class="gnb-sub-trigger">윤리경영자료실</a></li>
+											<li><a href="/main/pt/pst/selectPstList.do?mi=1161&bbsId=1026" class="gnb-sub-trigger">감사자료</a></li>
+											<li><a href="https://www.alio.go.kr/organ/organDisclosureDtl.do?apbaId=C0059" class="gnb-sub-trigger is-link" rel="noopener noreferrer" target="_blank" title="새창열림">경영공시</a></li>
+										</ul>
+									</div>
+									<div>
+										<h3 class="sub-title"><a href="#">조직안내</a></h3>
+										<ul>
+											<li><a href="/main/cm/conts/contsView.do?mi=1030&contsId=1019" class="gnb-sub-trigger">조직도</a></li>
+											<li><a href="/main/tk/taskalctn/selectTaskAlctnView.do?mi=1117" class="gnb-sub-trigger">업무담당자</a></li>
+											<li><a href="/main/ad/ex/excView.do?mi=1377" class="gnb-sub-trigger">임원소개</a></li>
+											<li><a href="/main/cm/conts/contsView.do?mi=1384&contsId=1102" class="gnb-sub-trigger">사업장 현황</a></li>
+										</ul>
+									</div>
+									<div>
+										<h3 class="sub-title"><a href="#">서비스 이용안내</a></h3>
+										<ul>
+											<li><a href="/main/pp/prcplView/selectPrcplView.do?mi=2590" class="gnb-sub-trigger">개인정보처리방침</a></li>
+											<li><a href="/main/pt/pst/selectPstList.do?mi=2592&bbsId=1520" class="gnb-sub-trigger">개인정보관리현황</a></li>
+											<li><a href="/main/iv/prvcView/selectEmailView.do?mi=2593" class="gnb-sub-trigger">이메일주소수집거부</a></li>
+											<li><a href="/main/cm/conts/contsView.do?mi=2594&contsId=1685" class="gnb-sub-trigger">이용약관</a></li>
+											<li><a href="/main/cm/conts/contsView.do?mi=2595&contsId=1686" class="gnb-sub-trigger">정보공개지침</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="dep1-wrap">
+								<h2 class="dep1-title">후원</h2>
+								<div class="gnb-sub-list" id="mGnb-anchor2">
+									<div>
+										<h3 class="sub-title"><a href="/main/cm/cmpgn/selectCmpgnView.do?mi=2267">개인후원</a></h3>
+									</div>
+									<div>
+										<h3 class="sub-title"><a href="/main/cm/conts/contsView.do?mi=2223&contsId=1481">기업/단체후원</a></h3>
+									</div>
+									<div>
+										<h3 class="sub-title"><a href="#">고액/유산기부</a></h3>
+										<ul>
+											<li><a href="/main/cm/conts/contsView.do?mi=2268&contsId=1414" class="gnb-sub-trigger">레드크로스 아너스클럽</a></li>
+											<li><a href="/main/cm/conts/contsView.do?mi=1184&contsId=1036" class="gnb-sub-trigger">레드크로스 아너스기업</a></li>
+											<li><a href="/main/cm/conts/contsView.do?mi=2501&contsId=1651" class="gnb-sub-trigger">명예의 전당</a></li>
+											<li><a href="/main/cm/conts/contsView.do?mi=2231&contsId=1038" class="gnb-sub-trigger">유산기부</a></li>
+										</ul>
+									</div>
+									<div>
+										<h3 class="sub-title"><a href="#">적십자회비</a></h3>
+										<ul>
+											<li><a href="/main/cm/conts/contsView.do?mi=1189&contsId=1040" class="gnb-sub-trigger">적십자회비란</a></li>
+											<li><a href="/main/ad/pay/redCrossMembershipFeeMain.do?mi=2340" class="gnb-sub-trigger">적십자회비 참여 및 확인</a></li>
+											<li><a href="/main/cm/conts/contsView.do?mi=1191&contsId=1042" class="gnb-sub-trigger">적십자회비, 이렇게 쓰입니다.</a></li>
+											<li><a href="/main/cm/conts/contsView.do?mi=2600&contsId=1037" class="gnb-sub-trigger">레드크로스 Giving Club</a></li>
+										</ul>
+									</div>
+									<div>
+										<h3 class="sub-title"><a href="#">기부자 스토리</a></h3>
+										<ul>
+											<li><a href="/main/sb/spnBplc/spnBplcView.do?mi=1179" class="gnb-sub-trigger">후원참여 사업장</a></li>
+											<li><a href="/main/pt/pst/selectPstList.do?mi=2286&bbsId=1380" class="gnb-sub-trigger">후원 이후 이야기</a></li>
+										</ul>
+									</div>
+									<div>
+										<h3 class="sub-title"><a href="#">기부금 영수증</a></h3>
+										<ul>
+											<li><a href="/main/sp/bill/spnBillPrntMain.do?mi=2587" class="gnb-sub-trigger">기부금 영수증 발급</a></li>
+											<li><a href="/main/sp/bill/insertSpnBillAplyPage.do?mi=2588" class="gnb-sub-trigger">무통장 기부금 영수증 신청</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="dep1-wrap">
+								<h2 class="dep1-title">봉사</h2>
+								<div class="gnb-sub-list" id="mGnb-anchor3">
+									<div>
+										<h3 class="sub-title"><a href="#">봉사활동안내</a></h3>
+										<ul>
+											<li><a href="/main/cm/conts/contsView.do?mi=1208&contsId=1050" class="gnb-sub-trigger">봉사활동가이드</a></li>
+											<li><a href="/main/cm/conts/contsView.do?mi=1209&contsId=1051" class="gnb-sub-trigger">봉사활동소개</a></li>
+										</ul>
+									</div>
+									<div>
+										<h3 class="sub-title"><a href="#">봉사원소개</a></h3>
+										<ul>
+											<li><a href="/main/cm/conts/contsView.do?mi=1216&contsId=1055" class="gnb-sub-trigger">봉사원활동소개</a></li>
+											<li><a href="/main/cm/conts/contsView.do?mi=1218&contsId=1056" class="gnb-sub-trigger">봉사원예우프로그램</a></li>
+										</ul>
+									</div>
+									<div>
+										<h3 class="sub-title"><a href="#">참여하기</a></h3>
+										<ul>
+											<li><a href="/main/lo/myPage/linkSrvcJoinPage.do?mi=1212" class="gnb-sub-trigger">봉사원가입</a></li>
+											<li><a href="/main/fm/fstvl/selectFstvlList.do?mi=1210" class="gnb-sub-trigger">봉사활동신청</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="dep1-wrap">
+								<h2 class="dep1-title">RCY</h2>
+								<div class="gnb-sub-list" id="mGnb-anchor4">
+									<div>
+										<h3 class="sub-title"><a href="#">RCY안내</a></h3>
+										<ul>
+											<li><a href="/main/cm/conts/contsView.do?mi=2238&contsId=1402" class="gnb-sub-trigger">RCY소개</a></li>
+											<li><a href="/main/cm/conts/contsView.do?mi=2596&contsId=1060" class="gnb-sub-trigger">RCY구성안내</a></li>
+											<li><a href="/main/pt/pst/selectPstList.do?mi=2524&bbsId=1513" class="gnb-sub-trigger">RCY공지사항</a></li>
+											<li><a href="/main/cm/conts/contsView.do?mi=2239&contsId=1401" class="gnb-sub-trigger">활동목표</a></li>
+										</ul>
+									</div>
+									<div>
+										<h3 class="sub-title"><a href="#">RCY활동</a></h3>
+										<ul>
+											<li><a href="/main/cm/conts/contsView.do?mi=1235&contsId=1067" class="gnb-sub-trigger">찾아가는 인도주의 인성교육</a></li>
+											<li><a href="/main/cm/conts/contsView.do?mi=1240&contsId=1072" class="gnb-sub-trigger">스승의 날 소개</a></li>
+											<li><a href="/main/cm/conts/contsView.do?mi=1241&contsId=1073" class="gnb-sub-trigger">우정의 선물 DIY</a></li>
+											<li><a href="/main/cm/conts/contsView.do?mi=1236&contsId=1068" class="gnb-sub-trigger">대학적십자 전국협의회</a></li>
+											<li><a href="/main/cm/conts/contsView.do?mi=1238&contsId=1070" class="gnb-sub-trigger">RCGC프로그램</a></li>
+										</ul>
+									</div>
+									<div>
+										<h3 class="sub-title"><a href="#">지도자양성</a></h3>
+										<ul>
+											<li><a href="/main/cm/conts/contsView.do?mi=2244&contsId=1653" class="gnb-sub-trigger">지도자양성안내</a></li>
+											<li><a href="/main/pt/pst/selectPstList.do?mi=2511&bbsId=1506" class="gnb-sub-trigger">교육프로그램</a></li>
+											<li><a href="https://www.redcross.or.kr/leader2/main/login2.do" class="gnb-sub-trigger is-link" rel="noopener noreferrer" target="_blank" title="새창열림">지도자용 드리미</a></li>
+										</ul>
+									</div>
+									<div>
+										<h3 class="sub-title"><a href="#">참여하기</a></h3>
+										<ul>
+											<li><a href="/main/lo/myPage/linkSrvcJoinPage.do?mi=1244" class="gnb-sub-trigger">단원모집</a></li>
+											<li><a href="/main/ad/rcy/re/selRcyEvntList.do?mi=1246" class="gnb-sub-trigger">활동신청</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="dep1-wrap">
+								<h2 class="dep1-title"><a href="https://www.redcross.or.kr/learn/" class="is-link" rel="noopener noreferrer" target="_blank" title="새창열림">안전교육</a></h2>
+							</li>
+							<li class="dep1-wrap">
+								<h2 class="dep1-title">소통</h2>
+								<div class="gnb-sub-list" id="mGnb-anchor5">
+									<div>
+										<h3 class="sub-title"><a href="#">소식</a></h3>
+										<ul>
+											<li><a href="/main/pt/pst/selectPstList.do?mi=1009&bbsId=1001" class="gnb-sub-trigger">공지사항</a></li>
+											<li><a href="/main/pt/pst/selectPstList.do?mi=1045&bbsId=1003" class="gnb-sub-trigger">보도자료</a></li>
+											<li><a href="/main/qr/qrspns/selectSrvyQrspnsList.do?mi=2384" class="gnb-sub-trigger">설문조사</a></li>
+										</ul>
+									</div>
+									<div>
+										<h3 class="sub-title"><a href="#">공고</a></h3>
+										<ul>
+											<li><a href="/main/pt/pst/selectPstList.do?mi=2378&bbsId=1422" class="gnb-sub-trigger">일반공고</a></li>
+											<li><a href="https://www.redcross.or.kr/recruit/" class="gnb-sub-trigger is-link" rel="noopener noreferrer" target="_blank" title="새창열림">채용공고</a></li>
+											<li><a href="https://www.g2b.go.kr/link//FIUA006_01/single/?untySrchSeCd=BK+BUK&amp;rowCnt=&amp;instCd=B460004&amp;demaInstNm=%EB%8C%80%ED%95%9C%EC%A0%81%EC%8B%AD%EC%9E%90%EC%82%AC&amp;hghrkInstCd=B460004&amp;prcmBsneAreaCd=%EC%A0%84%EC%B2%B4+%EC%A1%B0070001+%EC%A1%B0070002+%EC%A1%B0070003+%EC%A1%B0070004+%EC%A1%B0070005&amp;prcmMthoSeCd=&amp;frcpYn=N&amp;laseYn=N&amp;rsrvYn=N&amp;chkInstCd=&amp;urlSrchSeCd=hghrkInstCd&amp;demaInstCd=IN0100000040300" class="gnb-sub-trigger is-link" rel="noopener noreferrer" target="_blank" title="새창열림">입찰공고</a></li>
+											<li><a href="https://www.g2b.go.kr/link//FIUA006_01/single/?untySrchSeCd=BKOB&amp;rowCnt=&amp;instCd=B460004&amp;demaInstNm=%EB%8C%80%ED%95%9C%EC%A0%81%EC%8B%AD%EC%9E%90%EC%82%AC&amp;hghrkInstCd=B460004&amp;prcmBsneAreaCd=%EC%A0%84%EC%B2%B4+%EC%A1%B0070001+%EC%A1%B0070002+%EC%A1%B0070003+%EC%A1%B0070004+%EC%A1%B0070005&amp;prcmMthoSeCd=&amp;frcpYn=N&amp;laseYn=N&amp;rsrvYn=N&amp;chkInstCd=&amp;urlSrchSeCd=hghrkInstCd&amp;demaInstCd=IN0100000040300" class="gnb-sub-trigger is-link" rel="noopener noreferrer" target="_blank" title="새창열림">개찰결과</a></li>
+										</ul>
+									</div>
+									<div>
+										<h3 class="sub-title"><a href="#">민원/상담</a></h3>
+										<ul>
+											<li><a href="/main/cm/conts/contsView.do?mi=1047&contsId=1105" class="gnb-sub-trigger">고객의 소리</a></li>
+											<li><a href="/main/pt/pst/selectPstList.do?mi=1048&bbsId=1005" class="gnb-sub-trigger">자주하는질문</a></li>
+										</ul>
+									</div>
+									<div>
+										<h3 class="sub-title"><a href="#">자료실</a></h3>
+										<ul>
+											<li><a href="/main/pt/pst/selectPstList.do?mi=1374&bbsId=1009" class="gnb-sub-trigger">사업보고서</a></li>
+											<li><a href="/main/cm/conts/contsView.do?mi=2426&contsId=1609" class="gnb-sub-trigger">기타자료</a></li>
+										</ul>
+									</div>
+									<div>
+										<h3 class="sub-title"><a href="#">홍보관</a></h3>
+										<ul>
+											<li><a href="/main/ab/ambassadorMain.do?type=1&mi=1260" class="gnb-sub-trigger">홍보대사</a></li>
+											<li><a href="/main/pt/pst/selectPstList.do?mi=2403&bbsId=1268" class="gnb-sub-trigger">사진</a></li>
+											<li><a href="/main/pt/pst/selectPstList.do?mi=2404&bbsId=1350" class="gnb-sub-trigger">동영상</a></li>
+											<li><a href="/main/pt/pst/selectPstList.do?mi=1258&bbsId=1035" class="gnb-sub-trigger">스토리</a></li>
+											<li><a href="/main/pt/pst/selectPstList.do?mi=2506&bbsId=1501" class="gnb-sub-trigger">간행물</a></li>
+										</ul>
+									</div>
+									<div>
+										<h3 class="sub-title"><a href="#">신고센터</a></h3>
+										<ul>
+											<li><a href="/main/cm/conts/contsView.do?mi=2349&contsId=1465" class="gnb-sub-trigger">청렴핫라인</a></li>
+											<li><a href="/main/cm/conts/contsView.do?mi=2302&contsId=1425" class="gnb-sub-trigger">고충민원신고</a></li>
+											<li><a href="/main/cm/conts/contsView.do?mi=2303&contsId=1426" class="gnb-sub-trigger">부패공익신고</a></li>
+											<li><a href="/main/cm/conts/contsView.do?mi=1268&contsId=1361" class="gnb-sub-trigger">성희롱성폭력피해자신고</a></li>
+											<li><a href="/main/cm/conts/contsView.do?mi=2350&contsId=1466" class="gnb-sub-trigger">비실명(익명)신고</a></li>
+											<li><a href="/main/dd/dclr/insertDstrDclrInfoPage.do?mi=1264" class="gnb-sub-trigger">중대재해예방신고</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="dep1-wrap">
+								<h2 class="dep1-title"><a href="/main/cm/conts/contsView.do?mi=2412&amp;contsId=1592&mi=1269" class="">지원신청</a></h2>
+							</li>
+							
+							
+						</ul>
+					</div>
+				</div>
+				<!--END-->
+			</div>
+		</div>
+		<!-- gnb-close -->
+		<div class="btn-wrap">
+		    <button type="button" class="krds-btn medium icon" id="close-nav">
+		        <span class="sr-only">전체메뉴 닫기</span>
+		        <i class="svg-icon ico-popup-close"></i>
+		    </button>
+		</div>
+		<!-- //gnb-close -->
+	</div>
+</nav>
+	
+
+
+
+
+
+<!-- //전체메뉴 -->
+</header>
+<!-- //헤더 --> 
+
+<!-- //헤더 영역 -->
+	
+	        <!-- 컨테이너 영역 -->
+	        <div id="container">
+				
+
+
+
+	
+<script>
+$(document).ready(function(){
+	// 팝업 하루 닫기
+	$('.cookieCloseBtn').click(function(){
+		const target = $(this).data('target');
+		var currDate = new Date();
+		var currDate2 = new Date();
+		currDate2.setDate(currDate.getDate()+1)
+		setCookie(target, 'hide', currDate2);
+	});
+	// 슬라이드 팝업 호출
+	var usePopYN = getCookie("mainPopup");
+	var slideShowYn = "N";
+	var popupStts = '04';
+	if(usePopYN != "hide" && '0' != '0' && (popupStts == '03' || popupStts == '04')) {
+		$("#mainPopup").fadeIn();
+		slideShowYn = "Y";
+	}
+	
+	// 팝업 호출 : 기본 창 팝업
+	
+});
+
+$(document).on('click', '.slideCls', function(e){
+	
+});
+	
+</script>	
+<!-- <link rel="stylesheet" href="/css/main/main.css" media="all"> -->
+<div class="g-wrap">
+	<!-- 컨테이너 영역 -->
+	<div id="mainContainer">
+	   <section class="section1">
+			<h3 class="hid">메인 슬라이드</h3>
+			<!-- visual -->
+			<div class="main_visual mot-fpbottom">
+				<div class="swiper mainSwiper">
+					<div class="swiper-button-prev mot3-fpbottom"></div>
+					<div class="swiper-wrapper">
+						<!--슬라이드 4개이상-->
+						<div class="swiper-slide">
+									<a href="https://www.redcross.or.kr/main/ad/pay/donateStep01.do?spn=o0014726" >
+										<div class="img">
+											<!-- pc 이미지 -->
+											<img src="/upload/mscrn/main/img_1e531a54-ce1a-4846-8d15-64335b2b9ac91773128841526.png" alt="2026 중동 복합위기" class="imgPC">
+											<!-- 모바일 이미지 -->
+											<img src="/upload/mscrn/main/img_07d7bb76-f756-46a7-af6a-575584ab53541773211822870.png" alt="2026 중동 복합위기" class="imgM">
+										</div>
+									</a>
+								</div>
+							<div class="swiper-slide">
+									<a href="https://redcross.campaignus.me/remember1919A" >
+										<div class="img">
+											<!-- pc 이미지 -->
+											<img src="/upload/mscrn/main/img_605c4267-cadf-4f60-a358-90c0c12723071771996081124.png" alt="3·1절 기념 독립운동가 후손 돕기" class="imgPC">
+											<!-- 모바일 이미지 -->
+											<img src="/upload/mscrn/main/img_7b3a748e-a3e2-4946-b536-f6a32b7b79ec1771998819985.png" alt="3·1절 기념 독립운동가 후손 돕기" class="imgM">
+										</div>
+									</a>
+								</div>
+							<div class="swiper-slide">
+									<a href="https://redcross.campaignus.me/alonegoods3" >
+										<div class="img">
+											<!-- pc 이미지 -->
+											<img src="/upload/mscrn/main/img_801ce88f-83c4-4e43-baa1-a1f877b33c021767751665856.png" alt="Saving 자립준비청년 캠페인. 자립준비청년과의 상생을 의미하는, 14K Saving Ring. 자립준비청년이 건강하게 홀로 설 수 있도록 함께해 주세요." class="imgPC">
+											<!-- 모바일 이미지 -->
+											<img src="/upload/mscrn/main/img_a24d226f-d9ae-4dfd-92da-2ebea35969de1767751665900.png" alt="Saving 자립준비청년 캠페인. 자립준비청년과의 상생을 의미하는, 14K Saving Ring. 자립준비청년이 건강하게 홀로 설 수 있도록 함께해 주세요." class="imgM">
+										</div>
+									</a>
+								</div>
+							<div class="swiper-slide">
+									<a href="https://redcross.campaignus.me/misoA" >
+										<div class="img">
+											<!-- pc 이미지 -->
+											<img src="/upload/mscrn/main/img_73791bbe-562a-41e4-9568-fd46541290661772011809423.png" alt="소녀들의 미소 캠페인" class="imgPC">
+											<!-- 모바일 이미지 -->
+											<img src="/upload/mscrn/main/img_bcfd0672-5b23-47ad-a710-d774cbd3457e1772067442456.png" alt="소녀들의 미소 캠페인" class="imgM">
+										</div>
+									</a>
+								</div>
+							<div class="swiper-slide">
+									<a href="https://www.redcross.or.kr/main/pt/pst/selectPstInfo.do?mi=1009&bbsId=1001&pstSn=500470" >
+										<div class="img">
+											<!-- pc 이미지 -->
+											<img src="/upload/mscrn/main/img_e0f32a0d-d83a-406b-81e0-56d20c737c551769480513002.png" alt="적십자 직원 사칭 물품 구매 및 용역발주 주의" class="imgPC">
+											<!-- 모바일 이미지 -->
+											<img src="/upload/mscrn/main/img_9091c8a4-ce46-4185-9586-3741b2d1cb4f1769480444853.png" alt="적십자 직원 사칭 물품 구매 및 용역발주 주의" class="imgM">
+										</div>
+									</a>
+								</div>
+							</div>
+					<div class="swiper-button-next mot3-fpbottom"></div>
+					
+					<div class="swiper_ctrlbar mot4-fpbottom">
+						<div class="swiper-button-prev mob"></div>
+						<div class="swiper-pagination"></div>
+						<div class="swiper-button-next mob"></div>
+						<div id="naviBtn" class="swiper-button-stop" role="button" tabindex="0" aria-label="정지"></div>
+					</div>
+				</div>
+			</div>
+			<!-- //visual -->
+
+			<div class="container">
+				<!-- 바로가기1 -->
+				<div class="m_link1 mot5-fpbottom">
+					<ul>
+						<li><a href="/main/ad/pay/redCrossPayStep01.do?mi=2406">
+							<img src="/images/main/main/ico_link1.png" alt="">
+							<p>정기후원</p>
+						</a></li>
+						<li><a href="/main/fm/fstvl/selectFstvlList.do?mi=1210">
+							<img src="/images/main/main/ico_link2.png" alt="">
+							<p>봉사참여</p>
+						</a></li>
+						<li><a href="/main/ad/rcy/re/selRcyEvntList.do?mi=1246">
+							<img src="/images/main/main/ico_link3.png" alt="">
+							<p>RCY</p>
+						</a></li>
+						<li><a href="https://www.redcross.or.kr/learn/edu/edu.do" target="_blank" title="새창열림">
+							<img src="/images/main/main/ico_link4.png" alt="">
+							<p>교육신청</p>
+						</a></li>
+					</ul>
+				</div>
+				<!-- //바로가기1 -->
+			</div>
+		</section>
+		<section class="section3 container">
+				<!-- 캠패인 -->
+				<div class="cmpn_wrap">
+					<div class="tit_wrap mot1-fpbottom">
+						<h3 class="heading">진행중인 후원 캠페인</h3>
+						<span>희망을 나누는 순간, 우리가 만든 내일은 더욱 밝아집니다.</span>
+					</div>
+
+					<ul class="tabs mot2-fpbottom cmpnTagBtns">
+						<li class="active"><a href="#cmpn00" class="cmpnTagBtn active" data-id="all">전체보기</a></li>
+						<li><a href="#cmpn01" data-id="01" class="cmpnTagBtn">아동·청소년</a></li>	
+						<li><a href="#cmpn02" data-id="04" class="cmpnTagBtn">지구촌</a></li>	
+						<li><a href="#cmpn03" data-id="06" class="cmpnTagBtn">사회</a></li>	
+						</ul>
+				<!-- ================캠페인 (시작)===== -->
+					<div class="cnts tabs_cnts mot2-fpbottom">
+						<div class="list active" id="cmpn00">
+						<ul id="cmpgnList">
+							<li class="cmpgnInfo">
+									<a href="https://redcross.campaignus.me/dayounghayoung" title="새창열기" target="_blank">
+										<p class="img">
+											<img src="/upload/main/cm/img_3978f836-3973-409d-8ccd-d20f9c435e081768370419258.jpeg" alt="다영·하영 쌍둥이 돕기 캠페인">
+										</p>
+										<div class="cnt">
+											<span>아동·청소년</span>
+											<h5>다영·하영 쌍둥이 돕기 캠페인</h5>
+<!-- 											<p class="date">2025.02.14 ~ <span>2025.05.14 까지</span></p> -->
+										</div>
+									</a>
+								</li>
+							<li class="cmpgnInfo">
+									<a href="https://redcross.campaignus.me/19450815C" title="새창열기" target="_blank">
+										<p class="img">
+											<img src="/upload/main/cm/img_d093f879-8fd2-412a-84d5-19bdac413a8d1772756041634.jpg" alt="독립운동가 후손 돕기 캠페인">
+										</p>
+										<div class="cnt">
+											<span>사회</span>
+											<h5>독립운동가 후손 돕기 캠페인</h5>
+<!-- 											<p class="date">2025.02.14 ~ <span>2025.05.14 까지</span></p> -->
+										</div>
+									</a>
+								</li>
+							<li class="cmpgnInfo">
+									<a href="https://redcross.campaignus.me/misoA" title="새창열기" target="_blank">
+										<p class="img">
+											<img src="/upload/main/cm/img_ffbe9ed9-8a9a-4055-a9af-e30c54495efb1772756644966.png" alt="소녀들의 미소 캠페인">
+										</p>
+										<div class="cnt">
+											<span>아동·청소년</span>
+											<h5>소녀들의 미소 캠페인</h5>
+<!-- 											<p class="date">2025.02.14 ~ <span>2025.05.14 까지</span></p> -->
+										</div>
+									</a>
+								</li>
+							<li class="cmpgnInfo">
+									<a href="https://redcross.campaignus.me/alonegoods3" title="새창열기" target="_blank">
+										<p class="img">
+											<img src="/upload/main/cm/img_57147a71-553c-42e9-b2a3-4fbbb7a4a2471771468324321.jpg" alt="14K Saving Ring">
+										</p>
+										<div class="cnt">
+											<span>아동·청소년</span>
+											<h5>14K Saving Ring</h5>
+<!-- 											<p class="date">2025.02.14 ~ <span>2025.05.14 까지</span></p> -->
+										</div>
+									</a>
+								</li>
+							<li class="cmpgnInfo">
+									<a href="https://www.redcross.or.kr/main/ad/pay/donateStep01.do?spn=o0014726" title="새창열기" target="_blank">
+										<p class="img">
+											<img src="/upload/main/cm/img_b932fd10-58d6-4513-829e-3266a7c9d08b1773128950860.jpg" alt="2026 중동 복합위기">
+										</p>
+										<div class="cnt">
+											<span>지구촌</span>
+											<h5>2026 중동 복합위기</h5>
+<!-- 											<p class="date">2025.02.14 ~ <span>2025.05.14 까지</span></p> -->
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<a href="/main/cm/cmpgn/selectCmpgnView.do?mi=2267" class="btn_more mot2-fpbottom"><span class="hid">진행중인 후원 캠페인</span> 전체보기 <i class="ri-add-line" aria-hidden="true"></i></a>
+				</div>
+				<!-- ================캠페인 (종료)===== -->
+			</section>
+			<section class="section4 container">
+				<!-- 적십자NEWS -->
+				 <div class="notice_wrap article mot-fpleft">
+					<div class="tit_wrap">
+						<h3 class="heading">적십자 NEWS</h3>
+					</div>
+
+					<ul class="tabs tabBtns">
+						<li><a href="#notice01" data-bbs="1422" data-mi="2378" class="active">일반공고</a></li>
+						<li><a href="#notice02" data-bbs="1003" data-mi="1045">보도자료</a></li>
+						<li><a href="#notice03" data-bbs="1001" data-mi="1009">공지사항</a></li>
+					</ul>
+					
+					<div class="cnts tabs_cnts">
+						<!-- 일반공고 -->
+						<div class="list active" id="notice01">
+							<ul>
+								<li>
+												<a href="/main/pt/pst/selectPstInfo.do?mi=2378&pstSn=501433&bbsId=1422">
+													<p class="cate">
+														<span class="ty2">일반공고</span>
+														<span class="ty1">서울</span>
+													</p>
+													<div class="tit">
+														<h5>
+															대한적십자사 서울특별시지사 운수직(운전원) 직원 모집 공고</h5>
+														<span>2026-03-11</span>
+													</div>
+												</a>
+											</li>
+										<li>
+												<a href="/main/pt/pst/selectPstInfo.do?mi=2378&pstSn=501388&bbsId=1422">
+													<p class="cate">
+														<span class="ty2">일반공고</span>
+														<span class="ty1">인천</span>
+													</p>
+													<div class="tit">
+														<h5>
+															[대한적십자사 인천지사] 2026년도 한시적근로자(장애인) 채용 면접전형 대상자 안내</h5>
+														<span>2026-03-10</span>
+													</div>
+												</a>
+											</li>
+										<li>
+												<a href="/main/pt/pst/selectPstInfo.do?mi=2378&pstSn=501315&bbsId=1422">
+													<p class="cate">
+														<span class="ty2">일반공고</span>
+														<span class="ty1">본사</span>
+													</p>
+													<div class="tit">
+														<h5>
+															대한적십자사 합천원폭피해자복지회관 직원(기능직_요양보호사) 채용 공고</h5>
+														<span>2026-03-05</span>
+													</div>
+												</a>
+											</li>
+										<li>
+												<a href="/main/pt/pst/selectPstInfo.do?mi=2378&pstSn=501230&bbsId=1422">
+													<p class="cate">
+														<span class="ty2">일반공고</span>
+														<span class="ty1">본사</span>
+													</p>
+													<div class="tit">
+														<h5>
+															[혈액관리본부] 부정당업자 제재 처분 알림_(주)케이티씨에스</h5>
+														<span>2026-03-03</span>
+													</div>
+												</a>
+											</li>
+										<li>
+												<a href="/main/pt/pst/selectPstInfo.do?mi=2378&pstSn=501158&bbsId=1422">
+													<p class="cate">
+														<span class="ty2">일반공고</span>
+														<span class="ty1">전북</span>
+													</p>
+													<div class="tit">
+														<h5>
+															[대한적십자사 전북지사] 한시적근로자(장애인) 채용 공고</h5>
+														<span>2026-02-27</span>
+													</div>
+												</a>
+											</li>
+										<li>
+												<a href="/main/pt/pst/selectPstInfo.do?mi=2378&pstSn=501116&bbsId=1422">
+													<p class="cate">
+														<span class="ty2">일반공고</span>
+														<span class="ty1">본사</span>
+													</p>
+													<div class="tit">
+														<h5>
+															[대한적십자사 경기도지사]육아휴직 대체인력 공개채용Ⅰ, Ⅱ 최종합격자 발표</h5>
+														<span>2026-02-26</span>
+													</div>
+												</a>
+											</li>
+										</ul>
+						</div>
+						<!-- 적십자 소식 (언론보도) -->
+						<div class="list" id="notice02">
+							<ul>
+							<li>
+											<a href="/main/pt/pst/selectPstInfo.do?mi=1045&pstSn=501427&bbsId=1003">
+												<p class="cate">
+													<span class="ty2">보도자료</span>
+													<span class="ty1">부산</span>
+												</p>
+												<div class="tit">
+													<h5>
+														(주)공진테크노스, ‘씀씀이가 바른기업’ 동참...  부산 이웃 위한 따뜻한 나눔 실천</h5>
+													<span>2026-03-11</span>
+												</div>
+											</a>
+										</li>
+									<li>
+											<a href="/main/pt/pst/selectPstInfo.do?mi=1045&pstSn=501422&bbsId=1003">
+												<p class="cate">
+													<span class="ty2">보도자료</span>
+													<span class="ty1">경남</span>
+												</p>
+												<div class="tit">
+													<h5>
+														동평테크 류만열 대표이사, 경남적십자사 기빙클럽 94호</h5>
+													<span>2026-03-11</span>
+												</div>
+											</a>
+										</li>
+									<li>
+											<a href="/main/pt/pst/selectPstInfo.do?mi=1045&pstSn=501416&bbsId=1003">
+												<p class="cate">
+													<span class="ty2">보도자료</span>
+													<span class="ty1">강원</span>
+												</p>
+												<div class="tit">
+													<h5>
+														적십자사 강원지사 부회장에 하미애</h5>
+													<span>2026-03-11</span>
+												</div>
+											</a>
+										</li>
+									<li>
+											<a href="/main/pt/pst/selectPstInfo.do?mi=1045&pstSn=501415&bbsId=1003">
+												<p class="cate">
+													<span class="ty2">보도자료</span>
+													<span class="ty1">강원</span>
+												</p>
+												<div class="tit">
+													<h5>
+														대한적십자사 강원특별자치도지사, 2026년도 제1차 상임위원회 10일 개최</h5>
+													<span>2026-03-11</span>
+												</div>
+											</a>
+										</li>
+									<li>
+											<a href="/main/pt/pst/selectPstInfo.do?mi=1045&pstSn=501414&bbsId=1003">
+												<p class="cate">
+													<span class="ty2">보도자료</span>
+													<span class="ty1">전북</span>
+												</p>
+												<div class="tit">
+													<h5>
+														㈜전북현대상용서비스, 대한적십자사 ESG실천기업 동참</h5>
+													<span>2026-03-11</span>
+												</div>
+											</a>
+										</li>
+									<li>
+											<a href="/main/pt/pst/selectPstInfo.do?mi=1045&pstSn=501411&bbsId=1003">
+												<p class="cate">
+													<span class="ty2">보도자료</span>
+													<span class="ty1">충남</span>
+												</p>
+												<div class="tit">
+													<h5>
+														아산 자담치킨 아산시청점, 대한적십자사 ‘씀씀이가 바른식당’ 722호 가입</h5>
+													<span>2026-03-11</span>
+												</div>
+											</a>
+										</li>
+									</ul>
+						</div>
+						
+						<!-- 공지사항 -->
+						<div class="list" id="notice03">
+							<ul>
+								<li>
+												<a href="/main/pt/pst/selectPstInfo.do?mi=1009&pstSn=500970&bbsId=1001">
+													<p class="cate">
+														<span class="ty2">공지사항</span>
+														<span class="ty1">본사</span>
+													</p>
+													<div class="tit">
+														<h5>
+															2026년 사할린동포 영주귀국·정착 및 생활안정 지원 신청 접수 안내</h5>
+<span>2026-02-13</span>
+													</div>
+												</a>
+											</li>
+										<li>
+												<a href="/main/pt/pst/selectPstInfo.do?mi=1009&pstSn=500470&bbsId=1001">
+													<p class="cate">
+														<span class="ty2">공지사항</span>
+														<span class="ty1">본사</span>
+													</p>
+													<div class="tit">
+														<h5>
+															대한적십자사 임직원 사칭 사기 피해 주의 안내(사칭범 이름 및 휴대전화번호 포함)</h5>
+<span>2026-01-27</span>
+													</div>
+												</a>
+											</li>
+										<li>
+												<a href="/main/pt/pst/selectPstInfo.do?mi=1009&pstSn=254163&bbsId=1001">
+													<p class="cate">
+														<span class="ty2">공지사항</span>
+														<span class="ty1">본사</span>
+													</p>
+													<div class="tit">
+														<h5>
+															법인폰 현황_국내 위기가정지원캠페인</h5>
+<span>2026-01-07</span>
+													</div>
+												</a>
+											</li>
+										<li>
+												<a href="/main/pt/pst/selectPstInfo.do?mi=1009&pstSn=501431&bbsId=1001">
+													<p class="cate">
+														<span class="ty2">공지사항</span>
+														<span class="ty1">본사</span>
+													</p>
+													<div class="tit">
+														<h5>
+															2026년 전자기부금영수증 발급 안내(개인사업자, 법인회원)</h5>
+<span>2026-03-11</span>
+													</div>
+												</a>
+											</li>
+										<li>
+												<a href="/main/pt/pst/selectPstInfo.do?mi=1009&pstSn=501142&bbsId=1001">
+													<p class="cate">
+														<span class="ty2">공지사항</span>
+														<span class="ty1">본사</span>
+													</p>
+													<div class="tit">
+														<h5>
+															2026년 대한적십자사 녹색제품 구매계획 안내</h5>
+<span>2026-02-26</span>
+													</div>
+												</a>
+											</li>
+										<li>
+												<a href="/main/pt/pst/selectPstInfo.do?mi=1009&pstSn=500820&bbsId=1001">
+													<p class="cate">
+														<span class="ty2">공지사항</span>
+														<span class="ty1">본사</span>
+													</p>
+													<div class="tit">
+														<h5>
+															정기후원자 개인정보 수집·이용 항목 보유기간 변경 고지</h5>
+<span>2026-02-09</span>
+													</div>
+												</a>
+											</li>
+										</ul>
+						</div>
+					</div>
+					<a href="/main/pt/pst/selectPstList.do?mi=2378&bbsId=1422" class="btn_more news_more"><span class="hid">적십자 NEWS 일반공고</span> <i class="ri-add-line" aria-hidden="true"></i></a>
+				 </div>
+				<!-- //적십자NEWS -->
+				
+				<!-- 적십자 SNS -->
+				 <div class="sns_wrap article mot-fpright">
+					<div class="tit_wrap">
+						<h3 class="heading">적십자 SNS</h3>
+					</div>
+
+					<ul class="sns_list sns_ico">
+						<li><a href="https://www.youtube.com/user/koreanredcross" class="ico youtube" target="_blank" title="새창열림"><span class="hid">유튜브 바로가기</span></a></li>
+						<li><a href="https://www.instagram.com/koreanredcross/" class="ico insta" target="_blank" title="새창열림"><span class="hid">인스타그램 바로가기</span></a></li>
+						<li><a href="https://blog.naver.com/knredcross" class="ico blog" target="_blank" title="새창열림"><span class="hid">네이버블로그 바로가기</span></a></li>
+						<li><a href="https://www.facebook.com/Humanitarian.network" class="ico facebook" target="_blank" title="새창열림"><span class="hid">페이스북 바로가기</span></a></li>
+						<li><a href="https://pf.kakao.com/_UauPz" class="ico kakaostory" target="_blank" title="새창열림"><span class="hid">카카오채널 바로가기</span></a></li>
+						<li><a href="https://www.tiktok.com/@rok_redcross" class="ico tiktok" target="_blank" title="새창열림"><span class="hid">틱톡 바로가기</span></a></li>
+						<li><a href="https://twitter.com/KoreanRedCross" class="ico twitter" target="_blank" title="새창열림"><span class="hid">X(트위터) 바로가기</span></a></li>
+						</ul>
+
+					<div class="cnts">
+						<ul class="sns_ico">
+							<li>
+									<a href="https://www.youtube.com/watch?v=YdlR0sMY36Q" target="_blank" title="새창열림">
+										<img src="https://i.ytimg.com/vi/YdlR0sMY36Q/hqdefault.jpg" alt="12살에 시작해 지금까지, 친선대사 임형주의 멈추지 않은 나눔｜적극적인 선택 EP.4 (w.캐롤공연)" />
+											<p class="ico youtube"><span class="hid">유튜브 바로가기</span></p>
+										</a>
+								</li>
+							<li>
+									<a href="https://www.youtube.com/watch?v=AzaFQLLT5cw" target="_blank" title="새창열림">
+										<img src="https://i.ytimg.com/vi/AzaFQLLT5cw/hqdefault.jpg" alt="어린 날의 나를 떠올리며, 키나가 전한 선택 (ft.왓츠인마이백)｜적극적인 선택 EP.3" />
+											<p class="ico youtube"><span class="hid">유튜브 바로가기</span></p>
+										</a>
+								</li>
+							<li>
+									<a href="https://www.youtube.com/watch?v=Kw7Y5DV1GCE" target="_blank" title="새창열림">
+										<img src="https://i.ytimg.com/vi/Kw7Y5DV1GCE/hqdefault.jpg" alt="김장명문家...? 김치 2톤 담갔습니다｜왜 안 오세요 EP.3" />
+											<p class="ico youtube"><span class="hid">유튜브 바로가기</span></p>
+										</a>
+								</li>
+							<li>
+									<a href="https://www.youtube.com/watch?v=w0hH4VNR_Tw" target="_blank" title="새창열림">
+										<img src="https://i.ytimg.com/vi/w0hH4VNR_Tw/hqdefault.jpg" alt="살아남았다는 것은 강하다는 것｜적적한 미식가 EP.2" />
+											<p class="ico youtube"><span class="hid">유튜브 바로가기</span></p>
+										</a>
+								</li>
+							<li>
+									<a href="https://www.youtube.com/watch?v=TCjZU3d_kQs" target="_blank" title="새창열림">
+										<img src="https://i.ytimg.com/vi/TCjZU3d_kQs/hqdefault.jpg" alt="팔이 짧긴 해도 귀엽잖아...｜CPR 접수하러 왔쎄호!🚑" />
+											<p class="ico youtube"><span class="hid">유튜브 바로가기</span></p>
+										</a>
+								</li>
+							<li>
+									<a href="https://www.youtube.com/watch?v=rA-rQwLJG4I" target="_blank" title="새창열림">
+										<img src="https://i.ytimg.com/vi/rA-rQwLJG4I/hqdefault.jpg" alt="취준생 힐링 투어 / 망원시장 먹방 / 간식 추천｜Ready, Go! EP.2" />
+											<p class="ico youtube"><span class="hid">유튜브 바로가기</span></p>
+										</a>
+								</li>
+							<li>
+									<a href="https://www.youtube.com/watch?v=NXAq_lvNoGg" target="_blank" title="새창열림">
+										<img src="https://i.ytimg.com/vi/NXAq_lvNoGg/hqdefault.jpg" alt="미얀마를 강타한 지진｜현장 그 너머 🏃‍" />
+											<p class="ico youtube"><span class="hid">유튜브 바로가기</span></p>
+										</a>
+								</li>
+							</ul>
+					</div>
+				 </div>
+				<!-- //적십자 SNS -->
+			</section>
+
+			<section class="section5 container">
+				<!-- 적십자회비 -->
+				<div class="fee_info">
+					<div class="tit_wrap mot1-fpbottom">
+						<h3 class="heading">적십자회비, <em>이렇게 사용됩니다.</em></h3>
+					</div>
+
+					<ul class="tabs mot2-fpbottom">
+						<li class="active"><a href="#feeInfo01" class="active">국내사업</a></li>
+						<li><a href="#feeInfo02">국제사업</a></li>
+						<li><a href="#feeInfo03">교육사업</a></li>
+						<li><a href="#feeInfo04">의료사업</a></li>
+					</ul>
+
+					<div class="cnts tabs_cnts mot2-fpbottom">
+						<!-- 국내사업 -->
+						<div class="info active" id="feeInfo01">
+							<dl>
+								<dt>국내사업</dt>
+								<dd>‘동해안 산불’과 ‘집중호우’ 등 여러 재난에 맞서 대응하고 긴급구호활동에 앞장섰습니다. 또한 지역사회와 연계하여 소외된 이웃을 보살피고 복지사각지대의 취약계층을 발굴하여 지원했습니다.</dd>
+							</dl>
+							<ul class="dtls"> 
+								<li><img src="/images/main/main/ico_fee01.png" alt="">
+									<h5>재난구호 수혜인원</h5>
+									<p><strong data-target="1490469"></strong>명 지원</p>
+								</li>
+								<li><img src="/images/main/main/ico_fee02.png" alt="">
+									<h5>복지사각지대 취약계층</h5>
+									<p><strong data-target="391203"></strong>명 지원</p>
+								</li>
+							</ul>
+						</div>
+
+						
+						<!-- 국제사업 -->
+						<div class="info" id="feeInfo02">
+							<dl>
+								<dt>국제사업</dt>
+								<dd>국제적십자운동의 일원으로서 우크라이나 피란민과 아태지역 재난 피해 5개국에 288.6억 원을 지원했고 네팔(물과위생 사업)과 방글라데시(재난위험경감사업) 등 다양한 파트너십으로 개발협력사업을 추진했습니다.</dd>
+							</dl>
+							<ul class="dtls"> 
+								<li><img src="/images/main/main/ico_fee01.png" alt="">
+									<h5>분쟁 및 재난 피해국 긴급구호</h5>
+									<p><b><strong data-target="288"></strong>.6</b>억 원 지원</p>
+								</li>
+								<li><img src="/images/main/main/ico_fee02.png" alt="">
+									<h5>개발협력사업</h5>
+									<p><strong data-target="6"></strong>개국</p>
+								</li>
+							</ul>
+						</div>
+
+						
+						<!-- 교육사업 -->
+						<div class="info" id="feeInfo03">
+							<dl>
+								<dt>교육사업</dt>
+								<dd>재난안전교육 전문기관으로서 국민안전문화 확산을 위해 생명안전교육을 확대 실시하였습니다. 또한 청소년 인도주의 활동을 강화하기 위해 온라인 연수 프로그램을 운영하고 다양한 인도주의 콘텐츠를 보급했습니다.</dd>
+							</dl>
+							<ul class="dtls"> 
+								<li><img src="/images/main/main/ico_fee01.png" alt="">
+									<h5>안전교육 참여 인원</h5>
+									<p><strong data-target="340104"></strong>명</p>
+								</li>
+								<li><img src="/images/main/main/ico_fee02.png" alt="">
+									<h5>RCY단원</h5>
+									<p><strong data-target="115608"></strong>명</p>
+								</li>
+							</ul>
+						</div>
+
+						
+						<!-- 의료사업 -->
+						<div class="info" id="feeInfo04">
+							<dl>
+								<dt>의료사업</dt>
+								<dd>감염병 전담병원, 선별진료소 운영 등 코로나19 최전선에서 생명을 살리기 위해 최선을 다했고 희망진료센터 등 다양한 공공의료서비스를 통해 취약계층을 위한 의료 안전망 기능을 수행했습니다.</dd>
+							</dl>
+							<ul class="dtls"> 
+								<li><img src="/images/main/main/ico_fee01.png" alt="">
+									<h5>감염병 전담병원</h5>
+									<p><strong data-target="19231"></strong>명 지원</p>
+								</li>
+								<li><img src="/images/main/main/ico_fee02.png" alt="">
+									<h5>희망진료센터</h5>
+									<p><strong data-target="56173"></strong>명 지원</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!--// 적십자회비 -->
+			</section>
+
+			<section class="section6 container">
+				<!-- 봉사활동 -->
+				<div class="vlt_wrap">
+					<div class="tit_wrap mot1-fpbottom">
+						<h3 class="heading">모집중인 봉사활동</h3>
+					</div>
+
+					<div class="cnts mot2-fpbottom">
+						<ul>
+						<li>
+									<span>광주.전남지사</span>
+									<h5>(광주) 4/16(목) 광주봉사관 무료급식 봉사활동</h5>
+									<ul class="lst">
+										<li><strong>장소</strong> : 광주봉사관</li>
+										<li><strong>활동시간</strong> : 2026-04-16 11:00 ~ 14:00</li>
+										<li><strong>접수기간</strong> : 2026-03-13 ~ 2026-04-16</li>
+									</ul>
+									<div class="progress">
+										<!--[p] progressbar width는 style로 넣어주세요 -->
+                                        <p class="bar"><span style="width:0%"></span></p>
+										<p class="txt"><span>신청인원</span><span><strong>0</strong>/5명</span></p>
+									</div>
+									<a href="/main/va/actv/selectVipActvInfo.do?mi=1210&actno=10193172">자세히보기</a>
+								</li>
+							<li>
+									<span>광주.전남지사</span>
+									<h5>(광주) 4/14(화) 광주봉사관 무료급식 봉사활동</h5>
+									<ul class="lst">
+										<li><strong>장소</strong> : 광주봉사관</li>
+										<li><strong>활동시간</strong> : 2026-04-14 11:00 ~ 14:00</li>
+										<li><strong>접수기간</strong> : 2026-03-13 ~ 2026-04-14</li>
+									</ul>
+									<div class="progress">
+										<!--[p] progressbar width는 style로 넣어주세요 -->
+                                        <p class="bar"><span style="width:0%"></span></p>
+										<p class="txt"><span>신청인원</span><span><strong>0</strong>/5명</span></p>
+									</div>
+									<a href="/main/va/actv/selectVipActvInfo.do?mi=1210&actno=10193168">자세히보기</a>
+								</li>
+							<li>
+									<span>광주.전남지사</span>
+									<h5>(광주) 4/9(목) 광주봉사관 무료급식 봉사활동</h5>
+									<ul class="lst">
+										<li><strong>장소</strong> : 광주봉사관</li>
+										<li><strong>활동시간</strong> : 2026-04-09 11:00 ~ 14:00</li>
+										<li><strong>접수기간</strong> : 2026-03-13 ~ 2026-04-09</li>
+									</ul>
+									<div class="progress">
+										<!--[p] progressbar width는 style로 넣어주세요 -->
+                                        <p class="bar"><span style="width:0%"></span></p>
+										<p class="txt"><span>신청인원</span><span><strong>0</strong>/5명</span></p>
+									</div>
+									<a href="/main/va/actv/selectVipActvInfo.do?mi=1210&actno=10193167">자세히보기</a>
+								</li>
+							<li>
+									<span>광주.전남지사</span>
+									<h5>(광주) 4/7(화) 광주봉사관 무료급식 봉사활동</h5>
+									<ul class="lst">
+										<li><strong>장소</strong> : 광주봉사관</li>
+										<li><strong>활동시간</strong> : 2026-04-07 11:00 ~ 14:00</li>
+										<li><strong>접수기간</strong> : 2026-03-13 ~ 2026-04-07</li>
+									</ul>
+									<div class="progress">
+										<!--[p] progressbar width는 style로 넣어주세요 -->
+                                        <p class="bar"><span style="width:0%"></span></p>
+										<p class="txt"><span>신청인원</span><span><strong>0</strong>/5명</span></p>
+									</div>
+									<a href="/main/va/actv/selectVipActvInfo.do?mi=1210&actno=10193160">자세히보기</a>
+								</li>
+							</ul>
+					</div>
+					<a href="/main/fm/fstvl/selectFstvlList.do?mi=1210" class="btn_more mot2-fpbottom"><span class="hid">모집중인 봉사활동</span> 전체보기 <i class="ri-add-line" aria-hidden="true"></i></a>
+				</div>
+				<!--// 봉사황동 -->
+			</section>
+			
+			<section class="section7 container">
+				<!-- =======(시작)함께 만드는 따뜻한 이야기 ======= -->
+				<div class="stroy_wrap">
+					<div class="tit_wrap mot1-fpbottom">
+						<h3 class="heading">함께 만드는 따뜻한 이야기</h3>
+					</div>
+
+					<div class="cnts mot2-fpbottom">
+						<ul>
+						<li><a href="/main/pt/pst/selectPstInfo.do?mi=1258&bbsId=1035&pstSn=350513">
+								<p class="img"><img src="/upload/main/story/1151" alt="토요일마다 문 여는 병원을 아시나요?"></p>
+								<h5>토요일마다 문 여는 병원을 아시나요?</h5>
+								<span>8월 17일 토요일 이른 아침,인천적십자병원 누구나진료센터는 의료진, 봉사자, 환자들로 북적입니다. 이곳은 의료취약계층에게는 가뭄의 단비 같은 존재인데요. 차별 없는 의료의 시작점, 누구나진료센터를 찾았습니다.   아프면 누구나 차별 없이 치료받을 수 있어야 누구나진료센터는 병원비가 부담되어 진료를 받지 못하는 </span>
+							</a></li>
+						<li><a href="/main/pt/pst/selectPstInfo.do?mi=1258&bbsId=1035&pstSn=350512">
+								<p class="img"><img src="/upload/main/story/1150" alt="훈련으로 단련된 우리, 재난 속에서도 하나되다"></p>
+								<h5>훈련으로 단련된 우리, 재난 속에서도 하나되다</h5>
+								<span>지난 여름, 경기도 화성시 배터리 공장에서 발생한 화재와 중남부 지방의 수해로 삶의 터전을 잃은 이들이 고통을 호소하고 있습니다. 대한적십자사는 지체 없이 현장으로 달려가 구호활동을 펼치며 이들에게 따뜻한 손길을 내밀었는데요.앞서 5월에 진행됐던 재난구호 종합훈련이 우리에게 꼭 필요한 이유를 알 수 있는 순간이었습니다.  &amp;nbs</span>
+							</a></li>
+						<li><a href="/main/pt/pst/selectPstInfo.do?mi=1258&bbsId=1035&pstSn=350483">
+								<p class="img"><img src="/upload/main/story/1146" alt="흙공 던지고, 꽃 심고 놀이처럼 즐거운 ESG"></p>
+								<h5>흙공 던지고, 꽃 심고 놀이처럼 즐거운 ESG</h5>
+								<span>ESG는 이제 선택이 아닌 생존을 위한 필수 요소가 됐습니다.대한적십자사는 환경경영체계를 수립하고 헌혈자·봉사원·기부자가 함께하는 친환경 문화를 조성하는 등 ESG 활동을 확대하고 있습니다.작은 실천이 모이면 지구를 지키는 큰 힘이 됩니다.건강한 지구를 만드는 적십자의 ESG 활동을 소개합니다.     # 하천을</span>
+							</a></li>
+						<li><a href="/main/pt/pst/selectPstInfo.do?mi=1258&bbsId=1035&pstSn=350482">
+								<p class="img"><img src="/upload/main/story/1127" alt="기후변화로 생태계가 바뀌고 있다"></p>
+								<h5>기후변화로 생태계가 바뀌고 있다</h5>
+								<span>공우석의 사람, 생각 기후변화로 생태계가 바뀌고 있다자연현상이 아닌 인간의 활동에 기인한 기후변화는 예측하기 힘들 정도로 변동성과 불확실성이 커졌습니다. 기후변화는 우리 삶에 어떤 파장을 일으키고 있을까요? 이에 우리는 어떤 노력을 해야 할까요? - 글 | 공우석 기후변화생태계연구소 소장   미</span>
+							</a></li>
+						</ul>
+					</div>
+					<a href="/main/pt/pst/selectPstList.do?mi=1258&bbsId=1035" class="btn_more mot2-fpbottom"><span class="hid">함께 만드는 따뜻한 이야기</span> 전체보기 <i class="ri-add-line" aria-hidden="true"></i></a>
+				</div>
+				<!-- =======(종료)함께 만드는 따뜻한 이야기 ======= -->
+			</section>
+
+			<section class="section8 container">
+				<!-- 기부금 영수증 발급 안내 -->
+                <div class="rcpt-info">
+                    <a href="/main/pt/pst/selectPstInfo.do?mi=1009&bbsId=1001&pstSn=500820" title="바로가기">
+                        <img src="/images/main/main/img_rcpt.png" class="mot3-fpbottom" alt="">
+                        <div class="cnt mot2">
+                            <p>정기후원자 개인정보 수집&middot;이용 항목</p>
+                            <h3><span class="point">보유기간</span> 변경 고지 <img src="/images/main/main/ico_rcpt.png" alt=""></h3>
+                        </div>
+                    </a>
+                </div>
+                <!-- //기부금 영수증 발급 안내 -->
+                <!-- 팝업 -->
+                <div class="popupZone">
+                    <div class="slider" id="popupSlide">
+                        <p class="item"><a href="https://www.redcross.or.kr/main/fm/fstvl/selectFstvlList.do?mi=1210" target="_blank"><img src="/upload/common/pm/img_fc4564c3-7904-4afe-a351-7a6b390c7cb71767456252554.png" alt="" onerror="this.src='/images/co/pt/noImg.gif'"></a></p>
+							<p class="item"><a href="https://www.redcross.or.kr/main/sp/bill/insertSpnBillAplyPage.do?mi=2588" target="_blank"><img src="/upload/common/pm/img_b5f6cdec-ea32-43d5-8692-bf615a4fd4511767456122477.png" alt="" onerror="this.src='/images/co/pt/noImg.gif'"></a></p>
+							<p class="item"><a href="https://www.redcross.or.kr/main/pt/pst/selectPstInfo.do?mi=1009&amp;bbsId=1001&amp;pstSn=300160" target="_blank"><img src="/upload/common/pm/img_5b9a9cc5-cadf-4b34-9d64-d5a42dbf92d71767455933744.png" alt="" onerror="this.src='/images/co/pt/noImg.gif'"></a></p>
+							<p class="item"><a href="https://www.redcross.or.kr/main/pt/pst/selectPstInfo.do?mi=1009&amp;bbsId=1001&amp;pstSn=300954" target="_blank"><img src="/upload/common/pm/img_97550bdf-081e-466d-986b-74791e7dfca51767453302164.png" alt="" onerror="this.src='/images/co/pt/noImg.gif'"></a></p>
+							</div>
+                    <div class="control">
+                        <a href="javascript:" class="stop"><i class="ri-pause-line" aria-hidden="true"></i><span class="sr-only">팝업존 정지</span></a>
+                        <a href="javascript:" class="play"><i class="ri-play-fill" aria-hidden="true"></i><span class="sr-only">팝업존 재생</span></a>
+                    </div>
+                </div>
+                <!-- //팝업 -->
+			</section>
+
+			<section class="section9 container">
+				<!-- history -->
+				 <div class="history_wrap">
+					<div class="inner">
+						<div class="year">
+							<div class="start mot3-fpleft">SINCE <strong>1905</strong></div>
+							<div class="mid"></div>
+							<div class="end"><strong id="endYear">2026</strong> NOW</div>
+						</div>
+					</div>
+					<div class="cnts">
+						<h5 class="mot4-fpbottom">1905년, 국민과 국가를 지키기 위해 탄생한 <br>
+							대한적십자사의 인도주의 활동은 지금까지 계속되고 있습니다.</h5>
+						<p class="mot5-fpbottom"><strong>당신</strong>을 위해, <strong>생명</strong>을 위해, <strong>우리 모두</strong>를 위해 <br>
+							더 낮은 곳으로, 더 약한 곳으로, 더 어두운 곳으로 <br>
+							가장 먼저 달려 가겠습니다.</p>
+					</div>
+					<img src="/images/main/main/img_ann120.png" class="logo mot6-fpbottom" alt="[120주년 1905-2025] 희망이 필요한 순간, 대한적십자사 KOREA RED CROSS">
+				 </div>
+				<!-- //history -->
+			</section>
+			
+			</div>
+</div>
+
+
+
+	
+		
+			
+
+
+				
+
+					<!-- 팝업 -->
+					
+						
+							
+							
+								<div class="slidePopup" id="mainPopup" style="display: none;">
+									<div class="mainPopup_tit">
+										<h3 class="popup_tit">대한적십자사 <span class="pc_yl">POPUP</span></h3>
+										<p class="popup_sub">소식 <span class="pc_yl">0</span>건</p>
+									</div>
+									<div class="mainPopup_wrap">
+										<div class="swiper-button-prev"></div>
+										<div class="swiper mainPopup">
+											<div class="swiper-wrapper">
+												
+											</div>
+										</div>
+										<div class="swiper-button-next"></div>
+									</div>
+									<div class="btns ac">
+										<button type="button" class="krds-btn quaternary closePopup cookieCloseBtn slideCls" data-target="mainPopup">하루동안 열지 않음 <i class="ri-close-line"></i></button>
+										<button type="button" class="krds-btn primary closePopup slideCls" data-target="mainPopup">닫기 <i class="ri-close-line"></i></button>
+									</div>
+								</div>
+							
+						
+					
+
+					<!-- 레이어팝업 -->
+					
+
+						
+					<div id="listContainer" style="display:none;">
+	<ul>
+		<li class="cmpgn01">
+				<a href="https://redcross.campaignus.me/dayounghayoung" title="새창열기" target="_blank">
+					<p class="img">
+						<img src="/upload/main/cm/img_3978f836-3973-409d-8ccd-d20f9c435e081768370419258.jpeg" alt="">
+					</p>
+					<div class="cnt">
+						<span>아동·청소년</span>
+						<h5>다영·하영 쌍둥이 돕기 캠페인</h5>
+<!-- 						<p class="date">2025.02.14 ~ <span>2025.05.14 까지</span></p> -->
+					</div>
+				</a>
+			</li>
+		<li class="cmpgn06">
+				<a href="https://redcross.campaignus.me/19450815C" title="새창열기" target="_blank">
+					<p class="img">
+						<img src="/upload/main/cm/img_d093f879-8fd2-412a-84d5-19bdac413a8d1772756041634.jpg" alt="">
+					</p>
+					<div class="cnt">
+						<span>사회</span>
+						<h5>독립운동가 후손 돕기 캠페인</h5>
+<!-- 						<p class="date">2025.02.14 ~ <span>2025.05.14 까지</span></p> -->
+					</div>
+				</a>
+			</li>
+		<li class="cmpgn01">
+				<a href="https://redcross.campaignus.me/misoA" title="새창열기" target="_blank">
+					<p class="img">
+						<img src="/upload/main/cm/img_ffbe9ed9-8a9a-4055-a9af-e30c54495efb1772756644966.png" alt="">
+					</p>
+					<div class="cnt">
+						<span>아동·청소년</span>
+						<h5>소녀들의 미소 캠페인</h5>
+<!-- 						<p class="date">2025.02.14 ~ <span>2025.05.14 까지</span></p> -->
+					</div>
+				</a>
+			</li>
+		<li class="cmpgn01">
+				<a href="https://redcross.campaignus.me/alonegoods3" title="새창열기" target="_blank">
+					<p class="img">
+						<img src="/upload/main/cm/img_57147a71-553c-42e9-b2a3-4fbbb7a4a2471771468324321.jpg" alt="">
+					</p>
+					<div class="cnt">
+						<span>아동·청소년</span>
+						<h5>14K Saving Ring</h5>
+<!-- 						<p class="date">2025.02.14 ~ <span>2025.05.14 까지</span></p> -->
+					</div>
+				</a>
+			</li>
+		<li class="cmpgn04">
+				<a href="https://www.redcross.or.kr/main/ad/pay/donateStep01.do?spn=o0014726" title="새창열기" target="_blank">
+					<p class="img">
+						<img src="/upload/main/cm/img_b932fd10-58d6-4513-829e-3266a7c9d08b1773128950860.jpg" alt="">
+					</p>
+					<div class="cnt">
+						<span>지구촌</span>
+						<h5>2026 중동 복합위기</h5>
+<!-- 						<p class="date">2025.02.14 ~ <span>2025.05.14 까지</span></p> -->
+					</div>
+				</a>
+			</li>
+		</ul>
+</div>
+<!-- 게시글 내용안에 태그 제거를 위한 숨김처리 태그 -->
+<div id="hidDivTag" class="hid">
+
+</div>
+
+<script>
+
+	//캠페인 태그 버튼
+	$('.cmpnTagBtn').click(function(){
+		// 모든 버튼에서 active 제거
+		$('.cmpnTagBtns li').removeClass('active');
+		$(this).parent('li').addClass('active');
+		const tegCd = $(this).data('id');
+		
+		$('.cmpgnInfo').remove();
+		var elem = null
+		if(tegCd == 'all'){
+			elem = $('#listContainer li').clone(false, false);
+		}
+		else{
+			elem = $('.cmpgn'+tegCd).clone(false, false);
+		}
+		
+		elem.addClass('cmpgnInfo');
+		if(elem.length <= 0){
+			elem = "<li class='no_data cmpgnInfo'>등록된 게시글이 없습니다</li>"
+		}
+		$('#cmpgnList').append(elem);
+		
+		
+	});
+	
+	// 메인 호출 후 실행되도록 스크립트 추가
+	$(document).ready(function(){
+		
+		// 탭 버튼 클릭 시
+		$('.tabBtns li a').on('click', function(e) {
+			e.preventDefault(); // a태그 이동 막기
+
+			// 탭 활성화 스타일 변경
+			$('.tabBtns li').removeClass('active');
+			$(this).parent().addClass('active');
+
+			const bbsId = $(this).data('bbs');
+			const bbsMi = $(this).data('mi');
+			//더보기 버튼 경로 생성
+			if (!bbsId) {
+				$('.news_more').hide();
+			} else if(bbsId == 'nsc'){
+				$('.news_more').show();
+				$('.news_more').attr('href', "/main/ns/nscvrg/selectNscvrgViewList.do?mi="+bbsMi);
+			} else{
+				$('.news_more').show();
+				$('.news_more').attr('href', "/main/pt/pst/selectPstList.do?mi="+bbsMi+"&bbsId="+bbsId); 
+			}
+		});
+	});
+
+</script>
+</div>
+	        <!-- //컨테이너 영역 -->
+	        
+	        <!-- quickMenu -->
+			<aside id="asideMenu">
+	<!-- 퀵메뉴 -->
+	<aside class="quickAside aside-open">
+		<!-- 		1. qmenuScope == 'N' → 표출 안함 -->
+<!-- 		2. param.layoutType == 'main' → qmenuScope가 'M' 또는 'MS'일 때만 표출 -->
+<!-- 		3. param.layoutType == 'sub' → qmenuScope가 'S' 또는 'MS'일 때만 표출 -->
+		<div class="quickAside_wrap" id="quickMenu">
+					<p class="tit">QUICK<br>MENU</p>
+		<!-- 				<a href="" class="toggleBtn" id="quickMenuBtn">퀵메뉴<span class="hid">영역 닫기</span></a> -->
+		<!-- 				<div class="inner"> -->
+		<!-- 				<h3>바로가기</h3> -->
+						<ul class="quickMenu">
+							<li><a href="/main/cm/conts/contsView.do?mi=2238&amp;contsId=1402" title="RCY" target="_self">RCY</a></li>
+							<li><a href="/main/fm/fstvl/selectFstvlList.do?mi=1210" title="봉사참여" target="_self">봉사참여</a></li>
+							<li><a href="https://www.redcross.or.kr/main/pt/pst/selectPstInfo.do?mi=1009&amp;bbsId=1001&amp;pstSn=300160" title="기부금 영수증" target="_blank">기부금 영수증</a></li>
+							<li>
+		                         <a href="" class="close_btn" title="퀵메뉴 닫기">
+		                             닫기 <i class="ri-close-line" aria-hidden="true"></i>
+		                         </a>
+		                     </li>
+						</ul>
+		<!-- 				</div> -->
+				</div>
+			<a href="" class="open_btn" title="퀵메뉴 열기">
+	            <i class="ri-arrow-left-s-line" aria-hidden="true"></i>
+	            <span class="sr-only">열기</span>
+	        </a>
+        </aside>
+	<!-- //퀵메뉴 -->
+</aside>
+<!-- 승인 알림창 -->
+<div class="alarmbox open" id="alarmbox" style="display:none;">
+    <div class="inner">
+        <div class="top">
+            <span>알림!</span>
+            	<a href="javascript:" class="alarmbtn" id="albtn"><span class="hid">알림창 닫기</span><i class="xi-close" aria-hidden="true"></i></a>
+        </div>
+        <div class="bot">
+        	<div class="txt">
+<!--         	<img class="img" src="/resource/images/common/alarm_ico.png" alt=""> -->
+        		승인 대기 회원은 <span class="num">명</span>입니다.
+        	</div>
+		</div>
+	</div>
+</div>
+<script> 
+	var cntChk = "";
+	if(false && true && true){
+		if(cntChk == null || cntChk == 'Y'){
+			
+			$('.alarmbox').show();
+		}else{
+			
+			$('.alarmbox').hide();
+		}
+	}
+		
+		//닫기버튼
+		$(".alarmbtn").click(function(){
+			
+			$('.alarmbox').hide();
+		});
+		
+</script><!-- //quickMenu -->
+	
+	        <!-- 푸터 영역 -->
+	        <footer id="footer">
+    <div class="foot-quick">
+	        <div class="inner">
+	            <div class="footBtn">
+	                <button type="button" class="link" title="상태 : 축소">지사&middot;혈액&middot;병원</button>
+	                <div>
+	                <!--LPM_START1-->
+					<ul>
+						<li><a href="/seoul/main.do"  title="서울지사">서울지사</a></li>
+						<li><a href="/busan/main.do" rel="noopener noreferrer" target="_blank" title="새창열림">부산지사</a></li>
+						<li><a href="/daegu/main.do" rel="noopener noreferrer" target="_blank" title="새창열림">대구지사</a></li>
+						<li><a href="/incheon/main.do" rel="noopener noreferrer" target="_blank" title="새창열림">인천지사</a></li>
+						<li><a href="/ulsan/main.do" rel="noopener noreferrer" target="_blank" title="새창열림">울산지사</a></li>
+						<li><a href="/daejeon/main.do" rel="noopener noreferrer" target="_blank" title="새창열림">대전·세종지사</a></li>
+						<li><a href="/gyeonggi/main.do" rel="noopener noreferrer" target="_blank" title="새창열림">경기지사</a></li>
+						<li><a href="/gangwon/main.do" rel="noopener noreferrer" target="_blank" title="새창열림">강원특별자치도지사</a></li>
+						<li><a href="/chungbuk/main.do" rel="noopener noreferrer" target="_blank" title="새창열림">충북지사</a></li>
+						<li><a href="/chungnam/main.do" rel="noopener noreferrer" target="_blank" title="새창열림">충남지사</a></li>
+						<li><a href="/jeonbuk/main.do" rel="noopener noreferrer" target="_blank" title="새창열림">전북특별자치도지사</a></li>
+						<li><a href="/gwangju/main.do" rel="noopener noreferrer" target="_blank" title="새창열림">광주·전남지사</a></li>
+						<li><a href="/gyeongbuk/main.do" rel="noopener noreferrer" target="_blank" title="새창열림">경북지사</a></li>
+						<li><a href="/gyeongnam/main.do" rel="noopener noreferrer" target="_blank" title="새창열림">경남지사</a></li>
+						<li><a href="/jeju/main.do" rel="noopener noreferrer" target="_blank" title="새창열림">제주특별자치도지사</a></li>
+						<li><a href="http://www.bloodinfo.net" rel="noopener noreferrer" target="_blank" title="새창열림">혈액관리본부</a></li>
+						<li><a href="https://www.rch.or.kr/web/rchseoul/main" rel="noopener noreferrer" target="_blank" title="새창열림">서울병원</a></li>
+						<li><a href="https://www.rch.or.kr/web/rchincheon/main" rel="noopener noreferrer" target="_blank" title="새창열림">인천병원</a></li>
+						<li><a href="https://www.rch.or.kr/web/rchsanju/main" rel="noopener noreferrer" target="_blank" title="새창열림">상주병원</a></li>
+						<li><a href="https://www.rch.or.kr/web/rchgchang/main" rel="noopener noreferrer" target="_blank" title="새창열림">거창병원</a></li>
+						<li><a href="https://www.rch.or.kr/web/rchtyoung/main" rel="noopener noreferrer" target="_blank" title="새창열림">통영병원</a></li>
+						<li><a href="https://www.rch.or.kr/web/rchkyungin/main" rel="noopener noreferrer" target="_blank" title="새창열림">경인권역재활병원</a></li>
+						<li><a href="https://www.rch.or.kr/web/rchyoungju/main" rel="noopener noreferrer" target="_blank" title="새창열림">영주병원</a></li>
+						<li><a href="http://hncenter.or.kr" rel="noopener noreferrer" target="_blank" title="새창열림">희망진료센터</a></li>
+					</ul>
+	                <!--LPM_END-->
+	                </div>
+	            </div>
+	            <div class="footBtn">
+	                <button type="button" class="link" title="상태 : 축소">기타</button>
+	                <div>
+	                <!--LPM_START2-->
+					<ul>
+						<li><a href="http://www.redcross21.or.kr" rel="noopener noreferrer" target="_blank" title="새창열림">적십자수품센터</a></li>
+						<li><a href="http://www.krchcwc.or.kr" rel="noopener noreferrer" target="_blank" title="새창열림">원폭피해자복지회관</a></li>
+						<li><a href="http://www.icsakhalin.co.kr" rel="noopener noreferrer" target="_blank" title="새창열림">사할린동포복지회관</a></li>
+						<li><a href="http://nursing.cau.ac.kr" rel="noopener noreferrer" target="_blank" title="새창열림">적십자간호대학</a></li>
+						<li><a href="https://www.redcross.or.kr/apdrc/main.do" rel="noopener noreferrer" target="_blank" title="새창열림">아태재난복원력센터</a></li>
+						<li><a href="/ihl/main.do" rel="noopener noreferrer" target="_blank" title="새창열림">인도법연구소</a></li>
+						<li><a href="/recovery/main.do" rel="noopener noreferrer" target="_blank" title="새창열림">재난심리회복지원센터</a></li>
+					</ul>
+	                <!--LPM_END-->                    
+	                </div>
+	            </div>
+	            <div class="footBtn">
+	                <button type="button" class="link" title="상태 : 축소">관련기관</button>
+	                <div>
+	            <!--LPM_START3-->
+					<ul>
+						<li><a href="http://www.mohw.go.kr/react/index.jsp" rel="noopener noreferrer" target="_blank" title="새창열림">보건복지부</a></li>
+						<li><a href="https://www.unikorea.go.kr/unikorea" rel="noopener noreferrer" target="_blank" title="새창열림">통일부</a></li>
+						<li><a href="https://www.mois.go.kr/frt/a01/frtMain.do" rel="noopener noreferrer" target="_blank" title="새창열림">행정안전부</a></li>
+						<li><a href="https://www.moef.go.kr" rel="noopener noreferrer" target="_blank" title="새창열림">기획재정부</a></li>
+						<li><a href="https://www.moe.go.kr/main.do?s=moe" rel="noopener noreferrer" target="_blank" title="새창열림">교육부</a></li>
+						<li><a href="https://www.mofa.go.kr/www/index.do" rel="noopener noreferrer" target="_blank" title="새창열림">외교부</a></li>
+						<li><a href="https://www.moj.go.kr/moj/index.do" rel="noopener noreferrer" target="_blank" title="새창열림">법무부</a></li>
+						<li><a href="http://me.go.kr/home/web/main.do" rel="noopener noreferrer" target="_blank" title="새창열림">환경부</a></li>
+						<li><a href="https://www.mcst.go.kr/kor/main.jsp" rel="noopener noreferrer" target="_blank" title="새창열림">문화체육관광부</a></li>
+						<li><a href="https://www.mafra.go.kr/sites/mafra/index.do" rel="noopener noreferrer" target="_blank" title="새창열림">농림축산식품부</a></li>
+						<li><a href="https://www.motie.go.kr" rel="noopener noreferrer" target="_blank" title="새창열림">산업통상지원부</a></li>
+						<li><a href="http://www.mogef.go.kr" rel="noopener noreferrer" target="_blank" title="새창열림">여성가족부</a></li>
+						<li><a href="https://www.moel.go.kr/index.do" rel="noopener noreferrer" target="_blank" title="새창열림">고용노동부</a></li>
+						<li><a href="http://www.molit.go.kr/portal.do" rel="noopener noreferrer" target="_blank" title="새창열림">국토교통부</a></li>
+						<li><a href="https://www.mof.go.kr/index.do" rel="noopener noreferrer" target="_blank" title="새창열림">해양수산부</a></li>
+						<li><a href="https://www.msit.go.kr/index.do" rel="noopener noreferrer" target="_blank" title="새창열림">과학기술정보통신부</a></li>
+					</ul>
+	                <!--LPM_END-->
+	                </div>
+	            </div>
+	            <div class="footBtn">
+	                <button type="button" class="link" title="상태 : 축소">각국적십자사</button>
+	                <div>
+	                <!--LPM_START4-->
+					<ul>
+						<li><a href="http://www.icrc.org" rel="noopener noreferrer" target="_blank" title="새창열림">국제적십자위원회</a></li>
+						<li><a href="http://www.ifrc.org" rel="noopener noreferrer" target="_blank" title="새창열림">국제적십자사연맹</a></li>
+						<li><a href="https://www.redcrossmuseum.ch" rel="noopener noreferrer" target="_blank" title="새창열림">국제적십자박물관</a></li>
+						<li><a href="http://www.rodekruis.nl" rel="noopener noreferrer" target="_blank" title="새창열림">네덜란드적십자사</a></li>
+						<li><a href="http://www.redcross.org.nz" rel="noopener noreferrer" target="_blank" title="새창열림">뉴질랜드적십자사</a></li>
+						<li><a href="https://www.rodekors.dk" rel="noopener noreferrer" target="_blank" title="새창열림">덴마크적십자사</a></li>
+						<li><a href="http://www.drk.de" rel="noopener noreferrer" target="_blank" title="새창열림">독일적십자사</a></li>
+						<li><a href="https://mrcscommunity.org.my" rel="noopener noreferrer" target="_blank" title="새창열림">말레이시아적신월사</a></li>
+						<li><a href="http://www.redcross.org" rel="noopener noreferrer" target="_blank" title="새창열림">미국적십자사</a></li>
+						<li><a href="http://www.redcross.se" rel="noopener noreferrer" target="_blank" title="새창열림">스웨덴적십자사</a></li>
+						<li><a href="http://www.redcross.ch" rel="noopener noreferrer" target="_blank" title="새창열림">스위스적십자사</a></li>
+						<li><a href="http://www.cruzroja.es" rel="noopener noreferrer" target="_blank" title="새창열림">스페인적십자사</a></li>
+						<li><a href="https://redcross.sg" rel="noopener noreferrer" target="_blank" title="새창열림">싱가포르적십자사</a></li>
+						<li><a href="http://www.redcross.org.uk" rel="noopener noreferrer" target="_blank" title="새창열림">영국적십자사</a></li>
+						<li><a href="http://www.cri.it" rel="noopener noreferrer" target="_blank" title="새창열림">이탈리아적십자사</a></li>
+						<li><a href="http://www.jrc.or.jp" rel="noopener noreferrer" target="_blank" title="새창열림">일본적십자사</a></li>
+						<li><a href="http://www.redcross.ca" rel="noopener noreferrer" target="_blank" title="새창열림">캐나다적십자사</a></li>
+						<li><a href="http://www.pck.org.pl" rel="noopener noreferrer" target="_blank" title="새창열림">폴란드적십자사</a></li>
+						<li><a href="http://www.croix-rouge.fr" rel="noopener noreferrer" target="_blank" title="새창열림">프랑스적십자사</a></li>
+						<li><a href="http://www.redcross.fi" rel="noopener noreferrer" target="_blank" title="새창열림">핀란드적십자사</a></li>
+						<li><a href="http://www.redcross.org.au" rel="noopener noreferrer" target="_blank" title="새창열림">호주적십자사</a></li>
+						<li><a href="http://www.redcross.org.cn" rel="noopener noreferrer" target="_blank" title="새창열림">중국홍십자회</a></li>
+					</ul>
+	                <!--LPM_END-->
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+    <div class="inner">
+        <div class="f-logo">
+        	<img src="/images/common/layout/logo.svg" class="logo-im" alt="대한적십자사">
+	            </div>
+        
+        <div class="f-cnt">
+            <div class="f-info">
+           <div class=""></div>
+            	<ul class="info-cs">
+	                	<li class="info-type2">
+                                    <strong class="key-info"><span><strong>본사</strong> <span>(26465) 강원특별자치도 원주시 혁신로 50</span></strong></li>
+<li><strong class="key-info">서울사무소 <span>(04629) 서울특별시 중구 소파로 145</span></span></strong>
+                                </li>
+			                    <li><strong class="key-info">헌혈문의 <span><em>1600-3705</em> (월~토 09:00~20:00 / 일,공휴일 10:00~18:00 / 유료)</span></strong></li>
+	                                        <li class="info-type2">
+	                                            <strong class="key-info">대표전화 <span><em class="point">1577-8179</em> (후원문의 월~금 09:00~18:00 / 유료)</span></strong>
+	                                            <strong class="key-info">이메일 <span>webmaster@redcross.or.kr</span></strong>
+	                                        </li>
+	                                        <li class="info-type2">
+                                	<strong class="key-info">사업자등록번호 <span>203-82-00639</span></strong>
+    								</li>
+                                </ul>
+                </div>
+			<div class="f-link">
+	                <div class="link-go">
+	                	<a href="/main/cm/conts/contsView.do?mi=1384&contsId=1102" class="krds-btn medium text">찾아오시는길 <i class="svg-icon ico-page-next"></i></a>
+		                <a href="/main/cm/conts/contsView.do?mi=2408&contsId=1544" class="krds-btn medium text">적십자고객헌장 <i class="svg-icon ico-page-next"></i></a>
+<!-- 		                <a href="javascript:rssFeed(window.location.href)" class="krds-btn medium text">RSS 2.0 <i class="svg-icon ico-page-next"></i></a> -->
+	                </div>
+	            </div>
+            </div>
+        
+        <div class="f-btm">
+            <div class="f-btm-text">
+            	<div class="f-menu">
+	                    <a href="/main/pp/prcplView/selectPrcplView.do?mi=2590" class="krds-btn small text"><strong>개인정보처리방침</strong></a>
+	                    <a href="/main/iv/prvcView/selectEmailView.do?mi=2593" class="krds-btn small text">이메일주소수집거부</a>
+	</div>
+                <p class="f-copy">ⓒ Korean Red Cross. All rights reserved.</p>
+               	</div>
+            <a title="새창열림" href="https://www.webwatch.or.kr/Situation/WA_Situation.html?MenuCD=110&npp=9&skey=3&sval=%EB%8C%80%ED%95%9C%EC%A0%81%EC%8B%AD%EC%9E%90%EC%82%AC" target="_blank" class="wa_mark">
+                <img src="/images/main/layout/WA_Mark_2026_2027.png" alt="과학기술정보통신부 WA(WEB접근성) 품질인증 마크,
+                웹와치(WebWatch) 2026.01.05 ~ 2027.01.04">
+            </a>
+            </div>
+    </div>
+
+    <a href="#" class="btn_top"><i class="ri-arrow-up-long-line" aria-hidden="true"></i><span class="hid">상단으로 이동</span></a>
+</footer>
+
+<!-- 스크립트 : 패턴 페이지 -->
+<script src="/js/common/pattern.js"></script>
+<!-- 스크립트 : 컴포넌트 -->
+<script src="/js/common/ui-script.js"></script>
+</div>
+        
+		
+		
+		
+    </body>
+</html>

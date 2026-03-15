@@ -1,0 +1,5 @@
+USER-agent: *
+Disallow: /newfira/web/news
+Disallow: /newfira/web/service/service06_01.jsp
+Disallow: /newfira/web/service/service06_02.jsp
+Disallow: /newfira/web/service/service01_01_01.jsp

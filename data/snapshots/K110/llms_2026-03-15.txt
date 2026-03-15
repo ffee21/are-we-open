@@ -1,0 +1,3920 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- OG용 메타 추가 -->
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="영상물등급위원회 Korea Media Rating Board">
+		<meta property="og:description" content="영상물의 등급을 심의하고 국민의 바른 미디어 이용 문화를 만들어갑니다.">
+		<meta property="og:image" content="https://www.kmrb.or.kr/00_common/images/common/og_main1.png">
+		<meta property="og:url" content="https://www.kmrb.or.kr/main/main.do">
+		<meta property="og:site_name" content="영상물등급위원회">		
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="영상물등급위원회 Korea Media Rating Board">
+		<meta name="twitter:description" content="영상물의 등급을 심의하고 국민의 바른 미디어 이용 문화를 만들어갑니다.">
+		<meta name="twitter:image" content="https://www.kmrb.or.kr/00_common/images/common/og_main1.png">
+		
+		<title>영상물등급위원회</title>
+		<link rel="icon" href="/00_common/images/favicon.ico">
+		
+		<!-- [P] KRDS 추가 -->		
+		<link rel="stylesheet" href="/00_common/css/pattern_css.css?v=202603151929" media="all">
+		<link rel="stylesheet" href="/00_common/css/KRDS_cnt_layout.css?v=202603151929" media="all">
+		
+		<link rel="stylesheet" href="/css/main/layout.css?v=202603151929" media="all">
+
+		<!-- [P] 메인페이지인 경우에만 생성되는 조건식 -->		
+		<link rel="stylesheet" href="/css/main/main.css?v=202603151929" media="all">
+		
+		<!-- 팝업 -->
+		<link rel="stylesheet" href="/css/com/jquery/jquery-ui.min.css?v=202603151929">
+		<link rel="stylesheet" href="/00_common/css/popup.css?v=202603151929">
+				
+		<!-- 공통파일 js -->
+		<script src="/00_common/js/default/jquery.min.js"></script>
+		<script src="/00_common/js/default/con_com.js" defer></script>
+		<script src="/00_common/js/default/layout.js?v=202603151929" defer></script>
+		
+		<!-- 스크립트 : KRDS 패턴 및 컴포넌트 페이지 -->
+        <script src="/00_common/js/default/ui-pattern.js" defer></script>
+        <script src="/00_common/js/default/ui-script.js" defer></script>
+		
+		<!-- 플러그인 -->
+		<script src="/00_common/js/plugin/slick.min.js" defer></script>
+		<script src="/00_common/js/plugin/ScrollMagic.min.js" defer></script>
+		
+		<!-- 메인 js -->
+		<script src="/js/main/main.js?v=202603151929" defer></script>
+		
+		<!-- 팝업 -->
+		<script src="/js/jquery-ui.min.js" defer></script>  
+		<script src="/00_common/js/common.js?v=202603151929" defer></script>
+		
+		<!-- 구글 애널리틱스 -->
+		<!-- -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-NZ32JVEMS3"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		  gtag('config', 'G-NZ32JVEMS3');
+		</script>
+		
+			<link rel="stylesheet" href="/00_common/css/con_com.css" media="all">
+		
+	</head>  
+<body>
+	<!-- 팝업 자세히보기 [위젯 004] -->
+	
+
+
+
+
+
+
+
+<script>
+$(document).ready(function() {
+	
+	//팝업 사이즈 조정(모바일시)
+	var width = $(window).width();
+	var height = $(window).height();
+	
+	
+	
+			var popupInsttSn = '1061';
+			var usePopYN = getCookie("popCookie1061");
+			
+			if(usePopYN != "hide") {
+		
+				var popupWidth = '380';
+				var popHeight = '470';
+				
+				if(width < popupWidth){
+					popupWidth = width-35;
+					
+				}else{
+					//$(".closeBtn1061").css("height","40px");
+					//$(".popupBtnS1061").css("float","right");
+					//$(".popupBtnS1061").css("text-align","right");
+					//$(".popupBtnO1061").css("float","right");
+					//$(".popupBtnO1061").css("text-align","right");
+				}
+				
+				/* if(height < popHeight){
+					popHeight = height;
+				} */
+				
+				// 스크롤 존재 여부 체크, 모바일 환경 체크 후 width 재설정
+				var scrollWidth = popupWidth;
+				
+				if(parseInt(popupWidth) < 335){
+					
+					//$(".closeBtn1061").css("height","40px");
+					//$(".popupBtnS1061").css("float","right");
+					//$(".popupBtnS1061").css("text-align","right");
+					//$(".popupBtnO1061").css("float","right");
+					//$(".popupBtnO1061").css("text-align","right");
+					
+					scrollWidth = popupWidth-5;
+				}else{
+					//$(".closeBtn1061").css("height","20px");
+					//$(".popupBtnS1061").css("float","left");
+					//$(".popupBtnS1061").css("text-align","left");
+				}
+				
+				
+				
+				
+				
+				
+					$("#popupNormalImg1061").attr("width", popupWidth);
+					var popupSn = "1061";
+					
+					// 첨부 이미지 height
+					if($("#popupNormalImg1061").length > 0){
+						var imgNaturalHeight = $("#popupNormalImg1061").get(0).naturalHeight;
+						// 스크롤 사용시, 첨부 이미지 height 값으로 고정
+						
+						
+							$("#popupNormalImg1061").attr("height", popHeight);
+							$("#popupNormal1061").addClass("popScrlAt");
+						
+						
+						if($("#popupNormal1061").get(0).scrollHeight - $("#popupNormal1061").innerHeight() > 0){
+							
+							$("#popupNormalImg1061").attr("width", scrollWidth);
+						}
+						
+						//$(".closeBtn1061").css("width", scrollWidth);
+					}
+					
+				
+			}
+		
+		
+		//팝업리스트
+		var widthPopUpList = $(window).width();
+		var heightPopUpList = $(window).height();
+		
+		
+		
+		
+		//팝업리스트 창 버튼 조정
+		if(widthPopUpList < 500){
+			$(".popupListBtnS").css("float","right");
+			$(".popupListBtnO").css("float","right");
+			//$(".closeListBtn").css("height","40px");
+		}
+});
+
+</script>
+
+<!-- 위젯제어 설정 호출 -->
+
+
+
+
+
+<!-- MAINIMG 슬라이드 컨트롤 -->
+
+
+
+<!-- GALBBS 슬라이드 컨트롤 -->
+
+
+
+
+
+<input type="hidden" name="mainAutoAt" id="mainAutoAt"  value="Y"/>
+<input type="hidden" name="mainAutoSpd" id="mainAutoSpd"  value="5"/>
+
+<input type="hidden" name="galBbsAutoAt" id="galBbsAutoAt"  value="Y"/>
+<input type="hidden" name="galBbsAutoSpd" id="galBbsAutoSpd"  value="5"/>
+
+<!-- 일반팝업 -->
+
+
+	<div id="popupNormal1061" style="display:none;" data-id='노쇼방지 유형 및 대응요청 알림'>
+		
+		
+		
+			<a href="https://docs.kmrb.or.kr:7500/streamdocs/view/sd;streamdocsId=YHWxoy-LvXqaUVGwbmNbN_L8bQAVwbkUSeGCL-8jG_8" rel="noopener noreferrer" target="_blank" title="노쇼방지 유형 및 대응요청 알림 (새 창 열림)" aria-label="노쇼방지 유형 및 대응요청 알림 (새 창 열림)">
+				<img id="popupNormalImg1061" src="/upload/main/pm/img_58053778-4b33-4fe4-94e6-18fd97213f7a1773290787016.png" width="380" height="470" alt=""/>
+			</a>
+		
+		
+		
+		
+		<!-- <div style="background-color:#3b568f; height:20px; text-align:right; width:100%"> -->
+		<!--  style="background-color:#3b568f; height:20px; text-align:right; width:380px" -->
+		
+		<!-- 메인팝업 -->
+		
+		<style>
+			.sr-only {
+				position: absolute;
+				width: 1px;
+				height: 1px;
+				padding: 0;
+				margin: -1px;
+				overflow: hidden;
+				clip: rect(0, 0, 0, 0);
+				white-space: nowrap;
+				border: 0;
+			}
+		</style>
+		
+		<div class="closeBtn closeBtn1061">
+			<div class="popClick">
+				<div class="popbox">
+					<input type="checkbox" id="popupCheck1061" class="popup-checkbox" />
+					<label for="popupPeriod1061" class="sr-only">
+						팝업 유지 기간 선택
+					</label>
+					<select id="popupPeriod1061" class="popup-select">
+						<option value="1">하루</option>
+						<option value="7">일주일</option>
+					</select>
+					<label for="popupCheck1061" class="popup-label">
+						동안 이 창을 열지 않음
+					</label>
+				</div>
+				<a href="#"
+				   class="popup-close-btn"
+				   data-seq="1061"
+				   role="button"
+				   aria-label="팝업 닫기">
+					<span class="sr-only">팝업 닫기</span>
+					<i class="ri-close-large-line" aria-hidden="true"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+
+<!-- //팝업 자세히 보기 -->
+
+<!-- 팝업 리스트 -->
+
+<!-- //팝업 리스트 -->
+
+<!-- 팝업 리스트 상세보기 -->
+
+
+<!-- //팝업 리스트 상세보기 -->
+
+<!-- 슬라이드팝업 리스트 -->
+<div id="SPopList" style="display:none;">
+	<div class="slideZone">
+		
+	</div>
+	<div class="control">
+		<a href="javascript:" class="prev"><span class="hid">비주얼 이전</span><i class="ri-arrow-left-s-line" aria-hidden="true"></i></a>
+		<a href="javascript:" class="stop"><span class="hid">비주얼 정지</span><i class="ri-pause-mini-line" aria-hidden="true"></i></a>
+		<a href="javascript:" class="play" style="display: none"><span class="hid">비주얼 재생</span><i class="ri-play-mini-fill" aria-hidden="true"></i></a>
+		<a href="javascript:" class="next"><span class="hid">비주얼 다음</span><i class="ri-arrow-right-s-line" aria-hidden="true"></i></a>
+	</div>
+	<div class="closeListBtn" style="background-color:#3b568f; height:20px; text-align:right;">
+		<div class="popClick">
+			<div class="popup-close-left">
+				<input type="checkbox" id="popupCheckSlide_main" class="popup-checkbox" />
+				<label for="popupPeriodSlide_main" class="hid">팝업 유지 기간 선택</label>
+				<select id="popupPeriodSlide_main" class="popup-select" aria-label="팝업 유지 기간 선택">
+					<option value="1">하루</option>
+					<option value="7">일주일</option>
+				</select>
+				<label for="popupCheckSlide_main">동안 이창을 열지 않음</label>
+			</div>
+			<a href="javascript:" class="popup-close-btn popup-slide-close" data-seq="popCookiePopUpSlide_main">
+				<span class="hid">팝업 창 닫기</span>
+				<i class="ri-close-large-line" aria-hidden="true"></i>
+			</a>
+		</div>
+	</div>
+</div>
+<!-- //슬라이드팝업 리스트 -->
+<!-- 슬라이드팝업 상세보기 -->
+
+
+<!-- //슬라이드팝업 상세보기 -->
+
+<script>
+$(document).ready(function() {
+	
+	var sysId = "main";
+	var popupUseNtcnAt = "";
+	if(popupUseNtcnAt == ''){
+		popupUseNtcnAt = "Y";
+	}
+	var sessionPopupCheck = "";
+	if(sessionPopupCheck == ''){
+		sessionPopupCheck = "N";
+	}
+	var confirmPopup = "N";
+	var showPopup = "Y";
+	
+	if (popupUseNtcnAt == "Y") {
+		if(sessionPopupCheck == "Y"){
+			confirmPopup = "N";
+		}else{
+			confirmPopup = "Y";
+		}
+	} else {
+		if(sessionPopupCheck == "N") {
+			confirmPopup = "N";
+			showPopup = "Y";
+		}else{
+			confirmPopup = "N";
+			showPopup = "N";
+		}
+	}
+	
+	var cnt = 0;
+	
+	// 팝업띄우기 전에 체크하도록 변경
+	if(confirmPopup == 'Y') {
+		popupStart();
+	} else {	
+		if(showPopup != 'N'){
+			popupStart();
+		}
+	}
+});
+
+//팝업 창 타입 띄우기
+function popupStart() {
+	var width = $(window).width();
+	var height = $(window).height();
+	
+	
+	
+
+		
+		
+		
+		
+		//팝업 사이즈 조정(모바일시)
+		var popWidth = '420';
+		var popHeight = '570';
+		
+		if(width < popWidth){
+			popWidth = width;
+		}
+		
+		if(height < popHeight){
+			popHeight = height;
+		} 
+		
+		var popupWidthLc = parseInt(100);
+		var popupheightLc = parseInt(100);
+		
+		var popupTitle = $("#"+"popupNormal1061").attr("data");
+		 
+		var usePopYN = getCookie("popCookie1061");
+		if(usePopYN != "hide") {
+			var $dialog = $("#"+"popupNormal1061").dialog({
+			    autoOpen: true,
+			    modal: false,
+			    resizable: false,
+			    draggable: false,  // 기본 드래그 비활성화
+			    title: popupTitle,
+			    width: popWidth,
+			    height: popHeight,
+			    dialogClass : "popupDialog schl_mPop",
+			    show:{
+			  		effect:"blind",
+			  		duration: 100
+			    },
+			    hide:{
+			   	 	effect:"blind",
+			   	 	duration: 100
+			    },					
+			    close: function( event, ui ) {
+			    	$(this).parent("div").addClass("popupClose");
+			    	if($(document).find(".popupDialog:not(.popupClose) button").length==0){
+			    		$(".header_wrap h1 a:eq(0)").addClass("focusOn");
+			    		$(".header_wrap h1 .focusOn").focus();
+			    	}else{
+			    		$(document).find(".popupDialog button").focus();
+			    	}
+			    },
+			    position: {my:'left+'+popupWidthLc+' top+'+popupheightLc+'', at: 'left top' }   
+			}).dialog('open');
+			
+			// 가상 드래그 영역을 사용한 커스텀 드래그 활성화
+			$dialog.parent('.ui-dialog').draggable({
+			    containment: "window",
+			    cursor: "move"
+			});		
+		}
+	
+
+	//새창팝업 호출
+	
+
+	//팝업리스트 호출
+	
+	
+	//슬라이드팝업리스트 호출
+	
+}
+
+function getPopupCnt() {
+	var cnt = 0;
+	var usePopYN = "";
+	
+	
+	
+		
+		
+		
+		
+		usePopYN = getCookie("popCookie1061");
+		if(usePopYN != "hide") {
+			cnt++;	
+		}
+	
+	
+	
+	
+	
+	
+	
+	return cnt;
+}
+
+//팝업리스트
+function popUpListViewCall(){
+	var width = $(window).width();
+	var height = $(window).height();
+	
+	  
+	
+	
+	//팝업 사이즈 조정(모바일시)
+	var popWidth = '600';
+	var popHeight = 'auto';
+	
+	if(width < popWidth){
+		popWidth = width;
+	}
+	
+	if(height < popHeight){
+		popHeight = height;
+	}
+	
+	var popupWidthLc = 100;
+	var popupheightLc = 150;
+	
+	var usePopYN = getCookie("popCookiePopUpList_main");
+	if(usePopYN != "hide") {
+		var $popListDialog = $("#lPopList").dialog({
+		    autoOpen: true,
+		    modal: false,
+		    resizable: false,
+		    draggable: false,  // 기본 드래그 비활성화
+		    title: "팝업리스트",
+		    width: popWidth,
+		    dialogClass : "popupDialog schl_mPop",
+		    height: 600,
+		    show:{
+		  		effect:"blind",
+		  		duration: 100
+		    },
+		    hide:{
+		   	 	effect:"blind",
+		   	 	duration: 100
+		    },						    
+		    close: function( event, ui ) {
+		    	$(this).parent("div").addClass("popupClose");
+		    	if($(document).find(".popupDialog:not(.popupClose) button").length==0){
+		    		$(".header_wrap h1 a:eq(0)").addClass("focusOn");
+		    		$(".header_wrap h1 .focusOn").focus();
+		    	}else{
+		    		$(document).find(".popupDialog button").focus();
+		    	}
+		    },
+		    position: {my:'left+'+popupWidthLc+' top+'+popupheightLc+'', at: 'left top' }
+		}).dialog('open');
+		
+		// 가상 드래그 영역을 사용한 커스텀 드래그 활성화
+		$popListDialog.parent('.ui-dialog').draggable({
+		    containment: "window",
+		    cursor: "move"
+		});		
+	}
+}
+
+//팝업리스트, 슬라이드팝업리스트 상세보기
+function popListCall(sysId, popupSn, popupTy){
+	$.ajax({
+		type : "POST",
+		datatype : "json",
+		data : {
+			sysId : sysId,
+			popupSn : popupSn,
+			popupTy : popupTy
+		},
+		url : "/"+sysId+"/ap/pm/popup/selectPopUpListInfo.do",
+		success : function(result){
+			var result = JSON.parse(result);
+			//조회된 기관 리스트 추가		 		
+			if ( result.resultAt == 'Y'){
+				var popUpListInfo = result.popUpListInfo
+				var width = $(window).width();
+				var height = $(window).height();
+				
+				
+				var popWidth = parseInt(popUpListInfo.popupWidth) + 30;
+				var popHeight = parseInt(popUpListInfo.popupHeight) + 100;
+				if(popUpListInfo.atchmnflId != null && popUpListInfo.atchFileList != null){
+					var fileCnt = popUpListInfo.atchFileList.length;
+					var fileHeight = fileCnt*20;
+					popHeight = popHeight + fileHeight;
+				}
+				
+				//팝업 사이즈 조정(모바일시)
+				if(width < popWidth){
+					popWidth = width;
+				}
+				
+				if(height < popHeight){
+					popHeight = height;
+				}
+				
+				var popupWidthLc = parseInt(popUpListInfo.widthLc);
+				var popupheightLc = parseInt(popUpListInfo.heightLc);
+				popHeight = "auto";
+				var $popDetailDialog = $("#popupNormal"+popUpListInfo.popupInsttSn).dialog({
+				    autoOpen: true,
+				    modal: false,
+				    resizable: false,
+				    draggable: false,  // 기본 드래그 비활성화
+				    title: popUpListInfo.popupTitle,
+				    width: popWidth,
+				    height: popHeight,
+				    dialogClass : "popupDialog schl_mPop listPopup",
+				    show:{
+				  		effect:"blind",
+				  		duration: 100
+				    },
+				    hide:{
+				   	 	effect:"blind",
+				   	 	duration: 100
+				    },					
+				    close: function( event, ui ) {
+				    	$(".popLink"+popupSn).focus();
+				    },
+				    position: {my:'left+'+popupWidthLc+' top+'+popupheightLc+'', at: 'left top' }
+				}).dialog('open');
+				
+				// 가상 드래그 영역을 사용한 커스텀 드래그 활성화
+				$popDetailDialog.parent('.ui-dialog').draggable({
+				    containment: "window",
+				    cursor: "move"
+				});		
+					
+			} else {
+				alert("오류가 발생하였습니다.\n관리자에게 문의하세요.");	
+			}
+		},
+		error : function(data) {   
+			alert("오류가 발생하였습니다.\n관리자에게 문의하세요.");
+		}
+	});
+	
+}
+
+//새창팝업
+function popPListViewCall(){
+	var width = $(window).width();
+	var height = $(window).height();
+	
+	
+	
+	
+}
+
+//새로운 팝업 닫기 핸들러
+$(document).on("click", ".popup-close-btn", function(e){
+	e.preventDefault();
+	var $btn = $(this);
+	var seq = $btn.data("seq");
+	var popSn = $btn.data("data");
+	
+	// 체크박스와 셀렉트박스 찾기
+	var $checkbox, $select;
+	if($btn.hasClass("popup-list-close")){
+		// 팝업 리스트
+		$checkbox = $("#popupCheckList_main");
+		$select = $("#popupPeriodList_main");
+	} else if($btn.hasClass("popup-slide-close")){
+		// 슬라이드 팝업
+		$checkbox = $("#popupCheckSlide_main");
+		$select = $("#popupPeriodSlide_main");
+	} else if($btn.hasClass("popListClose")){
+		// 팝업 리스트 상세
+		$checkbox = $("#popupCheckDetail" + seq);
+		$select = $("#popupPeriodDetail" + seq);
+	} else if($btn.hasClass("SPopListClose")){
+		// 슬라이드 팝업 상세
+		$checkbox = $("#popupCheckSDetail" + seq);
+		$select = $("#popupPeriodSDetail" + seq);
+	} else {
+		// 일반 팝업
+		$checkbox = $("#popupCheck" + seq);
+		$select = $("#popupPeriod" + seq);
+	}
+	
+	// 체크박스가 선택되어 있으면 쿠키 설정
+	if($checkbox && $checkbox.is(':checked')){
+		var closepd = $select.val() || "1";
+		var cookieNM = "popCookie" + seq;
+		setCookie(cookieNM, "hide", closepd);
+	}
+	
+	// 팝업 타입별 구분하여 제거
+	if($btn.hasClass("popup-list-close")){
+		$("#lPopList").parent().remove();
+	} else if($btn.hasClass("popup-slide-close")){
+		$("#SPopList").parent().remove();
+	} else if($btn.hasClass("popListClose")){
+		$("#popupNormal"+seq).parent().remove();
+		if(popSn) $(".popLink"+popSn).focus();
+	} else if($btn.hasClass("SPopListClose")){
+		$("#popupNormal"+seq).parent().remove();
+	} else {
+		// 일반 팝업
+		$("#popupNormal" + seq).parent().remove();
+	}
+});
+
+//기존 닫기 버튼과의 호환성 유지
+$(document).on("click", ".closeBtn a:not(.popup-close-btn)", function(e){
+	e.preventDefault();
+	var $btn = $(this);
+	var seq = $btn.data("seq");
+	if(seq){
+		$("#popupNormal" + seq).hide();
+		return;
+	}
+	$btn.closest(".ui-dialog").fadeOut();
+});
+
+//슬라이드팝업리스트창호출
+function popUpSListViewCall(){
+	var width = $(window).width();
+	var height = $(window).height();
+	
+	  
+	
+	
+	//팝업 사이즈 조정(모바일시)
+	var popWidth = '600';
+	var popHeight = 'auto';
+		
+	if(width < popWidth){
+		popWidth = width;
+	}
+	
+	if(height < popHeight){
+		popHeight = height;
+	}
+	
+	var popupWidthLc = 800;
+	var popupheightLc = 150;
+	
+	var usePopYN = getCookie("popCookiePopUpSlide_main");
+	if(usePopYN != "hide") {
+		var $slideDialog = $("#SPopList").dialog({
+		    autoOpen: true,
+		    modal: false,
+		    resizable: false,
+		    draggable: false,  // 기본 드래그 비활성화
+		    title: "슬라이드팝업리스트",
+		    width: popWidth,
+		    height: popHeight,
+		    dialogClass: "schl_mPop",
+		    show:{
+		  		effect:"blind",
+		  		duration: 100
+		    },
+		    hide:{
+		   	 	effect:"blind",
+		   	 	duration: 100
+		    },						    
+		    position: {my:'left+'+popupWidthLc+' top+'+popupheightLc+'', at: 'left top' }
+		    ,open : function(){
+		    	setScroll();
+		    }
+		}).dialog('open');
+		
+		// 가상 드래그 영역을 사용한 커스텀 드래그 활성화
+		$slideDialog.parent('.ui-dialog').draggable({
+		    containment: "window",
+		    cursor: "move"
+		});		
+	}
+}
+
+function setScroll(){
+	
+	var visualPrev = '#SPopList .prev';
+	var visualNext = '#SPopList .next';
+	var visualStop = '#SPopList .stop';
+	var visualPlay = '#SPopList .play';
+	
+	$("#SPopList .slideZone").slick({
+		slider: '.slideImgZone',
+		infinite: true,
+		autoplaySpeed: 4000,
+		speed : 500,
+		autoplay: true,
+		prevArrow: visualPrev,
+		nextArrow: visualNext
+	});
+	$('#SPopList .control a').click(function(e){
+		slickPopSControl($(this), '.slideZone', visualStop, visualPlay);
+		e.preventDefault();
+	});
+}
+ 
+function slickPopSControl($this, slick, stop, play){
+	var $slick = $(slick); //slider wrap
+	var $stop = $(stop); //Stop Button
+	var $play = $(play); //Play Button
+	var display = $this.css("display"); // button's display
+
+	if($this.is(stop)){
+		$stop.css('display','none');
+		$play.delay(100).css('display', display);
+		$slick.slick('slickPause');
+	}
+	if($this.is(play)){
+		$play.css('display','none');
+		$stop.delay(100).css('display', display);
+		$slick.slick('slickPlay');
+	}
+}
+
+</script>
+	<!-- //팝업 자세히보기 [위젯 004]  -->
+	
+	<div id="wrap" class="g-wrap">
+	<!-- //바로가기 -->
+		<!-- 배너-->
+		
+		
+		<!-- 헤더-->
+		
+
+
+
+
+
+
+<!-- 헤더 영역 -->
+<!-- KRDS 건너뛰기 링크 -->
+<div id="skip-nav">
+	<a href="#container">본문 바로가기</a>
+	<a href="#gnb">메인메뉴 바로가기</a>
+</div>
+<!-- //KRDS 건너뛰기 링크 -->
+<!-- 상단 배너영역 -->
+<div id="krds-masthead">
+	<div class="toggle-wrap">
+		<div class="toggle-head">
+			<div class="inner">
+				<span class="nuri-txt">이 누리집은 대한민국 공식 전자정부 누리집입니다.</span>
+			</div>
+		</div>
+		<div class="toggle-body">
+			<div class="inner">
+				<dl class="nuri">
+					<dt>공식 누리집 주소 확인하기</dt>
+					<dd class="desc">
+						go.kr 주소를 사용하는 누리집은 대한민국 정부기관이 관리하는 누리집입니다.<br />이밖에 or.kr 또는 .kr등 다른 도메인 주소를 사용하고 있다면 아래 URL에서 도메인 주소를 확인해 보세요
+					</dd>
+					
+				</dl>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //상단 배너영역 -->
+
+<!-- 헤더 영역 -->
+<div id="header">
+	<!-- 헤더 컨텐츠 영역 -->
+	<div class="header-in">
+		<div class="header-container">
+			<div class="inner">
+				<div class="header-branding">
+					<h2 class="logo">
+						<a href="/main/main.do" class="logo-txt" title="영상물등급위원회 바로가기">
+							<span class="hid">영상물등급위원회 로고</span>
+						</a>
+					</h2>
+					<div class="header-actions">
+
+											
+						
+					
+						<div class="header-link">
+							<a href="https://allbom.kmrb.or.kr/" target="_blank" title="새창">
+								<img src="/images/layout/h_link.png" alt="올바로봄 등급분류교육포털 바로가기 링크" />
+							</a>
+							<div class="util-menu">
+								<ul>
+									<li>
+										<a href="https://www.youtube.com/@kmrbstory" target="_blank" title="새창">
+											<img src="/images/layout/h_util_icon01.png" alt="유튜브 바로가기" />
+										</a>
+									</li>
+									<li>
+										<a href="https://blog.naver.com/daliboni" target="_blank" title="새창">
+											<img src="/images/layout/h_util_icon02.png" alt="블로그 바로가기" />
+										</a>
+									</li>
+									<li>
+										<a href="https://www.instagram.com/kmrb_pr/" target="_blank" title="새창">
+											<img src="/images/layout/h_util_icon03.png" alt="인스타 바로가기" />
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li><a href="https://ors.kmrb.or.kr/" target="_blank" title="새창"><img
+											src="/images/layout/h_util_icon04.png" alt="ORs 바로가기" /></a></li>
+									<li><a href="https://irs.kmrb.or.kr/" target="_blank" title="새창"><img
+											src="/images/layout/h_util_icon05.png" alt="IRs 바로가기" /></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- GNB 메뉴 -->
+		<div id="nav" class="fullDown krds-main-menu">
+			<div id="gnb" class="gnb">
+				<!--START-->
+						
+							<!-- depth01 div 시작 -->
+							<div class="inner depth01 depWidth">
+								<!-- depth01 ul 시작 -->
+								<ul class="gnb-menu" aria-label="메인 메뉴">
+								<li class="dep">
+									<a href="/main/cm/cntnts/cntntsView.do?mi=1082&cntntsId=1003" class="gnb-main-trigger" data-trigger="gnb" data-id="1075" aria-controls="gnb01" aria-expanded="false" aria-haspopup="true"   ><span>등급분류안내</span></a>
+									<!-- depth02 div 시작 -->
+
+									<div class="gnb-toggle-wrap depth02" id="gnb01">
+									<!-- depth02 시작 -->
+									<ul>
+										<!-- depth02 li 시작 -->
+										<li>
+											<div class="title">
+												<p class="tit">등급분류안내</p>
+												<p class="txt"><br/></p>
+											</div>
+											<!-- content div 시작 -->
+											<div class="content">
+												<!-- content ul 시작 -->
+												<ul>
+													<!-- 2차 li 시작 -->
+													<li class="dep">
+														<a href='/main/cm/cntnts/cntntsView.do?mi=1082&cntntsId=1003' data-id="1081"  >등급분류란</a>
+														<!-- 3차 div 시작 -->
+														<div class="depth03">
+															<!-- 3차 ul 시작 -->
+															<ul>
+																<li><a href="/main/cm/cntnts/cntntsView.do?mi=1082&cntntsId=1003" data-id="1082" ><span>등급분류제도</span></a></li>
+																<li><a href="/main/cm/cntnts/cntntsView.do?mi=1083&cntntsId=1004" data-id="1083" ><span>자체등급분류제도</span></a></li>
+																<li><a href="/main/cm/cntnts/cntntsView.do?mi=1084&cntntsId=1005" data-id="1084" ><span>등급분류 확인방법</span></a></li>
+															</ul>
+															<!-- 3차 ul 끝 -->
+														</div>
+														<!-- 3차 div 끝 -->
+													</li>
+													<!-- 2차 li 끝! -->
+													<!-- 2차 li 시작 -->
+													<li class="dep">
+														<a href='/main/cm/cntnts/cntntsView.do?mi=1086&cntntsId=1061' data-id="1085"  >등급분류 기준</a>
+														<!-- 3차 div 시작 -->
+														<div class="depth03">
+															<!-- 3차 ul 시작 -->
+															<ul>
+																<li><a href="/main/cm/cntnts/cntntsView.do?mi=1086&cntntsId=1061" data-id="1086" ><span>등급분류 원칙</span></a></li>
+																<li><a href="/main/cm/cntnts/cntntsView.do?mi=1087&cntntsId=1062" data-id="1087" ><span>등급분류 고려사항</span></a></li>
+																<li><a href="/main/cm/cntnts/cntntsView.do?mi=1088&cntntsId=1063" data-id="1088" ><span>등급분류 기준</span></a></li>
+															</ul>
+															<!-- 3차 ul 끝 -->
+														</div>
+														<!-- 3차 div 끝 -->
+													</li>
+													<!-- 2차 li 끝! -->
+													<!-- 2차 li 시작 -->
+													<li class="dep">
+														<a href='/main/gd/grade/selectGradeList.do?category=MV&mi=1090' data-id="1089"  >등급분류검색</a>
+														<!-- 3차 div 시작 -->
+														<div class="depth03">
+															<!-- 3차 ul 시작 -->
+															<ul>
+																<li><a href="/main/gd/grade/selectGradeList.do?category=MV&mi=1090" data-id="1090" ><span>영화</span></a></li>
+																<li><a href="/main/gd/grade/selectGradeList.do?category=AV&mi=1091" data-id="1091" ><span>비디오물</span></a></li>
+																<li><a href="/main/gd/grade/selectGradeList.do?category=AD&mi=1092" data-id="1092" ><span>광고물</span></a></li>
+																<li><a href="/main/gd/grade/selectGradeList.do?category=PF&mi=1093" data-id="1093" ><span>공연추천</span></a></li>
+																<li><a href="/main/gd/grade/selectGradeList.do?category=ORS&mi=1094" data-id="1094" ><span>자체등급분류</span></a></li>
+															</ul>
+															<!-- 3차 ul 끝 -->
+														</div>
+														<!-- 3차 div 끝 -->
+													</li>
+													<!-- 2차 li 끝! -->
+												</ul>
+												<!-- content ul 끝 -->
+											</div>
+											<!-- content div 끝 -->
+										</li>
+										<!-- depth02 li 끝 -->
+									</ul>
+									<!-- depth02 ul 끝 -->
+									</div>
+									<!-- depth02 div 끝 -->
+								</li>
+								<li class="dep">
+									<a href="/main/gd/grade/selectMovieGradeStatList.do?mi=1096" class="gnb-main-trigger" data-trigger="gnb" data-id="1076" aria-controls="gnb01" aria-expanded="false" aria-haspopup="true"   ><span>정보 · 자료</span></a>
+									<!-- depth02 div 시작 -->
+
+									<div class="gnb-toggle-wrap depth02" id="gnb02">
+									<!-- depth02 시작 -->
+									<ul>
+										<!-- depth02 li 시작 -->
+										<li>
+											<div class="title">
+												<p class="tit">정보 · 자료</p>
+												<p class="txt"><br/></p>
+											</div>
+											<!-- content div 시작 -->
+											<div class="content">
+												<!-- content ul 시작 -->
+												<ul>
+													<!-- 2차 li 시작 -->
+													<li class="dep">
+														<a href='/main/gd/grade/selectMovieGradeStatList.do?mi=1096' data-id="1095"  >등급분류통계</a>
+														<!-- 3차 div 시작 -->
+														<div class="depth03">
+															<!-- 3차 ul 시작 -->
+															<ul>
+																<li><a href="/main/gd/grade/selectMovieGradeStatList.do?mi=1096" data-id="1096" ><span>영화</span></a></li>
+																<li><a href="/main/gd/grade/selectVideoGradeStatList.do?mi=1097" data-id="1097" ><span>비디오물</span></a></li>
+																<li><a href="/main/gd/grade/selectAdverGradeStatList.do?mi=1098" data-id="1098" ><span>광고물</span></a></li>
+																<li><a href="/main/gd/grade/selectPerformGradeStatList.do?mi=1099" data-id="1099" ><span>공연추천</span></a></li>
+															</ul>
+															<!-- 3차 ul 끝 -->
+														</div>
+														<!-- 3차 div 끝 -->
+													</li>
+													<!-- 2차 li 끝! -->
+													<!-- 2차 li 시작 -->
+													<li class="dep">
+														<a href='/main/na/ntt/selectNttList.do?mi=1102&bbsId=1021' data-id="1101"  >등급분류자료</a>
+														<!-- 3차 div 시작 -->
+														<div class="depth03">
+															<!-- 3차 ul 시작 -->
+															<ul>
+																<li><a href="/main/na/ntt/selectNttList.do?mi=1102&bbsId=1021" data-id="1102" ><span>법령ㆍ규정자료</span></a></li>
+																<li><a href="/main/na/ntt/selectNttList.do?mi=1103&bbsId=1006" data-id="1103" ><span>등급분류연감</span></a></li>
+																<li><a href="/main/na/ntt/selectNttList.do?mi=1104&bbsId=1007" data-id="1104" ><span>조사연구자료</span></a></li>
+																<li><a href="/main/na/ntt/selectNttList.do?mi=1105&bbsId=1022" data-id="1105" ><span>등급표시가이드</span></a></li>
+															</ul>
+															<!-- 3차 ul 끝 -->
+														</div>
+														<!-- 3차 div 끝 -->
+													</li>
+													<!-- 2차 li 끝! -->
+												</ul>
+												<!-- content ul 끝 -->
+											</div>
+											<!-- content div 끝 -->
+										</li>
+										<!-- depth02 li 끝 -->
+									</ul>
+									<!-- depth02 ul 끝 -->
+									</div>
+									<!-- depth02 div 끝 -->
+								</li>
+								<li class="dep">
+									<a href="/main/na/ntt/selectNttList.do?mi=1110&bbsId=1008" class="gnb-main-trigger" data-trigger="gnb" data-id="1077" aria-controls="gnb01" aria-expanded="false" aria-haspopup="true"   ><span>뉴스알림</span></a>
+									<!-- depth02 div 시작 -->
+
+									<div class="gnb-toggle-wrap depth02" id="gnb03">
+									<!-- depth02 시작 -->
+									<ul>
+										<!-- depth02 li 시작 -->
+										<li>
+											<div class="title">
+												<p class="tit">뉴스알림</p>
+												<p class="txt"><br/></p>
+											</div>
+											<!-- content div 시작 -->
+											<div class="content">
+												<!-- content ul 시작 -->
+												<ul>
+													<!-- 2차 li 시작 -->
+													<li class="dep">
+														<a href='/main/na/ntt/selectNttList.do?mi=1110&bbsId=1008' data-id="1106"  >공지사항</a>
+														<!-- 3차 div 시작 -->
+														<div class="depth03">
+															<!-- 3차 ul 시작 -->
+															<ul>
+																<li><a href="/main/na/ntt/selectNttList.do?mi=1110&bbsId=1008" data-id="1110" ><span>공지</span></a></li>
+																<li><a href="/main/na/ntt/selectNttList.do?mi=1111&bbsId=1009" data-id="1111" ><span>채용·위촉</span></a></li>
+																<li><a href="/main/na/ntt/selectNttList.do?mi=1112&bbsId=1010" data-id="1112" ><span>입찰</span></a></li>
+															</ul>
+															<!-- 3차 ul 끝 -->
+														</div>
+														<!-- 3차 div 끝 -->
+													</li>
+													<!-- 2차 li 끝! -->
+													<li class="dep">
+														<a href="/main/na/ntt/selectNttList.do?mi=1109&bbsId=1023" data-id="1109"  ><span>보도자료</span></a>
+													</li>
+													<!-- 2차 li 시작 -->
+													<li class="dep">
+														<a href='/main/na/ntt/selectNttList.do?mi=1114&bbsId=1024' data-id="1113"  >영등위 소식</a>
+														<!-- 3차 div 시작 -->
+														<div class="depth03">
+															<!-- 3차 ul 시작 -->
+															<ul>
+																<li><a href="/main/na/ntt/selectNttList.do?mi=1114&bbsId=1024" data-id="1114" ><span>기관소식</span></a></li>
+																<li><a href="/main/na/ntt/selectNttList.do?mi=1115&bbsId=1048" data-id="1115" ><span>등급더보기</span></a></li>
+																<li><a href="/main/na/ntt/selectNttList.do?mi=1116&bbsId=1026" data-id="1116" ><span>최신영화등급</span></a></li>
+																<li><a href="/main/na/ntt/selectNttList.do?mi=1117&bbsId=1027" data-id="1117" ><span>나라별등급</span></a></li>
+																<li><a href="/main/nl/news/selectNewsLetterView.do?cntntsId=1045&mi=1118" data-id="1118" ><span>뉴스레터</span></a></li>
+																<li><a href="/main/nl/news/applyNewsLetterView.do?ctntnsId=1044&mi=1119" data-id="1119" ><span>뉴스레터 구독신청</span></a></li>
+															</ul>
+															<!-- 3차 ul 끝 -->
+														</div>
+														<!-- 3차 div 끝 -->
+													</li>
+													<!-- 2차 li 끝! -->
+												</ul>
+												<!-- content ul 끝 -->
+											</div>
+											<!-- content div 끝 -->
+										</li>
+										<!-- depth02 li 끝 -->
+									</ul>
+									<!-- depth02 ul 끝 -->
+									</div>
+									<!-- depth02 div 끝 -->
+								</li>
+								<li class="dep">
+									<a href="/main/cm/cntnts/cntntsView.do?mi=1123&cntntsId=1078" class="gnb-main-trigger" data-trigger="gnb" data-id="1078" aria-controls="gnb01" aria-expanded="false" aria-haspopup="true"   ><span>교육 · 체험</span></a>
+									<!-- depth02 div 시작 -->
+
+									<div class="gnb-toggle-wrap depth02" id="gnb04">
+									<!-- depth02 시작 -->
+									<ul>
+										<!-- depth02 li 시작 -->
+										<li>
+											<div class="title">
+												<p class="tit">교육 · 체험</p>
+												<p class="txt"><br/></p>
+											</div>
+											<!-- content div 시작 -->
+											<div class="content">
+												<!-- content ul 시작 -->
+												<ul>
+													<!-- 2차 li 시작 -->
+													<li class="dep">
+														<a href='/main/cm/cntnts/cntntsView.do?mi=1123&cntntsId=1078' data-id="1120"  >교육프로그램</a>
+														<!-- 3차 div 시작 -->
+														<div class="depth03">
+															<!-- 3차 ul 시작 -->
+															<ul>
+																<li><a href="/main/cm/cntnts/cntntsView.do?mi=1123&cntntsId=1078" data-id="1123" ><span>청소년영상물등급교실</span></a></li>
+																<li><a href="/main/cm/cntnts/cntntsView.do?mi=1124&cntntsId=1079" data-id="1124" ><span>학부모교육프로그램</span></a></li>
+																<li><a href="/main/cm/cntnts/cntntsView.do?mi=1125&cntntsId=1080" data-id="1125" ><span>기관방문체험교육</span></a></li>
+															</ul>
+															<!-- 3차 ul 끝 -->
+														</div>
+														<!-- 3차 div 끝 -->
+													</li>
+													<!-- 2차 li 끝! -->
+													<!-- 2차 li 시작 -->
+													<li class="dep">
+														<a href='/main/mr/myRating/main.do?mi=1178' data-id="1121"  >온라인체험</a>
+														<!-- 3차 div 시작 -->
+														<div class="depth03">
+															<!-- 3차 ul 시작 -->
+															<ul>
+																<li><a href="/main/mr/myRating/main.do?mi=1178" data-id="1126" ><span>나의 영화등급</span></a></li>
+																<li><a href="/main/oe/onlineExp/onlineExperience/main.do?mi=1179" data-id="1127" ><span>온라인 등급분류 체험</span></a></li>
+																<li><a href="/main/cm/cntnts/cntntsView.do?mi=1128&cntntsId=1081" data-id="1128" ><span>온라인 등급분류 교육</span></a></li>
+															</ul>
+															<!-- 3차 ul 끝 -->
+														</div>
+														<!-- 3차 div 끝 -->
+													</li>
+													<!-- 2차 li 끝! -->
+													<!-- 2차 li 시작 -->
+													<li class="dep">
+														<a href='/main/na/ntt/selectNttList.do?mi=1222&bbsId=1050' data-id="1122"  >교육홍보자료</a>
+														<!-- 3차 div 시작 -->
+														<div class="depth03">
+															<!-- 3차 ul 시작 -->
+															<ul>
+																<li><a href="/main/na/ntt/selectNttList.do?mi=1222&bbsId=1050" data-id="1129" ><span>기관홍보</span></a></li>
+																<li><a href="/main/na/ntt/selectNttList.do?mi=1130&bbsId=1066" data-id="1130" ><span>교육자료</span></a></li>
+															</ul>
+															<!-- 3차 ul 끝 -->
+														</div>
+														<!-- 3차 div 끝 -->
+													</li>
+													<!-- 2차 li 끝! -->
+												</ul>
+												<!-- content ul 끝 -->
+											</div>
+											<!-- content div 끝 -->
+										</li>
+										<!-- depth02 li 끝 -->
+									</ul>
+									<!-- depth02 ul 끝 -->
+									</div>
+									<!-- depth02 div 끝 -->
+								</li>
+								<li class="dep">
+									<a href="/main/cm/cntnts/cntntsView.do?mi=1137&cntntsId=1006" class="gnb-main-trigger" data-trigger="gnb" data-id="1079" aria-controls="gnb01" aria-expanded="false" aria-haspopup="true"   ><span>열린경영</span></a>
+									<!-- depth02 div 시작 -->
+
+									<div class="gnb-toggle-wrap depth02" id="gnb05">
+									<!-- depth02 시작 -->
+									<ul>
+										<!-- depth02 li 시작 -->
+										<li>
+											<div class="title">
+												<p class="tit">열린경영</p>
+												<p class="txt"><br/></p>
+											</div>
+											<!-- content div 시작 -->
+											<div class="content">
+												<!-- content ul 시작 -->
+												<ul>
+													<!-- 2차 li 시작 -->
+													<li class="dep">
+														<a href='/main/cm/cntnts/cntntsView.do?mi=1137&cntntsId=1006' data-id="1131"  >정보공개</a>
+														<!-- 3차 div 시작 -->
+														<div class="depth03">
+															<!-- 3차 ul 시작 -->
+															<ul>
+																<li><a href="/main/cm/cntnts/cntntsView.do?mi=1137&cntntsId=1006" data-id="1137" ><span>정보공개안내</span></a></li>
+																<li><a href="/main/pb/pblict/selectPublicationView.do?cntntsId=1045&mi=1138" data-id="1138" ><span>사전정보공표</span></a></li>
+																<li><a href="/main/na/ntt/selectNttList.do?mi=1139&bbsId=1030" data-id="1139" ><span>사업실명제</span></a></li>
+																<li><a href="/main/cm/cntnts/cntntsView.do?mi=1140&cntntsId=1083" data-id="1140" ><span>공공데이터 개방</span></a></li>
+																<li><a href="/main/cm/cntnts/cntntsView.do?mi=1141&cntntsId=1084" data-id="1141" ><span>영상물OpenAPI</span></a></li>
+																<li><a href="/main/na/ntt/selectNttList.do?mi=1142&bbsId=1031" data-id="1142" ><span>정보목록</span></a></li>
+															</ul>
+															<!-- 3차 ul 끝 -->
+														</div>
+														<!-- 3차 div 끝 -->
+													</li>
+													<!-- 2차 li 끝! -->
+													<!-- 2차 li 시작 -->
+													<li class="dep">
+														<a href='/main/na/ntt/selectNttList.do?mi=1231&bbsId=1009' data-id="1132"  >경영공시</a>
+														<!-- 3차 div 시작 -->
+														<div class="depth03">
+															<!-- 3차 ul 시작 -->
+															<ul>
+																<li><a href="/main/na/ntt/selectNttList.do?mi=1231&bbsId=1009" data-id="1231" ><span>채용</span></a></li>
+																<li><a href="/main/na/ntt/selectNttList.do?mi=1232&bbsId=1010" data-id="1232" ><span>입찰</span></a></li>
+																<li><a href="https://www.alio.go.kr/organ/organDisclosureDtl.do?apbaId=C0098" data-id="1230"  rel="noopener noreferrer" target="_blank" ><span>알리오 통합공시</span></a></li>
+																<li><a href="/main/na/ntt/selectNttList.do?mi=1151&bbsId=1067" data-id="1273" ><span>자율공시</span></a></li>
+															</ul>
+															<!-- 3차 ul 끝 -->
+														</div>
+														<!-- 3차 div 끝 -->
+													</li>
+													<!-- 2차 li 끝! -->
+													<li class="dep">
+														<a href="/main/cm/cntnts/cntntsView.do?mi=1133&cntntsId=1007" data-id="1133"  ><span>사회공헌</span></a>
+													</li>
+													<!-- 2차 li 시작 -->
+													<li class="dep">
+														<a href='/main/na/ntt/selectNttList.do?mi=1145&bbsId=1032' data-id="1134"  >고객센터</a>
+														<!-- 3차 div 시작 -->
+														<div class="depth03">
+															<!-- 3차 ul 시작 -->
+															<ul>
+																<li><a href="/main/na/ntt/selectNttList.do?mi=1145&bbsId=1032" data-id="1145" ><span>FAQ</span></a></li>
+																<li><a href="/main/oc/onlineCp/onlineCpGuide.do?mi=1146" data-id="1146" ><span>온라인민원</span></a></li>
+																<li><a href="/main/pp/policyPp/policyPpGuide.do?mi=1147" data-id="1147" ><span>정책제안</span></a></li>
+															</ul>
+															<!-- 3차 ul 끝 -->
+														</div>
+														<!-- 3차 div 끝 -->
+													</li>
+													<!-- 2차 li 끝! -->
+													<!-- 2차 li 시작 -->
+													<li class="dep">
+														<a href='/main/cm/cntnts/cntntsView.do?mi=1236&cntntsId=1089' data-id="1135"  >윤리인권경영</a>
+														<!-- 3차 div 시작 -->
+														<div class="depth03">
+															<!-- 3차 ul 시작 -->
+															<ul>
+																<li><a href="/main/cm/cntnts/cntntsView.do?mi=1236&cntntsId=1089" data-id="1156" ><span>윤리경영</span></a></li>
+																<li><a href="/main/cm/cntnts/cntntsView.do?mi=1234&cntntsId=1092" data-id="1157" ><span>인권경영</span></a></li>
+																<li><a href="/main/cm/cntnts/cntntsView.do?mi=1158&cntntsId=1085" data-id="1158" ><span>갑질근절</span></a></li>
+																<li><a href="/main/cm/cntnts/cntntsView.do?mi=1224&cntntsId=1086" data-id="1159" ><span>신고센터</span></a></li>
+															</ul>
+															<!-- 3차 ul 끝 -->
+														</div>
+														<!-- 3차 div 끝 -->
+													</li>
+													<!-- 2차 li 끝! -->
+													<li class="dep">
+														<a href="/main/cm/cntnts/cntntsView.do?mi=1136&cntntsId=1008" data-id="1136"  ><span>고객헌장</span></a>
+													</li>
+												</ul>
+												<!-- content ul 끝 -->
+											</div>
+											<!-- content div 끝 -->
+										</li>
+										<!-- depth02 li 끝 -->
+									</ul>
+									<!-- depth02 ul 끝 -->
+									</div>
+									<!-- depth02 div 끝 -->
+								</li>
+								<li class="dep">
+									<a href="/main/cm/cntnts/cntntsView.do?mi=1160&cntntsId=1009" class="gnb-main-trigger" data-trigger="gnb" data-id="1080" aria-controls="gnb01" aria-expanded="false" aria-haspopup="true"   ><span>위원회소개</span></a>
+									<!-- depth02 div 시작 -->
+
+									<div class="gnb-toggle-wrap depth02" id="gnb06">
+									<!-- depth02 시작 -->
+									<ul>
+										<!-- depth02 li 시작 -->
+										<li>
+											<div class="title">
+												<p class="tit">위원회소개</p>
+												<p class="txt"><br/></p>
+											</div>
+											<!-- content div 시작 -->
+											<div class="content">
+												<!-- content ul 시작 -->
+												<ul>
+													<!-- 2차 li 시작 -->
+													<li class="dep">
+														<a href='/main/cm/cntnts/cntntsView.do?mi=1160&cntntsId=1009' data-id="1143"  >기관소개</a>
+														<!-- 3차 div 시작 -->
+														<div class="depth03">
+															<!-- 3차 ul 시작 -->
+															<ul>
+																<li><a href="/main/cm/cntnts/cntntsView.do?mi=1160&cntntsId=1009" data-id="1160" ><span>설립목적</span></a></li>
+																<li><a href="/main/cm/cntnts/cntntsView.do?mi=1161&cntntsId=1010" data-id="1161" ><span>연혁</span></a></li>
+																<li><a href="/main/cm/cntnts/cntntsView.do?mi=1162&cntntsId=1011" data-id="1162" ><span>미션과 비전</span></a></li>
+																<li><a href="/main/cm/cntnts/cntntsView.do?mi=1163&cntntsId=1012" data-id="1163" ><span>CI가이드</span></a></li>
+															</ul>
+															<!-- 3차 ul 끝 -->
+														</div>
+														<!-- 3차 div 끝 -->
+													</li>
+													<!-- 2차 li 끝! -->
+													<!-- 2차 li 시작 -->
+													<li class="dep">
+														<a href='/main/cm/cntnts/cntntsView.do?mi=1168&cntntsId=1013' data-id="1167"  >위원장소개</a>
+														<!-- 3차 div 시작 -->
+														<div class="depth03">
+															<!-- 3차 ul 시작 -->
+															<ul>
+																<li><a href="/main/cm/cntnts/cntntsView.do?mi=1168&cntntsId=1013" data-id="1168" ><span>위원장 인사말</span></a></li>
+																<li><a href="/main/cm/cntnts/cntntsView.do?mi=1169&cntntsId=1014" data-id="1169" ><span>역대위원장</span></a></li>
+															</ul>
+															<!-- 3차 ul 끝 -->
+														</div>
+														<!-- 3차 div 끝 -->
+													</li>
+													<!-- 2차 li 끝! -->
+													<!-- 2차 li 시작 -->
+													<li class="dep">
+														<a href='/main/ct/cmt/selectMainCmtList.do?mi=1172' data-id="1171"  >위원소개</a>
+														<!-- 3차 div 시작 -->
+														<div class="depth03">
+															<!-- 3차 ul 시작 -->
+															<ul>
+																<li><a href="/main/ct/cmt/selectMainCmtList.do?mi=1172" data-id="1172" ><span>위원회 위원</span></a></li>
+																<li><a href="/main/ct/cmt/selectAuditCmtList.do?mi=1173" data-id="1173" ><span>감사</span></a></li>
+																<li><a href="/main/ct/cmt/selectFUCmtList.do?mi=1174" data-id="1174" ><span>사후관리위원회 위원</span></a></li>
+																<li><a href="/main/ct/cmt/selectSubCmtList.do?mi=1175" data-id="1175" ><span>소위원회 위원</span></a></li>
+																<li><a href="/main/ct/cmt/selectExpertCmtList.do?mi=1176" data-id="1176" ><span>전문위원</span></a></li>
+															</ul>
+															<!-- 3차 ul 끝 -->
+														</div>
+														<!-- 3차 div 끝 -->
+													</li>
+													<!-- 2차 li 끝! -->
+													<!-- 2차 li 시작 -->
+													<li class="dep">
+														<a href='/main/cm/cntnts/cntntsView.do?mi=1165&cntntsId=1019' data-id="1164"  >조직현황</a>
+														<!-- 3차 div 시작 -->
+														<div class="depth03">
+															<!-- 3차 ul 시작 -->
+															<ul>
+																<li><a href="/main/cm/cntnts/cntntsView.do?mi=1165&cntntsId=1019" data-id="1165" ><span>등급분류기구</span></a></li>
+																<li><a href="/main/cm/cntnts/cntntsView.do?mi=1166&cntntsId=1020" data-id="1166" ><span>사무국기구</span></a></li>
+															</ul>
+															<!-- 3차 ul 끝 -->
+														</div>
+														<!-- 3차 div 끝 -->
+													</li>
+													<!-- 2차 li 끝! -->
+													<li class="dep">
+														<a href="/main/lm/location/locationMapView.do?mi=1170" data-id="1170"  ><span>오시는길</span></a>
+													</li>
+												</ul>
+												<!-- content ul 끝 -->
+											</div>
+											<!-- content div 끝 -->
+										</li>
+										<!-- depth02 li 끝 -->
+									</ul>
+									<!-- depth02 ul 끝 -->
+									</div>
+									<!-- depth02 div 끝 -->
+								</li>
+								
+								</ul>
+								<!-- depth01 ul 끝 -->
+								<div class="krds-util">
+									<button type="button" class="btn-navi sch" id="searchOpen" data-target="popTotalSch"><span class="hid">통합검색</span></button>
+									<button type="button" class="btn-navi all" aria-controls="mobile-nav"><span class="sr-only">전체메뉴</span></button>
+								</div>
+							</div>
+							<!-- depth01 div 끝 -->
+				<!--END-->
+			</div>
+		</div>
+	</div>
+	<!-- 헤더 컨텐츠 영역 -->
+
+	<!-- 검색창 -->
+	<div class="box_search">
+		<div class="box_wrap">
+			<h3>통합검색</h3>
+			<form name="siteSearchForm" id="searchForm" method="post" onsubmit="return checkKeyword();">
+				<label for="total_search" class="hid">통합검색어 입력</label>
+				<input 
+					type="text"
+					id="total_search"
+					name="keyword"
+					placeholder="검색어를 입력하세요"
+				/>
+				<input type="hidden" id="mi" name="mi"/>
+				<button type="submit" class="srch_btn">
+					<i class="ri-search-line" aria-hidden="true"></i>
+					<span class="hid">검색</span>
+				</button>
+			</form>
+		</div>
+	</div>
+	<!-- //검색창 -->
+
+	<!-- 메인메뉴 : 모바일 -->
+	<div id="mobile-nav" class="krds-main-menu-mobile">
+		<div class="gnb-wrap">
+			<!-- search-layer-->
+			<div class="search-layer">
+				<div class="search-header">
+					<!-- 검색 -->
+					<div class="sch-input">
+						<label for="mobileMenuSearchInput" class="hid">메뉴명 검색어 입력</label>
+						<input type="text" class="krds-input"
+							placeholder="찾고자 하는 메뉴명을 입력해 주세요"
+							id="mobileMenuSearchInput">
+						<button type="button" class="krds-btn medium icon ico-search"
+							id="mobileMenuSearchButton">
+							<span class="sr-only">검색</span> <i class="svg-icon ico-sch"></i>
+						</button>
+					</div>
+					<!-- //검색 -->
+				</div>
+				<div class="search-body"></div>
+				<!-- layer-close -->
+				<button type="button" class="krds-btn medium icon search-close">
+					<span class="sr-only">메뉴검색 닫기</span> <i
+						class="svg-icon ico-popup-close"></i>
+				</button>
+				<!-- layer-close -->
+			</div>
+			<!-- //search-layer -->
+
+			<!-- 상단메뉴 -->
+			<div class="header-container">
+				<div class="user-wrap"></div>
+			</div>
+
+			<div class="gnb-body">
+				<div class="gnb-menu">
+					<div class="menu-wrap">
+						<ul>
+							<!--GNB_START-->
+											<li><a href="#mGnb-anchor1" class="dep1-title gnb-main-trigger" role="tab" aria-selected="false">등급분류안내</a></li>
+											<li><a href="#mGnb-anchor2" class="dep1-title gnb-main-trigger" role="tab" aria-selected="false">정보 · 자료</a></li>
+											<li><a href="#mGnb-anchor3" class="dep1-title gnb-main-trigger" role="tab" aria-selected="false">뉴스알림</a></li>
+											<li><a href="#mGnb-anchor4" class="dep1-title gnb-main-trigger" role="tab" aria-selected="false">교육 · 체험</a></li>
+											<li><a href="#mGnb-anchor5" class="dep1-title gnb-main-trigger" role="tab" aria-selected="false">열린경영</a></li>
+											<li><a href="#mGnb-anchor6" class="dep1-title gnb-main-trigger" role="tab" aria-selected="false">위원회소개</a></li>
+							<!--GNB_END-->
+						</ul>
+					</div>
+					<div class="submenu-wrap">
+						<div class="dep1">
+							<ul>
+								<!--M_START-->
+											<!-- 1차 li 시작 -->
+											<li class="dep1-wrap">
+												<h2 class="gnb-main-trigger dep1-title"><a href="/main/cm/cntnts/cntntsView.do?mi=1082&cntntsId=1003" data-id="1075" role="tab" aria-selected="false">등급분류안내</a></h2>
+												<!-- gnb-sub-list div 시작 -->
+												<div class="gnb-sub-list" id="mGnb-anchor1">
+													<!-- 2차 div 시작 -->
+													<div>
+														<h3 class="sub-title"><a href="/main/cm/cntnts/cntntsView.do?mi=1082&cntntsId=1003" data-id="1081" >등급분류란</a></h3>
+														<!-- 3차 ul 시작 -->
+														<ul>
+															<li><a href="/main/cm/cntnts/cntntsView.do?mi=1082&cntntsId=1003" data-id="1082"  class="gnb-sub-trigger">등급분류제도</a></li>
+															<li><a href="/main/cm/cntnts/cntntsView.do?mi=1083&cntntsId=1004" data-id="1083"  class="gnb-sub-trigger">자체등급분류제도</a></li>
+															<li><a href="/main/cm/cntnts/cntntsView.do?mi=1084&cntntsId=1005" data-id="1084"  class="gnb-sub-trigger">등급분류 확인방법</a></li>
+														</ul>
+														<!-- 3차 ul 끝2 -->
+													</div>
+													<!-- 2차 div 끝3 -->
+													<!-- 2차 div 시작 -->
+													<div>
+														<h3 class="sub-title"><a href="/main/cm/cntnts/cntntsView.do?mi=1086&cntntsId=1061" data-id="1085" >등급분류 기준</a></h3>
+														<!-- 3차 ul 시작 -->
+														<ul>
+															<li><a href="/main/cm/cntnts/cntntsView.do?mi=1086&cntntsId=1061" data-id="1086"  class="gnb-sub-trigger">등급분류 원칙</a></li>
+															<li><a href="/main/cm/cntnts/cntntsView.do?mi=1087&cntntsId=1062" data-id="1087"  class="gnb-sub-trigger">등급분류 고려사항</a></li>
+															<li><a href="/main/cm/cntnts/cntntsView.do?mi=1088&cntntsId=1063" data-id="1088"  class="gnb-sub-trigger">등급분류 기준</a></li>
+														</ul>
+														<!-- 3차 ul 끝2 -->
+													</div>
+													<!-- 2차 div 끝3 -->
+													<!-- 2차 div 시작 -->
+													<div>
+														<h3 class="sub-title"><a href="/main/gd/grade/selectGradeList.do?category=MV&mi=1090" data-id="1089" >등급분류검색</a></h3>
+														<!-- 3차 ul 시작 -->
+														<ul>
+															<li><a href="/main/gd/grade/selectGradeList.do?category=MV&mi=1090" data-id="1090"  class="gnb-sub-trigger">영화</a></li>
+															<li><a href="/main/gd/grade/selectGradeList.do?category=AV&mi=1091" data-id="1091"  class="gnb-sub-trigger">비디오물</a></li>
+															<li><a href="/main/gd/grade/selectGradeList.do?category=AD&mi=1092" data-id="1092"  class="gnb-sub-trigger">광고물</a></li>
+															<li><a href="/main/gd/grade/selectGradeList.do?category=PF&mi=1093" data-id="1093"  class="gnb-sub-trigger">공연추천</a></li>
+															<li><a href="/main/gd/grade/selectGradeList.do?category=ORS&mi=1094" data-id="1094"  class="gnb-sub-trigger">자체등급분류</a></li>
+														</ul>
+														<!-- 3차 ul 끝1 -->
+													</div>
+													<!-- 2차 div 끝2 -->
+												</div>
+												<!-- gnb-sub-list div 닫기 -->
+											</li>
+											<!-- 1차 li 닫기 -->
+											<!-- 1차 li 시작 -->
+											<li class="dep1-wrap">
+												<h2 class="gnb-main-trigger dep1-title"><a href="/main/gd/grade/selectMovieGradeStatList.do?mi=1096" data-id="1076" role="tab"S aria-selected="false">정보 · 자료</a></h2>
+												<!-- gnb-sub-list div 시작 -->
+												<div class="gnb-sub-list" id="mGnb-anchor2">
+													<!-- 2차 div 시작 -->
+													<div>
+														<h3 class="sub-title"><a href="/main/gd/grade/selectMovieGradeStatList.do?mi=1096" data-id="1095" >등급분류통계</a></h3>
+														<!-- 3차 ul 시작 -->
+														<ul>
+															<li><a href="/main/gd/grade/selectMovieGradeStatList.do?mi=1096" data-id="1096"  class="gnb-sub-trigger">영화</a></li>
+															<li><a href="/main/gd/grade/selectVideoGradeStatList.do?mi=1097" data-id="1097"  class="gnb-sub-trigger">비디오물</a></li>
+															<li><a href="/main/gd/grade/selectAdverGradeStatList.do?mi=1098" data-id="1098"  class="gnb-sub-trigger">광고물</a></li>
+															<li><a href="/main/gd/grade/selectPerformGradeStatList.do?mi=1099" data-id="1099"  class="gnb-sub-trigger">공연추천</a></li>
+														</ul>
+														<!-- 3차 ul 끝2 -->
+													</div>
+													<!-- 2차 div 끝3 -->
+													<!-- 2차 div 시작 -->
+													<div>
+														<h3 class="sub-title"><a href="/main/na/ntt/selectNttList.do?mi=1102&bbsId=1021" data-id="1101" >등급분류자료</a></h3>
+														<!-- 3차 ul 시작 -->
+														<ul>
+															<li><a href="/main/na/ntt/selectNttList.do?mi=1102&bbsId=1021" data-id="1102"  class="gnb-sub-trigger">법령ㆍ규정자료</a></li>
+															<li><a href="/main/na/ntt/selectNttList.do?mi=1103&bbsId=1006" data-id="1103"  class="gnb-sub-trigger">등급분류연감</a></li>
+															<li><a href="/main/na/ntt/selectNttList.do?mi=1104&bbsId=1007" data-id="1104"  class="gnb-sub-trigger">조사연구자료</a></li>
+															<li><a href="/main/na/ntt/selectNttList.do?mi=1105&bbsId=1022" data-id="1105"  class="gnb-sub-trigger">등급표시가이드</a></li>
+														</ul>
+														<!-- 3차 ul 끝1 -->
+													</div>
+													<!-- 2차 div 끝2 -->
+												</div>
+												<!-- gnb-sub-list div 닫기 -->
+											</li>
+											<!-- 1차 li 닫기 -->
+											<!-- 1차 li 시작 -->
+											<li class="dep1-wrap">
+												<h2 class="gnb-main-trigger dep1-title"><a href="/main/na/ntt/selectNttList.do?mi=1110&bbsId=1008" data-id="1077" role="tab" aria-selected="false">뉴스알림</a></h2>
+												<!-- gnb-sub-list div 시작 -->
+												<div class="gnb-sub-list" id="mGnb-anchor3">
+													<!-- 2차 div 시작 -->
+													<div>
+														<h3 class="sub-title"><a href="/main/na/ntt/selectNttList.do?mi=1110&bbsId=1008" data-id="1106" >공지사항</a></h3>
+														<!-- 3차 ul 시작 -->
+														<ul>
+															<li><a href="/main/na/ntt/selectNttList.do?mi=1110&bbsId=1008" data-id="1110"  class="gnb-sub-trigger">공지</a></li>
+															<li><a href="/main/na/ntt/selectNttList.do?mi=1111&bbsId=1009" data-id="1111"  class="gnb-sub-trigger">채용·위촉</a></li>
+															<li><a href="/main/na/ntt/selectNttList.do?mi=1112&bbsId=1010" data-id="1112"  class="gnb-sub-trigger">입찰</a></li>
+														</ul>
+														<!-- 3차 ul 끝2 -->
+													</div>
+													<!-- 2차 div 끝3 -->
+													<!-- 2차 div 시작 -->
+													<div>
+														<h3 class="sub-title"><a href="/main/na/ntt/selectNttList.do?mi=1109&bbsId=1023" data-id="1109" >보도자료</a></h3>
+													</div>
+													<!-- 2차 div 끝2 -->
+													<!-- 2차 div 시작 -->
+													<div>
+														<h3 class="sub-title"><a href="/main/na/ntt/selectNttList.do?mi=1114&bbsId=1024" data-id="1113" >영등위 소식</a></h3>
+														<!-- 3차 ul 시작 -->
+														<ul>
+															<li><a href="/main/na/ntt/selectNttList.do?mi=1114&bbsId=1024" data-id="1114"  class="gnb-sub-trigger">기관소식</a></li>
+															<li><a href="/main/na/ntt/selectNttList.do?mi=1115&bbsId=1048" data-id="1115"  class="gnb-sub-trigger">등급더보기</a></li>
+															<li><a href="/main/na/ntt/selectNttList.do?mi=1116&bbsId=1026" data-id="1116"  class="gnb-sub-trigger">최신영화등급</a></li>
+															<li><a href="/main/na/ntt/selectNttList.do?mi=1117&bbsId=1027" data-id="1117"  class="gnb-sub-trigger">나라별등급</a></li>
+															<li><a href="/main/nl/news/selectNewsLetterView.do?cntntsId=1045&mi=1118" data-id="1118"  class="gnb-sub-trigger">뉴스레터</a></li>
+															<li><a href="/main/nl/news/applyNewsLetterView.do?ctntnsId=1044&mi=1119" data-id="1119"  class="gnb-sub-trigger">뉴스레터 구독신청</a></li>
+														</ul>
+														<!-- 3차 ul 끝1 -->
+													</div>
+													<!-- 2차 div 끝2 -->
+												</div>
+												<!-- gnb-sub-list div 닫기 -->
+											</li>
+											<!-- 1차 li 닫기 -->
+											<!-- 1차 li 시작 -->
+											<li class="dep1-wrap">
+												<h2 class="gnb-main-trigger dep1-title"><a href="/main/cm/cntnts/cntntsView.do?mi=1123&cntntsId=1078" data-id="1078" role="tab" aria-selected="false">교육 · 체험</a></h2>
+												<!-- gnb-sub-list div 시작 -->
+												<div class="gnb-sub-list" id="mGnb-anchor4">
+													<!-- 2차 div 시작 -->
+													<div>
+														<h3 class="sub-title"><a href="/main/cm/cntnts/cntntsView.do?mi=1123&cntntsId=1078" data-id="1120" >교육프로그램</a></h3>
+														<!-- 3차 ul 시작 -->
+														<ul>
+															<li><a href="/main/cm/cntnts/cntntsView.do?mi=1123&cntntsId=1078" data-id="1123"  class="gnb-sub-trigger">청소년영상물등급교실</a></li>
+															<li><a href="/main/cm/cntnts/cntntsView.do?mi=1124&cntntsId=1079" data-id="1124"  class="gnb-sub-trigger">학부모교육프로그램</a></li>
+															<li><a href="/main/cm/cntnts/cntntsView.do?mi=1125&cntntsId=1080" data-id="1125"  class="gnb-sub-trigger">기관방문체험교육</a></li>
+														</ul>
+														<!-- 3차 ul 끝2 -->
+													</div>
+													<!-- 2차 div 끝3 -->
+													<!-- 2차 div 시작 -->
+													<div>
+														<h3 class="sub-title"><a href="/main/mr/myRating/main.do?mi=1178" data-id="1121" >온라인체험</a></h3>
+														<!-- 3차 ul 시작 -->
+														<ul>
+															<li><a href="/main/mr/myRating/main.do?mi=1178" data-id="1126"  class="gnb-sub-trigger">나의 영화등급</a></li>
+															<li><a href="/main/oe/onlineExp/onlineExperience/main.do?mi=1179" data-id="1127"  class="gnb-sub-trigger">온라인 등급분류 체험</a></li>
+															<li><a href="/main/cm/cntnts/cntntsView.do?mi=1128&cntntsId=1081" data-id="1128"  class="gnb-sub-trigger">온라인 등급분류 교육</a></li>
+														</ul>
+														<!-- 3차 ul 끝2 -->
+													</div>
+													<!-- 2차 div 끝3 -->
+													<!-- 2차 div 시작 -->
+													<div>
+														<h3 class="sub-title"><a href="/main/na/ntt/selectNttList.do?mi=1222&bbsId=1050" data-id="1122" >교육홍보자료</a></h3>
+														<!-- 3차 ul 시작 -->
+														<ul>
+															<li><a href="/main/na/ntt/selectNttList.do?mi=1222&bbsId=1050" data-id="1129"  class="gnb-sub-trigger">기관홍보</a></li>
+															<li><a href="/main/na/ntt/selectNttList.do?mi=1130&bbsId=1066" data-id="1130"  class="gnb-sub-trigger">교육자료</a></li>
+														</ul>
+														<!-- 3차 ul 끝1 -->
+													</div>
+													<!-- 2차 div 끝2 -->
+												</div>
+												<!-- gnb-sub-list div 닫기 -->
+											</li>
+											<!-- 1차 li 닫기 -->
+											<!-- 1차 li 시작 -->
+											<li class="dep1-wrap">
+												<h2 class="gnb-main-trigger dep1-title"><a href="/main/cm/cntnts/cntntsView.do?mi=1137&cntntsId=1006" data-id="1079" role="tab" aria-selected="false">열린경영</a></h2>
+												<!-- gnb-sub-list div 시작 -->
+												<div class="gnb-sub-list" id="mGnb-anchor5">
+													<!-- 2차 div 시작 -->
+													<div>
+														<h3 class="sub-title"><a href="/main/cm/cntnts/cntntsView.do?mi=1137&cntntsId=1006" data-id="1131" >정보공개</a></h3>
+														<!-- 3차 ul 시작 -->
+														<ul>
+															<li><a href="/main/cm/cntnts/cntntsView.do?mi=1137&cntntsId=1006" data-id="1137"  class="gnb-sub-trigger">정보공개안내</a></li>
+															<li><a href="/main/pb/pblict/selectPublicationView.do?cntntsId=1045&mi=1138" data-id="1138"  class="gnb-sub-trigger">사전정보공표</a></li>
+															<li><a href="/main/na/ntt/selectNttList.do?mi=1139&bbsId=1030" data-id="1139"  class="gnb-sub-trigger">사업실명제</a></li>
+															<li><a href="/main/cm/cntnts/cntntsView.do?mi=1140&cntntsId=1083" data-id="1140"  class="gnb-sub-trigger">공공데이터 개방</a></li>
+															<li><a href="/main/cm/cntnts/cntntsView.do?mi=1141&cntntsId=1084" data-id="1141"  class="gnb-sub-trigger">영상물OpenAPI</a></li>
+															<li><a href="/main/na/ntt/selectNttList.do?mi=1142&bbsId=1031" data-id="1142"  class="gnb-sub-trigger">정보목록</a></li>
+														</ul>
+														<!-- 3차 ul 끝2 -->
+													</div>
+													<!-- 2차 div 끝3 -->
+													<!-- 2차 div 시작 -->
+													<div>
+														<h3 class="sub-title"><a href="/main/na/ntt/selectNttList.do?mi=1231&bbsId=1009" data-id="1132" >경영공시</a></h3>
+														<!-- 3차 ul 시작 -->
+														<ul>
+															<li><a href="/main/na/ntt/selectNttList.do?mi=1231&bbsId=1009" data-id="1231"  class="gnb-sub-trigger">채용</a></li>
+															<li><a href="/main/na/ntt/selectNttList.do?mi=1232&bbsId=1010" data-id="1232"  class="gnb-sub-trigger">입찰</a></li>
+															<li><a href="https://www.alio.go.kr/organ/organDisclosureDtl.do?apbaId=C0098" data-id="1230"  rel="noopener noreferrer" target="_blank"  class="gnb-sub-trigger">알리오 통합공시</a></li>
+															<li><a href="/main/na/ntt/selectNttList.do?mi=1151&bbsId=1067" data-id="1273"  class="gnb-sub-trigger">자율공시</a></li>
+														</ul>
+														<!-- 3차 ul 끝2 -->
+													</div>
+													<!-- 2차 div 끝3 -->
+													<!-- 2차 div 시작 -->
+													<div>
+														<h3 class="sub-title"><a href="/main/cm/cntnts/cntntsView.do?mi=1133&cntntsId=1007" data-id="1133" >사회공헌</a></h3>
+													</div>
+													<!-- 2차 div 끝2 -->
+													<!-- 2차 div 시작 -->
+													<div>
+														<h3 class="sub-title"><a href="/main/na/ntt/selectNttList.do?mi=1145&bbsId=1032" data-id="1134" >고객센터</a></h3>
+														<!-- 3차 ul 시작 -->
+														<ul>
+															<li><a href="/main/na/ntt/selectNttList.do?mi=1145&bbsId=1032" data-id="1145"  class="gnb-sub-trigger">FAQ</a></li>
+															<li><a href="/main/oc/onlineCp/onlineCpGuide.do?mi=1146" data-id="1146"  class="gnb-sub-trigger">온라인민원</a></li>
+															<li><a href="/main/pp/policyPp/policyPpGuide.do?mi=1147" data-id="1147"  class="gnb-sub-trigger">정책제안</a></li>
+														</ul>
+														<!-- 3차 ul 끝2 -->
+													</div>
+													<!-- 2차 div 끝3 -->
+													<!-- 2차 div 시작 -->
+													<div>
+														<h3 class="sub-title"><a href="/main/cm/cntnts/cntntsView.do?mi=1236&cntntsId=1089" data-id="1135" >윤리인권경영</a></h3>
+														<!-- 3차 ul 시작 -->
+														<ul>
+															<li><a href="/main/cm/cntnts/cntntsView.do?mi=1236&cntntsId=1089" data-id="1156"  class="gnb-sub-trigger">윤리경영</a></li>
+															<li><a href="/main/cm/cntnts/cntntsView.do?mi=1234&cntntsId=1092" data-id="1157"  class="gnb-sub-trigger">인권경영</a></li>
+															<li><a href="/main/cm/cntnts/cntntsView.do?mi=1158&cntntsId=1085" data-id="1158"  class="gnb-sub-trigger">갑질근절</a></li>
+															<li><a href="/main/cm/cntnts/cntntsView.do?mi=1224&cntntsId=1086" data-id="1159"  class="gnb-sub-trigger">신고센터</a></li>
+														</ul>
+														<!-- 3차 ul 끝2 -->
+													</div>
+													<!-- 2차 div 끝3 -->
+													<!-- 2차 div 시작 -->
+													<div>
+														<h3 class="sub-title"><a href="/main/cm/cntnts/cntntsView.do?mi=1136&cntntsId=1008" data-id="1136" >고객헌장</a></h3>
+													</div>
+													<!-- 2차 div 끝1 -->
+												</div>
+												<!-- gnb-sub-list div 끝 -->
+											</li>
+											<!-- 1차 li 끝 -->
+											<!-- 1차 li 시작 -->
+											<li class="dep1-wrap">
+												<h2 class="gnb-main-trigger dep1-title"><a href="/main/cm/cntnts/cntntsView.do?mi=1160&cntntsId=1009" data-id="1080" role="tab" aria-selected="false">위원회소개</a></h2>
+												<!-- gnb-sub-list div 시작 -->
+												<div class="gnb-sub-list" id="mGnb-anchor6">
+													<!-- 2차 div 시작 -->
+													<div>
+														<h3 class="sub-title"><a href="/main/cm/cntnts/cntntsView.do?mi=1160&cntntsId=1009" data-id="1143" >기관소개</a></h3>
+														<!-- 3차 ul 시작 -->
+														<ul>
+															<li><a href="/main/cm/cntnts/cntntsView.do?mi=1160&cntntsId=1009" data-id="1160"  class="gnb-sub-trigger">설립목적</a></li>
+															<li><a href="/main/cm/cntnts/cntntsView.do?mi=1161&cntntsId=1010" data-id="1161"  class="gnb-sub-trigger">연혁</a></li>
+															<li><a href="/main/cm/cntnts/cntntsView.do?mi=1162&cntntsId=1011" data-id="1162"  class="gnb-sub-trigger">미션과 비전</a></li>
+															<li><a href="/main/cm/cntnts/cntntsView.do?mi=1163&cntntsId=1012" data-id="1163"  class="gnb-sub-trigger">CI가이드</a></li>
+														</ul>
+														<!-- 3차 ul 끝2 -->
+													</div>
+													<!-- 2차 div 끝3 -->
+													<!-- 2차 div 시작 -->
+													<div>
+														<h3 class="sub-title"><a href="/main/cm/cntnts/cntntsView.do?mi=1168&cntntsId=1013" data-id="1167" >위원장소개</a></h3>
+														<!-- 3차 ul 시작 -->
+														<ul>
+															<li><a href="/main/cm/cntnts/cntntsView.do?mi=1168&cntntsId=1013" data-id="1168"  class="gnb-sub-trigger">위원장 인사말</a></li>
+															<li><a href="/main/cm/cntnts/cntntsView.do?mi=1169&cntntsId=1014" data-id="1169"  class="gnb-sub-trigger">역대위원장</a></li>
+														</ul>
+														<!-- 3차 ul 끝2 -->
+													</div>
+													<!-- 2차 div 끝3 -->
+													<!-- 2차 div 시작 -->
+													<div>
+														<h3 class="sub-title"><a href="/main/ct/cmt/selectMainCmtList.do?mi=1172" data-id="1171" >위원소개</a></h3>
+														<!-- 3차 ul 시작 -->
+														<ul>
+															<li><a href="/main/ct/cmt/selectMainCmtList.do?mi=1172" data-id="1172"  class="gnb-sub-trigger">위원회 위원</a></li>
+															<li><a href="/main/ct/cmt/selectAuditCmtList.do?mi=1173" data-id="1173"  class="gnb-sub-trigger">감사</a></li>
+															<li><a href="/main/ct/cmt/selectFUCmtList.do?mi=1174" data-id="1174"  class="gnb-sub-trigger">사후관리위원회 위원</a></li>
+															<li><a href="/main/ct/cmt/selectSubCmtList.do?mi=1175" data-id="1175"  class="gnb-sub-trigger">소위원회 위원</a></li>
+															<li><a href="/main/ct/cmt/selectExpertCmtList.do?mi=1176" data-id="1176"  class="gnb-sub-trigger">전문위원</a></li>
+														</ul>
+														<!-- 3차 ul 끝2 -->
+													</div>
+													<!-- 2차 div 끝3 -->
+													<!-- 2차 div 시작 -->
+													<div>
+														<h3 class="sub-title"><a href="/main/cm/cntnts/cntntsView.do?mi=1165&cntntsId=1019" data-id="1164" >조직현황</a></h3>
+														<!-- 3차 ul 시작 -->
+														<ul>
+															<li><a href="/main/cm/cntnts/cntntsView.do?mi=1165&cntntsId=1019" data-id="1165"  class="gnb-sub-trigger">등급분류기구</a></li>
+															<li><a href="/main/cm/cntnts/cntntsView.do?mi=1166&cntntsId=1020" data-id="1166"  class="gnb-sub-trigger">사무국기구</a></li>
+														</ul>
+														<!-- 3차 ul 끝2 -->
+													</div>
+													<!-- 2차 div 끝3 -->
+													<!-- 2차 div 시작 -->
+													<div>
+														<h3 class="sub-title"><a href="/main/lm/location/locationMapView.do?mi=1170" data-id="1170" >오시는길</a></h3>
+													</div>
+													<!-- 2차 div 끝1 -->
+												</div>
+												<!-- gnb-sub-list div 끝 -->
+											</li>
+											<!-- 1차 li 끝 -->
+										
+								<!--M_END-->
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="btn-wrap">
+				<button type="button" class="krds-btn medium icon" id="close-nav">
+					<span class="sr-only">전체메뉴 닫기</span> <i class="ri-close-line"></i>
+				</button>
+			</div>
+		</div>
+	</div>
+	<!-- //메인메뉴 : 모바일 -->
+</div>
+<!-- //헤더 영역 -->
+
+
+<script type="text/javascript">
+//메뉴 호출 후 실행되도록 스크립트 추가
+$(document).ready(function(){
+	upperMenuClassCall();
+});
+
+function checkKeyword() {
+	const keyword = document.getElementById("total_search").value.trim();
+	if (!keyword || keyword == '') {
+		alert("검색어를 입력하세요.");
+		document.getElementById("total_search").focus();
+		return false; // 폼 제출 중단
+	}
+	 
+	var url ='/main/sr/search/main.do?mi=1285';
+	$("#mi").val("1285");
+/* 	if("localhost" ==  window.location.hostname){
+		url ='/main/sr/search/main.do?mi=1283'
+			$("#mi").val("1283");
+	} */
+	const form = document.getElementById("searchForm");
+	form.method = "get"; // 검색은 GET이 적절
+	form.action = url;
+	form.submit();
+	return false; // 이미 JS로 submit했으므로 기본 제출 막기
+}
+
+function upperMenuClassCall(){
+	$.ajax({
+		type: "post",
+		url: "/main/mn/menu/subMenu.do",
+		dataType: "json",
+		data: {
+			sysId : "main",
+			currMenuId : ""
+		},
+		timeout: 10000,
+		success:function(result){
+
+			if (result.length > 0) {
+				
+				// 1차메뉴 아이디
+				var topMenuId = null;
+				// 2차메뉴 아이디
+				var secondMenuId= null;
+				// 3차메뉴 아이디
+		        var thirdMenuId = null;
+
+		        for (var i = 0; i < result.length; i++) {
+		            var row = result[i];
+
+		            var level = null;
+
+		            if (row.menuLevel != null) {
+		                level = Number(row.menuLevel);
+		            } else if (row.MENU_LEVEL != null) {
+		                level = Number(row.MENU_LEVEL);
+		            }
+
+		            var idVal = null;
+
+		            if (row.menuId != null) {
+		                idVal = String(row.menuId);
+		            } else if (row.MENU_ID != null) {
+		                idVal = String(row.MENU_ID);
+		            }
+
+		            if (level === 1 && !topMenuId && idVal) {
+		                topMenuId = idVal;
+		            } else if (level === 2 && !secondMenuId && idVal) {
+		                secondMenuId = idVal;
+		            } else if (level === 3 && !thirdMenuId && idVal) {
+		                thirdMenuId = idVal;
+		            }
+		        }
+		        
+				function markCurrentById(menuId){
+					
+					if (menuId === null || menuId === undefined || menuId === '') {
+					    return;
+					}
+					
+		            var $a = $('a[data-id="' + menuId + '"]').first();
+		            
+		            if ($a.length) {
+		              $a.addClass('current');
+		            } else {
+		            }
+		          }
+
+		          markCurrentById(topMenuId);
+		          markCurrentById(secondMenuId);
+		          markCurrentById(thirdMenuId);
+		        }
+		      },
+		error:function(data) {   
+			console.log("오류가 발생하였습니다.\n관리자에게 문의하세요.");
+		}
+				
+	});
+}	
+</script>
+
+		<!-- //헤더 -->
+
+			<!-- 컨테이너 영역 -->
+			<div class="main_container" id="container">
+				
+
+
+
+<script>
+//메인페이지 미숭산교직원휴양원 홍보동영상(하루동안 열지않음 기능 추가)
+$(document).ready(function () {
+
+    function setCookie(cname, cvalue, exdays) {
+        var d = new Date();
+        d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+        document.cookie = cname + "=" + cvalue + "; expires=" + d.toUTCString() + "; path=/";
+    }
+
+    function getCookie(cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i].trim();
+            if (c.indexOf(name) === 0) {
+                return c.substring(name.length);
+            }
+        }
+        return "";
+    }
+
+    var videoOpenedCookieName = "video_opened";
+    var videoOpened = getCookie(videoOpenedCookieName);
+
+    if (videoOpened !== "") return;
+
+    var addHtml = "";
+    addHtml += "<iframe id='main_video' width='640' height='360' ";
+    addHtml += "src='https://www.youtube.com/embed/eeu0IWW8vHQ?autoplay=1&mute=1&rel=0' ";
+    addHtml += "frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe>";
+    addHtml += "<div class='linkBtn'><a href='https://youtu.be/eeu0IWW8vHQ' target='_blank'>바로가기</a></div>"
+    addHtml += "<div class='closeBtn'><div class='popClick'>";
+    addHtml += "  <div class='popbox'>";
+    addHtml += "    <input type='checkbox' id='popupCheckVideo'>";
+    addHtml += "    <select id='popupCheckVideo'>";
+    addHtml += "      <option value='1'>하루</option>";
+    addHtml += "      <option value='7'>일주일</option>";
+    addHtml += "    </select>";
+    addHtml += "    <label for='popupCheckVideo'>동안 이 창을 열지 않음</label>";
+    addHtml += "  </div>";
+    addHtml += "  <a href='#' class='popup-close-btn' role='button'>";
+    addHtml += "    <span class='sr-only'>팝업닫기</span>";
+    addHtml += "    <i class='ri-close-large-line' aria-hidden='true'></i>";
+    addHtml += "  </a>";
+    addHtml += "</div></div>";
+
+    $("#pop_video").html(addHtml).dialog({
+        autoOpen: true,
+        modal: false,
+        resizable: false,
+        draggable: false,
+        title: "영상물등급위원회 홍보영상",
+        width: 680,
+        height: 450,
+        dialogClass : "popupDialog schl_mPop",
+        show:{
+	  		effect:"blind",
+	  		duration: 100
+	    },
+	    hide:{
+	   	 	effect:"blind",
+	   	 	duration: 100
+	    },					
+	    close: function( event, ui ) {
+	    	$(this).parent("div").addClass("popupClose");
+	    	if($(document).find(".popupDialog:not(.popupClose) button").length==0){
+	    		$(".header_wrap h1 a:eq(0)").addClass("focusOn");
+	    		$(".header_wrap h1 .focusOn").focus();
+	    	}else{
+	    		$(document).find(".popupDialog button").focus();
+	    	}
+	    },
+        position: { my: 'left top', at: 'left+100 top+800', of: window }
+    }).dialog('open');
+    
+    $("#pop_video").parent('.ui-dialog').draggable({
+	    containment: "window",
+	    cursor: "move"
+	});	
+    
+    // 닫기 버튼 이벤트
+    $(document).on('click', '.popup-close-btn', function (e) {
+     	// 이 닫기 버튼이 속한 dialog만 찾기
+        var $dialogContent = $(this)
+            .closest('.ui-dialog')
+            .find('.ui-dialog-content');
+
+        // 쿠키 처리 (해당 팝업 내부 기준)
+        var $check = $dialogContent.find('input[type=checkbox]');
+        var $select = $dialogContent.find('select');
+
+        if ($check.length && $check.is(':checked')) {
+            var days = $select.val();
+            setCookie(videoOpenedCookieName, "true", days);
+        }
+
+        // 해당 dialog만 닫기
+        $dialogContent.dialog('close');
+    });
+
+});
+</script>
+<!-- <div id="pop_video">
+</div> -->
+<div class="inner">
+
+	<div class="MC_wrap1">						
+		<!-- 메인 등급분류 검색 -->
+
+		<div class="MC_Box1 mot3-left">
+			<div class="M_search">
+				<h3 class="heading">
+					<strong><img src="/images/main/main_tit_01.png" alt="등급분류 검색" /></strong>
+					<!-- <span>CLASSIFICATION SEARCH</span> -->
+				</h3>
+				<form name="searchMainForm" id="searchMainForm" method="post">
+					<div class="search-box">
+					  <label for="keyword" class="hid">등급분류 검색어 입력</label>
+					  <input type="text" id="useTitle" name="useTitle" placeholder="등급이 궁금한 영상물을 검색해보세요" />
+					  <a href="#" class="search-btn" role="button">
+					    <i class="ri-search-line" aria-hidden="true"></i><span class="hid">검색</span>
+					  </a>
+					</div>
+				</form>
+				<div class="grade-img">
+					<p><img src="/images/main/icon_all.svg" class="" alt="전체관람등급"></p>
+					<p><img src="/images/main/icon_12.svg" class="" alt="12세관람등급"></p>
+					<p><img src="/images/main/icon_15.svg" class="" alt="15세관람등급"></p>
+					<p><img src="/images/main/icon_19.svg" class="" alt="청소년관람불가"></p>
+				</div>
+				<div class="icon-box">
+					<p><img src="/images/main/search_icon01.png" class="" alt="메인아이콘"></p>
+					<p><img src="/images/main/search_icon02.png" class="" alt="메인아이콘"></p>
+					<p><img src="/images/main/search_icon03.png" class="" alt="메인아이콘"></p>
+					<p><img src="/images/main/search_icon04.png" class="" alt="메인아이콘"></p>									
+				</div>
+			</div>							
+		</div>
+		<!-- // 메인 등급분류 검색 -->
+
+		<!-- 메인 비주얼 -->
+		<div class="MC_Box2 mot4-right">
+			<div class="M_visual">
+				<div class="control">
+					<p class="page">
+						<strong></strong>
+						<span></span>
+					</p>
+					<a href="" class="prev"><span class="hid">비주얼 이전</span><i class="ri-arrow-left-s-line" aria-hidden="true"></i></a>
+					<a href="" class="stop"><span class="hid">비주얼 정지</span><i class="ri-pause-mini-line" aria-hidden="true"></i></a>
+					<a href="" class="play"><span class="hid">비주얼 재생</span><i class="ri-play-mini-fill" aria-hidden="true"></i></a>
+					<a href="" class="next"><span class="hid">비주얼 다음</span><i class="ri-arrow-right-s-line" aria-hidden="true"></i></a>
+				</div>
+				<div id="visual">
+					
+						
+						
+							
+								<div class="item">
+									<a href="https://kmrb.or.kr/main/na/ntt/selectNttInfo.do?mi=1109&amp;bbsId=1023&amp;nttSn=97468&amp;currPage=1" >
+										<img src="/upload/main/mv/img_c118270d-d57b-4306-886a-c528c0bb00411771979583507.png" class="" alt="영등위, 청소년 영상물바로보기 참여 학교 모집" loading="lazy">
+									</a>
+								</div>
+							
+								<div class="item">
+									<a href="https://kmrb.or.kr/main/na/ntt/selectNttInfo.do?bbsId=1024&amp;nttSn=97469&amp;mi=1114" >
+										<img src="/upload/main/mv/img_2a23ce5d-68c0-4d81-90f1-6b6b98543c6c1771979557698.png" class="" alt="영상물 올바로봄 교육 콘텐츠 신규 2종 공개" loading="lazy">
+									</a>
+								</div>
+							
+								<div class="item">
+									<a href="https://kmrb.or.kr/main/na/ntt/selectNttInfo.do?mi=1116&amp;bbsId=1026&amp;nttSn=97464&amp;currPage=1" >
+										<img src="/upload/main/mv/img_5a337748-ea82-4aba-aa10-67501be5f3951771979628692.png" class="" alt="국내영화등급 매드댄스오피스" loading="lazy">
+									</a>
+								</div>
+							
+								<div class="item">
+									<a href="https://kmrb.or.kr/main/na/ntt/selectNttInfo.do?mi=1117&amp;bbsId=1027&amp;nttSn=97465&amp;currPage=1" >
+										<img src="/upload/main/mv/img_4ae5aa1c-dd27-4971-8748-2328be5823ad1771979661507.png" class="" alt="국외영화등급 다이마이러브" loading="lazy">
+									</a>
+								</div>
+							
+						
+					
+				</div>
+			</div>
+		</div>
+		<!-- // 메인 비주얼 -->
+	</div>
+
+	<div class="MC_wrap2">
+		<div class="bg">	
+			<svg width="0" height="0" style="position:absolute; left:-9999px; overflow:hidden">
+				<path id="ref-shape" d="M396.493 174.812C455.019 281.129 406.587 399.439 288.019 457.225C246.466 477.477 196.2 491.732 157.936 517.568C77.116 572.137 38.5859 676.08 -21.1542 750.011C-76.9858 819.118 -182.195 847.734 -260.496 805.054C-417.041 719.72 -376.454 521.459 -330.086 385.412C-314.358 339.264 -296.67 293.807 -280.679 247.746C-251.375 163.362 -203.246 75.3599 -119.758 35.421C41.2492 -41.5927 306.792 11.8687 396.493 174.812Z" fill="#129F97" fill-opacity="0.08"/>
+			</svg>						
+			<canvas class="blob blob_left" width="1000" height="800"  data-speed="0.0010" data-color="rgba(18, 159, 151, 0.08)" data-line="0" data-ampmin="5" data-ampmax="15" data-sample="20"></canvas>
+			<canvas class="blob blob_right" width="1000" height="800"  data-speed="0.0010" data-color="rgba(52, 52, 116, 0.05)" data-line="0" data-ampmin="5" data-ampmax="15" data-sample="20"></canvas>						
+		</div>
+		
+		<!-- Notice -->
+		<div class="MC_Box3 mot5-bottom">
+		<div class="notice">
+			<div class="notice-header">
+				<h3 class="heading"><img src="/images/main/main_tit_02.png" alt="NOTICE" /></h3>
+				<ul class="tabBox">
+					<li>
+						<a href="#notice05" class="current"><span>전체</span><em class="hid">선택된 탭</em></a>
+					</li>
+					<li>
+						<a href="#notice01"><span>공지사항</span></a>
+					</li>
+					<li>
+						<a href="#notice04"><span>보도자료</span></a>
+					</li>
+					<li>
+						<a href="#notice02"><span>채용 &middot; 위촉</span></a>
+					</li>
+					<li>
+						<a href="#notice03"><span>입찰</span></a>
+					</li>
+				</ul>
+				<div class="control">
+					<a href="" class="prev"><span class="hid">NOTICE 슬라이드 이전</span><i class="ri-arrow-left-s-line" aria-hidden="true"></i></a>
+					<a href="" class="stop"><span class="hid">NOTICE 슬라이드 정지</span><i class="ri-pause-mini-line" aria-hidden="true"></i></a>
+					<a href="" class="play"><span class="hid">NOTICE 슬라이드 재생</span><i class="ri-play-mini-fill" aria-hidden="true"></i></a>
+					<a href="" class="next"><span class="hid">NOTICE 슬라이드 다음</span><i class="ri-arrow-right-s-line" aria-hidden="true"></i></a>
+				</div>
+			</div>
+											
+	          <div class="lstBox">
+	          
+	          <!-- 전체 -->
+               
+                  
+                      <div class="box on" id="notice05">
+                          <div class="lst">
+                              <ul id="notice5">
+                                  
+                                      <li class="item">
+                                      <a href="javascript:goPage('1023', '97538', '1109');">
+										    <strong>보도자료</strong>
+										    <p class="tit">영등위, 오티티(OTT) 자체등급분류 성과 공유회 개최</p>
+										    
+										    <p class="txt">
+										    영등위, 오티티(OTT) 자체등급분류 성과 공유회 개최- "미취학 아동 보호 위해 '7세 관람가' 신설 필요"… 오티티(OTT) 업계 한목소리- 오티티(OTT) 현장 목소리 반영해 미디어 선진국 수준의 제도 개선 탄력□ 영상물등급위원회(위원장 김병재, 이하 영등위)가 11일 개최한 ‘오티티(OTT) 자체등급분류 성과 공유회’에서 미디어 환경 변화에 발맞춘 ‘7세 관람가’ 등급 신설과 유해정보 표시 확대에 대한 필요성이 집중 제기되었다.□ 행사에 참석한 13개 자체등급분류사업자 관계자들은 등급분류 기준을 엄격히 적용하여 연령등급 확인, 보호장치 설정 등 이용자 보호 기능을 통해 청소년 보호에 노력하고 있으나, 오티티(OTT) 이용이 일상화된 환경에서 보다 실효성 있는 보호 체계가 필요하다는 데 의견을 모았다.□ 특히 미국·영국(G/PG), 독일(0세관람가/6세관람가), 네덜란드(6세관람가/9세관람가) 등 주요 미디어 선진국들이 미취학 아동과 초등학생을 구분해 세분화된 연령 등급 체계를 운영하고 있는 사례를 언급하며, 우리나라 역시 미취학 아동 보호 강화를 위해 ‘7세 관람가’ 등급을 신설하는 등 보다 세분화된 등급 체계 도입이 필요하다는 의견이 제기됐다. 또한 마약, 자살, 흡연 등 특정 유해 요소를 이용자가 쉽게 인지할 수 있도록 명시하는&nbsp;‘유해정보 표시제도’ 확대 필요성도 제안됐다. □ 실제로 많은 사업자가 제도적 미비점에도 불구하고 자발적으로 이용자 보호 조치를 시행하고 있는 것으로 나타났다. ‘티빙’, ‘쿠팡플레이’, ‘왓챠’, ‘넷플릭스’ 등 대다수 사업자들은 자체적으로 7세 등급을 포함한 세분화된 프로필 설정을 도입해 운영 중이며, ‘디즈니플러스’ 등은 자살, 흡연, 성폭력 및 가정폭력 등 구체적인 주의 장면 안내 문구를 선제적으로 제공하여 긍정적인 반응을 얻고 있다.□ 김병재 위원장은 “오티티(OTT)를 비롯한 온라인 영상 서비스 이용이 빠르게 확산되는 환경에서 등급분류 제도 역시 변화하는 콘텐츠 이용 환경에 맞게 발전해 나갈 필요가 있다”며 “앞으로도 사업자와의 지속적인 소통을 통해 청소년 보호와 이용자 권익 강화를 위한 제도 개선 방안을 모색해 나가겠다”고 밝혔다.
+										    </p>
+										    <em>2026/03/12</em>
+										</a>
+    
+                                      </li>
+                                  
+                                      <li class="item">
+                                      <a href="javascript:goPage('1023', '97537', '1109');">
+										    <strong>보도자료</strong>
+										    <p class="tit">영등위, 티빙·디즈니플러스 ‘오티티(OTT) 자체등급분류 우수사업자’ 선정</p>
+										    
+										    <p class="txt">
+										    영등위, 티빙·디즈니플러스 ‘오티티(OTT) 자체등급분류 우수사업자’ 선정-&nbsp;3월 11일 시상식 개최…등급분류 적정성 제고 및 청소년 보호 성과 인정- 티빙, 국내 사업자 최초 선정… 디즈니플러스, 2년 연속 우수 사업자 영예&nbsp;□ 영상물등급위원회(위원장 김병재, 이하 영등위)는 3월 11일 한국프레스센터에서 ‘오티티(OTT) 자체등급분류 우수사업자 시상 및 성과 공유회’를 개최하고 티빙(TVING)과 디즈니플러스(Disney+)를 우수 사업자로 선정해 시상했다.□ 이번 평가는 2025년도 한 해 동안 10개 사업자(11개 플랫폼)가 수행한 자체등급분류 업무 운영과 청소년 및 이용자 보호 활동 등을 종합적으로 심사해 진행됐다. 선정된 두 사업자는 법적 준수사항을 넘어 사업자의 자발적인 등급분류 활용과 이용자 보호 노력을 적극적으로 추진한 점에서 높은 평가를 받았다.□ 국내 사업자로는 처음으로 우수 사업자로 선정된 ‘티빙’은 ▲ 세분화된 체크리스트를 바탕으로 5단계에 걸친 철저한 등급분류 심의체계 구축 ▲ 영화 및 비디오물에는 없는 7세 등급까지 포함한 ‘세분화된 프로필 시청 등급 설정기능 제공, 청소년관람불가 콘텐츠 등급표시 강화, 오티티(OTT) 건전 이용 캠페인 등을 적극적으로 전개한 점이 우수사례로 꼽혔다.□ 또한, 2년 연속 우수 사업자로 선정된 “디즈니플러스”는 ▲ 자체등급분류 적정성 제고를 위한 소비자 반응조사 및 대학생 모니터링단 운영 등 의견수렴 채널 강화 ▲ 자체제작 드라마 시사회를 활용한 플랫폼의 자녀보호 기능 안내 및 등급제도 홍보, ▲ 콘텐츠 내 시청 경고 및 안내 문구(자살, 흡연 아동학대, 성폭력 등 주의 장면)를 선제적으로 제공하여 이용자 보호 수준을 한 단계 높였다는 평가를 받았다.□ 이날 행사에는 신규 사업자를 포함한 13개 플랫폼 관계자가 참석하여 업무 적정성 평가 결과를 공유하고 사업자 간 네트워킹 시간을 가졌다. 참석자들은 오티티(OTT) 이용 보편화에 따른 청소년 보호의 중요성에 깊이 공감하며, 연령등급 확인 및 시청 제한 설정 등 보호 장치가 실제 서비스 환경에서 보다 효과적으로 작동할 수 있도록 지속적으로 제도를 개선해 나가기로 뜻을 모았다.□ 김병재 위원장은 “창립 60주년을 맞는 올해, 자체등급분류제도는 미래형 등급분류 제도 혁신을 위한 시발점이자, 등급분류 패러다임 변화의 시작이었다” 며, “자체등급분류 제도가 법률 준수 차원을 넘어, 해를 거듭할수록 사업자의 자발적인 청소년 보호 노력과 사회적 책임 강화로 이어지는 긍정적 성과를 낳고 있다”고 강조했다.&nbsp;
+										    </p>
+										    <em>2026/03/12</em>
+										</a>
+    
+                                      </li>
+                                  
+                                      <li class="item">
+                                      <a href="javascript:goPage('1008', '97534', '1110');">
+										    <strong>공지</strong>
+										    <p class="tit">2026년도 청소년 영상물 바로보기 프로그램 선정 학교 발표 일정 연기 안내</p>
+										    
+										    <p class="txt">
+										    위원회&nbsp;내부 사정으로 인해 2026년도 선정 학교 발표 일정이 아래와 같이 연기되었으니, 업무에 참고해주시기 바랍니다.- 기존: 2026년 3월&nbsp;3주차-&nbsp;변경:&nbsp;2026년&nbsp;3월&nbsp;4주차일정 변동에 대해 양해 부탁드리며,&nbsp;2026년도 에 관심을 가져주셔서 감사드립니다. 문의: 콘텐츠사후관리본부 교육정책팀 담당자(051-990-7259)
+										    </p>
+										    <em>2026/03/10</em>
+										</a>
+    
+                                      </li>
+                                  
+                                      <li class="item">
+                                      <a href="javascript:goPage('1023', '97516', '1109');">
+										    <strong>보도자료</strong>
+										    <p class="tit">영등위, 2025년 영상물 등급분류 국민반응조사 결과 발표</p>
+										    
+										    <p class="txt">
+										    영등위, 2025년 영상물 등급분류 국민반응조사 결과 발표 - 국민 74.8%, "유튜브 등 무료 온라인 영상물도 등급분류 대상 포함해야"- 청소년 96% 미규제 플랫폼 이용… 10명 중 4명은 오티티(OTT) 광고 ‘유해’ 인식□ 영상물등급위원회(이하 영등위, 위원장 김병재)는 2025년 11월부터 12월까지 일반국민 2,500명과 청소년 2,000명을 대상으로 실시한 「영상물 등급분류 인지도 및 청소년 영상물 이용 실태조사」 결과를 발표했다. □ 조사 결과, 국민의 96.1%가 등급분류 제도를 인지하고 있었으며 87.1%는 현행 등급분류 수준이 적절하다고 응답해 제도에 대한 높은 신뢰도를 나타냈다. 영상 시청 전 등급을 확인하는 비율도 68.8%에&nbsp;달해 등급 정보가 실제 영상물 선택의 핵심 기준으로 자리 잡고 있음을 보여줬다. &nbsp;□ 그러나 유튜브·인스타그램 등 미규제 플랫폼을 통한 영상물 소비가 급증하면서 제도적 사각지대에 대한 우려도 나타났다. 현행법상 무료로 제공되는 온라인 영상물은 등급분류 예외 대상에 해당하여 실질적인 관리가 어려운 상황으로,&nbsp;국민의 74.8%는 무료 온라인 영상물도 등급분류 대상에 포함해야 한다고 응답했다.&nbsp;콘텐츠의 선정성·폭력성에 대한 우려(50.0%)와 플랫폼 영향력 확대에 따른 책임성 강화 요구(39.2%)가 주요 이유다. □ 청소년의 상황은 더욱 심각한 것으로 조사됐다. 미규제 플랫폼 이용 비율이 96.2%에 달해 사실상 대부분의 청소년이 등급 정보 없이 영상물을 소비하고 있는 것으로 나타났다.&nbsp;특히 영화·오티티(OTT) 콘텐츠의 광고·선전물을 접하는 경로 역시 유튜브·SNS 등 온라인 플랫폼이 82.1%로 압도적이었으며, 해당 광고를 접한 청소년의 42.4%는 내용이 '유해하다'고 인식했다. □ 미디어 환경 변화에 맞춰 등급분류 체계를 질적으로 개선해야 한다는 목소리도 높았다. 응답자의 53%는 영상물의 다양한 유해성을 명확히 전달하기 위해 현행 등급 체계를 더욱 세분화해야 한다고 답했으며, 특히, 마약, 자살, 음주 등 구체적인 유해 요소를 표기하는 ‘부가정보’ 제공이 필요하다는 의견은 71.8%에 달했다.□ 영등위는 이번 조사 결과를 바탕으로 오는 5월 12일부터 시행되는 ‘온라인 비디오물 광고·선전물 자체등급분류 제도’ 안착에 집중할 계획이다. 영등위 김병재 위원장은 “청소년의 영상물 소비가 급증하면서 등급분류 사각지대에 노출될 우려가 커졌고, 실제 광고물의 유해성에 대한 인식 또한 수치로 확인됐다”며, “산업계의 자율권 확대가 청소년 보호의 공백으로 이어지지 않도록 철저한 사후관리 체계 구축에 만전을 기하겠다”고 강조했다.
+										    </p>
+										    <em>2026/03/06</em>
+										</a>
+    
+                                      </li>
+                                  
+                                      <li class="item">
+                                      <a href="javascript:goPage('1010', '97513', '1112');">
+										    <strong>입찰</strong>
+										    <p class="tit">온라인비디오 광고선전물 자체등급분류 관리 기능 구축</p>
+										    
+										    <p class="txt">
+										    영상물등급위원회 공고 제&nbsp;2026 - 16호&nbsp;&nbsp;아래와 같이 입찰에 부치고자 공고합니다.2026. 3. 3. 영상물등급위원회 경영기획본부 경영지원팀&nbsp;
+										    </p>
+										    <em>2026/03/03</em>
+										</a>
+    
+                                      </li>
+                                  
+                                  
+                                      <li class="item">
+                                      <a href="javascript:goPage('1023', '97538', '1109');">
+										    <strong>보도자료</strong>
+										    <p class="tit">영등위, 오티티(OTT) 자체등급분류 성과 공유회 개최</p>
+										    
+										    <p class="txt">
+										    영등위, 오티티(OTT) 자체등급분류 성과 공유회 개최- "미취학 아동 보호 위해 '7세 관람가' 신설 필요"… 오티티(OTT) 업계 한목소리- 오티티(OTT) 현장 목소리 반영해 미디어 선진국 수준의 제도 개선 탄력□ 영상물등급위원회(위원장 김병재, 이하 영등위)가 11일 개최한 ‘오티티(OTT) 자체등급분류 성과 공유회’에서 미디어 환경 변화에 발맞춘 ‘7세 관람가’ 등급 신설과 유해정보 표시 확대에 대한 필요성이 집중 제기되었다.□ 행사에 참석한 13개 자체등급분류사업자 관계자들은 등급분류 기준을 엄격히 적용하여 연령등급 확인, 보호장치 설정 등 이용자 보호 기능을 통해 청소년 보호에 노력하고 있으나, 오티티(OTT) 이용이 일상화된 환경에서 보다 실효성 있는 보호 체계가 필요하다는 데 의견을 모았다.□ 특히 미국·영국(G/PG), 독일(0세관람가/6세관람가), 네덜란드(6세관람가/9세관람가) 등 주요 미디어 선진국들이 미취학 아동과 초등학생을 구분해 세분화된 연령 등급 체계를 운영하고 있는 사례를 언급하며, 우리나라 역시 미취학 아동 보호 강화를 위해 ‘7세 관람가’ 등급을 신설하는 등 보다 세분화된 등급 체계 도입이 필요하다는 의견이 제기됐다. 또한 마약, 자살, 흡연 등 특정 유해 요소를 이용자가 쉽게 인지할 수 있도록 명시하는&nbsp;‘유해정보 표시제도’ 확대 필요성도 제안됐다. □ 실제로 많은 사업자가 제도적 미비점에도 불구하고 자발적으로 이용자 보호 조치를 시행하고 있는 것으로 나타났다. ‘티빙’, ‘쿠팡플레이’, ‘왓챠’, ‘넷플릭스’ 등 대다수 사업자들은 자체적으로 7세 등급을 포함한 세분화된 프로필 설정을 도입해 운영 중이며, ‘디즈니플러스’ 등은 자살, 흡연, 성폭력 및 가정폭력 등 구체적인 주의 장면 안내 문구를 선제적으로 제공하여 긍정적인 반응을 얻고 있다.□ 김병재 위원장은 “오티티(OTT)를 비롯한 온라인 영상 서비스 이용이 빠르게 확산되는 환경에서 등급분류 제도 역시 변화하는 콘텐츠 이용 환경에 맞게 발전해 나갈 필요가 있다”며 “앞으로도 사업자와의 지속적인 소통을 통해 청소년 보호와 이용자 권익 강화를 위한 제도 개선 방안을 모색해 나가겠다”고 밝혔다.
+										    </p>
+										    <em>2026/03/12</em>
+										</a>
+    
+                                      </li>
+                                  
+                                      <li class="item">
+                                      <a href="javascript:goPage('1023', '97537', '1109');">
+										    <strong>보도자료</strong>
+										    <p class="tit">영등위, 티빙·디즈니플러스 ‘오티티(OTT) 자체등급분류 우수사업자’ 선정</p>
+										    
+										    <p class="txt">
+										    영등위, 티빙·디즈니플러스 ‘오티티(OTT) 자체등급분류 우수사업자’ 선정-&nbsp;3월 11일 시상식 개최…등급분류 적정성 제고 및 청소년 보호 성과 인정- 티빙, 국내 사업자 최초 선정… 디즈니플러스, 2년 연속 우수 사업자 영예&nbsp;□ 영상물등급위원회(위원장 김병재, 이하 영등위)는 3월 11일 한국프레스센터에서 ‘오티티(OTT) 자체등급분류 우수사업자 시상 및 성과 공유회’를 개최하고 티빙(TVING)과 디즈니플러스(Disney+)를 우수 사업자로 선정해 시상했다.□ 이번 평가는 2025년도 한 해 동안 10개 사업자(11개 플랫폼)가 수행한 자체등급분류 업무 운영과 청소년 및 이용자 보호 활동 등을 종합적으로 심사해 진행됐다. 선정된 두 사업자는 법적 준수사항을 넘어 사업자의 자발적인 등급분류 활용과 이용자 보호 노력을 적극적으로 추진한 점에서 높은 평가를 받았다.□ 국내 사업자로는 처음으로 우수 사업자로 선정된 ‘티빙’은 ▲ 세분화된 체크리스트를 바탕으로 5단계에 걸친 철저한 등급분류 심의체계 구축 ▲ 영화 및 비디오물에는 없는 7세 등급까지 포함한 ‘세분화된 프로필 시청 등급 설정기능 제공, 청소년관람불가 콘텐츠 등급표시 강화, 오티티(OTT) 건전 이용 캠페인 등을 적극적으로 전개한 점이 우수사례로 꼽혔다.□ 또한, 2년 연속 우수 사업자로 선정된 “디즈니플러스”는 ▲ 자체등급분류 적정성 제고를 위한 소비자 반응조사 및 대학생 모니터링단 운영 등 의견수렴 채널 강화 ▲ 자체제작 드라마 시사회를 활용한 플랫폼의 자녀보호 기능 안내 및 등급제도 홍보, ▲ 콘텐츠 내 시청 경고 및 안내 문구(자살, 흡연 아동학대, 성폭력 등 주의 장면)를 선제적으로 제공하여 이용자 보호 수준을 한 단계 높였다는 평가를 받았다.□ 이날 행사에는 신규 사업자를 포함한 13개 플랫폼 관계자가 참석하여 업무 적정성 평가 결과를 공유하고 사업자 간 네트워킹 시간을 가졌다. 참석자들은 오티티(OTT) 이용 보편화에 따른 청소년 보호의 중요성에 깊이 공감하며, 연령등급 확인 및 시청 제한 설정 등 보호 장치가 실제 서비스 환경에서 보다 효과적으로 작동할 수 있도록 지속적으로 제도를 개선해 나가기로 뜻을 모았다.□ 김병재 위원장은 “창립 60주년을 맞는 올해, 자체등급분류제도는 미래형 등급분류 제도 혁신을 위한 시발점이자, 등급분류 패러다임 변화의 시작이었다” 며, “자체등급분류 제도가 법률 준수 차원을 넘어, 해를 거듭할수록 사업자의 자발적인 청소년 보호 노력과 사회적 책임 강화로 이어지는 긍정적 성과를 낳고 있다”고 강조했다.&nbsp;
+										    </p>
+										    <em>2026/03/12</em>
+										</a>
+    
+                                      </li>
+                                  
+                                      <li class="item">
+                                      <a href="javascript:goPage('1008', '97534', '1110');">
+										    <strong>공지</strong>
+										    <p class="tit">2026년도 청소년 영상물 바로보기 프로그램 선정 학교 발표 일정 연기 안내</p>
+										    
+										    <p class="txt">
+										    위원회&nbsp;내부 사정으로 인해 2026년도 선정 학교 발표 일정이 아래와 같이 연기되었으니, 업무에 참고해주시기 바랍니다.- 기존: 2026년 3월&nbsp;3주차-&nbsp;변경:&nbsp;2026년&nbsp;3월&nbsp;4주차일정 변동에 대해 양해 부탁드리며,&nbsp;2026년도 에 관심을 가져주셔서 감사드립니다. 문의: 콘텐츠사후관리본부 교육정책팀 담당자(051-990-7259)
+										    </p>
+										    <em>2026/03/10</em>
+										</a>
+    
+                                      </li>
+                                  
+                                      <li class="item">
+                                      <a href="javascript:goPage('1023', '97516', '1109');">
+										    <strong>보도자료</strong>
+										    <p class="tit">영등위, 2025년 영상물 등급분류 국민반응조사 결과 발표</p>
+										    
+										    <p class="txt">
+										    영등위, 2025년 영상물 등급분류 국민반응조사 결과 발표 - 국민 74.8%, "유튜브 등 무료 온라인 영상물도 등급분류 대상 포함해야"- 청소년 96% 미규제 플랫폼 이용… 10명 중 4명은 오티티(OTT) 광고 ‘유해’ 인식□ 영상물등급위원회(이하 영등위, 위원장 김병재)는 2025년 11월부터 12월까지 일반국민 2,500명과 청소년 2,000명을 대상으로 실시한 「영상물 등급분류 인지도 및 청소년 영상물 이용 실태조사」 결과를 발표했다. □ 조사 결과, 국민의 96.1%가 등급분류 제도를 인지하고 있었으며 87.1%는 현행 등급분류 수준이 적절하다고 응답해 제도에 대한 높은 신뢰도를 나타냈다. 영상 시청 전 등급을 확인하는 비율도 68.8%에&nbsp;달해 등급 정보가 실제 영상물 선택의 핵심 기준으로 자리 잡고 있음을 보여줬다. &nbsp;□ 그러나 유튜브·인스타그램 등 미규제 플랫폼을 통한 영상물 소비가 급증하면서 제도적 사각지대에 대한 우려도 나타났다. 현행법상 무료로 제공되는 온라인 영상물은 등급분류 예외 대상에 해당하여 실질적인 관리가 어려운 상황으로,&nbsp;국민의 74.8%는 무료 온라인 영상물도 등급분류 대상에 포함해야 한다고 응답했다.&nbsp;콘텐츠의 선정성·폭력성에 대한 우려(50.0%)와 플랫폼 영향력 확대에 따른 책임성 강화 요구(39.2%)가 주요 이유다. □ 청소년의 상황은 더욱 심각한 것으로 조사됐다. 미규제 플랫폼 이용 비율이 96.2%에 달해 사실상 대부분의 청소년이 등급 정보 없이 영상물을 소비하고 있는 것으로 나타났다.&nbsp;특히 영화·오티티(OTT) 콘텐츠의 광고·선전물을 접하는 경로 역시 유튜브·SNS 등 온라인 플랫폼이 82.1%로 압도적이었으며, 해당 광고를 접한 청소년의 42.4%는 내용이 '유해하다'고 인식했다. □ 미디어 환경 변화에 맞춰 등급분류 체계를 질적으로 개선해야 한다는 목소리도 높았다. 응답자의 53%는 영상물의 다양한 유해성을 명확히 전달하기 위해 현행 등급 체계를 더욱 세분화해야 한다고 답했으며, 특히, 마약, 자살, 음주 등 구체적인 유해 요소를 표기하는 ‘부가정보’ 제공이 필요하다는 의견은 71.8%에 달했다.□ 영등위는 이번 조사 결과를 바탕으로 오는 5월 12일부터 시행되는 ‘온라인 비디오물 광고·선전물 자체등급분류 제도’ 안착에 집중할 계획이다. 영등위 김병재 위원장은 “청소년의 영상물 소비가 급증하면서 등급분류 사각지대에 노출될 우려가 커졌고, 실제 광고물의 유해성에 대한 인식 또한 수치로 확인됐다”며, “산업계의 자율권 확대가 청소년 보호의 공백으로 이어지지 않도록 철저한 사후관리 체계 구축에 만전을 기하겠다”고 강조했다.
+										    </p>
+										    <em>2026/03/06</em>
+										</a>
+    
+                                      </li>
+                                  
+                                      <li class="item">
+                                      <a href="javascript:goPage('1010', '97513', '1112');">
+										    <strong>입찰</strong>
+										    <p class="tit">온라인비디오 광고선전물 자체등급분류 관리 기능 구축</p>
+										    
+										    <p class="txt">
+										    영상물등급위원회 공고 제&nbsp;2026 - 16호&nbsp;&nbsp;아래와 같이 입찰에 부치고자 공고합니다.2026. 3. 3. 영상물등급위원회 경영기획본부 경영지원팀&nbsp;
+										    </p>
+										    <em>2026/03/03</em>
+										</a>
+    
+                                      </li>
+                                  
+                              </ul>
+                          </div>
+                          
+                           <a href="/main/na/ntt/selectNttList.do?mi=1109&bbsId=1023" 
+                           class="moreBtn">보도자료 더보기 <i class="ri-add-line" aria-hidden="true"></i></a> 
+                      </div>
+                  
+                  
+              
+	          
+              <!-- 공지사항 탭 -->
+              
+                  
+                      <div class="box" id="notice01">
+                          <div class="lst">
+                              <ul id="notice1">
+                                  
+                                      <li class="item">
+                                      <a href="javascript:goPage('1008', '97534', '1110');">
+										    <strong>공지</strong>
+										    <p class="tit">2026년도 청소년 영상물 바로보기 프로그램 선정 학교 발표 일정 연기 안내</p>
+										    
+										    <p class="txt">
+										    위원회&nbsp;내부 사정으로 인해 2026년도 선정 학교 발표 일정이 아래와 같이 연기되었으니, 업무에 참고해주시기 바랍니다.- 기존: 2026년 3월&nbsp;3주차-&nbsp
+										    </p>
+										    <em>2026/03/10</em>
+										</a>
+    
+                                      </li>
+                                  
+                                      <li class="item">
+                                      <a href="javascript:goPage('1008', '97484', '1110');">
+										    <strong>공지</strong>
+										    <p class="tit">영상물 등급분류 교육 강사 최종합격자 공고</p>
+										    
+										    <p class="txt">
+										    영상물등급위원회 공고 제2026 - 12호영상물&nbsp;등급분류 교육 최종합격자&nbsp;공고영상물 등급분류 교육 강사>&nbsp;모집에 관심을 가지고 지원해주신 분들께 감사드리
+										    </p>
+										    <em>2026/02/27</em>
+										</a>
+    
+                                      </li>
+                                  
+                                      <li class="item">
+                                      <a href="javascript:goPage('1008', '97458', '1110');">
+										    <strong>공지</strong>
+										    <p class="tit">영상물 등급분류 교육 강사 서류전형 합격자 공고</p>
+										    
+										    <p class="txt">
+										    영상물등급위원회 공고 제2026 -&nbsp;7호영상물&nbsp;등급분류 교육 서류전형 합격자&nbsp;공고영상물 등급분류 교육 강사>&nbsp;모집에 관심을 가지고 지원해주신 분
+										    </p>
+										    <em>2026/02/13</em>
+										</a>
+    
+                                      </li>
+                                  
+                                      <li class="item">
+                                      <a href="javascript:goPage('1008', '97394', '1110');">
+										    <strong>공지</strong>
+										    <p class="tit">2026년 2월 3주차 영화등급분류소위원회 및 광고물소위원회 회의 일정 안내</p>
+										    
+										    <p class="txt">
+										    설 연휴(2/17-19) 휴무로 인해2월 3주차 영화등급분류소위원회 및 광고물소위원회 회의 일정을 아래와 같이 알려드리오니 업무에 참고하시기 바랍니다.새해 복 많이 받으시길 바랍니
+										    </p>
+										    <em>2026/02/06</em>
+										</a>
+    
+                                      </li>
+                                  
+                                      <li class="item">
+                                      <a href="javascript:goPage('1008', '97392', '1110');">
+										    <strong>공지</strong>
+										    <p class="tit">3월 1주차(대체공휴일) 관련 공연추천소위원회 회의일정 임시조정 안내</p>
+										    
+										    <p class="txt">
+										    3월 1주차(대체공휴일) 공연추천소위원회 회의일정 임시조정 안내3월 1주차 대체공휴일 일정에 따라 공연추천소위원회 회의 일정을 조정 운영하고자 합니다. 이와 관련하여, 신규추천 및
+										    </p>
+										    <em>2026/02/05</em>
+										</a>
+    
+                                      </li>
+                                  
+                                 
+                              </ul>
+                          </div>
+                          
+                           <a href="/main/na/ntt/selectNttList.do?mi=1110&bbsId=1008" 
+                           class="moreBtn">공지 더보기 <i class="ri-add-line" aria-hidden="true"></i></a> 
+                      </div>
+                  
+                  
+              
+
+
+              <!-- 채용·위촉 탭 -->
+              
+                  
+                      <div class="box" id="notice02">
+                          <div class="lst">
+                              <ul id="notice2">
+                                  
+                                      <li class="item">
+                                          <a href="javascript:goPage('1009', '97508', '1111');">
+										    <strong>채용·위촉</strong>
+										    <p class="tit">영상물등급위원회 2026년도 전문계약직(연구원) 채용 일정 변경 공고</p>
+										    <p class="txt">
+										        영상물등급위원회 공고 제 2026&nbsp;- 15&nbsp;호&nbsp;영상물등급위원회&nbsp;2026년도 전문계약직(연구원) 채용 일정 변경 공고&nbsp;영상물등급위원회 전
+										    </p>
+										    <em>2026/02/27</em>
+										</a>
+                                      </li>
+                                  
+                                      <li class="item">
+                                          <a href="javascript:goPage('1009', '97507', '1111');">
+										    <strong>채용·위촉</strong>
+										    <p class="tit">영상물등급위원회 2026년도 제2차 기간제계약직(휴직대체) 채용 공고</p>
+										    <p class="txt">
+										        영상물등급위원회 공고 제 2026&nbsp;- 14&nbsp;호&nbsp;영상물등급위원회 2026년도 제2차&nbsp;기간제계약직(휴직대체) 채용공고영상물등급위원회는 영화·비디오물
+										    </p>
+										    <em>2026/02/27</em>
+										</a>
+                                      </li>
+                                  
+                                      <li class="item">
+                                          <a href="javascript:goPage('1009', '97506', '1111');">
+										    <strong>채용·위촉</strong>
+										    <p class="tit">영상물등급위원회 2026년도 제2차 기간제계약직(정보화지원) 채용 공고</p>
+										    <p class="txt">
+										        영상물등급위원회 공고 제 2026&nbsp;- 13&nbsp;호&nbsp;영상물등급위원회 2026년도 제2차&nbsp;기간제계약직(정보화지원) 채용공고영상물등급위원회는 영화·비디오
+										    </p>
+										    <em>2026/02/27</em>
+										</a>
+                                      </li>
+                                  
+                                      <li class="item">
+                                          <a href="javascript:goPage('1009', '97482', '1111');">
+										    <strong>채용·위촉</strong>
+										    <p class="tit">영상물등급위원회 2026년도 기간제계약직(사후관리 조사원) 채용 최종합격자 공고</p>
+										    <p class="txt">
+										        영상물등급위원회 공고 제 2026 - 11 호&nbsp;영상물등급위원회 2026년도 기간제계약직(사후관리 조사원)&nbsp;채용 최종합격자&nbsp;공고&nbsp;영상물등급위원회 
+										    </p>
+										    <em>2026/02/26</em>
+										</a>
+                                      </li>
+                                  
+                                      <li class="item">
+                                          <a href="javascript:goPage('1009', '97477', '1111');">
+										    <strong>채용·위촉</strong>
+										    <p class="tit">영상물등급위원회 2026년도 기간제계약직(정보화지원) 채용 면접전형 결과 공고</p>
+										    <p class="txt">
+										        영상물등급위원회 공고 제 2026&nbsp;-&nbsp;10&nbsp;호&nbsp;영상물등급위원회 2026년도 기간제계약직(정보화지원) 채용&nbsp;면접전형 결과&nbsp;공고&
+										    </p>
+										    <em>2026/02/24</em>
+										</a>
+                                      </li>
+                                  
+                              </ul>
+                          </div>
+                          <a href="/main/na/ntt/selectNttList.do?mi=1111&bbsId=1009" 
+                           class="moreBtn">채용·위촉 더보기 <i class="ri-add-line" aria-hidden="true"></i></a>
+                      </div>
+                  
+                  
+              
+
+              <!-- 입찰 탭 -->
+              
+                  
+                      <div class="box" id="notice03">
+                          <div class="lst">
+                              <ul id="notice3">
+                                  
+                                      <li class="item">
+                                          <a href="javascript:goPage('1010', '97513', '1112');">
+										    <strong>입찰</strong>
+										    <p class="tit">온라인비디오 광고선전물 자체등급분류 관리 기능 구축</p>
+										    <p class="txt">
+										        영상물등급위원회 공고 제&nbsp;2026 - 16호&nbsp;&nbsp;아래와 같이 입찰에 부치고자 공고합니다.2026. 3. 3. 영상물등급위원회 경영기획본부 경영지원팀&nbs
+										    </p>
+										    <em>2026/03/03</em>
+										</a>
+                                      </li>
+                                  
+                                      <li class="item">
+                                          <a href="javascript:goPage('1010', '97389', '1112');">
+										    <strong>입찰</strong>
+										    <p class="tit">2026년 영상물 등급분류 교육 프로그램 운영 위탁 사업</p>
+										    <p class="txt">
+										        영상물등급위원회 공고 제&nbsp;2026 -&nbsp;6호&nbsp;&nbsp;아래와 같이 입찰에 부치고자 공고합니다.2026. 2 4. 영상물등급위원회 경영기획본부 경영지원팀&
+										    </p>
+										    <em>2026/02/04</em>
+										</a>
+                                      </li>
+                                  
+                                      <li class="item">
+                                          <a href="javascript:goPage('1010', '7678', '1112');">
+										    <strong>입찰</strong>
+										    <p class="tit">2025년도 영상물 등급분류 인지도 및 청소년 영상물 이용 실태조사</p>
+										    <p class="txt">
+										        
+										    </p>
+										    <em>2025/08/21</em>
+										</a>
+                                      </li>
+                                  
+                                      <li class="item">
+                                          <a href="javascript:goPage('1010', '7677', '1112');">
+										    <strong>입찰</strong>
+										    <p class="tit">2025년 자체등급분류 관련 온라인 교육 콘텐츠 제작</p>
+										    <p class="txt">
+										        
+										    </p>
+										    <em>2025/08/20</em>
+										</a>
+                                      </li>
+                                  
+                                      <li class="item">
+                                          <a href="javascript:goPage('1010', '7676', '1112');">
+										    <strong>입찰</strong>
+										    <p class="tit">2025 이용자 보호를 위한 영상물 등급분류 서비스 개선 방안 연구(재공고3차)</p>
+										    <p class="txt">
+										        
+										    </p>
+										    <em>2025/05/27</em>
+										</a>
+                                      </li>
+                                  
+                              </ul>
+                          </div>
+                          <a href="/main/na/ntt/selectNttList.do?mi=1112&bbsId=1010" 
+                           class="moreBtn">입찰 더보기 <i class="ri-add-line" aria-hidden="true"></i></a>
+                      </div>
+                  
+                  
+              
+
+              <!-- 보도자료 탭 -->
+              
+                  
+                      <div class="box" id="notice04">
+                          <div class="lst">
+                              <ul id="notice4">
+                                  
+                                      <li class="item">
+                                      
+                                          <a href="javascript:goGalPage('1109', '1023', '97538');">
+										    <strong>보도자료</strong>
+										    <p class="tit">영등위, 오티티(OTT) 자체등급분류 성과 공유회 개최</p>
+										    <p class="txt">
+										        영등위, 오티티(OTT) 자체등급분류 성과 공유회 개최- "미취학 아동 보호 위해 '7세 관람가' 신설 필요"… 오티티(OTT) 업계 한목소리- 오티티(OTT) 현장 목소리 반영해
+										    </p>
+										    <em>2026/03/12</em>
+										</a>
+                                      </li>
+                                  
+                                      <li class="item">
+                                      
+                                          <a href="javascript:goGalPage('1109', '1023', '97537');">
+										    <strong>보도자료</strong>
+										    <p class="tit">영등위, 티빙·디즈니플러스 ‘오티티(OTT) 자체등급분류 우수사업자’ 선정</p>
+										    <p class="txt">
+										        영등위, 티빙·디즈니플러스 ‘오티티(OTT) 자체등급분류 우수사업자’ 선정-&nbsp;3월 11일 시상식 개최…등급분류 적정성 제고 및 청소년 보호 성과 인정- 티빙, 국내 사업자
+										    </p>
+										    <em>2026/03/12</em>
+										</a>
+                                      </li>
+                                  
+                                      <li class="item">
+                                      
+                                          <a href="javascript:goGalPage('1109', '1023', '97516');">
+										    <strong>보도자료</strong>
+										    <p class="tit">영등위, 2025년 영상물 등급분류 국민반응조사 결과 발표</p>
+										    <p class="txt">
+										        영등위, 2025년 영상물 등급분류 국민반응조사 결과 발표 - 국민 74.8%, "유튜브 등 무료 온라인 영상물도 등급분류 대상 포함해야"- 청소년 96% 미규제 플랫폼 이용… 1
+										    </p>
+										    <em>2026/03/06</em>
+										</a>
+                                      </li>
+                                  
+                                      <li class="item">
+                                      
+                                          <a href="javascript:goGalPage('1109', '1023', '97468');">
+										    <strong>보도자료</strong>
+										    <p class="tit">영등위, 2026년 ‘청소년 영상물 바로보기’참여 학교 모집</p>
+										    <p class="txt">
+										        영등위, 2026년 ‘청소년 영상물 바로보기’참여 학교 모집“유해콘텐츠 대응력 키운다”- 2월 27일까지 접수... 숏폼 등 최신 미디어 트렌드 반영한 맞춤교육&nbsp;- 제주 
+										    </p>
+										    <em>2026/02/23</em>
+										</a>
+                                      </li>
+                                  
+                                      <li class="item">
+                                      
+                                          <a href="javascript:goGalPage('1109', '1023', '97340');">
+										    <strong>보도자료</strong>
+										    <p class="tit">영등위, OTT 자녀보호기능 한눈에 정리한 가이드북 국내 최초 발행</p>
+										    <p class="txt">
+										        영등위, OTT 자녀보호기능 한눈에 정리한 가이드북 국내 최초 발행- 가정에서 바로 활용할 수 있는 OTT,&nbsp;IPTV,&nbsp;유튜브 청소년 보호 설정 가이드 -- 넷플
+										    </p>
+										    <em>2026/01/12</em>
+										</a>
+                                      </li>
+                                  
+                              </ul>
+                          </div>
+                          <a href="" class="moreBtn">보도자료 더보기 <i class="ri-add-line" aria-hidden="true"></i></a>
+                          <a href="/main/na/ntt/selectNttList.do?mi=1109&bbsId=1023" 
+                           class="moreBtn">보도자료 더보기 <i class="ri-add-line" aria-hidden="true"></i></a>
+                      </div>
+                  
+                  
+              
+          </div>
+      </div>
+  </div>
+		<!-- // Notice -->
+	
+</div>
+
+<div class="MC_wrap3">
+	<!-- OTT 자체등급분류정보 -->
+	<div class="MC_Box4 mot1-left">							
+		<div class="ottInfo">
+			<h3 class="heading"><img src="/images/main/main_tit_03.png" alt="OTT 자체등급분류정보" /></h3>
+			<div class="lst" id="ottSlider">
+				
+					
+					<div class="item ottList">
+						<a href="javascript:goOttInfo('21119')">
+							<p>
+								
+									
+									
+										<img src="/images/main/logo_DISN.png" alt="디즈니 플러스" loading="lazy">
+									
+									
+									
+									
+									
+									
+									
+									
+								
+							</p>
+							<p class="img">
+								<img src="/upload/gd/irsPoster/2026/thumb/thumb_img_d831638e-1bc3-4dec-a7c1-0590d95025841771483968545.jpg" alt="운명전쟁 49 시즌 1 (1회-4회) 포스터" onerror="this.onerror=null;this.src='/images/sub/album_05.png';" loading="lazy">
+							</p>										
+						</a>
+							<div class="detail">
+								
+								
+								
+									
+									
+								
+								
+								
+								
+								
+								<a href="/main/cm/cntnts/cntntsView.do?mi=1088&cntntsId=1063&tab=tabStandard3">
+								
+									<img src="/images/main/icon_15.svg" alt="15세이상관람가" loading="lazy">
+								
+								
+								
+									<img src="/images/main/gr_type01.svg" alt="주제" loading="lazy">
+								
+								
+								
+																							
+								
+									<img src="/images/main/gr_type05.svg" alt="공포" loading="lazy">
+								
+								
+								
+									<img src="/images/main/gr_type07.svg" alt="모방위험" loading="lazy">
+								
+								</a>
+							</div>                
+						</div>
+
+					
+					<div class="item ottList">
+						<a href="javascript:goOttInfo('20903')">
+							<p>
+								
+									
+										<img src="/images/main/wavve.png" alt="웨이브" loading="lazy">
+									
+									
+									
+									
+									
+									
+									
+									
+									
+								
+							</p>
+							<p class="img">
+								<img src="/upload/gd/irsPoster/2026/thumb/thumb_img_a3d0df9a-8631-48d6-9a66-8c57fa838af41771484031987.jpg" alt="감독 고창석 17회 포스터" onerror="this.onerror=null;this.src='/images/sub/album_05.png';" loading="lazy">
+							</p>										
+						</a>
+							<div class="detail">
+								
+								
+								
+									
+									
+								
+								
+								
+								
+								
+								<a href="/main/cm/cntnts/cntntsView.do?mi=1088&cntntsId=1063&tab=tabStandard3">
+								
+									<img src="/images/main/icon_15.svg" alt="15세이상관람가" loading="lazy">
+								
+								
+								
+								
+								
+								
+									<img src="/images/main/gr_type04.svg" alt="대사" loading="lazy">
+																							
+								
+								
+								
+								</a>
+							</div>                
+						</div>
+
+					
+					<div class="item ottList">
+						<a href="javascript:goOttInfo('20627')">
+							<p>
+								
+									
+									
+									
+									
+										<img src="/images/main/coupangplay.png" alt="쿠팡 플레이" loading="lazy">
+									
+									
+									
+									
+									
+									
+								
+							</p>
+							<p class="img">
+								<img src="/upload/gd/irsPoster/2026/thumb/thumb_img_fb9833fc-e3de-4977-8b13-e6a8c7a82f501771484001785.jpg" alt="대학전쟁 시즌3 8화 포스터" onerror="this.onerror=null;this.src='/images/sub/album_05.png';" loading="lazy">
+							</p>										
+						</a>
+							<div class="detail">
+								
+								
+								
+								
+									
+									
+								
+								
+								
+								
+								<a href="/main/cm/cntnts/cntntsView.do?mi=1088&cntntsId=1063&tab=tabStandard2">
+								
+									<img src="/images/main/icon_12.svg" alt="12세이상관람가" loading="lazy">
+								
+								
+								
+									<img src="/images/main/gr_type01.svg" alt="주제" loading="lazy">
+								
+								
+								
+																							
+								
+								
+								
+								</a>
+							</div>                
+						</div>
+
+					
+					<div class="item ottList">
+						<a href="javascript:goOttInfo('20581')">
+							<p>
+								
+									
+									
+									
+									
+									
+									
+									
+									
+									
+										<img src="/images/main/netflix.png" alt="넷플릭스" loading="lazy">
+									
+								
+							</p>
+							<p class="img">
+								<img src="/upload/gd/irsPoster/2026/thumb/thumb_img_82f0eaaa-491a-4a4c-be9f-a78ec3a300d91771482848682.jpg" alt="솔로지옥: 시즌 5: 1화-4화 포스터" onerror="this.onerror=null;this.src='/images/sub/album_05.png';" loading="lazy">
+							</p>										
+						</a>
+							<div class="detail">
+								
+								
+								
+									
+									
+								
+								
+								
+								
+								
+								<a href="/main/cm/cntnts/cntntsView.do?mi=1088&cntntsId=1063&tab=tabStandard3">
+								
+									<img src="/images/main/icon_15.svg" alt="15세이상관람가" loading="lazy">
+								
+								
+								
+									<img src="/images/main/gr_type01.svg" alt="주제" loading="lazy">
+								
+								
+								
+																							
+								
+								
+									<img src="/images/main/gr_type06.svg" alt="약물" loading="lazy">
+								
+								
+								</a>
+							</div>                
+						</div>
+
+					
+					<div class="item ottList">
+						<a href="javascript:goOttInfo('18933')">
+							<p>
+								
+									
+									
+									
+									
+									
+									
+									
+									
+										<img src="/images/main/logo_WVSE.png" alt="위버스" loading="lazy">
+									
+									
+								
+							</p>
+							<p class="img">
+								<img src="/upload/gd/irsPoster/2026/thumb/thumb_img_a4a16eb7-c453-45a5-b4dc-a720249c68641771484065653.png" alt="j-hope Tour &amp;apos;HOPE ON THE STAGE&amp;apos; THE ORIGINAL 포스터" onerror="this.onerror=null;this.src='/images/sub/album_05.png';" loading="lazy">
+							</p>										
+						</a>
+							<div class="detail">
+								
+								
+								
+								
+									
+									
+								
+								
+								
+								
+								<a href="/main/cm/cntnts/cntntsView.do?mi=1088&cntntsId=1063&tab=tabStandard2">
+								
+									<img src="/images/main/icon_12.svg" alt="12세이상관람가" loading="lazy">
+								
+								
+								
+									<img src="/images/main/gr_type01.svg" alt="주제" loading="lazy">
+								
+								
+								
+								
+									<img src="/images/main/gr_type04.svg" alt="대사" loading="lazy">
+																							
+								
+								
+								
+								</a>
+							</div>                
+						</div>
+
+					
+				
+												
+		</div>
+				
+			<div class="control">
+				<a href="" class="prev"><span class="hid">OTT 자체등급분류정보 슬라이드 이전</span><i class="ri-arrow-left-s-line" aria-hidden="true"></i></a>
+				<a href="" class="stop"><span class="hid">OTT 자체등급분류정보 슬라이드 정지</span><i class="ri-pause-mini-line" aria-hidden="true"></i></a>
+				<a href="" class="play"><span class="hid">OTT 자체등급분류정보 슬라이드 재생</span><i class="ri-play-mini-fill" aria-hidden="true"></i></a>
+				<a href="" class="next"><span class="hid">OTT 자체등급분류정보 슬라이드 다음</span><i class="ri-arrow-right-s-line" aria-hidden="true"></i></a>
+			</div>
+			<a href="/main/gd/grade/selectGradeList.do?category=ORS&mi=1094" class="moreBtn">OTT 자체등급분류정보 더보기 <i class="ri-add-line" aria-hidden="true"></i></a>
+		</div>							
+	</div>
+		<!-- // OTT 자체등급분류정보 -->
+
+		<div class="MC_Box5 mot1-right">		
+			<div class="ottLink">
+				<h3 class="heading"><img src="/images/main/main_tit_04.png" alt="OTT 바로보기" /></h3>
+				<div class="ott-list">
+					<ul>
+						<!-- 유튜브 바로보기 -->
+						<li>
+							<a href="https://www.youtube.com/watch?v=A2-Ysu19vgw" class="youtube" target="_blank" title="새창">
+								<img src="/images/main/ottLink_01.jpg" alt="OTT 콘텐츠를 이용하기에 앞서, 작품의 등급정보와 등급에 영향을 미친 요소를 확인해 보세요." loading="lazy">
+								<p class="youtube"><i class="ri-youtube-fill"></i> 자녀 보호기능 완벽 가이드</p>
+							</a>
+						</li>										
+						<!-- OTT 바로보기 -->
+						<li>
+							<a href="https://www.kmrb.or.kr/main/cm/cntnts/cntntsView.do?cntntsId=1123">
+								<img src="/images/main/ottLink_02.png" alt="스트리밍플랫폼별 활용방법 총정리 OTT 바로보기" loading="lazy">
+							</a>
+						</li>
+					</ul>
+				</div>
+				<a href="/main/na/ntt/selectNttList.do?mi=1248&bbsId=1079" class="moreBtn">OTT바로보기 더보기 <i class="ri-add-line" aria-hidden="true"></i></a>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="MC_wrap4">
+		<!-- 영등위 소식 -->
+		<div class="MC_Box6 mot3-bottom">
+			<div class="news">
+				<h3 class="heading"><img src="/images/main/main_tit_05.png" alt="KMRB NEWS" /> <strong>영등위 소식</strong></h3>
+				<div class="popImg" id="popSlider">
+					<!-- 첫 번째 반복: 실제 데이터 -->
+					
+						<div class="item">
+							<a
+								href="javascript:goPage('1024', '97469', '1114');">
+								<p class="img">
+									<img
+										src="/upload/main/na/bbs_1024/ntt_97469/thumb/thumb_img_cc850770-b8d5-4058-9896-dd664f1f8dc11771823464096.png"
+										alt=" : 친구들도 다 본다는 청불 영화, 어떻게 지도할까요?"
+										onerror="this.onerror=null;this.src='/images/sub/album_05_s.png';" loading="lazy">
+								</p>
+								<div class="txt">
+									<span>기관소식</span>
+									<p>친구들도 다 본다는 청불 영화, 어떻게 지도할까요?</p>
+								</div>
+							</a>
+						</div>
+					
+						<div class="item">
+							<a
+								href="javascript:goPage('1027', '97465', '1117');">
+								<p class="img">
+									<img
+										src="/upload/main/na/bbs_1027/ntt_97465/thumb/thumb_img_465e5778-8916-4b6c-a629-ad1fdb5397f51771549156597.png"
+										alt=" : 영화 &lt;다이 마이 러브&gt; 나라별 등급"
+										onerror="this.onerror=null;this.src='/images/sub/album_05_s.png';" loading="lazy">
+								</p>
+								<div class="txt">
+									<span>나라별등급</span>
+									<p>영화 &lt;다이 마이 러브&gt; 나라별 등급</p>
+								</div>
+							</a>
+						</div>
+					
+						<div class="item">
+							<a
+								href="javascript:goPage('1026', '97464', '1116');">
+								<p class="img">
+									<img
+										src="/upload/main/na/bbs_1026/ntt_97464/thumb/thumb_img_062738bd-449a-4117-9bc5-064badee6b181771547562485.png"
+										alt=" : “우리의 삶을 닮은 장면들”"
+										onerror="this.onerror=null;this.src='/images/sub/album_05_s.png';" loading="lazy">
+								</p>
+								<div class="txt">
+									<span>최신영화등급</span>
+									<p>“우리의 삶을 닮은 장면들”</p>
+								</div>
+							</a>
+						</div>
+					
+						<div class="item">
+							<a
+								href="javascript:goPage('1048', '97378', '1115');">
+								<p class="img">
+									<img
+										src="/upload/main/na/bbs_1048/ntt_97378/thumb/thumb_img_9bdcec2b-123c-40c3-a43c-068107287ffb1769736349341.png"
+										alt=" : 2025년도 등급분류 동향"
+										onerror="this.onerror=null;this.src='/images/sub/album_05_s.png';" loading="lazy">
+								</p>
+								<div class="txt">
+									<span>등급더보기</span>
+									<p>2025년도 등급분류 동향</p>
+								</div>
+							</a>
+						</div>
+					
+					
+						<div class="item">
+							<a
+								href="javascript:goPage('1024', '97469', '1114');">
+								<p class="img">
+									<img
+										src="/upload/main/na/bbs_1024/ntt_97469/thumb/thumb_img_cc850770-b8d5-4058-9896-dd664f1f8dc11771823464096.png"
+										alt=" : 친구들도 다 본다는 청불 영화, 어떻게 지도할까요?"
+										onerror="this.onerror=null;this.src='/images/sub/album_05_s.png';" loading="lazy">
+								</p>
+								<div class="txt">
+									<span>기관소식</span>
+									<p>친구들도 다 본다는 청불 영화, 어떻게 지도할까요?</p>
+								</div>
+							</a>
+						</div>
+					
+						<div class="item">
+							<a
+								href="javascript:goPage('1027', '97465', '1117');">
+								<p class="img">
+									<img
+										src="/upload/main/na/bbs_1027/ntt_97465/thumb/thumb_img_465e5778-8916-4b6c-a629-ad1fdb5397f51771549156597.png"
+										alt=" : 영화 &lt;다이 마이 러브&gt; 나라별 등급"
+										onerror="this.onerror=null;this.src='/images/sub/album_05_s.png';" loading="lazy">
+								</p>
+								<div class="txt">
+									<span>나라별등급</span>
+									<p>영화 &lt;다이 마이 러브&gt; 나라별 등급</p>
+								</div>
+							</a>
+						</div>
+					
+						<div class="item">
+							<a
+								href="javascript:goPage('1026', '97464', '1116');">
+								<p class="img">
+									<img
+										src="/upload/main/na/bbs_1026/ntt_97464/thumb/thumb_img_062738bd-449a-4117-9bc5-064badee6b181771547562485.png"
+										alt=" : “우리의 삶을 닮은 장면들”"
+										onerror="this.onerror=null;this.src='/images/sub/album_05_s.png';" loading="lazy">
+								</p>
+								<div class="txt">
+									<span>최신영화등급</span>
+									<p>“우리의 삶을 닮은 장면들”</p>
+								</div>
+							</a>
+						</div>
+					
+						<div class="item">
+							<a
+								href="javascript:goPage('1048', '97378', '1115');">
+								<p class="img">
+									<img
+										src="/upload/main/na/bbs_1048/ntt_97378/thumb/thumb_img_9bdcec2b-123c-40c3-a43c-068107287ffb1769736349341.png"
+										alt=" : 2025년도 등급분류 동향"
+										onerror="this.onerror=null;this.src='/images/sub/album_05_s.png';" loading="lazy">
+								</p>
+								<div class="txt">
+									<span>등급더보기</span>
+									<p>2025년도 등급분류 동향</p>
+								</div>
+							</a>
+						</div>
+					
+				</div>
+
+				<div class="control">
+					<a href="" class="prev"><span class="hid">소식존 슬라이드 이전</span><i class="ri-arrow-left-s-line" aria-hidden="true"></i></a>
+					<a href="" class="stop"><span class="hid">소식존 슬라이드 정지</span><i class="ri-pause-mini-line" aria-hidden="true"></i></a>
+					<a href="" class="play"><span class="hid">소식존 슬라이드 재생</span><i class="ri-play-mini-fill" aria-hidden="true"></i></a>
+					<a href="" class="next"><span class="hid">소식존 슬라이드 다음</span><i class="ri-arrow-right-s-line" aria-hidden="true"></i></a>
+				</div>
+			</div>
+			<a href="/main/na/ntt/selectNttList.do?mi=1114&bbsId=1024" class="moreBtn">영등위 소식 더보기 <i class="ri-add-line" aria-hidden="true"></i></a>		
+		</div>
+		<!-- // 영등위 소식 -->
+	</div>
+
+
+	<div class="MC_wrap5">
+		<!-- 최신영화개봉작 -->
+		<div class="MC_Box7 mot2-bottom">							
+			<div class="newMovie">
+				<h3 class="heading"><img src="/images/main/main_tit_06.png" alt="최신 영화 개봉작" /></h3>
+				<div class="lst" id="newMvSlider">
+					
+						
+							<div class="item">
+								
+								<a>
+								
+									<p class="img grade-poster" role="button"  onclick="javascript:goGradeInfo('2557865')" style="cursor: pointer;">
+										<img src="/upload/gd/orsPoster/2026/thumb/thumb_img_0e8db9aa-4a95-4aa3-a821-593290eb777c1771917388915.jpg" alt="메소드연기 포스터" onerror="this.onerror=null;this.src='/images/sub/album_05.png';" loading="lazy">
+									</p>
+									<div class="detail">
+										
+										
+										<!-- ul태그 동적  -->
+										
+										
+										
+											<ul class="grade-name" onclick="location.href='/main/cm/cntnts/cntntsView.do?mi=1088&cntntsId=1063&tab=tabStandard2'" style="cursor: pointer;">
+										
+										
+										
+											
+											
+											
+												<li><img src="/images/main/icon_12.svg" alt="12세이상관람가" loading="lazy"></li>
+											
+											
+											
+											    <li><img src="/images/main/gr_type01.svg" alt="주제" loading="lazy"></li>
+											
+											
+											
+											
+											
+											
+											
+											    <li><img src="/images/main/gr_type04.svg" alt="대사" loading="lazy"></li>
+											
+											
+											
+											
+											
+											 
+											    <li><img src="/images/main/gr_type06.svg" alt="약물" loading="lazy"></li>
+											
+											
+											
+										</ul>
+									</div>
+								</a>
+							</div>
+						
+							<div class="item">
+								
+								<a>
+								
+									<p class="img grade-poster" role="button"  onclick="javascript:goGradeInfo('2557603')" style="cursor: pointer;">
+										<img src="/upload/gd/orsPoster/2026/thumb/thumb_img_97b05c95-b448-4386-9685-6bc759a5b7df1771461178612.jpg" alt="우리는 매일매일 포스터" onerror="this.onerror=null;this.src='/images/sub/album_05.png';" loading="lazy">
+									</p>
+									<div class="detail">
+										
+										
+										<!-- ul태그 동적  -->
+										
+										
+										
+											<ul class="grade-name" onclick="location.href='/main/cm/cntnts/cntntsView.do?mi=1088&cntntsId=1063&tab=tabStandard2'" style="cursor: pointer;">
+										
+										
+										
+											
+											
+											
+												<li><img src="/images/main/icon_12.svg" alt="12세이상관람가" loading="lazy"></li>
+											
+											
+											
+											    <li><img src="/images/main/gr_type01.svg" alt="주제" loading="lazy"></li>
+											
+											
+											
+											
+											
+											
+											
+											    <li><img src="/images/main/gr_type04.svg" alt="대사" loading="lazy"></li>
+											
+											
+											
+											
+											
+											 
+											    <li><img src="/images/main/gr_type06.svg" alt="약물" loading="lazy"></li>
+											
+											
+											
+										</ul>
+									</div>
+								</a>
+							</div>
+						
+							<div class="item">
+								
+								<a>
+								
+									<p class="img grade-poster" role="button"  onclick="javascript:goGradeInfo('2555729')" style="cursor: pointer;">
+										<img src="/upload/gd/orsPoster/2026/thumb/thumb_img_4248aae5-bc60-4f82-a7d5-e7a43a9a77b11771461196529.jpg" alt="호퍼스 포스터" onerror="this.onerror=null;this.src='/images/sub/album_05.png';" loading="lazy">
+									</p>
+									<div class="detail">
+										
+										
+										<!-- ul태그 동적  -->
+										
+										
+										
+										
+											<ul class="grade-name"  onclick="location.href='/main/cm/cntnts/cntntsView.do?mi=1088&cntntsId=1063&tab=tabStandard1'" style="cursor: pointer;">
+										
+										
+											
+											
+											
+											
+												<li><img src="/images/main/icon_all.svg" alt="전체관람가" loading="lazy"></li>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											 
+											
+											
+										</ul>
+									</div>
+								</a>
+							</div>
+						
+							<div class="item">
+								
+								<a>
+								
+									<p class="img grade-poster" role="button"  onclick="javascript:goGradeInfo('2555148')" style="cursor: pointer;">
+										<img src="/upload/gd/orsPoster/2026/thumb/thumb_img_01f93929-e555-4538-9b06-b1a0e7cb926b1771461370485.jpg" alt="아르코 포스터" onerror="this.onerror=null;this.src='/images/sub/album_05.png';" loading="lazy">
+									</p>
+									<div class="detail">
+										
+										
+										<!-- ul태그 동적  -->
+										
+										
+										
+										
+											<ul class="grade-name"  onclick="location.href='/main/cm/cntnts/cntntsView.do?mi=1088&cntntsId=1063&tab=tabStandard1'" style="cursor: pointer;">
+										
+										
+											
+											
+											
+											
+												<li><img src="/images/main/icon_all.svg" alt="전체관람가" loading="lazy"></li>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											 
+											
+											
+										</ul>
+									</div>
+								</a>
+							</div>
+						
+							<div class="item">
+								
+								<a>
+								
+									<p class="img grade-poster" role="button"  onclick="javascript:goGradeInfo('2554518')" style="cursor: pointer;">
+										<img src="/upload/gd/orsPoster/2026/thumb/thumb_img_06b23b0e-9930-46fe-b650-9ff7162d53121769567617843.jpg" alt="넘버원 포스터" onerror="this.onerror=null;this.src='/images/sub/album_05.png';" loading="lazy">
+									</p>
+									<div class="detail">
+										
+										
+										<!-- ul태그 동적  -->
+										
+										
+										
+											<ul class="grade-name" onclick="location.href='/main/cm/cntnts/cntntsView.do?mi=1088&cntntsId=1063&tab=tabStandard2'" style="cursor: pointer;">
+										
+										
+										
+											
+											
+											
+												<li><img src="/images/main/icon_12.svg" alt="12세이상관람가" loading="lazy"></li>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											    <li><img src="/images/main/gr_type04.svg" alt="대사" loading="lazy"></li>
+											
+											
+											
+											
+											
+											 
+											    <li><img src="/images/main/gr_type06.svg" alt="약물" loading="lazy"></li>
+											
+											
+											
+										</ul>
+									</div>
+								</a>
+							</div>
+						
+							<div class="item">
+								
+								<a>
+								
+									<p class="img grade-poster" role="button"  onclick="javascript:goGradeInfo('2554292')" style="cursor: pointer;">
+										<img src="/upload/gd/orsPoster/2026/thumb/thumb_img_8bb9f91a-281f-4f33-bf6f-5927073ad3b11771461385539.jpg" alt="콜드 미트 포스터" onerror="this.onerror=null;this.src='/images/sub/album_05.png';" loading="lazy">
+									</p>
+									<div class="detail">
+										
+										
+										<!-- ul태그 동적  -->
+										
+										
+											<ul class="grade-name" onclick="location.href='/main/cm/cntnts/cntntsView.do?mi=1088&cntntsId=1063&tab=tabStandard3'" style="cursor: pointer;">
+										
+										
+										
+										
+											
+											
+												<li><img src="/images/main/icon_15.svg" alt="15세이상관람가" loading="lazy"></li>
+											
+											
+											
+											
+											    <li><img src="/images/main/gr_type01.svg" alt="주제" loading="lazy"></li>
+											
+											
+											
+											
+											
+											    <li><img src="/images/main/gr_type03.svg" alt="폭력성" loading="lazy"></li>
+											
+											
+											
+											
+											
+											
+											
+											 
+											
+											
+											    <li><img src="/images/main/gr_type07.svg" alt="모방위험" loading="lazy"></li>
+											
+										</ul>
+									</div>
+								</a>
+							</div>
+						
+							<div class="item">
+								
+								<a>
+								
+									<p class="img grade-poster" role="button"  onclick="javascript:goGradeInfo('2553065')" style="cursor: pointer;">
+										<img src="/upload/gd/orsPoster/2026/thumb/thumb_img_ac131ca2-ae96-4710-b530-38a9635efb6a1769567666723.jpg" alt="&amp;quot;폭풍의 언덕&amp;quot; 포스터" onerror="this.onerror=null;this.src='/images/sub/album_05.png';" loading="lazy">
+									</p>
+									<div class="detail">
+										
+										
+										<!-- ul태그 동적  -->
+										
+										
+											<ul class="grade-name" onclick="location.href='/main/cm/cntnts/cntntsView.do?mi=1088&cntntsId=1063&tab=tabStandard3'" style="cursor: pointer;">
+										
+										
+										
+										
+											
+											
+												<li><img src="/images/main/icon_15.svg" alt="15세이상관람가" loading="lazy"></li>
+											
+											
+											
+											
+											    <li><img src="/images/main/gr_type01.svg" alt="주제" loading="lazy"></li>
+											
+											
+											
+											    <li><img src="/images/main/gr_type02.svg" alt="선정성" loading="lazy"></li>
+											
+											
+											
+											    <li><img src="/images/main/gr_type03.svg" alt="폭력성" loading="lazy"></li>
+											
+											
+											
+											
+											
+											
+											
+											 
+											
+											
+										</ul>
+									</div>
+								</a>
+							</div>
+						
+							<div class="item">
+								
+								<a>
+								
+									<p class="img grade-poster" role="button"  onclick="javascript:goGradeInfo('2552998')" style="cursor: pointer;">
+										<img src="/upload/gd/orsPoster/2026/thumb/thumb_img_89174e92-b29b-41ad-92cd-9ae2065428aa1771461005985.jpg" alt="다이 마이 러브 포스터" onerror="this.onerror=null;this.src='/images/sub/album_05.png';" loading="lazy">
+									</p>
+									<div class="detail">
+										
+										
+										<!-- ul태그 동적  -->
+										
+											<ul class="grade-name" onclick="location.href='/main/cm/cntnts/cntntsView.do?mi=1088&cntntsId=1063&tab=tabStandard4'" style="cursor: pointer;">
+										
+										
+										
+										
+										
+											
+												<li><img src="/images/main/icon_19.svg" alt="청소년관람불가" loading="lazy"></li>
+											
+											
+											
+											
+											
+											
+											
+											    <li><img src="/images/main/gr_type02.svg" alt="선정성" loading="lazy"></li>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											 
+											
+											
+										</ul>
+									</div>
+								</a>
+							</div>
+						
+							<div class="item">
+								
+								<a>
+								
+									<p class="img grade-poster" role="button"  onclick="javascript:goGradeInfo('2546609')" style="cursor: pointer;">
+										<img src="/upload/gd/orsPoster/2026/thumb/thumb_img_cc70e2a4-d602-459e-aa7c-36667baca4ef1769567518162.jpg" alt="휴민트 포스터" onerror="this.onerror=null;this.src='/images/sub/album_05.png';" loading="lazy">
+									</p>
+									<div class="detail">
+										
+										
+										<!-- ul태그 동적  -->
+										
+										
+											<ul class="grade-name" onclick="location.href='/main/cm/cntnts/cntntsView.do?mi=1088&cntntsId=1063&tab=tabStandard3'" style="cursor: pointer;">
+										
+										
+										
+										
+											
+											
+												<li><img src="/images/main/icon_15.svg" alt="15세이상관람가" loading="lazy"></li>
+											
+											
+											
+											
+											    <li><img src="/images/main/gr_type01.svg" alt="주제" loading="lazy"></li>
+											
+											
+											
+											
+											
+											    <li><img src="/images/main/gr_type03.svg" alt="폭력성" loading="lazy"></li>
+											
+											
+											
+											
+											
+											
+											
+											 
+											    <li><img src="/images/main/gr_type06.svg" alt="약물" loading="lazy"></li>
+											
+											
+											
+										</ul>
+									</div>
+								</a>
+							</div>
+						
+							<div class="item">
+								
+								<a>
+								
+									<p class="img grade-poster" role="button"  onclick="javascript:goGradeInfo('2545880')" style="cursor: pointer;">
+										<img src="/upload/gd/orsPoster/2026/thumb/thumb_img_04fd090c-5b15-41ee-ab13-464670cc893b1771461072197.jpg" alt="매드 댄스 오피스 포스터" onerror="this.onerror=null;this.src='/images/sub/album_05.png';" loading="lazy">
+									</p>
+									<div class="detail">
+										
+										
+										<!-- ul태그 동적  -->
+										
+										
+										
+										
+											<ul class="grade-name"  onclick="location.href='/main/cm/cntnts/cntntsView.do?mi=1088&cntntsId=1063&tab=tabStandard1'" style="cursor: pointer;">
+										
+										
+											
+											
+											
+											
+												<li><img src="/images/main/icon_all.svg" alt="전체관람가" loading="lazy"></li>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											 
+											
+											
+										</ul>
+									</div>
+								</a>
+							</div>
+						
+							<div class="item">
+								
+								<a>
+								
+									<p class="img grade-poster" role="button"  onclick="javascript:goGradeInfo('2544816')" style="cursor: pointer;">
+										<img src="/upload/gd/orsPoster/2026/thumb/thumb_img_0ed21cc8-5469-4bec-bbc7-86d13de6ce831769567534671.jpg" alt="왕과 사는 남자 포스터" onerror="this.onerror=null;this.src='/images/sub/album_05.png';" loading="lazy">
+									</p>
+									<div class="detail">
+										
+										
+										<!-- ul태그 동적  -->
+										
+										
+										
+											<ul class="grade-name" onclick="location.href='/main/cm/cntnts/cntntsView.do?mi=1088&cntntsId=1063&tab=tabStandard2'" style="cursor: pointer;">
+										
+										
+										
+											
+											
+											
+												<li><img src="/images/main/icon_12.svg" alt="12세이상관람가" loading="lazy"></li>
+											
+											
+											
+											
+											
+											
+											
+											    <li><img src="/images/main/gr_type03.svg" alt="폭력성" loading="lazy"></li>
+											
+											
+											
+											    <li><img src="/images/main/gr_type04.svg" alt="대사" loading="lazy"></li>
+											
+											
+											
+											
+											    <li><img src="/images/main/gr_type05.svg" alt="공포" loading="lazy"></li>
+											
+											
+											 
+											
+											
+										</ul>
+									</div>
+								</a>
+							</div>
+						
+							<div class="item">
+								
+								<a>
+								
+									<p class="img grade-poster" role="button"  onclick="javascript:goGradeInfo('2533455')" style="cursor: pointer;">
+										<img src="/upload/gd/orsPoster/2026/thumb/thumb_img_b3485802-0219-4d9e-8d23-ad12fe2817211771461325127.jpg" alt="삼악도 포스터" onerror="this.onerror=null;this.src='/images/sub/album_05.png';" loading="lazy">
+									</p>
+									<div class="detail">
+										
+										
+										<!-- ul태그 동적  -->
+										
+										
+											<ul class="grade-name" onclick="location.href='/main/cm/cntnts/cntntsView.do?mi=1088&cntntsId=1063&tab=tabStandard3'" style="cursor: pointer;">
+										
+										
+										
+										
+											
+											
+												<li><img src="/images/main/icon_15.svg" alt="15세이상관람가" loading="lazy"></li>
+											
+											
+											
+											
+											
+											
+											
+											
+											    <li><img src="/images/main/gr_type03.svg" alt="폭력성" loading="lazy"></li>
+											
+											
+											
+											    <li><img src="/images/main/gr_type04.svg" alt="대사" loading="lazy"></li>
+											
+											
+											
+											
+											    <li><img src="/images/main/gr_type05.svg" alt="공포" loading="lazy"></li>
+											
+											
+											 
+											
+											
+										</ul>
+									</div>
+								</a>
+							</div>
+						
+					
+													
+			</div>
+			<div class="control">
+				<a href="" class="prev"><span class="hid">최신 영화 개봉작 슬라이드 이전</span><i class="ri-arrow-left-s-line" aria-hidden="true"></i></a>
+				<a href="" class="stop"><span class="hid">최신 영화 개봉작 슬라이드 정지</span><i class="ri-pause-mini-line" aria-hidden="true"></i></a>
+				<a href="" class="play"><span class="hid">최신 영화 개봉작 슬라이드 재생</span><i class="ri-play-mini-fill" aria-hidden="true"></i></a>
+				<a href="" class="next"><span class="hid">최신 영화 개봉작 슬라이드 다음</span><i class="ri-arrow-right-s-line" aria-hidden="true"></i></a>
+			</div>
+			<a href="/main/gd/grade/selectGradeList.do?category=MV&mi=1090" class="moreBtn">최신 영화 개봉작 더보기<i class="ri-add-line" aria-hidden="true"></i></a>
+		</div>
+		<!-- // 최신영화개봉작 -->
+	</div>
+</div>
+<div class="MC_wrap6">
+	<!-- 바로가기 -->
+	<div class="MC_Box8">
+		
+
+
+
+
+						<div class="bookmark">
+							<div class="list mot1-bottom">
+								<p><img src="/images/main/ico_bookmark01.svg" alt="온라인등급분류 서비스(ORs)"></p>
+								<a href="https://ors.kmrb.or.kr/main.do" target="_blank" title="새창">온라인등급분류 서비스 <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+							</div>
+							<div class="list mot2-bottom">
+								<p><img src="/images/main/ico_bookmark02.svg" alt="자체등급분류관리시스템(IRs)"></p>
+								<a href="https://irs.kmrb.or.kr/main/home/index;jsessionid=3F99EF4ACB49944968FCC9EF9174581F" target="_blank" title="새창">자체등급분류관리시스템 <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+							</div>
+							<div class="list mot3-bottom">
+								<p><img src="/images/main/ico_bookmark03.svg" alt="올바로봄 등급분류 교육포털"></p>
+								<a href="https://allbom.kmrb.or.kr/main/index.jsp" target="_blank" title="새창">등급분류 교육포털 <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+							</div>
+							<div class="list mot4-bottom">
+								<p><img src="/images/main/ico_bookmark04.svg" alt="영등위 KMRB Korea Media Rating Board"></p>
+								<a href="/eng/main.do" target="_blank" title="새창">영문 홈페이지 <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+							</div>
+						</div>
+	</div>
+	<!-- // 바로가기 -->
+</div>
+<!-- 배너모음 -->
+<div class="MC_wrap7">
+	
+
+
+
+
+						<div class="MC_Box9 mot1-bottom">
+							<div class="M_banner">						
+								<div class="lst" id="bannerSlider">
+							
+								
+									
+									
+									<div class="item">
+										<a href="https://www.mcst.go.kr/site/main.jsp" target="_blank" title="새창" >
+											<img src="/upload/main/ba/img_0458edd0-8fea-4ca4-99f7-7128bb1aeadf1758767218309.png;jsessionid=0C4DBDDEC09512E532B5215ABB3A3EE5" alt="문화체육관광부 바로가기">
+										</a>
+									</div>
+								
+									
+									
+									<div class="item">
+										<a href="https://www.kofic.or.kr/kofic/business/main/main.do" target="_blank" title="새창" >
+											<img src="/upload/main/ba/img_83e4287c-b221-4865-80ca-313138385c681758767177512.png;jsessionid=0C4DBDDEC09512E532B5215ABB3A3EE5" alt="영화진흥위원회 바로가기">
+										</a>
+									</div>
+								
+									
+									
+									<div class="item">
+										<a href="https://www.koreafilm.or.kr/main" target="_blank" title="새창" >
+											<img src="/upload/main/ba/img_9c083dc4-bd65-4560-bf8f-ab5d481b974d1758767128854.png;jsessionid=0C4DBDDEC09512E532B5215ABB3A3EE5" alt="한국영상자료원 바로가기">
+										</a>
+									</div>
+								
+									
+									
+									<div class="item">
+										<a href="https://alio.go.kr/" target="_blank" title="새창" >
+											<img src="/upload/main/ba/img_250e8ad5-ed92-4b53-8b46-1e174a7d09b81758767061439.png;jsessionid=0C4DBDDEC09512E532B5215ABB3A3EE5" alt="ALIO 바로가기">
+										</a>
+									</div>
+								
+									
+									
+									<div class="item">
+										<a href="https://www.culture.go.kr/index.do" target="_blank" title="새창" >
+											<img src="/upload/main/ba/img_96d3e817-7e7f-4fa2-8de5-02d6d2ac81291758766985405.png;jsessionid=0C4DBDDEC09512E532B5215ABB3A3EE5" alt="문화포털 바로가기">
+										</a>
+									</div>
+								
+							
+								</div>
+							</div>
+						</div>
+						
+<!--  
+ 						<div class="MC_Box9 mot1-bottom">
+							<div class="M_banner">						
+								<div class="lst" id="bannerSlider">
+									<div class="item">
+										<a href="https://www.mcst.go.kr/site/main.jsp" target="_blank" tabindex="0">
+											<img src="/upload/main/ba/img_0458edd0-8fea-4ca4-99f7-7128bb1aeadf1758767218309.png" alt="문화체육관광부 바로가기">
+										</a>
+									</div>
+									<div class="item">
+										<a href="https://www.kofic.or.kr/kofic/business/main/main.do" target="_blank" tabindex="0">
+											<img src="/upload/main/ba/img_83e4287c-b221-4865-80ca-313138385c681758767177512.png" alt="영화진흥위원 바로가기">
+										</a>
+									</div>
+									<div class="item">
+										<a href="https://www.koreafilm.or.kr/main" target="_blank" tabindex="0">
+											<img src="/upload/main/ba/img_9c083dc4-bd65-4560-bf8f-ab5d481b974d1758767128854.png" alt="한국영상자료원 바로가기">
+										</a>
+									</div>
+									<div class="item">
+										<a href="https://alio.go.kr/" target="_blank" tabindex="0">
+											<img src="/upload/main/ba/img_250e8ad5-ed92-4b53-8b46-1e174a7d09b81758767061439.png" alt="ALIO 바로가기">
+										</a>
+									</div>
+									<div class="item">
+										<a href="https://www.culture.go.kr/index.do" target="_blank" tabindex="0">
+											<img src="/upload/main/ba/img_96d3e817-7e7f-4fa2-8de5-02d6d2ac81291758766985405.png" alt="문화포털 바로가기">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+ -->
+</div>
+<!-- // 배너모음 -->
+	
+	
+</div>
+	
+
+
+<!-- <form name="srchForm" id="srchForm" method="post">
+	<input type="hidden" name="bbsId"  value="" id="bbsId"/>
+	<input type="hidden" name="nttSn"  value="" id="nttSn"/>
+	<input type="hidden" name="ctx"  value="main" id="ctx"/>
+	<input type="hidden" name="mi"  value="" id="mi"/>
+</form> -->
+
+
+<script type="text/javascript">
+
+	$(function() {
+		$(document).on('keydown', '.grade-poster, .grade-name', function(e) {
+	        if (e.key === 'Enter' || e.key === ' ') {
+	            e.preventDefault();
+	            $(this).click();
+	        }
+	    });
+	});
+
+  function goPage(bbsId, nttSn, menuId){
+    
+	location.href="/main/na/ntt/selectNttInfo.do?bbsId=" + bbsId + "&nttSn=" + nttSn +"&mi=" +menuId;
+  }
+  
+  
+  function goGalPage( menuId, bbsId, nttSn){
+		location.href="/main/na/ntt/selectNttInfo.do?mi=" + menuId + "&bbsId=" + bbsId + "&nttSn=" + nttSn;
+	}
+
+  $(document).ready(function(){
+    // 엔터 포함 폼 제출 가로채기
+    $('#searchMainForm').on('submit', function (e) {
+      e.preventDefault();
+      doSearch(this);
+    });
+
+    // 검색 a 태그 클릭 시 폼 제출
+    $('.search-btn').on('click', function (e) {
+      e.preventDefault(); // a 기본 이동 막기
+      $('#searchMainForm').trigger('submit');
+    });
+
+    // 입력창에서 엔터 눌렀을 때도 submit 처리
+    $('#keyword').on('keydown', function (e) {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        $('#searchMainForm').trigger('submit');
+      }
+    });
+
+    // 접근성: 스페이스바로 a 버튼 클릭 가능
+    $('.search-btn').on('keydown', function (e) {
+      if (e.key === ' ') {
+        e.preventDefault();
+        $(this).click();
+      }
+    });
+    
+
+    // 뉴스 내용 태그 제거
+    /*
+    $(".notice .txt").each(function(){
+      var html = $(this).html();
+
+      if (html) {
+        // HTML 엔티티 디코딩
+        var tmp = document.createElement('textarea');
+        tmp.innerHTML = html;
+        html = tmp.value;
+
+        // iframe 제거
+        html = html.replace(/<iframe[\s\S]*?<\/iframe>/gi, "");
+
+        // br을 줄바꿈으로 변환
+        html = html.replace(/<br\s*\/?>/gi, "\n");
+
+        // 모든 HTML 태그 제거
+        html = html.replace(/<[^>]*>/g, "");
+
+        // 공백 정리
+        html = html.replace(/&nbsp;/g, " ")
+                   .replace(/\u00A0/g, " ")
+                   .replace(/[ \t]+\n/g, "\n")
+                   .replace(/\n{3,}/g, "\n\n")
+                   .trim();
+
+        $(this).text(html);
+      }
+    });
+    */
+  });
+  
+  
+  // 등급분류 상세 이동
+	function goGradeInfo(rcvNo){
+    if (!rcvNo) { alert("값 없음"); return; }
+    location.href="/main/gd/grade/selectGradeInfo.do?category=MV&rcvNo=" + rcvNo +"&mi=1090"
+  }
+  
+// OTT 등급분류 상세 이동
+function goOttInfo(rcvNo){
+    if (!rcvNo) { alert("값 없음"); return; }
+    location.href="/main/gd/grade/selectGradeInfo.do?category=ORS&rcvNo=" + rcvNo +"&mi=1094"
+  }
+  
+function doSearch(formEl){
+	if($("#useTitle").val() == "" || $("#useTitle").val() == null){
+		alert("검색어를 입력하세요.");
+		$("#useTitle").focus();
+		return;
+	}
+	
+	/* var url ='/main/sr/search/main.do?mi=1285';
+	if("localhost" ==  window.location.hostname){
+		url ='/main/sr/search/main.do?mi=1283'
+	} */
+	//var url = '/main/gd/grade/selectGradeList.do?category=MV&mi=1090';
+	var url = "/main/sr/search/vodmain.do?mi=1285";
+	var $form = $(formEl || '#searchMainForm');
+	  
+	$form.attr('action',url);
+	$form.append($('<input type="hidden" name="keyword">').val($form.find('#useTitle, [name="useTitle"]').val())).attr('action', url);
+	$form.append($('<input type="hidden" name="category">').val("MV"));
+	$form[0].submit(); // 네이티브 submit
+}
+</script>
+			</div>
+
+		<!-- footer -->
+		
+
+
+<!-- 푸터 영역 -->
+<div id="footer">
+	<div class="inner">
+		<!-- 상단 링크 라인 -->
+		<div class="f-menulinks">
+			<ul>
+				<li><a href="/main/in/indvdl/selectIndvdlView.do?mi=1242" title="개인정보처리방침"><strong>개인정보처리방침</strong></a></li>
+				<li><a href="/main/cm/cntnts/cntntsView.do?mi=1243&cntntsId=1094" title="이메일주소무단수집거부">이메일주소무단수집거부</a></li>
+				<li><a href="/main/cm/cntnts/cntntsView.do?mi=1238&cntntsId=1091" title="윤리행동강령">윤리행동강령</a></li>
+				<li><a href="/main/cm/cntnts/cntntsView.do?mi=1136&cntntsId=1008" title="고객서비스헌장">고객서비스헌장</a></li>
+				<li><a href="/main/cm/cntnts/cntntsView.do?mi=1246&cntntsId=1095" title="저작권정책">저작권정책</a></li>
+				<li><a href="/main/na/ntt/insertNttPage.do?mi=1247&bbsId=1078" title="홈페이지개선">홈페이지개선</a></li>
+				<li><a href="/main/lm/location/locationMapView.do?mi=1170" title="오시는길">오시는길</a></li>
+			</ul>
+			<a href="/main/nl/news/applyNewsLetterView.do?ctntnsId=1044&mi=1119" class="link"><img src="/images/layout/banner01.png" alt="News Letter 뉴스레터 구독" /></a>			
+		</div>
+		<div class="f-menucont">
+			<h2 class="f-logo"><span class="hid">영상물등급위원회</span></h2>
+			<div class="f-body">
+				<address class="f-addr">
+					<span>(48058) 부산광역시 해운대구 센텀서로 39 영상산업센터 3F</span>
+					<span class="label">대표번호:</span>
+					<span>051-990-7200</span>
+				</address>
+				<p class="f-copy">Copyright 2025 KOREA MEDIA RATING BOARD. All rights reserved.</p>
+			</div>
+			<div class="f-banner wa">
+				<a href="http://www.webwatch.or.kr/Situation/WA_Situation.html?MenuCD=110" target="_blank" title="WA 품질인증 마크, 웹와치(WebWatch) 2025.12.31 ~ 2026.12.30"><img src="/images/layout/WA_Mark.png" alt="과학기술정보통신부 WA(WEB접근성) 품질인증 마크 웹와치(WebWatch) 2025.12.31 ~ 2026.12.30" /></a>
+			</div>
+			<div class="f-banner">				
+				<a href="https://mydatasafe.kr/" target="_blank" title="개인정보보호위원회(새창)"><img src="/images/layout/banner02.png" alt="개인정보보호위원회 MISSION INFO.SSIBLE 개인정보 지켜LOCK" /></a>
+			</div>
+		</div>
+	</div>
+
+	<a href="#" class="btn_top"><span class="hid">TOP</span></a>
+</div>
+<!--// 푸터 영역 -->
+		<!-- //footer -->
+	</div>
+	
+</body>
+</html>

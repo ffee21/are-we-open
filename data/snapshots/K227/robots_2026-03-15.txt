@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /SiteControl/
+Sitemap: https://www.kasfo.or.kr/sitemap.xml 

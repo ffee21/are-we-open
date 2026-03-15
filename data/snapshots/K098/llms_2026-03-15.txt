@@ -1,0 +1,301 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="../../../common/css/common.css">
+<script type="text/javascript" src="../../../common/js/jquery.min.js"></script>
+<script type="text/javascript" src="../../../common/js/script.js"></script>
+<link rel="shortcut icon" href="img/favicon.ico" type="/image/x-icon">
+
+<title>알림:소상공인시장진흥공단</title>
+ <style>
+     @charset 'utf-8';
+/*******************************************************************
+ * font define
+ ******************************************************************/
+@font-face {
+	font-family:'Open Sans';
+	font-style:normal;
+	font-weight:300;
+	src:url(/sup/font/OpenSans-Light.eot?v=1.1.0); /*IE9 ?명솚?? 蹂닿린*/
+	src:local("??"),
+		url(/sup/font/OpenSans-Light.eot?#iefix&v=1.1.0) format('embedded-opentype'),
+		url(/sup/font/OpenSans-Light.woff?v=1.1.0) format('woff');
+}
+
+@font-face {
+	font-family:'Open Sans';
+	font-style:normal;
+	font-weight:normal;
+	src:url(/sup/font/OpenSans-Regular.eot?v=1.1.0); /*IE9 ?명솚?? 蹂닿린*/
+	src:local("??"),
+		url(/sup/font/OpenSans-Regular.eot?#iefix&v=1.1.0) format('embedded-opentype'),
+		url(/sup/font/OpenSans-Regular.woff?v=1.1.0) format('woff');
+}
+
+@font-face {
+	font-family:'Open Sans';
+	font-style:normal;
+	font-weight:600;
+	src:url(/sup/font/OpenSans-Semibold.eot?v=1.1.0); /*IE9 ?명솚?? 蹂닿린*/
+	src:local("??"),
+		url(/sup/font/NOpenSans-Semibold.eot?#iefix&v=1.1.0) format('embedded-opentype'),
+		url(/sup/font/OpenSans-Semibold.woff?v=1.1.0) format('woff');
+}
+
+@font-face {
+	font-family:'Open Sans';
+	font-style:normal;
+	font-weight:bold;
+	src:url(/sup/font/NOpenSans-Bold.eot?v=1.1.0); /*IE9 ?명솚?? 蹂닿린*/
+	src:local("??"),
+		url(/sup/font/OpenSans-Bold.eot?#iefix&v=1.1.0) format('embedded-opentype'),
+		url(/sup/font/OpenSans-Bold.woff?v=1.1.0) format('woff');
+}
+
+@font-face {
+	font-family:'Open Sans';
+	font-style:normal;
+	font-weight:800;
+	src:url(/sup/font/OpenSans-ExtraBold.eot?v=1.1.0); /*IE9 ?명솚?? 蹂닿린*/
+	src:local("??"),
+		url(/sup/font/OpenSans-Bold.eot?#iefix&v=1.1.0) format('embedded-opentype'),
+		url(/sup/font/OpenSans-Bold.woff?v=1.1.0) format('woff');
+}
+
+@font-face {
+	font-family:'NG';
+	font-style:normal;
+	font-weight:400;
+	src:url(/sup/font/NanumGothic-Regular.eot); /*IE9 ?명솚?? 蹂닿린*/
+	src:local("??"),
+		url(/sup/font/NanumGothic-Regular.eot?#iefix) format('embedded-opentype'),
+		url(/sup/font/NanumGothic-Regular.woff) format('woff');
+}
+
+@font-face {
+	font-family:'NG';
+	font-style:normal;
+	font-weight:700;
+	src:url(/sup/font/NanumGothic-Bold.eot); /*IE9 ?명솚?? 蹂닿린*/
+	src:local("??"),
+		url(/sup/font/NanumGothic-Bold.eot?#iefix) format('embedded-opentype'),
+		url(/sup/font/NanumGothic-Bold.woff) format('woff');
+}
+
+@font-face {
+	font-family:'NG';
+	font-style:normal;
+	font-weight:800;
+	src:url(/sup/font/NanumGothic-ExtraBold.eot); /*IE9 ?명솚?? 蹂닿린*/
+	src:local("??"),
+		url(/sup/font/NanumGothic-ExtraBold.eot?#iefix) format('embedded-opentype'),
+		url(/sup/font/NanumGothic-ExtraBold.woff) format('woff');
+}
+
+/*******************************************************************
+ * reset css
+ ******************************************************************/
+html, body, #warpper {min-width:998px;height:100%;min-height:100%;}
+html {overflow-y:scroll;font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+body {font-family:'Open Sans',NanumGothic,'?섎닎怨좊뵓','NG',Dotum,'?뗭?',Helvetica,AppleSDGothicNeo,sans-serif;color:#333;font-size:12px;}
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {margin:0;padding:0;border:0;background:transparent;vertical-align:baseline;}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {display:block;}
+nav ul {list-style:none;}
+blockquote, q {quotes:none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content:'';content:none;}
+a {margin:0;padding:0;background:transparent;vertical-align:baseline;color:#333;text-decoration:none;}
+table {border-spacing:0;border-collapse:collapse;}
+caption {width:0;height:0;font-size:0;line-height:0;text-indent:-9999em;}
+button, label, input, textarea, select {margin:0;padding:0;font-family:'Open Sans',NanumGothic,'?섎닎怨좊뵓','NG',Dotum,'?뗭?',Helvetica,AppleSDGothicNeo,sans-serif;cursor:pointer;}
+textarea {overflow-y:auto;font:inherit;font-family:'Open Sans',NanumGothic,'?섎닎怨좊뵓','NG',Dotum,'?뗭?',Helvetica,AppleSDGothicNeo,sans-serif;resize:vertical;}
+button::-moz-focus-inner, input::-moz-focus-inner {padding:0;border:0;}
+::-moz-selection {background:#b3d4fc;text-shadow:none;}
+::selection {background:#b3d4fc;text-shadow:none;}
+address, em, i {font-style:normal;}
+::-webkit-input-placeholder {opacity:0.6;font-family:'Open Sans',NanumGothic,'?섎닎怨좊뵓','NG',Dotum,'?뗭?',Helvetica,AppleSDGothicNeo,sans-serif;font-size:12px;}
+::-moz-placeholder {font-family:'Open Sans',NanumGothic,'?섎닎怨좊뵓','NG',Dotum,'?뗭?',Helvetica,AppleSDGothicNeo,sans-serif;font-size:12px;}
+:-ms-input-placeholder {opacity:0.6;font-family:'Open Sans',NanumGothic,'?섎닎怨좊뵓','NG',Dotum,'?뗭?',Helvetica,AppleSDGothicNeo,sans-serif;font-size:12px;}
+:-moz-placeholder {opacity:0.6;font-family:'Open Sans',NanumGothic,'?섎닎怨좊뵓','NG',Dotum,'?뗭?',Helvetica,AppleSDGothicNeo,sans-serif;font-size:12px;}
+
+
+
+.error {padding: 40px;}
+.error h1 {    margin: 0 0 50px 0;}
+#container {padding:40px 20px;background:#f9f9f9;width: auto; min-height:300px}
+#container .conetnt {width:auto;margin:0 auto;text-align:center;}
+#container .conetnt > h2 {height:80px;border-bottom:1px solid #dbdbdb;font-size:28px;font-weight:700;color:#62686f;line-height:80px;}
+#container .conetnt > .bg_down {height:92px;background-position:160px -2701px;font-size:28px;font-weight:700;color:#62686f;line-height:92px;}
+#container .conetnt .txt_down_01 {margin-top:20px;font-size:19px;font-weight:700;color:#5f6a89;line-height:30px;}
+#container .conetnt .txt_down_02 {margin-top:20px;font-size:20px;color:#686868;line-height:30px;}
+
+
+
+/*
+ * footer
+ */
+
+/* f_site */
+.footer .f_site .fs_t {background:#404751;}
+.footer .f_site .fs_t > a {display:block; font-size:0; line-height:0; text-align:center; padding:12px;}
+.footer .f_site .fs_t > a::before {display:inline-block; content:''; width:23px; height:23px; border:1px solid #fff; border-radius:12px; background:url(../images/footer/ico_menu.png) no-repeat center center; vertical-align:middle; margin-right:8px;}
+.footer .f_site .fs_t > a > span {display:inline-block; font-size:15px; line-height:23px; color:#fff; vertical-align:middle;}
+.footer .f_site .fs_b {display:none;}
+.footer .f_site.open .fs_b {display:block;}
+.footer .f_site .fs_b .fs_list > ul::after {display:block; content:''; clear:both;}
+.footer .f_site .fs_b .fs_list > ul > li {float:left; padding:16px 0;}
+.footer .f_site .fs_b .fs_list > ul > li > dl > dt {font-size:13px; line-height:21px; font-weight:500;}
+.footer .f_site .fs_b .fs_list > ul > li > dl > dd {margin-top:8px;}
+.footer .f_site .fs_b .fs_list > ul > li > dl > dd > ul {padding:2px 0;}
+.footer .f_site .fs_b .fs_list > ul > li > dl > dd > ul > li {position:relative; padding:2px 0; padding-left:8px;}
+.footer .f_site .fs_b .fs_list > ul > li > dl > dd > ul > li::before {display:block; content:''; width:2px; height:2px; border-radius:1px; background:#ddd; position:absolute; left:0; top:11px;}
+.footer .f_site .fs_b .fs_list > ul > li > dl > dd > ul > li > a {display:block; font-size:12px; line-height:20px; color:#666;}
+
+/*
+@media (min-width:1180px) {
+    .f_site .fs_t > a,
+    .f_site .fs_b > div {width:1180px; margin:0 auto;}
+    .f_site .fs_b .fs_list > ul {padding:24px 0;}
+}*/
+
+@media (min-width:768px) {
+    .f_site .fs_b  > div {padding:0 32px;}
+    .f_site .fs_b .fs_list > ul {padding:16px 0;}
+}
+@media (max-width:767px) {
+    .f_site .fs_b  > div {padding:0 24px;}
+    .f_site .fs_b .fs_list > ul {padding:8px 0;}
+}
+
+/* f_info */
+.footer .f_info {background:#f1f1f1; border-top:1px solid #e1e1e1;}
+.footer .f_info .fi_logo {font-size:0; line-height:0;}
+.footer .f_info .fi_logo .fil_mss,
+.footer .f_info .fi_logo .fil_semas {display:inline-block; margin-top:8px;}
+.footer .f_info .fi_logo .fil_mss {width:136px; height:28px; background:url(http://www.sbiz.or.kr/sup/images/footer/mss.png) no-repeat left top; margin-right:16px; font-size:0px}
+.footer .f_info .fi_logo .fil_semas {width:184px; height:28px; background:url(http://www.sbiz.or.kr/sup/images/footer/semas.png) no-repeat left top; font-size:0px}
+.footer .f_info .fi_navigation > ul {font-size:0; line-height:0; padding:0;}
+.footer .f_info .fi_navigation > ul > li {position:relative; display:inline-block; padding:2px 12px}
+.footer .f_info .fi_navigation > ul > li::before {display:block; content:''; width:1px; height:13px; background:#d1d1d1; position:absolute; left:0; top:6px;}
+.footer .f_info .fi_navigation > ul > li:first-child::before {display:none;} 
+.footer .f_info .fi_navigation > ul > li > a {display:block; font-size:13px; line-height:21px; color:#222;}
+.footer .f_info .fi_address {display:block; font-size:12px; line-height:20px; margin-top:20px; color:#666;}
+.footer .f_info .fi_copyright {display:block; font-size:12px; line-height:20px; margin-top:8px; color:#666;}
+
+
+/*
+@media (min-width:1180px) {
+    .footer .f_info > div {width:1180px; margin:0 auto; position:relative; padding:32px 0 48px 380px;}
+    .footer .f_info .fi_logo {position:absolute; left:0; top:40px;}
+    .footer .f_info .fi_logo .fil_mss {margin-right:16px;}
+    .footer .f_info .fi_navigation > ul > li:first-child {padding-left:0;}
+}*/
+
+@media (min-width:768px) {
+    .footer .f_info {text-align:center;}
+    .footer .f_info > div {padding:30px 24px 46px 24px;}
+    .footer .f_info .fi_logo .fil_mss,
+    .footer .f_info .fi_logo .fil_semas {margin-left:8px; margin-right:8px;}
+    .footer .f_info .fi_navigation {margin-top:24px;}
+}
+@media (max-width:767px) {
+    .footer .f_info {text-align:center;}
+    .footer .f_info > div {padding:28px 16px 44px 16px;}
+    .footer .f_info .fi_logo .fil_mss,
+    .footer .f_info .fi_logo .fil_semas {margin-left:8px; margin-right:8px;}
+    .footer .f_info .fi_navigation {margin-top:24px;}
+}
+
+/* content */
+.container > div::after {display:block; content:''; clear:both;}
+
+@media (min-width:1180px) and (max-width:1179px) {
+    .container > div {padding:24px; }
+    .l_static + .content,
+    .l_gs + .content {margin-top:48px;}
+}
+@media (max-width:767px) {
+    .container > div {padding:16px 0px 16px 0px;}
+    .l_static + .content,
+    .l_gs + .content {margin-top:32px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>   
+
+
+
+
+
+</head>
+<body>
+
+	<!-- 에러페이지 -->
+	<div class="error_wrap">
+		<div class="error">
+			<h1><a href="/"><img src="../../../common/img/common/h1_logo.gif" alt="소상공인시장진흥공단"></a></h1>
+			<div id="container">
+		<div class="conetnt">
+
+			   <h2 class="bg_down">서비스 이용에 불편을 드려 죄송합니다.</h2>
+		</div>
+		<div class="conetnt" style="">
+
+      <p class="txt_down_01">일시적으로 접속이 원활하지 않습니다.<br>잠시후에 다시 시도해 주십시오.</p>
+				<p class="txt_down_02">더 좋은 서비스를 제공해 드리기 위해 노력하겠습니다.</p>
+		
+		<!-- 	<p class="txt_down_01" style="padding:20px; line-height:100%; background-color:#000; color:#fff"  >
+			 점검시간 : 7월 16일 (금) 19시 ~ 17일(토) 12시
+			</p> 
+				<p class="txt_down_01">
+				시스템 점검으로 인해 점검시간동안 서비스가 중단되었습니다.<br>
+				※ 더 좋은 서비스를 위해 노력하겠습니다.
+			</p>-->
+      <p class="txt_down_02">시스템 오류 문의 : 1644-5302<br>
+							 창업, 경영, 대출 상담 등 이용문의 : 국번없이 1357 (중소기업통합콜센터)</p>
+		</div>
+			<!-- E : .conetnt -->
+		</div>
+		</div>
+	</div>
+	
+	<div class="footer">
+  <div class="f_info" style="    padding: 0px 0px 30px;">
+    <div style="    padding: 20px;">
+      <div class="fi_logo">
+        <h2 class="fil_mss"><span class="hdn">중소벤처기업부</span></h2>
+        <h2 class="fil_semas"><span class="hdn">소상공인시장진흥공단</span></h2>
+      </div>
+      <!--  <div class="fi_navigation">
+        <ul>
+          <li><a href="https://www.semas.or.kr/web/USE01/USE0101.kmdc">이용약관</a></li>
+          <li><a href="https://www.semas.or.kr/web/USE01/USE0102.kmdc" style="color: #069; font-weight:bold">개인정보처리방침</a></li>
+          <li><a href="https://www.semas.or.kr/web/USE01/USE0103.kmdc">저작권정책</a></li>
+          <li><a href="https://www.semas.or.kr/web/USE01/USE0104.kmdc">책임의한계와법적고지</a></li>
+          <li><a href="https://www.semas.or.kr/web/USE01/USE0105.kmdc">이메일무단수집거부</a></li>
+          <li><a href="http://www.juso.go.kr/openIndexPage.do" target="_blank" title="새창으로 도로명주소안내 바로가기">도로명주소안내</a></li>
+        </ul>-->
+      </div>
+      <p class="fi_address">(우) 34917 대전광역시 중구 보문로 246 대림빌딩 2~3층, 11층, 16층  소상공인시장진흥공단.<br>
+        사업자등록번호 : 305-82-21570, <b>대표전화 : 국번없이 1357</b></p>
+      <p class="fi_copyright">ⓒ SEMAS</p>
+    </div>
+  </div>
+</div>
+</body></html>

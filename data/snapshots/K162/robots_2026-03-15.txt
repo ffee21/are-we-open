@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /b/21/cuc
+Disallow: /b/67/0/w 
+#DaumWebMasterTool:e824075acd352f2cd20482aedac894af5c3016cddaf4b7dfcafa0a697254ba2c:wLg8YHhVZ8O8W5F8hoAIFA==

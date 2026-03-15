@@ -1,0 +1,27 @@
+
+
+
+
+<script type="text/javascript">
+if( location.href.indexOf("kirams.re.kr/nremc") != -1 ){
+
+	location.href = "https://www.kcch.re.kr/nremc/";
+
+} else if( location.href.indexOf("kirams.re.kr/rirams") != -1 ){
+
+	location.href = "https://www.kcch.re.kr/rirams/";
+	
+} else if( location.href.indexOf("kirams.re.kr") != -1 ){
+	
+	location.href = "https://www.kcch.re.kr/kirams/";
+	
+} else if( location.href.indexOf("wamis.kcch.re.kr") != -1 ){
+		
+	location.href = "https://www.kcch.re.kr/ref/";
+	
+}else{
+	
+	location.href = "https://www.kcch.re.kr/";
+	
+}
+</script>

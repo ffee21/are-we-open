@@ -1,0 +1,63 @@
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<title> 장애안내</title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="/static/css/gw/common.css" type="text/css" />
+<link rel="stylesheet" href="/static/css/gw/sub.css" type="text/css" />
+<style type="text/css">
+body{font-size: 12px;}
+*{padding: 0;margin: 0;}
+em{font-style:normal;font-weight: bold;}
+.col_blue{color: #0069ab;}
+#wrap{max-width: 900px;margin:0 auto;}
+.logo{padding: 20px 0;border:none;}
+.s{height: 177px;padding: 33px 0 0 328px;background: url(/static/img/gw/common/errbg.jpg) no-repeat 0 0;}
+.s .t{padding-bottom: 22px;border-bottom: 1px solid #d8d8d8;width: 361px;}
+.s .code{padding-top: 18px;}
+.s em{color: #eb2c00;font-weight: normal;font-family: verdana;}
+.s em span{font-weight: bold;}
+.s strong{font-size: 14px;font-weight: bold;}
+.footer{text-align: center;padding-top: 30px;color: #3c3c3c;}
+.copyright{color: #666666;font-size: 11px;font-family: verdana;}
+img{border:none}
+/*.error_area {background:url(/static/img/gw/common/dent.gif) no-repeat left top;padding:1em 0 0 240px;margin:5em;}
+.error_area .tit{font-size:2.1em;letter-spacing: -1px}
+.error_area .con{font-size:1.05em;margin:0.7em 0;}
+.error_area .box{border:1px solid #e5e5e5;}*/
+	.error_area{min-height:250px;}
+/*@media screen and (max-width:1200px){
+	
+	.error_area {background:url(/static/img/gw/common/dent.gif) no-repeat left 1em;padding:1em 0 0 200px;margin:5em 2em;background-size:170px;}
+}
+@media screen and (max-width:767px){
+	.error_area {background:url(/static/img/gw/common/dent.gif) no-repeat center top;padding:150px 0 0 0;margin:1em;background-size:150px;}
+	.error_area .tit{font-size:1.7em;}
+}*/
+</style>
+</head>
+<body>
+<div id="wrap">
+	<!-- <p class="logo"><a href="/"><img src="/static/img/gw/common/logo.png" alt="" /></a></p>
+	<div class="s">
+		<p class="t"><img src="/static/img/gw/common/err_txt.gif" alt="페이지가 없거나 잘못된 경로입니다. 파일 또는 페이지가 없거나 잘못된 경로입니다.경로를 다시 확인하시고 이용해 주시기 바랍니다.이용에 불편을 드려 대단히 죄송합니다." /></p>
+		
+		<p style="text-align:center;padding-right:50px;padding-top:10px"><a href="/" class="b-submit" ><span>메인으로 바로가기</span></a></p>
+	</div>
+	<div class="footer">
+		<p class="addr"> (),  <strong>TEL : </strong> </p>
+		<p class="copyright"></p>
+	</div> -->
+
+	<div class="error_area">
+		<p class="tit">서울대학교치과병원 홈페이지 이용에 <span>불편을 드려서 죄송합니다.</span> </p>
+		<p class="con">오류 발생 시 페이지를 ‘<span class="cor_red">새로고침</span>’ 하거나, 인터넷 브라우저의 <span class="cor_red">캐쉬를 삭제</span>한 후 브라우저를 닫고  <span class="cor_red">다시 접속</span>해 주시기 바랍니다. </p>
+		<div class="box pz">지속적인 오류 발생 시 <span class="cor_sky">02)2072-1367</span> 또는 대외협력팀으로 문의해주시기 바랍니다. </div>
+	</div>
+</div>
+</body>
+</html>

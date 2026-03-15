@@ -1,0 +1,66 @@
+User-agent: *
+Allow: /
+Disallow: /hug/homepage_file_upload/status_of_high_price_area.pdf
+Disallow: /hug/homepage_file_upload/hvmanage_area_status(230105).pdf
+
+User-agent: Yeti
+Allow: /
+
+User-agent: Googlebot
+Disallow:
+Disallow: /m*/
+Disallow: /com*/
+Disallow: /bo*/
+Disallow: /../../search/search.do
+Disallow: /../../bbs/
+Crawl-delay: 65
+
+User-agent: naverbot
+Disallow:
+Disallow: /m*/
+Disallow: /com*/
+Disallow: /bo*/
+Crawl-delay: 65
+
+User-agent: Daumoa
+Disallow:
+Disallow: /m*/
+Disallow: /com*/
+Disallow: /bo*/
+Crawl-delay: 65
+
+User-agent: yahoo-slurp
+Disallow:
+Disallow: /m*/
+Disallow: /com*/
+Disallow: /bo*/
+Crawl-delay: 65
+
+User-agent: bingbot 
+Disallow:
+Disallow: /m*/
+Disallow: /com*/
+Disallow: /bo*/
+Disallow: /houstar/web/p06/02/p060202.jsp
+Crawl-delay: 65
+
+User-agent: baiduspider
+Disallow:
+Disallow: /m*/
+Disallow: /com*/
+Disallow: /bo*/
+Crawl-delay: 65
+
+User-agent: MSNBot
+Disallow:
+Disallow: /m*/
+Disallow: /com*/
+Disallow: /bo*/
+Disallow: /houstar/web/p06/02/p060202.jsp
+Crawl-delay: 65
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: Applebot
+Disallow: /

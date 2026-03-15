@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ks_c_5601-1987"/>
+  <title>Page Not Found</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      line-height: 1.2;
+      margin: 0;
+    }
+
+    html {
+      color: #888;
+      display: table;
+      font-family: sans-serif;
+      height: 100%;
+      text-align: center;
+      width: 100%;
+    }
+
+    body {
+      display: table-cell;
+      vertical-align: middle;
+      margin: 2em auto;
+    }
+
+    h1 {
+      color: #555;
+      font-size: 2em;
+      font-weight: 400;
+    }
+
+    p {
+      margin: 0 auto;
+      width: 600px;
+    }
+
+    @media only screen and (max-width: 600px) {
+
+      body,
+      p {
+        width: 95%;
+      }
+
+      h1 {
+        font-size: 1.5em;
+        margin: 0 0 0.3em;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <img src="https://www.88countryclub.co.kr/images/sub_logo.png"/>
+  <br/>
+  <br/>
+  <br/>
+  <h1>��û�Ͻ� �������� ã�� �� �����ϴ�.</h1>
+  <br/>
+  <p>�Է��Ͻ� �ּҰ� ��Ȯ���� �ٽ��ѹ� Ȯ���� �ּ���.<br/> ���ǻ����� ���� ��� �����ڿ��� �����Ͻñ� �ٶ��ϴ�.</p>
+  <br/>
+  <a href="/">Home</a>
+</body>
+
+</html>

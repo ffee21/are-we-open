@@ -1,0 +1,12 @@
+User-Agent: *
+Allow: /$
+Disallow: /_Admin
+Disallow: /_UPLOAD
+Disallow: /resources
+Disallow: /downloadRun.do
+Disallow: /*Board.do
+Disallow: /*delete*
+Disallow: /*Delete*
+Disallow: /*update*
+Disallow: /*Update*
+Disallow: /*Proc.do

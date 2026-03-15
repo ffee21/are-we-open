@@ -1,0 +1,10 @@
+User-agent : Googlebot
+Disallow: /upload/
+Disallow: /back/
+Disallow: /totalSearch/
+Disallow: /front/board/boardContentsListPage.do?*board_id=327
+Disallow: /front/board/boardContentsListPage.do?*board_id=279
+Disallow: /front/board/boardContentsListPage.do?*board_id=239
+Disallow: /front/board/boardContentsListPage.do?*board_id=298
+Disallow: /front/board/boardContentsListPage.do?*board_id=329
+Disallow: /front/board/boardContentsListPage.do?*board_id=333

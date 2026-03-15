@@ -1,0 +1,7 @@
+User-Agent: *
+Allow: /
+Disallow: /fileDownload*
+Disallow: /kps/search*
+Disallow: /kps/event*
+Disallow: /vocBoard*
+Disallow: /eps/questionAndAnswer*

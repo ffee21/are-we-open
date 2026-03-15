@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /web/intgSch/intgSchListPage.do
+Disallow: /eng/intgSch/intgImsiSchListPage.do
+Disallow: /web/board/boardContentsSecretPage.do?board_id=20
+Disallow: /web/board/boardContentsSecretPage.do?board_id=22
+Allow: /

@@ -1,0 +1,34 @@
+<head><meta charset='utf-8'><title>404 : 페이지를 찾을 수 없습니다.</title></head><style>
+    html, body {
+        height: 100%;
+    }
+    
+    html {
+        display: table;
+        margin: auto;
+    }
+    
+    body, h1 {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    p {
+        width: 100%;
+        text-align: center;
+    }
+
+    button {
+        background-color: #4193CE;
+        border-color: #4193CE;
+        color: white;
+        font-weight: bold;
+        border-radius: 5px; # 버튼 모서리 둥글게
+        box-sizing: border-box;
+        padding: 10px;
+    }
+    </style><html><body><h1>
+    <h1>404 : 페이지를 찾을 수 없습니다.</h1>
+    <hr>
+    <p><a href='https://www.knudh.or.kr'><button type='button'>홈으로 가기</button></a></p>
+    </body></html>

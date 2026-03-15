@@ -1,0 +1,10 @@
+User-agent: *
+Disallow:/super/
+Disallow:/upload/
+Disallow:/html/
+Disallow:/images/
+Disallow:/agspay/
+Disallow:/error/
+Disallow:/common/
+Disallow:/lib/
+Disallow:/WEB-INF/

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEWSEOUL COUNTRY CLUB</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;    
+            background-color: #ffffff;
+        }
+
+        .image-container {
+            position: relative;
+            display: inline-block; 
+        }
+
+        .image-container img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .overlay-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            font-size: 2rem; 
+            font-weight: bold;
+            color: #333;     
+        }
+    </style>
+</head>
+
+<body>
+    <div class="image-container">      
+        <img src="/error_empty.png" alt="페이지 안내">
+        <div class="overlay-text">
+            존재하지 않는 페이지 입니다.
+        </div>
+    </div>
+</body>
+</html>

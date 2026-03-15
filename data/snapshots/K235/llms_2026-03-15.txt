@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+	<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>SCMS 404 Error Page</title>
+
+		<link rel="stylesheet" href="./css/base.css">
+		<link rel="stylesheet" href="./css/font.css">
+
+		<!-- [if lt IE 9]>
+			<script src="/http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+			<script src="/js/html5shiv.js"></script>
+			<script src="/js/respond.min.js"></script>
+		<![endif] -->
+		
+		<style>		
+		/*404*/
+		#error{position:fixed; width:100%; height:100%; left:0; top:0; background:#EB7A6B; }
+		#error .errortxt{position:fixed; top:20%; left:50%; transform:translateX(-50%); padding-left:340px; padding-top:120px; }
+		#error .errortxt::before{position:absolute; content:''; display:block; left:0; top:0; width:420px; height:540px; background:url(/images/common/error404.svg) no-repeat; background-size:contain;}
+		#error .errortxt .txt{ font-size: 80px; font-weight: 400; color:#fff; }
+		#error .errortxt .stxt{margin-top:30px; color:#fff; font-size: 19px; opacity:.5; }
+		#error .errortxt .word{margin-top:10px; color:#fff; font-size:24px; font-weight: 400;}
+		#error .errortxt .go_home{position:relative; display:inline-block; margin-top:50px; width:160px; height:45px; line-height:45px; border:1px solid #fff; text-align:center; color:#fff; font-size: 16px; font-weight: 400;}
+		#error .errortxt .go_home::before{position:absolute; content:''; z-index:-1; left:0; top:0; width:0; height:100%; background:#D2311C; transition:.3s;}
+		#error .errortxt .go_home:hover::before,
+		#error .errortxt .go_home:focus::before{width:100%;}
+		</style>
+
+	</head>
+<body>
+
+	<div id="error">
+		<div class="errortxt">
+			<p class="txt">ERROR</p>
+			<p class="stxt">Sorry, the page not found.</p>
+			<p class="word">페이지를 찾을 수 없습니다.</p>
+			<a href="./index" class="go_home" title="메인으로 이동">메인으로 이동</a>
+		</div>
+	</div>
+
+
+</body>
+
+</html>

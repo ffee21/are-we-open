@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+ <head>
+  <style>
+   body {
+      background-color: white;
+   }
+
+   h1 {
+      color: black;
+      text-align: center;
+      font-size: 40px;
+   }
+
+   p {
+    color: black;
+      font-family: verdana;
+      font-size: 20px;
+   }
+  </style>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ </head>
+ <body>
+  <h1>현재 페이지를 연결할 수 없습니다</h1>
+  <p>ㆍ웹 주소가 올바른지 확인하세요.</p>
+  <!--<p>ㆍ웹 사이트에 문제가 발생했습니다.</p>
+  <p>ㆍ몇 분 후에 페이지를 새로 고치세요.</p>-->
+  <p style="text-align:center;">
+   <a href="/"><img src="http://www.knuch.kr/img/intro/title.gif" align="center"></a>
+  </p>
+ </body>
+</html> 

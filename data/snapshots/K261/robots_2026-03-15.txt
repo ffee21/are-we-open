@@ -1,0 +1,12 @@
+User-agent: *
+Allow : /
+Disallow : /upload/
+Disallow : /board/
+Disallow : /docs/
+Disallow : /super/
+Disallow : /total/
+Disallow : /search/
+Disallow : /web/lay1/program/S1T13C78/taq/
+Disallow : /web/lay1/program/S1T1C104/total/
+Disallow : /web/lay1/bbs/
+Crawl-delay: 10

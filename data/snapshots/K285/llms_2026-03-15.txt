@@ -1,0 +1,47 @@
+<HTML>
+ <HEAD>
+  <TITLE> 한국장학재단 </TITLE>
+  <meta http-equiv=Content-type content="text/html; charset=UTF-8">
+
+   <style type="text/css">
+	.page_error {text-align:center;border:1px solid #e9e8e8;padding:100px 0 140px 0;}
+	.error_info {width:375px;height:112px;text-align:left;color:#757575;font-size:11px;line-height:16px;background:url('http://www.kosaf.go.kr/images/common/error_bg01.gif') no-repeat;padding-left:170px;margin:50px auto 0 auto;}
+	.error_info strong {color:#167dcc;line-height:20px;}
+  </style>
+ 
+ </HEAD>
+ 
+ <BODY>
+  
+<table border="0" style="background-color:#ffffff" align="center">
+  <tr><td height=80></td></tr>
+  <tr>
+    <td><img src="http://www.kosaf.go.kr/images/common/logo01.gif"></td>
+  </tr>
+  <tr>
+  <tr>
+    <td>
+	
+		<div id="container">
+			<div class="page_error">
+				<p>
+				<img src="http://www.kosaf.go.kr/images/common/error_text01.gif"/>
+				</p>
+ 
+				<div class="error_info" style="width:650px;">
+					방문하시려는 페이지는 찾을수 없는 페이지 입니다.<br/>
+					페이지의 주소가 변경 혹은 삭제되어 요청하신 페이지를 찾을 수 없습니다.<br/>
+					관련 문의사항은 고객센터로 연락 주시면 안내해 드리겠습니다.<br/>
+					<br/>
+					<strong>고객센터 : 1599-2000</strong><br/>
+<a href="javascript:history.back();"><img src="http://www.kosaf.go.kr/images/common/btn/btn_before03.gif" alt="이전 화면 보기" /></a>
+
+				</div>
+			</div>
+		</div>
+ 
+    </td>
+  </tr>
+</table>
+ </BODY>
+</HTML>

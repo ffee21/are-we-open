@@ -1,0 +1,22 @@
+user-agent: Googlebot
+user-agent: Googlebot-News
+user-agent: Yeti
+user-agent: Daumoa
+allow: /
+disallow: /site/*/search/list
+disallow: /site/main/search/list
+disallow: /site/adstat/search/list
+disallow: /site/*/board/*/list
+disallow: /site/main/board/hire/list
+disallow: /site/adhrd/board/integrated_qna/list
+disallow: /site/admuseum/board/qna1/list
+disallow: /site/adedu/board/b_qna/list
+disallow: /site/adedu/board/recruit/list
+disallow: /site/main/board/hire/
+disallow: /site/adhrd/board/integrated_qna/
+disallow: /site/admuseum/board/qna1/
+disallow: /site/adedu/board/b_qna/
+disallow: /site/adedu/board/recruit/
+
+user-agent: *
+disallow: /

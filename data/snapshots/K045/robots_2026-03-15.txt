@@ -1,0 +1,12 @@
+User-agent: *
+
+Allow: /nmc/user/login
+Allow: /nmc/user/join/*
+Disallow: /nmc/user/*
+Disallow: /nmc/mypage/*
+Disallow: /nmc/board/B0000019
+Disallow: /nmc/board/B0000019/*
+Disallow: /nmc/board/B0000020
+Disallow: /nmc/board/B0000020/*
+
+Sitemap: https://www.nmc.or.kr/sitemap.xml

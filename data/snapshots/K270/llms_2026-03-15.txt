@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head></head>
+<style type="text/css">
+* {margin:0; padding:0;}
+html {margin:0;padding:0;height:100%;overflow-y:auto;}
+body {-ms-overflow-style:scrollbar;/*overflow:hidden;*/}
+body,html {height:100%; font-size:13px; font-family:'Nanum Gothic','맑은 고딕','Malgun Gothic','돋움',dotum,sans-serif; color:#333; letter-spacing:0; line-height:1.4em; margin:0;}
+.wrap{padding: 24px;box-shadow: inset 0px 0px 7px 1px #ddddddb3;width: 636px;position: absolute;left:calc(50% - 318px);top: calc(50% - 170px);}
+.wrap_cont{background: #e9e9e9b3;padding: 50px}
+.wrap_cont_1{text-align: center; border-bottom: 1px solid #bbb;padding-bottom: 20px}
+.wrap_cont_2{margin-top: 20px}
+h4{font-weight: 400;}
+footer{display:none;}
+</style>
+
+<body>
+
+	<div class="wrap">
+		<div class="wrap_cont">
+			<div class="wrap_cont_1">
+				<img src="/humanframe/global/assets/image/common_error_img.png">
+			</div>
+			<div class="wrap_cont_2">
+				<h4>현재, 보다 편리하고 안정적인 서비스 제공을 위한 시스템 정기점검 작업을 진행중입니다.</h4>
+			</div>
+		</div>
+	</div>
+	
+</body>
+
+</html>

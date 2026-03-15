@@ -1,0 +1,14 @@
+User-agent: Yeti
+Allow: /
+
+User-agent: Googlebot
+Disallow: /search/search.do
+Disallow: /rirams/search/search.do
+Disallow: /nremc/search/search.do
+Disallow: /kricp/search/search.do
+Disallow: /kirams/search/search.do
+
+Disallow: /kirams/board/clntBoard*
+Disallow: /board/clntBoard*
+Disallow: /nremc/board/clntBoard*
+Disallow: /health/board/clntBoard*

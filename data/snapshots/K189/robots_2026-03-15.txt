@@ -1,0 +1,17 @@
+User-agent: *
+Disallow: /
+
+User-agent: Yeti
+Allow: /
+Disallow: /aivorySearch/*
+Disallow: /eia/aivorySearch/*
+
+User-agent: Googlebot
+Allow: /
+Disallow: /aivorySearch/*
+Disallow: /eia/aivorySearch/*
+
+User-agent: Daum
+Allow: /
+Disallow: /aivorySearch/*
+Disallow: /eia/aivorySearch/*

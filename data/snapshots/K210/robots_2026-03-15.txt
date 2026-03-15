@@ -1,0 +1,6 @@
+User-agent: Googlebot
+Disallow: /search-detail.do
+Disallow: /infra/board/
+Disallow: /compliment/list
+Disallow: /compliment/view
+

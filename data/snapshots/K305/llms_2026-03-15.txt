@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+<meta name="format-detection" content="telephone=no, address=no, email=no" />
+<title>레츠코레일</title>
+<style>
+/* reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input,select,section,textarea,button {box-sizing:border-box;margin:0;padding:0;border:0;}
+html, body {height:100%;}
+dl, ul, ol, menu, li {list-style:none}
+canvas, footer, header, hgroup, menu, nav, section {display:block;}
+img, input, select, textarea, button, label {vertical-align:middle;}
+textarea {resize:none;}
+img, video {max-width:100%;}
+a {text-decoration:none;}
+address, caption, cite, code, dfn, em, i, var {font-style:normal;font-weight:normal}
+body, h1, h2, h3, h4, h5, h6, strong, table, th, td, input, select, textarea, button, a {font-family:'돋움',Dotum,'굴림체',Gulim,Aria,Helvetica,AppleGothic,Sans-serif;font-size:12px;color:#727272;}
+.ko_intro {width:1190px;height:712px;margin:0 auto;background: url('intro2.jpg') no-repeat 50% 50%;background-size:cover;}
+.ko_intro .note {text-align:right;padding:160px 305px 0 0;}
+.ko_intro .link_site {text-align:center;display:flex;justify-content:center;padding-top:40px;}
+.ko_intro .link_site li {margin:0 15px;}
+@media screen and (max-width:1190px) {
+.ko_intro {width:100%;}
+.ko_intro .note {text-align:center;padding:50px 0 0 0;}
+.ko_intro .link_site {padding-top:120px;}
+}
+@media screen and (max-width:640px) {
+.ko_intro {height:auto;background-image:url('intro_mo.png');}
+.ko_intro .note {text-align:center;padding:30px 0 0 0;}
+.ko_intro .link_site {display:block;padding-top:30px;}
+.ko_intro .link_site li + li {margin:20px 0 0 0;}
+.pp_bd {width: 80% !important;}
+}
+
+@media screen and (max-width:480px) {
+.ko_intro {padding:0 70px;}
+.ko_intro .link_site li {margin:0;}
+}
+
+.pp_bd {width: 640px; border: 5px solid #027DDA; background-color: #fff; font-family:Nanum_Gothic, Noto Sans KR, sans-serif;  margin: auto; margin-top: 50px;}
+.pp_hd {text-align: center; height: 10%; margin: 20px; font-size:25px;background-image: url(site/info/images/main/logo-info--color.svg); background-repeat: no-repeat; padding-top: 50px; background-position: center 5px; }
+.pp_con p {margin: 10px 10px 20px 15px;}
+.pp_cp1 {line-height: 23px;font-size: 16px;}
+.pp_cp2 {background-color: #E8F3FB; padding: 20px 30px; font-weight: bold; line-height: 25px;font-size: 16px;}
+.pp_cp3 {font-size: 14px; line-height: 21px; color: #0066B3;} 
+.pp_cp4 {text-align: center; font-size: 16px; line-height: 26px;} 
+.pp_cp5 {font-size: 12px; text-align: left; background-color:#F3F3F3; padding: 8px 30px; ;}
+
+
+</style>
+	<title>웹 페이지를 찾을 수 없습니다</title>
+</head>
+<body>
+	<div>
+		<div class="pp_bd">
+	    	<div class="pp_hd">
+				웹 페이지를 찾을 수 없습니다
+			</div>
+            <div class="pp_con" style="border-top: 1px solid;">
+                <p class="pp_cp1">방문하려는 페이지의 주소 입력이 잘못되었거나,<br> 페이지의 주소가 변경, 삭제되어 페이지를 찾을 수가 없습니다. </p>
+	      <p class="pp_cp2"> 입력하신 페이지의 주소를 다시 확인해주시기 바랍니다. </br> 확인 후에도 해당 오류가 지속될 경우 관리자에게 문의바랍니다!</p>       
+                <p class="pp_cp1">Sorry, the page you tried cannot be found. </br> If the problem continues, contract the site owner.</p>
+            </div>
+	    </div>
+	</div>
+	<div style="margin-top: 50px; display: flex;">
+		<li style="margin: auto;"">
+			<a href="https://info.korail.com/info/index.do">
+				<img src="intro_mn1.png" alt="코레일 기업홈페이지 바로가기" />
+			</a>
+		</li>
+	</div>
+</body>
+</html>

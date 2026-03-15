@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /usr/upload/
+Disallow: /var/filemanager/
+Disallow: /home/webapps/sonosa.or.kr/com/art/egovframework/com/cop/bbs
+Disallow: /home/webapps/sonosa.or.kr/com/js/egovframework/com/cop/bbs
