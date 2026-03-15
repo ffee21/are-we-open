@@ -726,15 +726,74 @@
         return section;
       }
 
-      // robots.txt snapshot
-      var robotsSnapshot = (org.robots_txt && org.robots_txt.snapshot) ? org.robots_txt.snapshot : null;
+      // robots.txt snapshot — lite JSON에는 snapshot이 없으므로 파일에서 fetch
       var robotsExists = org.robots_txt && org.robots_txt.exists;
-      snapPanel.appendChild(buildSnapshotBlock('\uC6D0\uBCF8 robots.txt', 'robots.txt', robotsSnapshot, robotsExists));
+      var robotsSection = buildSnapshotBlock('\uC6D0\uBCF8 robots.txt', 'robots.txt', null, robotsExists);
+      snapPanel.appendChild(robotsSection);
 
-      // llms.txt snapshot
-      var llmsSnapshot = (org.llms_txt && org.llms_txt.snapshot) ? org.llms_txt.snapshot : null;
       var llmsExists = org.llms_txt && org.llms_txt.exists;
-      snapPanel.appendChild(buildSnapshotBlock('\uC6D0\uBCF8 llms.txt', 'llms.txt', llmsSnapshot, llmsExists));
+      var llmsSection = buildSnapshotBlock('\uC6D0\uBCF8 llms.txt', 'llms.txt', null, llmsExists);
+      snapPanel.appendChild(llmsSection);
+
+      // 스냅샷 파일을 비동기로 로드
+      if (robotsExists) {
+        fetch('data/snapshots/' + org.org_id + '/robots_' + org.scan_date + '.txt')
+          .then(function(r) { return r.ok ? r.text() : null; })
+          .then(function(text) {
+            if (text) {
+              var block = document.createElement('div');
+              block.className = 'code-block';
+              var bHeader = document.createElement('div');
+              bHeader.className = 'code-block-header';
+              var bTitle = document.createElement('span');
+              bTitle.className = 'code-block-title';
+              bTitle.textContent = 'robots.txt';
+              var bCopy = document.createElement('button');
+              bCopy.className = 'btn-copy';
+              bCopy.textContent = '\u2398 \uBCF5\uC0AC\uD558\uAE30';
+              bCopy.addEventListener('click', function() { App.copyToClipboard(text, bCopy); });
+              bHeader.appendChild(bTitle);
+              bHeader.appendChild(bCopy);
+              block.appendChild(bHeader);
+              var pre = document.createElement('pre');
+              pre.textContent = text;
+              block.appendChild(pre);
+              // 기존 "파일이 존재하지 않거나" 메시지를 교체
+              var existing = robotsSection.querySelector('.info-box');
+              if (existing) existing.replaceWith(block);
+              else robotsSection.appendChild(block);
+            }
+          }).catch(function() {});
+      }
+
+      if (llmsExists) {
+        fetch('data/snapshots/' + org.org_id + '/llms_' + org.scan_date + '.txt')
+          .then(function(r) { return r.ok ? r.text() : null; })
+          .then(function(text) {
+            if (text) {
+              var block = document.createElement('div');
+              block.className = 'code-block';
+              var bHeader = document.createElement('div');
+              bHeader.className = 'code-block-header';
+              var bTitle = document.createElement('span');
+              bTitle.className = 'code-block-title';
+              bTitle.textContent = 'llms.txt';
+              var bCopy = document.createElement('button');
+              bCopy.className = 'btn-copy';
+              bCopy.textContent = '\u2398 \uBCF5\uC0AC\uD558\uAE30';
+              bCopy.addEventListener('click', function() { App.copyToClipboard(text, bCopy); });
+              bHeader.appendChild(bTitle);
+              bHeader.appendChild(bCopy);
+              block.appendChild(bHeader);
+              var pre = document.createElement('pre');
+              pre.textContent = text;
+              block.appendChild(pre);
+              var existing = llmsSection.querySelector('.info-box');
+              if (existing) existing.replaceWith(block);
+              else llmsSection.appendChild(block);
+            }
+          }).catch(function() {});
+      }
 
       // Additional info
       if (org.sitemap_xml) {
@@ -909,25 +968,36 @@
         }
 
         // Show current snapshots as reference in suggestion tab
-        if (robotsSnapshot) {
+        if (robotsExists) {
           var refTitle = document.createElement('h3');
           refTitle.style.cssText = 'margin: var(--space-xl) 0 var(--space-md); font-size: 1rem;';
           refTitle.textContent = '\uD604\uC7AC robots.txt (\uCC38\uACE0\uC6A9)';
           sugPanel.appendChild(refTitle);
 
-          var refBlock = document.createElement('div');
-          refBlock.className = 'code-block';
-          var refHeader = document.createElement('div');
-          refHeader.className = 'code-block-header';
-          var refName = document.createElement('span');
-          refName.className = 'code-block-title';
-          refName.textContent = 'robots.txt (\uD604\uC7AC)';
-          refHeader.appendChild(refName);
-          refBlock.appendChild(refHeader);
-          var refPre = document.createElement('pre');
-          refPre.textContent = robotsSnapshot;
-          refBlock.appendChild(refPre);
-          sugPanel.appendChild(refBlock);
+          var refContainer = document.createElement('div');
+          refContainer.className = 'code-block';
+          refContainer.textContent = '\uB85C\uB529 \uC911...';
+          sugPanel.appendChild(refContainer);
+
+          fetch('data/snapshots/' + org.org_id + '/robots_' + org.scan_date + '.txt')
+            .then(function(r) { return r.ok ? r.text() : null; })
+            .then(function(text) {
+              if (text) {
+                refContainer.textContent = '';
+                var refHeader = document.createElement('div');
+                refHeader.className = 'code-block-header';
+                var refName = document.createElement('span');
+                refName.className = 'code-block-title';
+                refName.textContent = 'robots.txt (\uD604\uC7AC)';
+                refHeader.appendChild(refName);
+                refContainer.appendChild(refHeader);
+                var refPre = document.createElement('pre');
+                refPre.textContent = text;
+                refContainer.appendChild(refPre);
+              } else {
+                refContainer.textContent = '\uC2A4\uB0C5\uC0F7 \uD30C\uC77C\uC744 \uBD88\uB7EC\uC62C \uC218 \uC5C6\uC2B5\uB2C8\uB2E4.';
+              }
+            }).catch(function() { refContainer.textContent = '\uC2A4\uB0C5\uC0F7 \uD30C\uC77C\uC744 \uBD88\uB7EC\uC62C \uC218 \uC5C6\uC2B5\uB2C8\uB2E4.'; });
         }
       }
 
