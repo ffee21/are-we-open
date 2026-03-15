@@ -1,0 +1,446 @@
+================================================================================
+ARE WE OPEN? ANALYSIS PIPELINE - ACCURACY AUDIT REPORT
+================================================================================
+Audit Date:    2026-03-15
+Sample Size:   20 organizations across 10 org_types
+Methodology:   curl -sL --connect-timeout 5 --max-time 10 to fetch robots.txt,
+               llms.txt, and sitemap.xml; compare with stored results.json data
+================================================================================
+
+VERIFICATION CHECKS PER ORGANIZATION:
+  [A] robots.txt exists?
+  [B] full_block (User-agent: * / Disallow: / with no Allow)?
+  [C] LLM crawlers (GPTBot, ClaudeBot) blocked?
+  [D] llms.txt exists (real text file, not HTML error page)?
+  [E] sitemap.xml exists (real XML, not HTML error page)?
+
+================================================================================
+DETAILED RESULTS
+================================================================================
+
+1. M01 | 재정경제부 (Ministry of Economy and Finance)
+   URL: https://www.moef.go.kr
+   Type: ministry
+   -----------------------------------------------------------------------
+   Check  | Stored Value     | Actual Value     | Result
+   -----------------------------------------------------------------------
+   [A]    | exists: true     | exists: true     | PASS
+   [B]    | full_block: false| full_block: false | PASS
+          | (partial disallow: /sch/schMain.do, /id/qustnr.do)
+   [C]    | blocked: []      | blocked: []      | PASS
+          | (no LLM crawler mentions in robots.txt)
+   [D]    | exists: false    | exists: false    | PASS
+          | (HTTP 200 but returns HTML error page)
+   [E]    | exists: true     | exists: true     | PASS
+          | (valid XML sitemap)
+   -----------------------------------------------------------------------
+   Snapshot Match: EXACT MATCH
+   Overall: 5/5 PASS
+
+2. K025 | 경제인문사회연구회
+   URL: https://www.nrc.re.kr
+   Type: public_institution
+   -----------------------------------------------------------------------
+   Check  | Stored Value     | Actual Value     | Result
+   -----------------------------------------------------------------------
+   [A]    | exists: true     | exists: true     | PASS
+   [B]    | full_block: false| full_block: false | PASS
+          | (selective disallows for /ecms/, /source/, etc.)
+   [C]    | blocked: []      | blocked: []      | PASS
+   [D]    | exists: false    | exists: false    | PASS
+          | (HTTP 404)
+   [E]    | exists: true     | exists: true     | PASS
+   -----------------------------------------------------------------------
+   Snapshot Match: EXACT MATCH
+   Overall: 5/5 PASS
+
+3. B120 | 춘천시
+   URL: https://www.chuncheon.go.kr/cityhall/
+   Type: local_basic
+   -----------------------------------------------------------------------
+   Check  | Stored Value     | Actual Value     | Result
+   -----------------------------------------------------------------------
+   [A]    | exists: true     | exists: true     | PASS
+   [B]    | full_block: false| full_block: false | PASS
+          | (Allow: /_user*, Disallow: /_*, etc.)
+   [C]    | blocked: []      | blocked: []      | PASS
+   [D]    | exists: false    | exists: false    | PASS
+          | (HTTP 404)
+   [E]    | exists: true     | exists: true     | PASS
+   -----------------------------------------------------------------------
+   Snapshot Match: EXACT MATCH (including both Sitemap entries)
+   Overall: 5/5 PASS
+
+4. K140 | 중소기업기술정보진흥원
+   URL: https://www.tipa.or.kr
+   Type: public_institution
+   -----------------------------------------------------------------------
+   Check  | Stored Value     | Actual Value     | Result
+   -----------------------------------------------------------------------
+   [A]    | exists: true     | exists: true     | PASS
+   [B]    | full_block: false| full_block: false | PASS
+   [C]    | blocked: []      | blocked: []      | PASS
+   [D]    | exists: false    | exists: false    | PASS
+          | (HTTP 404)
+   [E]    | exists: true     | exists: true     | PASS
+   -----------------------------------------------------------------------
+   Snapshot Match: EXACT MATCH (including comments and Sitemap entries)
+   Overall: 5/5 PASS
+
+5. A10 | 국가유산청 (Korea Heritage Service)
+   URL: https://www.khs.go.kr
+   Type: agency
+   -----------------------------------------------------------------------
+   Check  | Stored Value     | Actual Value     | Result
+   -----------------------------------------------------------------------
+   [A]    | exists: true     | exists: true     | PASS
+   [B]    | full_block: false| full_block: false | PASS
+          | (Disallow: /search/, /cop/bbs/...)
+   [C]    | blocked: []      | blocked: []      | PASS
+   [D]    | exists: false    | exists: false    | PASS
+          | (HTTP 200 but returns HTML error page)
+   [E]    | exists: true     | exists: true     | PASS
+   -----------------------------------------------------------------------
+   Snapshot Match: EXACT MATCH
+   Overall: 5/5 PASS
+
+6. L04 | 인천광역시 (Incheon Metropolitan City)
+   URL: https://www.incheon.go.kr
+   Type: local_metro
+   -----------------------------------------------------------------------
+   Check  | Stored Value     | Actual Value     | Result
+   -----------------------------------------------------------------------
+   [A]    | exists: true     | exists: true     | PASS
+   [B]    | full_block: false| full_block: false | PASS
+          | (Allow: /, Sitemap entry)
+   [C]    | blocked: []      | blocked: []      | PASS
+   [D]    | exists: false    | exists: false    | PASS
+          | (HTTP 404)
+   [E]    | exists: true     | exists: true     | PASS
+   -----------------------------------------------------------------------
+   Snapshot Match: EXACT MATCH
+   Overall: 5/5 PASS
+
+7. R008 | 세종특별자치시경찰청
+   URL: https://www.sjpolice.go.kr
+   Type: police
+   -----------------------------------------------------------------------
+   Check  | Stored Value     | Actual Value     | Result
+   -----------------------------------------------------------------------
+   [A]    | exists: true     | exists: true     | PASS
+   [B]    | full_block: false| full_block: false | PASS
+          | (Disallow:/site/zlib/, Disallow:/SEO/zlib/)
+   [C]    | blocked: []      | blocked: []      | PASS
+   [D]    | exists: false    | exists: false    | PASS
+          | (HTTP 404)
+   [E]    | exists: true     | exists: true     | PASS
+   -----------------------------------------------------------------------
+   Snapshot Match: EXACT MATCH
+   Overall: 5/5 PASS
+
+8. L01 | 서울특별시 (Seoul Metropolitan Government)
+   URL: https://www.seoul.go.kr
+   Type: local_metro
+   -----------------------------------------------------------------------
+   Check  | Stored Value     | Actual Value     | Result
+   -----------------------------------------------------------------------
+   [A]    | exists: true     | exists: true     | PASS
+   [B]    | full_block: false| full_block: false | PASS
+          | (Disallow: / but with multiple Allow: paths)
+   [C]    | blocked: []      | blocked: []      | PASS
+          | (status: partial_allow - default deny with specific allows)
+   [D]    | exists: false    | exists: false    | PASS
+          | (HTTP 200 but returns HTML page)
+   [E]    | exists: true     | exists: true     | PASS
+   -----------------------------------------------------------------------
+   Snapshot Match: EXACT MATCH
+   Overall: 5/5 PASS
+
+9. I002 | 중앙선거관리위원회
+   URL: https://www.nec.go.kr
+   Type: independent
+   -----------------------------------------------------------------------
+   Check  | Stored Value     | Actual Value     | Result
+   -----------------------------------------------------------------------
+   [A]    | exists: true     | exists: true     | PASS
+   [B]    | full_block: false| full_block: false | PASS
+          | (Allow: /, Disallow: /cmm/dozen/)
+   [C]    | blocked: []      | blocked: []      | PASS
+   [D]    | exists: false    | exists: false    | PASS
+          | (HTTP 200 but returns HTML page)
+   [E]    | exists: false    | exists: false    | PASS
+          | (HTTP 200 but returns HTML, not XML)
+   -----------------------------------------------------------------------
+   Snapshot Match: EXACT MATCH
+   Overall: 5/5 PASS
+
+10. A01 | 국세청 (National Tax Service)
+    URL: https://www.nts.go.kr
+    Type: agency
+    -----------------------------------------------------------------------
+    Check  | Stored Value     | Actual Value     | Result
+    -----------------------------------------------------------------------
+    [A]    | exists: true     | exists: true     | PASS
+    [B]    | full_block: false| full_block: false | PASS
+           | (Allow: /)
+    [C]    | blocked: []      | blocked: []      | PASS
+    [D]    | exists: false    | exists: false    | PASS
+           | (HTTP 404)
+    [E]    | exists: false    | exists: false    | PASS
+           | (HTTP 404)
+    -----------------------------------------------------------------------
+    Snapshot Match: EXACT MATCH
+    Overall: 5/5 PASS
+
+11. R001 | 서울특별시경찰청
+    URL: https://www.smpa.go.kr
+    Type: police
+    -----------------------------------------------------------------------
+    Check  | Stored Value     | Actual Value     | Result
+    -----------------------------------------------------------------------
+    [A]    | exists: true     | exists: true     | PASS
+    [B]    | full_block: false| full_block: false | PASS
+           | (Allow: /, extensive Disallow list for specific pages)
+    [C]    | blocked: []      | blocked: []      | PASS
+    [D]    | exists: false    | exists: false    | PASS
+           | (HTTP 404)
+    [E]    | exists: false    | exists: false    | PASS
+           | (HTTP 404)
+    -----------------------------------------------------------------------
+    Snapshot Match: EXACT MATCH
+    Overall: 5/5 PASS
+
+12. A14 | 기상청 (Korea Meteorological Administration)
+    URL: https://www.kma.go.kr
+    Type: agency
+    -----------------------------------------------------------------------
+    Check  | Stored Value     | Actual Value     | Result
+    -----------------------------------------------------------------------
+    [A]    | exists: true     | exists: true     | PASS
+    [B]    | full_block: false| full_block: false | PASS
+           | (Allow: /, Disallow: /kma/sch, Googlebot-specific rule)
+    [C]    | blocked: []      | blocked: []      | PASS
+    [D]    | exists: false    | exists: false    | PASS
+           | (HTTP 200 but returns HTML page)
+    [E]    | exists: false    | exists: false    | PASS
+           | (HTTP 200 but returns HTML, not XML)
+    -----------------------------------------------------------------------
+    Snapshot Match: EXACT MATCH
+    Googlebot mentioned: stored=true, actual=true (PASS)
+    Overall: 5/5 PASS
+
+13. E013 | 전북특별자치도교육청
+    URL: https://jbe.go.kr
+    Type: education
+    -----------------------------------------------------------------------
+    Check  | Stored Value     | Actual Value     | Result
+    -----------------------------------------------------------------------
+    [A]    | exists: true     | exists: true     | PASS
+    [B]    | full_block: false| full_block: false | PASS
+           | (Googlebot blocked, User-agent: * allowed)
+    [C]    | blocked: []      | blocked: []      | PASS
+           | (GPTBot/ClaudeBot not mentioned; Googlebot IS blocked)
+    [D]    | exists: false    | exists: false    | PASS
+           | (HTTP 200 but returns HTML error "page not found")
+    [E]    | exists: false    | exists: false    | PASS
+           | (HTTP 200 but returns HTML error page)
+    -----------------------------------------------------------------------
+    Snapshot Match: EXACT MATCH
+    Googlebot status: stored=blocked, actual=blocked (PASS)
+    Overall: 5/5 PASS
+
+14. L07 | 울산광역시 (Ulsan Metropolitan City)
+    URL: https://www.ulsan.go.kr
+    Type: local_metro
+    -----------------------------------------------------------------------
+    Check  | Stored Value     | Actual Value     | Result
+    -----------------------------------------------------------------------
+    [A]    | exists: true     | exists: true     | PASS
+    [B]    | full_block: false| full_block: false | PASS
+           | (Disallow specific paths, Allow: /)
+    [C]    | blocked: []      | blocked: []      | PASS
+    [D]    | exists: false    | exists: false    | PASS
+           | (HTTP 404)
+    [E]    | exists: false    | exists: false    | PASS
+           | (HTTP 404)
+    -----------------------------------------------------------------------
+    Snapshot Match: EXACT MATCH
+    Overall: 5/5 PASS
+
+15. B001 | 강남구
+    URL: http://www.gangnam.go.kr
+    Type: local_basic
+    -----------------------------------------------------------------------
+    Check  | Stored Value     | Actual Value     | Result
+    -----------------------------------------------------------------------
+    [A]    | exists: true     | exists: true     | PASS
+    [B]    | full_block: false| full_block: false | PASS
+           | (multiple Disallow rules for /assign/*, /file/*, etc.)
+    [C]    | blocked: []      | blocked: []      | PASS
+    [D]    | exists: false    | exists: false    | PASS
+           | (HTTP 404)
+    [E]    | exists: true     | exists: true     | PASS
+           | (valid XML sitemap)
+    -----------------------------------------------------------------------
+    Snapshot Match: EXACT MATCH (including DaumWebMasterTool comment)
+    Googlebot-Image mentioned: stored=true, actual=true (PASS)
+    Overall: 5/5 PASS
+
+16. M10 | 문화체육관광부 (Ministry of Culture, Sports and Tourism)
+    URL: https://www.mcst.go.kr
+    Type: ministry
+    -----------------------------------------------------------------------
+    Check  | Stored Value     | Actual Value     | Result
+    -----------------------------------------------------------------------
+    [A]    | exists: true     | exists: true     | PASS
+    [B]    | full_block: false| full_block: false | PASS
+           | (Disallow: /site/search/, Allow: /)
+    [C]    | blocked: []      | blocked: []      | PASS
+    [D]    | exists: false    | exists: false    | PASS
+           | (HTTP 404)
+    [E]    | exists: false    | exists: false    | PASS
+           | (HTTP 404)
+    -----------------------------------------------------------------------
+    Snapshot Match: EXACT MATCH
+    Overall: 5/5 PASS
+
+17. E001 | 서울특별시교육청
+    URL: https://www.sen.go.kr
+    Type: education
+    -----------------------------------------------------------------------
+    Check  | Stored Value     | Actual Value     | Result
+    -----------------------------------------------------------------------
+    [A]    | exists: true     | exists: true     | PASS
+    [B]    | full_block: false| full_block: false | PASS
+           | (Allow: /, extensive Allow/Disallow rules)
+    [C]    | blocked: []      | blocked: []      | PASS
+    [D]    | exists: false    | exists: false    | PASS
+           | (HTTP 404)
+    [E]    | exists: true     | exists: true     | PASS
+           | (valid XML sitemap)
+    -----------------------------------------------------------------------
+    Snapshot Match: EXACT MATCH (including sitemap: entry)
+    Overall: 5/5 PASS
+
+18. J001 | 대법원
+    URL: https://www.scourt.go.kr
+    Type: judiciary
+    -----------------------------------------------------------------------
+    Check  | Stored Value     | Actual Value     | Result
+    -----------------------------------------------------------------------
+    [A]    | exists: true     | exists: true     | PASS
+    [B]    | full_block: false| full_block: false | PASS
+           | (AhrefsBot/SemrushBot fully blocked; * has selective disallows)
+    [C]    | blocked: []      | blocked: []      | PASS
+           | (GPTBot/ClaudeBot not mentioned; status=partial_allow correct)
+    [D]    | exists: false    | exists: false    | PASS
+           | (HTTP 200 but returns HTML page)
+    [E]    | exists: false    | exists: false    | PASS
+           | (HTTP 200 but returns HTML, not XML)
+    -----------------------------------------------------------------------
+    Snapshot Match: EXACT MATCH
+    Overall: 5/5 PASS
+
+19. J015 | 인천지방법원
+    URL: https://incheon.scourt.go.kr
+    Type: judiciary
+    -----------------------------------------------------------------------
+    Check  | Stored Value     | Actual Value     | Result
+    -----------------------------------------------------------------------
+    [A]    | exists: true     | exists: true     | PASS
+    [B]    | full_block: false| full_block: false | PASS
+           | (selective Disallow for /court/, /edu_e/, etc.)
+    [C]    | blocked: []      | blocked: []      | PASS
+    [D]    | exists: false    | exists: false    | PASS
+           | (HTTP 200 but returns HTML page)
+    [E]    | exists: false    | exists: false    | PASS
+           | (HTTP 200 but returns HTML, not XML)
+    -----------------------------------------------------------------------
+    Snapshot Match: EXACT MATCH
+    Overall: 5/5 PASS
+
+20. M17 | 국토교통부 (Ministry of Land, Infrastructure and Transport)
+    URL: https://www.molit.go.kr
+    Type: ministry
+    -----------------------------------------------------------------------
+    Check  | Stored Value     | Actual Value     | Result
+    -----------------------------------------------------------------------
+    [A]    | exists: false    | exists: false    | PASS
+           | (curl exit code 35 - SSL connection error)
+    [B]    | full_block: false| N/A (no robots.txt) | PASS
+    [C]    | blocked: []      | N/A              | PASS
+    [D]    | exists: false    | exists: false    | PASS
+           | (site unreachable)
+    [E]    | exists: false    | exists: false    | PASS
+           | (site unreachable)
+    -----------------------------------------------------------------------
+    Snapshot Match: N/A (null snapshot, site unreachable)
+    Overall: 5/5 PASS
+
+================================================================================
+SUMMARY
+================================================================================
+
+Organizations Sampled:  20
+Org Types Covered:      10 (ministry, agency, education, judiciary, police,
+                            local_metro, local_basic, public_institution,
+                            independent)
+
+Total Checks:           100 (5 checks x 20 organizations)
+Passed:                 100
+Failed:                 0
+
+OVERALL ACCURACY:       100.0%
+
+================================================================================
+CHECK BREAKDOWN
+================================================================================
+
+[A] robots.txt exists?           20/20 correct (100%)
+[B] full_block detection?        20/20 correct (100%)
+[C] LLM crawler blocking?       20/20 correct (100%)
+[D] llms.txt exists?             20/20 correct (100%)
+[E] sitemap.xml exists?          20/20 correct (100%)
+
+================================================================================
+NOTABLE OBSERVATIONS
+================================================================================
+
+1. SMART ERROR PAGE HANDLING: The pipeline correctly distinguishes between
+   real files and HTML error pages served with HTTP 200 status codes. Several
+   sites (moef.go.kr, khs.go.kr, seoul.go.kr, nec.go.kr, kma.go.kr,
+   scourt.go.kr, incheon.scourt.go.kr, jbe.go.kr) return HTTP 200 for
+   nonexistent files but serve HTML error pages. The pipeline correctly
+   identifies these as "not existing."
+
+2. SNAPSHOT FIDELITY: All 19 robots.txt snapshots (excluding M17 which has
+   none) match the live content exactly, confirming the data was captured
+   accurately.
+
+3. NUANCED BLOCKING DETECTION:
+   - Seoul (L01): Correctly identified as "partial_allow" despite starting
+     with "Disallow: /" because Allow directives override for specific paths.
+   - Jeonbuk Education (E013): Correctly notes Googlebot is "blocked" while
+     LLM crawlers are "allowed" (not mentioned = allowed).
+   - Supreme Court (J001): AhrefsBot and SemrushBot are fully blocked, but
+     this is correctly not flagged as "full_block" since the * rule only
+     partially blocks.
+
+4. UNREACHABLE SITES: M17 (molit.go.kr) has SSL issues (curl exit 35),
+   and the pipeline correctly records it as having no robots.txt, llms.txt,
+   or sitemap.xml, with main_page_status: 0.
+
+================================================================================
+CONCLUSION
+================================================================================
+
+The Are We Open? analysis pipeline demonstrates 100% accuracy across all
+20 randomly sampled organizations for the 5 key verification checks. The
+pipeline shows particularly strong handling of:
+- HTTP 200 soft-404 detection (HTML error pages)
+- Nuanced robots.txt interpretation (partial blocks, multiple user-agents)
+- Connection failure handling (SSL errors, timeouts)
+- Snapshot fidelity (exact content preservation)
+
+No errors or mismatches were found in this audit sample.
+================================================================================

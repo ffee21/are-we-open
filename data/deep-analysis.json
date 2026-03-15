@@ -1,0 +1,2388 @@
+[
+  {
+    "org_id": "M01",
+    "name": "재정경제부",
+    "url": "https://www.moef.go.kr",
+    "press": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "보도자료",
+          "original": "https://mofe.go.kr/nw/nes/nesdta.do;jsessionid=0Z_jvfclz_BNHBS4aXLB0vA4Fl6A2E9IGby4ucxl.node30?bbsId=MOSFBBS_000000000028&menuNo=4010100",
+          "final": "https://mofe.go.kr/nw/nes/nesdta.do;jsessionid=0Z_jvfclz_BNHBS4aXLB0vA4Fl6A2E9IGby4ucxl.node30?bbsId=MOSFBBS_000000000028&menuNo=4010100",
+          "canonical": "https://mofe.go.kr/nw/nes/nesdta.do;jsessionid=0Z_jvfclz_BNHBS4aXLB0vA4Fl6A2E9IGby4ucxl.node30?menuNo=4010100&bbsId=MOSFBBS_000000000028",
+          "path": "/nw/nes/nesdta.do;jsessionid=0Z_jvfclz_BNHBS4aXLB0vA4Fl6A2E9IGby4ucxl.node30?menuNo=4010100&bbsId=MOSFBBS_000000000028"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "notice": {
+      "detected": false,
+      "urls": [],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "policy": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "정책자료",
+          "original": "https://mofe.go.kr/com/bbs/ComtPolbbsList.do;jsessionid=0Z_jvfclz_BNHBS4aXLB0vA4Fl6A2E9IGby4ucxl.node30?bbsId=MOSFBBS_000000000039&menuNo=5020200",
+          "final": "https://mofe.go.kr/com/bbs/ComtPolbbsList.do;jsessionid=0Z_jvfclz_BNHBS4aXLB0vA4Fl6A2E9IGby4ucxl.node30?bbsId=MOSFBBS_000000000039&menuNo=5020200",
+          "canonical": "https://mofe.go.kr/com/bbs/ComtPolbbsList.do;jsessionid=0Z_jvfclz_BNHBS4aXLB0vA4Fl6A2E9IGby4ucxl.node30?menuNo=5020200&bbsId=MOSFBBS_000000000039",
+          "path": "/com/bbs/ComtPolbbsList.do;jsessionid=0Z_jvfclz_BNHBS4aXLB0vA4Fl6A2E9IGby4ucxl.node30?menuNo=5020200&bbsId=MOSFBBS_000000000039"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    }
+  },
+  {
+    "org_id": "A10",
+    "name": "국가유산청",
+    "url": "https://www.khs.go.kr",
+    "press": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "부처별 보도자료",
+          "original": "https://www.khs.go.kr/html//HtmlPage.do?pg=/open/better_03.jsp&mn=NS_04_08_03",
+          "final": "https://www.khs.go.kr/html//HtmlPage.do?pg=/open/better_03.jsp&mn=NS_04_08_03",
+          "canonical": null,
+          "path": "/html//HtmlPage.do?pg=/open/better_03.jsp&mn=NS_04_08_03"
+        },
+        {
+          "link_text": "보도자료\n\t\t\t\t\t\t\t\t\t\t\t\t\t대담신라(對談新羅)에서 천년고찰 ‘황룡사’ 이야…\n\t\t\t\t\t\t\t\t\t\t\t\t\t2026-03-13",
+          "original": "https://www.khs.go.kr/newsBbz/selectNewsBbzView.do?newsItemId=155705943&sectionId=b_sec_1&mn=NS_01_02",
+          "final": "https://www.khs.go.kr/newsBbz/selectNewsBbzView.do?newsItemId=155705943&sectionId=b_sec_1&mn=NS_01_02",
+          "canonical": null,
+          "path": "/newsBbz/selectNewsBbzView.do?newsItemId=155705943&sectionId=b_sec_1&mn=NS_01_02"
+        },
+        {
+          "link_text": "보도자료\n\t\t                                            6명의 국민 작가가 바라본 유네스코 세계유산 ‘…\n\t\t                                            2026-03-13",
+          "original": "https://www.khs.go.kr/newsBbz/selectNewsBbzView.do?newsItemId=155705942&sectionId=b_sec_1&mn=NS_01_02",
+          "final": "https://www.khs.go.kr/newsBbz/selectNewsBbzView.do?newsItemId=155705942&sectionId=b_sec_1&mn=NS_01_02",
+          "canonical": null,
+          "path": "/newsBbz/selectNewsBbzView.do?newsItemId=155705942&sectionId=b_sec_1&mn=NS_01_02"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "notice": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "공지사항",
+          "original": "https://www.khs.go.kr/multiBbz/selectMultiBbzList.do?bbzId=newpublic&mn=NS_01_01",
+          "final": "https://www.khs.go.kr/multiBbz/selectMultiBbzList.do?bbzId=newpublic&mn=NS_01_01",
+          "canonical": null,
+          "path": "/multiBbz/selectMultiBbzList.do?bbzId=newpublic&mn=NS_01_01"
+        },
+        {
+          "link_text": "공지사항\n\t\t\t\t\t\t\t\t\t\t\t\t\t제안서 평가위원(후보자) 모집 공고(한국전통건축…\n\t\t\t\t\t\t\t\t\t\t\t\t\t2026-03-13",
+          "original": "https://www.khs.go.kr/multiBbz/selectMultiBbzView.do?id=21450&no=28110&bbzId=newpublic&mn=NS_01_01",
+          "final": "https://www.khs.go.kr/multiBbz/selectMultiBbzView.do?id=21450&no=28110&bbzId=newpublic&mn=NS_01_01",
+          "canonical": null,
+          "path": "/multiBbz/selectMultiBbzView.do?id=21450&no=28110&bbzId=newpublic&mn=NS_01_01"
+        },
+        {
+          "link_text": "공지사항\n\t\t                                            국가무형유산 지정 및 보유자 등의 인정 조사기준…\n\t\t                                            2026-03-12",
+          "original": "https://www.khs.go.kr/multiBbz/selectMultiBbzView.do?id=21449&no=28109&bbzId=newpublic&mn=NS_01_01",
+          "final": "https://www.khs.go.kr/multiBbz/selectMultiBbzView.do?id=21449&no=28109&bbzId=newpublic&mn=NS_01_01",
+          "canonical": null,
+          "path": "/multiBbz/selectMultiBbzView.do?id=21449&no=28109&bbzId=newpublic&mn=NS_01_01"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "policy": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "주요정책정보",
+          "original": "https://www.khs.go.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_1080&mn=NS_04_02_01&ctgryLrcls=CTGRY132",
+          "final": "https://www.khs.go.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_1080&mn=NS_04_02_01&ctgryLrcls=CTGRY132",
+          "canonical": null,
+          "path": "/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_1080&mn=NS_04_02_01&ctgryLrcls=CTGRY132"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    }
+  },
+  {
+    "org_id": "P03",
+    "name": "법제처",
+    "url": "https://www.moleg.go.kr",
+    "press": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "보도자료",
+          "original": "https://www.moleg.go.kr/menu.es?mid=a10501000000",
+          "final": "https://www.moleg.go.kr/board.es?mid=a10501000000&bid=0048",
+          "canonical": "https://www.moleg.go.kr",
+          "path": "/"
+        },
+        {
+          "link_text": "보도자료 더보기",
+          "original": "https://www.moleg.go.kr/board.es?mid=a10501000000&bid=0048",
+          "final": "https://www.moleg.go.kr/board.es?mid=a10501000000&bid=0048",
+          "canonical": "https://www.moleg.go.kr",
+          "path": "/"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "notice": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "공지사항",
+          "original": "https://www.moleg.go.kr/menu.es?mid=a10504000000",
+          "final": "https://www.moleg.go.kr/board.es?mid=a10504000000&bid=0010",
+          "canonical": "https://www.moleg.go.kr",
+          "path": "/"
+        },
+        {
+          "link_text": "공지사항 더보기",
+          "original": "https://www.moleg.go.kr/board.es?mid=a10504000000&bid=0010",
+          "final": "https://www.moleg.go.kr/board.es?mid=a10504000000&bid=0010",
+          "canonical": "https://www.moleg.go.kr",
+          "path": "/"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "policy": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "정책연구 용역자료",
+          "original": "https://www.moleg.go.kr/menu.es?mid=a10401000000",
+          "final": "https://www.moleg.go.kr/menu.es?mid=a10401000000",
+          "canonical": "https://www.moleg.go.kr",
+          "path": "/"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    }
+  },
+  {
+    "org_id": "P02",
+    "name": "인사혁신처",
+    "url": "https://www.mpm.go.kr",
+    "press": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "부처별 보도자료",
+          "original": "https://www.mpm.go.kr/mpm/minwon/regInovation/regReport",
+          "final": "https://www.mpm.go.kr/mpm/minwon/regInovation/regReport/",
+          "canonical": null,
+          "path": "/mpm/minwon/regInovation/regReport/"
+        },
+        {
+          "link_text": "언론 보도자료",
+          "original": "https://www.mpm.go.kr/mpm/comm/newsPress",
+          "final": "https://www.mpm.go.kr/mpm/comm/newsPress/newsPressRelease/",
+          "canonical": null,
+          "path": "/mpm/comm/newsPress/newsPressRelease/"
+        },
+        {
+          "link_text": "보도자료",
+          "original": "https://www.mpm.go.kr/mpm/comm/newsPress/newsPressRelease",
+          "final": "https://www.mpm.go.kr/mpm/comm/newsPress/newsPressRelease/",
+          "canonical": null,
+          "path": "/mpm/comm/newsPress/newsPressRelease/"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "notice": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "공지사항",
+          "original": "https://www.mpm.go.kr/mpm/comm/noti",
+          "final": "https://www.mpm.go.kr/mpm/comm/noti/newsNoitice/",
+          "canonical": null,
+          "path": "/mpm/comm/noti/newsNoitice/"
+        },
+        {
+          "link_text": "공지사항",
+          "original": "https://www.mpm.go.kr/mpm/comm/noti/newsNoitice",
+          "final": "https://www.mpm.go.kr/mpm/comm/noti/newsNoitice/",
+          "canonical": null,
+          "path": "/mpm/comm/noti/newsNoitice/"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "policy": {
+      "detected": false,
+      "urls": [],
+      "blocked": false,
+      "blocked_paths": []
+    }
+  },
+  {
+    "org_id": "P05",
+    "name": "국가데이터처",
+    "url": "https://kostat.go.kr",
+    "press": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "보도자료",
+          "original": "https://mods.go.kr/menu.es?mid=a10301010000",
+          "final": "https://mods.go.kr/board.es?mid=a10301010000&bid=a103010100&ref_bid=203,204,205,206,207,210,211,11109,11113,11814,213,215,214,11860,11695,216,218,219,220,10820,11815,11895,11816,208,245,222,223,225,226,227,228,229,230,11321,232,233,234,12029,10920,11469,11470,11817,236,237,11471,238,240,241,11865,243,244,11893,11898,12031,11825,246,0067,0073",
+          "canonical": "http://27.101.222.79/board.es?mid=a10301010000&bid=a103010100&ref_bid=203,204,205,206,207,210,211,11109,11113,11814,213,215,214,11860,11695,216,218,219,220,10820,11815,11895,11816,208,245,222,223,225,226,227,228,229,230,11321,232,233,234,12029,10920,11469,11470,11817,236,237,11471,238,240,241,11865,243,244,11893,11898,12031,11825,246,0067,0073",
+          "path": "/board.es?mid=a10301010000&bid=a103010100&ref_bid=203,204,205,206,207,210,211,11109,11113,11814,213,215,214,11860,11695,216,218,219,220,10820,11815,11895,11816,208,245,222,223,225,226,227,228,229,230,11321,232,233,234,12029,10920,11469,11470,11817,236,237,11471,238,240,241,11865,243,244,11893,11898,12031,11825,246,0067,0073"
+        },
+        {
+          "link_text": "보도자료선택된 탭",
+          "original": "https://mods.go.kr/index.es?sid=a1#",
+          "final": "https://mods.go.kr/index.es?sid=a1#",
+          "canonical": "http://27.101.222.79/index.es?sid=a1",
+          "path": "/index.es?sid=a1"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "notice": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "공지사항",
+          "original": "https://mods.go.kr/menu.es?mid=a10306020000",
+          "final": "https://mods.go.kr/board.es?mid=a10306020000&bid=a103060100&ref_bid=106,108",
+          "canonical": "http://27.101.222.79/board.es?mid=a10306020000&bid=a103060100&ref_bid=106,108",
+          "path": "/board.es?mid=a10306020000&bid=a103060100&ref_bid=106,108"
+        },
+        {
+          "link_text": "공지사항",
+          "original": "https://mods.go.kr/index.es?sid=a1#",
+          "final": "https://mods.go.kr/index.es?sid=a1#",
+          "canonical": "http://27.101.222.79/index.es?sid=a1",
+          "path": "/index.es?sid=a1"
+        },
+        {
+          "link_text": "국가통계포털(KOSIS)과 함께 3월 통계찾기 퀴즈 이벤트\n참여대상 국가통계포털(KOSIS) 이용자 누구나\n참여기간 2026.3.13.(금) ~ 3.27.(금)\n참여방법 팝업존 참여하기 버튼 클릭 후 국가통계포털 퀴즈 풀이\n당첨자 발표 국가통계포털(KOSIS) 공지사항에 이벤트 종료 후 한 달 이내 게시",
+          "original": "https://kosis.kr/eventLink.jsp",
+          "final": "https://kosis.kr/survey/survey40.do",
+          "canonical": null,
+          "path": "/survey/survey40.do"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "policy": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "정책정보",
+          "original": "https://mods.go.kr/menu.es?mid=a10401010000",
+          "final": "https://mods.go.kr/menu.es?mid=a10401010000",
+          "canonical": "http://27.101.222.79/menu.es?mid=a10401010000",
+          "path": "/menu.es?mid=a10401010000"
+        },
+        {
+          "link_text": "정책자료",
+          "original": "https://mods.go.kr/menu.es?mid=a10405000000",
+          "final": "https://mods.go.kr/board.es?mid=a10405000000&bid=1601",
+          "canonical": "http://27.101.222.79/board.es?mid=a10405000000&bid=1601",
+          "path": "/board.es?mid=a10405000000&bid=1601"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    }
+  },
+  {
+    "org_id": "M13",
+    "name": "보건복지부",
+    "url": "https://www.mohw.go.kr",
+    "press": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "보도자료",
+          "original": "https://www.mohw.go.kr/menu.es?mid=a10503010000",
+          "final": "https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027",
+          "canonical": "https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027",
+          "path": "/board.es?mid=a10503010100&bid=0027"
+        },
+        {
+          "link_text": "보도자료 더보기",
+          "original": "https://www.mohw.go.kr/menu.es?mid=a10503000000",
+          "final": "https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027",
+          "canonical": "https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027",
+          "path": "/board.es?mid=a10503010100&bid=0027"
+        }
+      ],
+      "blocked": true,
+      "blocked_paths": [
+        {
+          "path": "/board.es?mid=a10503010100&bid=0027",
+          "reason": "disallow: /board.es"
+        },
+        {
+          "path": "/board.es?mid=a10503010100&bid=0027",
+          "reason": "disallow: /board.es"
+        }
+      ]
+    },
+    "notice": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "공지사항",
+          "original": "https://www.mohw.go.kr/menu.es?mid=a10501010100",
+          "final": "https://www.mohw.go.kr/board.es?mid=a10501010100&bid=0003",
+          "canonical": "https://www.mohw.go.kr/board.es?mid=a10501010100&bid=0003",
+          "path": "/board.es?mid=a10501010100&bid=0003"
+        },
+        {
+          "link_text": "공지사항 더보기",
+          "original": "https://www.mohw.go.kr/menu.es?mid=a10501010000",
+          "final": "https://www.mohw.go.kr/board.es?mid=a10501010100&bid=0003",
+          "canonical": "https://www.mohw.go.kr/board.es?mid=a10501010100&bid=0003",
+          "path": "/board.es?mid=a10501010100&bid=0003"
+        }
+      ],
+      "blocked": true,
+      "blocked_paths": [
+        {
+          "path": "/board.es?mid=a10501010100&bid=0003",
+          "reason": "disallow: /board.es"
+        },
+        {
+          "path": "/board.es?mid=a10501010100&bid=0003",
+          "reason": "disallow: /board.es"
+        }
+      ]
+    },
+    "policy": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "정책소통자료",
+          "original": "https://www.mohw.go.kr/menu.es?mid=a10715050000",
+          "final": "https://www.mohw.go.kr/menu.es?mid=a10715050000",
+          "canonical": "https://www.mohw.go.kr/menu.es?mid=a10715050000",
+          "path": "/menu.es?mid=a10715050000"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    }
+  },
+  {
+    "org_id": "P06",
+    "name": "지식재산처",
+    "url": "https://www.kipo.go.kr",
+    "press": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "보도자료",
+          "original": "https://www.kipo.go.kr/ko/topMenuLink.do?menuCd=SCD0200052",
+          "final": "https://www.kipo.go.kr/ko/kpoBultnMgmt.do?menuCd=SCD0200618&sysCd=SCD02&pgmId=BUT0000029",
+          "canonical": null,
+          "path": "/ko/kpoBultnMgmt.do?menuCd=SCD0200618&sysCd=SCD02&pgmId=BUT0000029"
+        },
+        {
+          "link_text": "보도자료",
+          "original": "https://www.kipo.go.kr/ko/kpoBultnMgmt.do?menuCd=SCD0200618&parntMenuCd2=SCD0200052",
+          "final": "https://www.kipo.go.kr/ko/kpoBultnMgmt.do?menuCd=SCD0200618&parntMenuCd2=SCD0200052",
+          "canonical": null,
+          "path": "/ko/kpoBultnMgmt.do?menuCd=SCD0200618&parntMenuCd2=SCD0200052"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "notice": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "고시/공지사항",
+          "original": "https://www.kipo.go.kr/ko/kpoBultnMgmt.do?menuCd=SCD0200626&parntMenuCd2=SCD0200152",
+          "final": "https://www.kipo.go.kr/ko/kpoBultnMgmt.do?menuCd=SCD0200626&parntMenuCd2=SCD0200152",
+          "canonical": null,
+          "path": "/ko/kpoBultnMgmt.do?menuCd=SCD0200626&parntMenuCd2=SCD0200152"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "policy": {
+      "detected": false,
+      "urls": [],
+      "blocked": false,
+      "blocked_paths": []
+    }
+  },
+  {
+    "org_id": "M05",
+    "name": "통일부",
+    "url": "https://www.unikorea.go.kr",
+    "press": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "보도자료",
+          "original": "https://www.unikorea.go.kr/web/unikorea/bbs/bbs_0000000000000004",
+          "final": "https://www.unikorea.go.kr/web/unikorea/bbs/bbs_0000000000000004",
+          "canonical": "https://www.unikorea.go.kr/web/unikorea/bbs/bbs_0000000000000004",
+          "path": "/web/unikorea/bbs/bbs_0000000000000004"
+        },
+        {
+          "link_text": "보도자료\n\t\t\t\t\t\t\t\t\t        한반도 평화전략 자문단 제3차 회의 개최\n\t\t\t\t\t\t\t\t\t        통일부 장관, 국제정세 및 남북관계를 점검하고 한반도 평화공존 주도전략 모색 - ｢한반도 평화전략 자문단｣ 제3차 회의 개최(3.13.) - □ 정동영 통일부 장관은 3월 13일(금) 오전, 남북회담본부 회담장에서 ｢한반도 평화전략 자문단｣ 제3차 회의를 개최했다.  o 이번 회의에는 정세현 전 통일부 장관, 김연철 한반도평화포럼 이사장 등 16명의 전문가가 참석해 한반도 평화를 위한 전략을 논의했다.  □ 정동영 장관은 “세간에서 쉽게 전쟁을 이야기하고 평화를 원하거든 전쟁을 준비하라는 말도 하는데, 전쟁을 준비하면 전쟁의 가능성이 높아질 뿐”이라며, 최근 국제정세 속에서 “세계에서 평화가 절체절명의 명제인 지역이 대한민국임을 절감하며, 평화로 가는 길은 없고, 평화가 곧 길”임을 강조했다.  □ 전문가들은 두 국가론이 나온 시점에서 대한민국의 통일 방안인 민족공동체 통일방안의 남북연합 단계를 현실적인 상황과 조건을 고려하여 재해석할 필요가 있으며, 적대성 해소, 군사적 신뢰 구축 등을 포함해서 달라진 상황을 충분히 반영하여 ‘한반도 평화 로드맵’을 새롭게 만들 것을 제안했다.  o 아울러, 아무도 우리의 문제를 해결해 주지 않기 때문에 ‘페이스 메이커’를 ‘피스 메이커’로 전환해서 우리가 적극적으로 나서고, 미·중 대화뿐만 아니라 주변국·국제기구 등과의 우회적, 다자적 접근까지 적극적으로 모색할 것을 주문했다.  □ 통일부는 앞으로도 한반도 평화전략을 구체화하고 실행해 나감에 있어 전문가들의 의견을 지속적으로 경청해 나갈 예정이다.  붙임 : 회의 사진(별송)\n\t\t\t\t\t\t\t\t\t        \n\t\t\t\t\t\t\t\t\t          2026.03.13",
+          "original": "https://www.unikorea.go.kr/web/unikorea/bbs/bbs_0000000000000004/59050?",
+          "final": "https://www.unikorea.go.kr/web/unikorea/bbs/bbs_0000000000000004/59050?",
+          "canonical": "https://www.unikorea.go.kr/web/unikorea/bbs/bbs_0000000000000004/59050",
+          "path": "/web/unikorea/bbs/bbs_0000000000000004/59050"
+        },
+        {
+          "link_text": "보도자료\n\t\t\t\t\t\t\t\t\t        국립평화통일민주교육원, 제25기 통일교육위원 위촉 추진\n\t\t\t\t\t\t\t\t\t        교육 현장과 함께하는 평화･통일･민주시민교육, 제25기 통일교육위원 15,000명 위촉 추진 - 1987년 제도 신설 이후 39년 만에 근본적 개혁 실시 - 국내 초･중･고 교사 및 대학교수 등 13,000명, 해외 한국학교･한글학교 교사 2,000명 등 교육 전문가 15,000명 규모로 통일교육위원 대폭 확대 【관련 국정과제】 117-3. 평화·통일·민주시민 교육 추진 □ 통일부 국립평화통일민주교육원은 평화･통일･민주시민교육 활동을 통해 국민들의 평화통일 의지와 역량을 강화하고 평화통일 기반 조성에 기여하기 위하여 제25기 통일교육위원 위촉을 추진한다.  o 제25기 통일교육위원은 국내외 총 15,000명 내외 규모이고, 국내는 초･중･고 교사 12,000명과 대학교수 1,000명(이상 13,000명 내외), 해외는 한국학교 및 한글학교 교사 등 2,000명 내외로 구성한다.  o 통일교육위원은 ｢통일교육 지원법｣ 제10조의2 및 동법 시행령 제8조(통일교육위원)에 따라 통일부장관이 위촉한다.  * 국정과제 117-③ “평화·통일·민주시민교육 추진” □ 통일교육위원은 1987년 1월 1일에 제정･시행된 ｢통일교육전문위원관리규정｣에 근거하여 같은 해인 1987년 ‘통일교육전문위원’이라는 이름으로 850명이 1기로 위촉되었다.  o 이후 2005년 ‘통일교육위원’으로 명칭이 변경되고, 2009년 ｢통일교육 지원법｣에 통일교육위원의 법률적 근거가 마련되었으며, 현재까지 2년마다 기수별로 1,000명 내외가 위촉･활동해 오고 있다. □ 그동안 통일교육위원은 정부의 대북･통일정책을 지역사회에 전달하고 현장의 목소리를 정책에 반영하는 가교역할과 함께, 전문성을 바탕으로 민방위･예비군교육, 세미나, 강연회 등 지역사회에서 통일교육 활동을 수행했다.  o 그러나, ‘무보수･명예직’인 통일교육위원들의 개인별 활동 실적 편차, 통일에 대한 관심이 낮은 청소년 세대와의 접점 부족, 일부 위원의 정치적 중립성 논란 등 제도상 문제점이 지속 제기되어 왔다.  o 동시에 청소년의 통일 필요성 인식 저하*에 따른 학교에서의 평화･통일교육의 중요성에 대한 요구는 증가했다.  * 2024년 학교 통일교육 실태조사 결과(’25.4월) - (통일 필요하다) ‘22년 57.6% → ’23년 49.8% → ‘24년 47.6% □ 이번 위촉은 통일교육위원의 역할을 평화･통일･민주시민 가치의 핵심 전달자로서 ‘통일교육 실시’에 방점을 두고, 교육 현장에서 평화･통일･민주시민교육이 이루어지는 데 중점을 두고 있다.  o 제25기 통일교육위원은 미래세대 맞춤형 평화･통일교육 활동을 위해 일선 학교 교육 전문가인 교사･교수 중심으로 구성하고, 그 규모도 대폭 확대할 예정이다.  o 이를 위해 국립평화통일민주교육원은 교육부, 재외동포청, 시･도교육청 등 유관기관과 긴밀히 협력해 오고 있다. □ 국립평화통일민주교육원은 3월 13일부터 4월 10일까지 교육부, 17개 시･도교육청 등 추천기관을 통해 후보자를 접수하고, 4월 중 통일교육위원 위촉을 마무리할 예정이다. 제25기 통일교육위원 임기는 2026년 5월 1일부터 2년이다. ※ 제25기 통일교육위원 위촉후보자 온라인 신청 :  https://www.uniedu.go.kr/uniedu/home/brd/bbsatcl/news/view.do?id=60132\n\t\t\t\t\t\t\t\t\t        \n\t\t\t\t\t\t\t\t\t          2026.03.13",
+          "original": "https://www.unikorea.go.kr/web/unikorea/bbs/bbs_0000000000000004/59049?",
+          "final": "https://www.unikorea.go.kr/web/unikorea/bbs/bbs_0000000000000004/59049?",
+          "canonical": "https://www.unikorea.go.kr/web/unikorea/bbs/bbs_0000000000000004/59049",
+          "path": "/web/unikorea/bbs/bbs_0000000000000004/59049"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "notice": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "공지사항",
+          "original": "https://www.unikorea.go.kr/web/unikorea/bbs/bbs_0000000000000001",
+          "final": "https://www.unikorea.go.kr/web/unikorea/bbs/bbs_0000000000000001",
+          "canonical": "https://www.unikorea.go.kr/web/unikorea/bbs/bbs_0000000000000001",
+          "path": "/web/unikorea/bbs/bbs_0000000000000001"
+        },
+        {
+          "link_text": "공지사항\n\t\t\t\t\t\t\t\t\t\t비영리법인 설립허가 취소처분 직권취소 공시송달 공고\n\t\t\t\t\t\t\t\t        ◉통일부공고제 2026-50호 비영리법인 설립허가 취소처분 직권취소 공시송달 공고 　「민법」 제38조(법인의 설립허가의 취소) 및 「통일부 소관 비영리법인의 설립 및 감독에 관한 규칙」 제9조에 따라 실시한 비영리법인 설립허가 취소 처분(통일부 공고 제2025-76호_에 대해 직권 취소를 실시하고 그 내역을 통보하였으나 법인 사무소 부재 및 수취인불명 등의 이유로 송달이 불가능한 법인에 대해 「행정절차법」제14조 제4항 규정에 따라 다음과 같이 공시송달 공고합니다.   2026년 03월 13일 통일부장관\n\t\t\t\t\t\t\t\t        \n\t\t\t\t\t\t\t\t          2026.03.13",
+          "original": "https://www.unikorea.go.kr/web/unikorea/bbs/bbs_0000000000000001/59047?",
+          "final": "https://www.unikorea.go.kr/web/unikorea/bbs/bbs_0000000000000001/59047?",
+          "canonical": "https://www.unikorea.go.kr/web/unikorea/bbs/bbs_0000000000000001/59047",
+          "path": "/web/unikorea/bbs/bbs_0000000000000001/59047"
+        },
+        {
+          "link_text": "공지사항\n\t\t\t\t\t\t\t\t\t\t「통일부 공무직 및 기간제근로자 노사협의회」제2기 근로자위원 보궐선거 공고\n\t\t\t\t\t\t\t\t        공고번호 통일부 공고 제2026-54호 「통일부 공무직 및 기간제근로자 노사협의회」제2기 근로자위원 보궐선거 공고 「통일부 공무직 및 기간제근로자 노사협의회」제2기 근로자위원 보궐선거 일정 및 후보자 명단을 붙임과 같이 공고합니다. ※ 선거일 : 2026. 3. 16.(월) 09:00 ~ 18:00\n\t\t\t\t\t\t\t\t        \n\t\t\t\t\t\t\t\t          2026.03.12",
+          "original": "https://www.unikorea.go.kr/web/unikorea/bbs/bbs_0000000000000001/59040?",
+          "final": "https://www.unikorea.go.kr/web/unikorea/bbs/bbs_0000000000000001/59040?",
+          "canonical": "https://www.unikorea.go.kr/web/unikorea/bbs/bbs_0000000000000001/59040",
+          "path": "/web/unikorea/bbs/bbs_0000000000000001/59040"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "policy": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "주요사업",
+          "original": "https://www.unikorea.go.kr/web/unikorea/contents/neac_swt",
+          "final": "https://www.unikorea.go.kr/web/unikorea/contents/neac_swt",
+          "canonical": "https://www.unikorea.go.kr/web/unikorea/contents/neac_swt",
+          "path": "/web/unikorea/contents/neac_swt"
+        },
+        {
+          "link_text": "정책자료실",
+          "original": "https://www.unikorea.go.kr/web/unikorea/bbs/bbs_0000000000000012",
+          "final": "https://www.unikorea.go.kr/web/unikorea/bbs/bbs_0000000000000012",
+          "canonical": "https://www.unikorea.go.kr/web/unikorea/bbs/bbs_0000000000000012",
+          "path": "/web/unikorea/bbs/bbs_0000000000000012"
+        },
+        {
+          "link_text": "주요사업 통계",
+          "original": "https://www.unikorea.go.kr/web/unikorea/contents/statistics",
+          "final": "https://www.unikorea.go.kr/web/unikorea/contents/statistics",
+          "canonical": "https://www.unikorea.go.kr/web/unikorea/contents/statistics",
+          "path": "/web/unikorea/contents/statistics"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    }
+  },
+  {
+    "org_id": "A01",
+    "name": "국세청",
+    "url": "https://www.nts.go.kr",
+    "press": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "보도자료",
+          "original": "https://www.nts.go.kr/nts/na/ntt/selectNttList.do?mi=2201&bbsId=1028",
+          "final": "https://www.nts.go.kr/nts/na/ntt/selectNttList.do?mi=2201&bbsId=1028",
+          "canonical": "https://www.nts.go.kr/",
+          "path": "/"
+        },
+        {
+          "link_text": "부처별 보도자료",
+          "original": "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?mi=6716&cntntsId=8123",
+          "final": "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?mi=6716&cntntsId=8123",
+          "canonical": "https://www.nts.go.kr/",
+          "path": "/"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "notice": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "공지사항",
+          "original": "https://www.nts.go.kr/nts/na/ntt/selectNttList.do?mi=2207&bbsId=1011",
+          "final": "https://www.nts.go.kr/nts/na/ntt/selectNttList.do?mi=2207&bbsId=1011",
+          "canonical": "https://www.nts.go.kr/",
+          "path": "/"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "policy": {
+      "detected": false,
+      "urls": [],
+      "blocked": false,
+      "blocked_paths": []
+    }
+  },
+  {
+    "org_id": "A12",
+    "name": "산림청",
+    "url": "https://www.forest.go.kr",
+    "press": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "보도자료",
+          "original": "https://www.forest.go.kr/kfsweb/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_1036&mn=NKFS_04_02_01",
+          "final": "https://www.forest.go.kr/kfsweb/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_1036&mn=NKFS_04_02_01",
+          "canonical": "https://www.forest.go.kr/",
+          "path": "/"
+        },
+        {
+          "link_text": "규제혁신 보도자료",
+          "original": "https://www.forest.go.kr/kfsweb/kfi/kfs/cms/cmsView.do?mn=NKFS_05_03_09&cmsId=FC_003471",
+          "final": "https://www.forest.go.kr/kfsweb/kfi/kfs/cms/cmsView.do?mn=NKFS_05_03_09&cmsId=FC_003471",
+          "canonical": "https://www.forest.go.kr/",
+          "path": "/"
+        },
+        {
+          "link_text": "보도",
+          "original": "https://www.forest.go.kr/kfsweb/kfs/idx/Index.do#tabGroup2_1",
+          "final": "https://www.forest.go.kr/kfsweb/kfs/idx/Index.do#tabGroup2_1",
+          "canonical": "https://www.forest.go.kr/",
+          "path": "/"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "notice": {
+      "detected": false,
+      "urls": [],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "policy": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "정책평가 자료실",
+          "original": "https://www.forest.go.kr/kfsweb/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_1012&mn=NKFS_04_04",
+          "final": "https://www.forest.go.kr/kfsweb/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_1012&mn=NKFS_04_04",
+          "canonical": "https://www.forest.go.kr/",
+          "path": "/"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    }
+  },
+  {
+    "org_id": "P04",
+    "name": "식품의약품안전처",
+    "url": "https://www.mfds.go.kr",
+    "press": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "보도자료",
+          "original": "https://www.mfds.go.kr/brd/m_99/list.do",
+          "final": "https://www.mfds.go.kr/brd/m_99/list.do",
+          "canonical": null,
+          "path": "/brd/m_99/list.do"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "notice": {
+      "detected": false,
+      "urls": [],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "policy": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "정책정보",
+          "original": "https://www.mfds.go.kr/wpge/m_506/de010209l001.do",
+          "final": "https://www.mfds.go.kr/wpge/m_506/de010209l001.do",
+          "canonical": null,
+          "path": "/wpge/m_506/de010209l001.do"
+        },
+        {
+          "link_text": "위생용품 정책정보",
+          "original": "https://www.mfds.go.kr/wpge/m_676/de010410l004.do",
+          "final": "https://www.mfds.go.kr/wpge/m_676/de010410l004.do",
+          "canonical": null,
+          "path": "/wpge/m_676/de010410l004.do"
+        },
+        {
+          "link_text": "식품 정책정보",
+          "original": "https://www.mfds.go.kr/wpge/m_510/de050301l002.do",
+          "final": "https://www.mfds.go.kr/wpge/m_510/de050301l002.do",
+          "canonical": null,
+          "path": "/wpge/m_510/de050301l002.do"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    }
+  },
+  {
+    "org_id": "M19",
+    "name": "중소벤처기업부",
+    "url": "https://www.mss.go.kr",
+    "press": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "보도자료",
+          "original": "https://www.mss.go.kr/site/smba/ex/bbs/List.do?cbIdx=86",
+          "final": "https://www.mss.go.kr/site/smba/ex/bbs/List.do?cbIdx=86",
+          "canonical": null,
+          "path": "/site/smba/ex/bbs/List.do?cbIdx=86"
+        },
+        {
+          "link_text": "보도자료AI+제조상생형 AI 스마트제조 현장방문2026.03.13자세히보기",
+          "original": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=86&bcIdx=1066240",
+          "final": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=86&bcIdx=1066240",
+          "canonical": null,
+          "path": "/site/smba/ex/bbs/View.do?cbIdx=86&bcIdx=1066240"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "notice": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "공지사항",
+          "original": "https://www.mss.go.kr/site/smba/ex/bbs/List.do?cbIdx=81",
+          "final": "https://www.mss.go.kr/site/smba/ex/bbs/List.do?cbIdx=81",
+          "canonical": null,
+          "path": "/site/smba/ex/bbs/List.do?cbIdx=81"
+        },
+        {
+          "link_text": "공지사항2026년 대한민국 중소기업인대회 정부포상 공개검증2026.03.13자세히보기",
+          "original": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=81&bcIdx=1066237",
+          "final": "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=81&bcIdx=1066237",
+          "canonical": null,
+          "path": "/site/smba/ex/bbs/View.do?cbIdx=81&bcIdx=1066237"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "policy": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "정책정보",
+          "original": "https://www.mss.go.kr/site/smba/foffice/ex/jobPlan/jobPlanList.do?target=1",
+          "final": "https://www.mss.go.kr/site/smba/foffice/ex/jobPlan/jobPlanList.do?target=1",
+          "canonical": null,
+          "path": "/site/smba/foffice/ex/jobPlan/jobPlanList.do?target=1"
+        },
+        {
+          "link_text": "정책소개",
+          "original": "https://www.mss.go.kr/site/smba/contents/view.do?menuCd=20102070000002025032744&siteCd=smba",
+          "final": "https://www.mss.go.kr/site/smba/contents/view.do?menuCd=20102070000002025032744&siteCd=smba",
+          "canonical": null,
+          "path": "/site/smba/contents/view.do?menuCd=20102070000002025032744&siteCd=smba"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    }
+  },
+  {
+    "org_id": "A09",
+    "name": "소방청",
+    "url": "https://www.nfa.go.kr",
+    "press": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "보도자료",
+          "original": "https://www.nfa.go.kr/nfa/news/pressrelease",
+          "final": "https://www.nfa.go.kr/nfa/news/pressrelease/press/",
+          "canonical": null,
+          "path": "/nfa/news/pressrelease/press/"
+        },
+        {
+          "link_text": "보도자료",
+          "original": "https://www.nfa.go.kr/nfa/news/pressrelease/press",
+          "final": "https://www.nfa.go.kr/nfa/news/pressrelease/press/",
+          "canonical": null,
+          "path": "/nfa/news/pressrelease/press/"
+        },
+        {
+          "link_text": "보도자료",
+          "original": "https://www.nfa.go.kr/nfa/#tab1",
+          "final": "https://www.nfa.go.kr/nfa/#tab1",
+          "canonical": "http://www.nfa.go.kr/",
+          "path": "/"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "notice": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "공지사항",
+          "original": "https://www.nfa.go.kr/nfa/news/notice",
+          "final": "https://www.nfa.go.kr/nfa/news/notice/",
+          "canonical": null,
+          "path": "/nfa/news/notice/"
+        },
+        {
+          "link_text": "공지사항",
+          "original": "https://www.nfa.go.kr/nfa/#tab3",
+          "final": "https://www.nfa.go.kr/nfa/#tab3",
+          "canonical": "http://www.nfa.go.kr/",
+          "path": "/"
+        },
+        {
+          "link_text": "공지사항 더보기",
+          "original": "https://www.nfa.go.kr/nfa/news/notice/",
+          "final": "https://www.nfa.go.kr/nfa/news/notice/",
+          "canonical": null,
+          "path": "/nfa/news/notice/"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "policy": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "정책자료실",
+          "original": "https://www.nfa.go.kr/nfa/publicrelations/policyarchive",
+          "final": "https://www.nfa.go.kr/nfa/publicrelations/policyarchive/policyresearch/",
+          "canonical": null,
+          "path": "/nfa/publicrelations/policyarchive/policyresearch/"
+        },
+        {
+          "link_text": "소방정책연구자료",
+          "original": "https://www.nfa.go.kr/nfa/publicrelations/policyarchive/policyresearch",
+          "final": "https://www.nfa.go.kr/nfa/publicrelations/policyarchive/policyresearch/",
+          "canonical": null,
+          "path": "/nfa/publicrelations/policyarchive/policyresearch/"
+        },
+        {
+          "link_text": "소방정책자료",
+          "original": "https://www.nfa.go.kr/nfa/publicrelations/policyarchive/firepolicy",
+          "final": "https://www.nfa.go.kr/nfa/publicrelations/policyarchive/firepolicy/",
+          "canonical": null,
+          "path": "/nfa/publicrelations/policyarchive/firepolicy/"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    }
+  },
+  {
+    "org_id": "M16",
+    "name": "성평등가족부",
+    "url": "https://www.mogef.go.kr",
+    "press": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "보도자료",
+          "original": "https://www.mogef.go.kr/nw/rpd/nw_rpd_s001.do?mid=news405",
+          "final": "https://www.mogef.go.kr/nw/rpd/nw_rpd_s001.do?mid=news405",
+          "canonical": null,
+          "path": "/nw/rpd/nw_rpd_s001.do?mid=news405"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "notice": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "공지사항",
+          "original": "https://www.mogef.go.kr/kw/kwc/kw_kwc_s001.do?mid=gnr105",
+          "final": "https://www.mogef.go.kr/kw/kwc/kw_kwc_s001.do?mid=gnr105",
+          "canonical": null,
+          "path": "/kw/kwc/kw_kwc_s001.do?mid=gnr105"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "policy": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "주제별 정책자료",
+          "original": "https://www.mogef.go.kr/mp/pcd/mp_pcd_s001.do?mid=plc500",
+          "final": "https://www.mogef.go.kr/mp/pcd/mp_pcd_s001.do?mid=plc500",
+          "canonical": null,
+          "path": "/mp/pcd/mp_pcd_s001.do?mid=plc500"
+        },
+        {
+          "link_text": "홍보자료/정책",
+          "original": "https://www.mogef.go.kr/oc/rgr/oc_rgr_f008.do",
+          "final": "https://www.mogef.go.kr/oc/rgr/oc_rgr_f008.do",
+          "canonical": null,
+          "path": "/oc/rgr/oc_rgr_f008.do"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    }
+  },
+  {
+    "org_id": "A14",
+    "name": "기상청",
+    "url": "https://www.kma.go.kr",
+    "press": {
+      "detected": false,
+      "urls": [],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "notice": {
+      "detected": false,
+      "urls": [],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "policy": {
+      "detected": false,
+      "urls": [],
+      "blocked": false,
+      "blocked_paths": []
+    }
+  },
+  {
+    "org_id": "A05",
+    "name": "검찰청",
+    "url": "https://www.spo.go.kr",
+    "press": {
+      "detected": false,
+      "urls": [],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "notice": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "공지사항",
+          "original": "https://www.spo.go.kr/site/spo/ex/board/List.do?cbIdx=1401",
+          "final": "https://www.spo.go.kr/site/spo/ex/board/List.do?cbIdx=1401",
+          "canonical": null,
+          "path": "/site/spo/ex/board/List.do?cbIdx=1401"
+        },
+        {
+          "link_text": "공지사항 선택됨",
+          "original": "https://www.spo.go.kr/site/spo/main.do#",
+          "final": "https://www.spo.go.kr/site/spo/main.do#",
+          "canonical": null,
+          "path": "/site/spo/main.do"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "policy": {
+      "detected": false,
+      "urls": [],
+      "blocked": false,
+      "blocked_paths": []
+    }
+  },
+  {
+    "org_id": "A07",
+    "name": "방위사업청",
+    "url": "https://www.dapa.go.kr",
+    "press": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "보도자료",
+          "original": "https://www.dapa.go.kr/dapa/index.do?menuSeq=3069",
+          "final": "https://www.dapa.go.kr/dapa/doc/selectDocList.do?menuSeq=3069&bbsSeq=326",
+          "canonical": "https://www.dapa.go.kr/dapa/index.do?menuSeq=3069",
+          "path": "/dapa/index.do?menuSeq=3069"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "notice": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "공지사항",
+          "original": "https://www.dapa.go.kr/dapa/index.do?menuSeq=3031",
+          "final": "https://www.dapa.go.kr/dapa/doc/selectDocList.do?menuSeq=3031&bbsSeq=443",
+          "canonical": "https://www.dapa.go.kr/dapa/index.do?menuSeq=3031",
+          "path": "/dapa/index.do?menuSeq=3031"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "policy": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "주요정책정보",
+          "original": "https://www.dapa.go.kr/dapa/index.do?menuSeq=3081",
+          "final": "https://www.dapa.go.kr/dapa/page/selectPage.do?menuSeq=3081&pageSeq=3201",
+          "canonical": "https://www.dapa.go.kr/dapa/index.do?menuSeq=3081",
+          "path": "/dapa/index.do?menuSeq=3081"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    }
+  },
+  {
+    "org_id": "M12",
+    "name": "산업통상부",
+    "url": "https://www.motie.go.kr",
+    "press": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "보도자료",
+          "original": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c",
+          "final": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c",
+          "canonical": null,
+          "path": "/kor/article/ATCL3f49a5a8c"
+        },
+        {
+          "link_text": "국정성과 보도자료",
+          "original": "https://www.motir.go.kr/kor/article/ATCL03465409b",
+          "final": "https://www.motir.go.kr/kor/article/ATCL03465409b",
+          "canonical": null,
+          "path": "/kor/article/ATCL03465409b"
+        },
+        {
+          "link_text": "보도자료",
+          "original": "https://www.motir.go.kr/#",
+          "final": "https://www.motir.go.kr/#",
+          "canonical": null,
+          "path": "/"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "notice": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "공지사항",
+          "original": "https://www.motir.go.kr/kor/article/ATCL6e90bb9de",
+          "final": "https://www.motir.go.kr/kor/article/ATCL6e90bb9de",
+          "canonical": null,
+          "path": "/kor/article/ATCL6e90bb9de"
+        },
+        {
+          "link_text": "공지사항",
+          "original": "https://www.motir.go.kr/#",
+          "final": "https://www.motir.go.kr/#",
+          "canonical": null,
+          "path": "/"
+        },
+        {
+          "link_text": "공지사항 더보기",
+          "original": "https://www.motir.go.kr/kor/article/ATCL6e90bb9de?searchCategory=1",
+          "final": "https://www.motir.go.kr/kor/article/ATCL6e90bb9de?searchCategory=1",
+          "canonical": null,
+          "path": "/kor/article/ATCL6e90bb9de?searchCategory=1"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "policy": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "정책·정보",
+          "original": "https://www.motir.go.kr/kor/article/ATCLe7861b4d5",
+          "final": "https://www.motir.go.kr/kor/article/ATCLe7861b4d5",
+          "canonical": null,
+          "path": "/kor/article/ATCLe7861b4d5"
+        },
+        {
+          "link_text": "산업부# 소개 및 정책정보",
+          "original": "https://www.motir.go.kr/#anchor4",
+          "final": "https://www.motir.go.kr/#anchor4",
+          "canonical": null,
+          "path": "/"
+        },
+        {
+          "link_text": "AX 사업 참여 쉬워진다…부처 주요 사업 통합 공고",
+          "original": "https://www.motir.go.kr/kor/article/ATCL8764a1224/155119104/view",
+          "final": "https://www.motir.go.kr/kor/article/ATCL8764a1224/155119104/view",
+          "canonical": null,
+          "path": "/kor/article/ATCL8764a1224/155119104/view"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    }
+  },
+  {
+    "org_id": "A11",
+    "name": "농촌진흥청",
+    "url": "https://www.rda.go.kr",
+    "press": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "부처별보도자료",
+          "original": "https://www.rda.go.kr/board/reformBoard.do?mode=html&prgId=ref_controlReport",
+          "final": "https://www.rda.go.kr/board/reformBoard.do?mode=html&prgId=ref_controlReport",
+          "canonical": null,
+          "path": "/board/reformBoard.do?mode=html&prgId=ref_controlReport"
+        },
+        {
+          "link_text": "보도자료",
+          "original": "https://www.rda.go.kr/board/board.do?mode=list&prgId=day_farmprmninfoEntry",
+          "final": "https://www.rda.go.kr/board/board.do?mode=list&prgId=day_farmprmninfoEntry",
+          "canonical": null,
+          "path": "/board/board.do?mode=list&prgId=day_farmprmninfoEntry"
+        },
+        {
+          "link_text": "보도자료\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t2026년 국제 가축유전자원 신규 등재 후보 모집\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t농촌진흥청(청장 이승돈)은 우리나라 고유 가축유전자원의 국제적 권리를 보호하기 위해 3월 16일부터 5월 15일까지 가축다양성정보시스템(DAD-IS) 등재 후보를 모집한다.  신청...\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t자세히보기",
+          "original": "https://www.rda.go.kr/board/board.do?mode=view&prgId=day_farmprmninfoEntry&dataNo=100000808212",
+          "final": "https://www.rda.go.kr/board/board.do?mode=view&prgId=day_farmprmninfoEntry&dataNo=100000808212",
+          "canonical": "http://www.rda.go.kr/board/board.do?boardId=farmprmninfo&prgId=day_farmprmninfoEntry&dataNo=100000808212&mode=updateCnt",
+          "path": "/board/board.do?boardId=farmprmninfo&prgId=day_farmprmninfoEntry&dataNo=100000808212&mode=updateCnt"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "notice": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "공지사항",
+          "original": "https://www.rda.go.kr/board/board.do?mode=list&prgId=nei_ancmttEntry",
+          "final": "https://www.rda.go.kr/board/board.do?mode=list&prgId=nei_ancmttEntry",
+          "canonical": null,
+          "path": "/board/board.do?mode=list&prgId=nei_ancmttEntry"
+        },
+        {
+          "link_text": "공지사항\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t과수세균병 방제계획 공고\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t농촌진흥청 공고 제2026-71호  과수세균병 방제계획 공고    국내 일부 지역에서 발생하고 있는 과수화상병 및 과수가지검은마름병의 확산 차단과 박멸을 위한 방제계획(농촌진흥청 ...\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t자세히보기",
+          "original": "https://www.rda.go.kr/board/board.do?mode=view&prgId=nei_ancmttEntry&dataNo=100000808191",
+          "final": "https://www.rda.go.kr/board/board.do?mode=view&prgId=nei_ancmttEntry&dataNo=100000808191",
+          "canonical": null,
+          "path": "/board/board.do?mode=view&prgId=nei_ancmttEntry&dataNo=100000808191"
+        },
+        {
+          "link_text": "공지사항\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t국가연구개발사업 관련 제재처분 사전통지에 대한 공시송달 공고\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t농촌진흥청 공고 제2026-49호    [국가연구개발사업 관련 제재처분 사전통지에 대한 공시송달 공고]    국가연구개발사업 관련 연구개발기관이 정당한 사유 없이 국가연구개발혁신법...\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t자세히보기",
+          "original": "https://www.rda.go.kr/board/board.do?mode=view&prgId=nei_ancmttEntry&dataNo=100000808121",
+          "final": "https://www.rda.go.kr/board/board.do?mode=view&prgId=nei_ancmttEntry&dataNo=100000808121",
+          "canonical": null,
+          "path": "/board/board.do?mode=view&prgId=nei_ancmttEntry&dataNo=100000808121"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "policy": {
+      "detected": false,
+      "urls": [],
+      "blocked": false,
+      "blocked_paths": []
+    }
+  },
+  {
+    "org_id": "A02",
+    "name": "관세청",
+    "url": "https://www.customs.go.kr",
+    "press": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "보도자료",
+          "original": "https://www.customs.go.kr/kcs/na/ntt/selectNttList.do?mi=2891&bbsId=1362",
+          "final": "https://www.customs.go.kr/kcs/na/ntt/selectNttList.do?mi=2891&bbsId=1362",
+          "canonical": null,
+          "path": "/kcs/na/ntt/selectNttList.do?mi=2891&bbsId=1362"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "notice": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "공지사항",
+          "original": "https://www.customs.go.kr/kcs/main.do#?mi=2888",
+          "final": "https://www.customs.go.kr/kcs/main.do#?mi=2888",
+          "canonical": "https://www.customs.go.kr",
+          "path": "/"
+        },
+        {
+          "link_text": "공지사항",
+          "original": "https://www.customs.go.kr/kcs/na/ntt/selectNttList.do?mi=2889&bbsId=1341",
+          "final": "https://www.customs.go.kr/kcs/na/ntt/selectNttList.do?mi=2889&bbsId=1341",
+          "canonical": null,
+          "path": "/kcs/na/ntt/selectNttList.do?mi=2889&bbsId=1341"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "policy": {
+      "detected": false,
+      "urls": [],
+      "blocked": false,
+      "blocked_paths": []
+    }
+  },
+  {
+    "org_id": "M08",
+    "name": "행정안전부",
+    "url": "https://www.mois.go.kr",
+    "press": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "관련 보도자료",
+          "original": "https://www.mois.go.kr/frt/sub/a03/better03/screen.do",
+          "final": "https://www.mois.go.kr/frt/sub/a03/better03/screen.do",
+          "canonical": null,
+          "path": "/frt/sub/a03/better03/screen.do"
+        },
+        {
+          "link_text": "보도자료",
+          "original": "https://www.mois.go.kr/frt/bbs/type010/commonSelectBoardList.do?bbsId=BBSMSTR_000000000008",
+          "final": "https://www.mois.go.kr/frt/bbs/type010/commonSelectBoardList.do?bbsId=BBSMSTR_000000000008",
+          "canonical": null,
+          "path": "/frt/bbs/type010/commonSelectBoardList.do?bbsId=BBSMSTR_000000000008"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "notice": {
+      "detected": false,
+      "urls": [],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "policy": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "정책자료",
+          "original": "https://www.mois.go.kr/frt/a05/policyDataHome.do",
+          "final": "https://www.mois.go.kr/frt/a05/policyDataHome.do",
+          "canonical": null,
+          "path": "/frt/a05/policyDataHome.do"
+        },
+        {
+          "link_text": "정책자료",
+          "original": "https://www.mois.go.kr/frt/a01/frtMain.do#",
+          "final": "https://www.mois.go.kr/frt/a01/frtMain.do#",
+          "canonical": null,
+          "path": "/frt/a01/frtMain.do"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    }
+  },
+  {
+    "org_id": "A06",
+    "name": "병무청",
+    "url": "https://www.mma.go.kr",
+    "press": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "보도자료",
+          "original": "https://www.mma.go.kr/board/boardList.do?mc=mma0000392&gesipan_id=15",
+          "final": "https://www.mma.go.kr/board/boardList.do?mc=mma0000392&gesipan_id=15",
+          "canonical": null,
+          "path": "/board/boardList.do?mc=mma0000392&gesipan_id=15"
+        },
+        {
+          "link_text": "보도자료",
+          "original": "https://www.mma.go.kr/index.do#",
+          "final": "https://www.mma.go.kr/index.do#",
+          "canonical": null,
+          "path": "/index.do"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "notice": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "공지사항",
+          "original": "https://www.mma.go.kr/board/boardList.do?mc=usr0000127&gesipan_id=69",
+          "final": "https://www.mma.go.kr/board/boardList.do?mc=usr0000127&gesipan_id=69",
+          "canonical": null,
+          "path": "/board/boardList.do?mc=usr0000127&gesipan_id=69"
+        },
+        {
+          "link_text": "공지사항",
+          "original": "https://www.mma.go.kr/board/boardList.do?mc=usr0000137&gesipan_id=13",
+          "final": "https://www.mma.go.kr/board/boardList.do?mc=usr0000137&gesipan_id=13",
+          "canonical": null,
+          "path": "/board/boardList.do?mc=usr0000137&gesipan_id=13"
+        },
+        {
+          "link_text": "공지사항",
+          "original": "https://www.mma.go.kr/board/boardList.do?mc=usr0000379&gesipan_id=2",
+          "final": "https://www.mma.go.kr/board/boardList.do?mc=usr0000379&gesipan_id=2",
+          "canonical": null,
+          "path": "/board/boardList.do?mc=usr0000379&gesipan_id=2"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "policy": {
+      "detected": false,
+      "urls": [],
+      "blocked": false,
+      "blocked_paths": []
+    }
+  },
+  {
+    "org_id": "M10",
+    "name": "문화체육관광부",
+    "url": "https://www.mcst.go.kr",
+    "press": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "보도자료",
+          "original": "https://www.mcst.go.kr/site/s_notice/press/pressList.jsp",
+          "final": "https://www.mcst.go.kr/site/s_notice/press/pressList.jsp",
+          "canonical": null,
+          "path": "/site/s_notice/press/pressList.jsp"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "notice": {
+      "detected": false,
+      "urls": [],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "policy": {
+      "detected": false,
+      "urls": [],
+      "blocked": false,
+      "blocked_paths": []
+    }
+  },
+  {
+    "org_id": "M07",
+    "name": "국방부",
+    "url": "https://www.mnd.go.kr",
+    "press": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "보도자료",
+          "original": "https://www.mnd.go.kr/mbshome/mbs/mnd/subview.jsp?id=mnd_020500000000",
+          "final": "https://www.mnd.go.kr/user/newsInUserRecord.action?siteId=mnd&handle=I_669&id=mnd_020500000000",
+          "canonical": null,
+          "path": "/user/newsInUserRecord.action?siteId=mnd&handle=I_669&id=mnd_020500000000"
+        },
+        {
+          "link_text": "보도자료",
+          "original": "https://www.mnd.go.kr/mbshome/mbs/mnd/index.jsp#none",
+          "final": "https://www.mnd.go.kr/mbshome/mbs/mnd/index.jsp#none",
+          "canonical": null,
+          "path": "/mbshome/mbs/mnd/index.jsp"
+        },
+        {
+          "link_text": "보도자료 바로보기 게시판 더보기",
+          "original": "https://www.mnd.go.kr/user/newsInUserRecord.action?handle=I_669&siteId=mnd&id=mnd_020500000000",
+          "final": "https://www.mnd.go.kr/user/newsInUserRecord.action?handle=I_669&siteId=mnd&id=mnd_020500000000",
+          "canonical": null,
+          "path": "/user/newsInUserRecord.action?handle=I_669&siteId=mnd&id=mnd_020500000000"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "notice": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "공지사항",
+          "original": "https://www.mnd.go.kr/mbshome/mbs/mnd/subview.jsp?id=mnd_020401000000",
+          "final": "https://www.mnd.go.kr/user/boardList.action?boardId=I_11066&siteId=mnd&id=mnd_020401000000",
+          "canonical": null,
+          "path": "/user/boardList.action?boardId=I_11066&siteId=mnd&id=mnd_020401000000"
+        },
+        {
+          "link_text": "공지사항",
+          "original": "https://www.mnd.go.kr/mbshome/mbs/mnd/index.jsp#none",
+          "final": "https://www.mnd.go.kr/mbshome/mbs/mnd/index.jsp#none",
+          "canonical": null,
+          "path": "/mbshome/mbs/mnd/index.jsp"
+        },
+        {
+          "link_text": "공지사항 바로보기 게시판 더보기",
+          "original": "https://www.mnd.go.kr/user/boardList.action?boardId=I_11066&mcategoryId=&id=mnd_020401000000",
+          "final": "https://www.mnd.go.kr/user/boardList.action?boardId=I_11066&mcategoryId=&id=mnd_020401000000",
+          "canonical": null,
+          "path": "/user/boardList.action?boardId=I_11066&mcategoryId=&id=mnd_020401000000"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "policy": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "정책자료집",
+          "original": "https://www.mnd.go.kr/mbshome/mbs/mnd/subview.jsp?id=mnd_020704000000",
+          "final": "https://www.mnd.go.kr/cop/pblictn/selectPublicationsUser.do?siteId=mnd&componentId=14&id=mnd_020704000000",
+          "canonical": null,
+          "path": "/cop/pblictn/selectPublicationsUser.do?siteId=mnd&componentId=14&id=mnd_020704000000"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    }
+  },
+  {
+    "org_id": "A03",
+    "name": "조달청",
+    "url": "https://www.pps.go.kr",
+    "press": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "보도자료",
+          "original": "https://www.pps.go.kr/kor/bbs/list.do?key=00634",
+          "final": "https://www.pps.go.kr/kor/bbs/list.do?key=00634",
+          "canonical": "http://www.pps.go.kr",
+          "path": "/"
+        },
+        {
+          "link_text": "보도",
+          "original": "https://www.pps.go.kr/kor/index.do#none",
+          "final": "https://www.pps.go.kr/kor/index.do#none",
+          "canonical": "http://www.pps.go.kr",
+          "path": "/"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "notice": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "공지사항",
+          "original": "https://www.pps.go.kr/kor/index.do#",
+          "final": "https://www.pps.go.kr/kor/index.do#",
+          "canonical": "http://www.pps.go.kr",
+          "path": "/"
+        },
+        {
+          "link_text": "공지사항",
+          "original": "https://www.pps.go.kr/kor/bbs/list.do?key=00641",
+          "final": "https://www.pps.go.kr/kor/bbs/list.do?key=00641",
+          "canonical": "http://www.pps.go.kr",
+          "path": "/"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "policy": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "정책자료",
+          "original": "https://www.pps.go.kr/kor/index.do#",
+          "final": "https://www.pps.go.kr/kor/index.do#",
+          "canonical": "http://www.pps.go.kr",
+          "path": "/"
+        },
+        {
+          "link_text": "정책정보포털 POINT",
+          "original": "http://policy.nl.go.kr/",
+          "final": "https://policy.nl.go.kr/main/mainIndex.do",
+          "canonical": null,
+          "path": "/main/mainIndex.do"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    }
+  },
+  {
+    "org_id": "A04",
+    "name": "재외동포청",
+    "url": "https://www.oka.go.kr",
+    "press": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "보도자료",
+          "original": "https://www.oka.go.kr/web/board/brdList.do?menu_cd=000018",
+          "final": "https://www.oka.go.kr/web/board/brdList.do?menu_cd=000018",
+          "canonical": "https://cckl.kr",
+          "path": "/"
+        },
+        {
+          "link_text": "보도자료2026-03-13재외동포청장, 대림동 찾아 중국동포 정착 현장 점검자세히보기",
+          "original": "https://www.oka.go.kr/web/board/brdDetail.do?menu_cd=000018&num=4374",
+          "final": "https://www.oka.go.kr/web/board/brdDetail.do?menu_cd=000018&num=4374",
+          "canonical": "https://cckl.kr",
+          "path": "/"
+        },
+        {
+          "link_text": "보도자료2026-03-09세계한인회장대회 사상 첫 민간 운영위원장 선출자세히보기",
+          "original": "https://www.oka.go.kr/web/board/brdDetail.do?menu_cd=000018&num=4366",
+          "final": "https://www.oka.go.kr/web/board/brdDetail.do?menu_cd=000018&num=4366",
+          "canonical": "https://cckl.kr",
+          "path": "/"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "notice": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "공지사항",
+          "original": "https://www.oka.go.kr/web/board/brdList.do?menu_cd=000017",
+          "final": "https://www.oka.go.kr/web/board/brdList.do?menu_cd=000017",
+          "canonical": "https://cckl.kr",
+          "path": "/"
+        },
+        {
+          "link_text": "공지사항2026-03-06중동상황 관련, 국내 귀국동포 지원 프로그램 안내자세히보기",
+          "original": "https://www.oka.go.kr/web/board/brdDetail.do?menu_cd=000017&num=4364",
+          "final": "https://www.oka.go.kr/web/board/brdDetail.do?menu_cd=000017&num=4364",
+          "canonical": "https://cckl.kr",
+          "path": "/"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "policy": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "정책 · 정보",
+          "original": "https://www.oka.go.kr/web/main.do;jsessionid=0oOSFaJ5P7AzJXXNZXc63eCTgI3c8TUGH91cQvoB.node11?editorType=synapeditor&screenTp=USER#mGnb-anchor4",
+          "final": "https://www.oka.go.kr/web/main.do;jsessionid=0oOSFaJ5P7AzJXXNZXc63eCTgI3c8TUGH91cQvoB.node11?editorType=synapeditor&screenTp=USER#mGnb-anchor4",
+          "canonical": "http://localhost:8082",
+          "path": "/"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    }
+  },
+  {
+    "org_id": "M15",
+    "name": "고용노동부",
+    "url": "https://www.moel.go.kr",
+    "press": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "보도자료",
+          "original": "https://www.moel.go.kr/news/enews/report/enewsList.do",
+          "final": "https://www.moel.go.kr/news/enews/report/enewsList.do",
+          "canonical": null,
+          "path": "/news/enews/report/enewsList.do"
+        },
+        {
+          "link_text": "보도자료",
+          "original": "https://www.moel.go.kr/index.do#",
+          "final": "https://www.moel.go.kr/index.do#",
+          "canonical": null,
+          "path": "/index.do"
+        },
+        {
+          "link_text": "관리번호 | 노동부-25-013\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t‘권리 밖 노동’도 체감할 수 있는 맞춤형 보호 강화\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tㅇ ‘일하는 사람이라면 누구나 마땅히 보호받아야 한다’는 패러다임 전환의 필요성 확산\n  - 장관 취임, 국정감사 등 주요 계기마다 모든 일하는 사람을 포용적으로 보호하는 새로운 보호체계의 필요성을 국가 차원의 \n    아젠다로 제시\n    * 보도자료 배포(9회)  / TV·라디오 등 언론 인터뷰(14건) / 원탁회의 및 타운홀미팅(19회) 등\n\nㅇ ‘권리 밖 노동’ 당사자와의 직접 소통으로 체감할 수 있는 현실적 보호 방안의 동력 확보\n  - 당·정·노·사 간 긴밀한 논의를 통해, 기존 보호체계의 한계를 넘어 실질적인 보호를 제공할 수 있는 새로운 보호 방향에 대한 \n    사회적 공감대 조성\n    * 당정 합동 토론회 개최(’25.10.23.) / 국회 토론회 참석(7회) / 예산 연계 보도·카드뉴스 배포(’25.9.5. 및 ’26.2월 中) 등\n\nㅇ 일하는 사람의 권리에 관한 기본법(김태선 의원), 근로기준법 개정안(김주영 의원) 발의(`25.12.24.)",
+          "original": "https://www.moel.go.kr/news/achievements/view.do?bbs_seq=20260201205",
+          "final": "https://www.moel.go.kr/news/achievements/view.do?bbs_seq=20260201205",
+          "canonical": null,
+          "path": "/news/achievements/view.do?bbs_seq=20260201205"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "notice": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "공지사항",
+          "original": "https://www.moel.go.kr/news/notice/noticeList.do",
+          "final": "https://www.moel.go.kr/news/notice/noticeList.do",
+          "canonical": null,
+          "path": "/news/notice/noticeList.do"
+        },
+        {
+          "link_text": "공지사항",
+          "original": "https://www.moel.go.kr/index.do#",
+          "final": "https://www.moel.go.kr/index.do#",
+          "canonical": null,
+          "path": "/index.do"
+        },
+        {
+          "link_text": "카드뉴스\n\t                                                   2026년도 직업능력개발 유공 포상 안내\n\t                                                   1쪽: 2026 직업능력개발 유공 포상 직업능력개발에 기여한 유공자를 찾습니다, 후보자 접수기간 2026.3.9.(월)~4.8.(수), 2쪽: 포상대상 직업훈련 활성화, 숙련기술 발전 및 능력 중심 채용·평가·훈련 체계 마련 등에 기여한 6개 분야* 유공자 * 노동자, 사업주, 우수 숙련기술인, 직업훈련기관 대표, 직업훈련 교원, HRD·자격업무종사자, 포상규모 훈장, 포장, 대통령표창, 국무총리표창, 고용노동부장관표창(98점 내외) * 훈장 15년 이상, 포장 10년 이상, 대통령·국무총리표창 5년 이상, 고용노동부장관표창 1년 이상 해당 분야에서 공적을 쌓은 자에게 수여, 3쪽: 접수처 지방고용노동관서(고용센터), 한국산업인력공단(지부·지사), 한국폴리텍(권역별 대학), 한국기술교육대학교, 대한상공회의소, 한국직업능력연구원, 접수방법 제출서류를 작성하여 접수처에 우편 또는 방문 접수, 온라인 고용노동부(www.moel.go.kr) → 국민참여 → 정부포상 365일 추천 창구 문의, 044-202-7275, 7285 ※ 자세한 사항은 고용노동부 누리집(www.moel.go.kr)>뉴스·소식>공지사항\n\t                                                   바로가기",
+          "original": "https://www.moel.go.kr/news/cardinfo/view.do?bbs_seq=20260300595",
+          "final": "https://www.moel.go.kr/news/cardinfo/view.do?bbs_seq=20260300595",
+          "canonical": null,
+          "path": "/news/cardinfo/view.do?bbs_seq=20260300595"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "policy": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "정책자료실",
+          "original": "https://www.moel.go.kr/policy/policydata/list.do",
+          "final": "https://www.moel.go.kr/policy/policydata/list.do",
+          "canonical": null,
+          "path": "/policy/policydata/list.do"
+        },
+        {
+          "link_text": "정책소개 바로가기",
+          "original": "https://www.moel.go.kr/policyitrd/policyItrdList.do",
+          "final": "https://www.moel.go.kr/policyitrd/policyItrdList.do",
+          "canonical": null,
+          "path": "/policyitrd/policyItrdList.do"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    }
+  },
+  {
+    "org_id": "M11",
+    "name": "농림축산식품부",
+    "url": "https://www.mafra.go.kr",
+    "press": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "규제개선 보도자료",
+          "original": "https://www.better.go.kr/sandbox.SandboxDataSlPL.laf?refer=01",
+          "final": "https://www.better.go.kr/sandbox.SandboxDataSlPL?refer=01",
+          "canonical": null,
+          "path": "/sandbox.SandboxDataSlPL?refer=01"
+        },
+        {
+          "link_text": "보도자료",
+          "original": "https://www.mafra.go.kr/home/5109/subview.do",
+          "final": "https://www.mafra.go.kr/home/5109/subview.do",
+          "canonical": null,
+          "path": "/home/5109/subview.do"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "notice": {
+      "detected": false,
+      "urls": [],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "policy": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "정책자료",
+          "original": "https://www.mafra.go.kr/home/5248/subview.do",
+          "final": "https://www.mafra.go.kr/home/5248/subview.do",
+          "canonical": null,
+          "path": "/home/5248/subview.do"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    }
+  },
+  {
+    "org_id": "A13",
+    "name": "질병관리청",
+    "url": "https://www.kdca.go.kr",
+    "press": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "보도자료",
+          "original": "https://www.kdca.go.kr/kdca/2847/subview.do",
+          "final": "https://www.kdca.go.kr/kdca/2847/subview.do",
+          "canonical": "https://www.kdca.go.kr/kdca/2847/subview.do?",
+          "path": "/kdca/2847/subview.do"
+        },
+        {
+          "link_text": "보도자료",
+          "original": "https://www.kdca.go.kr/kdca/2848/subview.do",
+          "final": "https://www.kdca.go.kr/kdca/2848/subview.do",
+          "canonical": "https://www.kdca.go.kr/kdca/2848/subview.do?",
+          "path": "/kdca/2848/subview.do"
+        },
+        {
+          "link_text": "보도자료\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t[3.13.금.조간] 심인성 쇼크 생존자 10명 중 1명, 퇴원 후 정신질환 경험\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t심인성 쇼크 생존자 10명 중 1명, 퇴원 후 정신질환 경험- 심인성 쇼크 생존자 약 10%, 퇴원 후 정신질환 경험- 신속한 정신과 치료 시 심근경색, 뇌졸중, 재혈관술, 심부전\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t2026-03-12",
+          "original": "https://www.kdca.go.kr/bbs/kdca/42/310421/artclView.do?layout=unknown",
+          "final": "https://www.kdca.go.kr/kdca/2848/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGa2RjYSUyRjQyJTJGMzEwNDIxJTJGYXJ0Y2xWaWV3LmRvJTNG",
+          "canonical": "https://www.kdca.go.kr/kdca/2848/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGa2RjYSUyRjQyJTJGMzEwNDIxJTJGYXJ0Y2xWaWV3LmRvJTNG",
+          "path": "/kdca/2848/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGa2RjYSUyRjQyJTJGMzEwNDIxJTJGYXJ0Y2xWaWV3LmRvJTNG"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "notice": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "공지사항",
+          "original": "https://www.kdca.go.kr/kdca/2769/subview.do",
+          "final": "https://www.kdca.go.kr/kdca/2769/subview.do",
+          "canonical": "https://www.kdca.go.kr/kdca/2769/subview.do?",
+          "path": "/kdca/2769/subview.do"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "policy": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "정책정보",
+          "original": "https://www.kdca.go.kr/kdca/3236/subview.do",
+          "final": "https://www.kdca.go.kr/kdca/3236/subview.do",
+          "canonical": "https://www.kdca.go.kr/kdca/3236/subview.do?",
+          "path": "/kdca/3236/subview.do"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    }
+  },
+  {
+    "org_id": "M04",
+    "name": "외교부",
+    "url": "https://www.mofa.go.kr",
+    "press": {
+      "detected": false,
+      "urls": [],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "notice": {
+      "detected": false,
+      "urls": [],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "policy": {
+      "detected": false,
+      "urls": [],
+      "blocked": false,
+      "blocked_paths": []
+    }
+  },
+  {
+    "org_id": "M14",
+    "name": "기후에너지환경부",
+    "url": "https://www.me.go.kr",
+    "press": {
+      "detected": false,
+      "urls": [],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "notice": {
+      "detected": false,
+      "urls": [],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "policy": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "정책정보",
+          "original": "https://www.mcee.go.kr/home/web/index.do?menuId=92",
+          "final": "https://www.mcee.go.kr/home/web/index.do?menuId=92",
+          "canonical": null,
+          "path": "/home/web/index.do?menuId=92"
+        },
+        {
+          "link_text": "녹색전환정책과\n\t\t\t\t\t\t\t\t\t\t\t2026-03-15\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t 지속가능성 공시 대응, 중소·중견기업의 환경정보 공개 지원",
+          "original": "https://www.mcee.go.kr/home/web/board/read.do;jsessionid=o6r6R1MirvcDwvaVSGJf4z4bRAtpXvsdEepG50X_.mehome1?menuId=10525&boardMasterId=1&boardId=1849420",
+          "final": "https://www.mcee.go.kr/home/web/board/read.do;jsessionid=o6r6R1MirvcDwvaVSGJf4z4bRAtpXvsdEepG50X_.mehome1?menuId=10525&boardMasterId=1&boardId=1849420",
+          "canonical": null,
+          "path": "/home/web/board/read.do;jsessionid=o6r6R1MirvcDwvaVSGJf4z4bRAtpXvsdEepG50X_.mehome1?menuId=10525&boardMasterId=1&boardId=1849420"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    }
+  },
+  {
+    "org_id": "M02",
+    "name": "과학기술정보통신부",
+    "url": "https://www.msit.go.kr",
+    "press": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "규제혁신보도자료",
+          "original": "https://www.better.go.kr/hz.blltn.BodoBlltnSlPL?blltn_div=portal&link_mini_cd=1721000",
+          "final": "https://www.better.go.kr/hz.blltn.BodoBlltnSlPL?blltn_div=portal&link_mini_cd=1721000",
+          "canonical": "",
+          "path": "/hz.blltn.BodoBlltnSlPL?blltn_div=portal&link_mini_cd=1721000"
+        },
+        {
+          "link_text": "보도자료\n\t\t\t\t\t\t\t\t\t\t구혁채 차관 “양자·6세대 이동통신 등 핀란드와 신뢰 기반의 미래 연결망(네트워크) 앞당길 것”\n\t\t\t\t\t\t\t\t\t\tMar 13, 2026",
+          "original": "https://www.msit.go.kr/bbs/view.do?sCode=user&mPid=208&mId=307&bbsSeqNo=94&nttSeqNo=3187019",
+          "final": "https://www.msit.go.kr/bbs/view.do?sCode=user&mPid=208&mId=307&bbsSeqNo=94&nttSeqNo=3187019",
+          "canonical": null,
+          "path": "/bbs/view.do?sCode=user&mPid=208&mId=307&bbsSeqNo=94&nttSeqNo=3187019"
+        },
+        {
+          "link_text": "보도자료\n\t\t\t\t\t\t\t\t\t\t23개 부처 합심, ‘8.6조 원’ 투입해  대한민국 기술 주권 넓힌다\n\t\t\t\t\t\t\t\t\t\tMar 13, 2026",
+          "original": "https://www.msit.go.kr/bbs/view.do?sCode=user&mPid=208&mId=307&bbsSeqNo=94&nttSeqNo=3187020",
+          "final": "https://www.msit.go.kr/bbs/view.do?sCode=user&mPid=208&mId=307&bbsSeqNo=94&nttSeqNo=3187020",
+          "canonical": null,
+          "path": "/bbs/view.do?sCode=user&mPid=208&mId=307&bbsSeqNo=94&nttSeqNo=3187020"
+        }
+      ],
+      "blocked": true,
+      "blocked_paths": [
+        {
+          "path": "/bbs/view.do?sCode=user&mPid=208&mId=307&bbsSeqNo=94&nttSeqNo=3187019",
+          "reason": "disallow: /bbs"
+        },
+        {
+          "path": "/bbs/view.do?sCode=user&mPid=208&mId=307&bbsSeqNo=94&nttSeqNo=3187020",
+          "reason": "disallow: /bbs"
+        }
+      ]
+    },
+    "notice": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "공지사항\n\t\t\t\t\t\t\t\t\t\t\t2026년 하반기 <대한민국 과학기술인상> 선정계획 공고\n\t\t\t\t\t\t\t\t\t\t\tMar 13, 2026",
+          "original": "https://www.msit.go.kr/bbs/view.do?sCode=user&mPid=121&mId=310&bbsSeqNo=96&nttSeqNo=3186425",
+          "final": "https://www.msit.go.kr/bbs/view.do?sCode=user&mPid=121&mId=310&bbsSeqNo=96&nttSeqNo=3186425",
+          "canonical": null,
+          "path": "/bbs/view.do?sCode=user&mPid=121&mId=310&bbsSeqNo=96&nttSeqNo=3186425"
+        },
+        {
+          "link_text": "공지사항",
+          "original": "https://www.msit.go.kr/index.do#notinews_tab01",
+          "final": "https://www.msit.go.kr/index.do#notinews_tab01",
+          "canonical": null,
+          "path": "/index.do"
+        },
+        {
+          "link_text": "공지사항\n\t\t\t\t\t\t\t\t\t\t\t2026년 상반기 퇴직공무원 정부포상 공개검증\n\t\t\t\t\t\t\t\t\t\t\tMar 12, 2026",
+          "original": "https://www.msit.go.kr/bbs/view.do?sCode=user&mPid=121&mId=310&bbsSeqNo=96&nttSeqNo=3186426",
+          "final": "https://www.msit.go.kr/bbs/view.do?sCode=user&mPid=121&mId=310&bbsSeqNo=96&nttSeqNo=3186426",
+          "canonical": null,
+          "path": "/bbs/view.do?sCode=user&mPid=121&mId=310&bbsSeqNo=96&nttSeqNo=3186426"
+        }
+      ],
+      "blocked": true,
+      "blocked_paths": [
+        {
+          "path": "/bbs/view.do?sCode=user&mPid=121&mId=310&bbsSeqNo=96&nttSeqNo=3186425",
+          "reason": "disallow: /bbs"
+        },
+        {
+          "path": "/bbs/view.do?sCode=user&mPid=121&mId=310&bbsSeqNo=96&nttSeqNo=3186426",
+          "reason": "disallow: /bbs"
+        }
+      ]
+    },
+    "policy": {
+      "detected": false,
+      "urls": [],
+      "blocked": false,
+      "blocked_paths": []
+    }
+  },
+  {
+    "org_id": "M03",
+    "name": "교육부",
+    "url": "https://www.moe.go.kr",
+    "press": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "보도자료",
+          "original": "https://www.moe.go.kr/boardCnts/listRenew.do?boardID=294&m=020402&s=moe",
+          "final": "https://www.moe.go.kr/boardCnts/listRenew.do?boardID=294&m=020402&s=moe",
+          "canonical": null,
+          "path": "/boardCnts/listRenew.do?boardID=294&m=020402&s=moe"
+        },
+        {
+          "link_text": "보도자료\n\t                            데이터로 읽는 우리 교육 연재로 교육에 대한 국민의 궁금증을 해소한다\n\t                        \n\t                        교육부와 한국교육개발원은 기존에 발표했던 교육 관련 통계와 공시자료를 주제별로 묶어서 데이터로 읽는 우리 교육을 발간했다. 이 책자는 교육부가 여러 가지 관점에서 교육 정보를 제공하던 방식에서 벗어나, 하나의 교육 주제에 대해 종합적이고 체계적으로 설명하려는 목적으로 제작되었다. 이를 위해 학기별 이슈에 맞춰 국민 생활과 밀접한 주제를 선정하며, 첫 번째 호에서는 대학생 장학금을 주제로 다루었다. \n\n데이터로 읽는 우리 교육은 교육부 누리집을 비롯한 세 가지 경로를 통해 확인 가능하며, 교육데이터플랫폼에는 시각화된 분석자료도 추가될 예정이다. 더불어, 교육부는 이용자가 심층분석 자료를 보고 추가 자료를 원할 경우, 교육데이터 지도 등 연관된 서비스를 안내할 계획이다. 이러한 노력을 통해 교육부는 국민들이 교육 정보에 더욱 쉽게 접근하도록 돕고, 그 이해도를 높이려 한다.\n\t                        2026-03-15",
+          "original": "https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=105614&lev=0&searchType=null&statusYN=W&page=1&s=moe&m=020402&opType=N",
+          "final": "https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=105614&lev=0&searchType=null&statusYN=W&page=1&s=moe&m=020402&opType=N",
+          "canonical": null,
+          "path": "/boardCnts/viewRenew.do?boardID=294&boardSeq=105614&lev=0&searchType=null&statusYN=W&page=1&s=moe&m=020402&opType=N"
+        },
+        {
+          "link_text": "보도자료\n\t                            2027학년도~2031학년도 의과대학 학생 정원 배정안 사전 통지\n\t                        \n\t                        교육부는 서울을 제외한 지역의 32개 대학에 대해 2027학년도~2031학년도 의과대학 학생 정원 배정안을 발표했다. \n\n보건복지부가 통보한 증원 규모를 적용한 이번 배정안은 의견제출, 이의신청 등을 거쳐 통지된 정원이 최종 확정되며, 향후 40개 의과대학의 총정원은 2024학년도 의대 정원(3,058명)을 기준으로 2027학년도는 490명이 증가한 3,548명, 2028학년도~2031학년도는 매년 613명이 증가한 3,671명이 된다. \n\n또한, 이번에 증원된 정원은 모두 지역의사제가 적용되며, 정부는 의대 정원 변동 규모에 맞는 교육여건 지원, 지역의사제 도입에 따른 교육 지원 등을 체계적으로 실시할 예정이다.\n\t                        2026-03-13",
+          "original": "https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=105613&lev=0&searchType=null&statusYN=W&page=1&s=moe&m=020402&opType=N",
+          "final": "https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=105613&lev=0&searchType=null&statusYN=W&page=1&s=moe&m=020402&opType=N",
+          "canonical": null,
+          "path": "/boardCnts/viewRenew.do?boardID=294&boardSeq=105613&lev=0&searchType=null&statusYN=W&page=1&s=moe&m=020402&opType=N"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "notice": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "공지사항",
+          "original": "https://www.moe.go.kr/boardCnts/listRenew.do?boardID=333&m=0205&s=moe",
+          "final": "https://www.moe.go.kr/boardCnts/listRenew.do?boardID=333&m=0205&s=moe",
+          "canonical": null,
+          "path": "/boardCnts/listRenew.do?boardID=333&m=0205&s=moe"
+        },
+        {
+          "link_text": "공지사항",
+          "original": "https://www.moe.go.kr/boardCnts/listRenew.do?boardID=333&m=020501&s=moe",
+          "final": "https://www.moe.go.kr/boardCnts/listRenew.do?boardID=333&m=020501&s=moe",
+          "canonical": null,
+          "path": "/boardCnts/listRenew.do?boardID=333&m=020501&s=moe"
+        },
+        {
+          "link_text": "공지사항",
+          "original": "https://www.moe.go.kr/main.do?s=moe#",
+          "final": "https://www.moe.go.kr/main.do?s=moe#",
+          "canonical": null,
+          "path": "/main.do?s=moe"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "policy": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "정책연구 정보",
+          "original": "https://www.prism.go.kr/homepage/",
+          "final": "https://www.prism.go.kr/homepage/",
+          "canonical": null,
+          "path": "/homepage/"
+        },
+        {
+          "link_text": "보도자료\n\t                            2025년 초중고 사교육비 조사 결과\n\t                        \n\t                        본 기사는 국가데이터처가 교육부와 공동으로 실시한 2025년 초중고 사교육비 조사 결과를 다루고 있다. 이 조사는 사교육비 지출을 체계적으로 파악하여 교육 정책 및 관련 연구에 필요한 기초 자료를 제공하기 위한 것으로, 초·중·고 학생들이 학교 밖에서 받는 보충 교육을 위해 개인이 부담하는 비용인 사교육비에는 학원 수강, 개인 과외, 그룹 과외, 방문 학습지, 인터넷 및 통신 강좌 등의 수강료(교재비 포함) 지출 비용이 포함된다. 단, 늘봄학교·방과후학교 비용, EBS 교재비, 어학연수비 등은 사교육비 범위에 포함되지 않는다.\n\t                        2026-03-12",
+          "original": "https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=105597&lev=0&searchType=null&statusYN=W&page=1&s=moe&m=020402&opType=N",
+          "final": "https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=105597&lev=0&searchType=null&statusYN=W&page=1&s=moe&m=020402&opType=N",
+          "canonical": null,
+          "path": "/boardCnts/viewRenew.do?boardID=294&boardSeq=105597&lev=0&searchType=null&statusYN=W&page=1&s=moe&m=020402&opType=N"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    }
+  },
+  {
+    "org_id": "M09",
+    "name": "국가보훈부",
+    "url": "https://www.mpva.go.kr",
+    "press": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "보도자료",
+          "original": "https://www.mpva.go.kr/mpva/selectBbsNttList.do?bbsNo=16&key=77",
+          "final": "https://www.mpva.go.kr/mpva/selectBbsNttList.do?bbsNo=16&key=77",
+          "canonical": null,
+          "path": "/mpva/selectBbsNttList.do?bbsNo=16&key=77"
+        },
+        {
+          "link_text": "보도자료전체보기",
+          "original": "https://www.mpva.go.kr/mpva/selectBbsNttList.do?key=77&bbsNo=16",
+          "final": "https://www.mpva.go.kr/mpva/selectBbsNttList.do?key=77&bbsNo=16",
+          "canonical": null,
+          "path": "/mpva/selectBbsNttList.do?key=77&bbsNo=16"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "notice": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "공지사항",
+          "original": "https://www.mpva.go.kr/mpva/selectBbsNttList.do?bbsNo=15&key=76",
+          "final": "https://www.mpva.go.kr/mpva/selectBbsNttList.do?bbsNo=15&key=76",
+          "canonical": null,
+          "path": "/mpva/selectBbsNttList.do?bbsNo=15&key=76"
+        },
+        {
+          "link_text": "공지사항전체보기",
+          "original": "https://www.mpva.go.kr/mpva/selectBbsNttList.do?key=76&bbsNo=15",
+          "final": "https://www.mpva.go.kr/mpva/selectBbsNttList.do?key=76&bbsNo=15",
+          "canonical": null,
+          "path": "/mpva/selectBbsNttList.do?key=76&bbsNo=15"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "policy": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "정책자료실",
+          "original": "https://www.mpva.go.kr/mpva/selectBbsNttList.do?bbsNo=41&key=165&searchCtgry=%EA%B5%AD%EC%A0%95%EA%B3%BC%EC%A0%9C&integrDeptCode=",
+          "final": "https://www.mpva.go.kr/mpva/selectBbsNttList.do?bbsNo=41&key=165&searchCtgry=%EA%B5%AD%EC%A0%95%EA%B3%BC%EC%A0%9C&integrDeptCode=",
+          "canonical": null,
+          "path": "/mpva/selectBbsNttList.do?bbsNo=41&key=165&searchCtgry=%EA%B5%AD%EC%A0%95%EA%B3%BC%EC%A0%9C&integrDeptCode="
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    }
+  },
+  {
+    "org_id": "A15",
+    "name": "해양경찰청",
+    "url": "https://www.kcg.go.kr",
+    "press": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "보도자료",
+          "original": "https://www.kcg.go.kr/kcg/na/ntt/selectNttList.do?mi=2799&bbsId=313",
+          "final": "https://www.kcg.go.kr/kcg/na/ntt/selectNttList.do?mi=2799&bbsId=313",
+          "canonical": "http://www.kcg.go.kr",
+          "path": "/"
+        },
+        {
+          "link_text": "보도자료",
+          "original": "https://www.kcg.go.kr/kcg/main.do#tab4",
+          "final": "https://www.kcg.go.kr/kcg/main.do#tab4",
+          "canonical": "http://www.kcg.go.kr",
+          "path": "/"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "notice": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "공지사항",
+          "original": "https://www.kcg.go.kr/kcg/na/ntt/selectNttList.do?mi=2796&bbsId=310",
+          "final": "https://www.kcg.go.kr/kcg/na/ntt/selectNttList.do?mi=2796&bbsId=310",
+          "canonical": "http://www.kcg.go.kr",
+          "path": "/"
+        },
+        {
+          "link_text": "공지사항",
+          "original": "https://www.kcg.go.kr/kcg/main.do#tab1",
+          "final": "https://www.kcg.go.kr/kcg/main.do#tab1",
+          "canonical": "http://www.kcg.go.kr",
+          "path": "/"
+        },
+        {
+          "link_text": "해양경찰악단 공연 신청 관련 공지사항\n\t\t\t\t\t\t해양경찰악단 공연 신청 관련 공지사항 입니다.□ 유의사항· 신청자는 위 글에 첨부된 필수 첨부파일을 첨부하여 신청하여야 합니다.· 첨부파일 누락...",
+          "original": "https://www.kcg.go.kr/kcg/na/ntt/selectNttInfo.do?nttSn=67706&mi=2796",
+          "final": "https://www.kcg.go.kr/kcg/na/ntt/selectNttInfo.do?nttSn=67706&mi=2796",
+          "canonical": "http://www.kcg.go.kr",
+          "path": "/"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "policy": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "정책연구 정보",
+          "original": "https://www.prism.go.kr/homepage/",
+          "final": "https://www.prism.go.kr/homepage/",
+          "canonical": null,
+          "path": "/homepage/"
+        },
+        {
+          "link_text": "정책자료",
+          "original": "https://www.kcg.go.kr/kcg/na/ntt/selectNttList.do?mi=2814&bbsId=362",
+          "final": "https://www.kcg.go.kr/kcg/na/ntt/selectNttList.do?mi=2814&bbsId=362",
+          "canonical": "http://www.kcg.go.kr",
+          "path": "/"
+        },
+        {
+          "link_text": "정책자료(일반)",
+          "original": "https://www.kcg.go.kr/kcg/na/ntt/selectNttList.do?mi=2815&bbsId=317",
+          "final": "https://www.kcg.go.kr/kcg/na/ntt/selectNttList.do?mi=2815&bbsId=317",
+          "canonical": "http://www.kcg.go.kr",
+          "path": "/"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    }
+  },
+  {
+    "org_id": "M18",
+    "name": "해양수산부",
+    "url": "https://www.mof.go.kr",
+    "press": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "규제개혁 보도자료",
+          "original": "https://www.mof.go.kr/index.do?menuSeq=365",
+          "final": "https://www.mof.go.kr/page/ko/selectPage.do?menuSeq=365&pageSeq=1049&listUpdtDt=2026-03-12++10%3A00",
+          "canonical": "https://www.mof.go.kr",
+          "path": "/"
+        },
+        {
+          "link_text": "보도자료",
+          "original": "https://www.mof.go.kr/index.do?menuSeq=971",
+          "final": "https://www.mof.go.kr/doc/ko/selectDocList.do?menuSeq=971&bbsSeq=10&listUpdtDt=2026-03-12++10%3A00",
+          "canonical": "https://www.mof.go.kr",
+          "path": "/"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "notice": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "공지사항",
+          "original": "https://www.mof.go.kr/index.do?menuSeq=375",
+          "final": "https://www.mof.go.kr/doc/ko/selectDocList.do?menuSeq=375&bbsSeq=9&listUpdtDt=2026-03-12++10%3A00",
+          "canonical": "https://www.mof.go.kr",
+          "path": "/"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "policy": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "정책자료",
+          "original": "https://www.mof.go.kr/index.do#mGnb-anchor4",
+          "final": "https://www.mof.go.kr/index.do#mGnb-anchor4",
+          "canonical": "https://www.mof.go.kr",
+          "path": "/"
+        },
+        {
+          "link_text": "정책정보",
+          "original": "https://www.mof.go.kr/index.do#",
+          "final": "https://www.mof.go.kr/index.do#",
+          "canonical": "https://www.mof.go.kr",
+          "path": "/"
+        },
+        {
+          "link_text": "정책자료",
+          "original": "https://www.mof.go.kr/index.do?menuSeq=296",
+          "final": "https://www.mof.go.kr/page/ko/selectPage.do?menuSeq=345&pageSeq=474&listUpdtDt=2026-03-12++10%3A00",
+          "canonical": "https://www.mof.go.kr",
+          "path": "/"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    }
+  },
+  {
+    "org_id": "P01",
+    "name": "기획예산처",
+    "url": "https://www.opb.go.kr",
+    "press": {
+      "detected": false,
+      "urls": [],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "notice": {
+      "detected": false,
+      "urls": [],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "policy": {
+      "detected": false,
+      "urls": [],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "error": "page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.opb.go.kr/\nCall log:\n\u001b[2m  - navigating to \"https://www.opb.go.kr/\", waiting until \"domcontentloaded\"\u001b[22m\n"
+  },
+  {
+    "org_id": "A08",
+    "name": "경찰청",
+    "url": "https://www.police.go.kr",
+    "press": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "보도자료",
+          "original": "https://www.police.go.kr/user/bbs/BD_selectBbsList.do?q_bbsCode=1002",
+          "final": "https://www.police.go.kr/user/bbs/BD_selectBbsList.do?q_bbsCode=1002",
+          "canonical": null,
+          "path": "/user/bbs/BD_selectBbsList.do?q_bbsCode=1002"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "notice": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "공지사항",
+          "original": "https://www.police.go.kr/user/bbs/BD_selectBbsList.do?q_bbsCode=1001",
+          "final": "https://www.police.go.kr/user/bbs/BD_selectBbsList.do?q_bbsCode=1001",
+          "canonical": null,
+          "path": "/user/bbs/BD_selectBbsList.do?q_bbsCode=1001"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "policy": {
+      "detected": false,
+      "urls": [],
+      "blocked": false,
+      "blocked_paths": []
+    }
+  },
+  {
+    "org_id": "M06",
+    "name": "법무부",
+    "url": "https://www.moj.go.kr",
+    "press": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "보도자료",
+          "original": "https://www.moj.go.kr/moj/221/subview.do",
+          "final": "https://www.moj.go.kr/moj/221/subview.do",
+          "canonical": "https://www.moj.go.kr:443/moj/221/subview.do?",
+          "path": "/moj/221/subview.do"
+        },
+        {
+          "link_text": "부처별 보도자료",
+          "original": "https://www.moj.go.kr/moj/252/subview.do",
+          "final": "https://www.moj.go.kr/moj/252/subview.do",
+          "canonical": "https://www.moj.go.kr:443/moj/252/subview.do?",
+          "path": "/moj/252/subview.do"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "notice": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "공지사항",
+          "original": "https://www.moj.go.kr/moj/223/subview.do",
+          "final": "https://www.moj.go.kr/moj/223/subview.do",
+          "canonical": "https://www.moj.go.kr:443/moj/223/subview.do?",
+          "path": "/moj/223/subview.do"
+        },
+        {
+          "link_text": "[공지사항] \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t공증인 모집 공고\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t법무부 법무과에서는\n\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t작성일\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t2026.03.11",
+          "original": "https://www.moj.go.kr/bbs/moj/184/604238/artclView.do?layout=unknown",
+          "final": "https://www.moj.go.kr/moj/223/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGbW9qJTJGMTg0JTJGNjA0MjM4JTJGYXJ0Y2xWaWV3LmRvJTNG",
+          "canonical": "https://www.moj.go.kr:443/moj/223/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGbW9qJTJGMTg0JTJGNjA0MjM4JTJGYXJ0Y2xWaWV3LmRvJTNG",
+          "path": "/moj/223/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGbW9qJTJGMTg0JTJGNjA0MjM4JTJGYXJ0Y2xWaWV3LmRvJTNG"
+        },
+        {
+          "link_text": "[공지사항] \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t제81주년 교정의 날 기념 유공 포상후보자 공모\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t[법무부 공고 제2\n\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t작성일\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t2026.03.09",
+          "original": "https://www.moj.go.kr/bbs/moj/184/604146/artclView.do?layout=unknown",
+          "final": "https://www.moj.go.kr/moj/223/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGbW9qJTJGMTg0JTJGNjA0MTQ2JTJGYXJ0Y2xWaWV3LmRvJTNG",
+          "canonical": "https://www.moj.go.kr:443/moj/223/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGbW9qJTJGMTg0JTJGNjA0MTQ2JTJGYXJ0Y2xWaWV3LmRvJTNG",
+          "path": "/moj/223/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGbW9qJTJGMTg0JTJGNjA0MTQ2JTJGYXJ0Y2xWaWV3LmRvJTNG"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "policy": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "인권정책자료실",
+          "original": "https://www.moj.go.kr/moj/175/subview.do",
+          "final": "https://www.moj.go.kr/moj/175/subview.do",
+          "canonical": "https://www.moj.go.kr:443/moj/175/subview.do?",
+          "path": "/moj/175/subview.do"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    }
+  },
+  {
+    "org_id": "M17",
+    "name": "국토교통부",
+    "url": "https://www.molit.go.kr",
+    "press": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "보도자료",
+          "original": "https://www.molit.go.kr/USR/NEWS/m_71/lst.jsp",
+          "final": "https://www.molit.go.kr/USR/NEWS/m_71/lst.jsp",
+          "canonical": null,
+          "path": "/USR/NEWS/m_71/lst.jsp"
+        },
+        {
+          "link_text": "보도자료",
+          "original": "https://www.molit.go.kr/portal.do#none",
+          "final": "https://www.molit.go.kr/portal.do#none",
+          "canonical": "https://www.molit.go.kr/portal.do",
+          "path": "/portal.do"
+        },
+        {
+          "link_text": "보도자료 메일링 신청                                    \n\t\t\t\t\t\t\t\t메일로 국토교통 정책 소식과각종 자료를 받아보세요",
+          "original": "https://www.molit.go.kr/creator/mailing.do",
+          "final": "https://www.molit.go.kr/creator/mailing.do",
+          "canonical": null,
+          "path": "/creator/mailing.do"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "notice": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "공지사항",
+          "original": "https://www.molit.go.kr/USR/BORD0201/m_69/BRD.jsp",
+          "final": "https://www.molit.go.kr/USR/BORD0201/m_69/BRD.jsp",
+          "canonical": null,
+          "path": "/USR/BORD0201/m_69/BRD.jsp"
+        },
+        {
+          "link_text": "공지사항",
+          "original": "https://www.molit.go.kr/portal.do#none",
+          "final": "https://www.molit.go.kr/portal.do#none",
+          "canonical": "https://www.molit.go.kr/portal.do",
+          "path": "/portal.do"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    },
+    "policy": {
+      "detected": true,
+      "urls": [
+        {
+          "link_text": "정책자료",
+          "original": "https://www.molit.go.kr/USR/policyData/m_34681/lst.jsp",
+          "final": "https://www.molit.go.kr/USR/policyData/m_34681/lst.jsp",
+          "canonical": null,
+          "path": "/USR/policyData/m_34681/lst.jsp"
+        },
+        {
+          "link_text": "보도자료 메일링 신청                                    \n\t\t\t\t\t\t\t\t메일로 국토교통 정책 소식과각종 자료를 받아보세요",
+          "original": "https://www.molit.go.kr/creator/mailing.do",
+          "final": "https://www.molit.go.kr/creator/mailing.do",
+          "canonical": null,
+          "path": "/creator/mailing.do"
+        }
+      ],
+      "blocked": false,
+      "blocked_paths": []
+    }
+  }
+]
