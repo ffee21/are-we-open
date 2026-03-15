@@ -1,0 +1,35 @@
+
+
+
+
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+        <title>관세청</title>
+        <meta name="keywords" content="관세청">
+        <meta name="description" content="관세청 홈페이지에 오신 것을 환영합니다.">
+		<link rel="stylesheet" href="/imlp_css/common_v1.css" media="all">
+		<link rel="stylesheet" href="/css/web/kcs/con_com.css" media="all">        
+		<link rel="stylesheet" href="/imlp_css/webfont.css" media="all">
+		<link rel="stylesheet" href="/css/web/kcs/layout.css" media="all">      
+		<link rel="stylesheet" href="/css/web/kcs/sub_cnt.css" media="all">      
+
+	</head>
+    <body>
+
+		<div class="con_com_st" style="max-width:1000px; margin:50px auto 0;">         
+			<div class="Coming_soon">
+				<div class="inner">
+					<h3>원하시는 페이지를 <span class="f_weightB">찾을 수가 없습니다</span></h3>
+					<p>방문 원하시는 페이지의 주소가 <span class="pc_red f_weightB">잘못 입력</span>되었거나,<br><span class="pc_red f_weightB">변경 혹은 삭제</span> 되어 요청하신 페이지를 찾을 수가 없습니다.<br><br>
+					입력하신 페이지의 주소가 <span class="pc_red f_weightB">정확한지</span> <span class="Tline_b">다시 한번</span> 확인해 주시기 바랍니다.<br><br>
+					관세청 대표 상담전화는 전국어디서나 국번없이 <span class="pc_blue f_weightB">125번</span>으로 <br>문의해주시면 친절하게 안내해 드리겠습니다.</p>
+				</div>
+			</div>
+		</div>
+
+    </body>
+</html>

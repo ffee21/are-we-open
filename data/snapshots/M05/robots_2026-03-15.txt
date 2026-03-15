@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: 
+Disallow: /web/minister/bbs/
+Disallow: /search/front/
+Disallow: /web/*/file/
+Disallow: /*?*
+Crawl-delay: 5
+
+Sitemap: https://www.unikorea.go.kr/Sitemap.xml

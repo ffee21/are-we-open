@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=640,user-scalable=no">
+	<title>부산시 홈페이지 - Error page</title>
+	<link rel="stylesheet" href="/humanframe/global/assets/css/error.css">
+	<script src="/humanframe/global/assets/vendor/jquery/jquery.min.js"></script>
+    <script>
+	$(document).ready(function() {
+		/* var returnHome = window.setTimeout(function(){
+			location.href="/";
+		}, 5000); */
+	});
+	</script>
+</head>
+
+<body>
+	<div class="error_wrap">
+		<div class="logo"><img src="/humanframe/global/assets/img/error/busan_logo.png" alt=""></div>
+		<div class="txt">
+			요청하신 페이지를 찾을 수 없거나 오류가 발생하였습니다
+			<br>
+			서비스 이용에 불편을 드려 죄송합니다
+		</div>
+		<div class="btn">
+			<a href="/" class="busan">부산광역시 홈페이지</a>
+			<a href="http://www.busan.go.kr/news" class="busan">다이내믹 부산</a>
+			<a href="#" onclick="history.back(-1); return false;" class="historyback">이전으로</a>
+		</div>
+		<div class="footer">
+			© Busan Metropolitan City all rights reserved.
+		</div>
+	</div>
+</body>
+</html>

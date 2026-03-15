@@ -1,0 +1,4 @@
+User-agent : *
+Disallow : /search
+Allow : /
+Sitemap : http://www.rda.go.kr/sitemap/sitemapindex.xml

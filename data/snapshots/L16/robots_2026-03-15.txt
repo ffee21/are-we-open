@@ -1,0 +1,66 @@
+User-agent:*
+Disallow:/
+
+
+Allow: /$
+Allow: /index.gyeong
+Allow: /apc/index.gyeong
+Allow: /gamsa/index.gyeong
+Allow: /index.gyeong?contentsSid=4449
+Allow: /gnreturn
+Allow: /issue
+Allow: /housing
+Allow: /culture
+Allow: /corona.html
+Allow: /index.html
+Allow: /gnisland/index.gyeong
+Allow: /120/index.gyeong
+Allow: /gpbc/index.gyeong
+Allow: /giup/index.gyeong
+Allow: /seit/index.gyeong
+Allow: /forestrecreation/index.gyeong
+Allow: /manifesto/index.gyeong
+Allow: /bangjae/index.gyeong
+Allow: /seoul/index.gyeong
+Allow: /gnvri/index.gyeong
+Allow: /gsndfi/index.gyeong
+Allow: /greencamp/index.gyeong
+Allow: /street/index.gyeong
+Allow: /harbor/index.gyeong
+Allow: /jeseungdang/index.gyeong
+Allow: /seed/index.gyeong
+Allow: /hrd/index.gyeong
+Allow: /tree/index.gyeong
+Allow: /gonggam/index.gyeong
+Allow: /knhe/index.gyeong
+Allow: /susan/index.gyeong
+Allow: /governor/index.gyeong
+Allow: /trade/index.gyeong
+Allow: /yisunshin/index.gyeong
+Allow: /gam/index.gyeong
+Allow: /gn1st/index.gyeong?contentsSid=3769
+Allow: /board/list.gyeong?boardId=BBS_0000057&menuCd=DOM_000000135001001000*
+Allow: /board/view.gyeong?boardId=BBS_0000057&menuCd=DOM_000000135001001000*
+Allow: /board/list.gyeong?boardId=BBS_0000060&menuCd=DOM_000000135002001000*
+Allow: /board/view.gyeong?boardId=BBS_0000060&menuCd=DOM_000000135002001000*
+Allow: /culture/index.do
+Allow: /2026_sports/index.gyeong
+
+Allow: /sandan/kor/main.do
+
+Allow: /01_potal/images/common/favicon.ico
+
+Allow: /index.gyeong?menuCd=DOM_000000148018001000
+Allow: /index.gyeong?menuCd=DOM_000000137009001000
+Allow: /index.gyeong?menuCd=DOM_000000148009000000
+
+Allow: /tour.gyeongnam.go.kr/index.gyeong
+Disallow: /tour.gyeongnam.go.kr/
+Disallow: /tour.gyeongnam.go.kr/index.gyeong?
+Disallow: /tour.gyeongnam.go.kr/index.gyeong/
+Disallow: /tour.gyeongnam.go.kr/index.gyeong/*
+
+Disallow: /tour.gyeongnam.go.kr/index.gyeong*
+
+
+#DaumWebMasterTool:0ee0995d2370a443068ba7deaab68d46b3fecd79e7734dda4b25f99e1be3b197:5fca93OLBFEr/7fMOdrisw==

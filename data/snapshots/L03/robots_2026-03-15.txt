@@ -1,0 +1,7 @@
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: * 
+Allow: /
+Disallow: /sf-1/

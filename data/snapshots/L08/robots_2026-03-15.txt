@@ -1,0 +1,137 @@
+User-agent: *
+Disallow: /
+
+User-agent: bingbot
+Disallow: /
+
+User-agent: msnbot
+Disallow: /
+
+User-agent: Yeti
+Disallow: /cmm/fms/*
+Disallow: /tmpl/pdf.jsp
+Disallow: /prog/bbs/*
+Disallow: /prog/vod/download.do
+Disallow: /prog/research/*
+Disallow: /viewer/default/doc.html
+Disallow: /synapsoft/*
+Disallow: /getPetitionConfigDownload.do
+Disallow: /getZnsScheduleDownload.do
+Disallow: /prog/airInfo/*
+Disallow: /prog/ctrt01/contract/*
+Disallow: /prog/ctrt02/contract/*
+Disallow: /prog/ctrt03/contract/*
+Disallow: /prog/ctrt11/contract/*
+Disallow: /prog/lfApp/*
+Disallow: /prog/scheduleDetail/*
+Disallow: /prog/empmnPblanc/*
+Disallow: /prog/eBookData/ebook/*
+Disallow: /prog/eBookDataAjax/list.do
+
+User-agent : Daum
+Disallow: /cmm/fms/*
+Disallow: /tmpl/pdf.jsp
+Disallow: /prog/bbs/*
+Disallow: /prog/vod/download.do
+Disallow: /prog/research/*
+Disallow: /viewer/default/doc.html
+Disallow: /synapsoft/*
+Disallow: /getPetitionConfigDownload.do
+Disallow: /getZnsScheduleDownload.do
+Disallow: /prog/eBookData/ebook/*
+Disallow: /prog/eBookDataAjax/list.do
+
+User-agent : Daumoa
+Disallow: /cmm/fms/*
+Disallow: /tmpl/pdf.jsp
+Disallow: /prog/bbs/*
+Disallow: /prog/vod/download.do
+Disallow: /prog/research/*
+Disallow: /viewer/default/doc.html
+Disallow: /synapsoft/*
+Disallow: /getPetitionConfigDownload.do
+Disallow: /getZnsScheduleDownload.do
+Disallow: /prog/eBookData/ebook/*
+Disallow: /prog/eBookDataAjax/list.do
+
+User-agent: Googlebot
+Disallow: /cmm/fms/*
+Disallow: /tmpl/pdf.jsp
+Disallow: /prog/bbs/*
+Disallow: /prog/vod/download.do
+Disallow: /prog/research/*
+Disallow: /viewer/default/doc.html
+Disallow: /synapsoft/*
+Disallow: /getPetitionConfigDownload.do
+Disallow: /getZnsScheduleDownload.do
+Disallow: /ajax/*
+Disallow: /rest/*
+Disallow: /prog/airInfo/*
+Disallow: /prog/bbsJson/*
+Disallow: /*/listAjax.do$
+Disallow: /prog/safetyData/safety/realTimeHourList.do
+Disallow: /prog/safetyData/safety/realTimeList.do
+Disallow: /prog/safetyData/safety/rainStatusExcel.do
+Disallow: /prog/ctrt01/contract/*
+Disallow: /prog/ctrt02/contract/*
+Disallow: /prog/ctrt03/contract/*
+Disallow: /prog/ctrt11/contract/*
+Disallow: /prog/lfApp/*
+Disallow: /prog/eBookData/ebook/*
+Disallow: /prog/eBookDataAjax/list.do
+
+User-agent: Slurp
+Disallow: /cmm/fms/*
+Disallow: /tmpl/pdf.jsp
+Disallow: /prog/bbs/*
+Disallow: /prog/vod/download.do
+Disallow: /prog/research/*
+Disallow: /viewer/default/doc.html
+Disallow: /synapsoft/*
+Disallow: /getPetitionConfigDownload.do
+Disallow: /getZnsScheduleDownload.do
+Disallow: /prog/eBookData/ebook/*
+Disallow: /prog/eBookDataAjax/list.do
+
+User-agent: Applebot
+Disallow: /cmm/fms/*
+Disallow: /tmpl/pdf.jsp
+Disallow: /prog/bbs/*
+Disallow: /prog/vod/download.do
+Disallow: /prog/research/*
+Disallow: /viewer/default/doc.html
+Disallow: /synapsoft/*
+Disallow: /getPetitionConfigDownload.do
+Disallow: /getZnsScheduleDownload.do
+Disallow: /prog/eBookData/ebook/*
+Disallow: /prog/eBookDataAjax/list.do
+
+User-agent: ZumBot
+Disallow: /cmm/fms/*
+Disallow: /tmpl/pdf.jsp
+Disallow: /prog/bbs/*
+Disallow: /prog/vod/download.do
+Disallow: /prog/research/*
+Disallow: /viewer/default/doc.html
+Disallow: /synapsoft/*
+Disallow: /getPetitionConfigDownload.do
+Disallow: /getZnsScheduleDownload.do
+Disallow: /prog/eBookData/ebook/*
+Disallow: /prog/eBookDataAjax/list.do
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: Pinterestbot
+Disallow: /
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: OAI-SearchBot
+Disallow: /
+
+#DaumWebMasterTool:a6b4202b5055edc28350df36046e040c2f712b30f84e1bf922d92de3c6131917:RZel8WlFO02Iq5vV3kXCwg==

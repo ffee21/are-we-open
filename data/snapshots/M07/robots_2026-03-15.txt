@@ -1,0 +1,5 @@
+User-agent:*
+
+Allow:/mbshome/mbs/mnd/
+Disallow: /search/
+Disallow: /mndSearch/

@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=euc-kr" />
+<title>��������û Ȩ������ </title>
+<style type="text/css"> 
+
+body{font-family:Dotum, Gulim, Gulim Arial, Helvetica, sans-serif; font-size: 0.75em; letter-spacing:0px;line-height: 1.5em; color:#333;background-color:#f6f6f6; text-align:center;}
+form,ul,ol,dl,table,div,h1,h2,h3 {margin:0;padding:0;}
+form,ul,ol,dl,table,div {margin:0;padding:0;}
+li{list-style:none;}
+
+#wrap{width:700px; margin:0 auto;text-align:left; padding:0;}
+#err {background:url('/html/_images/common/error.jpg') 0px 0px no-repeat;width:700px; height:500px;margin:70px 0 0 0;}
+#err ul li{margin:0 0 0 40px;}
+#err .top {padding:140px 0 0 0;color:#898988;height:50px;text-align:center;}
+.text01 {padding:30px 0 0 0;text-align:left;width:630px; height:40px;color:#667797;font-weight:bold;}
+.text02 {padding:20px 0 0 0;text-align:left;width:630px; height:40px;color:#898988;font-size:11px;}
+.text03 {padding:60px 0 0 0;text-align:left;width:630px; height:60px;}
+.text04 {padding:0px 0 0 0;width:630px; height:30px;font-weight:bold;text-align:center;}
+.fb {font-weight:bold;color:#444947; text-decoration: underline;}
+.fb02 {font-weight:bold;color:#898988;}
+a  {color:#444947; text-decoration: none;}
+a:hover {color:#006b6a; text-decoration: underline;}
+
+
+</style>
+</head>
+
+<script>
+	document.addEventListener("DOMContentLoaded", () => {
+		let this_location_hostname = location.hostname;
+		let this_location_href = location.href;
+		
+		if ( !!this_location_hostname && this_location_hostname.indexOf("cha.go.kr") != -1 ){
+			this_location_href = this_location_href.replace('cha.go.kr', 'khs.go.kr');
+			location.href= this_location_href;
+		}
+		
+	});
+</script>
+
+<body>
+<div id="wrap">
+	<div id="err">
+		<ul>
+			<li class="top">
+			�̿��ϱ� ���Ͻô� ���񽺳� ������ ã�� ���� �����ϴ�.<br />
+			���� <span class="fb02">"Ctrl + R"</span>�̳� <span class="fb02">"F5"Ű</span>�� �̿��Ͽ� ���ΰ�ħ �Ͻñ� �ٶ��ϴ�.
+			</li>
+			<li class="text01">
+			���� �̿뿡 ������ ��� ����� �˼��մϴ�.<br />
+			�ּҰ� �߸� �ԷµǾ��ų� ���񽺰� ����Ǿ� ���Ͻ� �������� ã�� �� �����ϴ�.
+			</li>
+
+			<li class="text02">
+			- �Է��Ͻ� �������� �ּҰ� ��Ȯ���� �ٽ� �ѹ� Ȯ�����ּ���.<br />
+			- ���ͳ� �ͽ��÷ξ��� �޴� ����-���ͳݿɼ�-�Ϲݿ��� �ӽ� ���ͳ� ���Ͽ��� ���� ����(�������� �׸��� ��� ���� ����),<br />
+			&nbsp;&nbsp;��Ű������ �Ͻ� �� �ٽ� �����Ͽ� ���ñ� �ٶ��ϴ�.
+			</li>
+			<li class="text03">
+			&nbsp;</li>
+			
+			<li class="text04">
+			<a href="javascript:document.location.reload()">���ΰ�ħ</a> | <a href="/">Ȩ����</a> | <a href="javascript:history.back()">����ȭ��</a>
+			</li>
+
+		</ul>
+	</div>
+</div>
+
+</body>
+</html>

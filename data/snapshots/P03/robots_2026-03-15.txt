@@ -1,0 +1,6 @@
+User-agent: *
+Allow:/
+#DaumWebMasterTool:d78bd616238b917d11dfec552a13b6f0fc52892ae3c6f6fdd1f4836455fd81a6:r1sx+P/FfsKzzmngvDY07g==
+
+User-agent:Googlebot
+Disallow:/lawinfo/nwLwAnInfo.mo

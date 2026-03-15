@@ -1,0 +1,29 @@
+User-agent: *
+Disallow: /
+Disallow: /seoul/sos
+
+Allow: /$
+Allow: /main
+Allow: /seoul
+Allow: /eventreqst
+Allow: /realmnews
+Allow: /thismteventfstvl
+Allow: /news
+Allow: /helper
+Allow: /citizen
+Allow: /service
+Allow: /festival
+Allow: /storyw
+Allow: /story
+Allow: /member
+Allow: /homepageCorrect
+Allow: /event
+Allow: /gov/futurelab
+Allow: /sitemap.xml
+Allow: /policy
+Allow: /myseoulstory
+Allow: /sos
+Allow: /festa
+Allow: /welcome2026
+
+Sitemap: https://www.seoul.go.kr/sitemap.xml

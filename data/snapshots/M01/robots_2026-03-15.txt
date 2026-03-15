@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /sch/schMain.do
+Disallow: /id/qustnr.do

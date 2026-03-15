@@ -1,0 +1,6 @@
+User-Agent: *
+Allow: /
+Disallow: /kma/sch
+
+User-agent: Googlebot
+Disallow: /kma/citizen/discuss.jsp
