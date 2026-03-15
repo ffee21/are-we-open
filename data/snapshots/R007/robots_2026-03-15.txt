@@ -1,0 +1,14 @@
+User-agent: *
+Disallow: /
+Disallow : /nambu/*?*
+Disallow : /jungbu/*?*
+Disallow : /dongbu/*?*
+Disallow : /ulju/*?*
+Disallow : /bukbu/*?*
+Allow : /index.jsp
+Allow : /main.jsp
+Allow : /nambu/index.jsp
+Allow : /jungbu/index.jsp
+Allow : /dongbu/index.jsp
+Allow : /ulju/index.jsp
+Allow : /bukbu/index.jsp

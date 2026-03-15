@@ -6,11 +6,22 @@
     "ALIO 공공기관 경영정보 공개시스템 (2025년 기준)"
   ],
   "summary": {
-    "central_government": 40,
-    "local_government": 17,
-    "public_institutions": 344,
-    "total": 628,
-    "local_basic": 227
+    "ministry": 19,
+    "pm_office": 6,
+    "agency": 15,
+    "local_metro": 8,
+    "local_province": 9,
+    "public_institution": 344,
+    "local_basic": 227,
+    "education": 17,
+    "legislature": 1,
+    "local_council": 17,
+    "judiciary": 25,
+    "constitutional": 1,
+    "prosecution": 17,
+    "police": 18,
+    "independent": 10,
+    "total": 734
   },
   "organizations": [
     {
@@ -6108,6 +6119,854 @@
       "type": "local_basic",
       "parent_id": "L16",
       "url": ""
+    },
+    {
+      "id": "E001",
+      "name": "서울특별시교육청",
+      "name_en": "",
+      "type": "education",
+      "parent_id": null,
+      "url": "https://www.sen.go.kr"
+    },
+    {
+      "id": "E002",
+      "name": "부산광역시교육청",
+      "name_en": "",
+      "type": "education",
+      "parent_id": null,
+      "url": "https://www.pen.go.kr"
+    },
+    {
+      "id": "E003",
+      "name": "대구광역시교육청",
+      "name_en": "",
+      "type": "education",
+      "parent_id": null,
+      "url": "https://www.dge.go.kr"
+    },
+    {
+      "id": "E004",
+      "name": "인천광역시교육청",
+      "name_en": "",
+      "type": "education",
+      "parent_id": null,
+      "url": "https://www.ice.go.kr"
+    },
+    {
+      "id": "E005",
+      "name": "광주광역시교육청",
+      "name_en": "",
+      "type": "education",
+      "parent_id": null,
+      "url": "https://www.gen.go.kr"
+    },
+    {
+      "id": "E006",
+      "name": "대전광역시교육청",
+      "name_en": "",
+      "type": "education",
+      "parent_id": null,
+      "url": "https://www.dje.go.kr"
+    },
+    {
+      "id": "E007",
+      "name": "울산광역시교육청",
+      "name_en": "",
+      "type": "education",
+      "parent_id": null,
+      "url": "https://use.go.kr"
+    },
+    {
+      "id": "E008",
+      "name": "세종특별자치시교육청",
+      "name_en": "",
+      "type": "education",
+      "parent_id": null,
+      "url": "https://www.sje.go.kr"
+    },
+    {
+      "id": "E009",
+      "name": "경기도교육청",
+      "name_en": "",
+      "type": "education",
+      "parent_id": null,
+      "url": "https://www.goe.go.kr"
+    },
+    {
+      "id": "E010",
+      "name": "강원특별자치도교육청",
+      "name_en": "",
+      "type": "education",
+      "parent_id": null,
+      "url": "https://www.gwe.go.kr"
+    },
+    {
+      "id": "E011",
+      "name": "충청북도교육청",
+      "name_en": "",
+      "type": "education",
+      "parent_id": null,
+      "url": "https://www.cbe.go.kr"
+    },
+    {
+      "id": "E012",
+      "name": "충청남도교육청",
+      "name_en": "",
+      "type": "education",
+      "parent_id": null,
+      "url": "https://www.cne.go.kr"
+    },
+    {
+      "id": "E013",
+      "name": "전북특별자치도교육청",
+      "name_en": "",
+      "type": "education",
+      "parent_id": null,
+      "url": "https://jbe.go.kr"
+    },
+    {
+      "id": "E014",
+      "name": "전라남도교육청",
+      "name_en": "",
+      "type": "education",
+      "parent_id": null,
+      "url": "https://www.jne.go.kr"
+    },
+    {
+      "id": "E015",
+      "name": "경상북도교육청",
+      "name_en": "",
+      "type": "education",
+      "parent_id": null,
+      "url": "https://www.gbe.kr"
+    },
+    {
+      "id": "E016",
+      "name": "경상남도교육청",
+      "name_en": "",
+      "type": "education",
+      "parent_id": null,
+      "url": "https://www.gne.go.kr"
+    },
+    {
+      "id": "E017",
+      "name": "제주특별자치도교육청",
+      "name_en": "",
+      "type": "education",
+      "parent_id": null,
+      "url": "https://www.jje.go.kr"
+    },
+    {
+      "id": "N001",
+      "name": "대한민국 국회",
+      "name_en": "",
+      "type": "legislature",
+      "parent_id": null,
+      "url": "https://www.assembly.go.kr"
+    },
+    {
+      "id": "N002",
+      "name": "서울특별시의회",
+      "name_en": "",
+      "type": "local_council",
+      "parent_id": null,
+      "url": "https://www.smc.seoul.kr"
+    },
+    {
+      "id": "N003",
+      "name": "부산광역시의회",
+      "name_en": "",
+      "type": "local_council",
+      "parent_id": null,
+      "url": "https://council.busan.go.kr"
+    },
+    {
+      "id": "N004",
+      "name": "대구광역시의회",
+      "name_en": "",
+      "type": "local_council",
+      "parent_id": null,
+      "url": "https://council.daegu.go.kr"
+    },
+    {
+      "id": "N005",
+      "name": "인천광역시의회",
+      "name_en": "",
+      "type": "local_council",
+      "parent_id": null,
+      "url": "https://www.icouncil.go.kr"
+    },
+    {
+      "id": "N006",
+      "name": "광주광역시의회",
+      "name_en": "",
+      "type": "local_council",
+      "parent_id": null,
+      "url": "https://council.gwangju.go.kr"
+    },
+    {
+      "id": "N007",
+      "name": "대전광역시의회",
+      "name_en": "",
+      "type": "local_council",
+      "parent_id": null,
+      "url": "https://council.daejeon.go.kr"
+    },
+    {
+      "id": "N008",
+      "name": "울산광역시의회",
+      "name_en": "",
+      "type": "local_council",
+      "parent_id": null,
+      "url": "https://www.council.ulsan.kr"
+    },
+    {
+      "id": "N009",
+      "name": "세종특별자치시의회",
+      "name_en": "",
+      "type": "local_council",
+      "parent_id": null,
+      "url": "https://council.sejong.go.kr"
+    },
+    {
+      "id": "N010",
+      "name": "경기도의회",
+      "name_en": "",
+      "type": "local_council",
+      "parent_id": null,
+      "url": "https://www.ggc.go.kr"
+    },
+    {
+      "id": "N011",
+      "name": "강원특별자치도의회",
+      "name_en": "",
+      "type": "local_council",
+      "parent_id": null,
+      "url": "https://council.gangwon.kr"
+    },
+    {
+      "id": "N012",
+      "name": "충청북도의회",
+      "name_en": "",
+      "type": "local_council",
+      "parent_id": null,
+      "url": "https://council.chungbuk.kr"
+    },
+    {
+      "id": "N013",
+      "name": "충청남도의회",
+      "name_en": "",
+      "type": "local_council",
+      "parent_id": null,
+      "url": "https://council.chungnam.go.kr"
+    },
+    {
+      "id": "N014",
+      "name": "전북특별자치도의회",
+      "name_en": "",
+      "type": "local_council",
+      "parent_id": null,
+      "url": "https://www.jbstatecouncil.jeonbuk.kr"
+    },
+    {
+      "id": "N015",
+      "name": "전라남도의회",
+      "name_en": "",
+      "type": "local_council",
+      "parent_id": null,
+      "url": "https://www.jnassembly.go.kr"
+    },
+    {
+      "id": "N016",
+      "name": "경상북도의회",
+      "name_en": "",
+      "type": "local_council",
+      "parent_id": null,
+      "url": "https://council.gb.go.kr"
+    },
+    {
+      "id": "N017",
+      "name": "경상남도의회",
+      "name_en": "",
+      "type": "local_council",
+      "parent_id": null,
+      "url": "https://council.gyeongnam.go.kr"
+    },
+    {
+      "id": "N018",
+      "name": "제주특별자치도의회",
+      "name_en": "",
+      "type": "local_council",
+      "parent_id": null,
+      "url": "https://www.council.jeju.kr"
+    },
+    {
+      "id": "J001",
+      "name": "대법원",
+      "name_en": "",
+      "type": "judiciary",
+      "parent_id": null,
+      "url": "https://www.scourt.go.kr"
+    },
+    {
+      "id": "J002",
+      "name": "헌법재판소",
+      "name_en": "",
+      "type": "constitutional",
+      "parent_id": null,
+      "url": "https://www.ccourt.go.kr"
+    },
+    {
+      "id": "J003",
+      "name": "서울고등법원",
+      "name_en": "",
+      "type": "judiciary",
+      "parent_id": null,
+      "url": "https://slgodung.scourt.go.kr"
+    },
+    {
+      "id": "J004",
+      "name": "대전고등법원",
+      "name_en": "",
+      "type": "judiciary",
+      "parent_id": null,
+      "url": "https://djgodung.scourt.go.kr"
+    },
+    {
+      "id": "J005",
+      "name": "대구고등법원",
+      "name_en": "",
+      "type": "judiciary",
+      "parent_id": null,
+      "url": "https://dggodung.scourt.go.kr"
+    },
+    {
+      "id": "J006",
+      "name": "부산고등법원",
+      "name_en": "",
+      "type": "judiciary",
+      "parent_id": null,
+      "url": "https://bsgodung.scourt.go.kr"
+    },
+    {
+      "id": "J007",
+      "name": "광주고등법원",
+      "name_en": "",
+      "type": "judiciary",
+      "parent_id": null,
+      "url": "https://gjgodung.scourt.go.kr"
+    },
+    {
+      "id": "J008",
+      "name": "수원고등법원",
+      "name_en": "",
+      "type": "judiciary",
+      "parent_id": null,
+      "url": "https://swgodung.scourt.go.kr"
+    },
+    {
+      "id": "J009",
+      "name": "서울중앙지방법원",
+      "name_en": "",
+      "type": "judiciary",
+      "parent_id": null,
+      "url": "https://seoul.scourt.go.kr"
+    },
+    {
+      "id": "J010",
+      "name": "서울동부지방법원",
+      "name_en": "",
+      "type": "judiciary",
+      "parent_id": null,
+      "url": "https://sldongbu.scourt.go.kr"
+    },
+    {
+      "id": "J011",
+      "name": "서울서부지방법원",
+      "name_en": "",
+      "type": "judiciary",
+      "parent_id": null,
+      "url": "https://slseobu.scourt.go.kr"
+    },
+    {
+      "id": "J012",
+      "name": "서울남부지방법원",
+      "name_en": "",
+      "type": "judiciary",
+      "parent_id": null,
+      "url": "https://slnambu.scourt.go.kr"
+    },
+    {
+      "id": "J013",
+      "name": "서울북부지방법원",
+      "name_en": "",
+      "type": "judiciary",
+      "parent_id": null,
+      "url": "https://slbukbu.scourt.go.kr"
+    },
+    {
+      "id": "J014",
+      "name": "의정부지방법원",
+      "name_en": "",
+      "type": "judiciary",
+      "parent_id": null,
+      "url": "https://uijeongbu.scourt.go.kr"
+    },
+    {
+      "id": "J015",
+      "name": "인천지방법원",
+      "name_en": "",
+      "type": "judiciary",
+      "parent_id": null,
+      "url": "https://incheon.scourt.go.kr"
+    },
+    {
+      "id": "J016",
+      "name": "수원지방법원",
+      "name_en": "",
+      "type": "judiciary",
+      "parent_id": null,
+      "url": "https://suwon.scourt.go.kr"
+    },
+    {
+      "id": "J017",
+      "name": "춘천지방법원",
+      "name_en": "",
+      "type": "judiciary",
+      "parent_id": null,
+      "url": "https://chuncheon.scourt.go.kr"
+    },
+    {
+      "id": "J018",
+      "name": "대전지방법원",
+      "name_en": "",
+      "type": "judiciary",
+      "parent_id": null,
+      "url": "https://daejeon.scourt.go.kr"
+    },
+    {
+      "id": "J019",
+      "name": "청주지방법원",
+      "name_en": "",
+      "type": "judiciary",
+      "parent_id": null,
+      "url": "https://cheongju.scourt.go.kr"
+    },
+    {
+      "id": "J020",
+      "name": "대구지방법원",
+      "name_en": "",
+      "type": "judiciary",
+      "parent_id": null,
+      "url": "https://daegu.scourt.go.kr"
+    },
+    {
+      "id": "J021",
+      "name": "부산지방법원",
+      "name_en": "",
+      "type": "judiciary",
+      "parent_id": null,
+      "url": "https://busan.scourt.go.kr"
+    },
+    {
+      "id": "J022",
+      "name": "울산지방법원",
+      "name_en": "",
+      "type": "judiciary",
+      "parent_id": null,
+      "url": "https://ulsan.scourt.go.kr"
+    },
+    {
+      "id": "J023",
+      "name": "창원지방법원",
+      "name_en": "",
+      "type": "judiciary",
+      "parent_id": null,
+      "url": "https://changwon.scourt.go.kr"
+    },
+    {
+      "id": "J024",
+      "name": "광주지방법원",
+      "name_en": "",
+      "type": "judiciary",
+      "parent_id": null,
+      "url": "https://gwangju.scourt.go.kr"
+    },
+    {
+      "id": "J025",
+      "name": "전주지방법원",
+      "name_en": "",
+      "type": "judiciary",
+      "parent_id": null,
+      "url": "https://jeonju.scourt.go.kr"
+    },
+    {
+      "id": "J026",
+      "name": "제주지방법원",
+      "name_en": "",
+      "type": "judiciary",
+      "parent_id": null,
+      "url": "https://jeju.scourt.go.kr"
+    },
+    {
+      "id": "D001",
+      "name": "서울중앙지방검찰청",
+      "name_en": "",
+      "type": "prosecution",
+      "parent_id": null,
+      "url": "https://www.spo.go.kr/seoul/"
+    },
+    {
+      "id": "D002",
+      "name": "서울동부지방검찰청",
+      "name_en": "",
+      "type": "prosecution",
+      "parent_id": null,
+      "url": "https://www.spo.go.kr/eastseoul/"
+    },
+    {
+      "id": "D003",
+      "name": "서울남부지방검찰청",
+      "name_en": "",
+      "type": "prosecution",
+      "parent_id": null,
+      "url": "https://www.spo.go.kr/southseoul/"
+    },
+    {
+      "id": "D004",
+      "name": "서울북부지방검찰청",
+      "name_en": "",
+      "type": "prosecution",
+      "parent_id": null,
+      "url": "https://www.spo.go.kr/northseoul/"
+    },
+    {
+      "id": "D005",
+      "name": "서울서부지방검찰청",
+      "name_en": "",
+      "type": "prosecution",
+      "parent_id": null,
+      "url": "https://www.spo.go.kr/site/westseoul/main.do"
+    },
+    {
+      "id": "D006",
+      "name": "인천지방검찰청",
+      "name_en": "",
+      "type": "prosecution",
+      "parent_id": null,
+      "url": "https://www.spo.go.kr/incheon/"
+    },
+    {
+      "id": "D007",
+      "name": "수원지방검찰청",
+      "name_en": "",
+      "type": "prosecution",
+      "parent_id": null,
+      "url": "https://www.spo.go.kr/suwon/"
+    },
+    {
+      "id": "D008",
+      "name": "대전지방검찰청",
+      "name_en": "",
+      "type": "prosecution",
+      "parent_id": null,
+      "url": "https://www.spo.go.kr/site/daejeon/main.do"
+    },
+    {
+      "id": "D009",
+      "name": "대구지방검찰청",
+      "name_en": "",
+      "type": "prosecution",
+      "parent_id": null,
+      "url": "https://www.spo.go.kr/daegu/"
+    },
+    {
+      "id": "D010",
+      "name": "부산지방검찰청",
+      "name_en": "",
+      "type": "prosecution",
+      "parent_id": null,
+      "url": "https://www.spo.go.kr/busan/"
+    },
+    {
+      "id": "D011",
+      "name": "광주지방검찰청",
+      "name_en": "",
+      "type": "prosecution",
+      "parent_id": null,
+      "url": "https://www.spo.go.kr/site/gwangju/main.do"
+    },
+    {
+      "id": "D012",
+      "name": "전주지방검찰청",
+      "name_en": "",
+      "type": "prosecution",
+      "parent_id": null,
+      "url": "https://www.spo.go.kr/jeonju/"
+    },
+    {
+      "id": "D013",
+      "name": "청주지방검찰청",
+      "name_en": "",
+      "type": "prosecution",
+      "parent_id": null,
+      "url": "https://www.spo.go.kr/cheongju/"
+    },
+    {
+      "id": "D014",
+      "name": "춘천지방검찰청",
+      "name_en": "",
+      "type": "prosecution",
+      "parent_id": null,
+      "url": "https://www.spo.go.kr/chuncheon/"
+    },
+    {
+      "id": "D015",
+      "name": "창원지방검찰청",
+      "name_en": "",
+      "type": "prosecution",
+      "parent_id": null,
+      "url": "https://www.spo.go.kr/site/changwon/main.do"
+    },
+    {
+      "id": "D016",
+      "name": "울산지방검찰청",
+      "name_en": "",
+      "type": "prosecution",
+      "parent_id": null,
+      "url": "https://www.spo.go.kr/ulsan/"
+    },
+    {
+      "id": "D017",
+      "name": "제주지방검찰청",
+      "name_en": "",
+      "type": "prosecution",
+      "parent_id": null,
+      "url": "https://www.spo.go.kr/jeju/"
+    },
+    {
+      "id": "R001",
+      "name": "서울특별시경찰청",
+      "name_en": "",
+      "type": "police",
+      "parent_id": null,
+      "url": "https://www.smpa.go.kr"
+    },
+    {
+      "id": "R002",
+      "name": "부산광역시경찰청",
+      "name_en": "",
+      "type": "police",
+      "parent_id": null,
+      "url": "https://www.bspolice.go.kr"
+    },
+    {
+      "id": "R003",
+      "name": "대구광역시경찰청",
+      "name_en": "",
+      "type": "police",
+      "parent_id": null,
+      "url": "https://www.dgpolice.go.kr"
+    },
+    {
+      "id": "R004",
+      "name": "인천광역시경찰청",
+      "name_en": "",
+      "type": "police",
+      "parent_id": null,
+      "url": "https://www.icpolice.go.kr"
+    },
+    {
+      "id": "R005",
+      "name": "광주광역시경찰청",
+      "name_en": "",
+      "type": "police",
+      "parent_id": null,
+      "url": "https://www.gjpolice.go.kr"
+    },
+    {
+      "id": "R006",
+      "name": "대전광역시경찰청",
+      "name_en": "",
+      "type": "police",
+      "parent_id": null,
+      "url": "https://www.djpolice.go.kr"
+    },
+    {
+      "id": "R007",
+      "name": "울산광역시경찰청",
+      "name_en": "",
+      "type": "police",
+      "parent_id": null,
+      "url": "https://www.uspolice.go.kr"
+    },
+    {
+      "id": "R008",
+      "name": "세종특별자치시경찰청",
+      "name_en": "",
+      "type": "police",
+      "parent_id": null,
+      "url": "https://www.sjpolice.go.kr"
+    },
+    {
+      "id": "R009",
+      "name": "경기남부경찰청",
+      "name_en": "",
+      "type": "police",
+      "parent_id": null,
+      "url": "https://www.ggpolice.go.kr"
+    },
+    {
+      "id": "R010",
+      "name": "경기북부경찰청",
+      "name_en": "",
+      "type": "police",
+      "parent_id": null,
+      "url": "https://www.ggbpolice.go.kr"
+    },
+    {
+      "id": "R011",
+      "name": "강원특별자치도경찰청",
+      "name_en": "",
+      "type": "police",
+      "parent_id": null,
+      "url": "https://www.gwpolice.go.kr"
+    },
+    {
+      "id": "R012",
+      "name": "충청북도경찰청",
+      "name_en": "",
+      "type": "police",
+      "parent_id": null,
+      "url": "https://www.cbpolice.go.kr"
+    },
+    {
+      "id": "R013",
+      "name": "충청남도경찰청",
+      "name_en": "",
+      "type": "police",
+      "parent_id": null,
+      "url": "https://cnpolice.go.kr"
+    },
+    {
+      "id": "R014",
+      "name": "전북특별자치도경찰청",
+      "name_en": "",
+      "type": "police",
+      "parent_id": null,
+      "url": "https://www.jbpolice.go.kr"
+    },
+    {
+      "id": "R015",
+      "name": "전라남도경찰청",
+      "name_en": "",
+      "type": "police",
+      "parent_id": null,
+      "url": "https://www.jnpolice.go.kr"
+    },
+    {
+      "id": "R016",
+      "name": "경상북도경찰청",
+      "name_en": "",
+      "type": "police",
+      "parent_id": null,
+      "url": "https://gbpolice.go.kr"
+    },
+    {
+      "id": "R017",
+      "name": "경상남도경찰청",
+      "name_en": "",
+      "type": "police",
+      "parent_id": null,
+      "url": "https://www.gnpolice.go.kr"
+    },
+    {
+      "id": "R018",
+      "name": "제주특별자치도경찰청",
+      "name_en": "",
+      "type": "police",
+      "parent_id": null,
+      "url": "https://www.jjpolice.go.kr"
+    },
+    {
+      "id": "I001",
+      "name": "감사원",
+      "name_en": "",
+      "type": "independent",
+      "parent_id": null,
+      "url": "https://www.bai.go.kr"
+    },
+    {
+      "id": "I002",
+      "name": "중앙선거관리위원회",
+      "name_en": "",
+      "type": "independent",
+      "parent_id": null,
+      "url": "https://www.nec.go.kr"
+    },
+    {
+      "id": "I003",
+      "name": "국가인권위원회",
+      "name_en": "",
+      "type": "independent",
+      "parent_id": null,
+      "url": "https://www.humanrights.go.kr"
+    },
+    {
+      "id": "I004",
+      "name": "국민권익위원회",
+      "name_en": "",
+      "type": "independent",
+      "parent_id": null,
+      "url": "https://www.acrc.go.kr"
+    },
+    {
+      "id": "I005",
+      "name": "개인정보보호위원회",
+      "name_en": "",
+      "type": "independent",
+      "parent_id": null,
+      "url": "https://www.pipc.go.kr"
+    },
+    {
+      "id": "I006",
+      "name": "공정거래위원회",
+      "name_en": "",
+      "type": "independent",
+      "parent_id": null,
+      "url": "https://www.ftc.go.kr"
+    },
+    {
+      "id": "I007",
+      "name": "금융위원회",
+      "name_en": "",
+      "type": "independent",
+      "parent_id": null,
+      "url": "https://www.fsc.go.kr"
+    },
+    {
+      "id": "I008",
+      "name": "원자력안전위원회",
+      "name_en": "",
+      "type": "independent",
+      "parent_id": null,
+      "url": "https://www.nssc.go.kr"
+    },
+    {
+      "id": "I009",
+      "name": "방송미디어통신위원회",
+      "name_en": "",
+      "type": "independent",
+      "parent_id": null,
+      "url": "https://www.kmcc.go.kr"
+    },
+    {
+      "id": "I010",
+      "name": "한국은행",
+      "name_en": "",
+      "type": "independent",
+      "parent_id": null,
+      "url": "https://www.bok.or.kr"
     }
   ]
 }

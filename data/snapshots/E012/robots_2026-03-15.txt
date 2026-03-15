@@ -1,0 +1,8 @@
+User-agent: Yeti
+Allow: /human/ 
+Allow: /human/main.do
+Allow: /news/main.do
+Allow: /shec/main.do
+
+User-agent: *
+Disallow: / 

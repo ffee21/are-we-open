@@ -1,0 +1,37 @@
+User-agent: *
+Disallow: /gw/sub02/sub02_02.jsp
+Disallow: /gn/sub02/sub02_02.jsp
+Disallow: /gs/sub02/sub02_02.jsp
+Disallow: /dh/sub02/sub02_02.jsp
+Disallow: /sc/sub02/sub02_02.jsp
+Disallow: /yg/sub02/sub02_02.jsp
+Disallow: /yw/sub02/sub02_02.jsp
+Disallow: /wj/sub02/sub02_02.jsp
+Disallow: /ij/sub02/sub02_02.jsp
+Disallow: /js/sub02/sub02_02.jsp
+Disallow: /cw/sub02/sub02_02.jsp
+Disallow: /cc/sub02/sub02_02.jsp
+Disallow: /tb/sub02/sub02_02.jsp
+Disallow: /pc/sub02/sub02_02.jsp
+Disallow: /hc/sub02/sub02_02.jsp
+Disallow: /hs/sub02/sub02_02.jsp
+Disallow: /hwachun/sub02/sub02_02.jsp
+Disallow: /sokcho/sub02/sub02_02.jsp
+Allow : /gw/main/main.jsp
+Allow : /gn/main/main.jsp
+Allow : /gs/main/main.jsp
+Allow : /dh/main/main.jsp
+Allow : /sc/main/main.jsp
+Allow : /yg/main/main.jsp
+Allow : /yw/main/main.jsp
+Allow : /wj/main/main.jsp
+Allow : /ij/main/main.jsp
+Allow : /js/main/main.jsp
+Allow : /cw/main/main.jsp
+Allow : /cc/main/main.jsp
+Allow : /tb/main/main.jsp
+Allow : /pc/main/main.jsp
+Allow : /hc/main/main.jsp
+Allow : /hs/main/main.jsp
+Allow : /hwachun/main/main.jsp          
+Allow : /sokcho/main/main.jsp

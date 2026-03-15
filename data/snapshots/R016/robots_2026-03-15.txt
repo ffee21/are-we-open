@@ -1,0 +1,29 @@
+User-agent: *
+Disallow: /
+Allow : /gbpolice/index.do
+Allow : /gj/index.do
+Allow : /gm/index.do
+Allow : /gs/index.do
+Allow : /ad/index.do
+Allow : /gc/index.do
+Allow : /yj/index.do
+Allow : /yc/index.do
+Allow : /mg/index.do
+Allow : /cg/index.do
+Allow : /us/index.do
+Allow : /cd/index.do
+Allow : /yd/index.do
+Allow : /uj/index.do
+Allow : /bh/index.do
+Allow : /sj/index.do
+Allow : /cs/index.do
+Allow : /yy/index.do
+Disallow : /gw/index.do
+Allow : /gr/index.do
+Allow : /ul/index.do
+Allow : /dokdo/index.do   
+Allow : /sangju/index.do  
+Allow : /yecheon/index.do 
+Allow : /phbb/index.do    
+Allow : /phnb/index.do
+Sitemap: https://www.gbpolice.go.kr/sitemap.xml

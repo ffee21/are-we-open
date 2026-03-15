@@ -1,0 +1,18 @@
+User-agent: *
+Disallow: /asset/
+Disallow: /asacms/
+Disallow: /design/
+Disallow: /uploadfile/
+Disallow: /namoEditUpload/
+Disallow: /site/*/file/
+Disallow: /site/*/board/
+Disallow: /site/*/archive/
+Disallow: /site/*/space/
+Disallow: /site/*/research/
+Disallow: /site/*/mypage/
+Disallow: /*/asacms/
+Disallow: /sso/
+Disallow: /site/main/certificate/request
+#Sitemap: https://test.go.kr/sitemap/Sitemap_*.xml
+#운영서버 도메인으로 변경
+#Disallow: /*? # block any URL that includes a ?

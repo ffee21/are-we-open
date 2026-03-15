@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /ncms/*
+
+Disallow: /jbassem/board/31
+Disallow: /jbassem/board/32
+Disallow: /jbassem/board/253
+Disallow: /jbassem/board/254
+Disallow: /jbassem/board/33
+Disallow: /jbassem/board/35
+
+Sitemap: https://www.jbstatecouncil.jeonbuk.kr/sitemap_index.xml

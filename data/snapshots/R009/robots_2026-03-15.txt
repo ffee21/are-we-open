@@ -1,0 +1,35 @@
+User-Agent: * 
+Disallow: /
+Allow : /index.jsp
+Allow : /gc/index.do
+Allow : /gm/index.do
+Allow : /gj/index.do
+Allow : /gunpo/index.do
+Allow : /gimpo/index.do
+Allow : /bcym/index.do
+Allow : /bcoj/index.do
+Allow : /bcss/index.do
+Allow : /bd/index.do
+Allow : /snjw/index.do
+Allow : /snsj/index.do
+Allow : /swyt/index.do
+Allow : /sh/index.do
+Allow : /ansan/index.do
+Allow : /assn/index.do
+Allow : /as/index.do
+Allow : /ayda/index.do
+Allow : /ayma/index.do
+Allow : /yp/index.do
+Allow : /yj/index.do
+Allow : /yidb/index.do
+Allow : /yisb/index.do
+Allow : /uw/index.do
+Allow : /ic/index.do
+Allow : /pt/index.do
+Allow : /hn/index.do
+Allow : /hsdt/index.do
+Allow : /os/index.do
+Allow : /hssb/index.do
+Allow : /swpd/index.do
+Allow : /swja/index.do
+Allow : /swgs/index.do

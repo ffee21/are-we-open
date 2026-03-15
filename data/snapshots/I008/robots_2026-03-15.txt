@@ -1,0 +1,3 @@
+User-agent: Googlebot
+Disallow: /search/
+Sitemap: https://www.nssc.go.kr/sitemap.xml

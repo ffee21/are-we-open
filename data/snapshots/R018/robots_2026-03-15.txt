@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /
+Allow : /jjpolice/main.htm
+Allow: /dongbu/main.htm
+Allow: /seobu/main.htm
+Allow: /seogwipo/main.htm
+Allow: /jcg/main.htm

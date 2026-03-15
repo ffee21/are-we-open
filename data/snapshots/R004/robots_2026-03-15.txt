@@ -1,0 +1,16 @@
+User-agent:*
+Allow : /main_index.php
+Allow : /police.php?dcode=gh
+Allow : /police.php?dcode=jb
+Allow : /police.php?dcode=nb
+Allow : /police.php?dcode=nd
+Allow : /police.php?dcode=bp
+Allow : /police.php?dcode=sb
+Allow : /police.php?dcode=gy
+Allow : /police.php?dcode=gw
+Allow : /police.php?dcode=ys
+Allow : /police.php?dcode=ss
+Allow : /police.php?dcode=nh
+disallow : /board/
+
+

@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+Disallow: /common/
+Disallow: /comm/
+Disallow: /apple/
+Disallow: /js/
+Disallow: /images/
+Disallow: /css/
+Disallow: /upload/
+Disallow: /log/
+Disallow: /comm/
+Disallow: /nice/
+Disallow: /editor/
+Disallow: /onepass/
+Disallow: /search/
+Disallow: /webfilter/
+Disallow: /WEB-INF/

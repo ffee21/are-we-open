@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /us/uat/uia/egovLoginUsrAdm.do
+Disallow: /us/uat/uia/egovLoginUsr.do
+Disallow: /cmm/main/mainPageTest1.do
+Allow: /

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /boffice/
+Disallow: /site/kor/ccourt/pubinfo/

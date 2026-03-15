@@ -1,0 +1,9 @@
+User-agent : *
+Disallow: /
+Allow: /portal/
+Allow: /history70/
+Allow: /imer/
+Allow: /imerEng/
+Allow: /museum/
+Allow: /eng/
+#DaumWebMasterTool:f3340e0017c8c4f0bf41601c7d59dd6ce8044367689b7df55bdc74be8fc453d2:pQ9KBhWBmIn1w/pRgGGMLw==
