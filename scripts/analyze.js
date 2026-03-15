@@ -334,7 +334,19 @@ function score(robotsResult, llmsResult, sitemapResult, pageResult) {
     sitemap_xml:             { score: items['SM-01']+items['SM-02'], max: 5 }
   };
 
-  const total = Object.values(categories).reduce((s, c) => s + c.score, 0);
+  let total = Object.values(categories).reduce((s, c) => s + c.score, 0);
+
+  // === 핵심: LLM 접근 차단 시 점수 상한 적용 ===
+  // 전면 차단(Disallow: /): 최대 25점 (F~D)
+  // LLM 크롤러를 명시적으로 차단: 차단 수에 비례하여 상한 적용
+  if (robotsResult.full_block) {
+    total = Math.min(total, 25);
+  } else if (llmBlockedCount >= 3) {
+    total = Math.min(total, 40);  // 최대 C
+  } else if (llmBlockedCount >= 1) {
+    total = Math.min(total, 59);  // 최대 C (B 미만)
+  }
+
   const grade = total >= 90 ? 'A+' : total >= 80 ? 'A' : total >= 70 ? 'B+' :
     total >= 60 ? 'B' : total >= 40 ? 'C' : total >= 20 ? 'D' : 'F';
 
