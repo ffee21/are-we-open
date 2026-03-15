@@ -13,7 +13,7 @@
  *   4. 메인 페이지 — 메타데이터, 기술적 접근성
  */
 
-const { parse, analyzeCrawlerAccess } = require('./lib/robots-parser.js');
+const { parse, isAllowed, analyzeCrawlerAccess } = require('./lib/robots-parser.js');
 const path = require('path');
 const fs = require('fs');
 
@@ -252,6 +252,71 @@ async function analyzeMainPage(baseUrl) {
     result.is_ssr = bodyText.length > 200;
   }
 
+  // 핵심 콘텐츠 경로 탐색: 메인 페이지에서 보도자료/공지사항/정책소개 링크 찾기
+  result.detected_paths = { press: [], notice: [], policy: [] };
+
+  // 안전한 정규식으로 a 태그의 href와 텍스트 추출
+  const anchors = html.match(/<a[^>]+href\s*=\s*["'][^"'#][^"']*["'][^>]*>[^<]*(?:<[^/a][^>]*>[^<]*)*<\/a>/gi) || [];
+  for (const anchor of anchors) {
+    const hrefMatch = anchor.match(/href\s*=\s*["']([^"']+)["']/i);
+    if (!hrefMatch) continue;
+    const href = hrefMatch[1];
+    if (href.startsWith('javascript') || href.startsWith('mailto')) continue;
+
+    const innerText = anchor.replace(/<[^>]+>/g, '').trim();
+    const lt = innerText.toLowerCase();
+    const lh = href.toLowerCase();
+
+    if (lt.includes('보도자료') || lt.includes('보도 자료') || lh.includes('press') || lh.includes('bodo')) {
+      result.detected_paths.press.push(href);
+    }
+    if (lt.includes('공지사항') || lt.includes('공지 사항') || lh.includes('notice') || lh.includes('gongji')) {
+      result.detected_paths.notice.push(href);
+    }
+    if (lt.includes('정책') || lt.includes('주요사업') || lh.includes('policy') || lh.includes('polcy')) {
+      result.detected_paths.policy.push(href);
+    }
+  }
+
+  return result;
+}
+
+// === 실제 콘텐츠 경로의 robots.txt 차단 여부 확인 ===
+function checkContentPathAccess(robotsResult, pageResult) {
+  const result = { press: null, notice: null, policy: null };
+  if (!robotsResult.exists || !robotsResult.raw) return result;
+
+  const parsed = parse(robotsResult.raw);
+  const detected = pageResult.detected_paths || { press: [], notice: [], policy: [] };
+
+  // 각 콘텐츠 유형에 대해, 탐지된 경로가 LLM 크롤러에게 차단되는지 확인
+  for (const type of ['press', 'notice', 'policy']) {
+    const paths = detected[type];
+    if (!paths || paths.length === 0) {
+      result[type] = { detected: false, paths: [], blocked: false };
+      continue;
+    }
+
+    // URL에서 경로만 추출
+    const pathsToCheck = paths.map(p => {
+      try { return new URL(p, 'https://example.com').pathname; }
+      catch { return p; }
+    }).slice(0, 5); // 최대 5개만 확인
+
+    // GPTBot과 * 기준으로 차단 여부 확인
+    let anyBlocked = false;
+    for (const path of pathsToCheck) {
+      const gptCheck = isAllowed(parsed, 'GPTBot', path);
+      const wildCheck = isAllowed(parsed, '*', path);
+      if (!gptCheck.allowed || !wildCheck.allowed) {
+        anyBlocked = true;
+        break;
+      }
+    }
+
+    result[type] = { detected: true, paths: pathsToCheck, blocked: anyBlocked };
+  }
+
   return result;
 }
 
@@ -283,11 +348,36 @@ function score(robotsResult, llmsResult, sitemapResult, pageResult) {
     robotsResult.content_paths_blocked.length <= 2 ? 3 : 0;
 
   // CA-01~03: 보도자료/정책소개/공지사항 LLM 접근 (7+5+5=17점)
-  // robots.txt에 의한 차단이 핵심
-  const llmAccess = !robotsResult.full_block && llmBlockedCount < 3;
-  items['CA-01'] = llmAccess ? 7 : (robotsResult.full_block ? 0 : 3);
-  items['CA-02'] = llmAccess ? 5 : (robotsResult.full_block ? 0 : 2);
-  items['CA-03'] = llmAccess ? 5 : (robotsResult.full_block ? 0 : 2);
+  // 실제 콘텐츠 경로를 robots.txt와 대조하여 판정
+  const contentAccess = checkContentPathAccess(robotsResult, pageResult);
+
+  // CA-01: 보도자료 (7점)
+  if (robotsResult.full_block) {
+    items['CA-01'] = 0; // 전면 차단
+  } else if (contentAccess.press && contentAccess.press.detected) {
+    items['CA-01'] = contentAccess.press.blocked ? 0 : 7; // 실제 경로 확인됨
+  } else {
+    // 경로를 못 찾았으면, LLM 차단 없으면 기본 허용으로 간주 (단 감점)
+    items['CA-01'] = llmBlockedCount === 0 ? 5 : 3;
+  }
+
+  // CA-02: 정책소개 (5점)
+  if (robotsResult.full_block) {
+    items['CA-02'] = 0;
+  } else if (contentAccess.policy && contentAccess.policy.detected) {
+    items['CA-02'] = contentAccess.policy.blocked ? 0 : 5;
+  } else {
+    items['CA-02'] = llmBlockedCount === 0 ? 3 : 2;
+  }
+
+  // CA-03: 공지사항 (5점)
+  if (robotsResult.full_block) {
+    items['CA-03'] = 0;
+  } else if (contentAccess.notice && contentAccess.notice.detected) {
+    items['CA-03'] = contentAccess.notice.blocked ? 0 : 5;
+  } else {
+    items['CA-03'] = llmBlockedCount === 0 ? 3 : 2;
+  }
 
   // CA-04: 콘텐츠 경로 명확성 (4점)
   items['CA-04'] = sitemapResult.exists && sitemapResult.url_count > 10 ? 4 :
@@ -444,6 +534,14 @@ async function analyzeOrg(orgId, orgUrl, orgName) {
       mobile_viewport: pageResult.has_viewport,
       primary_rendering: pageResult.is_ssr ? 'ssr' : 'csr',
       html_length: pageResult.html_length
+    },
+    content_paths: {
+      press: pageResult.detected_paths ? pageResult.detected_paths.press.slice(0, 3) : [],
+      notice: pageResult.detected_paths ? pageResult.detected_paths.notice.slice(0, 3) : [],
+      policy: pageResult.detected_paths ? pageResult.detected_paths.policy.slice(0, 3) : [],
+      press_blocked: scores.items['CA-01'] === 0 && !robotsResult.full_block,
+      notice_blocked: scores.items['CA-03'] === 0 && !robotsResult.full_block,
+      policy_blocked: scores.items['CA-02'] === 0 && !robotsResult.full_block
     }
   };
 }
