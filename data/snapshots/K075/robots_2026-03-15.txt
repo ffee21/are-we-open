@@ -8,8 +8,8 @@ Disallow:/vdi/*
 Disallow:/*/cmm/mber/login/*
 Disallow:/*/mngr*
 Disallow:/mngr*
-Disallow:/*/fileDown.do
 Disallow:/unitySearch.do
+Disallow:/*/fileDown.do
 Disallow:/innorix/*
 Allow:/index.do
 Allow:/*/index.do

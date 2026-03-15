@@ -1,6 +1,2 @@
-User-agent: Googlebot
-Disallow: /search/unitySearch.do
-Disallow: /board/
-
 User-agent: *
 Disallow: /board/

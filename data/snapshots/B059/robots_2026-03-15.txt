@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+User-Agent: Googlebot 
+Disallow: / 
+
+User-Agent: Googlebot
+Disallow: /open_content/search/

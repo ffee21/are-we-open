@@ -1,0 +1,11 @@
+User-agent: *
+#Disallow: /molab/moel/data/download/local_tel.hwp
+#Disallow: /search/ # 검색화면 차단
+#Disallow: /kids/ # 키즈
+Disallow: /info/defaulter/ # 개인정보 차단
+Disallow: /portal/ # 포털
+Disallow: /v2024/ # 검색화면 차단
+Disallow: /local/*/v2024/ # 검색화면 차단
+Disallow: /participate/praise/ # 게시판 차단
+Disallow: /participate/regulation/ # 게시판 차단
+Disallow: /minwon/fastcounsel/ # 게시판 차단

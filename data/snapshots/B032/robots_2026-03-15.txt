@@ -1,0 +1,6 @@
+User-agent: Googlebot
+Disallow: /board/
+Disallow: /*menuCd=DOM_000000112000000000
+
+User-agent: *
+Allow: /
