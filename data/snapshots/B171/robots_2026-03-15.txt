@@ -1,0 +1,43 @@
+#  ROBOTS.TXT
+User-agent: *
+Allow:/
+User-agent: *
+Disallow: /*screen_print.jpg
+Disallow: /*screen_print.pdf
+Disallow: /*print=true
+Disallow: /*mode=system_change
+Disallow: /business
+Disallow: /tourbiz
+Disallow: /edubiz
+Disallow: /grants
+Disallow: /donggrants
+Disallow: /sportsbiz
+Disallow: /moksanaeabiz
+Disallow: /voucher
+Disallow: /oldmayor
+Disallow: /imsi
+Disallow: /search
+Disallow: /apply/step1.html
+
+Crawl-Delay: 30
+
+User-agent: 360Spider
+Disallow: /
+
+User-agent: YoudaoBot
+Disallow: /
+
+User-agent: sogou spider
+Disallow: /
+
+User-agent: YisouSpider
+Disallow: /
+
+User-agent: LinksCrawler
+Disallow: /
+
+User-agent: EasouSpider
+Disallow: /
+
+User-agent: Yeti
+Allow: /

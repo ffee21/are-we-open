@@ -1,0 +1,27 @@
+User-agent: Googlebot
+Allow: /www/
+Allow: /mayor/
+Allow: /health/
+Allow: /eng/
+Allow: /chn/
+Allow: /jpn/
+Allow: /agri/
+Allow: /cyber/
+Allow: /citytour/
+Allow: /lib/
+Allow: /farm/
+Allow: /ycsudo/
+Allow: /learning/
+Allow: /seonsa/
+Allow: /festival/
+Allow: /tour/
+Allow: /mab/
+Allow: /reserve/
+Allow: /budget/
+Allow: /town/
+Allow: /safe/
+Allow: /ebook/
+Disallow: /search/
+
+User-agent: *
+Disallow: /

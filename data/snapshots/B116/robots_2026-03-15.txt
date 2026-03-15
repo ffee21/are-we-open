@@ -1,0 +1,12 @@
+User-Agent: *
+Disallow: /DATA/
+Disallow: /DATA_RESVE/
+Disallow: /neo/
+Disallow: /msfrtnSport/
+Disallow: /msfrtnSport2/
+Disallow: /synap/
+Disallow: /template/
+Disallow: /upload/
+Disallow: /XPay/
+Disallow: /XPay_Smart/
+Allow: /

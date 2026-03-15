@@ -1,0 +1,24 @@
+User-agent: *
+Disallow:/02912/
+Disallow:/02913/
+Disallow:/02914/
+Disallow:/02915/
+Disallow:/02916/
+Disallow:/02951/
+Disallow:/02952/
+Disallow:/02953/
+Disallow:/02954/
+Disallow:/02639/
+Disallow:/02640/
+Disallow:/02641/
+Disallow:/02642/
+Disallow:/02643/
+Disallow:/00215/
+Disallow:/search/
+Disallow:/specialty/00215/00398.web
+
+User-agent: bingbot
+Disallow:/
+
+User-agent: ClaudeBot
+Disallow: /

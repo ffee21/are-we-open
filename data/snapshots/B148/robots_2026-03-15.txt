@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Disallow: /html/media/
+Disallow: /prog/
+Disallow: /bbs/
+Disallow: /RSA/front/Search.jsp
+
+User-agent: Googlebot
+Disallow:/go_now/service/search/
+Disallow:/go_now/board/qna/
+Disallow:/go_now/board/policy/
+Disallow:/go_now/board/publicize/

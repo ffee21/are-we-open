@@ -1,0 +1,25 @@
+User-agent: *
+Allow: /portal/
+Allow: /library/
+Allow: /health/
+Allow: /manhwalib/
+Disallow: /intro
+
+User-agent: Googlebot
+Disallow: /intro
+Disallow: /search/front/
+Disallow: /council/bbs
+Disallow: /dong/bbs
+Disallow: /edu/bbs
+Disallow: /eng/bbs
+Disallow: /happyedu/bbs
+Disallow: /health/bbs
+Disallow: /inews/bbs
+Disallow: /library/bbs
+Disallow: /manhwalib/bbs
+Disallow: /mayor/bbs
+Disallow: /opendata/bbs
+Disallow: /portal/bbs
+Disallow: /se/bbs
+Disallow: /tour/bbs
+Disallow: /welfare/bbs

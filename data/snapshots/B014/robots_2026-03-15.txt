@@ -1,0 +1,16 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /health/admin/
+Disallow: /sso/
+Disallow: /lib/
+Disallow: /search/
+Allow: /health/contents/
+Allow: /health/board/
+Allow: /news/
+Allow: /health/
+Allow: /genre/
+Allow: /chief/
+Allow: /dong/
+Allow: /en/
+Allow: /cn/
+Allow: /jp/

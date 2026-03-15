@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /*?page_id=958
+Disallow: /*?page_id=970
+Disallow: /*?page_id=978
+Disallow: /*?p=4962
+Disallow: /*?p=3015
+Disallow: /*?p=3049
+
+#DaumWebMasterTool:e923f458aeacd61abc3545de55c9ef678f4543b55b154f3fd2ad9ff3debed792:LyOksQZaDG6iQZfQeUnrCA==

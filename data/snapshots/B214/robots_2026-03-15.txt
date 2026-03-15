@@ -1,0 +1,18 @@
+User-agent: BadBot
+Disallow: /
+
+User-agent: bingbot
+Disallow: /
+
+User-agent: *
+Disallow: /_res
+Disallow: /search
+Disallow: /news/contract
+Disallow: /mobilepds.jsp
+Disallow: /portal/Index.do?c=WW0201500000
+Disallow: /portal/board/List.do?gcode=1009&pageCd=WW0201020000
+Disallow: /life/Index.do
+Disallow: /transport/Index.do
+Disallow: /support/Index.do
+Disallow: /sports/Index.do
+Crawl-delay: 60

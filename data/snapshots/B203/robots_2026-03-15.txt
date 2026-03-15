@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+Disallow: /upload/
+Disallow: /programs/
+Disallow: /SiteManager/
+
+User-agent: SemrushBot
+Crawl-delay: 86400
+
+User-agent: ahrefsbot/7.0
+Crawl-delay: 86400
+
+User-agent: Bytespider
+Disallow: /
+Crawl-delay: 86400

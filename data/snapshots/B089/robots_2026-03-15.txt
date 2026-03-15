@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /web/petition/
+Disallow: /eminwon/
+Disallow: /web/opendoc/
+Disallow: /web/search/
+Disallow: /web/organization/
+Disallow: /web/trans/organization/
+Disallow: /web/preinfo/
+Disallow: /web/trans/
+Disallow: /sw-www/sw-trans/

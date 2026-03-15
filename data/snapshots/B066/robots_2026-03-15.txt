@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+
+User-agent: *
+Disallow: /dpt/dpt03/DPT030101_cmmBoardList.do
+
+User-agent: *
+Disallow: /biz/

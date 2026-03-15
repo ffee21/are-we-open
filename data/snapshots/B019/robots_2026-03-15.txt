@@ -1,0 +1,67 @@
+User-agent: Googlebot
+ Disallow: /site/mayor/ex/bbs/
+ Disallow: /site/yangcheon/ex/bbs/
+ Disallow: /boffice/ex/board/
+ Disallow: /boffice/ex/bbs/
+ Disallow: /site/*/ex/bbs/
+ Disallow: /*/*/ex/bbs/
+ Disallow: /*/ex/bbs/
+ Disallow: /injeinc/foffice/ex/bbs/
+ Disallow: /injeinc/boffice/ex/bbs/
+ Disallow: /boffice/ex/bbs/
+ Disallow: /error.html
+ 
+ Disallow: /house-repair/admin/*
+ Allow: /house-repair/*
+ 
+ Disallow: /site/search/main.jsp
+ 
+ Allow:    /site/yangcheon/ex/bbs/List.do?cbIdx=266
+ 
+ 
+
+ 
+User-agent: Yeti
+ Disallow: /site/mayor/ex/bbs/
+ Disallow: /site/yangcheon/ex/bbs/
+ Disallow: /boffice/ex/board/
+ Disallow: /boffice/ex/bbs/
+ Disallow: /site/*/ex/bbs/
+ Disallow: /*/*/ex/bbs/
+ Disallow: /*/ex/bbs/
+ Disallow: /injeinc/foffice/ex/bbs/
+ Disallow: /injeinc/boffice/ex/bbs/
+ Disallow: /boffice/ex/bbs/ 
+ Disallow: /error.html 
+ 
+ Disallow: /house-repair/admin/*
+ Allow:    /house-repair/*
+ 
+ Allow:    /site/yangcheon/ex/bbs/List.do?cbIdx=266
+ 
+User-agent: Daumoa
+ Disallow: /site/mayor/ex/bbs/
+ Disallow: /site/yangcheon/ex/bbs/
+ Disallow: /boffice/ex/board/
+ Disallow: /boffice/ex/bbs/
+ Disallow: /site/*/ex/bbs/
+ Disallow: /*/*/ex/bbs/
+ Disallow: /*/ex/bbs/
+ Disallow: /injeinc/foffice/ex/bbs/
+ Disallow: /injeinc/boffice/ex/bbs/
+ Disallow: /boffice/ex/bbs/  
+ Disallow: /error.html
+ 
+ Disallow: /house-repair/admin/*
+ Allow:    /house-repair/*
+ 
+
+User-agent: Googlebot-Image
+Disallow: /
+
+User-agent: Googlebot-Mobile
+Disallow: /
+
+
+User-agent: *
+Disallow: /

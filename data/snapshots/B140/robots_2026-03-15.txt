@@ -1,0 +1,56 @@
+User-agent: Yeti
+Allow: /kor/
+Allow: /job/
+Disallow: *.xls$
+Disallow: *.xlsx$
+Disallow: *.pdf$
+Disallow: *.hwp$
+Disallow: *.doc$
+Disallow: *.docx$
+Crawl-delay: 1
+
+User-agent: Googlebot
+Allow: /kor/
+Allow: /job/
+Disallow: /RSA/front/
+Disallow: /*/bbs/
+Disallow: /kor/html/sub02/
+Disallow: *.xls$
+Disallow: *.xlsx$
+Disallow: *.pdf$
+Disallow: *.hwp$
+Disallow: *.doc$
+Disallow: *.docx$
+Crawl-delay: 1
+
+User-agent: Daum
+Allow: /kor/
+Allow: /job/
+Disallow: *.xls$
+Disallow: *.xlsx$
+Disallow: *.pdf$
+Disallow: *.hwp$
+Disallow: *.doc$
+Disallow: *.docx$
+Crawl-delay: 1
+
+User-agent: Daumoa
+Allow: /kor/
+Allow: /job/
+Disallow: *.xls$
+Disallow: *.xlsx$
+Disallow: *.pdf$
+Disallow: *.hwp$
+Disallow: *.doc$
+Disallow: *.docx$
+Crawl-delay: 1
+
+User-agent: *
+Disallow: /
+Disallow: *.xls$
+Disallow: *.xlsx$
+Disallow: *.pdf$
+Disallow: *.hwp$
+Disallow: *.doc$
+Disallow: *.docx$
+Crawl-delay: 60

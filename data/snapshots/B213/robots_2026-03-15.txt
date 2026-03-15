@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /search/
+Disallow: /00708/
+Allow: /
+
+#DaumWebMasterTool:73a5ab77cbe29df532a24b9ce84567d2ff6de0a226f64ec3b00c9fb2f7363b4e:C1ILzspyqtyBJeopJfWVzA==

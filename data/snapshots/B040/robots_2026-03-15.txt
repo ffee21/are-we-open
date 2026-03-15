@@ -1,0 +1,2 @@
+User-agent: *
+Disallow: /board/list.ulsan?boardId=BBS_0000088

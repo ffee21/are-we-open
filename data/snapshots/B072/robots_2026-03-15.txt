@@ -1,0 +1,3 @@
+User-agent: Googlebot
+Disallow: */cop/bbs/
+Disallow: /search/front/Search.jsp

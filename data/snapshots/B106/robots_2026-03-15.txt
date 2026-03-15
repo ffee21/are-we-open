@@ -1,0 +1,29 @@
+User-agent: *
+Allow: /
+Allow: /intro_new.jsp
+Allow: /intro3.jsp
+Allow: /www/index.do
+Allow: /www/sub.do
+Allow: /health/index.do
+Allow: /health/sub.do
+Allow: /mayor/index.do
+Allow: /mayor/sub.do
+Allow: /jumin/index.do
+Allow: /jumin/sub.do
+Disallow: /DATA/
+Disallow: /*.pdf
+Disallow: /*.hwp
+Disallow: /*.hwpx
+Disallow: /*.xls
+Disallow: /*.xlsx
+Disallow: /*.doc
+Disallow: /*.docx
+
+# OpenAI GPTBot 차단
+User-agent: GPTBot
+Disallow: /
+
+# Googlebot 차단
+User-agent: Googlebot
+Disallow: /search/searchNew.jsp
+Disallow: /*/selectBbsNtt*

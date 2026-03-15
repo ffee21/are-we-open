@@ -1,0 +1,25 @@
+User-agent:*
+Disallow:/sys
+Disallow:/search
+Disallow:/portal/board/post
+Disallow:/tour/board/post
+Disallow:/mayor/board/post
+Disallow:/health/board/post
+Disallow:/museum/board/post
+Disallow:/yangsan815/board/post
+Disallow:/childcare/board/post
+Disallow:/teen/board/post
+Disallow:/suit/board/post
+Disallow:/job/board/post
+Disallow:/welfare/board/post
+Disallow:/booking/board/post
+Disallow:/edu/board/post
+Disallow:/youth/board/post
+
+# Block Google
+User-agent: Googlebot
+Disallow: /
+
+# Block Bing
+User-agent: Bingbot
+Disallow: /

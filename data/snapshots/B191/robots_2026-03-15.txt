@@ -1,0 +1,17 @@
+User-agent:*
+Disallow:/sys
+Disallow:/portal/board/post
+Disallow:/tour/board/post
+Disallow:/life/board/post
+Disallow:/arts/board/post
+Disallow:/park/board/post
+Disallow:/artsgd/board/post
+Disallow:/mayor/board/post
+
+# Block Google
+User-agent: Googlebot
+Disallow: /
+
+# Block Bing
+User-agent: Bingbot
+Disallow: /

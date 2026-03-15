@@ -1,0 +1,8 @@
+User-agent:Googlebot
+Disallow:/saeil/
+Disallow:/search/
+Disallow:/portal/bbs/
+
+User-agent:*
+Disallow:/cmm/
+Allow:/news/ycNews/

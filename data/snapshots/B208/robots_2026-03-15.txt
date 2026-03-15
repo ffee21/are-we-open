@@ -1,0 +1,11 @@
+User-agent: Yeti
+Allow:/
+
+# Block Google
+User-agent: Googlebot
+Disallow: /sys
+Disallow: /search
+Disallow: /portal/bbs
+Disallow: /tour/bbs
+Disallow: /reservation/bbs
+Disallow: /ctf/bbs

@@ -1,0 +1,127 @@
+User-agent: *
+Disallow: /sys*
+Disallow: /cmm/*
+Disallow: /RSA/front_new/Search.jsp
+Disallow: /ajax/*
+Disallow: /rest/*
+Disallow: /skin/doc.html
+Disallow: /*.jsp$
+Disallow: /*.do$
+
+Allow: /main
+Allow: /portal
+Allow: /mayor
+Allow: /dept
+Allow: /gu
+Allow: /health
+Allow: /safe
+Allow: /atec
+Allow: /water
+Allow: /economy
+
+User-agent: Yeti
+Disallow: /sys*
+Disallow: /cmm/*
+Disallow: /RSA/front_new/Search.jsp
+Disallow: /ajax/*
+Disallow: /rest/*
+Disallow: /skin/doc.html
+Disallow: /*.jsp$
+Disallow: /*.do$
+
+Allow: /main
+Allow: /portal
+Allow: /mayor
+Allow: /dept
+Allow: /gu
+Allow: /health
+Allow: /safe
+Allow: /atec
+Allow: /water
+Allow: /economy
+
+User-agent: GPTBot
+Disallow: /
+User-agent: ChatGPT-User
+Disallow: /
+User-agent: OAI-SearchBot
+Disallow: /
+User-agent: ClaudeBot
+Disallow: /
+User-agent: anthropic-ai
+Disallow: /
+User-agent: cohere-ai
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+User-agent: SemrushBot
+Disallow: /
+User-agent: MJ12bot
+Disallow: /
+User-agent: Baiduspider
+Disallow: /
+User-agent: dotbot
+Disallow: /
+User-agent: Bytespider
+Disallow: /
+User-agent: ZoominfoBot
+Disallow: /
+User-agent: CCBot
+Disallow: /
+User-agent: DataForSeoBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+User-agent: archive.org_bot
+Disallow: /
+User-agent: crawler4j
+Disallow: /
+User-agent: SeekportBot
+Disallow: /
+User-agent: Exabot
+Disallow: /
+
+User-agent: bingbot
+Disallow: /
+User-agent: msnbot
+Disallow: /
+User-agent: bingpreview
+Disallow: /
+
+User-agent: Daum
+Disallow: /sys*
+Disallow: /cmm/*
+Disallow: /RSA/front_new/Search.jsp
+Disallow: /ajax/*
+Disallow: /rest/*
+Disallow: /skin/doc.html
+Disallow: /*.jsp$
+Disallow: /*.do$
+
+User-agent: Daumoa
+Disallow: /sys*
+Disallow: /cmm/*
+Disallow: /RSA/front_new/Search.jsp
+Disallow: /ajax/*
+Disallow: /rest/*
+Disallow: /skin/doc.html
+Disallow: /*.jsp$
+Disallow: /*.do$
+
+User-agent: Googlebot
+Disallow: /sys*
+Disallow: /cmm/*
+Disallow: /RSA/front_new/Search.jsp
+Disallow: /ajax/*
+Disallow: /rest/*
+Disallow: /skin/doc.html
+Disallow: /*.jsp$
+Disallow: /*.do$
+
+Allow: /main
+Allow: /portal
+Allow: /economy
+
+#DaumWebMasterTool:d75b1ac1be961bf108601d2f3669c25472e9cbc1a861dc91cd300dcdc3d03dbc:Xq7ZrqrLkQk/9AkRBB5ZtQ==

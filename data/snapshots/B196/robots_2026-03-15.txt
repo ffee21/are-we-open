@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Disallow: /upload/*
+Disallow: /programs/board/*

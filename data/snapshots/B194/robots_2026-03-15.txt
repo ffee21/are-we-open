@@ -1,0 +1,6 @@
+User-agent:*
+Disallow:/
+
+User-agent: Googlebot
+Disallow: /search/*
+Disallow: */board/post/*

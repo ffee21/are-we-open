@@ -1,0 +1,12 @@
+User-Agent: *
+Disallow: /member/
+Disallow: /council/
+
+User-Agent: Googlebot-Image 
+Disallow: / 
+
+User-Agent: Daummoa
+Disallow: / 
+
+User-Agent: Googlebot
+Disallow: /open_content/search/

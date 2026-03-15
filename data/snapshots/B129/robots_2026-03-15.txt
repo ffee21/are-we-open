@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /artcenter/html/
+Allow: /cn/html/
+Allow: /en/html/
+Allow: /forum/html/
+Allow: /forumkr/html/
+Allow: /fruit/html/
+Allow: /gugak/html/
+Allow: /jp/html/
+Allow: /kr/html/
+Allow: /mayor/html/
+Allow: /media/html/
+Allow: /nogunri/html/
+Allow: /portal/html/
+Allow: /rainbow/html/
+Allow: /tour/html/
+Allow: /tunnel/html/
+Allow: /ydft/html/
+Disallow: /
+
+User-agent: Googlebot
+Disallow: /RSA/front/Search.jsp
+Disallow: /_prog/bbs/
+

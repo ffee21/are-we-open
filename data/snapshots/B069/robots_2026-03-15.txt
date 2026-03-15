@@ -1,0 +1,19 @@
+User-agent: Yeti
+User-agent: Daum
+User-agent: Daumoa
+User-agent: Googlebot
+Allow : /kr/
+Allow : /en/
+Allow : /jp/
+Allow : /cn/
+Allow : /cyber/
+Allow : /naraedu/
+DisAllow : /bbs/
+DisAllow : /search/
+DisAllow : /naraedu/_prog/bbs/
+DisAllow : /synap/
+DisAllow : /cmm/
+DisAllow : /cyber/
+
+
+

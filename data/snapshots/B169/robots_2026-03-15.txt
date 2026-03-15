@@ -1,0 +1,13 @@
+robots.txtUser-agent: Googlebot
+User-agent: Yeti
+User-agent: Daum
+Allow: /
+
+User-agent: Googlebot
+User-agent: Yeti
+User-agent: Daum
+Disallow: /ecms/
+Disallow: /search/
+
+
+Sitemap: https://gwangyang.go.kr/sitemap.xml

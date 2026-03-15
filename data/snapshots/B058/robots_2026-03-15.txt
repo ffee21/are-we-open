@@ -1,0 +1,14 @@
+User-agent: GPTBot 
+Disallow: / 
+
+User-agent: SemrushBot 
+Disallow: /
+
+User-agent: Googlebot
+Disallow: / 
+
+User-Agent: *
+Disallow: /job/employment/db_open.asp
+
+
+#DaumWebMasterTool:4e1085b18878ba0b0a908272270cbb4f514bd70f74e41a2879002708e3159da2:5llCktz7ZGRLpLSfLaoo1w==

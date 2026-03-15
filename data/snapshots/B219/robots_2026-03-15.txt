@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /iam/
+Disallow: /cms/
+Disallow: /j_spring_security_logout
+
+User-agent: Googlebot
+Disallow: /index.uiryeong*contentsSid=1496
+Disallow: /board/

@@ -1,0 +1,13 @@
+User-agent: *
+Disallow: /ndsys/
+Allow: /
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: Googlebot
+Disallow: /RSA/front_new/Search.jsp
+Disallow: /*/board/list.do
+Disallow: /*/board/view.do
+
+Sitemap: https://www.michuhol.go.kr/sitemap.xml

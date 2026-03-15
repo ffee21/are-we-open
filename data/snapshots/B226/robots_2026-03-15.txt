@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /search/
+Disallow: /toursearch/
+Disallow: /00429/
+Crawl-delay: 5
+Allow: /
