@@ -29,14 +29,29 @@ const App = (() => {
   };
 
   const ORG_TYPES = {
-    ministry:           '행정각부',
-    pm_office:          '국무총리 소속',
-    agency:             '소속청',
-    commission:         '위원회',
-    public_institution: '공공기관',
+    // 중앙행정기관 (정부조직법)
+    ministry:           '부',
+    pm_office:          '처',
+    agency:             '청',
+    // 입법부
+    legislature:        '입법기관',
+    local_council:      '지방의회',
+    // 사법부
+    judiciary:          '법원',
+    constitutional:     '헌법기관',
+    // 독립기관
+    independent:        '독립기관',
+    // 치안·검찰
+    prosecution:        '검찰',
+    police:             '경찰',
+    // 교육
+    education:          '교육청',
+    // 지방자치단체
     local_metro:        '특별·광역시',
     local_province:     '도',
-    local_government:   '지자체'
+    local_basic:        '시·군·구',
+    // 공공기관
+    public_institution: '공공기관'
   };
 
   const SEVERITY_LABELS = {

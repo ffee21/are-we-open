@@ -106,12 +106,14 @@
           <p class="section-desc">전체 순위는 <a href="ranking.html" style="text-decoration:underline;">순위표</a>에서 확인하세요</p>
         </div>
 
-        <div class="tabs" id="catTabs" style="margin-bottom: var(--space-lg);">
-          <button class="tab active" data-cat="ministry">부 (19)</button>
-          <button class="tab" data-cat="pm_office">처 (6)</button>
-          <button class="tab" data-cat="agency">청 (15)</button>
-          <button class="tab" data-cat="local">지자체 (17)</button>
-          <button class="tab" data-cat="public_institution">공공기관 (344)</button>
+        <div class="tabs" id="catTabs" style="margin-bottom: var(--space-lg); flex-wrap: wrap;">
+          <button class="tab active" data-cat="central">중앙행정 (부·처·청)</button>
+          <button class="tab" data-cat="independent">독립·헌법기관</button>
+          <button class="tab" data-cat="judiciary_all">사법·검찰·경찰</button>
+          <button class="tab" data-cat="legislature_all">입법 (국회·의회)</button>
+          <button class="tab" data-cat="education">교육청</button>
+          <button class="tab" data-cat="local">지방자치단체</button>
+          <button class="tab" data-cat="public_institution">공공기관</button>
         </div>
         <div class="table-container" id="catTable">
           <div class="loading">데이터 로딩 중</div>
@@ -185,10 +187,12 @@
 
       // Category tabs + table
       var catFilters = {
-        ministry: function(o) { return o.org_type === 'ministry'; },
-        pm_office: function(o) { return o.org_type === 'pm_office'; },
-        agency: function(o) { return o.org_type === 'agency'; },
-        local: function(o) { return o.org_type === 'local_metro' || o.org_type === 'local_province'; },
+        central: function(o) { return o.org_type === 'ministry' || o.org_type === 'pm_office' || o.org_type === 'agency'; },
+        independent: function(o) { return o.org_type === 'independent' || o.org_type === 'constitutional'; },
+        judiciary_all: function(o) { return o.org_type === 'judiciary' || o.org_type === 'prosecution' || o.org_type === 'police'; },
+        legislature_all: function(o) { return o.org_type === 'legislature' || o.org_type === 'local_council'; },
+        education: function(o) { return o.org_type === 'education'; },
+        local: function(o) { return o.org_type === 'local_metro' || o.org_type === 'local_province' || o.org_type === 'local_basic'; },
         public_institution: function(o) { return o.org_type === 'public_institution'; }
       };
       var currentCat = 'ministry';
@@ -317,17 +321,23 @@
       });
 
       // Update tab labels with actual counts
-      var typeCounts = {};
-      orgs.forEach(function(o) {
-        var key = o.org_type;
-        if (key === 'local_metro' || key === 'local_province') key = 'local';
-        typeCounts[key] = (typeCounts[key] || 0) + 1;
+      var catCounts = {};
+      Object.keys(catFilters).forEach(function(cat) {
+        catCounts[cat] = orgs.filter(catFilters[cat]).length;
       });
+      var catLabels = {
+        central: '중앙행정', independent: '독립·헌법기관', judiciary_all: '사법·검찰·경찰',
+        legislature_all: '입법', education: '교육청', local: '지자체', public_institution: '공공기관'
+      };
       document.querySelectorAll('#catTabs .tab').forEach(function(tab) {
         var cat = tab.getAttribute('data-cat');
-        var count = typeCounts[cat] || 0;
-        var labels = { ministry: '부', pm_office: '처', agency: '청', local: '지자체', public_institution: '공공기관' };
-        tab.textContent = labels[cat] + ' (' + count + ')';
+        var count = catCounts[cat] || 0;
+        if (count > 0) {
+          tab.textContent = catLabels[cat] + ' (' + count + ')';
+        } else {
+          tab.textContent = catLabels[cat];
+          tab.style.opacity = '0.4';
+        }
       });
 
       renderCatTable('ministry');
