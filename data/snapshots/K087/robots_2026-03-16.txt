@@ -1,0 +1,6 @@
+User-agent: Yeti
+User-agent: Googlebot
+Disallow: /iam/
+Disallow: /cms/
+Disallow: /cms/search
+Disallow: /board/download.*

@@ -1,0 +1,28 @@
+#  ROBOTS.TXT
+User-agent: *
+Allow:/
+Disallow: /*screen_print.jpg
+Disallow: /*screen_print.pdf
+Disallow: /*print=true
+Disallow: /*mode=system_change
+Disallow: /total_search/total_search.html
+
+Crawl-Delay: 30
+
+User-agent: 360Spider
+Disallow: /
+
+User-agent: YoudaoBot
+Disallow: /
+
+User-agent: sogou spider
+Disallow: /
+
+User-agent: YisouSpider
+Disallow: /
+
+User-agent: LinksCrawler
+Disallow: /
+
+User-agent: EasouSpider
+Disallow: /

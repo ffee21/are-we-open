@@ -2,7 +2,7 @@ User-agent: *
 Disallow: /iam/
 Disallow: /cms/
 Disallow: /j_spring_security_logout
-
-User-agent: Googlebot
 Disallow: /index.uiryeong*contentsSid=1496
-Disallow: /board/
+Disallow: /index.uiryeong?menuCd=DOM_000000206010001000
+Disallow: /board/*menuCd=DOM_000000207
+Disallow: /board/*menuCd=DOM_000002001001
