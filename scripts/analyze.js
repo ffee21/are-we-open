@@ -191,16 +191,49 @@ async function analyzeSitemap(baseUrl) {
   return result;
 }
 
+// === JavaScript 리다이렉트 감지 및 추적 ===
+function detectJsRedirect(html, baseUrl) {
+  if (!html || html.length > 2000) return null; // 짧은 페이지에서만 감지
+  // location.href = "/path" 또는 location.replace("/path") 등
+  const patterns = [
+    /location\.href\s*=\s*["']([^"']+)["']/i,
+    /location\.replace\s*\(\s*["']([^"']+)["']\s*\)/i,
+    /window\.location\s*=\s*["']([^"']+)["']/i,
+    /document\.location\.href\s*=\s*["']([^"']+)["']/i,
+    /<meta[^>]+http-equiv\s*=\s*["']refresh["'][^>]+content\s*=\s*["']\d+;\s*url=([^"']+)["']/i
+  ];
+  for (const pat of patterns) {
+    const m = html.match(pat);
+    if (m) {
+      try { return new URL(m[1], baseUrl).href; }
+      catch { return null; }
+    }
+  }
+  return null;
+}
+
 // === 메인 페이지 분석 ===
 async function analyzeMainPage(baseUrl) {
-  const res = await fetchWithTimeout(baseUrl);
+  let res = await fetchWithTimeout(baseUrl);
+
+  // JavaScript 리다이렉트 감지 → 실제 페이지로 재요청
+  if (res.ok && res.text) {
+    const jsRedirectUrl = detectJsRedirect(res.text, res.url || baseUrl);
+    if (jsRedirectUrl) {
+      const res2 = await fetchWithTimeout(jsRedirectUrl);
+      if (res2.ok) {
+        res = res2;
+        res.redirected_from_js = true;
+      }
+    }
+  }
 
   const result = {
     status_code: res.status,
     ttfb_ms: res.ttfb,
     https: baseUrl.startsWith('https'),
     final_url: res.url,
-    redirected: res.url !== baseUrl,
+    redirected: res.url !== baseUrl || !!res.redirected_from_js,
     // 메타데이터
     has_title: false,
     title: null,
