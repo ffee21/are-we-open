@@ -256,7 +256,7 @@ async function analyzeMainPage(baseUrl) {
   result.detected_paths = { press: [], notice: [], policy: [] };
 
   // 안전한 정규식으로 a 태그의 href와 텍스트 추출
-  const anchors = html.match(/<a[^>]+href\s*=\s*["'][^"'#][^"']*["'][^>]*>[^<]*(?:<[^/a][^>]*>[^<]*)*<\/a>/gi) || [];
+  const anchors = html.match(/<a[^>]+href\s*=\s*["'][^"'#][^"']*["'][^>]*>[^<]*(?:<(?!\/a)[^>]*>[^<]*)*<\/a>/gi) || [];
   for (const anchor of anchors) {
     const hrefMatch = anchor.match(/href\s*=\s*["']([^"']+)["']/i);
     if (!hrefMatch) continue;
