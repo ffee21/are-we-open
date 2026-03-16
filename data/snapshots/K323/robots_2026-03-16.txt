@@ -1,0 +1,11 @@
+User-agent: Yeti
+User-agent: Googlebot
+User-agent: Daum
+User-agent: Daumoa
+Allow: /kopri
+Allow: /eng
+Allow: /media
+
+User-agent: *
+Disallow: /
+Crawl-delay: 60

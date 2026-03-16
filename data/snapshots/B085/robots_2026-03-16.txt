@@ -1,0 +1,36 @@
+user-agent: GPTBot
+Disallow: /
+
+User-agent: Googlebot
+User-agent: Yeti
+User-agent: Daumoa
+Disallow: /search/
+Disallow: /*selectDeptEmployeeList.do
+Disallow: /*selectBbsNttList.do*
+Disallow: /*viewBbsNtt.do*
+Disallow: /*bbsNo=22
+Disallow: /*bbsNo=23
+Disallow: /*bbsNo=253
+
+User-agent: bingbot
+Crawl-delay: 86400
+Disallow: /search/
+Disallow: /*selectDeptEmployeeList.do
+Disallow: /*downloadBbsFile.do*
+Disallow: /*selectBbsNttList.do*
+Disallow: /*viewBbsNtt.do*
+Disallow: /*bbsNo=22
+Disallow: /*bbsNo=23
+Disallow: /*bbsNo=253
+
+
+User-agent: *
+Disallow: /
+Disallow: /search/
+Disallow: /*selectDeptEmployeeList.do
+Disallow: /*downloadBbsFile.do*
+Disallow: /*selectBbsNttList.do*
+Disallow: /*viewBbsNtt.do*
+Disallow: /*bbsNo=22
+Disallow: /*bbsNo=23
+Disallow: /*bbsNo=253

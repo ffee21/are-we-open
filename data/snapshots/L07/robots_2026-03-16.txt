@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /u/hhmgr01/*
+Disallow: /s/hhmgr02/*
+Allow: /

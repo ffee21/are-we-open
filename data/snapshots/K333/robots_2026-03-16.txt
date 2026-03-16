@@ -1,0 +1,13 @@
+User-agent: *
+Disallow:/supe
+Disallow:/uploa
+Disallow:/htm
+Disallow:/image
+Disallow:/agspa
+Disallow:/erro
+Disallow:/commo
+Disallow:/li
+Disallow:/WEB-IN
+Disallow:/downloa
+Disallow:/direct_do
+Disallow:/search/

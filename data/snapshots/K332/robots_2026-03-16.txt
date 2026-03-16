@@ -1,0 +1,13 @@
+User-agent: Googlebot
+Disallow: /findeepSearch.es
+Disallow: /board.es
+
+User-agent: *
+Allow: /main/
+Allow: /menu.es
+Allow: /international/
+Allow: /library/
+Allow: /ccldb/
+Allow: /stats/
+
+Sitemap: https://www.kicj.re.kr/sitemap.xml

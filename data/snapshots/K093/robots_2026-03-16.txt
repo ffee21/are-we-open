@@ -1,0 +1,7 @@
+User-agent:*
+Disallow: /join/
+Disallow: /pub/
+Disallow: /mypage/
+Disallow: /reservation/
+Allow: /
+#DaumWebMasterTool:9dc7fcd06130b1982001f114d66a06da8d3c042248ed4d427d9685b2f4b56466:PFbBGM5xd7AzTd1zw/vLLw==

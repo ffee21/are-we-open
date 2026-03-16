@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /admin
+Disallow: /directors
+Disallow: /socSecInfSerMs
+Disallow: /*/search.do
+Allow: /
+Sitemap: https://www.ssis.or.kr/sitemap.xml
+

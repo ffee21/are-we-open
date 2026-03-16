@@ -1,0 +1,11 @@
+# www.robotstxt.org/
+# http://code.google.com/web/controlcrawlindex/
+
+User-agent: *
+Disallow : /webroot
+Disallow : /webroot2
+Disallow : /main/main/popup_open
+
+
+Sitemap : https://tipa.or.kr/sitemap.xml
+Sitemap : https://tipa.or.kr/kbiolabhub/sitemap.xml

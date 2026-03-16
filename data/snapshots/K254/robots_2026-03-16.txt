@@ -1,0 +1,19 @@
+User-agent: Googlebot
+Disallow: /web/Board/
+Disallow: /web/info/notice/sub01.do
+Disallow: /web/info/notice/sub04.do
+Disallow: /web/info/recruit/sub01.do
+Disallow: /web/info/recruit/sub02.do
+Disallow: /web/info/press/sub01.do
+Disallow: /web/public/sub08.do
+Disallow: /web/openManage/ethics/sub04.do
+Disallow: /web/openManage/ethics/sub03.do
+Disallow: /web/public/business/sub01.do
+Disallow: /web/public/sub01_1.do
+Disallow: /dfip/fo/cms/cmn/cmnFaq.do
+Disallow: /dfip/fo/cms/cmn/cmnQstnAns.do
+Disallow: /fbip/fo/cm/board/qna/regist.do
+
+
+User-agent: *
+Allow: /

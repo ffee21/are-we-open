@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /search/
+Disallow: /react/
+Disallow: /react/search
+Disallow: /board.es
+Disallow: /board

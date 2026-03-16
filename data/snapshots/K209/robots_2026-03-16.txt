@@ -1,0 +1,6 @@
+#User-agent: *
+#User-agent: Yeti
+#Allow: /  ## Allow / 는 기본이므로 불필요
+
+User-agent: Googlebot       # Googlebot만 접근 차단
+Disallow: /search/index.do  # 서치 페이지만 접근 차단

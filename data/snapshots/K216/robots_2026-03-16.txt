@@ -1,0 +1,46 @@
+# ================================
+# 허용할 정상 검색엔진
+# ================================
+
+# Googlebot
+User-agent: Googlebot
+Allow: /
+
+# Googlebot-Mobile
+User-agent: Googlebot-Mobile
+Allow: /
+
+# Googlebot-Image
+User-agent: Googlebot-Image
+Allow: /
+
+# Googlebot-News
+User-agent: Googlebot-News
+Allow: /
+
+# Daum (Kakao)
+User-agent: Daumoa
+Allow: /
+
+# Naver
+User-agent: Yeti
+Allow: /
+
+
+# ================================
+# 모든 기타 봇/크롤러 차단
+# ================================
+User-agent: *
+Disallow: /
+Disallow: /staff/
+Disallow: /main/searchResults.do/
+
+
+# ================================
+# (선택) Sitemap 위치
+# ================================
+# Sitemap: https://koreha.or.kr/sitemap.xml
+
+
+# 모든 기타 User-agent는 기본적으로 허용하되, 특정 경로는 비허용
+

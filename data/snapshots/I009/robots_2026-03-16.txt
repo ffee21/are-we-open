@@ -1,0 +1,4 @@
+User-agent: Googlebot
+Disallow: /user/anonymousReport.do
+Disallow: /user.do
+Disallow: /tsi/etc/search/search/ASC_integrationsearch.jsp

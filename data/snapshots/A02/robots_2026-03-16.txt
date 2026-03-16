@@ -1,0 +1,19 @@
+#Google
+User-agent: Googlebot
+Disallow: /search/
+Disallow: /*/na/ntt/
+
+#Naver
+User-agent: Yeti
+Disallow: /search/
+Disallow: /*/na/ntt/
+
+#Daum
+User-agent: Daum
+Disallow: /search/
+Disallow: /*/na/ntt/
+
+#Bing
+User-agent: Bingbot
+Disallow: /search/
+Disallow: /*/na/ntt/

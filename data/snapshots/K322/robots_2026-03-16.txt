@@ -1,0 +1,11 @@
+User-agent: *
+Disallow:/images/
+Disallow:/ham/
+Disallow:/prog/
+Disallow:/WEB-INF/
+Disallow:/uloads_clone/
+Disallow:/xml_clone/
+
+User-agent: Googlebot
+Disallow: /RSA/front/
+Disallow: /*/bbs/

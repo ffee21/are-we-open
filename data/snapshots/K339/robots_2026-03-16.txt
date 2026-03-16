@@ -1,0 +1,18 @@
+User-agent : Googlebot
+Disallow: /totalSearch/search.do
+Disallow: /kpsmaster/
+Disallow: /open_kps/idea/boardList.do
+Disallow: /open_kps/safetyhealthQnA/boardList.do
+Disallow: /esg/yun04/boardList.do
+Disallow: /esg/yun05/boardList.do
+Disallow: /esg/yun06/boardList.do
+Disallow: /esg/yun07/boardList.do
+Disallow: /esg/retiree/boardList.do
+Disallow: /customer/customerAdvice/boardList.do
+Disallow: /customer/discontent/boardList.do
+Disallow: /customer/publicinterest/boardList.do
+Disallow: /customer/civilcomplaint/boardList.do
+Disallow: /customer/complaint/boardList.do
+Disallow: /customer/bujori/boardList.do
+Disallow: /customer/requestProhibition/boardList.do
+Disallow: /infoopen/openrequest/boardList.do

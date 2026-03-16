@@ -1,0 +1,5 @@
+User-agent: *
+
+Disallow: /co/
+Disallow: /co/search.do
+Disallow: /co/searchEn.do

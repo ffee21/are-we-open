@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://www.koref.or.kr/sitemap.xml

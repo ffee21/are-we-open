@@ -1,0 +1,9 @@
+User-agent: Googlebot
+Disallow: /SiteControl/ 
+Disallow: /search/
+Disallow: /*&mode=list
+Disallow: /*&mode=write
+Disallow: /*&mode=view
+
+User-agent: *
+Disallow: /SiteControl/

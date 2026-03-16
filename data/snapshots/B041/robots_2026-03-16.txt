@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /cms/
+Disallow: /copyright/
+Disallow: /copyrightHistory/
+Disallow: /customuser/
+Disallow: /iam/
+Disallow: /synap/
+Disallow: /health/board/list.do
+Disallow: /reserve/board/list.do

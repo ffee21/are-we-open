@@ -1,0 +1,9 @@
+User-agent : *
+Disallow : /
+
+User-agent : Googlebot
+User-agent : Yeti
+User-agent : Daumoa
+Disallow: *selectBbsNttView.do*
+Disallow: *selectBbsNttList.do*
+Disallow: *DATA*

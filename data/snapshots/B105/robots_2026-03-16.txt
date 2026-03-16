@@ -1,0 +1,57 @@
+User-agent: GPTBot
+Disallow: /
+
+User-agent : SemrushBot
+Disallow : /
+
+User-agent: Yeti
+Disallow: /DATA/
+Disallow: /file/doDownload.do
+Disallow: /www/downloadBbsFile.do
+Disallow: /previewBbs.do
+Disallow: /synap/
+Disallow: /photoImageView/
+
+User-agent: Googlebot
+Disallow: /DATA/
+Disallow: /file/doDownload.do
+Disallow: /www/downloadBbsFile.do
+Disallow: /previewBbs.do
+Disallow: /synap/
+Disallow: /photoImageView/
+Disallow: /search/
+Disallow: *Bbs*
+Disallow: *Ntt*
+
+User-agent: Daumoa
+Disallow: /DATA/
+Disallow: /file/doDownload.do
+Disallow: /www/downloadBbsFile.do
+Disallow: /previewBbs.do
+Disallow: /synap/
+Disallow: /photoImageView/
+
+User-agent: Naverbot
+Disallow: /DATA/
+Disallow: /file/doDownload.do
+Disallow: /www/downloadBbsFile.do
+Disallow: /previewBbs.do
+Disallow: /synap/
+Disallow: /photoImageView/
+
+User-agent: Bingbot
+Disallow: /wcms/*
+Disallow: /DATA/
+Disallow: /file/doDownload.do
+Disallow: /www/downloadBbsFile.do
+Disallow: /previewBbs.do
+Disallow: /synap/
+Disallow: /photoImageView/
+
+User-agent: *
+Disallow: /
+Disallow: /photoImageView/
+Disallow: /search/
+Disallow: /synap/
+Disallow: *Bbs*
+Disallow: *Ntt*

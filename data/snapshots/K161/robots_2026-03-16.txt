@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow : /upload/
+Disallow : /board/
+Disallow : /docs/
+Disallow : /super/
+Disallow : /total/
+Disallow : /search/

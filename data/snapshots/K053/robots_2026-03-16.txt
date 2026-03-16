@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /search/
+Disallow: /pbcpgdnc/ognzprsn/getOHAG0013M0List.do?menuId=MN24001022*

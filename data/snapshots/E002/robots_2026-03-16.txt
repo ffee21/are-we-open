@@ -1,0 +1,47 @@
+User-agent: Googlebot
+Disallow: /search/search.do
+Disallow: /bbs/
+
+User-Agent: * 
+Disallow: /excel/
+Disallow: /editor/
+Disallow: /kcase/
+Disallow: /key/
+Disallow: /raonkupload/
+Disallow: /synap/
+Disallow: /naver/
+Disallow: /onepass/
+Disallow: /*/lo/login/
+Disallow: /main/ad/ct/view/selectCtCotcherList.do
+Disallow: /search/
+Disallow: /search/search.do
+Disallow: /bbs/
+Disallow: /*도박*
+Disallow: /*토토*
+Disallow: /*바카라*
+Disallow: /*카지노*
+Disallow: /*슬롯*
+Disallow: /*홀덤*
+Disallow: /*먹튀*
+Disallow: /*사설*
+Disallow: /*스포츠중계*
+Disallow: /*에볼루션*
+Disallow: /*파워볼*
+Disallow: /*로또조작*
+Disallow: /*마약*
+Disallow: /*텔레*
+Disallow: /*텔그*
+Disallow: /*텔방*
+Disallow: /*호빠*
+Disallow: /*호스트바*
+Disallow: /*호스트빠*
+Disallow: /*브액*
+Disallow: /*정빠*
+Disallow: /*남보도*
+Disallow: /*빙두*
+Disallow: /*떨구매*
+Disallow: /*테더손대손*
+Disallow: /*케이구매*
+Allow: /
+
+#DaumWebMasterTool:e5332f2076b7e763e1435562532af53d307f0b0ff039f302e3cd1323f77db20f:nvPDZqBmXqDRBIgAa928Hw==

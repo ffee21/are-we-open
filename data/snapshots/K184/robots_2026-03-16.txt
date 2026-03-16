@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+User-agent: Googlebot
+Disallow: /withcms/
+Disallow: /*/search/searchList.do
+Disallow: /*/board/*/board*.do

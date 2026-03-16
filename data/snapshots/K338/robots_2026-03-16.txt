@@ -1,0 +1,59 @@
+User-agent: *
+Disallow: /
+
+User-agent: Googlebot
+Crawl-delay: 1
+Allow: /korean/
+Allow: /english/
+Allow: /kdn_blog/
+Allow: /html/
+Disallow: /flexer/
+Disallow: /download.kdn$
+Disallow: /*.html$
+Disallow: /*.css$
+Disallow: /*.js$
+Disallow: /*.jpg$
+Disallow: /*.gif$
+
+User-agent: Yeti
+Crawl-delay: 1
+Allow: /korean/
+Allow: /english/
+Allow: /kdn_blog/
+Allow: /html/
+Disallow: /flexer/
+Disallow: /download.kdn$
+Disallow: /*.html$
+Disallow: /*.css$
+Disallow: /*.js$
+Disallow: /*.jpg$
+Disallow: /*.gif$
+
+User-agent: Daumoa
+Crawl-delay: 1
+Allow: /korean/
+Allow: /english/
+Allow: /kdn_blog/
+Allow: /html/
+Disallow: /flexer/
+Disallow: /download.kdn$
+Disallow: /*.html$
+Disallow: /*.css$
+Disallow: /*.js$
+Disallow: /*.jpg$
+Disallow: /*.gif$
+
+User-agent: Msnbot
+Crawl-delay: 1
+Allow: /korean/
+Allow: /english/
+Allow: /kdn_blog/
+Allow: /html/
+Disallow: /flexer/
+Disallow: /download.kdn$
+Disallow: /*.html$
+Disallow: /*.css$
+Disallow: /*.js$
+Disallow: /*.jpg$
+Disallow: /*.gif$
+

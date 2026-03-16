@@ -1,0 +1,50 @@
+User-agent: *
+Disallow: /
+
+User-agent: Yeti
+User-agent: Googlebot
+User-agent: Daumoa
+
+Allow: /$
+Allow: /main
+Allow: /bbs
+Allow: /tour
+Allow: /health
+Allow: /lab
+Allow: /pr
+Allow: /sv
+Allow: /mayor
+Allow: /booking
+Allow: /complaint
+Allow: /statistics
+Allow: /reserve
+
+Allow: /eng
+Allow: /chn
+Allow: /jpn
+
+Allow: /geumho1ga
+Allow: /geumho23ga
+Allow: /geumho4ga
+Allow: /majang
+Allow: /sageun
+Allow: /seongsu1ga1
+Allow: /seongsu1ga2
+Allow: /seongsu2ga1
+Allow: /seongsu2ga3
+Allow: /songjeong
+Allow: /oksu
+Allow: /wangsimnidoseon
+Allow: /wangsimni2
+Allow: /yongdap
+Allow: /eungbong
+Allow: /haengdang1
+Allow: /haengdang2
+
+Disallow: /*download
+Disallow: /selectBbsNttList.do
+User-agent: GPTBot
+Disallow: /
+
+User-agent: bingbot
+Disallow: /

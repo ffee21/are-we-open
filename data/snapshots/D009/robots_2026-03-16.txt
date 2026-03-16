@@ -1,0 +1,5 @@
+User-agent: Googlebot 
+Allow: /
+Disallow:  /site/*/ex/itgtSearch/
+Disallow:  /site/*/ex/itgtSearch/*.do$
+Disallow:  /site/*/ex/board/

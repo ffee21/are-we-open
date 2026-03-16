@@ -1,0 +1,8 @@
+# User-agent: *
+# Allow: /
+# DisAllow:https://www.bai.go.kr/bai/etc/sendAuditData
+# DisAllow:/api/
+# Sitemap:https://www.bai.go.kr/bai/sitemap.xml
+User-agent: *
+Disallow: /
+Sitemap: https://www.bai.go.kr/bai/sitemap.xml

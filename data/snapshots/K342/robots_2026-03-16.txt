@@ -1,0 +1,9 @@
+User-agent: *
+Disallow:/images/
+Disallow:/ham/
+Disallow:/prog/
+Disallow:/WEB-INF/
+Disallow:/uloads_clone/
+Disallow:/xml_clone/
+Disallow:/mecsearch/
+Disallow:/kr/cop/bbs/

@@ -1,0 +1,12 @@
+User-agent: * 
+Disallow:/sodamphew/
+Disallow:/sodamphew2/
+Disallow:/upload_private/
+Disallow:/upload/
+Disallow:/search/
+Disallow:/kor/webzine/
+Disallow:/daegu/wangpicheon/
+Disallow:/WEB-INF/jsp/mob/webzine/
+Disallow:/api/
+
+#DaumWebMasterTool:c64a4e2b8cfffd88e21a077e6caed94e823355c1c6db00f3ddf9668fbdd82ad1:S+lIE8MmYm1Umf3CKSlphQ==

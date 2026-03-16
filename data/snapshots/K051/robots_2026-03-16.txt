@@ -1,0 +1,7 @@
+User-agent: Yeti
+Allow:/
+
+User-agent: Googlebot
+Disallow: /search/search.do
+Disallow: /board/praiseBoard*
+Disallow: /mypage/customer*

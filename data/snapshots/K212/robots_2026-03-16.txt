@@ -1,0 +1,7 @@
+User-agent: *
+User-agent:Googlebot
+Allow: /
+Disallow: /demo
+Disallow: /newseoul_admin
+Disallow: /../../search/search.do
+Disallow: /../../bbs/

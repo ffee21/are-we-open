@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+Disallow: /_res/
+Disallow: /00028/00031.web
+Disallow: /00134/00611/00629.web
+Disallow: /00132/02751/00380.web
+Disallow: /00132/02751/00384.web
+Disallow: /00132/00379/00393.web
+Disallow: /00028/07086.web
+Disallow: /00028/07370.web
+Disallow: /00028/07236.web
+Disallow: /search/
+ 
+Sitemap: https://www.jinju.go.kr/sitemap.xml

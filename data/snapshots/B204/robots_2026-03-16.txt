@@ -1,0 +1,9 @@
+User-agent: Googlebot
+Disallow: /*BBS_0000035*
+Disallow: /*BBS_0000036*
+Disallow: /*DOM_00000010801000000*
+
+User-agent: NaverBot
+Allow: / 
+User-agent: Daum
+Allow: / 

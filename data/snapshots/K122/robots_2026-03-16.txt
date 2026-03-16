@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /bbs/search.php
+
+User-agent: Yeti
+
+Disallow: /bbs/search.php
+

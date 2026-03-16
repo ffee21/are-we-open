@@ -1,0 +1,57 @@
+User-agent: Googlebot
+Disallow: /search.do
+Disallow: /bos/
+Disallow: /portal/bbs/B0000205/
+Disallow: /portal/bbs/B0000287/
+Disallow: /portal/bbs/B0000278/
+Disallow: /portal/bbs/B0000262/
+Disallow: /portal/bbs/B0000250/
+Disallow: /portal/bbs/B0000254/
+Disallow: /portal/bbs/B0000253/
+Disallow: /portal/bbs/B0000243/
+Disallow: /portal/bbs/B0000114/
+Disallow: /portal/bbs/B0000308/
+
+User-agent: Yeti
+Disallow: /upload/
+Disallow: /portal/singl/myPage/
+Disallow: /portal/bbs/B0000287/
+Disallow: /portal/bbs/B0000278/
+Disallow: /portal/bbs/B0000262/
+Disallow: /portal/bbs/B0000250/
+Disallow: /portal/bbs/B0000254/
+Disallow: /portal/bbs/B0000253/
+Disallow: /portal/bbs/B0000243/
+Disallow: /portal/bbs/B0000205/
+Disallow: /portal/bbs/B0000114/
+Disallow: /portal/bbs/B0000308/
+Disallow: /portal/singl/convert/
+Disallow: /portal/cmmn/file/
+
+User-agent: Daumoa
+Disallow: /upload/
+Disallow: /portal/singl/myPage/
+Disallow: /portal/bbs/B0000287/
+Disallow: /portal/bbs/B0000278/
+Disallow: /portal/bbs/B0000262/
+Disallow: /portal/bbs/B0000250/
+Disallow: /portal/bbs/B0000254/
+Disallow: /portal/bbs/B0000253/
+Disallow: /portal/bbs/B0000243/
+Disallow: /portal/bbs/B0000205/
+Disallow: /portal/bbs/B0000114/
+Disallow: /portal/bbs/B0000308/
+Disallow: /portal/singl/convert/
+Disallow: /portal/cmmn/file/
+
+User-agent: *
+Disallow: /search/
+Disallow: /bos/
+Disallow: /portal/cmmn/file/      
+Disallow: /bos/cmmn/file/         
+Disallow: /edu/cmmn/file/         
+Disallow: /atdrc/cmmn/file/         
+Disallow: /health/cmmn/file/         
+Disallow: /dong/cmmn/file/         
+
+

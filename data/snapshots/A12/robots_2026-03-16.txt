@@ -1,0 +1,10 @@
+User-agent:Amazonbot 
+User-agent:AmazonAdBot 
+User-agent:Amzn-SearchBot
+Disallow: /
+
+User-agent: *
+Allow: /
+Disallow: /kfsweb/kfs/search.do
+
+Sitemap:https://www.forest.go.kr/sitemap.xml

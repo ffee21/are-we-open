@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+User-agent : Googlebot     
+Disallow: /site/nia_kor/ex/search/searchList.do
+Disallow: /site/nia_kor/ex/bbs/

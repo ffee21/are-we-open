@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+Disallow: /upload/
+Disallow: /programs/
+Disallow: /SiteManager/
+Disallow: /open_content/ko/page.do?mnu_uid=1651
+
+User-agent: SemrushBot
+Crawl-delay: 86400
+
+User-agent: ahrefsbot/7.0
+Crawl-delay: 86400
+
+User-agent: amazonbot
+Crawl-delay: 86400

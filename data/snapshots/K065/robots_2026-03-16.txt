@@ -1,0 +1,24 @@
+User-agent: *
+User-agent: *
+Disallow: /
+Allow: /*/intro.jsp
+Allow: /*/index.jsp
+Allow: /*/main.jsp
+Allow: /comwel/info/mysrch/
+Allow: /incheon/
+Allow: /ansan/
+Allow: /changwon/
+Allow: /daegu/
+Allow: /suncheon/
+Allow: /daejeon/
+Allow: /taebaek/
+Allow: /donghae/
+Allow: /jeongseon/
+Allow: /gyeonggi/
+Allow: /taebaekyoyang/
+Allow: /gwangjuclinic/
+Allow: /care-gyeonggi/
+Allow: /care-gangwon/
+Allow: /gumiclinic/
+# Sitemap: http://150.100.2.20:8088/sitemap_index.xml
+Sitemap : https://www.comwel.or.kr/sitemap.xml

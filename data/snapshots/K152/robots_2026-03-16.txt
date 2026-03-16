@@ -1,0 +1,8 @@
+User-agent: Googlebot
+Disallow: /bbs
+Disallow: /form
+
+User-agent: *
+Allow: /
+Disallow:/sub5_8_4.do
+Disallow:/sub5_8_1_2.do

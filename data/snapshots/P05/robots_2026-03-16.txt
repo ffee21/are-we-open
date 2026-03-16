@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /ksows/wisenut/
+User-agent: Googlebot
+Disallow: /board.es?mid=b20306000000&bid=601

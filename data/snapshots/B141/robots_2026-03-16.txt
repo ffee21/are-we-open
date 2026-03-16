@@ -1,0 +1,31 @@
+# robots.txt - 당진시 웹사이트 검색엔진 크롤링 규칙
+
+# Google 검색 로봇 차단
+User-agent: Googlebot
+Disallow: /search/
+
+# 모든 검색엔진 크롤러에 대한 기본 규칙
+User-agent: *
+
+# 허용: 웹사이트 전체 접근 허용
+Allow: /
+
+# 차단: 특정 게시판 크롤링 차단
+Disallow: /cop/bbs/BBSMSTR_000000000004/
+Disallow: /cop/bbs/BBSMSTR_000000000005/
+
+# 차단: 관리자 영역 및 시스템 폴더
+Disallow: /WEB-INF/
+Disallow: /admin/
+Disallow: /ham/
+Disallow: /tmpl/
+
+# 차단: 민원 및 개인정보 관련 페이지
+Disallow: /prog/*/write.do
+Disallow: /prog/*/modify.do
+Disallow: */login.do
+Disallow: */sitemap_12.do
+
+# 사이트맵 위치 (선택사항 - 실제 사이트맵 파일이 있는 경우 주석 해제)
+# Sitemap: https://www.dangjin.go.kr/sitemap.xml
+

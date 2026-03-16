@@ -1,0 +1,58 @@
+User-agent:*
+Disallow:/cwsearch/
+Disallow:/search/
+Disallow:/sys/
+
+Disallow: /dangam/goPage
+Disallow: /dangam/ncms/
+
+Disallow: /gogofarm//board/
+Disallow: /gogofarm/board/
+Disallow: /gogofarm/farmer/
+Disallow: /gogofarm/ksis/
+
+Disallow: /k-democracy/wssms
+Disallow: /k-democracy/board
+Disallow: /k-democracy/images
+Disallow: /k-democracy/smteditor3
+Disallow: /k-democracy/inc
+Disallow: /k-democracy/app
+Disallow: /k-democracy/ipa
+Disallow: /k-democracy/mypage
+Disallow: /k-democracy/img
+Disallow: /k-democracy/wboard
+Disallow: /k-democracy/bbsDown
+
+Disallow: /cwart
+Allow: /cwart/main.do
+
+Disallow: /amoc/wssm/
+Disallow: /amoc/Sub03/
+Disallow: /amoc/Sub04/
+Disallow: /amoc/Sub06/
+
+Disallow: /water/
+Disallow: /water/wssm/
+
+Disallow: /mom/wssms/
+Disallow: /mom/Program/
+Disallow: /mom/Counsel/
+Disallow: /mom/Community/
+
+Disallow: /animal/Admin/
+Disallow: /animal/User/Sub05/
+
+Disallow: /lll/portal/bbs/
+
+Disallow: /yisunsin/
+Allow: /yisunsin/index.do
+
+Disallow:/barobaro/view.do?no=66
+Disallow:/barobaro/view.do?no=67
+Disallow:/barobaro/view.do?no=68
+Disallow:/barobaro/view.do?no=181
+Disallow:/barobaro/view.do?no=13
+Disallow:/barobaro/cwc/
+
+Disallow:/cwportal/10311/13851/13853.web
+Disallow:/booking/search.web

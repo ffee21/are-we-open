@@ -1,0 +1,21 @@
+User-agent: *
+Disallow: /
+Allow:/main/mainPage.do
+Allow:/gp/mainPage.do
+Allow:/gy/mainPage.do
+Allow:/guri/mainPage.do
+Allow:/nyj/mainPage.do
+Allow:/nyjbb/mainPage.do
+Allow:/is/mainPage.do
+Allow:/ddc/mainPage.do
+Allow:/yangju/mainPage.do
+Allow:/pc/mainPage.do
+Allow:/yc/mainPage.do
+Allow:/ujb/mainPage.do
+Allow:/issb/mainPage.do
+Allow:/pj/mainPage.do
+Allow:/pc/mainPage.do
+
+User-agent: Yeti
+Allow:/main/mainPage.do
+Allow:/main/cop/bbs/selectBoardList.do?bbsId=Notice_main

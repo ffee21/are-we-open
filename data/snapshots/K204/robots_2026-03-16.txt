@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /mypage
+Disallow: /apply
+Disallow: /license
+Disallow: /search
+Disallow: /opinion
+Disallow: /board
+Disallow: /open
+Allow: /

@@ -1,0 +1,2 @@
+User-agent: *
+Disallow: /ko/M000000563/search

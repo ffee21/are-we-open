@@ -1,0 +1,14 @@
+User-agent: Googlebot
+Disallow: /../../../bbs/
+Disallow: /site/gwanak/ex/bbs/
+Disallow: /site/health/ex/bbs/
+Disallow: /site/gwanak/07/10703010500002016051206.jsp
+Disallow: /site/gwanak/foffice/ex/bigWaste/doBigWasteApplyForm.do
+Disallow: /site/gwanak/foffice/ex/bigWaste/doBigWasteApplySelectForm.do
+Disallow: /site/health/05/10513030000002023091410.jsp
+Disallow: /site/health/05/10502010200002022080207.jsp
+Disallow: /site/gwanak/area/areaList.do?cateCont=Area08
+Disallow: /site/gwanak/reservation/reservationView.do?riIdx=RI001116
+Disallow: /site/health/05/10510080000002020092505.jsp
+Disallow: /site/gwanak/03/10304010000002016051203.jsp
+Disallow: /site/gwanak/ex/SharedMobility/SharedMobilityView.do

@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /
+User-agent: Googlebot
+User-agent: Yeti
+User-agent: Daumoa
+Allow: /
+Disallow: /mst
+Disallow: /adm

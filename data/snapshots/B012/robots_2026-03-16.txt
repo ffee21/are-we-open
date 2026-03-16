@@ -1,0 +1,27 @@
+User-agent: Yeti
+Allow: /portal/main/
+Disallow: /portal/application/
+Disallow: /portal/bbs/
+Disallow: /portal/singl/myPage/
+Disallow: /bos/
+
+User-agent : Daum
+Disallow: /
+
+User-agent : Bingbot
+Disallow: /
+
+User-agent : DuckDuckBot
+Disallow: /
+
+User-agent: Googlebot
+Disallow: /
+
+User-agent: Slurp
+Disallow: /
+
+User-agent: Googlebot-Image
+Disallow: /
+
+User-agent: Googlebot-Mobile
+Disallow: /

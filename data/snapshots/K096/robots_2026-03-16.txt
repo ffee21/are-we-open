@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /
+User-agent: Yeti, Googlebot
+Allow: /$, /english/, /news/
+User-agent: Googlebot-news
+Allow: /news/

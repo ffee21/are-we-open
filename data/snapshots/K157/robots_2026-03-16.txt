@@ -1,0 +1,7 @@
+User-agent: *
+Disallow :
+
+User-agent: Googlebot
+Disallow : /*?boardNo=69
+Disallow : /*?boardNo=5
+Disallow : /*?boardNo=60

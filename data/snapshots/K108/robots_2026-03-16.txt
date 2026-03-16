@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /hmpg/
+Allow: /images/hmpg/
+Allow: /js/hmpg/
+Allow: /hmpg/common/
+Allow: /common/cmsMssageUtil.js
+Allow: /js/comUtil.js
+Allow: /js/cmsUtil.js
+Allow: /js/cmsValidateObj.js
+
+User-agent: Googlebot
+Disallow: /hmpg/ygpa/srch/srchListPage.do
+Disallow: /*bordContListPage.do*

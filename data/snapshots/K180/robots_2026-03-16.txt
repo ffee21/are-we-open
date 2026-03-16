@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Disallow: /apple/
+Disallow: /KoreaFoundationUSA/
+Disallow: /kfglobaleschool/
+Disallow: /kfglobaleschoolEng/
+Disallow: /search.do
+Disallow: /qa/qna/selectQnaList.do
+Disallow: /na/ntt/selectNttList.do?mi=1628&bbsId=1145
+
+Sitemap: https://www.kf.or.kr/sitemap.xml

@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /
+
+User-agent: Yeti
+Allow: /
+
+Sitemap: https://www.icbp.go.kr/sitemap.xml
+
+
+User-Agent: Googlebot
+Disallow: /open_content/search/

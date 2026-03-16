@@ -1,0 +1,13 @@
+User-agent: *
+Disallow: /
+Allow: /index.jsp
+Allow: /article/
+Allow: /contents/
+Allow: /benner/
+Allow: /ch/
+Allow: /en/
+Allow: /ja/
+Allow: /help/
+Allow: /html/
+Allow: /home/
+

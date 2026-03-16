@@ -1,0 +1,10 @@
+User-agent: *
+Allow:/site/gg/common/img/
+Disallow: /common/
+Disallow: /include/
+Disallow: /site/
+Disallow: /template/
+Disallow: /down/
+Disallow: /ubhome/
+Disallow: /*.xml$
+Disallow: /welfare/

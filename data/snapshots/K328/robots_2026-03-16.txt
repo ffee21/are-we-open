@@ -1,0 +1,6 @@
+User-agent: Googlebot
+allow: / 
+Allow: /hmpg/
+Allow: /images/hmpg/
+Allow: /js/hmpg/
+#DaumWebMasterTool:eb030b7e50fae6985a8f0c2945ef1c11284018937d12f8c47cb83d3333a997ff:9rhF9+dcpJoqqgQNccEUig==

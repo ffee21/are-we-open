@@ -1,0 +1,17 @@
+
+User-agent: *
+Disallow: /ecms/
+Disallow: /source/
+Disallow: /nrcAdm_src/
+Disallow: /ecms_resource/
+Disallow: /search
+Disallow: /boardDownload
+Disallow: /*.pdf$
+Disallow: /*.zip$
+Disallow: /*.doc$
+Disallow: /*.docx$
+Disallow: /*.xls$
+Disallow: /*.xlsx$
+Disallow: /*.hwp$
+Disallow: /*.jpg$
+Disallow: /*.png$

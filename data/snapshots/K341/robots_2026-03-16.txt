@@ -1,0 +1,7 @@
+User-Agent: *
+Allow: /
+Disallow: /fileDownload*
+Disallow: /search*
+Disallow: /board?menuId=MENU00394
+Disallow: /board?menuId=MENU00439
+Disallow: /board?menuId=MENU00398

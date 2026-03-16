@@ -1,0 +1,4 @@
+User_agent: *
+Disallow: /
+Disallow: /search.do
+Disallow: /cop/bbs/selectBoardList.do

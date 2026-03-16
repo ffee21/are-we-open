@@ -1,0 +1,7 @@
+# Googlebot 전용 설정
+User-agent: Googlebot
+Disallow: /search/search.do          # 이 경로만 차단
+Allow: /    
+
+User-agent: *
+Allow:/

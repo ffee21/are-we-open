@@ -1,0 +1,8 @@
+User-agent: Googlebot
+
+Disallow: /custom/counsil.jsp
+Disallow: /etc/search.jsp
+Disallow: /custom
+Disallow: /etc
+
+

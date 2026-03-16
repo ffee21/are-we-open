@@ -1,0 +1,28 @@
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Facebot
+Allow: /
+
+User-agent: *  
+Disallow: /
+
+Allow: /main
+Allow: /budgetpolicy
+Allow: /civilrights
+Allow: /common
+Allow: /cyber
+Allow: /info
+Allow: /photo
+Allow: /policy
+Allow: /comt
+Allow: /translate
+Allow: /video
+Allow: /publish
+
+Disallow: /common/usmgList.do
+Disallow: /common/usmgMyList.do
+Disallow: /common/usmgView.do
+Disallow: /common/deregList.do
+Disallow: /common/deregMyList.do
+Disallow: /common/deregView.do

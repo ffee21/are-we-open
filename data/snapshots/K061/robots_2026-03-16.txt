@@ -1,0 +1,6 @@
+# potal main
+User-agent: *
+Allow: /
+
+User-agent: Googlebot
+Disallow: /potal/bbs

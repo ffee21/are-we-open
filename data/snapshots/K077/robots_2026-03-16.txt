@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /common/
+Disallow: /data/
+
+User-agent: Googlebot
+Disallow: /service/search.php
+Disallow: /board/

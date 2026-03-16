@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /
+Allow: /jori
+Allow: /jejueo
+Allow: /jedu

@@ -1,0 +1,13 @@
+
+User-agent: *
+Allow: /_user*
+Allow: /_cmm*
+Allow: /_source/css*
+Allow: /_source/js*
+Allow: /_chuncheon*
+Disallow: /_*
+Disallow: /search*
+Disallow: /life-civil-complaint/notice/news?nttId=*
+
+Sitemap: https://www.chuncheon.go.kr/sitemap.xml
+Sitemap: https://www.chuncheon.go.kr/tour/sitemap.xml

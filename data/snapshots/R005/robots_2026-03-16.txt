@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /
+Allow : /index.do?r=gjpolice
+Allow : /index.do?r=gspolice
+Allow : /index.do?r=dbpolice
+Allow : /index.do?r=sbpolice
+Allow : /index.do?r=nbpolice
+Allow : /index.do?r=bbpolice

@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:/kr/requestBBS.do
+Disallow:/kr/petitionBBS.do
+Disallow:/kr/search/search.do

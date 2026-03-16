@@ -1,0 +1,33 @@
+User-agent:*
+Disallow:/
+Allow : /index.jsp
+Allow : /?pid=MK
+Allow : /?pid=YS
+Allow : /?pid=SC
+Allow : /?pid=NJ
+Allow : /?pid=GY
+Allow : /?pid=GH
+Allow : /?pid=HN
+Allow : /?pid=MA
+Allow : /?pid=JH
+Allow : /?pid=BS
+Allow : /?pid=YG
+Allow : /?pid=HS
+Allow : /?pid=HY
+Allow : /?pid=YA
+Allow : /?pid=JS
+Allow : /?pid=GJ
+Allow : /?pid=DY
+Allow : /?pid=GS
+Allow : /?pid=WD
+Allow : /?pid=JD
+Allow : /?pid=GR
+Allow : /?pid=SA
+
+User-agent: Googlebot
+Disallow: /*?*
+Disallow: /*.hwp$
+Disallow: /*.pdf$
+Disallow: /*.doc$
+Disallow: /*.xls$
+Disallow: /*.xlsx$

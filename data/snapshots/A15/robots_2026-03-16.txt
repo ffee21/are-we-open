@@ -1,0 +1,4 @@
+User-agent : Googlebot
+Disallow : /search
+Disallow : /*/na/ntt/selectNttList.do
+Allow : /$

@@ -1,0 +1,7 @@
+User-agent:*
+Disallow: /search/
+Disallow: /repository/bbs/623/
+Disallow: /repository/bbs/653/
+Disallow: /repository/bbs/722/
+Disallow: /repository/bbs/1001/
+Disallow: /repository/bbs/1071/

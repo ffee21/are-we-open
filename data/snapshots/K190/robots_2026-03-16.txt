@@ -1,0 +1,11 @@
+User-agent: Yeti
+Allow: /
+
+User-agent: Mozilla/5.0 (compatible; Yeti/1.1; +http://help.naver.com/robots/)
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: *
+Disallow: /main.do

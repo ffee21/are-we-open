@@ -1,0 +1,3 @@
+User-agent: Googlebot
+Disallow: /aivorySearch.es
+Disallow: /board.es

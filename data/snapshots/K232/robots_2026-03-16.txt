@@ -1,0 +1,45 @@
+User-agent: *
+Allow: /
+Disallow: /board
+Disallow: /board/
+Disallow: /boardDownload
+Disallow: /boardDownload/
+Disallow: /ecms
+Disallow: /totalSearch
+Disallow: /totalSearch/
+
+User-agent: Goolebot
+Disallow: /board
+Disallow: /board/
+Disallow: /boardDownload
+Disallow: /boardDownload/
+Disallow: /ecms
+Disallow: /totalSearch
+Disallow: /totalSearch/
+
+User-agent: Goolebot-Image
+Disallow: /board
+Disallow: /board/
+Disallow: /boardDownload
+Disallow: /boardDownload/
+Disallow: /ecms
+Disallow: /totalSearch
+Disallow: /totalSearch/
+
+User-agent: Goolebot-Mobile
+Disallow: /board
+Disallow: /board/
+Disallow: /boardDownload
+Disallow: /boardDownload/
+Disallow: /ecms
+Disallow: /totalSearch
+Disallow: /totalSearch/
+
+User-agent: Yeti
+Disallow: /board
+Disallow: /board/
+Disallow: /boardDownload
+Disallow: /boardDownload/
+Disallow: /ecms
+Disallow: /totalSearch
+Disallow: /totalSearch/

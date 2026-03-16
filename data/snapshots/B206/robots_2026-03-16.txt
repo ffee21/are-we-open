@@ -1,0 +1,6 @@
+User-agent: Googlebot
+Disallow: /search/                      # �˻� ������ ���� ��� ����
+Disallow: /portal/board/post/list.do    # �Խ��� �������
+
+User-agent:*
+Allow:/

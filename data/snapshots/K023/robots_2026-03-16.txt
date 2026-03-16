@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /
+User-agent: Yeti
+Allow: /
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 30

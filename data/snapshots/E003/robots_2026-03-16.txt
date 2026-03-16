@@ -1,0 +1,19 @@
+User-agent: Googlebot
+Disallow: /*/na/ntt
+Disallow: /search/front/Search.jsp
+
+User-agent: *
+Disallow: /audio/
+Disallow: /check/
+Disallow: /dge_webviewer/
+Disallow: /excel/
+Disallow: /editor/
+Disallow: /ezpdfwebviewer/
+Disallow: /kcase/
+Disallow: /raonkupload/
+Disallow: /upload/
+Disallow: /uploadad/
+Disallow: /video/
+Disallow: /help/
+Disallow: /co/lo/
+Disallow: /*/lo/login/

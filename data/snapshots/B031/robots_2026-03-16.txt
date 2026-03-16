@@ -1,0 +1,6 @@
+User-agent: Googlebot
+Disallow: /board/
+Disallow:/KFramework/search/
+
+User-agent: *
+Allow: /

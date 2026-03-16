@@ -1,0 +1,5 @@
+User-agent: Googlebot
+Allow:/
+Disallow: /home/kor/M850104081/search/search/
+Disallow: /home/kor/M850104081/search/
+Disallow: /search/

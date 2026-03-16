@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /search/
+Disallow: /00001/00075/
+Allow:/

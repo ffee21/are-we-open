@@ -1,0 +1,8 @@
+User-agent:*
+
+Disallow:/sys*
+Disallow:/cmm/fms/*
+
+User-agent:Googlebot
+Disallow:/search/*
+Disallow:*/bbs/*

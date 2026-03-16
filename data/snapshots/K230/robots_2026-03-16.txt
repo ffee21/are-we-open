@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /
+
+User-agent: Googlebot
+User-agent: Yeti
+User-agent: Daumoa
+Disallow: /
+Allow: /$
+Allow: /homepage/main.do
+Allow: /homepage/contents/contents.do

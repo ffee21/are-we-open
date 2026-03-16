@@ -1,0 +1,6 @@
+User-agent: Googlebot
+Disallow: /web/lay1/program/S1T8C17/legal/
+Disallow: /web/lay1/program/S1T8C17/nightconsult/
+Disallow: /web/lay1/program/S1T8C17/counselling/
+Disallow: /web/lay1/program/S1T13C30/compliment/
+Disallow: /web/lay1/bbs/S1T14C949/C/221/

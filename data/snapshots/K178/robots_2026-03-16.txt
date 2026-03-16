@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+User-agent: Googlebot
+Disallow: /user/search/search.do
+Disallow: /eng/search/search.do
+Disallow: /user/qnaList.do
+Disallow: /user/qnaView.do
+Disallow: /user/cleanDclrCntrList.do
+Disallow: /user/cleanDclrCntrView.do
+Disallow: /user/cleanDclrCntrModify.do
+Disallow: /newsletter.do

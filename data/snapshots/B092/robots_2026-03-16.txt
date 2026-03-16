@@ -1,0 +1,6 @@
+User-agent:*
+Allow:/mayor/
+Allow:/portal/
+Allow:/depart/
+Allow:/youth/
+Allow:/farm/

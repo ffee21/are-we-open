@@ -1,0 +1,38 @@
+User-agent: Googlebot
+Disallow: /search/
+
+User-agent: Googlebot-Image
+Disallow: /search/
+
+User-agent: Googlebot-News
+Disallow: /search/
+
+User-agent: Googlebot-Video
+Disallow: /search/
+
+User-agent: Googlebot-Mobile
+Disallow: /search/
+
+User-agent: Googlebot-Image
+Disallow: /search/
+
+User-agent: Googlebot-AdsBot
+Disallow: /search/
+
+User-agent: Googlebot-Extended
+Disallow: /search/
+
+User-agent: Googlebot-Discovery
+Disallow: /search/
+
+User-agent: AdsBot-Google
+Disallow: /
+
+User-agent: *
+Disallow: /search/
+Disallow: /00049/01463/
+Disallow: /00049/00085/
+Disallow: /00049/00083/
+Disallow: /00049/00069/
+Disallow: /00049/00051/
+Allow:/

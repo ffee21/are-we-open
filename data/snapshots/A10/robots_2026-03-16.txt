@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /search/
+Disallow: /cop/bbs/selectBoardList.do?bbsId=BBSMSTR_1010

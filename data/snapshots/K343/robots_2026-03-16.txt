@@ -1,0 +1,7 @@
+User-agent : *
+Disallow: /u/search/search.do
+
+User-agent : Googlebot
+Disallow: /u/search/search.do
+Disallow: /u/data/*/*.do
+Disallow: /*/*/*/board.do

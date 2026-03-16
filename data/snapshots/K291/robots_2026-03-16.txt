@@ -1,0 +1,8 @@
+User-agent: Yeti
+User-agent: Daum
+User-agent: Daumoa
+User-agent: Googlebot
+Allow: /
+
+User-agent: *
+Disallow: /

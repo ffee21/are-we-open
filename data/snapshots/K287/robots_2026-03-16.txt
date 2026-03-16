@@ -1,0 +1,15 @@
+User-agent: *
+Allow : /
+Disallow : /upload/
+Disallow : /super/
+
+User-agent : Googlebot
+
+Disallow : /lay3/program/S1T2C58/total/search.do
+
+Disallow: /lay1/bbs/*/list.do
+Disallow: /lay1/bbs/*/view.do
+
+Sitemap: http://www.kcopa.or.kr/sitemap.xml
+
+#DaumWebMasterTool:a422a3b89e8b05d407cf5793cb3ca258fd01f3821c42f907714fd4af87986782:rXy/qtyQGnrhNP1ayl0Zig==

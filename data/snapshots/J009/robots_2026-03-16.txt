@@ -1,0 +1,15 @@
+User-agent: *
+Disallow: /court/
+Disallow: /edu_e/
+Disallow: /error/
+Disallow: /ggodung/
+Disallow: /heongju/
+Disallow: /images/
+Disallow: /ip_www/
+Disallow: /movie_suit/
+Disallow: /popup/
+Disallow: /portal/
+Disallow: /scourt/
+Disallow: /search/
+Disallow: /t/
+Disallow: /wcd_test/

@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /cmmn/crs/selectListSearch.do
+Disallow: /*/ko/search/total.do
+Disallow: /*list.do
+Disallow: /cop/cmy/cmmntyMain.do
+Disallow: /cop/commu/bbs/article/selectList.do
+Disallow: /cop/commu/bbs/article/select.do
+Disallow: /cmmn/crs/search/selectDetail.do
+Disallow: /*/pltfm/proj/*/untydata/archives/detail.do
+Disallow: /*/pltfm/proj/*/untydata/topic/detail.do
+Disallow: /*/cmmn/proj/*/untydata/edu/detail.do

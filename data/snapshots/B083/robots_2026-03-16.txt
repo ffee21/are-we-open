@@ -1,0 +1,11 @@
+User-agent: Yeti
+User-agent: Googlebot
+User-agent: Daumoa
+Allow: /
+Disallow: /*selectBbs
+Disallow: /*download
+Disallow: /neo/
+Disallow: /staff/
+Disallow: /DATA/
+
+

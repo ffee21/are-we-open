@@ -1,0 +1,63 @@
+# Google 허용, naver 허용, daum 허용
+# User-agent: Googlebot
+# User-agent: Googlebot-image
+# User-agent: Googlebot-Mobile
+# User-agent: Mediapartners-Google
+# User-agent: AdsBot-Google
+# User-agent: cowbot
+# User-agent: Yeti
+# User-agent: daumoa
+
+User-agent: *
+Allow: /keis/ko/
+Allow: /keis/en/
+Allow: /keis/sitemap.xml
+Allow: /llms.txt
+Allow: /keis/llms.txt
+
+Disallow: /keis/ko/proj/159/voc/
+Disallow: /keis/ko/proj/204/voc/
+Disallow: /keis/ko/proj/260/ognz/emp/
+Disallow: /keis/ko/proj/261/ognz/emp/
+Disallow: /keis/ko/proj/111/pblc/search.do
+Disallow: /keis/search/total.do
+Disallow: /keis/ko/proj/*/pblc/list.do
+Disallow: /keis/ko/bbs/*/list.do
+Disallow: /keis/ko/extn/*/bfhd-info/list.do
+Disallow: /keis/ko/extn/229/apis-data/bid-pbanc/list.do
+Disallow: /keis/en/bbs/*/list.do
+Disallow: /keis/neibis/
+Disallow: /keis/neibis/*
+Disallow: /keis/system/
+Disallow: /keis/system/*
+Disallow: /keis/weblog/
+Disallow: /keis/weblog/*
+Disallow: /keis/stats/
+Disallow: /keis/stats/*
+Disallow: /user/
+Disallow: /user/*
+Disallow: /user/extra/
+Disallow: /user/extra/*
+Disallow: /user/bbs/
+Disallow: /user/bbs/*
+Disallow: /user/extra/
+Disallow: /user/extra/*
+Disallow: /goDetail/*
+Disallow: /webmail/
+Disallow: /webmail/*
+Disallow: /WebBook/
+Disallow: /WebBook/*
+Disallow: /upload/
+Disallow: /upload/*
+Disallow: /upload/bbs/
+Disallow: /upload/bbs/*
+Disallow: /site/
+Disallow: /site/*
+Disallow: /site/main/
+Disallow: /site/main/*
+Disallow: /main/
+Disallow: /main/*
+Disallow: /main/index/
+Disallow: /main/index/*
+
+Sitemap: https://www.keis.or.kr/keis/sitemap.xml

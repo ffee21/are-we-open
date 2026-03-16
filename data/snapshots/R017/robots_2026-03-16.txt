@@ -1,0 +1,36 @@
+User-agent: *
+Disallow: /
+Allow: /gnpolice/index.do
+Allow: /cn/
+Allow: /cwjb/
+Allow: /cwsb/
+Allow: /gc/
+Allow: /ghjb/
+Allow: /ghsb/
+Allow: /gj/
+Allow: /gs/
+Allow: /ha/
+Allow: /hc/
+Allow: /hd/
+Allow: /head/ 
+Allow: /hy/
+Allow: /jh/
+Allow: /jj/
+Allow: /msdb/
+Allow: /msjb/
+Allow: /my/ 
+Allow: /nh/
+Allow: /sacheon/
+Allow: /sc/
+Allow: /ty/
+Allow: /ur/
+Allow: /ys/
+
+
+User-agent: Googlebot
+Disallow: /*?*
+Disallow: /*.hwp$
+Disallow: /*.pdf$
+Disallow: /*.doc$
+Disallow: /*.xls$
+Disallow: /*.xlsx$

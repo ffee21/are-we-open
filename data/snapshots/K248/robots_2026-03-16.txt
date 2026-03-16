@@ -1,0 +1,7 @@
+User-agent: *
+
+Disallow: /seed/contents/totalSearch
+Allow:/
+
+Sitemap: https://www.koagi.or.kr/sitemap.xml
+Sitemap: https://www.koagi.or.kr/sitemap_seed.xml

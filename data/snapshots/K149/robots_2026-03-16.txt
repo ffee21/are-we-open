@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /AGENT/
+Disallow: /Recruit/
+Disallow: /HOME/mypage/
+Disallow: /HOME/member/
+Disallow: /HOME/reserve/
+Disallow: /HOME/community/
+

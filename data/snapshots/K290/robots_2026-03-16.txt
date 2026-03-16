@@ -1,0 +1,11 @@
+User-agent: * 
+Allow: /
+Disallow : /board.es?mid=a10503020000&bid=0046
+Disallow : /board.es?mid=a10504030000&bid=0048
+Disallow : /board.es?mid=a10211020000&bid=0049
+Disallow : /board.es?mid=a10212050000&bid=0096
+Disallow : /board.es?mid=a10214020000&bid=0051
+Disallow : /board.es?mid=a10216040000&bid=0052
+Disallow : /board.es?mid=a10217020000&bid=0053
+Disallow : /board.es?mid=a10213020000&bid=0188
+Disallow : /findeepSearch.es?mid=a10700000000

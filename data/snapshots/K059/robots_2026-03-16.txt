@@ -1,0 +1,4 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow: /search/
+Sitemap: https://www.arirang.com/sitemaps/sitemap.xml

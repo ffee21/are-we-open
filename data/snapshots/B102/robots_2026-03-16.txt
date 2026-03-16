@@ -1,0 +1,19 @@
+User-agent:*
+Disallow:/sys
+Disallow:/search
+Disallow:/portal/board/post
+Disallow:/icylcc/board/post
+Disallow:/edu/board/post
+Disallow:/depart/board/post
+Disallow:/tour/board/post
+Disallow:/welfare/board/post
+Disallow:/biz/board/post
+Disallow:/youth/board/post
+
+# Block Google
+User-agent: Googlebot
+Disallow: /
+
+# Block Bing
+User-agent: Bingbot
+Disallow: /

@@ -1,0 +1,8 @@
+User-agent: Googlebot
+Disallow: /search/
+Disallow: /bbs/
+Disallow: /communication/customer
+Disallow: /communication/reportCenter/create
+
+User-agent: *
+Disallow: /kiad/

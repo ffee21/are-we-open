@@ -1,0 +1,3 @@
+User-agent: Googlebot
+Disallow: /kr/search/searchList.do
+Disallow: /withcms/*

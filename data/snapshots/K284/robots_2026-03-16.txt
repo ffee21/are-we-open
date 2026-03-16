@@ -1,0 +1,13 @@
+User-agent:*
+
+Disallow: /developAppl/
+Disallow: /customer/
+Disallow: /companyCustomer/
+Disallow: /sttemnt/
+
+Disallow: /qustnr/
+Disallow: /homepageImp/
+Disallow: /freesafe/
+Disallow: /free/
+
+Disallow: /search*

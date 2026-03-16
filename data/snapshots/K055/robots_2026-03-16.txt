@@ -1,0 +1,5 @@
+User-agent: Googlebot
+Disallow: /ko/search.jsp
+Disallow: /ko/notice/qna.jsp
+Disallow: /ko/ask/ask_tech_info.jsp
+Disallow: /km/ask/tech_info02.jsp

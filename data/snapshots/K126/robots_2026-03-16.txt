@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /capybara/
+Disallow: /memorial/
+Disallow: /communication/
+Disallow: /data/
+Disallow: /major-business/lab/resources

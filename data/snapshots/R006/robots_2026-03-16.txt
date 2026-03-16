@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /
+Allow: /main.htm
+Allow: /djdd/main.html
+Allow: /djds/main.html
+Allow: /djdb/main.html
+Allow: /djsb/main.html
+Allow: /djys/main.html
+Allow: /djjb/main.html

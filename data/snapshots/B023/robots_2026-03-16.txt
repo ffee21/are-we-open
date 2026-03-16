@@ -1,0 +1,45 @@
+User-Agent : *
+Disallow : /
+User-Agent : Googlebot
+User-Agent : Yeti
+User-Agent : Daumoa
+Allow: /
+Allow: /portalMain.do
+Allow: /tourMain.do
+Allow: /healthMain.do
+Disallow: /cmm/fms/FileDown.do
+Disallow: /cmm/search/searchEngine.do
+Disallow: /mobile/cmm/fms/FileDown.do
+Disallow: /mobile/
+Allow: /portal/bbs/
+Allow: /portal/apply/
+Allow: /mayor/apply/
+Allow: /dong/apply/
+Allow: /dept/bbs/
+Allow: /dong/bbs/
+Allow: /health/bbs/
+Allow: /council/bbs/
+Disallow: /tour/tourContents/
+Disallow: /galleryPictureContent.do
+Allow: /*/bbs/
+Allow: /*/apply/
+Disallow: /*bbsId=BBSMSTR_000000000661
+Disallow: /*bbsId=BBSMSTR_000000000679
+Disallow: /*bbsId=BBSMSTR_000000000891
+Disallow: /*bbsId=BBSMSTR_000000000961
+Disallow: /*bbsId=BBSMSTR_000000001377
+Disallow: /*bbsId=BBSMSTR_000000001549
+Disallow: /*bbsId=BBSMSTR_000000001217
+Disallow: /*bbsId=BBSMSTR_000000000553
+Disallow: /*bbsId=BBSMSTR_000000000035
+Disallow: /*bbsId=BBSMSTR_000000000382
+Disallow: /*bbsId=BBSMSTR_000000000662
+Disallow: /*bbsId=BBSMSTR_000000000663
+Disallow: /*bbsId=BBSMSTR_000000000761
+Disallow: /*bbsId=BBSMSTR_000000001158
+Disallow: /*bbsId=BBSMSTR_000000001267
+Disallow: /*bbsId=BBSMSTR_000000001410
+Disallow: /*bbsId=BBSMSTR_000000001413
+Disallow: /*bbsId=BBSMSTR_000000001416
+Disallow: /*bbsId=BBSMSTR_000000001488
+Disallow: /*bbsId=BBSMSTR_000000001508

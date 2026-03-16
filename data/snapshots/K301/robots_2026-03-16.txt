@@ -1,0 +1,8 @@
+User-agent: Google bot
+Disallow: /home/totalSearch.do
+Disallow: /home/board/
+Disallow: /home/academyList.do
+
+User-agent: *
+Allow: /
+

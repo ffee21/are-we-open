@@ -1,0 +1,14 @@
+user-agent:*
+disallow:/
+
+User-agent: Googlebot
+Allow: /
+Disallow: /search/
+
+User-agent: Yeti
+Allow: /
+Disallow: /search/
+
+User-agent: Daum
+Allow: /
+Disallow: /search/

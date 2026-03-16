@@ -1,0 +1,20 @@
+User-agent: *
+DisAllow: /
+Allow: /$
+Allow: /gw
+DisAllow: /site/common/search
+
+User-agent: SemrushBot
+DisAllow: /
+User-agent: MJ12bot
+DisAllow: /
+User-agent: GPTBot
+DisAllow: /
+User-agent: AhrefsBot
+DisAllow: /
+User-agent: ClaudeBot
+DisAllow: /
+User-agent: Googlebot
+DisAllow: /
+
+Crawl-delay: 288

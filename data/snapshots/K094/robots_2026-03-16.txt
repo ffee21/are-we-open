@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /dh/board/
+
+Sitemap: https://www.snubh.org/common/ajax/sitemap.xml

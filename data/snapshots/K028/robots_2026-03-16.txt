@@ -1,0 +1,11 @@
+User-agent: Googlebot
+Disallow: /*bbs*
+Disallow: /search/
+User-agent: *
+Disallow: /
+Allow: /index
+Allow: /main
+Allow: /eaa/
+Allow: /kgs/
+Allow: /twp/
+Allow: /pdc/

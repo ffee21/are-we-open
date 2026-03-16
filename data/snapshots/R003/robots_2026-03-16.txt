@@ -1,0 +1,33 @@
+# robots.txt for http://www.dgpolice.go.kr
+# Modify 2021-07-01
+User-agent: *
+Disallow: /dgpo/bbs/
+Disallow: /dgpo/bbs/
+Disallow: /nambu/bbs/
+Disallow: /dalseong/bbs/
+Disallow: /dongbu/bbs/
+Disallow: /bukbu/bbs/
+Disallow: /seobu/bbs/
+Disallow: /suseong/bbs/
+Disallow: /jungbu/bbs/
+Disallow: /seongseo/bbs/
+Disallow: /gangbuk/bbs/
+Disallow: /gunwi/bbs/
+Disallow: /dgpa/
+Disallow: /egovframework/
+Disallow: /data/
+Disallow: /uploads/
+#Disallow: /dgpo/ 20250625
+Disallow: /dalseo/
+Allow: /dgpo/
+Allow: /nambu/
+Allow: /dalseong/
+Allow: /dongbu/
+Allow: /bukbu/
+Allow: /seobu/
+Allow: /suseong/
+Allow: /jungbu/
+Allow: /seongseo/
+Allow: /gangbuk/
+Allow: /gunwi/
+Sitemap: https://www.dgpolice.go.kr/sitemap.xml

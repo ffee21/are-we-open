@@ -1,0 +1,98 @@
+User-agent: *
+
+# %EA%B2%AC%ED%95%99
+Disallow: */iwest/496
+
+# %EC%95%88%EC%A0%84%EC%B2%B4%ED%97%98
+Disallow: */iwest/498
+
+# %EB%8F%99%EB%B0%98
+Disallow: */iwest/442
+
+Disallow: */iwest/418
+Disallow: */qna
+
+Disallow: */iwest/1048
+Disallow: */qnaLion
+
+Disallow: */iwest/1093
+Disallow: */qnaContract
+
+# %EC%95%84%EC%9D%B4%EB%94%94%EC%96%B4%2C+%EC%A7%80%EC%97%AD%EC%9D%B8%EC%9E%AC%2C+%EC%84%9C%EB%B6%80%EA%B3%B5%EA%B0%90+%EC%86%8C%ED%86%B5
+Disallow: */iwest/485
+Disallow: */iwest/983
+Disallow: */iwest/1040
+Disallow: */iwest/1001
+Disallow: */mrfnPropse
+
+# BOD%2C+%EC%9E%84%EC%9B%90%EC%9C%84%EC%9B%90%ED%9A%8C
+Disallow: */iwest/671
+Disallow: */iwest/1084
+Disallow: */iwest/672
+Disallow: */iwest/673
+Disallow: */iwest/674
+Disallow: */iwest/675
+Disallow: */iwest/676
+Disallow: */iwest/698
+Disallow: */iwest/678
+Disallow: */iwest/680
+Disallow: */iwest/681
+Disallow: */iwest/1099
+Disallow: */iwest/1049
+
+# %EC%82%AC%ED%9A%8C%EA%B3%B5%ED%97%8C%EC%9C%84%EC%9B%90%ED%9A%8C+%ED%9A%8C%EC%9D%98%EB%A1%9D%2C+%EC%B2%AD%ED%83%81-%EC%8B%A0%EA%B3%A0%EB%AC%BC%ED%92%88%2C+%EC%B2%AD%ED%83%81%EA%B8%88%EC%A7%80-%EC%83%81%EB%8B%B4%2C+%EC%B2%AD%EB%A0%B4%EC%8B%9C%EB%AF%BC%EA%B0%90%EC%82%AC%EA%B4%80
+Disallow: */iwest/911
+Disallow: */iwest/646
+Disallow: */iwest/690
+Disallow: */iwest/692
+Disallow: */iwest/651
+Disallow: */iwest/936
+Disallow: */iwest/941
+Disallow: */iwest/946
+Disallow: */iwest/942
+Disallow: */bbs/iwest
+
+# %EB%B0%98%EB%B6%80%ED%8C%A8-%EC%86%8C%EA%B7%B9%ED%96%89%EC%A0%95%2C+%EB%B6%80%EC%A0%95%EB%B6%80%ED%8C%A8%2C+%EA%B3%B5%EC%9D%B5%EC%8B%A0%EA%B3%A0%2C+%EA%B3%B5%EA%B3%B5%EC%9E%AC%EC%A0%95%2C+%EA%B0%91%EC%A7%88%ED%94%BC%ED%95%B4%2C%EA%B3%84%EC%95%BD%2C%EC%B2%AD%ED%83%81%2C+%EC%83%81%EB%8B%B4
+Disallow: */iwest/944
+Disallow: */iwest/636
+Disallow: */iwest/640
+Disallow: */iwest/521
+Disallow: */iwest/522
+Disallow: */iwest/523
+Disallow: */iwest/524
+Disallow: */iwest/910
+Disallow: */iwest/644
+Disallow: */iwest/645
+Disallow: */sttemntCnslt
+
+Disallow: */iwest/1125
+Disallow: */iwest/1175
+Disallow: */artclDownload.do
+Disallow: */repArtclDownload.do
+
+Disallow: */topL
+Disallow: */site/top
+Disallow: */fileDownload.do
+Disallow: /beffatInfoPublict/iwest/*/download.do
+
+Disallow: */iwest/files
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: Googlebot
+Disallow: */search
+Disallow: */iwest
+Disallow: */mrfnPropse
+
+Allow: /iwest
+Sitemap: https://www.iwest.co.kr/sitemap.xml

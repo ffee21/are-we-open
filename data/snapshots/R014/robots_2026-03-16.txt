@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /board/
+Disallow: /upload_data/
+
+User-agent: Googlebot
+Disallow: /board/
+Disallow: /upload_data/

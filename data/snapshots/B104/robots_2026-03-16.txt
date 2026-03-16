@@ -1,0 +1,17 @@
+User-agent:*
+Allow:/pt1365/
+Allow:/car/
+Allow:/org/dongsak/main.do?mid=0104240100
+Allow:/org/godeokDo/main.do?mid=0104250100
+Allow:/favicon.ico
+Disallow:/
+
+User-agent:Yeti
+Allow:/
+
+User-agent:Baidu
+Disallow:/
+
+
+User-agent:360spider
+Disallow:/

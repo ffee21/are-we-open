@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /frt/board/
+Disallow: /search/
+Sitemap: https://kida.re.kr/sitemap_loc.xml

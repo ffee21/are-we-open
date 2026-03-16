@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /search/
+Disallow: /flexer/
+Disallow: /board/board.do
+#DaumWebMasterTool:9a0e07b3ca6e8d9a77a47b3db69bccab94b85d15417f0ba1122ba0d38b62b95e:N0czcylUGMa/jXrvHEpVZA==

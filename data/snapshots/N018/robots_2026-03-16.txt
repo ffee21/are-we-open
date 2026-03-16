@@ -1,0 +1,18 @@
+# Google
+User-agent: Googlebot
+Allow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
+
+# Naver
+User-agent: Yeti
+Allow: /
+
+# Daum / Kakao
+User-agent: Daum
+Allow: /
+
+User-agent: *
+Disallow: /
